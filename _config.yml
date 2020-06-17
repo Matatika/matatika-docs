@@ -1,0 +1,21 @@
+title: Matatika API Docs
+logo: "https://www.matatika.com/wp-content/themes/matatika/images/Logo-small.svg"
+permalink: pretty
+
+aux_links:
+  "Matatika site":
+    - "www.matatika.com"
+
+theme: just-the-docs
+plugins:
+  - jekyll-feed
+
+exclude:
+    - .sass-cache/
+    - .jekyll-cache/
+    - gemfiles/
+    - Gemfile
+    - Gemfile.lock
+    - vendor
+    - docker-compose.yml
+    - README.md
