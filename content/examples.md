@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Examples
 parent: Content
 nav_order: 2
@@ -9,24 +9,23 @@ nav_order: 2
 # Profiles
 
 ## View all profiles
-<!-- include::_snippets/profiles/view-all-profiles/curl-request.adoc[]
-include::_snippets/profiles/view-all-profiles/http-request.adoc[] -->
+{% include snippets/profiles/create-a-profile/curl-request.md %}
 ## Create a profile
 
 ### Request
 #### Examples
-<!-- include::_snippets/profiles/create-a-profile/curl-request.adoc[]
-include::_snippets/profiles/create-a-profile/http-request.adoc[] -->
+{% include snippets/profiles/create-a-profile/curl-request.md %}
+{% include snippets/profiles/create-a-profile/http-request.md %}
 #### Body
-<!-- include::_snippets/profiles/create-a-profile/request-fields.adoc[]
-include::_snippets/profiles/create-a-profile/request-body.adoc[] -->
+{% include snippets/profiles/create-a-profile/request-fields.md %}
+{% include snippets/profiles/create-a-profile/request-body.md %}
 
 ### Response
 #### Body
-<!-- include::_snippets/profiles/create-a-profile/response-fields.adoc[]
-include::_snippets/profiles/create-a-profile/response-body.adoc[] -->
+{% include snippets/profiles/create-a-profile/response-fields.md %}
+{% include snippets/profiles/create-a-profile/response-body.md %}
 #### Links
-<!-- include::_snippets/profiles/create-a-profile/links.adoc[] -->
+{% include snippets/profiles/create-a-profile/links.md %}
 
 
 # Workspaces
