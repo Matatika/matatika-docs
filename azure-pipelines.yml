@@ -16,7 +16,7 @@ steps:
     
 - task: DownloadReleaseArtifact@1
   inputs:
-    artifactName: '$(System.DefaultWorkingDirectory)/matatika-sit/src/target.zip'
+    artifactName: '/home/vsts/work/r1/a/matatika-sit/src/target.zip'
     artifactStorageLocation: '$(System.ArtifactsDirectory)'
     unzipFile: true
 
