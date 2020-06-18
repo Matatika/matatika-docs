@@ -21,7 +21,7 @@ steps:
     definition: '8'
     buildVersionToDownload: 'latest'
     artifactName: 'src'
-    targetPath: '$(Pipeline.Workspace)'
+    targetPath: '$(snippets)'
 
-- script: ls $(Pipeline.Workspace)
+- script: ls $(snippets)
   displayName: 'Verify pipeline artifact download'
