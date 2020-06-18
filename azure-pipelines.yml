@@ -23,5 +23,5 @@ steps:
     artifactName: 'src'
     targetPath: '$(snippets)'
 
-- script: ls profiles
+- script: ls
   displayName: 'Verify pipeline artifact download'
