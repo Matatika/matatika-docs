@@ -23,5 +23,5 @@ steps:
     artifactName: 'src'
     targetPath: '$(Pipeline.Workspace)'
 
-- script: ls $(Pipeline.Workspace)/src
+- script: ls $(Pipeline.Workspace)/src/docs
   displayName: 'Verify pipeline artifact download'
