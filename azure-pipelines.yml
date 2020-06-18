@@ -14,12 +14,6 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: DownloadReleaseArtifact@1
-  inputs:
-    artifactName: 'ReleaseLogs_345.zip'
-    artifactStorageLocation: '$(Pipeline.Workspace)'
-    unzipFile: true
-
 - task: DownloadBuildArtifacts@0
   inputs:
     buildType: 'current'
