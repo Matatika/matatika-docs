@@ -14,7 +14,14 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'specific'
+    project: '34650084-a2ff-4566-87fb-d90b051edfa7'
+    definition: '8'
+    buildVersionToDownload: 'latest'
+    artifactName: 'src'
+    targetPath: '$(Pipeline.Workspace)'
+
+- script: ls $(Pipeline.Workspace)
+  displayName: 'Verify pipeline artifact download'
