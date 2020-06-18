@@ -18,7 +18,7 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: '/home/vsts/work/r1/a/matatika-sit/src/target.zip'
+    artifactName: '/home/vsts/work/r1/a/matatika-sit/src/target'
     downloadPath: '$(System.ArtifactsDirectory)'
 
 - script: ls $(Pipeline.Workspace)
