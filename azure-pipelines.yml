@@ -14,14 +14,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: DownloadPipelineArtifact@2
+- task: DownloadReleaseArtifact@1
   inputs:
-    buildType: 'specific'
-    project: '34650084-a2ff-4566-87fb-d90b051edfa7'
-    definition: '8'
-    buildVersionToDownload: 'latest'
-    artifactName: 'src'
-    targetPath: '$(snippets)'
+    artifactName: 'ReleaseLogs_345.zip'
+    artifactStorageLocation: '$(Pipeline.Workspace)'
+    unzipFile: true
 
-- script: ls
+- script: ls $(Pipeline.Workspace)
   displayName: 'Verify pipeline artifact download'
