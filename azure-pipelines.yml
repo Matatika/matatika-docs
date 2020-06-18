@@ -13,12 +13,3 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-    
-- task: DownloadReleaseArtifact@1
-  inputs:
-    artifactName: '/home/vsts/work/r1/a/matatika-sit/src/target.zip'
-    artifactStorageLocation: '$(System.ArtifactsDirectory)'
-    unzipFile: true
-
-- script: ls $(Pipeline.Workspace)
-  displayName: 'Verify pipeline artifact download'
