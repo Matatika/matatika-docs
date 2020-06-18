@@ -18,7 +18,7 @@ Run `import` from the Makefile, providing the argument `FROM_DIR` with the relat
 - Make sure to specify a closing `/` on the end of the `FROM_DIR` path to copy **only the contents** of the directory (i.e. not including the enclosing folder). This will preserve the intended destination folder structure; therefore conforming to the include paths detailed in the markdown files.
 
 ```terminal
-make import FROM_DIR=../matatika-docs/target/generated-snippets/
+make import FROM_DIR=../matatika-sit/target/generated-snippets/
 ```
 
 Run `docker-compose up` to serve the static site on [localhost:4000](http://localhost:4000/). Note that this process may take a little while to complete on the first time due to dependency installation.
@@ -37,5 +37,5 @@ If the exisiting snippets have been updated by running subsequent API SITs, they
 
     ```terminal
     make clean
-    make import FROM_DIR=../matatika-docs/target/generated-snippets/
+    make import FROM_DIR=../matatika-sit/target/generated-snippets/
     ```
