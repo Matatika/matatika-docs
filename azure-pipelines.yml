@@ -20,5 +20,12 @@ steps:
     artifactStorageLocation: '$(Pipeline.Workspace)'
     unzipFile: true
 
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: '/home/vsts/work/r1/a/matatika-sit/src/target.zip'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
 - script: ls $(Pipeline.Workspace)
   displayName: 'Verify pipeline artifact download'
