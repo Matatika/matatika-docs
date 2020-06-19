@@ -81,7 +81,7 @@ The pages are now served as follows:
 New markdown files must contain relevant [front matter](https://jekyllrb.com/docs/front-matter/) to be displayed correctly:
 
 | Front Matter Variable | Description
-| --- | --- | ---
+| --- | ---
 | `layout` | The page layout to apply - in general, use `layout: default`
 | `title` | The page title - used to create navigation menu heading
 | `permalink` | The page permalink - can be used to override the default provided by the enclosing folder structure
