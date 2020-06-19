@@ -27,13 +27,86 @@ Run `docker-compose up` to serve the static site on [localhost:4000](http://loca
 docker-compose up
 ```
 
-### Making Changes
+## Making Changes
+### Creating and Editing Pages
+Pages are constructed from markdown files, which are rendered to HTML when the static site is served.
+
+#### Structure
+Consider a directory structure with the following markdown files:
+
+```
++-- ..
+|-- (Jekyll files)
+|
+|-- index.md
+|-- auth.md
+|-- examples.md
+|
+|-- (Jekyll files)
++-- ..
+```
+
+The pages are served as follows: (.html extensions hidden due to `permalink: pretty` in *_config.yml*)
+
+| Markdown File | Relative Path | Page serve URL
+| --- | --- | ---
+| index | ./ | localhost:4000
+| auth | ./ | localhost:4000/auth
+| examples | ./ | localhost:4000/examples
+
+Now consider a similar scenario where *auth* and *examples* are enclosed within a new directory *content*:
+
+```
++-- ..
+|-- (Jekyll files)
+|
+|-- index.md
+|-- content
+|   | auth.md
+|   | examples.md
+|
+|-- (Jekyll files)
++-- ..
+```
+
+The pages are now served as follows:
+
+| Markdown File | Relative Path | Page serve URL
+| --- | --- | ---
+| index | ./ | localhost:4000
+| auth | ./content/ | localhost:4000/content/auth
+| examples | ./content/ | localhost:4000/content/examples
+
+#### Front Matter
+New markdown files must contain relevant [front matter](https://jekyllrb.com/docs/front-matter/) to be displayed correctly:
+
+| Front Matter Variable | Description
+| --- | --- | ---
+| `layout` | The page layout to apply - in general, use `layout: default`
+| `title` | The page title - used to create navigation menu heading
+| `permalink` | The page permalink - can be used to override the default provided by the enclosing folder structure
+| `nav_order` | The position of the page within its navigation menu scope
+| `has_children` | Boolean value incdicating whether the page acts a parent: used to create a hierarchical navigation structure
+| `parent` | The `title` value of an existing parent page, indicating whether the page acts as a child: used to create a hierarchical navigation structure
+
+The front matter of `content.md`
+```
+---
+layout: default
+title: Content
+permalink: /content
+has_children: true
+nav_order: 2
+---
+```
+
+To make changes to the generated snippet content, see [matatika-sit](https://github.com/Matatika/matatika-sit).
 
 ### Updating Snippets
 
 If the exisiting snippets have been updated by running subsequent API SITs, they can be copied over again by simply re-running the `import` directive. This can be done with the local server already running, where changes to site content are reflected in the static site dynamically.
 
-- If the generated snippets source directory has been modified (e.g. files and/or folders created, renamed or moved), run `clean` from the Makefile beforehand, in order to remove all files and folders within `./_includes/snippets/`.
+- If the generated snippets source directory has been modified (e.g. files and/or folders created, renamed or moved), run `clean` from the Makefile beforehand, in order to remove all files and folders within `./_includes/snippets/`. The server will need to be restarted for these changes to take effect.
 
     ```terminal
     make clean
