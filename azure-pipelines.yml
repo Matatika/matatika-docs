@@ -1,0 +1,13 @@
+trigger:
+- master
+- dev
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'docs'
+    publishLocation: 'pipeline'
