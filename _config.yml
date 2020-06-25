@@ -25,3 +25,5 @@ exclude:
     - docker-compose.yml
     - README.md
     - Makefile
+    - azure-pipelines.yml
+    - build-docs.sh
