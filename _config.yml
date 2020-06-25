@@ -1,5 +1,7 @@
+#url: https://www-localhost.matatika.com
+baseurl: /docs
 title: Matatika API Docs
-logo: "https://www.matatika.com/wp-content/themes/matatika/images/Logo-small.svg"
+logo: "/images/Logo-small.svg"
 permalink: pretty
 
 # https://docs.spring.io/spring-restdocs/docs/current/reference/html5/#working-with-markdown-limitations

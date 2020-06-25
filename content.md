@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Content
-permalink: /content
 has_children: true
 nav_order: 2
 ---

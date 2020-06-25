@@ -8,6 +8,8 @@ nav_order: 2
 
 # Profiles
 
+{% comment %}
+
 ## View all profiles
 {% include snippets/profiles/create-a-profile/curl-request.md %}
 ## Create a profile
@@ -27,5 +29,6 @@ nav_order: 2
 #### Links
 {% include snippets/profiles/create-a-profile/links.md %}
 
+{% endcomment %}
 
 # Workspaces
