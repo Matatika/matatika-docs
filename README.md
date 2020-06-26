@@ -108,7 +108,8 @@ If the exisiting snippets have been updated by running subsequent API SITs, they
 
 - If the generated snippets source directory has been modified (e.g. files and/or folders created, renamed or moved), run `clean` from the Makefile beforehand, in order to remove all files and folders within `./_includes/snippets/`. The server will need to be restarted for these changes to take effect.
 
-    ```terminal
-    make clean
-    make import FROM_DIR=../matatika-sit/target/generated-snippets/
-    ```
+```terminal
+make clean
+make import FROM_DIR=../matatika-sit/target/generated-snippets/
+```
+    
