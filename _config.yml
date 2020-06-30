@@ -1,5 +1,5 @@
 #url: https://www-localhost.matatika.com
-# baseurl: /docs
+baseurl: /docs
 title: Matatika API Docs
 logo: "/images/Logo-small.svg"
 permalink: pretty
