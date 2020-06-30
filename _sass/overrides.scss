@@ -68,6 +68,12 @@
         display: inline-block;
     }
 
+    .logo img, .logo.small img{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
     .leftBorder {
         margin-left: 16px;
         padding-left: 14px;
