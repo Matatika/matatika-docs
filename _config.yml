@@ -1,5 +1,5 @@
 #url: https://www-localhost.matatika.com
-baseurl: /docs
+# baseurl: /docs
 title: Matatika API Docs
 logo: "/images/Logo-small.svg"
 permalink: pretty
@@ -8,10 +8,6 @@ permalink: pretty
 markdown: redcarpet
 redcarpet:
   extensions: ["tables"]
-
-aux_links:
-  "Matatika site":
-    - "www.matatika.com"
 
 theme: just-the-docs
 plugins:
