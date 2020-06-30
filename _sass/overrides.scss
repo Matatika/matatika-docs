@@ -1,11 +1,5 @@
-// debug
-// * {
-//     background: #000 !important;
-//     color: #0f0 !important;
-//     outline: solid #f00 1px !important;
-//  }
 
-.site-header {
+#header {
     display: none;
 }
 
@@ -13,13 +7,55 @@
     display: none;
 }
 
-.side-bar {
-    top: 80px;
+@media (min-width: 50rem) {
+    #header {
+        display: block;
+    }
 }
 
-.main-content {
-    top: 80px;
-//    position: relative;
+.side-bar {
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f5f6fa;
+}
+@media (min-width: 50rem) {
+    .side-bar {
+        top: 80px;
+        flex-wrap: nowrap;
+        position: absolute;
+        width: 186px;
+        height: 100%;
+        flex-direction: column;
+        border-right: 1px solid #eeebee;
+        align-items: flex-end;
+    }
+}
+@media (min-width: 66.5rem) {
+    .side-bar {
+      width: calc((100% - 1320px) / 2 + 186px);
+      min-width: 186px;
+    }
+}
+
+@media (min-width: 50rem) {
+    .navigation, .site-header, .site-footer {
+        width: 186px;
+    }
+    .site-header {
+        display: none;
+    }
+    .main-content {
+        top: 80px;
+        position: relative;
+        max-width: 800px;
+        margin-left: 186px;
+    }
+}
+@media (min-width: 66.5rem) {
+    .main-content {
+        margin-left: calc((100% - 960px) / 2 + 186px);
+    }
 }
 
 // button outline states
@@ -34,13 +70,7 @@
 // header stuff
 
 #header {
-    // font-size: 16px;
-    // line-height: 26px;
-    // color: #313133;
-    // font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    // -webkit-tap-highlight-color: transparent;
-    // -webkit-font-smoothing: antialiased;
     background: #fff;
     padding: 10px 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,.15);
@@ -82,15 +112,4 @@
         font-weight: 600;
         min-height: 26px;
     }
-    
-    // .breadcrumb_last {
-    //     font-size: 16px;
-    //     line-height: 26px;
-    //     font-family: 'Montserrat', sans-serif;
-    //     color: #EE7A34;
-    //     box-sizing: border-box;
-    //     -webkit-tap-highlight-color: transparent;
-    //     -webkit-font-smoothing: antialiased;
-    //     font-weight: 600;
-    // }
 }
