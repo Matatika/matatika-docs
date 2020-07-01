@@ -16,6 +16,7 @@
 }
 @media (min-width: 50rem) {
     .side-bar {
+        top: 60px;
         flex-wrap: nowrap;
         width: 186px;
         height: 100%;
@@ -31,10 +32,14 @@
     }
 }
 
+.page-wrap {
+    z-index: 999;
+}
 .main-content-wrap {
     z-index: 999;
 }
 .main-content {
+    z-index: 100;
     top: 84px;
     position: relative;
 }
@@ -68,6 +73,7 @@
 // header stuff
 
 #header {
+    z-index: 200;
     box-sizing: border-box;
     background: #fff;
     padding: 10px 20px;

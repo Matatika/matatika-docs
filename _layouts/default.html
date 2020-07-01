@@ -15,7 +15,6 @@ layout: table_wrappers
         </symbol>
     </svg>
     <div class="page-wrap">
-        {% include header_custom.html %}
         <div class="side-bar">
             <div class="site-header">
                 <a href="{{ site.url }}{{ site.baseurl }}" class="site-title lh-tight">{% include title.html %}</a>
@@ -30,6 +29,7 @@ layout: table_wrappers
             </footer>
         </div>
         <div class="main-content-wrap js-main-content" tabindex="0">
+            {% include header_custom.html %}
             <div class="main-content">
                 <div class="page-header js-page-header">
                     {% if site.search_enabled != false %}
