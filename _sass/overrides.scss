@@ -61,7 +61,19 @@
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    strong {
+        display: inline-block;
+        color: white;
+        background-color: $matatika-default;
+        padding: 4px 8px;
+        box-sizing: border-box;
+        border-radius: 4px
+    }
+}
+
 // button outline states
+// ----------------
 .btn:focus {
         box-shadow: 0 0 0 3px rgba($color: $matatika-default, $alpha: 0.5);
 }
@@ -69,9 +81,10 @@
 .btn:focus:hover {
         box-shadow: 0 0 0 3px rgba($color: $matatika-default, $alpha: 0.5);
 }
+// ----------------
 
 // header stuff
-
+// ----------------
 #header {
     z-index: 200;
     box-sizing: border-box;
@@ -116,6 +129,7 @@
         min-height: 26px;
     }
 }
+// ----------------
 
 
 .hamburger {
