@@ -6,21 +6,38 @@ nav_order: 4
 ---
 
 # Workspaces
+Workspaces allow users to operate within isolated instances of the Matatika service. This is useful for seperating profiles based on the data they require access to.
 
-## View workspaces
+## **GET** View workspaces
 
-Default label {:TEST: .label .label-blue }
 
-<p class=label>GET</p>
+## **POST** Initialise a workspace
+> *Only profiles with the relevant permissions may initialise workspaces.*
 
-## Initialise a workspace
-__POST__
 
-## Create or modify a workspace
-__PUT__
+## **PUT** Create or modify a workspace
+> *Only profiles with the relevant permissions may create or modify workspaces.*
 
-## Set a default workspace
-__PATCH__
+### Request
+#### Body
+{% include snippets/workspaces/create-a-workspace/request-fields.md %}
+{% include snippets/workspaces/create-a-workspace/request-body.md %}
+#### CURL Example
+{% include snippets/workspaces/create-a-workspace/curl-request.md %}
+#### HTTP Example
+{% include snippets/workspaces/create-a-workspace/http-request.md %}
 
-## Delete a workspace
-__DELETE__
+### Response
+#### Body
+{% include snippets/workspaces/create-a-workspace/response-fields.md %}
+{% include snippets/workspaces/create-a-workspace/response-body.md %}
+#### Links
+{% include snippets/workspaces/create-a-workspace/links.md %}
+
+
+## **DELETE** Delete a workspace
+> *Only profiles with the relevant permissions may delete workspaces.*
+
+
+## **PATCH** Set a default workspace
+A workspace can be set as default, which defines the environment the Matatika app will initially load for a given profile. The default workspace setting persists only for the profile that sets it.
