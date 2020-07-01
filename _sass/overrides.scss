@@ -7,9 +7,9 @@
 }
 
 .side-bar {
+    z-index: 150;
     top: 84px;
     position: relative;
-    z-index: 100;
     display: flex;
     flex-wrap: wrap;
     background-color: #f5f6fa;
@@ -17,6 +17,7 @@
 @media (min-width: 50rem) {
     .side-bar {
         top: 60px;
+        position: fixed;
         flex-wrap: nowrap;
         width: 186px;
         height: 100%;
@@ -39,7 +40,7 @@
     z-index: 999;
 }
 .main-content {
-    z-index: 100;
+    z-index: none;
     top: 84px;
     position: relative;
 }
