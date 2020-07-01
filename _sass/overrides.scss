@@ -7,7 +7,7 @@
 }
 
 .side-bar {
-    top: 80px;
+    top: 84px;
     position: relative;
     z-index: 100;
     display: flex;
@@ -31,8 +31,11 @@
     }
 }
 
+.main-content-wrap {
+    z-index: 999;
+}
 .main-content {
-    top: 80px;
+    top: 84px;
     position: relative;
 }
 @media (min-width: 50rem) {
@@ -73,7 +76,6 @@
     left: 0;
     right: 0;
     top: 0;
-    z-index: 200;
 
     div {
         -webkit-box-align: center;
