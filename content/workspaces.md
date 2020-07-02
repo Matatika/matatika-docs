@@ -12,6 +12,9 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 GET
 {:.label .label-GET}
 
+### Response
+{% include snippets/workspaces/view-all-workspaces/response-body.md %}
+
 
 ## Initialise a workspace
 POST
@@ -28,13 +31,15 @@ PUT
 
 ### Request
 #### Body
+{% include snippets/workspaces/create-a-workspace/request-body.md %}
+
+#### Schema
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `name` | `String` | The workspace name | Must not be empty
 `domains` | `String` | The allowed domains for workspace access control | 
 
-{% include snippets/workspaces/create-a-workspace/request-body.md %}
 #### CURL Example
 {% include snippets/workspaces/create-a-workspace/curl-request.md %}
 #### HTTP Example
@@ -42,6 +47,9 @@ Path | Type | Description | Constraints
 
 ### Response
 #### Body
+{% include snippets/workspaces/create-a-workspace/response-body.md %}
+
+#### Schema
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -50,7 +58,6 @@ Path | Type | Description
 `domains` | `String` | The allowed domains for workspace access control
 `defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
 
-{% include snippets/workspaces/create-a-workspace/response-body.md %}
 #### Links
 
 Relation | Description
