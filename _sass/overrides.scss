@@ -62,16 +62,28 @@
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    strong {
-        display: inline-block;
-        color: white;
-        background-color: $matatika-default;
-        padding: 4px 8px;
-        box-sizing: border-box;
-        border-radius: 4px
-    }
+// HTTP method labels
+// ----------------
+.label-GET {
+    background-color: #1EB06E;
 }
+
+.label-POST {
+    background-color: #1E8A9E;
+}
+
+.label-PUT {
+    background-color: #2A57A9;
+}
+
+.label-DELETE {
+    background-color: #F12948;
+}
+
+.label-PATCH {
+    background-color: #971FA8;
+}
+// ----------------
 
 // button outline states
 // ----------------
