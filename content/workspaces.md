@@ -169,38 +169,65 @@ DELETE
 
 
 <!-- ================ -->
-## Set a default workspace
-PATCH
-{:.label .label-PATCH}
+## View all workspace members
+GET
+{:.label .label-GET}
 
-A workspace can be set as default, which defines the environment the Matatika app will initially load for a given profile. The default workspace setting persists only for the profile that sets it.
+A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
 
 ### Request
 #### Body
 #### cURL Example
-{% comment %}
-{% include snippets/workspaces/set-a-default-workspace/curl-request.md %}
-{% endcomment %}
+{% include snippets/workspaces/view-all-workspace-members/curl-request.md %}
 
 #### HTTP Example
-{% comment %}
-{% include snippets/workspaces/set-a-default-workspace/http-request.md %}
-{% endcomment %}
+{% include snippets/workspaces/view-all-workspace-members/http-request.md %}
 
 ### Response
 #### Body
-{% comment %}
-{% include snippets/workspaces/set-a-default-workspace/response-body.md %}
-{% endcomment %}
+{% include snippets/workspaces/view-all-workspace-members/response-body.md %}
 
 Path | Type | Description
 ---- | ---- | -----------
-`placeholder` | `placeholder` | placeholder
+`_embedded.members` | `Array` | A list of the workspace members
 
 #### Links
 
 Relation | Description
 -------- | -----------
-`placeholder` | placeholder
+`self` | The current resource
+
+<!-- ================ -->
+
+
+<!-- ================ -->
+## View a workspace member
+GET
+{:.label .label-GET}
+
+A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
+
+### Request
+#### Body
+#### cURL Example
+{% include snippets/workspaces/view-a-workspace-member/curl-request.md %}
+
+#### HTTP Example
+{% include snippets/workspaces/view-a-workspace-member/http-request.md %}
+
+### Response
+#### Body
+{% include snippets/workspaces/view-a-workspace-member/response-body.md %}
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The member profile ID
+`name` | `String` | The member profile name
+
+#### Links
+
+Relation | Description
+-------- | -----------
+`self` | The current resource
 
 <!-- ================ -->
