@@ -221,7 +221,7 @@ DELETE
 {:.label .label-DELETE}
 
 ### Prerequisites
-- Only profiles with the relevant permissions may delete workspaces.
+- Only profiles with the relevant permissions may delete workspaces
 
 ### Request
 #### cURL Example
@@ -229,4 +229,87 @@ DELETE
 
 #### HTTP Example
 {% include snippets/workspaces/delete-a-workspace/http-request.md %}
+<!-- ================ -->
+
+
+<!-- ================ -->
+## Create a workspace invitation
+POST
+{:.label .label-POST}
+
+`/workspace/{workspace-id}/invite`
+
+### Prerequisites
+- Must be a member of the workspace
+
+### Request
+#### Body
+{% comment %}
+{% include snippets/workspaces/create-a-workspace-invitation/request-body.md %}
+{% endcomment %}
+
+Path | Type | Description | Constraints
+---- | ---- | ----------- | -----------
+`email` | `String` | The workspace name | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
+
+<!-- ================ -->
+
+
+<!-- ================ -->
+## View sent workspace invitations
+GET
+{:.label .label-GET}
+
+`/workspace/{workspace-id}/invitations`
+
+Returns workspace-specific invitations
+
+### Prerequisites
+- Must be an owner profile
+
+### Response
+#### Body
+{% comment %}
+{% include snippets/workspaces/view-a-workspace-member/response-body.md %}
+{% endcomment %}
+
+Path | Type | Description
+---- | ---- | -----------
+`_embedded.invitations` | `Array` | A list of all the created invitations to the workspace
+`_embedded.invitations.id` | `String` | The invitation ID
+`_embedded.invitations.created` | `String` | A timestamp denoting when the invitation was created
+`_embedded.invitations.lastModified` | `String` | A timestamp denoting when the invitation was last modified
+`_embedded.invitations.status` | `String` | The current status of the invitation
+`_embedded.invitations.email` | `String` | The email address the invitation is targeted at
+`_embedded.invitations.creator` | `JSON Object` | The member of the workspace responsible for creating the invitation
+`_embedded.invitations.creator.id` | `String` | The member profile ID
+`_embedded.invitations.creator.name` | `String` | The member profile name
+
+<!-- ================ -->
+
+
+<!-- ================ -->
+## Accept a workspace invitation
+PATCH
+{:.label .label-PATCH}
+
+`/workspace/{workspace-id}/invitations/{invitation-id}/accept`
+
+Accepts an invitation
+
+<!-- ================ -->
+
+
+<!-- ================ -->
+## Cancel a workspace invitation
+DELETE
+{:.label .label-DELETE}
+
+`/workspace/{workspace-id}/invitations/{invitation-id}/cancel`
+
+Cancels an invitation
+
+### Prerequisites
+- Must be an owner profile
+
 <!-- ================ -->

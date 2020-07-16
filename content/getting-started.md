@@ -57,10 +57,14 @@ The response received should be similar to that in the [view workspaces response
                         "href": "https://catalog-staging.matatika.com/api/workspaces/<WORKSPACE_ID>",
                         "type": "DELETE"
                     },
+                    "make workspace default": {
+                        "href": "https://catalog-staging.matatika.com/api/workspaces/<WORKSPACE_ID>/default",
+                        "type": "POST"
+                    },
                     "self": {
                         "href": "https://catalog-staging.matatika.com/api/workspaces/<WORKSPACE_ID>"
                     },
-                    "profiles": {
+                    "members": {
                         "href": "https://catalog-staging.matatika.com/api/workspaces/<WORKSPACE_ID>/profiles",
                         "type": "GET"
                     },

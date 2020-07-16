@@ -5,4 +5,4 @@ permalink: /datasets
 nav_order: 5
 ---
 
-# Datasets
+# {{page.title}}

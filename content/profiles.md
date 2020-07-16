@@ -39,7 +39,7 @@ Relation | Description
 
 
 <!-- ================ -->
-## View a profiles
+## View a profile
 GET
 {: .label .label-GET}
 
