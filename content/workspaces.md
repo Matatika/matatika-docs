@@ -67,7 +67,7 @@ Relation | Description
 <!-- ================ -->
 
 <!-- ================ -->
-## Initialise a workspace
+## Initialise a new workspace
 POST
 {:.label .label-POST}
 
@@ -102,8 +102,7 @@ Relation | Description
 
 
 <!-- ================ -->
-## Create or modify a workspace
-
+## Create or update a workspace
 PUT
 {:.label .label-PUT}
 
@@ -148,23 +147,6 @@ Relation | Description
 `make workspace default` | Set the workspace as the default workspace
 `profiles` | The profiles with access to the workspace
 
-<!-- ================ -->
-
-
-<!-- ================ -->
-## Delete a workspace
-DELETE
-{:.label .label-DELETE}
-
-### Prerequisites
-- Only profiles with the relevant permissions may delete workspaces.
-
-### Request
-#### cURL Example
-{% include snippets/workspaces/delete-a-workspace/curl-request.md %}
-
-#### HTTP Example
-{% include snippets/workspaces/delete-a-workspace/http-request.md %}
 <!-- ================ -->
 
 
@@ -230,4 +212,21 @@ Relation | Description
 -------- | -----------
 `self` | The current resource
 
+<!-- ================ -->
+
+
+<!-- ================ -->
+## Delete a workspace
+DELETE
+{:.label .label-DELETE}
+
+### Prerequisites
+- Only profiles with the relevant permissions may delete workspaces.
+
+### Request
+#### cURL Example
+{% include snippets/workspaces/delete-a-workspace/curl-request.md %}
+
+#### HTTP Example
+{% include snippets/workspaces/delete-a-workspace/http-request.md %}
 <!-- ================ -->

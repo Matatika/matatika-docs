@@ -10,23 +10,84 @@ nav_order: 3
 Description of endpoint
 
 <!-- ================ -->
-## View profile
-
+## View all profiles
 GET
 {: .label .label-GET}
+
+### Request
+#### HTTP Example
+{% include snippets/profiles/view-all-profiles/http-request.md %}
+
+#### cURL Example
+{% include snippets/profiles/view-all-profiles/curl-request.md %}
+
+### Response
+#### Body
+{% include snippets/profiles/view-all-profiles/response-body.md %}
+
+Path | Type | Description
+---- | ---- | -----------
+`_embedded.profiles` | `Array` | A list of profiles
+
+#### Links
+
+Relation | Description
+-------- | -----------
+`self` | The current resource
+
 <!-- ================ -->
 
 
 <!-- ================ -->
-## Update profile
+## View a profiles
+GET
+{: .label .label-GET}
 
+### Request
+#### HTTP Example
+{% include snippets/profiles/view-a-profile/http-request.md %}
+
+#### cURL Example
+{% include snippets/profiles/view-a-profile/curl-request.md %}
+
+### Response
+#### Body
+{% include snippets/profiles/view-a-profile/response-body.md %}
+
+### Response
+#### Body
+{% include snippets/profiles/view-a-profile/response-body.md %}
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `string` | The profile ID 
+`name` | `String` | The profile name
+`phone` | `String` | The profile phone number
+`email` | `String` | The profile email address
+`defaultWorkspace` | `JSON Object` | The profile default workspace object
+
+#### Links
+
+Relation | Description
+-------- | -----------
+`self` | The current resource
+`update profile` | Update the profile
+`delete profile` | Delete the profile
+`workspaces` | View the workspaces the profile is a member of
+`change profile default workspace` | Set the workspace as the default workspace
+`new workspace` | Initialise a new workspace
+
+<!-- ================ -->
+
+
+<!-- ================ -->
+## Create or update a profile
 PUT
 {: .label .label-PUT}
 
 ### Request
 #### Body
-
-{% include snippets/profiles/modify-a-profile/request-body.md %}
+{% include snippets/profiles/update-a-profile/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
@@ -36,8 +97,7 @@ Path | Type | Description | Constraints
 
 ### Response
 #### Body
-
-{% include snippets/profiles/modify-a-profile/response-body.md %}
+{% include snippets/profiles/update-a-profile/response-body.md %}
 
 Path | Type | Description
 ---- | ---- | -----------
