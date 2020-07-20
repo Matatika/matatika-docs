@@ -2,7 +2,7 @@
 The Matatika public developer documentation.
 
 ## Run Locally
-### Prerequisites
+### Prerequisites 
 - [Docker](https://docs.docker.com/get-docker/) installed
 - Ability to run API SITs, which in turn auto-generate the required snippets
 
@@ -21,7 +21,7 @@ Run `import` from the Makefile, providing the argument `FROM_DIR` with the relat
 make import FROM_DIR=../matatika-sit/target/generated-snippets/
 ```
 
-Run `docker-compose up` to serve the static site on [localhost:4000](http://localhost:4000/). Note that this process may take a little while to complete on the first time due to dependency installation.
+Run `docker-compose up` to serve the static site on [localhost:4000/docs/](http://localhost:4000/docs/). Note that this process may take a little while to complete on the first time due to dependency installation.
 
 ```terminal
 docker-compose up
@@ -39,7 +39,7 @@ Consider a directory structure with the following markdown files:
 |-- (Jekyll files)
 |
 |-- index.md
-|-- auth.md
+|-- getting-started.md
 |-- examples.md
 |
 |-- (Jekyll files)
@@ -50,11 +50,11 @@ The pages are served as follows: (.html extensions hidden due to `permalink: pre
 
 | Markdown File | Relative Path | Page serve URL
 | --- | --- | ---
-| index | ./ | localhost:4000
-| auth | ./ | localhost:4000/auth
-| examples | ./ | localhost:4000/examples
+| index | ./ | localhost:4000/docs/
+| getting-started | ./ | localhost:4000/docs/getting-started
+| examples | ./ | localhost:4000/docs/examples
 
-Now consider a similar scenario where *auth* and *examples* are enclosed within a new directory *content*:
+Now consider a similar scenario where *getting-started* and *examples* are enclosed within a new directory *content*:
 
 ```
 +-- ..
@@ -62,7 +62,7 @@ Now consider a similar scenario where *auth* and *examples* are enclosed within 
 |
 |-- index.md
 |-- content
-|   | auth.md
+|   | getting-started.md
 |   | examples.md
 |
 |-- (Jekyll files)
@@ -73,9 +73,9 @@ The pages are now served as follows:
 
 | Markdown File | Relative Path | Page serve URL
 | --- | --- | ---
-| index | ./ | localhost:4000
-| auth | ./content/ | localhost:4000/content/auth
-| examples | ./content/ | localhost:4000/content/examples
+| index | ./ | localhost:4000/docs/
+| getting-started | ./content/ | localhost:4000/docs/content/getting-started
+| examples | ./content/ | localhost:4000/docs/content/examples
 
 #### Front Matter
 New markdown files must contain relevant [front matter](https://jekyllrb.com/docs/front-matter/) to be displayed correctly:
