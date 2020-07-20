@@ -9,19 +9,21 @@ nav_order: 2
 
 
 ## Sign Up
-Head to the [Matatika website](https://matatika.com) and sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
+Head to the [Matatika website]({{ site.matatika_www_url }}) and sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
 
 ## Create a Workspace
-Access the Matatika app [here](https://app.matatika.com) or through the website links. The first time you access this service, you will be prompted to create a new workspace: fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
+Access the Matatika app [here]({{ site.matatika_app_url }}) or through the website links. The first time you visit this service, you will be prompted to create a new workspace: fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
 
 ![new workspace in the matatika app](assets/img/app-new-workspace.png)
 
 Once completed, you will have full access to the app. Keep the name you gave your workspace in mind for the [Making Your First API Call](getting-started#making-your-first-api-call) step.
 
 ## Getting a Token
-A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]().
+A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]( {{ site.apikeysurl }} ).
 - This token will be vaild for **___ seconds** under the condition that the user remains logged into the app
 - If the user logs out of the app during the token's active period or the token expires, the token is revoked and a new one will be issued on a subsequent sign-in
+
+![api keys in the matatika app](assets/img/app-api-keys.png)
 
 ### Permanent Access
 If continuous access to the Matatika API is required for development purposes, you can register for a unique client ID and secret [here]().
