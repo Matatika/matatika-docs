@@ -237,44 +237,54 @@ DELETE
 POST
 {:.label .label-POST}
 
-`/workspace/{workspace-id}/invite`
+`/workspaces/{workspace-id}/invite`
 
 ### Prerequisites
 - Must be a member of the workspace
 
 ### Request
 #### Body
-{% comment %}
 {% include snippets/workspaces/create-a-workspace-invitation/request-body.md %}
-{% endcomment %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
-`email` | `String` | The workspace name | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
+`email` | `String` | The email address of the invitation recipient | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
+
+#### cURL Example
+{% include snippets/workspaces/create-a-workspace-invitation/curl-request.md %}
+
+#### HTTP Example
+{% include snippets/workspaces/create-a-workspace-invitation/http-request.md %}
 
 <!-- ================ -->
 
 
 <!-- ================ -->
-## View sent workspace invitations
+## View all workspace invitations
 GET
 {:.label .label-GET}
 
-`/workspace/{workspace-id}/invitations`
+`/workspaces/{workspace-id}/invitations`
 
 Returns workspace-specific invitations
 
 ### Prerequisites
 - Must be an owner profile
 
+### Request
+#### cURL Example
+{% include snippets/workspaces/view-all-workspace-invitations/curl-request.md %}
+
+#### HTTP Example
+{% include snippets/workspaces/view-all-workspace-invitations/http-request.md %}
+
 ### Response
 #### Body
-{% comment %}
-{% include snippets/workspaces/view-a-workspace-member/response-body.md %}
-{% endcomment %}
+{% include snippets/workspaces/view-all-workspace-invitations/response-body.md %}
 
 Path | Type | Description
 ---- | ---- | -----------
+`embedded` | `JSON Object` | The resource collection container
 `_embedded.invitations` | `Array` | A list of all the created invitations to the workspace
 `_embedded.invitations.id` | `String` | The invitation ID
 `_embedded.invitations.created` | `String` | A timestamp denoting when the invitation was created
@@ -284,18 +294,10 @@ Path | Type | Description
 `_embedded.invitations.creator` | `JSON Object` | The member of the workspace responsible for creating the invitation
 `_embedded.invitations.creator.id` | `String` | The member profile ID
 `_embedded.invitations.creator.name` | `String` | The member profile name
-
-<!-- ================ -->
-
-
-<!-- ================ -->
-## Accept a workspace invitation
-PATCH
-{:.label .label-PATCH}
-
-`/workspace/{workspace-id}/invitations/{invitation-id}/accept`
-
-Accepts an invitation
+`_embedded.invitations._links` | `JSON Object` | The invitation resource HAL links
+`_embedded.invitations._links.cancel` | `JSON Object` | Cancel the invitation
+`_embedded.invitations._links.cancel.href` | `String` | The cancel invitation request URL
+`_embedded.invitations._links.cancel.type` | `String` | The cancel invitation applicable HTTP method
 
 <!-- ================ -->
 
@@ -305,11 +307,18 @@ Accepts an invitation
 DELETE
 {:.label .label-DELETE}
 
-`/workspace/{workspace-id}/invitations/{invitation-id}/cancel`
+`/workspaces/{workspace-id}/invitations/{invitation-id}/cancel`
 
 Cancels an invitation
 
 ### Prerequisites
 - Must be an owner profile
+
+### Request
+#### cURL Example
+{% include snippets/workspaces/cancel-a-workspace-invitation/curl-request.md %}
+
+#### HTTP Example
+{% include snippets/workspaces/cancel-a-workspace-invitation/http-request.md %}
 
 <!-- ================ -->
