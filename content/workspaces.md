@@ -9,7 +9,8 @@ nav_order: 4
 
 Workspaces allow users to operate within isolated instances of the Matatika service. This is useful for seperating profiles based on the data they require access to.
 
-<!-- ================ -->
+---
+
 ## View all workspaces
 GET
 {:.label .label-GET}
@@ -40,10 +41,8 @@ Relation | Description
 -------- | -----------
 `self` | The current resource
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## View a workspace
 GET
 {:.label .label-GET}
@@ -77,9 +76,8 @@ Relation | Description
 -------- | -----------
 `self` | The current resource
 
-<!-- ================ -->
+---
 
-<!-- ================ -->
 ## Initialise a new workspace
 POST
 {:.label .label-POST}
@@ -113,10 +111,8 @@ Relation | Description
 -------- | -----------
 `create workspace` | The resource to create the workspace
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## Create or update a workspace
 PUT
 {:.label .label-PUT}
@@ -167,10 +163,8 @@ Relation | Description
 `make workspace default` | Set the workspace as the default workspace
 `profiles` | The profiles with access to the workspace
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## View all workspace members
 GET
 {:.label .label-GET}
@@ -204,10 +198,8 @@ Relation | Description
 -------- | -----------
 `self` | The current resource
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## View a workspace member
 GET
 {:.label .label-GET}
@@ -242,10 +234,8 @@ Relation | Description
 -------- | -----------
 `self` | The current resource
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## Delete a workspace
 DELETE
 {:.label .label-DELETE}
@@ -264,10 +254,9 @@ Deletes the workspace `workspace-id`.
 
 #### HTTP Example
 {% include snippets/workspaces/delete-a-workspace/http-request.md %}
-<!-- ================ -->
 
+---
 
-<!-- ================ -->
 ## Create a workspace invitation
 POST
 {:.label .label-POST}
@@ -294,10 +283,8 @@ Path | Type | Description | Constraints
 #### HTTP Example
 {% include snippets/workspaces/create-a-workspace-invitation/http-request.md %}
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## View all workspace invitations
 GET
 {:.label .label-GET}
@@ -338,10 +325,8 @@ Path | Type | Description
 `_embedded.invitations._links.cancel.href` | `String` | The cancel invitation request URL
 `_embedded.invitations._links.cancel.type` | `String` | The cancel invitation applicable HTTP method
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## Cancel a workspace invitation
 DELETE
 {:.label .label-DELETE}
@@ -361,4 +346,4 @@ Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
 #### HTTP Example
 {% include snippets/workspaces/cancel-a-workspace-invitation/http-request.md %}
 
-<!-- ================ -->
+---

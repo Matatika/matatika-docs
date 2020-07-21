@@ -9,7 +9,8 @@ nav_order: 3
 
 Description of endpoint
 
-<!-- ================ -->
+---
+
 ## View all profiles
 GET
 {: .label .label-GET}
@@ -38,10 +39,8 @@ Relation | Description
 -------- | -----------
 `self` | The current resource
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## View a profile
 GET
 {: .label .label-GET}
@@ -79,10 +78,8 @@ Relation | Description
 `change profile default workspace` | Set the workspace as the default workspace
 `new workspace` | Initialise a new workspace
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## Create or update a profile
 PUT
 {: .label .label-PUT}
@@ -129,10 +126,8 @@ Relation | Description
 `change profile default workspace` | Set the workspace as the default workspace
 `new workspace` | Initialise a new workspace
 
-<!-- ================ -->
+---
 
-
-<!-- ================ -->
 ## Set a default workspace
 PATCH
 {:.label .label-PATCH}
@@ -182,4 +177,4 @@ Relation | Description
 `change profile default workspace` | Set the workspace as the default workspace
 `new workspace` | Initialise a new workspace
 
-<!-- ================ -->
+---

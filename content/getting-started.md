@@ -20,7 +20,7 @@ Once completed, you will have full access to the app. Keep the name you gave you
 
 ## Getting a Token
 A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]( {{ site.apikeysurl }} ).
-- This token will be vaild for **___ seconds** under the condition that the user remains logged into the app
+- This token will be vaild for **2 hours** under the condition that the user remains logged into the app
 - If the user logs out of the app during the token's active period or the token expires, the token is revoked and a new one will be issued on a subsequent sign-in
 
 ![api keys in the matatika app](assets/img/app-api-keys.png)
