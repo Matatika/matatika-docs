@@ -62,6 +62,42 @@
     }
 }
 
+.path {
+    display: inline-block;
+    padding: 0.16em 0.42em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    vertical-align: middle;
+    letter-spacing: 0.1em;
+}
+
+@media (min-width: 31.25rem) {
+    .path {
+        font-size: 12px !important;
+        font-weight: 400;
+    }
+}
+
+.path-GET {
+    color: #1EB06E;
+}
+
+.path-POST {
+    color: #1E8A9E;
+}
+
+.path-PUT {
+    color: #2A57A9;
+}
+
+.path-DELETE {
+    color: #F12948;
+}
+
+.path-PATCH {
+    color: #971FA8;
+}
+
 // HTTP method labels
 // ----------------
 .label-GET {
@@ -83,10 +119,10 @@
 .label-PATCH {
     background-color: #971FA8;
 }
-// ----------------
+// ================
 
 // button outline states
-// ----------------
+// ================
 .btn:focus {
         box-shadow: 0 0 0 3px rgba($color: $matatika-default, $alpha: 0.5);
 }

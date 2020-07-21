@@ -14,6 +14,9 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 GET
 {:.label .label-GET}
 
+/api/workspaces
+{:.path .path-GET}
+
 ### Request
 #### HTTP Example
 {% include snippets/workspaces/view-all-workspaces/http-request.md %}
@@ -30,7 +33,6 @@ Path | Type | Description
 `_embedded.workspaces` | `Array` | A list of workspaces the profile is associated with
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -42,6 +44,9 @@ Relation | Description
 ## View a workspace
 GET
 {:.label .label-GET}
+
+/api/workspaces/{workspace-id}
+{:.path .path-GET}
 
 ### Request
 #### HTTP Example
@@ -59,7 +64,6 @@ Path | Type | Description
 `_embedded.workspaces` | `Array` | A list of workspaces the profile is associated with
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -70,6 +74,9 @@ Relation | Description
 ## Initialise a new workspace
 POST
 {:.label .label-POST}
+
+/api/workspaces
+{:.path .path-POST}
 
 ### Prerequisites
 - Only profiles with the relevant permissions may initialise workspaces.
@@ -93,7 +100,6 @@ Path | Type | Description
 `defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `create workspace` | The resource to create the workspace
@@ -105,6 +111,9 @@ Relation | Description
 ## Create or update a workspace
 PUT
 {:.label .label-PUT}
+
+/api/workspaces/{workspace-id}
+{:.path .path-PUT}
 
 ### Prerequisites
 - A workspace is required to have been [initialised](#initialise-a-workspace) in order to create it.
@@ -138,7 +147,6 @@ Path | Type | Description
 `defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -155,10 +163,12 @@ Relation | Description
 GET
 {:.label .label-GET}
 
+/api/workspaces/{workspace-id}/members
+{:.path .path-GET}
+
 A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
 
 ### Request
-#### Body
 #### cURL Example
 {% include snippets/workspaces/view-all-workspace-members/curl-request.md %}
 
@@ -174,7 +184,6 @@ Path | Type | Description
 `_embedded.members` | `Array` | A list of the workspace members
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -187,10 +196,12 @@ Relation | Description
 GET
 {:.label .label-GET}
 
+/api/workspaces/{workspace-id}/members/{member-id}
+{:.path .path-GET}
+
 A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
 
 ### Request
-#### Body
 #### cURL Example
 {% include snippets/workspaces/view-a-workspace-member/curl-request.md %}
 
@@ -207,7 +218,6 @@ Path | Type | Description
 `name` | `String` | The member profile name
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -219,6 +229,9 @@ Relation | Description
 ## Delete a workspace
 DELETE
 {:.label .label-DELETE}
+
+/api/workspaces/{workspace-id}
+{:.path .path-DELETE}
 
 ### Prerequisites
 - Only profiles with the relevant permissions may delete workspaces
@@ -237,7 +250,8 @@ DELETE
 POST
 {:.label .label-POST}
 
-`/workspaces/{workspace-id}/invite`
+/api/workspaces/{workspace-id}/invitations
+{:.path .path-POST}
 
 ### Prerequisites
 - Must be a member of the workspace
@@ -264,7 +278,8 @@ Path | Type | Description | Constraints
 GET
 {:.label .label-GET}
 
-`/workspaces/{workspace-id}/invitations`
+/api/workspaces/{workspace-id}/invitations
+{:.path .path-GET}
 
 Returns workspace-specific invitations
 
@@ -284,7 +299,7 @@ Returns workspace-specific invitations
 
 Path | Type | Description
 ---- | ---- | -----------
-`embedded` | `JSON Object` | The resource collection container
+`_embedded` | `JSON Object` | The resource collection container
 `_embedded.invitations` | `Array` | A list of all the created invitations to the workspace
 `_embedded.invitations.id` | `String` | The invitation ID
 `_embedded.invitations.created` | `String` | A timestamp denoting when the invitation was created
@@ -307,7 +322,8 @@ Path | Type | Description
 DELETE
 {:.label .label-DELETE}
 
-`/workspaces/{workspace-id}/invitations/{invitation-id}/cancel`
+/api/workspaces/{workspace-id}/invitations/{invitation-id}
+{:.path .path-DELETE}
 
 Cancels an invitation
 

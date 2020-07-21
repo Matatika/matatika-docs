@@ -12,7 +12,8 @@ nav_order: 6
 GET
 {:.label .label-GET}
 
-`/invitations`
+/api/invitations
+{:.path .path-GET}
 
 Returns all invitations sent by the user
 
@@ -24,7 +25,8 @@ Returns all invitations sent by the user
 GET
 {:.label .label-GET}
 
-`/invitations?email={user-email}`
+/api/invitations?=email={user-email}
+{:.path .path-GET}
 
 Returns all invitations intended for the user
 

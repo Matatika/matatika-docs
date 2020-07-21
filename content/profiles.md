@@ -14,6 +14,9 @@ Description of endpoint
 GET
 {: .label .label-GET}
 
+/api/profiles
+{:.path .path-GET}
+
 ### Request
 #### HTTP Example
 {% include snippets/profiles/view-all-profiles/http-request.md %}
@@ -30,7 +33,6 @@ Path | Type | Description
 `_embedded.profiles` | `Array` | A list of profiles
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -42,6 +44,9 @@ Relation | Description
 ## View a profile
 GET
 {: .label .label-GET}
+
+/api/profiles/{profile-id}
+{:.path .path-GET}
 
 ### Request
 #### HTTP Example
@@ -67,7 +72,6 @@ Path | Type | Description
 `defaultWorkspace` | `JSON Object` | The profile default workspace object
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -85,6 +89,9 @@ Relation | Description
 PUT
 {: .label .label-PUT}
 
+/api/profiles/{profile-id}
+{:.path .path-PUT}
+
 ### Request
 #### Body
 {% include snippets/profiles/update-a-profile/request-body.md %}
@@ -94,6 +101,12 @@ Path | Type | Description | Constraints
 `name` | `String` | The profile name | Must not be empty
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address | Must not be empty; must be a valid email address
+
+#### HTTP Example
+{% include snippets/profiles/update-a-profile/http-request.md %}
+
+#### cURL Example
+{% include snippets/profiles/update-a-profile/curl-request.md %}
 
 ### Response
 #### Body
@@ -108,7 +121,6 @@ Path | Type | Description
 `defaultWorkspace` | `JSON Object` | The profile default workspace object
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -126,26 +138,29 @@ Relation | Description
 PATCH
 {:.label .label-PATCH}
 
+/api/profiles/{profile-id}
+{:.path .path-PATCH}
+
 A workspace can be set as default, which defines the environment the Matatika app will initially load for a given profile. The default workspace setting persists only for the profile that sets it.
 
 ### Request
 #### Body
-{% include snippets/profiles/set-a-workspace-as-default/request-body.md %}
+{% include snippets/profiles/set-a-default-workspace/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `defaultWorkspace` | `JSON Object` | Default workspace object |
 `defaultWorkspace.id` | `String` | The default workspace ID | Must be a valid and existing UUID
 
-#### cURL Example
-{% include snippets/profiles/set-a-workspace-as-default/curl-request.md %}
-
 #### HTTP Example
-{% include snippets/profiles/set-a-workspace-as-default/http-request.md %}
+{% include snippets/profiles/set-a-default-workspace/http-request.md %}
+
+#### cURL Example
+{% include snippets/profiles/set-a-default-workspace/curl-request.md %}
 
 ### Response
 #### Body
-{% include snippets/profiles/set-a-workspace-as-default/response-body.md %}
+{% include snippets/profiles/set-a-default-workspace/response-body.md %}
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -158,7 +173,6 @@ Path | Type | Description
 `defaultWorkspace.id` | `String` | The profile default workspace ID
 
 #### Links
-
 Relation | Description
 -------- | -----------
 `self` | The current resource
