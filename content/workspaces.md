@@ -285,17 +285,17 @@ Path | Type | Description | Constraints
 
 ---
 
-## View all workspace invitations
+## View workspace invitations
 GET
 {:.label .label-GET}
 
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-Returns all the active invitations to the workspace `workspace-id`.
+Returns active invitations to the workspace `workspace-id` specific to the user. As a workspace owner, this instead returns all active invitations to the workspace across all members.
 
 ### Prerequisites
-- The user must be the owner of workspace `workspace-id`
+- The user must be a member of the workspace `workspace-id`
 
 ### Request
 #### cURL Example
