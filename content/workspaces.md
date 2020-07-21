@@ -17,6 +17,8 @@ GET
 /api/workspaces
 {:.path .path-GET}
 
+Returns all workspaces.
+
 ### Request
 #### HTTP Example
 {% include snippets/workspaces/view-all-workspaces/http-request.md %}
@@ -33,6 +35,7 @@ Path | Type | Description
 `_embedded.workspaces` | `Array` | A list of workspaces the profile is associated with
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -47,6 +50,11 @@ GET
 
 /api/workspaces/{workspace-id}
 {:.path .path-GET}
+
+Returns the workspace `workspace-id`.
+
+### Prerequisites
+- The user must be a member of the workspace `workspace-id`
 
 ### Request
 #### HTTP Example
@@ -64,6 +72,7 @@ Path | Type | Description
 `_embedded.workspaces` | `Array` | A list of workspaces the profile is associated with
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -78,8 +87,7 @@ POST
 /api/workspaces
 {:.path .path-POST}
 
-### Prerequisites
-- Only profiles with the relevant permissions may initialise workspaces.
+Initialises a new workspace with a UUID. Post-initialisation, the workspace can be created and subsequently updated.
 
 ### Request
 #### HTTP Example
@@ -100,6 +108,7 @@ Path | Type | Description
 `defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `create workspace` | The resource to create the workspace
@@ -115,10 +124,12 @@ PUT
 /api/workspaces/{workspace-id}
 {:.path .path-PUT}
 
+Creates or updates the workspace `workspace-id`.
+
 ### Prerequisites
-- A workspace is required to have been [initialised](#initialise-a-workspace) in order to create it.
-- A workspace is required to have been created in order to update it.
-- Only profiles with the relevant permissions may create or update workspaces.
+- The user must be the owner of workspace `workspace-id`
+- The workspace must have been [initialised](#initialise-a-workspace) in order to create it
+- The workspace must have been created in order to update it
 
 ### Request
 #### Body
@@ -147,6 +158,7 @@ Path | Type | Description
 `defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -166,7 +178,10 @@ GET
 /api/workspaces/{workspace-id}/members
 {:.path .path-GET}
 
-A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
+Returns all members of the workspace `workspace-id`. A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
+
+### Prerequisites
+- The user must be a member of the workspace `workspace-id`
 
 ### Request
 #### cURL Example
@@ -184,6 +199,7 @@ Path | Type | Description
 `_embedded.members` | `Array` | A list of the workspace members
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -199,7 +215,10 @@ GET
 /api/workspaces/{workspace-id}/members/{member-id}
 {:.path .path-GET}
 
-A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
+Returns the member `member-id` of the workspace `workspace-id`.
+
+### Prerequisites
+- The user must be a member of the workspace `workspace-id`
 
 ### Request
 #### cURL Example
@@ -218,6 +237,7 @@ Path | Type | Description
 `name` | `String` | The member profile name
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -233,8 +253,10 @@ DELETE
 /api/workspaces/{workspace-id}
 {:.path .path-DELETE}
 
+Deletes the workspace `workspace-id`.
+
 ### Prerequisites
-- Only profiles with the relevant permissions may delete workspaces
+- The user must be the owner of workspace `workspace-id`
 
 ### Request
 #### cURL Example
@@ -253,8 +275,10 @@ POST
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-POST}
 
+Creates a workspace invitation to the workspace `workspace-id`.
+
 ### Prerequisites
-- Must be a member of the workspace
+- The user must be a member of the workspace `workspace-id`
 
 ### Request
 #### Body
@@ -281,10 +305,10 @@ GET
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-Returns workspace-specific invitations
+Returns all the active invitations to the workspace `workspace-id`.
 
 ### Prerequisites
-- Must be an owner profile
+- The user must be the owner of workspace `workspace-id`
 
 ### Request
 #### cURL Example
@@ -325,10 +349,10 @@ DELETE
 /api/workspaces/{workspace-id}/invitations/{invitation-id}
 {:.path .path-DELETE}
 
-Cancels an invitation
+Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
 
 ### Prerequisites
-- Must be an owner profile
+- The user must be the owner of workspace `workspace-id`
 
 ### Request
 #### cURL Example

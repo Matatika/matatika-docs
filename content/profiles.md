@@ -33,6 +33,7 @@ Path | Type | Description
 `_embedded.profiles` | `Array` | A list of profiles
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -59,10 +60,6 @@ GET
 #### Body
 {% include snippets/profiles/view-a-profile/response-body.md %}
 
-### Response
-#### Body
-{% include snippets/profiles/view-a-profile/response-body.md %}
-
 Path | Type | Description
 ---- | ---- | -----------
 `id` | `string` | The profile ID 
@@ -72,6 +69,7 @@ Path | Type | Description
 `defaultWorkspace` | `JSON Object` | The profile default workspace object
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -121,6 +119,7 @@ Path | Type | Description
 `defaultWorkspace` | `JSON Object` | The profile default workspace object
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
@@ -173,6 +172,7 @@ Path | Type | Description
 `defaultWorkspace.id` | `String` | The profile default workspace ID
 
 #### Links
+
 Relation | Description
 -------- | -----------
 `self` | The current resource
