@@ -4,6 +4,8 @@ logo: "/images/Logo-small.svg"
 permalink: pretty
 
 theme: just-the-docs
+color_scheme: matatika
+
 plugins:
   - jekyll-feed
 

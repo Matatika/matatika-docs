@@ -2,31 +2,25 @@
     function toggleMenu(e) {
         e = e || window.event;
         e.preventDefault();
-        
-        const mainNav = document.querySelector('.js-main-nav');
-        const pageHeader = document.querySelector('.js-page-header');
-        const navTrigger = document.querySelector('.res-nav-link');
 
+        const mainNav = document.querySelector('.site-nav');
         // scroll to the top
         window.scrollTo(0, 0);
-        
+
         mainNav.classList.toggle('nav-open');
-        pageHeader.classList.toggle('nav-open');
-        navTrigger.classList.toggle('nav-open');
         var hamburgers = document.querySelectorAll(".hamburger");
         if (hamburgers.length > 0) {
-          hamburgers.forEach(function(hamburger) {
-            hamburger.classList.toggle("is-active");
-          });
+            hamburgers.forEach(function (hamburger) {
+                hamburger.classList.toggle("is-active");
+            });
         }
     }
 </script>
 
 <header id="header">
     <div class="content_1280">
-        <a href="/" class="logo small"><img
-                src="/images/Logo-small.svg"
-                alt="Matatika"><noscript><img src="/images/Logo-small.svg" alt="Matatika" /></noscript></a>
+        <a href="/" class="logo small"><img src="/images/Logo-small.svg" alt="Matatika"><noscript><img
+                    src="/images/Logo-small.svg" alt="Matatika" /></noscript></a>
         <div class="leftBorder">
             <div class="breadcrumb desktop animate fadeIn animateMe">
                 <div id="breadcrumbs"><span><span class="breadcrumb_last"
@@ -39,7 +33,9 @@
             Show Menu
         </div>
         <div class="hamburger hamburger--spin res-nav-link" onclick="toggleMenu(event)">
-            <div class="hamburger-box"><div class="hamburger-inner"></div></div>
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
         </div>
 
 

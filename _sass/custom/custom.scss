@@ -1,131 +1,241 @@
-////
-//// Typography
-////
+.site-header {
+    display: none;
+}
 
-$body-font-family: 'Montserrat', sans-serif;
-//$mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace;
-//$root-font-size: 16px;         // Base font-size for rems
-//$body-line-height: 1.4;
-//$content-line-height: 1.5;
-//$body-heading-line-height: 1.15;
+.site-footer {
+    display: none;
+}
 
-////
-//// Colors
-////
+.main {
+    margin-top: 80px;
+    // max-width: none;
+}
 
-//$white: #fff;
+.nav-open {
+    margin-top: 80px;
+}
 
-//$grey-dk-000: #959396;
-//$grey-dk-100: #5c5962;
-//$grey-dk-200: #44434d;
-//$grey-dk-250: #302d36;
-//$grey-dk-300: #27262b;
+@media (min-width: 50rem) {
+    .hamburger {
+        display: none !important;
+    }
+}
 
-//$grey-lt-000: #f5f6fa;
-//$grey-lt-100: #eeebee;
-//$grey-lt-200: #ecebed;
-//$grey-lt-300: #e6e1e8;
+.path {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    font-weight: 400;
+}
 
-//$purple-000: #7253ed;
-//$purple-100: #5e41d0;
-//$purple-200: #4e26af;
-//$purple-300: #381885;
+@media (min-width: 31.25rem) {
+    .path {
+        font-size: 12px !important;
+    }
+}
 
-//$blue-000: #2c84fa;
-//$blue-100: #2869e6;
-//$blue-200: #264caf;
-//$blue-300: #183385;
+// Request paths
+.path-GET {
+    color: #1EB06E;
+}
 
-//$green-000: #41d693;
-//$green-100: #11b584;
-//$green-200: #009c7b;
-//$green-300: #026e57;
+.path-POST {
+    color: #1E8A9E;
+}
 
-//$yellow-000: #ffeb82;
-//$yellow-100: #fadf50;
-//$yellow-200: #f7d12e;
-//$yellow-300: #e7af06;
+.path-PUT {
+    color: #2A57A9;
+}
 
-//$red-000: #f77e7e;
-//$red-100: #f96e65;
-//$red-200: #e94c4c;
-//$red-300: #dd2e2e;
+.path-DELETE {
+    color: #F12948;
+}
 
-$matatika-default: #ffab2b;
+.path-PATCH {
+    color: #971FA8;
+}
+// ----------------
 
-//$body-background-color: $white;
-//$sidebar-color: $grey-lt-000;
-//$search-background-color: $white;
-//$table-background-color: $white;
-//$code-background-color: $grey-lt-000;
+// Request labels
+.label-GET {
+    background-color: #1EB06E;
+}
 
-//$body-text-color: $grey-dk-100;
-//$body-heading-color: $grey-dk-300;
-//$search-result-preview-color: $grey-dk-000;
-//$nav-child-link-color: $grey-dk-100;
-$link-color: $matatika-default;
-$btn-primary-color: $matatika-default;
-$base-button-color: #f7f7f7;
+.label-POST {
+    background-color: #1E8A9E;
+}
 
-////
-//// Spacing
-////
+.label-PUT {
+    background-color: #2A57A9;
+}
 
-//$spacing-unit: 1rem; // 1rem == 16px
+.label-DELETE {
+    background-color: #F12948;
+}
 
-//$spacers: (
-//sp-0: 0,
-//sp-1: $spacing-unit * 0.25,
-//sp-2: $spacing-unit * 0.5,
-//sp-3: $spacing-unit * 0.75,
-//sp-4: $spacing-unit,
-//sp-5: $spacing-unit * 1.5,
-//sp-6: $spacing-unit * 2,
-//sp-7: $spacing-unit * 2.5,
-//sp-8: $spacing-unit * 3,
-//sp-9: $spacing-unit * 3.5,
-//sp-10: $spacing-unit * 4
-//);
+.label-PATCH {
+    background-color: #971FA8;
+}
+// ----------------
 
-//$sp-1: map-get($spacers, sp-1); // 0.25 rem == 4px
-//$sp-2: map-get($spacers, sp-2); // 0.5  rem == 8px
-//$sp-3: map-get($spacers, sp-3); // 0.75 rem == 12px
-//$sp-4: map-get($spacers, sp-4); // 1    rem == 16px
-//$sp-5: map-get($spacers, sp-5); // 1.5  rem == 24px
-//$sp-6: map-get($spacers, sp-6); // 2    rem == 32px
-//$sp-7: map-get($spacers, sp-7); // 2.5  rem == 40px
-//$sp-8: map-get($spacers, sp-8); // 3    rem == 48px
-//$sp-9: map-get($spacers, sp-9); // 4    rem == 48px
-//$sp-10: map-get($spacers, sp-10); // 4.5  rem == 48px
+// button outline states
+.btn:focus {
+        box-shadow: 0 0 0 3px rgba($color: #ffab2b, $alpha: 0.5);
+}
 
-////
-//// Borders
-////
+.btn:focus:hover {
+        box-shadow: 0 0 0 3px rgba($color: #ffab2b, $alpha: 0.5);
+}
+// ----------------
 
-//$border: 1px solid;
-//$border-radius: 4px;
-//$border-color: $grey-lt-100;
+// header
+#header {
+    z-index: 200;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 
-////
-//// Grid system
-////
+    div {
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+    }
 
-//$gutter-spacing: $sp-6;
-//$gutter-spacing-sm: $sp-4;
-//$nav-width: 264px;
-//$nav-width-md: 248px;
-//$content-width: 800px;
-//$header-height: 60px;
-//$search-results-width: 500px;
+    .content_1280 {
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        padding: 8px 0;
+    }
 
-////
-//// Media queries in pixels
-////
+    .logo.small {
+        width: 150px;
+        display: inline-block;
+    }
 
-//$media-queries: (
-//xs: 320px,
-//sm: 500px,
-//md: $content-width,
-//lg: $content-width + $nav-width,
-//xl: 1400px
-//);
+    .logo img, .logo.small img{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .leftBorder {
+        margin-left: 16px;
+        padding-left: 14px;
+        border-left: #EE7A34 solid 1px;
+        color: #EE7A34;
+        font-weight: 600;
+        min-height: 26px;
+    }
+}
+// ----------------
+
+.highlight {
+    max-height: 16em;
+}
+
+
+.hamburger {
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    padding: 0px;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity, filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    z-index: 5;
+}
+.hamburger.is-active:hover, .hamburger:hover {
+    opacity: 1
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: #FFAB2B;
+}
+.hamburger.is-active {
+
+}
+.hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 24px
+}
+.hamburger-inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 0px;
+    background-color: #FFAB2B;
+    right: 0px;
+}
+header.shrink .hamburger-inner, header.shrink .hamburger-inner:after, header.shrink .hamburger-inner:before {
+    background-color: #FFAB2B;
+}
+.hamburger-inner:before {
+    width: 35px;
+}
+.hamburger-inner:after {
+    width: 35px;
+}
+
+.hamburger-inner:after, .hamburger-inner:before {
+    display: block;
+    content: ""
+}
+.hamburger-inner:before {
+    top: -10px;
+}
+.hamburger-inner:after {
+    bottom: -10px
+}
+.hamburger--spin .hamburger-inner {
+    transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+    transition-duration: .22s
+}
+.hamburger--spin .hamburger-inner:before {
+    transition: top .1s ease-in .25s, opacity .1s ease-in
+}
+.hamburger--spin .hamburger-inner:after {
+    transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19)
+}
+.hamburger--spin.is-active .hamburger-inner {
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transform: rotate(225deg)
+}
+.hamburger--spin.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s ease-out, opacity .1s ease-out .12s;
+    opacity: 0;
+    width: 35px;
+}
+.hamburger--spin.is-active .hamburger-inner:after {
+    bottom: 0;
+    transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+    transform: rotate(-90deg);
+    width: 35px;
+}
