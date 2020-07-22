@@ -21,9 +21,6 @@ GET
 Returns all workspaces.
 
 ### Request
-#### HTTP Example
-{% include snippets/workspaces/view-all-workspaces/http-request.md %}
-
 #### cURL Example
 {% include snippets/workspaces/view-all-workspaces/curl-request.md %}
 
@@ -56,9 +53,6 @@ Returns the workspace `workspace-id`.
 - The user must be a member of the workspace `workspace-id`
 
 ### Request
-#### HTTP Example
-{% include snippets/workspaces/view-a-workspace/http-request.md %}
-
 #### cURL Example
 {% include snippets/workspaces/view-a-workspace/curl-request.md %}
 
@@ -88,9 +82,6 @@ POST
 Initialises a new workspace with a UUID. Post-initialisation, the workspace can be created and subsequently updated.
 
 ### Request
-#### HTTP Example
-{% include snippets/workspaces/initialise-a-workspace/http-request.md %}
-
 #### cURL Example
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
 
@@ -139,9 +130,6 @@ Path | Type | Description | Constraints
 #### cURL Example
 {% include snippets/workspaces/create-a-workspace/curl-request.md %}
 
-#### HTTP Example
-{% include snippets/workspaces/create-a-workspace/http-request.md %}
-
 ### Response
 #### Body
 {% include snippets/workspaces/create-a-workspace/response-body.md %}
@@ -181,9 +169,6 @@ Returns all members of the workspace `workspace-id`. A member is a profile that 
 #### cURL Example
 {% include snippets/workspaces/view-all-workspace-members/curl-request.md %}
 
-#### HTTP Example
-{% include snippets/workspaces/view-all-workspace-members/http-request.md %}
-
 ### Response
 #### Body
 {% include snippets/workspaces/view-all-workspace-members/response-body.md %}
@@ -215,9 +200,6 @@ Returns the member `member-id` of the workspace `workspace-id`.
 ### Request
 #### cURL Example
 {% include snippets/workspaces/view-a-workspace-member/curl-request.md %}
-
-#### HTTP Example
-{% include snippets/workspaces/view-a-workspace-member/http-request.md %}
 
 ### Response
 #### Body
@@ -252,9 +234,6 @@ Deletes the workspace `workspace-id`.
 #### cURL Example
 {% include snippets/workspaces/delete-a-workspace/curl-request.md %}
 
-#### HTTP Example
-{% include snippets/workspaces/delete-a-workspace/http-request.md %}
-
 ---
 
 ## Create a workspace invitation
@@ -280,9 +259,6 @@ Path | Type | Description | Constraints
 #### cURL Example
 {% include snippets/workspaces/create-a-workspace-invitation/curl-request.md %}
 
-#### HTTP Example
-{% include snippets/workspaces/create-a-workspace-invitation/http-request.md %}
-
 ---
 
 ## View workspace invitations
@@ -300,9 +276,6 @@ Returns active invitations to the workspace `workspace-id` specific to the user.
 ### Request
 #### cURL Example
 {% include snippets/workspaces/view-all-workspace-invitations/curl-request.md %}
-
-#### HTTP Example
-{% include snippets/workspaces/view-all-workspace-invitations/http-request.md %}
 
 ### Response
 #### Body
@@ -342,8 +315,5 @@ Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
 ### Request
 #### cURL Example
 {% include snippets/workspaces/cancel-a-workspace-invitation/curl-request.md %}
-
-#### HTTP Example
-{% include snippets/workspaces/cancel-a-workspace-invitation/http-request.md %}
 
 ---
