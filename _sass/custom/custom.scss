@@ -8,7 +8,7 @@
 
 .main {
     margin-top: 80px;
-    // max-width: none;
+    max-width: 929px;
 }
 
 .nav-open {
@@ -36,6 +36,11 @@
     }
 }
 
+@media (min-width: 66.5rem) {
+.side-bar {
+    max-width: 391px;
+    }
+}
 // Request paths
 .path-GET {
     color: #1EB06E;
