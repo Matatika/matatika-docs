@@ -8,10 +8,10 @@ nav_order: 3
 # {{page.title}}
 
 Profiles are individual consumers of the Matatika service. A profile is automatically created for a user when they first access the app, or accept an invitation to a workspace from an existing member via email.
-
+<!-- 
 ---
 
-<!-- ## View profiles
+## View profiles
 GET
 {: .label .label-GET}
 
@@ -73,9 +73,11 @@ Relation | Description
 `change profile default workspace` | Set the workspace as the default workspace
 `new workspace` | Initialise a new workspace
 
---- -->
+-->
+---
 
 ## View profile
+
 GET
 {: .label .label-GET}
 
@@ -92,16 +94,13 @@ Returns the user profile.
 {% include snippets/profiles/view-a-profile/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/profiles/view-a-profile/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `string` | The profile ID 
-`name` | `String` | The profile name
-`phone` | `String` | The profile phone number
-`email` | `String` | The profile email address
-`defaultWorkspace` | `JSON Object` | The profile default workspace object
+200
+{:.label .label-GET}
+
+#### Body
+[Profile object](data-structures#profile) with HAL links.
 
 #### Links
 
@@ -116,14 +115,15 @@ Relation | Description
 
 ---
 
-## Update profile
+## Create or update profile
+
 PUT
 {: .label .label-PUT}
 
 /api/profiles/{profile-id}
 {:.path .path-PUT}
 
-Updates the user profile.
+Creates or updates the user profile.
 
 ### Prerequisites
 - The authentication subject must match the profile ID `profile-id`
@@ -142,16 +142,16 @@ Path | Type | Description | Constraints
 {% include snippets/profiles/update-a-profile/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/profiles/update-a-profile/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `string` | The profile ID 
-`name` | `String` | The profile name
-`phone` | `String` | The profile phone number
-`email` | `String` | The profile email address
-`defaultWorkspace` | `JSON Object` | The profile default workspace object
+201
+{:.label .label-PUT}
+
+200
+{:.label .label-PUT}
+
+#### Body
+[Profile object](data-structures#profile) with HAL links.
 
 #### Links
 
@@ -167,6 +167,7 @@ Relation | Description
 ---
 
 ## Set a default workspace
+
 PATCH
 {:.label .label-PATCH}
 
@@ -193,18 +194,13 @@ Path | Type | Description | Constraints
 {% include snippets/profiles/set-a-default-workspace/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/profiles/set-a-default-workspace/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `string` | The profile ID 
-`name` | `String` | The profile name
-`phone` | `String` | The profile phone number
-`email` | `String` | The profile email address
-`defaultWorkspace` | `JSON Object` | The profile default workspace object
-`defaultWorkspace.name` | `String` | The profile default workspace name
-`defaultWorkspace.id` | `String` | The profile default workspace ID
+200
+{:.label .label-PATCH}
+
+#### Body
+[Profile object](data-structures#profile) with HAL links.
 
 #### Links
 

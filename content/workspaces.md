@@ -12,6 +12,7 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 ---
 
 ## View all workspaces
+
 GET
 {:.label .label-GET}
 
@@ -21,16 +22,17 @@ GET
 Returns all workspaces.
 
 ### Request
+
 #### cURL Example
 {% include snippets/workspaces/view-all-workspaces/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/workspaces/view-all-workspaces/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`_embedded.workspaces` | `Array` | A list of workspaces the profile is associated with
+200
+{:.label .label-GET}
+
+Collection of [Workspace objects](data-structures#workspace) with HAL links.
 
 #### Links
 
@@ -41,6 +43,7 @@ Relation | Description
 ---
 
 ## View a workspace
+
 GET
 {:.label .label-GET}
 
@@ -57,12 +60,12 @@ Returns the workspace `workspace-id`.
 {% include snippets/workspaces/view-a-workspace/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/workspaces/view-a-workspace/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`_embedded.workspaces` | `Array` | A list of workspaces the profile is associated with
+200
+{:.label .label-GET}
+
+[Workspace object](data-structures#workspace) with HAL links.
 
 #### Links
 
@@ -73,6 +76,7 @@ Relation | Description
 ---
 
 ## Initialise a new workspace
+
 POST
 {:.label .label-POST}
 
@@ -85,16 +89,13 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 #### cURL Example
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
 
-### Reponse
-#### Body
-{% include snippets/workspaces/initialise-a-workspace/response-body.md %}
+### Response
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The workspace ID
-`name` | `String` | The workspace name
-`domains` | `String` | The allowed domains for workspace access control
-`defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
+200
+{:.label .label-POST}
+
+[Workspace object](data-structures#workspace) with HAL links.
 
 #### Links
 
@@ -105,6 +106,7 @@ Relation | Description
 ---
 
 ## Create or update a workspace
+
 PUT
 {:.label .label-PUT}
 
@@ -131,15 +133,15 @@ Path | Type | Description | Constraints
 {% include snippets/workspaces/create-a-workspace/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/workspaces/create-a-workspace/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The workspace ID
-`name` | `String` | The workspace name
-`domains` | `String` | The allowed domains for workspace access control
-`defaultWorkspace` | `Boolean` | Whether or not the workspace is set as default
+201
+{:.label .label-PUT}
+
+200
+{:.label .label-PUT}
+
+[Workspace object](data-structures#workspace) with HAL links.
 
 #### Links
 
@@ -154,6 +156,7 @@ Relation | Description
 ---
 
 ## View all workspace members
+
 GET
 {:.label .label-GET}
 
@@ -170,12 +173,12 @@ Returns all members of the workspace `workspace-id`. A member is a profile that 
 {% include snippets/workspaces/view-all-workspace-members/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/workspaces/view-all-workspace-members/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`_embedded.members` | `Array` | A list of the workspace members
+200
+{:.label .label-GET}
+
+Collection of [Member objects](data-structures#member) with HAL links.
 
 #### Links
 
@@ -186,6 +189,7 @@ Relation | Description
 ---
 
 ## View a workspace member
+
 GET
 {:.label .label-GET}
 
@@ -202,13 +206,12 @@ Returns the member `member-id` of the workspace `workspace-id`.
 {% include snippets/workspaces/view-a-workspace-member/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/workspaces/view-a-workspace-member/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The member profile ID
-`name` | `String` | The member profile name
+200
+{:.label .label-GET}
+
+[Member object](data-structures#member) with HAL links.
 
 #### Links
 
@@ -219,6 +222,7 @@ Relation | Description
 ---
 
 ## Delete a workspace
+
 DELETE
 {:.label .label-DELETE}
 
@@ -234,9 +238,18 @@ Deletes the workspace `workspace-id`.
 #### cURL Example
 {% include snippets/workspaces/delete-a-workspace/curl-request.md %}
 
+### Response
+{:.d-inline-block}
+
+204
+{:.label .label-DELETE}
+
+No response body provided.
+
 ---
 
 ## Create a workspace invitation
+
 POST
 {:.label .label-POST}
 
@@ -259,9 +272,18 @@ Path | Type | Description | Constraints
 #### cURL Example
 {% include snippets/workspaces/create-a-workspace-invitation/curl-request.md %}
 
+### Response
+{:.d-inline-block}
+
+202
+{:.label .label-POST}
+
+No response body provided.
+
 ---
 
 ## View workspace invitations
+
 GET
 {:.label .label-GET}
 
@@ -278,29 +300,17 @@ Returns active invitations to the workspace `workspace-id` specific to the user.
 {% include snippets/workspaces/view-all-workspace-invitations/curl-request.md %}
 
 ### Response
-#### Body
-{% include snippets/workspaces/view-all-workspace-invitations/response-body.md %}
+{:.d-inline-block}
 
-Path | Type | Description
----- | ---- | -----------
-`_embedded` | `JSON Object` | The resource collection container
-`_embedded.invitations` | `Array` | A list of all the created invitations to the workspace
-`_embedded.invitations.id` | `String` | The invitation ID
-`_embedded.invitations.created` | `String` | A timestamp denoting when the invitation was created
-`_embedded.invitations.lastModified` | `String` | A timestamp denoting when the invitation was last modified
-`_embedded.invitations.status` | `String` | The current status of the invitation
-`_embedded.invitations.email` | `String` | The email address the invitation is targeted at
-`_embedded.invitations.creator` | `JSON Object` | The member of the workspace responsible for creating the invitation
-`_embedded.invitations.creator.id` | `String` | The member profile ID
-`_embedded.invitations.creator.name` | `String` | The member profile name
-`_embedded.invitations._links` | `JSON Object` | The invitation resource HAL links
-`_embedded.invitations._links.cancel` | `JSON Object` | Cancel the invitation
-`_embedded.invitations._links.cancel.href` | `String` | The cancel invitation request URL
-`_embedded.invitations._links.cancel.type` | `String` | The cancel invitation applicable HTTP method
+200
+{:.label .label-GET}
+
+Collection of [Invitation object](data-structures#invitation) with HAL links.
 
 ---
 
 ## Cancel a workspace invitation
+
 DELETE
 {:.label .label-DELETE}
 
@@ -315,5 +325,13 @@ Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
 ### Request
 #### cURL Example
 {% include snippets/workspaces/cancel-a-workspace-invitation/curl-request.md %}
+
+### Response
+{:.d-inline-block}
+
+204
+{:.label .label-DELETE}
+
+No response body provided.
 
 ---

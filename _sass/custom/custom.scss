@@ -21,13 +21,14 @@
     }
 }
 
+.label {
+    display: inline;
+}
+
 .path {
-    display: inline-block;
-    margin-top: 0;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    display: inline;
     vertical-align: middle;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media (min-width: 31.25rem) {
