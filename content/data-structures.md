@@ -96,7 +96,21 @@ GET
 
 {% include snippets/workspaces/view-all-workspace-invitations/response-body.md %}
 
-<!-- ## Dataset
+## Dataset
 ### Schema
 
-### Example -->
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The dataset ID
+`alias` | `String` | The dataset alias
+`workspaceId` | `String` | The workspace ID of the published dataset
+`channelId` | `String` | The channel ID of the published dataset
+`information` | `String` | The dataset information
+`description` | `String` | The dataset description
+`questions` | `String` | The dataset questions
+`version` | `String` | The dataset version
+`rawData` | `String` | The dataset raw data
+`visualization` | `String` | The dataset visualization
+`query` | `String` | The dataset query
+
+<!-- ### Example -->
