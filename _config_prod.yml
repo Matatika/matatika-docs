@@ -1,3 +1,5 @@
-matatika_www_url: https://www.matatika.com
-matatika_app_url: https://app.matatika.com
-matatika_api_keys_url: https://app.matatika.com/api-key
+www_url: https://www.matatika.com
+app_url: https://app.matatika.com
+api_keys_url: https://app.matatika.com/api-key
+
+catalog_uri: https://catalog.matatika.com/api
