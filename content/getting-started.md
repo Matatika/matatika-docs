@@ -52,8 +52,8 @@ curl -i \
 
 #### Windows
 ```bat
-curl -i \
-    -H "Authorization: Bearer %ACCESS_TOKEN%" \
+curl -i ^
+    -H "Authorization: Bearer %ACCESS_TOKEN%" ^
     {{ site.catalog_uri }}/workspaces
 ```
 
@@ -126,8 +126,8 @@ curl -i \
 #### Windows
 ```bat
 set ACCESS_TOKEN="..."
-curl -i \
-    -H "Authorization: Bearer %ACCESS_TOKEN%" \
+curl -i ^
+    -H "Authorization: Bearer %ACCESS_TOKEN%" ^
     {{ site.catalog_uri }}/workspaces
 ```
 
@@ -157,17 +157,17 @@ Again, make sure to substitute `$ACCESS_TOKEN` or `%ACCESS_TOKEN%`with your API 
 ```bash
 curl -i \
     -H "Content-Type: application/hal+json" \
-    -H "Authorization: Bearer <ACCESS_TOKEN>" \
+    -H "Authorization: Bearer $ACCESS_TOKEN" \
     -d '{"alias": "hello-world", "information": "My First Dataset", "description": "My first dataset published to a workspace using cURL"}' \
-    {{ site.catalog_uri }}/api/workspaces/{workspace-id}/datasets
+    {{ site.catalog_uri }}/api/workspaces/$WORKSPACE_ID/datasets
 ```
 #### Windows
 ```bat
-curl -i \
-    -H "Content-Type: application/hal+json" \
-    -H "Authorization: Bearer <ACCESS_TOKEN>" \
-    -d "{\"alias\": \"hello-world\", \"information\": \"My First Dataset\", \"description\": \"My first dataset published to a workspace using cURL\"}" \
-    {{ site.catalog_uri }}/workspaces/{workspace-id}/datasets
+curl -i ^
+    -H "Content-Type: application/hal+json" ^
+    -H "Authorization: Bearer %ACCESS_TOKEN%" ^
+    -d "{""alias"": ""hello-world"", ""information"": ""My First Dataset"", ""description"": ""My first dataset published to a workspace using cURL""}" ^
+    {{ site.catalog_uri }}/workspaces/%WORKSPACE_ID%/datasets
 ```
 
 
