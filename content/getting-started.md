@@ -10,12 +10,12 @@ nav_order: 2
 ---
 
 ## Sign Up
-Head to the [Matatika website]({{ site.matatika_www_url }}) and sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
+Head to the [Matatika website]({{ site.www_url }}) and sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
 
 ---
 
 ## Create a Workspace
-Access the Matatika app [here]({{ site.matatika_app_url }}) or through the website links. The first time you visit this service, you will be prompted to create a new workspace: fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
+Access the Matatika app [here]({{ site.app_url }}) or through the website links. The first time you visit this service, you will be prompted to create a new workspace: fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
 
 ![new workspace in the matatika app](assets/img/app-new-workspace.png)
 
@@ -24,7 +24,7 @@ Once completed, you will have full access to the app. Keep the name you gave you
 ---
 
 ## Getting a Token
-A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]( {{ site.apikeysurl }} ).
+A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]( {{ site.api_keys_url }} ).
 - This token will be vaild for **2 hours** under the condition that the user remains logged into the app
 - If the user logs out of the app during the token's active period or the token expires, the token is revoked and a new one will be issued on a subsequent sign-in
 
@@ -41,22 +41,20 @@ You are now ready to make your first call the Matatika API! The tool you use to 
 In this example, we will be querying the Matatika API's `workspaces` endpoint to list the workspaces our profile is a member of. In the response of this request, details of the workspace created earlier in this guide should be found.
 
 ### cURL
-cURL is installed by default on Windows 10, macOS and some Linux distributions (your milage may vary). Open command-prompt or terminal and run the following command, making sure to substitute `<ACCESS_TOKEN>` with the Bearer token obtained earlier:
+cURL is installed by default on Windows 10, macOS and some Linux distributions (your milage may vary). Open command-prompt or terminal and run the following command, making sure to substitute `$ACCESS_TOKEN` or `%ACCESS_TOKEN%` with the Bearer token obtained earlier:
 
 #### macOS/Linux
 ```bash
-ACCESS_TOKEN=<ACCESS_TOKEN>
 curl -i \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
-    https://catalog.matatika.com:443/api/workspaces
+    {{ site.catalog_uri }}/workspaces
 ```
 
 #### Windows
-```
-set ACCESS_TOKEN=<ACCESS_TOKEN>
+```bat
 curl -i \
     -H "Authorization: Bearer %ACCESS_TOKEN%" \
-    https://catalog.matatika.com:443/api/workspaces
+    {{ site.catalog_uri }}/workspaces
 ```
 
 The response received should be similar to that in the [view workspaces response](workspaces#response) section of the workspaces endpoint documentation:
@@ -66,36 +64,36 @@ The response received should be similar to that in the [view workspaces response
     "_embedded": {
         "workspaces": [
             {
-                "id": "<WORKSPACE_ID>",
-                "name": "<WORKSPACE_NAME>",
-                "domains": "<WORKSPACE_DOMAINS>",
+                "id": "{workspace-id}",
+                "name": "{workspace-name}",
+                "domains": "{workspace-domains}",
                 "_links": {
                     "self": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>"
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}"
                     },
                     "update delete workspace": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>"
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}"
                     },
                     "make-default": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/default"
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/default"
                     },
                     "members": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/members"
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/members"
                     },
                     "invitations": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/invitations"
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/invitations"
                     },
                     "create invitation": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/invitations",
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/invitations",
                     },
                     "datasets": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/datasets",
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/datasets",
                     },
                     "publish dataset": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/datasets",
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/datasets",
                     },
                     "channels": {
-                        "href": "https://catalog.matatika.com/api/workspaces/<WORKSPACE_ID>/channels",
+                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/channels",
                     }
                 }
             }
@@ -119,18 +117,18 @@ If you plan to explore the Matatika API further, it may make sense to resolve th
 
 #### macOS/Linux
 ```bash
-ACCESS_TOKEN=<ACCESS_TOKEN>
+ACCESS_TOKEN="..."
 curl -i \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
-    https://catalog.matatika.com:443/api/workspaces
+    {{ site.catalog_uri }}/workspaces
 ```
 
 #### Windows
-```
-set ACCESS_TOKEN=<ACCESS_TOKEN>
+```bat
+set ACCESS_TOKEN="..."
 curl -i \
     -H "Authorization: Bearer %ACCESS_TOKEN%" \
-    https://catalog.matatika.com:443/api/workspaces
+    {{ site.catalog_uri }}/workspaces
 ```
 
 ### Postman
@@ -150,10 +148,10 @@ To "publish a dataset" means to submit data to a workspace. A dataset must have 
 
 First, we will need to obtain the workspace ID of the workspace we wish to publish our dataset to. Following the same steps as in [Making Your First API Call](#making-your-first-api-call) for your preferred tool, we can perform a GET request to the `/workspaces` endpoint to return a collection of the workspaces our profile is a member of. The response should contain the details of the workspace we created when signing into the Matatika app for the first time. From here, we can find the key `id` and extract its value - our workspace ID.
 
-Now, we will perform a POST request to the `workspaces/<WORKSPACE_ID>/datasets` path in order to publish a dataset to our workspace.
+Now, we will perform a POST request to the `workspaces/{workspace-id}/datasets` path in order to publish a dataset to our workspace.
 
 ### cURL
-Again, make sure to substitute `<ACCESS_TOKEN>` with your API token and `<WORKSPACE_ID>` with your workspace ID.
+Again, make sure to substitute `$ACCESS_TOKEN` or `%ACCESS_TOKEN%`with your API token and `$WORKSPACE_ID` or `%WORKSPACE_ID%` with your workspace ID.
 
 #### macOS/Linux
 ```bash
@@ -161,21 +159,21 @@ curl -i \
     -H "Content-Type: application/hal+json" \
     -H "Authorization: Bearer <ACCESS_TOKEN>" \
     -d '{"alias": "hello-world", "information": "My First Dataset", "description": "My first dataset published to a workspace using cURL"}' \
-    https://catalog.matatika.com:443/api/workspaces/<WORKSPACE_ID>/datasets
+    {{ site.catalog_uri }}/api/workspaces/{workspace-id}/datasets
 ```
 #### Windows
-```
+```bat
 curl -i \
     -H "Content-Type: application/hal+json" \
     -H "Authorization: Bearer <ACCESS_TOKEN>" \
     -d "{\"alias\": \"hello-world\", \"information\": \"My First Dataset\", \"description\": \"My first dataset published to a workspace using cURL\"}" \
-    https://catalog.matatika.com:443/api/workspaces/<WORKSPACE_ID>/datasets
+    {{ site.catalog_uri }}/workspaces/{workspace-id}/datasets
 ```
 
 
 
 ### Postman
-Within [our maintained Postman collection](), find the 'Publish a workspace dataset' request under the 'Workspaces' folder. Substitute `<WORKSPACE_ID>` with the workspace ID we obtained earlier, and press the 'Send' button.
+Within [our maintained Postman collection](), find the 'Publish a workspace dataset' request under the 'Workspaces' folder. Substitute `{{workspace-id}}` with the workspace ID we obtained earlier, and press the 'Send' button.
 
 ---
 
