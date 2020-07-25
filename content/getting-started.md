@@ -10,12 +10,12 @@ nav_order: 2
 ---
 
 ## Sign Up
-Head to the [Matatika website]({{ site.www_url }}) and sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
+Head to the [Matatika website]({{site.www_url}}){:target="_blank"} and sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
 
 ---
 
 ## Create a Workspace
-Access the Matatika app [here]({{ site.app_url }}) or through the website links. The first time you visit this service, you will be prompted to create a new workspace: fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
+Access the Matatika app [here]({{site.app_url}}){:target="_blank"} or through the website links. The first time you visit this service, you will be prompted to create a new workspace: fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
 
 ![new workspace in the matatika app](assets/img/app-new-workspace.png)
 
@@ -24,7 +24,8 @@ Once completed, you will have full access to the app. Keep the name you gave you
 ---
 
 ## Getting a Token
-A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]( {{ site.api_keys_url }} ).
+A Bearer token is needed to authorise any requests sent to the Matatika API. After creating an account, logging into the app and creating a workspace, a token will be available [here]({{site.api_keys_url}}){:target="_blank"}.
+
 - This token will be vaild for **2 hours** under the condition that the user remains logged into the app
 - If the user logs out of the app during the token's active period or the token expires, the token is revoked and a new one will be issued on a subsequent sign-in
 
@@ -36,7 +37,7 @@ If continuous access to the Matatika API is required for development purposes, y
 ---
 
 ## Making Your First API Call
-You are now ready to make your first call the Matatika API! The tool you use to accomplish this is up to you, but we recommend [cURL](https://curl.haxx.se/docs/manual.html) or [Postman](https://learning.postman.com/docs/postman/launching-postman/introduction/).
+You are now ready to make your first call the Matatika API! The tool you use to accomplish this is up to you, but we recommend [cURL](https://curl.haxx.se/docs/manual.html){:target="_blank"} or [Postman](https://learning.postman.com/docs/postman/launching-postman/introduction/){:target="_blank"}.
 
 In this example, we will be querying the Matatika API's `workspaces` endpoint to list the workspaces our profile is a member of. In the response of this request, details of the workspace created earlier in this guide should be found.
 
@@ -132,7 +133,7 @@ curl -i ^
 ```
 
 ### Postman
-The Postman app is available for download [here](https://www.postman.com/downloads/). Once installed, simply import [our maintained Postman collection](), configure authorisation and start sending requests!
+The Postman app is available for download [here](https://www.postman.com/downloads/){:target="_blank"}. Once installed, simply import [our maintained Postman collection](){:target="_blank"}, configure authorisation and start sending requests!
 
 <!-- To import the collection into Postman, navigate to 'File -> Import...', select the 'Link' tab and enter `https://catalog.matatika.com:443/api/postman-collection.json`. -->
 
@@ -173,7 +174,7 @@ curl -i ^
 
 
 ### Postman
-Within [our maintained Postman collection](), find the 'Publish a workspace dataset' request under the 'Workspaces' folder. Substitute `{{workspace-id}}` with the workspace ID we obtained earlier, and press the 'Send' button.
+Within [our maintained Postman collection](){:target="_blank"}, find the 'Publish a workspace dataset' request under the 'Workspaces' folder. Substitute `{{workspace-id}}` with the workspace ID we obtained earlier, and press the 'Send' button.
 
 ---
 
