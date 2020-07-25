@@ -6,12 +6,16 @@
     display: none;
 }
 
-.main {
-    margin-top: 80px;
-    max-width: 929px;
+.offset {
+    margin-top: 80px !important;
 }
 
-.nav-open {
+.no-offset {
+    margin-top: 0 !important;
+}
+
+.main {
+    max-width: 929px;
     margin-top: 80px;
 }
 
