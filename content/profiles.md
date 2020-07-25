@@ -8,6 +8,7 @@ nav_order: 3
 # {{page.title}}
 
 Profiles are individual consumers of the Matatika service. A profile is automatically created for a user when they first access the app, or accept an invitation to a workspace from an existing member via email.
+
 <!-- 
 ---
 
@@ -74,6 +75,7 @@ Relation | Description
 `new workspace` | Initialise a new workspace
 
 -->
+
 ---
 
 ## View profile
