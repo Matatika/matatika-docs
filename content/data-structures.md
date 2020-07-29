@@ -69,7 +69,7 @@ GET
 /api/workspaces/{workspace-id}/members/{member-id}
 {:.path .path-GET}
 
-{% include snippets/workspaces/view-a-workspace-member/response-body.md %}
+{% include snippets/workspaces/view-a-member-of-a-workspace/response-body.md %}
 
 ## Invitation
 An Invitation object contains information about an invitation.
@@ -94,7 +94,7 @@ GET
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-{% include snippets/workspaces/view-all-workspace-invitations/response-body.md %}
+{% include snippets/workspaces/view-all-invitations-to-a-workspace/response-body.md %}
 
 ## Dataset
 ### Schema

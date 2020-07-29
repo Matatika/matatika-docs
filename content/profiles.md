@@ -168,7 +168,7 @@ Relation | Description
 
 ---
 
-## Set a default workspace
+## Set a workspace as default
 
 PATCH
 {:.label .label-PATCH}
@@ -185,7 +185,7 @@ A workspace can be set as default, which defines the environment the Matatika ap
 
 ### Request
 #### Body
-{% include snippets/profiles/set-a-default-workspace/request-body.md %}
+{% include snippets/profiles/set-a-workspace-as-default/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
@@ -193,7 +193,7 @@ Path | Type | Description | Constraints
 `defaultWorkspace.id` | `String` | The default workspace ID | Must be a valid and existing UUID
 
 #### cURL Example
-{% include snippets/profiles/set-a-default-workspace/curl-request.md %}
+{% include snippets/profiles/set-a-workspace-as-default/curl-request.md %}
 
 ### Response
 {:.d-inline-block}

@@ -75,7 +75,7 @@ Relation | Description
 
 ---
 
-## Initialise a new workspace
+## Initialise a workspace
 
 POST
 {:.label .label-POST}
@@ -155,7 +155,7 @@ Relation | Description
 
 ---
 
-## View all workspace members
+## View all members of a workspace
 
 GET
 {:.label .label-GET}
@@ -170,7 +170,7 @@ Returns all members of the workspace `workspace-id`. A member is a profile that 
 
 ### Request
 #### cURL Example
-{% include snippets/workspaces/view-all-workspace-members/curl-request.md %}
+{% include snippets/workspaces/view-all-members-of-a-workspace/curl-request.md %}
 
 ### Response
 {:.d-inline-block}
@@ -188,7 +188,7 @@ Relation | Description
 
 ---
 
-## View a workspace member
+## View a member of a workspace
 
 GET
 {:.label .label-GET}
@@ -203,7 +203,7 @@ Returns the member `member-id` of the workspace `workspace-id`.
 
 ### Request
 #### cURL Example
-{% include snippets/workspaces/view-a-workspace-member/curl-request.md %}
+{% include snippets/workspaces/view-a-member-of-a-workspace/curl-request.md %}
 
 ### Response
 {:.d-inline-block}
@@ -248,7 +248,7 @@ No response body provided.
 
 ---
 
-## Create a workspace invitation
+## Create an invitation to a workspace
 
 POST
 {:.label .label-POST}
@@ -263,14 +263,14 @@ Creates a workspace invitation to the workspace `workspace-id`.
 
 ### Request
 #### Body
-{% include snippets/workspaces/create-a-workspace-invitation/request-body.md %}
+{% include snippets/workspaces/create-an-invitation-to-a-workspace/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `email` | `String` | The email address of the invitation recipient | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
 
 #### cURL Example
-{% include snippets/workspaces/create-a-workspace-invitation/curl-request.md %}
+{% include snippets/workspaces/create-an-invitation-to-a-workspace/curl-request.md %}
 
 ### Response
 {:.d-inline-block}
@@ -282,7 +282,7 @@ No response body provided.
 
 ---
 
-## View workspace invitations
+## View an invitation to a workspace
 
 GET
 {:.label .label-GET}
@@ -297,7 +297,7 @@ Returns active invitations to the workspace `workspace-id` specific to the user.
 
 ### Request
 #### cURL Example
-{% include snippets/workspaces/view-all-workspace-invitations/curl-request.md %}
+{% include snippets/workspaces/view-all-invitations-to-a-workspace/curl-request.md %}
 
 ### Response
 {:.d-inline-block}
@@ -309,7 +309,7 @@ Collection of [Invitation object](data-structures#invitation) with HAL links.
 
 ---
 
-## Cancel a workspace invitation
+## Cancel an invitation to a workspace
 
 DELETE
 {:.label .label-DELETE}
@@ -324,7 +324,7 @@ Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
 
 ### Request
 #### cURL Example
-{% include snippets/workspaces/cancel-a-workspace-invitation/curl-request.md %}
+{% include snippets/workspaces/cancel-an-invitation-to-a-workspace/curl-request.md %}
 
 ### Response
 {:.d-inline-block}
