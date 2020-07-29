@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Invitations
-permalink: /invitations
-nav_order: 6
+permalink: /endpoints/invitations
+parent: Endpoints
+nav_order: 3
 ---
 
 # {{page.title}}

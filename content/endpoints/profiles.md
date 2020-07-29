@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Profiles
-permalink: /profiles
-nav_order: 3
+permalink: /endpoints/profiles
+parent: Endpoints
+nav_order: 1
 ---
 
 # {{page.title}}

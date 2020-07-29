@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Workspaces
-permalink: /workspaces
-nav_order: 4
+permalink: /endpoints/workspaces
+parent: Endpoints
+nav_order: 2
 ---
 
 # {{page.title}}

@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Datasets
-permalink: /datasets
-nav_order: 5
+permalink: /endpoints/datasets
+parent: Endpoints
+nav_order: 4
 ---
 
 # {{page.title}}

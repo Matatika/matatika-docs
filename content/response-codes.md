@@ -2,6 +2,7 @@
 layout: default
 title: Response Codes
 permalink: /response-codes
+nav_order: 5
 ---
 
 # {{page.title}}
