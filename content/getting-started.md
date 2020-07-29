@@ -58,7 +58,40 @@ curl -i ^
     {{ site.catalog_uri }}/workspaces
 ```
 
-The response received should be similar to that in the [view workspaces response](workspaces#response) section of the workspaces endpoint documentation:
+If you plan to explore the Matatika API further, it may make sense to resolve the Bearer token to a temporary environment variable.
+
+#### macOS/Linux
+```bash
+ACCESS_TOKEN="..."
+curl -i \
+    -H "Authorization: Bearer $ACCESS_TOKEN" \
+    {{ site.catalog_uri }}/workspaces
+```
+
+#### Windows
+```bat
+set ACCESS_TOKEN="..."
+curl -i ^
+    -H "Authorization: Bearer %ACCESS_TOKEN%" ^
+    {{ site.catalog_uri }}/workspaces
+```
+
+### Postman
+The Postman app is available for download [here](https://www.postman.com/downloads/). Once installed, simply import our maintained Postman collection, configure authorisation and start sending requests!
+
+#### Importing the Matatika API Collection
+To import the collection into Postman, navigate to 'File -> Import...', select the 'Link' tab and enter `{{site.www_url}}/docs/matatika.json`. After clicking 'Continue', proceed through the 'Confirm your import' prompt and hit 'Import'. 
+
+#### Setting Up Authorisation
+To set the authorisation for the collection, first locate 'Matatika API' in the 'Collections' tab of the left-hand side bar, click the ellipsis icon and select 'Edit'. Inside the 'EDIT COLLECTION' pop-up window, navigate to the 'Authorization' tab, and in the 'TYPE' drop-down field select 'Bearer Token'. Paste your [Matatika API token]({{site.api_keys_url}}) into the 'Token' text field and click the 'Update' button. Now you're all ready to start sending requests!
+
+![authorisation in postman](assets/img/postman-auth.png)
+
+Next, navigate into the structure of the 'Matatika API', open the 'Workspaces' folder and find the 'View all workspaces' request. Select the request and hit the 'Send' button.
+
+---
+
+If everything was configured correctly, the API should respond with a status of `200 OK` and a JSON-formatted body. The response body should be similar to that in the [view workspaces response](workspaces#response) section of the workspaces endpoint documentation:
 
 ```json
 {
@@ -113,35 +146,6 @@ The response received should be similar to that in the [view workspaces response
     }
 }
 ```
-
-If you plan to explore the Matatika API further, it may make sense to resolve the Bearer token to a temporary environment variable.
-
-#### macOS/Linux
-```bash
-ACCESS_TOKEN="..."
-curl -i \
-    -H "Authorization: Bearer $ACCESS_TOKEN" \
-    {{ site.catalog_uri }}/workspaces
-```
-
-#### Windows
-```bat
-set ACCESS_TOKEN="..."
-curl -i ^
-    -H "Authorization: Bearer %ACCESS_TOKEN%" ^
-    {{ site.catalog_uri }}/workspaces
-```
-
-### Postman
-The Postman app is available for download [here](https://www.postman.com/downloads/). Once installed, simply import our maintained Postman collection, configure authorisation and start sending requests!
-
-#### Importing the Matatika API Collection
-To import the collection into Postman, navigate to 'File -> Import...', select the 'Link' tab and enter `{{site.www_url}}/docs/matatika.json`. After clicking 'Continue', proceed through the 'Confirm your import' prompt and hit 'Import'. 
-
-#### Setting Up Authorisation
-To set the authorisation for the collection, locate it in the 'Collections' tab of the left-hand side bar, click the ellipsis icon and select 'Edit'. Inside the 'EDIT COLLECTION' pop-up window, navigate to the 'Authorization' tab, select 'Bearer Token' in the 'TYPE' drop-down field, and then paste your Matatika API Bearer token in the 'Token' text field. Click the 'Update' button and you're all ready to go!
-
-![authorisation in postman](assets/img/postman-auth.png)
 
 ---
 
