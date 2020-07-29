@@ -33,7 +33,7 @@ Returns all workspaces.
 200
 {:.label .label-GET}
 
-Collection of [Workspace objects](data-structures#workspace) with HAL links.
+[Workspace object](data-structures#workspace) collection with HAL links.
 
 #### Links
 
@@ -179,7 +179,7 @@ Returns all members of the workspace `workspace-id`. A member is a profile that 
 200
 {:.label .label-GET}
 
-Collection of [Member objects](data-structures#member) with HAL links.
+[Member object](data-structures#member) collection with HAL links.
 
 #### Links
 
@@ -306,7 +306,7 @@ Returns active invitations to the workspace `workspace-id` specific to the user.
 200
 {:.label .label-GET}
 
-Collection of [Invitation object](data-structures#invitation) with HAL links.
+[Invitation object](data-structures#invitation) collection with HAL links.
 
 ---
 
