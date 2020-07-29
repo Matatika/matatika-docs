@@ -282,7 +282,7 @@ No response body provided.
 
 ---
 
-## View an invitation to a workspace
+## View all invitations to a workspace
 
 GET
 {:.label .label-GET}
