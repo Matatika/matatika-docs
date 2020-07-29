@@ -7,3 +7,6 @@ has_children: true
 ---
 
 # {{page.title}}
+
+The Matatika API has the following available endpoints. Requests are categorised within these accordingly.
+{: .fs-5 .fw-300 }
