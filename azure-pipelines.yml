@@ -8,6 +8,6 @@ pool:
 steps:
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)'
-    artifact: 'docs'
+    targetPath: '$(Pipeline.Workspace)/s'
+    artifact: 'src'
     publishLocation: 'pipeline'
