@@ -1,23 +1,5 @@
 $header-offset: 80px;
 
-// fixed header anchor link adjustment
-// ----------------
-
-// add header buffer
-:target:before {
-  content: '';
-  display: block;
-  height: $header-offset + 32px;
-  margin-top: -($header-offset + 32px);
-}
-
-// recalculate anchor link height when header buffer added
-:target .anchor-heading {
-    height: calc(100% - (#{$header-offset} + 32px));
-  }
-
-// ----------------
-
 .site-header {
     display: none;
 }
