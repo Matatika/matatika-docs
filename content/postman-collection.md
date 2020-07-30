@@ -1,0 +1,26 @@
+---
+layout: default
+title: Postman Collection
+permalink: /postman-collection
+nav_order: 8
+---
+
+# {{page.title}}
+
+We automatically maintain a fully-tested Postman collection for the Matatika API, which contains all the requests documented in [Endpoints](endpoints).
+
+Simply import the following collection URL into Postman to begin sending requests:
+
+`{{site.www_url}}/docs/matatika.json`
+{: .fs-6 .text-center}
+
+---
+
+## Setting Up Authorisation
+
+The following steps outline how to set-up authorisation in Postman for the Matatika API collection using a Bearer token:
+
+1. [Get a token from the Matatika app]({{site.api_keys_url}})
+2. In the Postman application, locate the imported 'Matatika API' collection and click *Edit*
+3. Under the *Authorization* tab, select *Bearer Token* from the *TYPE* drop-down and paste the token into the *Token* text field
+4. Click *Update*
