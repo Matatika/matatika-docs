@@ -7,6 +7,13 @@ nav_order: 4
 ---
 
 # {{page.title}}
+{: .no_toc }
+
+#### Table of Contents
+{: .no_toc }
+
+- TOC
+{: toc }
 
 ---
 
@@ -21,16 +28,22 @@ GET
 Returns the dataset `dataset-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - Dataset `dataset-id` must exist
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% comment %}
 {% include snippets/datasets/view-a-dataset/curl-request.md %}
 {% endcomment %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
@@ -50,16 +63,22 @@ GET
 Deletes the dataset `dataset-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - Dataset `dataset-id` must exist
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% comment %}
 {% include snippets/datasets/withdraw-a-dataset/curl-request.md %}
 {% endcomment %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 204
 {:.label .label-DELETE}

@@ -7,8 +7,15 @@ nav_order: 1
 ---
 
 # {{page.title}}
+{: .no_toc }
 
 Profiles are individual consumers of the Matatika service. A profile is automatically created for a user when they first access the app, or accept an invitation to a workspace from an existing member via email.
+
+#### Table of Contents
+{: .no_toc }
+
+- TOC
+{: toc }
 
 <!-- 
 ---
@@ -21,11 +28,19 @@ GET
 {:.path .path-GET}
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/profiles/view-all-profiles/curl-request.md %}
 
 ### Response
+{: .no_toc }
+
 #### Body
+{: .no_toc }
+
 {% include snippets/profiles/view-all-profiles/response-body.md %}
 
 Path | Type | Description
@@ -33,6 +48,8 @@ Path | Type | Description
 `_embedded.profiles` | `Array` | A list of profiles
 
 #### Links
+{: .no_toc }
+
 
 Relation | Description
 -------- | -----------
@@ -48,12 +65,20 @@ GET
 {:.path .path-GET}
 
 ### Request
+{: .no_toc }
+
 
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/profiles/view-a-profile/curl-request.md %}
 
 ### Response
+{: .no_toc }
+
 #### Body
+{: .no_toc }
+
 {% include snippets/profiles/view-a-profile/response-body.md %}
 
 Path | Type | Description
@@ -65,6 +90,8 @@ Path | Type | Description
 `defaultWorkspace` | `JSON Object` | The profile default workspace object
 
 #### Links
+{: .no_toc }
+
 
 Relation | Description
 -------- | -----------
@@ -90,22 +117,31 @@ GET
 Returns the user profile.
 
 ### Prerequisites
+{: .no_toc }
+
 - The authentication subject must match the profile ID `profile-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/profiles/view-a-profile/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
 
 #### Body
+{: .no_toc }
+
 [Profile object](data-structures#profile) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -129,10 +165,16 @@ PUT
 Creates or updates the user profile.
 
 ### Prerequisites
+{: .no_toc }
+
 - The authentication subject must match the profile ID `profile-id`
 
 ### Request
+{: .no_toc }
+
 #### Body
+{: .no_toc }
+
 {% include snippets/profiles/update-a-profile/request-body.md %}
 
 Path | Type | Description | Constraints
@@ -142,10 +184,12 @@ Path | Type | Description | Constraints
 `email` | `String` | The profile email address | Must not be empty; must be a valid email address
 
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/profiles/update-a-profile/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 201
 {:.label .label-PUT}
@@ -154,9 +198,12 @@ Path | Type | Description | Constraints
 {:.label .label-PUT}
 
 #### Body
+{: .no_toc }
+
 [Profile object](data-structures#profile) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -180,12 +227,18 @@ PATCH
 Sets a default workspace for the user profile.
 
 ### Prerequisites
+{: .no_toc }
+
 - The authentication subject must match the profile ID `profile-id`
 
 A workspace can be set as default, which defines the environment the Matatika app will initially load for a given profile. The default workspace setting persists only for the profile that sets it.
 
 ### Request
+{: .no_toc }
+
 #### Body
+{: .no_toc }
+
 {% include snippets/profiles/set-a-workspace-as-default/request-body.md %}
 
 Path | Type | Description | Constraints
@@ -194,18 +247,23 @@ Path | Type | Description | Constraints
 `defaultWorkspace.id` | `String` | The default workspace ID | Must be a valid and existing UUID
 
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/profiles/set-a-workspace-as-default/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-PATCH}
 
 #### Body
+{: .no_toc }
+
 [Profile object](data-structures#profile) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------

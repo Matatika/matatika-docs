@@ -7,8 +7,16 @@ nav_order: 2
 ---
 
 # {{page.title}}
+{: .no_toc }
 
 Workspaces allow users to operate within isolated instances of the Matatika service. This is useful for seperating profiles based on the data they require access to.
+
+#### Table of Contents
+{: .no_toc }
+
+- TOC
+{: toc }
+
 
 ---
 
@@ -23,12 +31,15 @@ GET
 Returns all workspaces.
 
 ### Request
+{: .no_toc }
 
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/view-all-workspaces/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
@@ -36,6 +47,7 @@ Returns all workspaces.
 [Workspace object](data-structures#workspace) collection with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -54,14 +66,20 @@ GET
 Returns the workspace `workspace-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be a member of the workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/view-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
@@ -69,6 +87,7 @@ Returns the workspace `workspace-id`.
 [Workspace object](data-structures#workspace) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -87,11 +106,15 @@ POST
 Initialises a new workspace with a UUID. Post-initialisation, the workspace can be created and subsequently updated.
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-POST}
@@ -99,6 +122,7 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 [Workspace object](data-structures#workspace) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -117,12 +141,18 @@ PUT
 Creates or updates the workspace `workspace-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be the owner of workspace `workspace-id`
 - The workspace must have been [initialised](#initialise-a-workspace) in order to create it
 - The workspace must have been created in order to update it
 
 ### Request
+{: .no_toc }
+
 #### Body
+{: .no_toc }
+
 {% include snippets/workspaces/create-a-workspace/request-body.md %}
 
 Path | Type | Description | Constraints
@@ -131,10 +161,12 @@ Path | Type | Description | Constraints
 `domains` | `String` | The allowed domains for workspace access control | N/A
 
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/create-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 201
 {:.label .label-PUT}
@@ -145,6 +177,7 @@ Path | Type | Description | Constraints
 [Workspace object](data-structures#workspace) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -167,14 +200,20 @@ GET
 Returns all members of the workspace `workspace-id`. A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be a member of the workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/view-all-members-of-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
@@ -182,6 +221,7 @@ Returns all members of the workspace `workspace-id`. A member is a profile that 
 [Member object](data-structures#member) collection with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -200,14 +240,20 @@ GET
 Returns the member `member-id` of the workspace `workspace-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be a member of the workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/view-a-member-of-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
@@ -215,6 +261,7 @@ Returns the member `member-id` of the workspace `workspace-id`.
 [Member object](data-structures#member) with HAL links.
 
 #### Links
+{: .no_toc }
 
 Relation | Description
 -------- | -----------
@@ -233,14 +280,20 @@ DELETE
 Deletes the workspace `workspace-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be the owner of workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/delete-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 204
 {:.label .label-DELETE}
@@ -260,10 +313,16 @@ POST
 Creates a workspace invitation to the workspace `workspace-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be a member of the workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### Body
+{: .no_toc }
+
 {% include snippets/workspaces/create-an-invitation-to-a-workspace/request-body.md %}
 
 Path | Type | Description | Constraints
@@ -271,10 +330,12 @@ Path | Type | Description | Constraints
 `email` | `String` | The email address of the invitation recipient | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
 
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/create-an-invitation-to-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 202
 {:.label .label-POST}
@@ -294,14 +355,20 @@ GET
 Returns active invitations to the workspace `workspace-id` specific to the user. As a workspace owner, this instead returns all active invitations to the workspace across all members.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be a member of the workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/view-all-invitations-to-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 200
 {:.label .label-GET}
@@ -321,14 +388,20 @@ DELETE
 Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
 
 ### Prerequisites
+{: .no_toc }
+
 - The user must be the owner of workspace `workspace-id`
 
 ### Request
+{: .no_toc }
+
 #### cURL Example
+{: .no_toc }
+
 {% include snippets/workspaces/cancel-an-invitation-to-a-workspace/curl-request.md %}
 
 ### Response
-{:.d-inline-block}
+{: .no_toc .d-inline-block }
 
 204
 {:.label .label-DELETE}

@@ -7,6 +7,13 @@ nav_order: 3
 ---
 
 # {{page.title}}
+{: .no_toc }
+
+#### Table of Contents
+{: .no_toc }
+
+- TOC
+{: toc }
 
 <!-- ================ -->
 ## View all sent invitations
