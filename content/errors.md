@@ -2,7 +2,7 @@
 layout: default
 title: Errors
 permalink: /errors
-nav_order: 7
+nav_order: 5
 ---
 
 # {{page.title}}

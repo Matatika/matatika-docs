@@ -2,7 +2,7 @@
 layout: default
 title: Data Structures
 permalink: /data-structures
-nav_order: 5
+nav_order: 8
 ---
 
 # {{page.title}}

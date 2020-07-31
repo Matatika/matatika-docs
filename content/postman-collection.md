@@ -2,7 +2,7 @@
 layout: default
 title: Postman Collection
 permalink: /postman-collection
-nav_order: 8
+nav_order: 3
 ---
 
 # {{page.title}}
