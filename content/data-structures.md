@@ -6,8 +6,11 @@ nav_order: 5
 ---
 
 # {{page.title}}
+
 The Matatika API uses a variety of data structures as templates for both requests and responses when handling data.
-{: .fs-5 .fw-300 }
+{: .fs-5 }
+
+---
 
 ## Profile
 A Profile object contains information about a profile.

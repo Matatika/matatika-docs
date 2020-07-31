@@ -7,7 +7,9 @@ nav_order: 1
 # Matatika API Documentation
 
 Welcome to the Matatika API docs! Here you will find an extensive reference to interfacing with Matatika services: including usage instructions, code snippets and examples.
-{: .fs-5 .fw-300 }
+{: .fs-5 }
+
+---
 
 ## Platform
 Our platform is designed and built for data.

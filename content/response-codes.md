@@ -7,6 +7,8 @@ nav_order: 6
 
 # {{page.title}}
 
+---
+
 Status Code | Text | Description
 ----------- | ---- | -----------
 200 | *OK* | The request was accepted and exisitng or modified data was returned.

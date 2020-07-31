@@ -7,6 +7,8 @@ nav_order: 8
 
 # {{page.title}}
 
+---
+
 We automatically maintain a fully-tested Postman collection for the Matatika API, which contains all the requests documented in [Endpoints](endpoints).
 
 Simply import the following collection URL into Postman to begin sending requests:

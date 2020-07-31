@@ -8,7 +8,7 @@ nav_order: 7
 # {{page.title}}
 
 The Matatika API supports error handling of multiple failing fields, and will return a standard templated error response across different scenarios.
-{: .fs-5 .fw-300 }
+{: .fs-5 }
 
 ---
 

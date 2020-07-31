@@ -8,7 +8,11 @@ nav_order: 3
 # {{page.title}}
 
 The Matatika API uses authorisation to both secure and prevent unwanted access to your data.
-{: .fs-5 .fw-300 }
+{: .fs-5 }
+
+---
+
+## Getting a Token
 
 You can obtain an API Bearer token [here]({{site.api_keys_url}}).
 - This token will be vaild for **2 hours** under the condition that the user remains logged into the app

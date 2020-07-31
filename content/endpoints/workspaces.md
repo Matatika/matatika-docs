@@ -10,13 +10,15 @@ nav_order: 2
 {: .no_toc }
 
 Workspaces allow users to operate within isolated instances of the Matatika service. This is useful for seperating profiles based on the data they require access to.
+{: .fs-5 }
+
+---
 
 #### Table of Contents
 {: .no_toc }
 
 - TOC
 {: toc }
-
 
 ---
 
