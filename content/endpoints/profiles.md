@@ -141,7 +141,7 @@ Returns the user profile.
 #### Body
 {: .no_toc }
 
-[Profile object](data-structures#profile) with HAL links.
+[Profile object]({{site.baseurl}}/data-structures#profile) with HAL links.
 
 #### Links
 {: .no_toc }
@@ -203,7 +203,7 @@ Path | Type | Description | Constraints
 #### Body
 {: .no_toc }
 
-[Profile object](data-structures#profile) with HAL links.
+[Profile object]({{site.baseurl}}/data-structures#profile) with HAL links.
 
 #### Links
 {: .no_toc }
@@ -263,7 +263,7 @@ Path | Type | Description | Constraints
 #### Body
 {: .no_toc }
 
-[Profile object](data-structures#profile) with HAL links.
+[Profile object]({{site.baseurl}}/data-structures#profile) with HAL links.
 
 #### Links
 {: .no_toc }

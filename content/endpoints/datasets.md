@@ -50,7 +50,7 @@ Returns the dataset `dataset-id`.
 200
 {:.label .label-GET}
 
-[Dataset object](data-structures#dataset) with HAL links.
+[Dataset object]({{site.baseurl}}/data-structures#dataset) with HAL links.
 
 ---
 

@@ -46,7 +46,7 @@ Returns all workspaces.
 200
 {:.label .label-GET}
 
-[Workspace object](data-structures#workspace) collection with HAL links.
+[Workspace object]({{site.baseurl}}/data-structures#workspace) collection with HAL links.
 
 #### Links
 {: .no_toc }
@@ -86,7 +86,7 @@ Returns the workspace `workspace-id`.
 200
 {:.label .label-GET}
 
-[Workspace object](data-structures#workspace) with HAL links.
+[Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
 
 #### Links
 {: .no_toc }
@@ -121,7 +121,7 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 200
 {:.label .label-POST}
 
-[Workspace object](data-structures#workspace) with HAL links.
+[Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
 
 #### Links
 {: .no_toc }
@@ -176,7 +176,7 @@ Path | Type | Description | Constraints
 200
 {:.label .label-PUT}
 
-[Workspace object](data-structures#workspace) with HAL links.
+[Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
 
 #### Links
 {: .no_toc }
@@ -220,7 +220,7 @@ Returns all members of the workspace `workspace-id`. A member is a profile that 
 200
 {:.label .label-GET}
 
-[Member object](data-structures#member) collection with HAL links.
+[Member object]({{site.baseurl}}/data-structures#member) collection with HAL links.
 
 #### Links
 {: .no_toc }
@@ -260,7 +260,7 @@ Returns the member `member-id` of the workspace `workspace-id`.
 200
 {:.label .label-GET}
 
-[Member object](data-structures#member) with HAL links.
+[Member object]({{site.baseurl}}/data-structures#member) with HAL links.
 
 #### Links
 {: .no_toc }
@@ -375,7 +375,7 @@ Returns active invitations to the workspace `workspace-id` specific to the user.
 200
 {:.label .label-GET}
 
-[Invitation object](data-structures#invitation) collection with HAL links.
+[Invitation object]({{site.baseurl}}/data-structures#invitation) collection with HAL links.
 
 ---
 
