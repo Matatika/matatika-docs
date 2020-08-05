@@ -12,5 +12,11 @@ clean:
 import:
 	mkdir -p $(TO_DIR) && cp -rv $(FROM_DIR)* $(TO_DIR)
 
-build: import
-	./build-docs.sh
+dev build: import
+	./build-docs.sh '--config _config.yml,_config_dev.yml'
+
+prod build: import
+	./build-docs.sh '--config _config.yml,_config_prod.yml'
+
+run: import
+	./build-docs.sh '--config _config.yml,_config_dev.yml --watch'
