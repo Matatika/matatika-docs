@@ -27,10 +27,8 @@ Status Code | Text | Description
 403 | *Forbidden* | The request has a valid API token, but is not permitted.
 404 | *Not Found* | The request URI is invalid.
 405 | *Method Not Allowed* | The request HTTP method is not supported by the endpoint.
-409 | *Conflict* | The request conflicts with current state of the server..
+409 | *Conflict* | The request conflicts with current state of the server.
 503 | *Service Unavailable* | The API has encountered an error. Try again later.
-
-
 
 ## Validation errors (4xx)
 ### Schema
