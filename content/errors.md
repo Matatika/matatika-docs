@@ -13,9 +13,9 @@ The Matatika API returns standard HTTP status codes and returns an error structu
 ---
 
 In general:
-	- Codes in the `2xx` range indicate success
-	- Codes in the `4xx` range indicate an error with the request
-	- Codes in the `5xx` range indicate an issue with the Matatika API
+- Codes in the `2xx` range indicate success
+- Codes in the `4xx` range indicate an error with the request
+- Codes in the `5xx` range indicate an issue with the Matatika API
 
 Status Code | Text | Description
 ----------- | ---- | -----------
