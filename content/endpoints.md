@@ -2,7 +2,7 @@
 layout: default
 title: Endpoints
 permalink: /endpoints/
-nav_order: 7
+nav_order: 6
 has_children: true
 ---
 
