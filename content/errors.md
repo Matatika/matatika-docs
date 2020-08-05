@@ -30,7 +30,9 @@ Status Code | Text | Description
 409 | *Conflict* | The request conflicts with current state of the server.
 503 | *Service Unavailable* | The API has encountered an error. Try again later.
 
-## Validation errors (4xx)
+---
+
+## Validation errors - `4xx`
 ### Schema
 
 Path | Type | Description
@@ -38,17 +40,6 @@ Path | Type | Description
 `timestamp` | `String` | Timestamp denoting when the error was encountered
 `status` | `Integer` | The error response code
 `error` | `String` | The error response text
-`errors` | `Array` | [Validation error object](#validation-error) collection
+`errors` | `Array` | Error object collection
 `message` | `String` | The error description
 `path` | `String` | The request path that resulted in the thrown error(s)
-
----
-
-## Validation error
-### Schema
-
-Path | Type | Description
----- | ---- | -----------
-`codes` |  |
-`arguments` |  |
-
