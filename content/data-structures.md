@@ -19,7 +19,7 @@ A Profile object contains information about a profile.
 
 Path | Type | Description
 ---- | ---- | -----------
-`id` | `string` | The profile ID 
+`id` | `String` | The profile ID 
 `name` | `String` | The profile name
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address
@@ -64,7 +64,7 @@ A Member object contains information about a member of a workspace. Member objec
 
 Path | Type | Description
 ---- | ---- | -----------
-`id` | `string` | The member ID (derived from corresponding profile ID)
+`id` | `String` | The member ID (derived from corresponding profile ID)
 `name` | `String` | The member name (derived from corresponding profile name)
 
 ### Example
@@ -107,15 +107,17 @@ GET
 Path | Type | Description
 ---- | ---- | -----------
 `id` | `String` | The dataset ID
+`published` | `String` | Timestamp denoting when the dataset was published
 `alias` | `String` | The dataset alias
 `workspaceId` | `String` | The workspace ID of the published dataset
 `channelId` | `String` | The channel ID of the published dataset
+`source` | `String` | The channel ID where the dataset was initially published to
 `information` | `String` | The dataset information
 `description` | `String` | The dataset description
 `questions` | `String` | The dataset questions
-`version` | `String` | The dataset version
 `rawData` | `String` | The dataset raw data
 `visualization` | `String` | The dataset visualization
 `query` | `String` | The dataset query
-
-<!-- ### Example -->
+`likeCount` | `Integer` | The number of likes the dataset has received
+`likedByProfiles` | `Array` | A collection of [Member objects](#member) that have liked the dataset
+`commentCount` | `Integer` | The number of comments the dataset has received
