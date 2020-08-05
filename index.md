@@ -35,6 +35,5 @@ Leveraging cloud-native and open source technologies ensures our Community is ne
 
 *Are you a curious person who asks questions?*
 
-<span class="fs-6">
-    <a type="button" class="btn" href="getting-started">Get Started</a>
-</span>
+[Get Started]({{site.baseurl}}/getting-started){: .btn .fs-6}
+{: .text-center}
