@@ -37,7 +37,7 @@ Returns all invitations sent by the user
 GET
 {:.label .label-GET}
 
-/api/invitations?=email={user-email}
+/api/invitations?email={user-email}
 {:.path .path-GET}
 
 Returns all invitations intended for the user
