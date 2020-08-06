@@ -116,7 +116,7 @@ Path | Type | Description
 `description` | `String` | The dataset description
 `questions` | `String` | The dataset questions
 `rawData` | `String` | The dataset raw data
-`visualization` | `String` | The dataset visualization
+`visualisation` | `String` | The dataset visualization metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start)
 `query` | `String` | The dataset query
 `likeCount` | `Integer` | The number of likes the dataset has received
 `likedByProfiles` | `Array` | A collection of [Member objects](#member) that have liked the dataset
