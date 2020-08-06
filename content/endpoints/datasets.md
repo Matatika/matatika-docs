@@ -27,12 +27,12 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-GET}
 
-Returns the dataset `dataset-id`.
+Returns the dataset `{dataset-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- Dataset `dataset-id` must exist
+- Dataset `{dataset-id}` must exist
 
 ### Request
 {: .no_toc }
@@ -56,18 +56,18 @@ Returns the dataset `dataset-id`.
 
 ## Withdraw a dataset
 
-GET
+DELETE
 {:.label .label-DELETE}
 
 /api/datasets/{dataset-id}
 {:.path .path-DELETE}
 
-Deletes the dataset `dataset-id`.
+Withraws the dataset `{dataset-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- Dataset `dataset-id` must exist
+- Dataset `{dataset-id}` must exist
 
 ### Request
 {: .no_toc }
@@ -75,9 +75,7 @@ Deletes the dataset `dataset-id`.
 #### cURL Example
 {: .no_toc }
 
-{% comment %}
 {% include snippets/datasets/withdraw-a-dataset/curl-request.md %}
-{% endcomment %}
 
 ### Response
 {: .no_toc .d-inline-block }

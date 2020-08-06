@@ -122,7 +122,7 @@ Returns the user profile.
 ### Prerequisites
 {: .no_toc }
 
-- The authentication subject must match the profile ID `profile-id`
+- The authentication subject must match the profile ID `{profile-id}`
 
 ### Request
 {: .no_toc }
@@ -170,7 +170,7 @@ Creates or updates the user profile.
 ### Prerequisites
 {: .no_toc }
 
-- The authentication subject must match the profile ID `profile-id`
+- The authentication subject must match the profile ID `{profile-id}`
 
 ### Request
 {: .no_toc }
@@ -229,7 +229,7 @@ Sets a default workspace for the user profile.
 ### Prerequisites
 {: .no_toc }
 
-- The authentication subject must match the profile ID `profile-id`
+- The authentication subject must match the profile ID `{profile-id}`
 
 A workspace can be set as default, which defines the environment the Matatika app will initially load for a given profile. The default workspace setting persists only for the profile that sets it.
 
