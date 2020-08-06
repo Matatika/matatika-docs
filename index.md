@@ -4,9 +4,13 @@ title: Overview
 nav_order: 1
 ---
 
-## Welcome to the Matatika documentation
-Dig into our extensive reference documentation, quick starts, code snippets and examples - and start collaborating on your data! Not a customer yet?  [Register now]({{site.baseurl}}/register-now)
+# Welcome to the Matatika Documentation
+Dig into our extensive reference documentation, quick starts, code snippets and examples - and start collaborating on your data!
 {: .fs-5 }
+
+*Not a customer yet?*
+
+[Register Now]({{site.baseurl}}/register-now){:.btn}
 
 ---
 
