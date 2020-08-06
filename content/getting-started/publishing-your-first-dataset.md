@@ -12,42 +12,63 @@ nav_order: 3
 
 ---
 
-## Publishing Your First Dataset
 To "publish a dataset" means to submit data to a workspace. A dataset must have an unique indentifier in the workspace it is being published to, which is achieved through an `alias`. We can publish a empty dataset to an exisiting workspace using just `alias`, but we will provide a bit more information for the following example. 
 
 First, we will need to obtain the workspace ID of the workspace we wish to publish our dataset to. Following the same steps as in [Making Your First API Call]({{site.baseurl}}/getting-started/making-your-first-api-call) for your preferred tool, we can perform a GET request to the `/workspaces` endpoint to return a collection of the workspaces our profile is a member of. The response should contain the details of the workspace we created when signing into the Matatika app for the first time. From here, we can find the key `id` and extract its value - our workspace ID.
 
-Now, we will perform a POST request to the `workspaces/{workspace-id}/datasets` path in order to publish a dataset to our workspace.
+Now, we will perform a POST request to the `workspaces/{workspace-id}/datasets` path in order to publish a dataset to our workspace, providing the following fields in the request body:
 
-### cURL
+Field | Description | Example
+--- | --- | ---
+`"alias"` | A workspace-unique dataset indentifier | `"planet-orbits"`
+`"information"` | Information about the dataset | `"Planet Orbits in Our Solar System (Mercury-Saturn)"`
+`"description"` | A description of the dataset | `"Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn"`
+`"questions"` | The question(s) the dataset may answer | `"How many Earth-years does it take for Jupiter to orbit the sun?"`
+`"rawData"` | The raw data of the dataset | `"[[\"Planet\", \"Orbit Distance (Light-hours)\", \"Orbit Duration (Earth-years)\"],[\"Mercury\", 0.3336, 0.2500],[\"Venus\", 0.6300, 0.5833],[\"Earth\", 0.8708, 1],[\"Mars\", 1.3242, 1.9167],[\"Jupiter\", 4.5287, 11.8333],[\"Saturn\", 8.2997, 29.5000]]"`
+`"visualisation"` | The visualisation metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start) | `"{\"google-chart\": {\"chartType\": \"Bar\", \"options\": {\"width\" : 600, \"height\" : 400}}}"`
+
+## cURL
 Again, make sure to substitute `$ACCESS_TOKEN` or `%ACCESS_TOKEN%`with your API token and `$WORKSPACE_ID` or `%WORKSPACE_ID%` with your workspace ID.
 
-#### macOS/Linux
+### macOS/Linux
 ```bash
 curl -i \
     -H "Content-Type: application/hal+json" \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
-    -d '{"alias": "hello-world", "information": "My First Dataset", "description": "My first dataset published to a workspace using cURL"}' \
+    -d '{' \
+    '"alias": "planet-orbits", ' \
+    '"information": "Planet Orbits in Our Solar System (Mercury-Saturn)", ' \
+    '"description": "Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn", ' \
+    '"questions": "How many Earth-years does it take for Jupiter to orbit the sun?", ' \
+    '"rawData": "[[\"Planet\", \"Orbit Distance (Light-hours)\", \"Orbit Duration (Earth-years)\"],[\"Mercury\", 0.3336, 0.2500],[\"Venus\", 0.6300, 0.5833],[\"Earth\", 0.8708, 1],[\"Mars\", 1.3242, 1.9167],[\"Jupiter\", 4.5287, 11.8333],[\"Saturn\", 8.2997, 29.5000]]", ' \
+    '"visualisation": "{\"google-chart\": {\"chartType\": \"Bar\", \"options\": {\"width\" : 600, \"height\" : 400}}}"' \
+    '}' \
     {{ site.catalog_uri }}/api/workspaces/$WORKSPACE_ID/datasets
 ```
-#### Windows
+
+### Windows
 ```bat
 curl -i ^
     -H "Content-Type: application/hal+json" ^
     -H "Authorization: Bearer %ACCESS_TOKEN%" ^
-    -d "{""alias"": ""hello-world"", ""information"": ""My First Dataset"", ""description"": ""My first dataset published to a workspace using cURL""}" ^
+    -d "{" ^
+    """alias"": ""planet-orbits"", " ^
+    """information"": ""Planet Orbits in Our Solar System (Mercury-Saturn)"", " ^
+    """description"": ""Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn"", " ^
+    """questions"": ""How many Earth-years does it take for Jupiter to orbit the sun?"", " ^
+    """rawData"": ""[[\""Planet\"", \""Orbit Distance (Light-hours)\"", \""Orbit Duration (Earth-years)\""],[\""Mercury\"", 0.3336, 0.2500],[\""Venus\"", 0.6300, 0.5833],[\""Earth\"", 0.8708, 1],[\""Mars\"", 1.3242, 1.9167],[\""Jupiter\"", 4.5287, 11.8333],[\""Saturn\"", 8.2997, 29.5000]]"", " ^
+    """visualisation"": ""{\""google-chart\"": {\""chartType\"": \""Bar\"", \""options\"": {\""width\"" : 600, \""height\"" : 400}}}""" ^
+    "}" ^
     {{ site.catalog_uri }}/workspaces/%WORKSPACE_ID%/datasets
 ```
 
-
-
-### Postman
+## Postman
 {% raw %}
-
-Within the Matatika API collection, find the 'Publish a workspace dataset' request under the 'Workspaces' folder. [Follow these steps](https://learning.postman.com/docs/sending-requests/variables/) to assign the variable `{{workspace-id}}` with the value of the workspace ID we obtained earlier, and press the 'Send' button.
-
+Within the Matatika API collection, find the *Publish a workspace dataset* request under the *Workspaces* folder. [Follow these steps](https://learning.postman.com/docs/sending-requests/variables/) to assign the variable `{{workspace-id}}` with the value of the workspace ID we obtained earlier, and press the *Send* button.
 {% endraw %}
 
 ---
 
-That's all there is to it! If everything was set up correctly, you should have received a response with a status of `201 Created` and a body containing information about the dataset you just published. Subsequent requests to this same URL using the same `alias` will yield a status of `200 OK`.
+That's all there is to it! If everything was set up correctly, you should have received a response with a status of `201 Created` and a body containing information about the dataset you just published. Subsequent requests to this same URL using the same `alias` will yield a status of `200 OK`. You should also see your dataset appear in the [Matatika app]({{site.app_url}}) within the context of the workspace you published to.
+
+![successfully published dataset in the matatika app]({{site.baseurl}}/assets/img/app-published-dataset.png)
