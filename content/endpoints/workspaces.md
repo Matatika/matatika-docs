@@ -170,10 +170,7 @@ Path | Type | Description | Constraints
 ### Response
 {: .no_toc .d-inline-block }
 
-201
-{:.label .label-PUT}
-
-200
+201 / 200
 {:.label .label-PUT}
 
 [Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
