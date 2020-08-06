@@ -27,12 +27,12 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-GET}
 
-Returns the dataset `dataset-id`.
+Returns the dataset `{dataset-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- Dataset `dataset-id` must exist
+- Dataset `{dataset-id}` must exist
 
 ### Request
 {: .no_toc }
@@ -62,12 +62,12 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-DELETE}
 
-Deletes the dataset `dataset-id`.
+Deletes the dataset `{dataset-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- Dataset `dataset-id` must exist
+- Dataset `{dataset-id}` must exist
 
 ### Request
 {: .no_toc }

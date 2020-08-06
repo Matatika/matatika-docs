@@ -65,12 +65,12 @@ GET
 /api/workspaces/{workspace-id}
 {:.path .path-GET}
 
-Returns the workspace `workspace-id`.
+Returns the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -140,12 +140,12 @@ PUT
 /api/workspaces/{workspace-id}
 {:.path .path-PUT}
 
-Creates or updates the workspace `workspace-id`.
+Creates or updates the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be the owner of workspace `workspace-id`
+- The user must be the owner of workspace `{workspace-id}`
 - The workspace must have been [initialised](#initialise-a-workspace) in order to create it
 - The workspace must have been created in order to update it
 
@@ -196,12 +196,12 @@ GET
 /api/workspaces/{workspace-id}/members
 {:.path .path-GET}
 
-Returns all members of the workspace `workspace-id`. A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
+Returns all members of the workspace `{workspace-id}`. A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -236,12 +236,12 @@ GET
 /api/workspaces/{workspace-id}/members/{member-id}
 {:.path .path-GET}
 
-Returns the member `member-id` of the workspace `workspace-id`.
+Returns the member `{member-id}` of the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -276,12 +276,12 @@ DELETE
 /api/workspaces/{workspace-id}
 {:.path .path-DELETE}
 
-Deletes the workspace `workspace-id`.
+Deletes the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be the owner of workspace `workspace-id`
+- The user must be the owner of workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -309,12 +309,12 @@ POST
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-POST}
 
-Creates a workspace invitation to the workspace `workspace-id`.
+Creates a workspace invitation to the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -351,12 +351,12 @@ GET
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-Returns active invitations to the workspace `workspace-id` specific to the user. As a workspace owner, this instead returns all active invitations to the workspace across all members.
+Returns active invitations to the workspace `{workspace-id}` specific to the user. As a workspace owner, this instead returns all active invitations to the workspace across all members.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -384,12 +384,12 @@ DELETE
 /api/workspaces/{workspace-id}/invitations/{invitation-id}
 {:.path .path-DELETE}
 
-Cancels a pending invitation `invitation-id` to the workspace `workspace-id`.
+Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be the owner of workspace `workspace-id`
+- The user must be the owner of workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -417,12 +417,12 @@ GET
 /api/workspaces/{workspace-id}/datasets
 {:.path .path-GET}
 
-Returns all datasets in the workspace `workspace-id`.
+Returns all datasets in the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
@@ -450,12 +450,12 @@ POST
 /api/workspaces/{workspace-id}/datasets
 {:.path .path-POST}
 
-Publishes a dataset to the workspace `workspace-id`.
+Publishes a dataset to the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }
 
-- The user must be a member of the workspace `workspace-id`
+- The user must be a member of the workspace `{workspace-id}`
 
 ### Request
 {: .no_toc }
