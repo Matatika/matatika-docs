@@ -124,6 +124,7 @@ $(document).ready(function () {
     $('body').append($temp);
     $temp.val($('#postman-collection-url').text()).select();
     document.execCommand('copy');
+    $('.copy').text("Copied!");
     $temp.remove();
   });
 });
