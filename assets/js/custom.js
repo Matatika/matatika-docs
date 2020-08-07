@@ -63,10 +63,24 @@
      * If the click event's target was an anchor, fix the scroll position.
      */
     delegateAnchors: function (e) {
-      var elem = e.target;
+      var elem = this.findAnchorTag(e.target);
+      if (!elem) elem = e.target;
 
       if (this.scrollIfAnchor(elem.getAttribute('href'), true)) {
         e.preventDefault();
+      }
+    },
+
+    findAnchorTag: function (elem, i = 1) {
+      if (i >= 5 || !elem) {
+        // console.log(`Anchor element not found within ${i} recursions`);
+        return false;
+      }
+
+      if ($(elem).is('a')) {
+        return elem;
+      } else {
+        return this.findAnchorTag($(elem).parent()[0], i += 1);
       }
     }
   };
@@ -76,11 +90,11 @@
 
 $(document).ready(function () {
 
-    // open links external to /docs in new tabs
-    $('a[href^=http').each(function () {
-      $(this).attr("target", "_blank");
-    });  
-  
+  // open links external to /docs in new tabs
+  $('a[href^=http').each(function () {
+    $(this).attr("target", "_blank");
+  });
+
   // menu icon behaviour
   $('.hamburger').click(function () {
     const content = document.querySelector('.main');
