@@ -13,8 +13,8 @@ We automatically maintain a fully-tested Postman collection for the Matatika API
 
 Simply import the following collection URL into Postman to begin sending requests:
 
-`{{site.www_url}}/docs/matatika.json`
-{: .fs-6 .text-center}
+`{{site.www_url}}/docs/matatika.json`{: #postman-collection-url .fs-5 }
+{: .text-center }
 
 ---
 

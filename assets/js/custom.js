@@ -117,4 +117,13 @@ $(document).ready(function () {
     }
   });
 
+  $('#postman-collection-url').after('<button class="copy" alt="copy">Copy</button>');
+
+  $('.copy').click(function (e) {
+    const $temp = $('<input>');
+    $('body').append($temp);
+    $temp.val($('#postman-collection-url').text()).select();
+    document.execCommand('copy');
+    $temp.remove();
+  });
 });
