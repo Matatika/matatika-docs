@@ -12,7 +12,7 @@ The Matatika API uses link relations to communicate the capabilites of our resou
 
 ---
 
-I just a singular item or collection relation (i.e. `workspace` or `workspaces`) forms the entire link name, make a <span>GET</span>{:.label .label-GET} request to this link to return the respective resource. Expect `200 OK` to indicate the resource was successfully returned.
+If just an entity item or collection relation noun - such as `workspace` or `workspaces` - forms the entire link name, make a <span>GET</span>{:.label .label-GET} request to this link to return the respective resource. Expect `200 OK` to indicate the resource was successfully returned.
 
 ## `self`
 Make a <span>GET</span>{:.label .label-GET} request to this link to return the current resource. Expect `200 OK` to indicate the resource was successfully returned.
