@@ -33,10 +33,13 @@ GET
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/profiles/view-all-profiles/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
 
 ### Response
 {: .no_toc }
@@ -71,10 +74,15 @@ GET
 {: .no_toc }
 
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/profiles/view-a-profile/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/profiles/view-a-profile/python-requests.md %}
 
 ### Response
 {: .no_toc }
@@ -127,10 +135,15 @@ Returns the user profile.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/profiles/view-a-profile/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/profiles/view-a-profile/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -186,10 +199,15 @@ Path | Type | Description | Constraints
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address | Must not be empty; must be a valid email address
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/profiles/update-a-profile/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/profiles/update-a-profile/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -246,10 +264,15 @@ Path | Type | Description | Constraints
 `defaultWorkspace` | `JSON Object` | Default workspace object |
 `defaultWorkspace.id` | `String` | The default workspace ID | Must be a valid and existing UUID
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/profiles/set-a-workspace-as-default/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/profiles/set-a-workspace-as-default/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }

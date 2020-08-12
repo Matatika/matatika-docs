@@ -35,10 +35,15 @@ Returns all workspaces.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/view-all-workspaces/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/view-all-workspaces/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -75,10 +80,15 @@ Returns the workspace `{workspace-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/view-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/view-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -110,10 +120,15 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/initialise-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -162,10 +177,15 @@ Path | Type | Description | Constraints
 `name` | `String` | The workspace name | Must not be null
 `domains` | `String` | The allowed domains for workspace access control | N/A
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/create-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/create-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -206,10 +226,15 @@ Returns all members of the workspace `{workspace-id}`. A member is a profile tha
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/view-all-members-of-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/view-all-members-of-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -246,10 +271,15 @@ Returns the member `{member-id}` of the workspace `{workspace-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/view-a-member-of-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/view-a-member-of-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -286,10 +316,15 @@ Deletes the workspace `{workspace-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/delete-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/delete-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -328,10 +363,15 @@ Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `email` | `String` | The email address of the invitation recipient | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/create-an-invitation-to-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/create-an-invitation-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -361,10 +401,15 @@ Returns active invitations to the workspace `{workspace-id}` specific to the use
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/view-all-invitations-to-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/view-all-invitations-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -394,10 +439,15 @@ Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/cancel-an-invitation-to-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/cancel-an-invitation-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -427,10 +477,15 @@ Returns all datasets in the workspace `{workspace-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/view-all-datasets-in-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/view-all-datasets-in-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
@@ -460,10 +515,15 @@ Publishes a dataset to the workspace `{workspace-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/workspaces/publish-a-dataset-to-a-workspace/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/workspaces/publish-a-dataset-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }

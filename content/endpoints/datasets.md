@@ -37,7 +37,7 @@ Returns the dataset `{dataset-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% comment %}
@@ -72,10 +72,15 @@ Withraws the dataset `{dataset-id}`.
 ### Request
 {: .no_toc }
 
-#### cURL Example
+#### cURL
 {: .no_toc }
 
 {% include snippets/datasets/withdraw-a-dataset/curl-request.md %}
+
+#### Python (Requests)
+{: .no_toc}
+
+{% include snippets/datasets/withdraw-a-dataset/python-requests.md %}
 
 ### Response
 {: .no_toc .d-inline-block }
