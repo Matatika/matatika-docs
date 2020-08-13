@@ -88,7 +88,67 @@
   $(document).ready($.proxy(anchorScrolls, 'init'));
 })(window.document, window.history, window.location);
 
+
+
+
+function createSnippetTabs() {
+
+  function regexAlternate(array) {
+    let regex_string = "";
+    array.forEach(function (e, i) {
+
+      regex_string += e;
+      if (i !== e.length - 1) {
+        regex_string += "|";
+      }
+    });
+
+    return regex_string;
+  }
+  const languages = ["curl", "python", "node"];
+  const HEADING_REGEX = new RegExp(regexAlternate(languages));
+  let snippets = [];
+
+  // for every element of 'snippets' class
+  $('.snippetTabs').each(function () {
+    let tabs = $(this);
+
+    // find code snippet headings
+    tabs.children('li').each(function () {
+      let tab = $(this);
+      // maybe rework?
+      let tab_text = tab.clone().children().remove().end().text();
+      let match = tab_text.match(HEADING_REGEX);
+
+      if (match) {
+        snippets.push({ language: match[0], content: tab.find('li').text() });
+        tab.remove();
+      }
+    });
+
+    if (snippets.length) {
+      snippets.forEach(function (snippet) {
+        $('.snippetTabs').append(`<button class="tab">${snippet.language}</button>`);
+      });
+      snippets.forEach(function (snippet) {
+        $('.snippetTabs').append(`<p id="${snippet.language}-snippet" class="tab-content">${snippet.content}</p>`);
+      });
+    }
+
+  });
+}
+
+
 $(document).ready(function () {
+
+  createSnippetTabs();
+  $('.snippetTabs').show();
+  $('.tab-content').hide();
+
+  $('.tab').click(function () {
+    $('.tab-content').hide();
+    $(`#${$(this).text()}-snippet`).show();
+  });
 
   // open links external to /docs in new tabs
   $('a[href^=http').each(function () {
@@ -127,4 +187,5 @@ $(document).ready(function () {
     $('.copy').text("Copied!");
     $temp.remove();
   });
+
 });
