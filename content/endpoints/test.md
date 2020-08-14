@@ -12,6 +12,4 @@ nav_order: 5
     - `python snippet`
 - curl
     - `curl snippet`
-{: .snippetTabs }
-
-
+{: .tabs }

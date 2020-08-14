@@ -94,44 +94,59 @@
 function createSnippetTabs() {
 
   function regexAlternate(array) {
-    let regex_string = "";
+    let regex_string = '';
     array.forEach(function (e, i) {
 
       regex_string += e;
       if (i !== e.length - 1) {
-        regex_string += "|";
+        regex_string += '|';
       }
     });
 
     return regex_string;
   }
-  const languages = ["curl", "python", "node"];
-  const HEADING_REGEX = new RegExp(regexAlternate(languages));
-  let snippets = [];
+  const languages = ['curl', 'python', 'node'];
+  const HEADING_REGEX = new RegExp(`${regexAlternate(languages)}[^\s]*`, 'i');
 
-  // for every element of 'snippets' class
-  $('.snippetTabs').each(function () {
-    let tabs = $(this);
+  // for every ul of 'tabs' class
+  $('ul.tabs').each(function (i) {
+    let base_ul = $(this);
+
+    let id = null;
+    if (i != 0) {
+      id = `tabs-${i}`;
+    } else {
+      id = 'tabs';
+    }
+
+    let base_div = $(`<div id="${id}"></div>`).insertAfter(base_ul);
+
+    let tabs = [];
 
     // find code snippet headings
-    tabs.children('li').each(function () {
-      let tab = $(this);
+    base_ul.children('li').each(function () {
+      let base_ul_li = $(this);
       // maybe rework?
-      let tab_text = tab.clone().children().remove().end().text();
-      let match = tab_text.match(HEADING_REGEX);
-
-      if (match) {
-        snippets.push({ language: match[0], content: tab.find('li').text() });
-        tab.remove();
-      }
+      let name = base_ul_li.clone().children().remove().end().text().trim();
+      tabs.push({ name: name, contents: base_ul_li.find('li') });
+      base_ul_li.remove();
     });
 
-    if (snippets.length) {
-      snippets.forEach(function (snippet) {
-        $('.snippetTabs').append(`<button class="tab">${snippet.language}</button>`);
+    if (tabs.length) {
+
+      tab_buttons_div = $('<div class="tabs"></div>').appendTo(base_div);
+      base_ul.remove();
+
+      tabs.forEach(function (tab) {
+        $(`<button>${tab.name}</button>`).appendTo(tab_buttons_div);
       });
-      snippets.forEach(function (snippet) {
-        $('.snippetTabs').append(`<p id="${snippet.language}-snippet" class="tab-content">${snippet.content}</p>`);
+
+      tabs.forEach(function (tab) {
+        tab_contents_div = $(`<div class="tab-contents"></div>`).appendTo(base_div);
+        tab.contents.each(function () {
+          let html = $(this).html();
+          $(`<div>${html}</div>`).appendTo(tab_contents_div);
+        });
       });
     }
 
@@ -142,12 +157,13 @@ function createSnippetTabs() {
 $(document).ready(function () {
 
   createSnippetTabs();
-  $('.snippetTabs').show();
-  $('.tab-content').hide();
+  $('.tabs').show();
+  $('.tab-contents').hide();
 
-  $('.tab').click(function () {
-    $('.tab-content').hide();
-    $(`#${$(this).text()}-snippet`).show();
+  $('.tabs button').click(function () {
+    let index = $(this).index();
+    $(this).parent().siblings('.tab-contents').hide();
+    $(this).parent().siblings('.tab-contents').eq(index).show();
   });
 
   // open links external to /docs in new tabs
