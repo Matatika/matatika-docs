@@ -202,7 +202,7 @@ $matatika-default: #EE7A34;
     opacity: 1
 }
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-    background-color: #FFAB2B;
+    background-color: $matatika-default;
 }
 .hamburger.is-active {
 
@@ -221,16 +221,16 @@ $matatika-default: #EE7A34;
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     position: absolute;
     width: 35px;
-    height: 4px;
+    height: 3px;
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform;
     border-radius: 0px;
-    background-color: #FFAB2B;
+    background-color: $matatika-default;
     right: 0px;
 }
 header.shrink .hamburger-inner, header.shrink .hamburger-inner:after, header.shrink .hamburger-inner:before {
-    background-color: #FFAB2B;
+    background-color: $matatika-default;
 }
 .hamburger-inner:before {
     width: 35px;
