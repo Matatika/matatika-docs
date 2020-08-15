@@ -160,11 +160,18 @@ $(document).ready(function () {
   $('.tabs').show();
   $('.tab-contents').hide();
 
+
   $('.tabs button').click(function () {
+    $(this).addClass('selected-tab');
+    $(this).siblings().removeClass('selected-tab');
     let index = $(this).index();
     $(this).parent().siblings('.tab-contents').hide();
     $(this).parent().siblings('.tab-contents').eq(index).show();
   });
+
+  $('.tabs button').eq(0).click();
+
+
 
   // open links external to /docs in new tabs
   $('a[href^=http').each(function () {

@@ -127,11 +127,12 @@ $matatika-default: #EE7A34;
 }
 // ----------------
 
+// tabs
 .tabs {
     display: none;
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border-radius: 4px;
 
     button {
         background-color: inherit;
@@ -139,18 +140,27 @@ $matatika-default: #EE7A34;
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 14px 16px;
+        padding: 8px 12px;
         transition: 0.3s;
-        font-size: 17px;
     }
+}
+
+.selected-tab {
+    color: $matatika-default;
 }
 
 .tab-contents {
     display: none;
-    padding: 6px 12px;
     border: 1px solid #ccc;
+    border-radius: 4px;
     border-top: none;
+    padding: 0.75rem;
+
+    & * {
+        margin: 0 !important;
+    }
   }
+// ----------------
 
 // header
 #header {
