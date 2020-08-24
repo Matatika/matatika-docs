@@ -15,6 +15,32 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 
 ---
 
+## Object
+{: .no_toc}
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The profile ID 
+`name` | `String` | The profile name
+`phone` | `String` | The profile phone number
+`email` | `String` | The profile email address
+`defaultWorkspace` | `JSON Object` | The profile default workspace object
+`defaultWorkspace.name` | `String` | If applicable, the profile default workspace name
+`defaultWorkspace.domains` | `String` | If applicable, the profile default workspace allowed domains
+
+### Example Response
+{: .no_toc}
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}
+{:.path .path-GET}
+
+{% include snippets/workspaces/view-a-workspace/response-body.md %}
+
+---
+
 #### Table of Contents
 {: .no_toc }
 

@@ -46,6 +46,6 @@ Path | Type | Description | Constraints
 #### Body
 {: .no_toc }
 
-[Profile object]({{site.baseurl}}/data-structures#profile) with HAL links.
+[Profile object](#object) with HAL links.
 
 ---
