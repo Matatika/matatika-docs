@@ -22,7 +22,6 @@ Returns the user profile.
 {% include snippets/profiles/view-a-profile/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/profiles/view-a-profile/python-requests.md %}
 

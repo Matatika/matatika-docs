@@ -22,7 +22,6 @@ Returns all datasets of the channel `{channel-id}`.
 `snippet placeholder`
 
 #### Python (Requests)
-{: .no_toc}
 
 `snippet placeholder`
 

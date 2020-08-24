@@ -22,7 +22,6 @@ Increments the like counter of the dataset `{dataset-id}` by 1.
 `snippet placeholder`
 
 #### Python (Requests)
-{: .no_toc}
 
 `snippet placeholder`
 

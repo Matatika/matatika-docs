@@ -22,7 +22,6 @@ Returns all members of the workspace `{workspace-id}`. A member is a profile tha
 {% include snippets/workspaces/view-all-members-of-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/view-all-members-of-a-workspace/python-requests.md %}
 

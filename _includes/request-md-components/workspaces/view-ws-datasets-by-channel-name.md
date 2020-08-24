@@ -22,7 +22,6 @@ Returns all datasets of the channel `{channel-name}` in the workspace `{workspac
 `snippet placeholder`
 
 #### Python (Requests)
-{: .no_toc}
 
 `snippet placeholder`
 

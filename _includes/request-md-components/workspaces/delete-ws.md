@@ -22,7 +22,6 @@ Deletes the workspace `{workspace-id}`.
 {% include snippets/workspaces/delete-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/delete-a-workspace/python-requests.md %}
 

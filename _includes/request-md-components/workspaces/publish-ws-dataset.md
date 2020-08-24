@@ -22,7 +22,6 @@ Publishes a dataset to the workspace `{workspace-id}`.
 {% include snippets/workspaces/publish-a-dataset-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/publish-a-dataset-to-a-workspace/python-requests.md %}
 

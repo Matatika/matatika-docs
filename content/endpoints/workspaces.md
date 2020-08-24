@@ -8,7 +8,6 @@ components: request-md-components/workspaces
 ---
 
 # {{page.title}}
-{: .no_toc }
 
 Workspaces allow users to operate within isolated instances of the Matatika service. This is useful for seperating profiles based on the data they require access to.
 {: .fs-5 }
@@ -21,7 +20,6 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 A Workspace object contains information about a workspace.
 
 ### Schema
-{: .no_toc}
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -31,7 +29,6 @@ Path | Type | Description
 `defaultWorkspace` | `Boolean` | The workspace default status for the calling user
 
 ### Example Resource
-{: .no_toc}
 
 GET
 {:.label .label-GET}
@@ -48,7 +45,6 @@ GET
 A Member object contains information about a member of a workspace. Member object properties are derived from a corresponding profile.
 
 ### Schema
-{: .no_toc}
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -56,7 +52,6 @@ Path | Type | Description
 `name` | `String` | The member name (derived from corresponding profile name)
 
 ### Example Resource
-{: .no_toc}
 
 GET
 {:.label .label-GET}
@@ -69,10 +64,9 @@ GET
 ---
 
 #### Requests
-{: .no_toc }
 
 - TOC
-{: toc }
+{: toc}
 
 ---
 

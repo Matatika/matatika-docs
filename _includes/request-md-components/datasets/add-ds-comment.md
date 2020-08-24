@@ -22,7 +22,6 @@ Adds a new comment to the dataset `{dataset-id}`.
 `snippet placeholder`
 
 #### Python (Requests)
-{: .no_toc}
 
 `snippet placeholder`
 

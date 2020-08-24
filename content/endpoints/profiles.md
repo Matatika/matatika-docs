@@ -8,7 +8,6 @@ components: request-md-components/profiles
 ---
 
 # {{page.title}}
-{: .no_toc }
 
 Profiles are individual consumers of the Matatika service. A profile is automatically created for a user when they first access the app, or accept an invitation to a workspace from an existing member via email.
 {: .fs-5 }
@@ -21,7 +20,6 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 A Profile object contains information about a profile.
 
 ### Schema
-{: .no_toc}
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -34,7 +32,6 @@ Path | Type | Description
 `defaultWorkspace.domains` | `String` | If applicable, the profile default workspace allowed domains
 
 ### Example Resource
-{: .no_toc}
 
 GET
 {:.label .label-GET}
@@ -47,7 +44,6 @@ GET
 ---
 
 #### Requests
-{: .no_toc }
 
 - TOC
 {: toc }

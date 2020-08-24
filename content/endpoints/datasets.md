@@ -8,7 +8,6 @@ components: request-md-components/datasets
 ---
 
 # {{page.title}}
-{: .no_toc }
 
 ---
 
@@ -18,7 +17,6 @@ components: request-md-components/datasets
 What is a dataset object?
 
 ### Schema
-{: .no_toc}
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -40,7 +38,6 @@ Path | Type | Description
 `viewCount` | `Integer` | The number of views the dataset has received
 
 ### Example Resource
-{: .no_toc}
 
 GET
 {:.label .label-GET}
@@ -53,7 +50,6 @@ GET
 ---
 
 #### Requests
-{: .no_toc }
 
 - TOC
 {: toc }

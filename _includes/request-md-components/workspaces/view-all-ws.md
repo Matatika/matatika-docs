@@ -17,7 +17,6 @@ Returns all workspaces.
 {% include snippets/workspaces/view-all-workspaces/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/view-all-workspaces/python-requests.md %}
 

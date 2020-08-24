@@ -22,7 +22,6 @@ Returns the member `{member-id}` of the workspace `{workspace-id}`.
 {% include snippets/workspaces/view-a-member-of-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/view-a-member-of-a-workspace/python-requests.md %}
 

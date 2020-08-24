@@ -22,7 +22,6 @@ Returns the dataset `{dataset-id}`.
 `snippet placeholder`
 
 #### Python (Requests)
-{: .no_toc}
 
 `snippet placeholder`
 

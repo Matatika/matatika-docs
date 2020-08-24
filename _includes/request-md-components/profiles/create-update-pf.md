@@ -33,7 +33,6 @@ Path | Type | Description | Constraints
 {% include snippets/profiles/update-a-profile/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/profiles/update-a-profile/python-requests.md %}
 

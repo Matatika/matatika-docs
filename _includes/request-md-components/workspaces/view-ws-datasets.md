@@ -22,7 +22,6 @@ Returns all datasets in the workspace `{workspace-id}`.
 {% include snippets/workspaces/view-all-datasets-in-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/view-all-datasets-in-a-workspace/python-requests.md %}
 

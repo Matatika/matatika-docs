@@ -34,7 +34,6 @@ Path | Type | Description | Constraints
 {% include snippets/workspaces/create-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/create-a-workspace/python-requests.md %}
 

@@ -8,24 +8,20 @@ components: request-md-components/channels
 ---
 
 # {{page.title}}
-{: .no_toc }
 
 ---
 
 ## Channel Object
-{: .no_toc}
 
 What is a channel object?
 
 ### Schema
-{: .no_toc}
 
 Path | Type | Description
 ---- | ---- | -----------
 `placeholder` | `placeholder` | placeholder
 
 ### Example Resource
-{: .no_toc}
 
 GET
 {:.label .label-GET}
@@ -38,10 +34,9 @@ GET
 ---
 
 #### Requests
-{: .no_toc }
 
 - TOC
-{: toc }
+{: toc}
 
 ---
 

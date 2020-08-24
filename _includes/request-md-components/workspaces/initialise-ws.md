@@ -17,7 +17,6 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/initialise-a-workspace/python-requests.md %}
 

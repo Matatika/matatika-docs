@@ -34,7 +34,6 @@ Path | Type | Description | Constraints
 {% include snippets/profiles/set-a-workspace-as-default/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/profiles/set-a-workspace-as-default/python-requests.md %}
 

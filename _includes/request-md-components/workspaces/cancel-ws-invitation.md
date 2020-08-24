@@ -22,7 +22,6 @@ Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`
 {% include snippets/workspaces/cancel-an-invitation-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/cancel-an-invitation-to-a-workspace/python-requests.md %}
 

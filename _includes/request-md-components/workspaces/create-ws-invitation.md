@@ -31,7 +31,6 @@ Path | Type | Description | Constraints
 {% include snippets/workspaces/create-an-invitation-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/create-an-invitation-to-a-workspace/python-requests.md %}
 

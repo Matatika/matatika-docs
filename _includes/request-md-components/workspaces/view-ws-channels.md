@@ -22,7 +22,6 @@ Returns all channels of the workspace `{workspace-id}`.
 `snippet placeholder`
 
 #### Python (Requests)
-{: .no_toc}
 
 `snippet placeholder`
 

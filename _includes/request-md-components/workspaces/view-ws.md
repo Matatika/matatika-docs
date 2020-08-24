@@ -22,7 +22,6 @@ Returns the workspace `{workspace-id}`.
 {% include snippets/workspaces/view-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/view-a-workspace/python-requests.md %}
 

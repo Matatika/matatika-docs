@@ -8,7 +8,6 @@ components: request-md-components/invitations
 ---
 
 # {{page.title}}
-{: .no_toc }
 
 ---
 
@@ -18,7 +17,6 @@ components: request-md-components/invitations
 An Invitation object contains information about an invitation.
 
 ### Schema
-{: .no_toc}
 
 Path | Type | Description
 ---- | ---- | -----------
@@ -32,7 +30,6 @@ Path | Type | Description
 `creator.name` | `String` | The invitation creator member name
 
 ### Example Resource
-{: .no_toc}
 
 GET
 {:.label .label-GET}
@@ -45,7 +42,6 @@ GET
 ---
 
 #### Requests
-{: .no_toc }
 
 - TOC
 {: toc }

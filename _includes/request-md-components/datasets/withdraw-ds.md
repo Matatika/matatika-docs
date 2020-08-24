@@ -22,7 +22,6 @@ Withraws the dataset `{dataset-id}`.
 {% include snippets/datasets/withdraw-a-dataset/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/datasets/withdraw-a-dataset/python-requests.md %}
 

@@ -22,7 +22,6 @@ Returns active invitations to the workspace `{workspace-id}` specific to the use
 {% include snippets/workspaces/view-all-invitations-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
-{: .no_toc}
 
 {% include snippets/workspaces/view-all-invitations-to-a-workspace/python-requests.md %}
 
