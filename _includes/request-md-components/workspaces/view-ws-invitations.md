@@ -32,6 +32,6 @@ Returns active invitations to the workspace `{workspace-id}` specific to the use
 200
 {:.label .label-GET}
 
-[Invitation object]({{site.baseurl}}/data-structures#invitation) collection with HAL links.
+[Invitation object](invitations#invitation-object) collection with HAL links.
 
 ---

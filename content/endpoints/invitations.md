@@ -12,6 +12,38 @@ components: request-md-components/invitations
 
 ---
 
+## Invitation Object
+{: .no_toc}
+
+An Invitation object contains information about an invitation.
+
+### Schema
+{: .no_toc}
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The invitation ID
+`created` | `String` | Timestamp denoting when the invitation was created
+`lastModified` | `String` | Timestamp denoting when the invitation was last modified
+`status` | `String` | The invitation status
+`email` | `String` | The invitation target email address
+`creator` | `JSON Object` | The invitation creator object
+`creator.id` | `String` | The invitation creator member ID
+`creator.name` | `String` | The invitation creator member name
+
+### Example Resource
+{: .no_toc}
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}/invitations
+{:.path .path-GET}
+
+{% include snippets/workspaces/view-all-invitations-to-a-workspace/response-body.md %}
+
+---
+
 #### Requests
 {: .no_toc }
 

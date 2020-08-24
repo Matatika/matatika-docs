@@ -32,6 +32,6 @@ Returns the channel `{channel-id}`.
 200
 {:.label .label-GET}
 
-[Channel object]({{site.baseurl}}/data-structures#channel) with HAL links.
+[Channel object](#channel-object) with HAL links.
 
 ---

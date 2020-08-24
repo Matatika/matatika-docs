@@ -32,6 +32,6 @@ Returns the dataset `{dataset-id}`.
 200
 {:.label .label-GET}
 
-[Dataset object]({{site.baseurl}}/data-structures#dataset) with HAL links.
+[Dataset object](#dataset-object) with HAL links.
 
 ---

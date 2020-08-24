@@ -32,6 +32,6 @@ Returns all datasets of the channel `{channel-name}` in the workspace `{workspac
 200
 {:.label .label-GET}
 
-[Dataset object]({{site.baseurl}}/data-structures#dataset) collection with HAL links.
+[Dataset object](datasets#dataset-object) collection with HAL links.
 
 ---

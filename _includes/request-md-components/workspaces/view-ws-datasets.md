@@ -32,6 +32,6 @@ Returns all datasets in the workspace `{workspace-id}`.
 201 / 200
 {:.label .label-GET}
 
-[Dataset object]({{site.baseurl}}/data-structures#dataset) with HAL links.
+[Dataset object](datasets#dataset-object) collection with HAL links.
 
 ---

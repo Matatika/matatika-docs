@@ -35,6 +35,6 @@ Returns the user profile.
 #### Body
 {: .no_toc }
 
-[Profile object](#object) with HAL links.
+[Profile object](#profile-object) with HAL links.
 
 ---

@@ -27,6 +27,6 @@ Returns all workspaces.
 200
 {:.label .label-GET}
 
-[Workspace object]({{site.baseurl}}/data-structures#workspace) collection with HAL links.
+[Workspace object](#workspace-object) collection with HAL links.
 
 ---

@@ -32,6 +32,6 @@ Returns all channels of the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Channel object]({{site.baseurl}}/data-structures#channel) collection with HAL links.
+[Channel object](channels#channel-object) collection with HAL links.
 
 ---

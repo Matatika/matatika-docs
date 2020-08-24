@@ -15,7 +15,12 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 
 ---
 
-## Object
+## Profile Object
+{: .no_toc}
+
+A Profile object contains information about a profile.
+
+### Schema
 {: .no_toc}
 
 Path | Type | Description
@@ -28,7 +33,7 @@ Path | Type | Description
 `defaultWorkspace.name` | `String` | If applicable, the profile default workspace name
 `defaultWorkspace.domains` | `String` | If applicable, the profile default workspace allowed domains
 
-### Example Response
+### Example Resource
 {: .no_toc}
 
 GET

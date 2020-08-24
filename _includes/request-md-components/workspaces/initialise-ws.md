@@ -27,6 +27,6 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 200
 {:.label .label-POST}
 
-[Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
+[Workspace object](#workspace-object) with HAL links.
 
 ---

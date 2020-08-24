@@ -32,6 +32,6 @@ Publishes a dataset to the workspace `{workspace-id}`.
 201 / 200
 {:.label .label-POST}
 
-[Dataset object]({{site.baseurl}}/data-structures#dataset) with HAL links.
+[Dataset object](datasets#dataset-object) with HAL links.
 
 ---

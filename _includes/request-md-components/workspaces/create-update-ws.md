@@ -44,6 +44,6 @@ Path | Type | Description | Constraints
 201 / 200
 {:.label .label-PUT}
 
-[Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
+[Workspace object](#workspace-object) with HAL links.
 
 ---

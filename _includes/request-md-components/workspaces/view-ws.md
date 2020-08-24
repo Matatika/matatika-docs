@@ -32,6 +32,6 @@ Returns the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Workspace object]({{site.baseurl}}/data-structures#workspace) with HAL links.
+[Workspace object](#workspace-object) with HAL links.
 
 ---

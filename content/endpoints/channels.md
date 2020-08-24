@@ -12,6 +12,31 @@ components: request-md-components/channels
 
 ---
 
+## Channel Object
+{: .no_toc}
+
+What is a channel object?
+
+### Schema
+{: .no_toc}
+
+Path | Type | Description
+---- | ---- | -----------
+`placeholder` | `placeholder` | placeholder
+
+### Example Resource
+{: .no_toc}
+
+GET
+{:.label .label-GET}
+
+/api/channels/{channel-id}
+{:.path .path-GET}
+
+`placeholder snippet`
+
+---
+
 #### Requests
 {: .no_toc }
 

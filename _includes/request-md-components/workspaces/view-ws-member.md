@@ -32,6 +32,6 @@ Returns the member `{member-id}` of the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Member object]({{site.baseurl}}/data-structures#member) with HAL links.
+[Member object](workspaces#member-object) with HAL links.
 
 ---

@@ -15,6 +15,59 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 
 ---
 
+## Workspace Object
+{: .no_toc}
+
+A Workspace object contains information about a workspace.
+
+### Schema
+{: .no_toc}
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The workspace ID
+`name` | `String` | The workspace name
+`domains` | `String` | The workspace allowed domains
+`defaultWorkspace` | `Boolean` | The workspace default status for the calling user
+
+### Example Resource
+{: .no_toc}
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}
+{:.path .path-GET}
+
+{% include snippets/workspaces/view-a-workspace/response-body.md %}
+
+
+## Member Object
+{: .no_toc}
+
+A Member object contains information about a member of a workspace. Member object properties are derived from a corresponding profile.
+
+### Schema
+{: .no_toc}
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The member ID (derived from corresponding profile ID)
+`name` | `String` | The member name (derived from corresponding profile name)
+
+### Example Resource
+{: .no_toc}
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}/members/{member-id}
+{:.path .path-GET}
+
+{% include snippets/workspaces/view-a-member-of-a-workspace/response-body.md %}
+
+---
+
 #### Requests
 {: .no_toc }
 

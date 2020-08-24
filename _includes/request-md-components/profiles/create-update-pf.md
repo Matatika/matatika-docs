@@ -46,6 +46,6 @@ Path | Type | Description | Constraints
 #### Body
 {: .no_toc }
 
-[Profile object](#object) with HAL links.
+[Profile object](#profile-object) with HAL links.
 
 ---

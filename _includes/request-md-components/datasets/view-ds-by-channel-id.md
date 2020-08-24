@@ -6,7 +6,7 @@ GET
 /api/datasets/{channel-id}
 {:.path .path-GET}
 
-Returns all datasets of  the channel `{channel-id}`.
+Returns all datasets of the channel `{channel-id}`.
 
 ### Prerequisites
 {: .no_toc }
@@ -32,6 +32,6 @@ Returns all datasets of  the channel `{channel-id}`.
 200
 {:.label .label-GET}
 
-[Dataset object]({{site.baseurl}}/data-structures#dataset) collection with HAL links.
+[Dataset object](#dataset-object) collection with HAL links.
 
 ---
