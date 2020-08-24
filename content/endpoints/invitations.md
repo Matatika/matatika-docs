@@ -4,6 +4,7 @@ title: Invitations
 permalink: /endpoints/invitations
 parent: Endpoints
 nav_order: 3
+components: request-md-components/invitations
 ---
 
 # {{page.title}}
@@ -11,35 +12,5 @@ nav_order: 3
 
 ---
 
-#### Table of Contents
-{: .no_toc }
-
-- TOC
-{: toc }
-
----
-
-<!-- ================ -->
-## View all sent invitations
-GET
-{:.label .label-GET}
-
-/api/invitations
-{:.path .path-GET}
-
-Returns all invitations sent by the user
-
-<!-- ================ -->
-
-
-<!-- ================ -->
-## View all received invitations
-GET
-{:.label .label-GET}
-
-/api/invitations?email={user-email}
-{:.path .path-GET}
-
-Returns all invitations intended for the user
-
-<!-- ================ -->
+{% include {{page.components}}/view-sent.md %}
+{% include {{page.components}}/view-received.md %}
