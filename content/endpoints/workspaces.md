@@ -4,6 +4,7 @@ title: Workspaces
 permalink: /endpoints/workspaces
 parent: Endpoints
 nav_order: 2
+components: request-md-components/workspaces
 ---
 
 # {{page.title}}
@@ -532,5 +533,119 @@ Publishes a dataset to the workspace `{workspace-id}`.
 {:.label .label-POST}
 
 [Dataset object]({{site.baseurl}}/data-structures#dataset) with HAL links.
+
+---
+
+## View all channels of a workspace
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}/channels
+{:.path .path-GET}
+
+Returns all channels of the workspace `{workspace-id}`.
+
+### Prerequisites
+{: .no_toc }
+
+- The user must be a member of the workspace `{workspace-id}`
+
+### Request
+{: .no_toc }
+
+#### cURL
+{: .no_toc }
+
+`snippet placeholder`
+
+#### Python (Requests)
+{: .no_toc}
+
+`snippet placeholder`
+
+### Response
+{: .no_toc .d-inline-block }
+
+200
+{:.label .label-GET}
+
+[Channel object]({{site.baseurl}}/data-structures#channel) collection with HAL links.
+
+---
+
+## View all datasets in a workspace by channel ID
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}/datasets?channelId={channel-id}
+{:.path .path-GET}
+
+Returns all datasets of the channel `{channel-id}` in the workspace `{workspace-id}`.
+
+### Prerequisites
+{: .no_toc }
+
+- The user must be a member of the workspace `{workspace-id}`
+
+### Request
+{: .no_toc }
+
+#### cURL
+{: .no_toc }
+
+`snippet placeholder`
+
+#### Python (Requests)
+{: .no_toc}
+
+`snippet placeholder`
+
+### Response
+{: .no_toc .d-inline-block }
+
+200
+{:.label .label-GET}
+
+[Dataset object]({{site.baseurl}}/data-structures#dataset) collection with HAL links.
+
+---
+
+## View all datasets in a workspace by channel name
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}/search?q="in:{channel-name}"
+{:.path .path-GET}
+
+Returns all datasets of the channel `{channel-name}` in the workspace `{workspace-id}`.
+
+### Prerequisites
+{: .no_toc }
+
+- The user must be a member of the workspace `{workspace-id}`
+
+### Request
+{: .no_toc }
+
+#### cURL
+{: .no_toc }
+
+`snippet placeholder`
+
+#### Python (Requests)
+{: .no_toc}
+
+`snippet placeholder`
+
+### Response
+{: .no_toc .d-inline-block }
+
+200
+{:.label .label-GET}
+
+[Dataset object]({{site.baseurl}}/data-structures#dataset) collection with HAL links.
 
 ---
