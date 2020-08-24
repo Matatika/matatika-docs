@@ -19,9 +19,12 @@ Returns the dataset `{dataset-id}`.
 #### cURL
 {: .no_toc }
 
-{% comment %}
-{% include snippets/datasets/view-a-dataset/curl-request.md %}
-{% endcomment %}
+`snippet placeholder`
+
+#### Python (Requests)
+{: .no_toc}
+
+`snippet placeholder`
 
 ### Response
 {: .no_toc .d-inline-block }

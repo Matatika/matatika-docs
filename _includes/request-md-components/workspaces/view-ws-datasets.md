@@ -1,4 +1,4 @@
-## View all datasets in a workspace
+## View all workspace datasets
 
 GET
 {:.label .label-GET}

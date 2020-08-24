@@ -23,6 +23,6 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 
 ---
 
-{% include {{page.components}}/view.md %}
-{% include {{page.components}}/create-update.md %}
-{% include {{page.components}}/set-default-workspace.md %}
+{% include {{page.components}}/view-pf.md %}
+{% include {{page.components}}/create-update-pf.md %}
+{% include {{page.components}}/set-pf-default-workspace.md %}

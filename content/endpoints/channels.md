@@ -20,4 +20,4 @@ components: request-md-components/channels
 
 ---
 
-{% include {{page.components}}/view.md %}
+{% include {{page.components}}/view-ch.md %}

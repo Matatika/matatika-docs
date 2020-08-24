@@ -23,18 +23,18 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 
 ---
 
-{% include {{page.components}}/view-all.md %}
-{% include {{page.components}}/view.md %}
-{% include {{page.components}}/initialise.md %}
-{% include {{page.components}}/create-update.md %}
-{% include {{page.components}}/delete.md %}
-{% include {{page.components}}/view-members.md %}
-{% include {{page.components}}/view-member.md %}
-{% include {{page.components}}/view-invs.md %}
-{% include {{page.components}}/create-inv.md %}
-{% include {{page.components}}/cancel-inv.md %}
-{% include {{page.components}}/view-channels.md %}
-{% include {{page.components}}/view-datasets.md %}
-{% include {{page.components}}/view-datasets-channel-id.md %}
-{% include {{page.components}}/view-datasets-channel-name.md %}
-{% include {{page.components}}/publish-dataset.md %}
+{% include {{page.components}}/view-all-ws.md %}
+{% include {{page.components}}/view-ws.md %}
+{% include {{page.components}}/initialise-ws.md %}
+{% include {{page.components}}/create-update-ws.md %}
+{% include {{page.components}}/delete-ws.md %}
+{% include {{page.components}}/view-ws-members.md %}
+{% include {{page.components}}/view-ws-member.md %}
+{% include {{page.components}}/view-ws-invitations.md %}
+{% include {{page.components}}/create-ws-invitation.md %}
+{% include {{page.components}}/cancel-ws-invitation.md %}
+{% include {{page.components}}/view-ws-channels.md %}
+{% include {{page.components}}/view-ws-datasets.md %}
+{% include {{page.components}}/view-ws-datasets-by-channel-id.md %}
+{% include {{page.components}}/view-ws-datasets-by-channel-name.md %}
+{% include {{page.components}}/publish-ws-dataset.md %}

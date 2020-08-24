@@ -12,5 +12,5 @@ components: request-md-components/invitations
 
 ---
 
-{% include {{page.components}}/view-sent.md %}
-{% include {{page.components}}/view-received.md %}
+{% include {{page.components}}/view-sent-invs.md %}
+{% include {{page.components}}/view-received-invs.md %}

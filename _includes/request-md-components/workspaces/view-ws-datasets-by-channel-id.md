@@ -1,12 +1,12 @@
-## View all datasets in a workspace by channel name
+## View workspace datasets by channel ID
 
 GET
 {:.label .label-GET}
 
-/api/workspaces/{workspace-id}/search?q="in:{channel-name}"
+/api/workspaces/{workspace-id}/datasets?channelId={channel-id}
 {:.path .path-GET}
 
-Returns all datasets of the channel `{channel-name}` in the workspace `{workspace-id}`.
+Returns all datasets of the channel `{channel-id}` in the workspace `{workspace-id}`.
 
 ### Prerequisites
 {: .no_toc }

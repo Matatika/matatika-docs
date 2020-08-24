@@ -20,6 +20,6 @@ components: request-md-components/datasets
 
 ---
 
-{% include {{page.components}}/view.md %}
-{% include {{page.components}}/view-all-channel-id.md %}
-{% include {{page.components}}/withdraw.md %}
+{% include {{page.components}}/view-ds.md %}
+{% include {{page.components}}/view-ds-by-channel-id.md %}
+{% include {{page.components}}/withdraw-ds.md %}
