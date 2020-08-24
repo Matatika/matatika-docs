@@ -37,6 +37,7 @@ Path | Type | Description
 `likeCount` | `Integer` | The number of likes the dataset has received
 `likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the dataset
 `commentCount` | `Integer` | The number of comments the dataset has received
+`viewCount` | `Integer` | The number of views the dataset has received
 
 ### Example Resource
 {: .no_toc}
