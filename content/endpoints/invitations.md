@@ -12,5 +12,13 @@ components: request-md-components/invitations
 
 ---
 
+#### Table of Contents
+{: .no_toc }
+
+- TOC
+{: toc }
+
+---
+
 {% include {{page.components}}/view-sent-invs.md %}
 {% include {{page.components}}/view-received-invs.md %}
