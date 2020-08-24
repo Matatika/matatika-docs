@@ -12,7 +12,7 @@ components: request-md-components/datasets
 
 ---
 
-#### Table of Contents
+#### Requests
 {: .no_toc }
 
 - TOC

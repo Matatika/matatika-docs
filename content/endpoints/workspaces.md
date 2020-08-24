@@ -15,7 +15,7 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 
 ---
 
-#### Table of Contents
+#### Requests
 {: .no_toc }
 
 - TOC

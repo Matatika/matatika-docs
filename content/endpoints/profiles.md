@@ -41,7 +41,7 @@ GET
 
 ---
 
-#### Table of Contents
+#### Requests
 {: .no_toc }
 
 - TOC
