@@ -16,11 +16,11 @@ Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`
 
 #### cURL
 
-{% include snippets/workspaces/cancel-an-invitation-to-a-workspace/curl-request.md %}
+{% include snippets/invitations/cancel-an-invitation-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
 
-{% include snippets/workspaces/cancel-an-invitation-to-a-workspace/python-requests.md %}
+{% include snippets/invitations/cancel-an-invitation-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

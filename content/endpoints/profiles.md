@@ -50,6 +50,6 @@ GET
 
 ---
 
-{% include {{page.components}}/view-pf.md %}
-{% include {{page.components}}/create-update-pf.md %}
-{% include {{page.components}}/set-pf-default-workspace.md %}
+{% include {{page.components}}/view-a-profile.md %}
+{% include {{page.components}}/create-or-update-a-profile.md %}
+{% include {{page.components}}/set-a-workspace-as-default.md %}

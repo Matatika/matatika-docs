@@ -15,11 +15,11 @@ Returns the channel `{channel-id}`.
 
 #### cURL
 
-`snippet placeholder`
+{% include snippets/channels/view-a-channel/curl-request.md %}
 
 #### Python (Requests)
 
-`snippet placeholder`
+{% include snippets/channels/view-a-channel/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

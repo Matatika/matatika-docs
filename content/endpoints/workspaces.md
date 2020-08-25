@@ -70,10 +70,10 @@ GET
 
 ---
 
-{% include {{page.components}}/view-all-ws.md %}
-{% include {{page.components}}/view-ws.md %}
-{% include {{page.components}}/initialise-ws.md %}
-{% include {{page.components}}/create-update-ws.md %}
-{% include {{page.components}}/delete-ws.md %}
-{% include {{page.components}}/view-ws-members.md %}
-{% include {{page.components}}/view-ws-member.md %}
+{% include {{page.components}}/view-all-workspaces.md %}
+{% include {{page.components}}/view-a-workspace.md %}
+{% include {{page.components}}/view-all-members-of-a-workspace.md %}
+{% include {{page.components}}/view-a-member-of-a-workspace.md %}
+{% include {{page.components}}/initialise-a-workspace.md %}
+{% include {{page.components}}/create-or-update-a-workspace.md %}
+{% include {{page.components}}/delete-a-workspace.md %}

@@ -1,4 +1,4 @@
-## View all workspace datasets
+## View all datasets in a workspace
 
 GET
 {:.label .label-GET}
@@ -16,18 +16,18 @@ Returns all datasets in the workspace `{workspace-id}`.
 
 #### cURL
 
-{% include snippets/workspaces/view-all-datasets-in-a-workspace/curl-request.md %}
+{% include snippets/datasets/view-all-datasets-in-a-workspace/curl-request.md %}
 
 #### Python (Requests)
 
-{% include snippets/workspaces/view-all-datasets-in-a-workspace/python-requests.md %}
+{% include snippets/datasets/view-all-datasets-in-a-workspace/python-requests.md %}
 
 ### Response
 {: .d-inline-block }
 
-201 / 200
+200
 {:.label .label-GET}
 
-[Dataset object](datasets#dataset-object) collection with HAL links.
+[Dataset object](#dataset-object) collection with HAL links.
 
 ---

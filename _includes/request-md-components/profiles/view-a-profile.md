@@ -29,6 +29,6 @@ Returns the user profile.
 {:.label .label-GET}
 
 #### Body
-ect](#profile-object) with HAL links.
+[Proile object](#profile-object) with HAL links.
 
 ---

@@ -16,11 +16,11 @@ Increments the like counter of the dataset `{dataset-id}` by 1.
 
 #### cURL
 
-`snippet placeholder`
+{% include snippets/datasets/add-a-like-to-a-dataset/curl-request.md %}
 
 #### Python (Requests)
 
-`snippet placeholder`
+{% include snippets/datasets/add-a-like-to-a-dataset/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

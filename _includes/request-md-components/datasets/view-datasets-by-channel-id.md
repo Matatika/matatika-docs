@@ -1,4 +1,4 @@
-## View all datasets by channel ID
+## View datasets by channel ID
 
 GET
 {:.label .label-GET}
@@ -16,11 +16,11 @@ Returns all datasets of the channel `{channel-id}`.
 
 #### cURL
 
-`snippet placeholder`
+{% include snippets/datasets/view-datasets-by-channel-id/curl-request.md %}
 
 #### Python (Requests)
 
-`snippet placeholder`
+{% include snippets/datasets/view-datasets-by-channel-id/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

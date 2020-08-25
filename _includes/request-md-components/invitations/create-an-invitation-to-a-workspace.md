@@ -16,7 +16,7 @@ Creates a workspace invitation to the workspace `{workspace-id}`.
 
 #### Body
 
-{% include snippets/workspaces/create-an-invitation-to-a-workspace/request-body.md %}
+{% include snippets/invitations/create-an-invitation-to-a-workspace/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
@@ -24,11 +24,11 @@ Path | Type | Description | Constraints
 
 #### cURL
 
-{% include snippets/workspaces/create-an-invitation-to-a-workspace/curl-request.md %}
+{% include snippets/invitations/create-an-invitation-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
 
-{% include snippets/workspaces/create-an-invitation-to-a-workspace/python-requests.md %}
+{% include snippets/invitations/create-an-invitation-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

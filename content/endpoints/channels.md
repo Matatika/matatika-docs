@@ -30,7 +30,7 @@ GET
 /api/channels/{channel-id}
 {:.path .path-GET}
 
-`placeholder snippet`
+{% include snippets/channels/view-a-channel/response-body.md %}
 
 ---
 
@@ -41,5 +41,5 @@ GET
 
 ---
 
-{% include request-md-components/channels/view-ch.md %}
-{% include request-md-components/workspaces/view-ws-channels.md %}
+{% include request-md-components/channels/view-a-channel.md %}
+{% include request-md-components/channels/view-all-channels-in-a-workspace.md %}

@@ -45,7 +45,7 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-GET}
 
-`placeholder snippet`
+`snippet placeholder`
 
 ---
 
@@ -56,13 +56,12 @@ GET
 
 ---
 
-{% include request-md-components/datasets/view-ds.md %}
-{% include request-md-components/datasets/view-ds-by-channel-id.md %}
-{% include request-md-components/datasets/withdraw-ds.md %}
-{% include request-md-components/datasets/add-ds-view.md %}
-{% include request-md-components/datasets/add-ds-like.md %}
-{% include request-md-components/datasets/add-ds-comment.md %}
-{% include request-md-components/workspaces/view-ws-datasets.md %}
-{% include request-md-components/workspaces/view-ws-datasets-by-channel-id.md %}
-{% include request-md-components/workspaces/view-ws-datasets-by-channel-name.md %}
-{% include request-md-components/workspaces/publish-ws-dataset.md %}
+{% include {{ page.components }}/view-a-dataset.md %}
+{% include {{ page.components }}/view-datasets-by-channel-id.md %}
+{% include {{ page.components }}/view-datasets-by-channel-name.md %}
+{% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
+{% include {{ page.components }}/publish-a-dataset-to-a-workspace.md %}
+{% include {{ page.components }}/add-a-view-to-a-dataset.md %}
+{% include {{ page.components }}/add-a-like-to-a-dataset.md %}
+{% include {{ page.components }}/add-a-comment-to-a-dataset.md %}
+{% include {{ page.components }}/withdraw-a-dataset.md %}

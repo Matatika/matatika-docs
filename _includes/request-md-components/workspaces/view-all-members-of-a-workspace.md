@@ -28,6 +28,6 @@ Returns all members of the workspace `{workspace-id}`. A member is a profile tha
 200
 {:.label .label-GET}
 
-[Member object](workspaces#member-object) collection with HAL links.
+[Member object](#member-object) collection with HAL links.
 
 ---

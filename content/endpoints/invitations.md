@@ -37,7 +37,7 @@ GET
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-{% include snippets/workspaces/view-all-invitations-to-a-workspace/response-body.md %}
+{% include snippets/invitations/view-all-invitations-to-a-workspace/response-body.md %}
 
 ---
 
@@ -48,8 +48,8 @@ GET
 
 ---
 
-{% include request-md-components/invitations/view-sent-invs.md %}
-{% include request-md-components/invitations/view-received-invs.md %}
-{% include request-md-components/workspaces/view-ws-invitations.md %}
-{% include request-md-components/workspaces/create-ws-invitation.md %}
-{% include request-md-components/workspaces/cancel-ws-invitation.md %}
+{% include {{ page.components }}/view-sent-invs.md %}
+{% include {{ page.components }}/view-received-invs.md %}
+{% include {{ page.components }}/view-all-invitations-to-a-workspace.md %}
+{% include {{ page.components }}/create-an-invitation-to-a-workspace.md %}
+{% include {{ page.components }}/cancel-an-invitation-to-a-workspace.md %}

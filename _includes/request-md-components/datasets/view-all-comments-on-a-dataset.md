@@ -1,4 +1,4 @@
-## View the comments on a dataset
+## View all comments on a dataset
 
 GET
 {:.label .label-GET}

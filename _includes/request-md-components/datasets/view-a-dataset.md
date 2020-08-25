@@ -6,21 +6,20 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-GET}
 
-Returns the dataset `{dataset-id}`.
+Returns the dataset {dataset-id}.
 
 ### Prerequisites
-
-- Dataset `{dataset-id}` must exist
+- Dataset {dataset-id} must exist
 
 ### Request
 
 #### cURL
 
-`snippet placeholder`
+{% include snippets/datasets/view-a-dataset/curl-request.md %}
 
 #### Python (Requests)
 
-`snippet placeholder`
+{% include snippets/datasets/view-a-dataset/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

@@ -15,11 +15,11 @@ Publishes a dataset to the workspace `{workspace-id}`.
 ### Request
 
 #### cURL
-{% include snippets/workspaces/publish-a-dataset-to-a-workspace/curl-request.md %}
+{% include snippets/datasets/publish-a-dataset-to-a-workspace/curl-request.md %}
 
 #### Python (Requests)
 
-{% include snippets/workspaces/publish-a-dataset-to-a-workspace/python-requests.md %}
+{% include snippets/datasets/publish-a-dataset-to-a-workspace/python-requests.md %}
 
 ### Response
 {: .d-inline-block }
@@ -27,6 +27,6 @@ Publishes a dataset to the workspace `{workspace-id}`.
 201 / 200
 {:.label .label-POST}
 
-[Dataset object](datasets#dataset-object) with HAL links.
+[Dataset object](#dataset-object) with HAL links.
 
 ---
