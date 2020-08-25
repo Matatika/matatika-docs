@@ -59,6 +59,9 @@ GET
 {% include request-md-components/datasets/view-ds.md %}
 {% include request-md-components/datasets/view-ds-by-channel-id.md %}
 {% include request-md-components/datasets/withdraw-ds.md %}
+{% include request-md-components/datasets/add-ds-view.md %}
+{% include request-md-components/datasets/add-ds-like.md %}
+{% include request-md-components/datasets/add-ds-comment.md %}
 {% include request-md-components/workspaces/view-ws-datasets.md %}
 {% include request-md-components/workspaces/view-ws-datasets-by-channel-id.md %}
 {% include request-md-components/workspaces/view-ws-datasets-by-channel-name.md %}
