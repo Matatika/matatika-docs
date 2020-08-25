@@ -14,8 +14,6 @@ components: request-md-components/datasets
 ## Dataset Object
 {: .no_toc}
 
-What is a dataset object?
-
 ### Schema
 
 Path | Type | Description

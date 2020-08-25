@@ -17,8 +17,6 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 ## Workspace Object
 {: .no_toc}
 
-A Workspace object contains information about a workspace.
-
 ### Schema
 
 Path | Type | Description
@@ -41,8 +39,6 @@ GET
 
 ## Member Object
 {: .no_toc}
-
-A Member object contains information about a member of a workspace. Member object properties are derived from a corresponding profile.
 
 ### Schema
 

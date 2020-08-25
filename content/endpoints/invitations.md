@@ -14,8 +14,6 @@ components: request-md-components/invitations
 ## Invitation Object
 {: .no_toc}
 
-An Invitation object contains information about an invitation.
-
 ### Schema
 
 Path | Type | Description

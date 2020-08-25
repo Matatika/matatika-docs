@@ -14,8 +14,6 @@ components: request-md-components/comments
 ## Comment Object
 {: .no_toc}
 
-What is a comment object?
-
 ### Schema
 
 Path | Type | Description

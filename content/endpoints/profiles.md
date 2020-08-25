@@ -17,8 +17,6 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 ## Profile Object
 {: .no_toc}
 
-A Profile object contains information about a profile.
-
 ### Schema
 
 Path | Type | Description
