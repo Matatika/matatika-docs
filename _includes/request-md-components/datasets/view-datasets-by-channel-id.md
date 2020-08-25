@@ -10,7 +10,7 @@ Returns all datasets of the channel `{channel-id}`.
 
 ### Prerequisites
 
-- Dataset `{dataset-id}` must exist
+- Channel `{channel-id}` must exist
 
 ### Request
 
