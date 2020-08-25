@@ -40,4 +40,5 @@ GET
 
 ---
 
-{% include {{page.components}}/view-ch.md %}
+{% include request-md-components/channels/view-ch.md %}
+{% include request-md-components/workspaces/view-ws-channels.md %}

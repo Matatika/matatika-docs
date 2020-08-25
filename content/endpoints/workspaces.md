@@ -77,11 +77,3 @@ GET
 {% include {{page.components}}/delete-ws.md %}
 {% include {{page.components}}/view-ws-members.md %}
 {% include {{page.components}}/view-ws-member.md %}
-{% include {{page.components}}/view-ws-invitations.md %}
-{% include {{page.components}}/create-ws-invitation.md %}
-{% include {{page.components}}/cancel-ws-invitation.md %}
-{% include {{page.components}}/view-ws-channels.md %}
-{% include {{page.components}}/view-ws-datasets.md %}
-{% include {{page.components}}/view-ws-datasets-by-channel-id.md %}
-{% include {{page.components}}/view-ws-datasets-by-channel-name.md %}
-{% include {{page.components}}/publish-ws-dataset.md %}
