@@ -9,15 +9,12 @@ GET
 Returns all datasets of the channel `{channel-id}` in the workspace `{workspace-id}`.
 
 ### Prerequisites
-{: .no_toc }
 
 - The user must be a member of the workspace `{workspace-id}`
 
 ### Request
-{: .no_toc }
 
 #### cURL
-{: .no_toc }
 
 `snippet placeholder`
 
@@ -26,7 +23,7 @@ Returns all datasets of the channel `{channel-id}` in the workspace `{workspace-
 `snippet placeholder`
 
 ### Response
-{: .no_toc .d-inline-block }
+{: .d-inline-block }
 
 200
 {:.label .label-GET}

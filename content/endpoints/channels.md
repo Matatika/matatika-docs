@@ -12,6 +12,7 @@ components: request-md-components/channels
 ---
 
 ## Channel Object
+{: .no_toc }
 
 What is a channel object?
 

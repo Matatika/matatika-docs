@@ -9,10 +9,8 @@ POST
 Initialises a new workspace with a UUID. Post-initialisation, the workspace can be created and subsequently updated.
 
 ### Request
-{: .no_toc }
 
 #### cURL
-{: .no_toc }
 
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
 
@@ -21,7 +19,7 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 {% include snippets/workspaces/initialise-a-workspace/python-requests.md %}
 
 ### Response
-{: .no_toc .d-inline-block }
+{: .d-inline-block }
 
 200
 {:.label .label-POST}

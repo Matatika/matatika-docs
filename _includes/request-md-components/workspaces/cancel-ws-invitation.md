@@ -9,15 +9,12 @@ DELETE
 Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
 
 ### Prerequisites
-{: .no_toc }
 
 - The user must be the owner of workspace `{workspace-id}`
 
 ### Request
-{: .no_toc }
 
 #### cURL
-{: .no_toc }
 
 {% include snippets/workspaces/cancel-an-invitation-to-a-workspace/curl-request.md %}
 
@@ -26,7 +23,7 @@ Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`
 {% include snippets/workspaces/cancel-an-invitation-to-a-workspace/python-requests.md %}
 
 ### Response
-{: .no_toc .d-inline-block }
+{: .d-inline-block }
 
 204
 {:.label .label-DELETE}

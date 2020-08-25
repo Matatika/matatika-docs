@@ -9,15 +9,12 @@ POST
 Adds a new comment to the dataset `{dataset-id}`.
 
 ### Prerequisites
-{: .no_toc }
 
 - Dataset `{dataset-id}` must exist
 
 ### Request
-{: .no_toc }
 
 #### cURL
-{: .no_toc }
 
 `snippet placeholder`
 
@@ -26,7 +23,7 @@ Adds a new comment to the dataset `{dataset-id}`.
 `snippet placeholder`
 
 ### Response
-{: .no_toc .d-inline-block }
+{: .d-inline-block }
 
 2xx
 {:.label .label-POST}
