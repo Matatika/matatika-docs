@@ -6,7 +6,7 @@ PUT
 /api/datasets/{dataset-id}/like
 {:.path .path-PUT}
 
-Increments the like counter of the dataset `{dataset-id}` by 1.
+Increments the like count of the dataset `{dataset-id}` by 1.
 
 ### Prerequisites
 
