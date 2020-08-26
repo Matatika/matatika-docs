@@ -38,7 +38,7 @@ Path | Type | Description
 GET
 {:.label .label-GET}
 
-/api/comments/{dataset-id}
+/api/comments/{comment-id}
 {:.path .path-GET}
 
 ```
