@@ -14,6 +14,14 @@ Updates the comment `{comment-id}`.
 
 ### Request
 
+#### Body
+
+{% include snippets/comments/update-a-comment/request-body.md %}
+
+Path | Type | Description | Constraints
+---- | ---- | ----------- | -----------
+`message` | `String` | The comment message | Must not be empty
+
 #### cURL
 
 {% include snippets/comments/update-a-comment/curl-request.md %}

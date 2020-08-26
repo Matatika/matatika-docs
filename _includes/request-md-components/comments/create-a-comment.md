@@ -15,6 +15,15 @@ Creates a new comment `{comment-id}`.
 
 ### Request
 
+#### Body
+
+{% include snippets/comments/create-a-comment/request-body.md %}
+
+Path | Type | Description | Constraints
+---- | ---- | ----------- | -----------
+`message` | `String` | The comment message | Must not be empty
+`datasetId` | `String` | The target dataset ID of the comment | Must be a valid and existing dataset UUID
+
 #### cURL
 
 {% include snippets/comments/create-a-comment/curl-request.md %}
