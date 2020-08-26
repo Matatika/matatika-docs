@@ -9,6 +9,9 @@ components: request-md-components/comments
 
 # {{page.title}}
 
+Comments aid conversation and collaberation around workspace datasets. Comments can be made on datasets, or other comments to form threads.
+{: .fs-5 }
+
 ---
 
 ## Comment Object
