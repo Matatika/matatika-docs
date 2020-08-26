@@ -3,7 +3,7 @@
 PUT
 {:.label .label-PUT}
 
-/api/comment/{comment-id}\like
+/api/comment/{comment-id}/like
 {:.path .path-PUT}
 
 Adds a like to the comment `{comment-id}` from the user profile.
