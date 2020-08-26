@@ -22,7 +22,7 @@ Comments aid conversation and collaberation around workspace datasets. Comments 
 Path | Type | Description
 ---- | ---- | -----------
 `id` | `String` | The comment ID
-`message` | `String` | The comment messaged
+`message` | `String` | The comment message
 `likeCount` | `Integer` | The number of likes the comment has received
 `likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the comment
 `created` | `String` | Timestamp denoting when the comment was created
@@ -41,9 +41,7 @@ GET
 /api/comments/{comment-id}
 {:.path .path-GET}
 
-```
-snippet placeholder
-```
+{% include snippets/comments/view-a-comment/response-body.md %}
 
 ---
 
@@ -53,3 +51,12 @@ snippet placeholder
 {: toc }
 
 ---
+
+{% include {{ page.components }}/view-a-comment.md %}
+{% include {{ page.components }}/view-the-edit-history-of-a-comment.md %}
+{% include {{ page.components }}/initialise-a-comment-on-a-dataset.md %}
+{% include {{ page.components }}/create-a-comment.md %}
+{% include {{ page.components }}/update-a-comment.md %}
+{% include {{ page.components }}/add-a-like-to-a-comment.md %}
+{% include {{ page.components }}/remove-a-like-from-a-comment.md %}
+{% include {{ page.components }}/delete-a-comment.md %}
