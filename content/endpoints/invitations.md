@@ -4,42 +4,50 @@ title: Invitations
 permalink: /endpoints/invitations
 parent: Endpoints
 nav_order: 3
+components: request-md-components/invitations
 ---
 
 # {{page.title}}
-{: .no_toc }
 
 ---
 
-#### Table of Contents
-{: .no_toc }
+## Invitation Object
+{: .no_toc}
+
+### Schema
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The invitation ID
+`created` | `String` | Timestamp denoting when the invitation was created
+`lastModified` | `String` | Timestamp denoting when the invitation was last modified
+`status` | `String` | The invitation status
+`email` | `String` | The invitation target email address
+`creator` | `JSON Object` | The invitation creator object
+`creator.id` | `String` | The invitation creator member ID
+`creator.name` | `String` | The invitation creator member name
+
+### Example Resource
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}/invitations
+{:.path .path-GET}
+
+{% include snippets/invitations/view-all-invitations-to-a-workspace/response-body.md %}
+
+---
+
+#### Requests
 
 - TOC
 {: toc }
 
 ---
 
-<!-- ================ -->
-## View all sent invitations
-GET
-{:.label .label-GET}
-
-/api/invitations
-{:.path .path-GET}
-
-Returns all invitations sent by the user
-
-<!-- ================ -->
-
-
-<!-- ================ -->
-## View all received invitations
-GET
-{:.label .label-GET}
-
-/api/invitations?email={user-email}
-{:.path .path-GET}
-
-Returns all invitations intended for the user
-
-<!-- ================ -->
+{% include {{ page.components }}/view-sent-invs.md %}
+{% include {{ page.components }}/view-received-invs.md %}
+{% include {{ page.components }}/view-all-invitations-to-a-workspace.md %}
+{% include {{ page.components }}/create-an-invitation-to-a-workspace.md %}
+{% include {{ page.components }}/cancel-an-invitation-to-a-workspace.md %}

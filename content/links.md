@@ -26,6 +26,9 @@ Make a <span>POST</span>{:.label .label-POST} request to this link to initialise
 ## `publish`
 Make a <span>POST</span>{:.label .label-POST} request to this link to publish data into a resource. Expect `201 Created` or `200 OK` to indicate the resource was successfully published.
 
+## `add`
+Make a <span>PUT</span>{:.label .label-PUT} request to this link to add a new resource. Expect `200 OK` to indicate the resource was successfully added.
+
 ## `create`
 Make a <span>PUT</span>{:.label .label-PUT} request to this link to create a new resource. Expect `201 Created` or `202 Accepted` to indicate the resource was successfully created.
 
