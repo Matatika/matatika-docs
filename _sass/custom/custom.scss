@@ -128,8 +128,7 @@ $matatika-default: #EE7A34;
 // ----------------
 
 // tabs
-.tabs {
-    display: none;
+.tab-button {
     overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -149,8 +148,7 @@ $matatika-default: #EE7A34;
     color: $matatika-default;
 }
 
-.tab-contents {
-    display: none;
+.tab-content {
     border: 1px solid #ccc;
     border-radius: 4px;
     border-top: none;

@@ -92,26 +92,11 @@
 
 
 function createSnippetTabs() {
+  // for every tab section
+  $('.tab.tabs-section-start').each(function (i) {
+    let first_item = $(this);
 
-  function regexAlternate(array) {
-    let regex_string = '';
-    array.forEach(function (e, i) {
-
-      regex_string += e;
-      if (i !== e.length - 1) {
-        regex_string += '|';
-      }
-    });
-
-    return regex_string;
-  }
-  const languages = ['curl', 'python', 'node'];
-  const HEADING_REGEX = new RegExp(`${regexAlternate(languages)}[^\s]*`, 'i');
-
-  // for every ul of 'tabs' class
-  $('ul.tabs').each(function (i) {
-    let base_ul = $(this);
-
+    // give multiple tab sections unique ids
     let id = null;
     if (i != 0) {
       id = `tabs-${i}`;
@@ -119,37 +104,25 @@ function createSnippetTabs() {
       id = 'tabs';
     }
 
-    let base_div = $(`<div id="${id}"></div>`).insertAfter(base_ul);
+    let base_div = $(`<div id="${id}"></div>`).insertBefore(first_item);
+    let tab_buttons_div = $('<div class="tab-button"></div>').appendTo(base_div);
+    let tab_content_div = $(`<div class="tab-content"></div>`).appendTo(base_div);
+    let tab_div = null;
+    let elements = first_item.nextUntil($('.tabs-section-end').first().next()).addBack();
 
-    let tabs = [];
+    elements.each(function () {
+      let elem = $(this);
 
-    // find code snippet headings
-    base_ul.children('li').each(function () {
-      let base_ul_li = $(this);
-      // maybe rework?
-      let name = base_ul_li.clone().children().remove().end().text().trim();
-      tabs.push({ name: name, contents: base_ul_li.find('li') });
-      base_ul_li.remove();
+      if (elem.hasClass('tab')) {
+        let tab_name = elem.text().trim();
+        $(`<button>${tab_name}</button>`).appendTo(tab_buttons_div);
+        tab_div = $(`<div></div>`).appendTo(tab_content_div);
+      } else {
+        elem.clone().appendTo(tab_div)
+      }
+
+      elem.remove();
     });
-
-    if (tabs.length) {
-
-      tab_buttons_div = $('<div class="tabs"></div>').appendTo(base_div);
-      base_ul.remove();
-
-      tabs.forEach(function (tab) {
-        $(`<button>${tab.name}</button>`).appendTo(tab_buttons_div);
-      });
-
-      tabs.forEach(function (tab) {
-        tab_contents_div = $(`<div class="tab-contents"></div>`).appendTo(base_div);
-        tab.contents.each(function () {
-          let html = $(this).html();
-          $(`<div>${html}</div>`).appendTo(tab_contents_div);
-        });
-      });
-    }
-
   });
 }
 
@@ -157,21 +130,18 @@ function createSnippetTabs() {
 $(document).ready(function () {
 
   createSnippetTabs();
-  $('.tabs').show();
-  $('.tab-contents').hide();
 
-
-  $('.tabs button').click(function () {
+  $('.tab-button button').click(function () {
     $(this).addClass('selected-tab');
     $(this).siblings().removeClass('selected-tab');
     let index = $(this).index();
-    $(this).parent().siblings('.tab-contents').hide();
-    $(this).parent().siblings('.tab-contents').eq(index).show();
+    $(this).parent().siblings('.tab-content').children().hide();
+    $(this).parent().siblings('.tab-content').children().eq(index).show();
   });
 
-  $('.tabs button').eq(0).click();
-
-
+  $('.tab-button').each(function () {
+    $(this).find('button').eq(0).click();
+  });
 
   // open links external to /docs in new tabs
   $('a[href^=http').each(function () {
