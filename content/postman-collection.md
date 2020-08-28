@@ -9,7 +9,7 @@ nav_order: 3
 
 ---
 
-We automatically maintain a fully-tested Postman collection for the Matatika API, which contains all the requests documented in [Resources](resources).
+We automatically maintain a fully-tested Postman collection for the Matatika API, which contains all the requests documented for each [resource](resources) type.
 
 Simply import the following collection URL into Postman to begin sending requests:
 
