@@ -27,9 +27,7 @@ Path | Type | Description
 `likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the comment
 `created` | `String` | Timestamp denoting when the comment was created
 `lastModified` | `String` | Timestamp denoting when the comment was last modified
-`from` | `JSON Object` | The comment author object
-`from.id` | `String` | The comment author member ID
-`frame.name` | `String` | The comment author member name
+`from` | [`Member object`](members#member-object) | The comment author
 `commentCount` | `Integer` | The number of replies the comment has received
 `datasetId` | `String` | The ID of the dataset comment subject
 

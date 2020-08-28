@@ -22,8 +22,8 @@ Channels enable datasets to be categorised or grouped together. A single workspa
 Path | Type | Description
 ---- | ---- | -----------
 `id` | `String` | The channel ID
-`creator` | `JSON Object` | The channel creator [Member object](members#member-object)
-`workspace` | `JSON Object` | The channel workspace reduced [Workspace object](workspaces#workspace-object)
+`creator` | [`Member object`](members#member-object) | The channel creator
+`workspace` | [`Workspace object`](workspaces#workspace-object) (reduced fields) | The channel workspace 
 `name` | `String` | The channel name
 `description` | `String` | The channel description
 `picture` | `String` | The channel picture metadata
