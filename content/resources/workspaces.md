@@ -36,27 +36,6 @@ GET
 
 {% include snippets/workspaces/view-a-workspace/response-body.md %}
 
-
-## Member Object
-{: .no_toc}
-
-### Schema
-
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The member ID (derived from corresponding profile ID)
-`name` | `String` | The member name (derived from corresponding profile name)
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}/members/{member-id}
-{:.path .path-GET}
-
-{% include snippets/workspaces/view-a-member-of-a-workspace/response-body.md %}
-
 ---
 
 #### Requests
