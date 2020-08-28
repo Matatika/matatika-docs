@@ -63,5 +63,5 @@ GET
 {% include {{ page.components }}/publish-a-dataset-to-a-workspace.md %}
 {% include {{ page.components }}/record-a-view-of-a-dataset.md %}
 {% include {{ page.components }}/record-a-like-of-a-dataset.md %}
-{% include {{ page.components }}/add-a-comment-to-a-dataset.md %}
+{% include {{ page.components }}/remove-a-like-from-a-dataset.md %}
 {% include {{ page.components }}/withdraw-a-dataset.md %}

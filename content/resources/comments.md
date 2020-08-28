@@ -55,6 +55,6 @@ GET
 {% include {{ page.components }}/initialise-a-comment-on-a-dataset.md %}
 {% include {{ page.components }}/create-a-comment.md %}
 {% include {{ page.components }}/update-a-comment.md %}
-{% include {{ page.components }}/add-a-like-to-a-comment.md %}
+{% include {{ page.components }}/record-a-like-of-a-comment.md %}
 {% include {{ page.components }}/remove-a-like-from-a-comment.md %}
 {% include {{ page.components }}/delete-a-comment.md %}
