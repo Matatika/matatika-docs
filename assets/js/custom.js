@@ -104,7 +104,7 @@ function createSnippetTabs() {
       id = 'tabs';
     }
 
-    let base_div = $(`<div id="${id}"></div>`).insertBefore(first_item);
+    let base_div = $(`<div id="${id}" class="tabs"></div>`).insertBefore(first_item);
     let tab_buttons_div = $('<div class="tab-button"></div>').appendTo(base_div);
     let tab_content_div = $(`<div class="tab-content"></div>`).appendTo(base_div);
     let tab_div = null;
