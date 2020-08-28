@@ -9,6 +9,9 @@ components: request-md-components/channels
 
 # {{page.title}}
 
+Channels enable datasets to be categorised or grouped together. A single workspace can have multiple channels.
+{: .fs-5 }
+
 ---
 
 ## Channel Object
@@ -18,7 +21,12 @@ components: request-md-components/channels
 
 Path | Type | Description
 ---- | ---- | -----------
-`placeholder` | `placeholder` | placeholder
+`id` | `String` | The channel ID
+`creator` | `JSON Object` | The channel creator [Member object](members#member-object)
+`workspace` | `JSON Object` | The channel workspace reduced [Workspace object](workspaces#workspace-object)
+`name` | `String` | The channel name
+`description` | `String` | The channel description
+`picture` | `String` | The channel picture metadata
 
 ### Example Resource
 
