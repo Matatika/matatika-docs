@@ -9,6 +9,9 @@ components: request-md-components/datasets
 
 # {{page.title}}
 
+Datasets are modules of data that can be published to workspaces. The visualisation of datasets is supported, following the Google Charts specification.
+{: .fs-5 }
+
 ---
 
 ## Dataset Object

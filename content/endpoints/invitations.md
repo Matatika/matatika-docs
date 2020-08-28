@@ -9,6 +9,9 @@ components: request-md-components/invitations
 
 # {{page.title}}
 
+Invitations allow access to private workspaces. When an invitation is created, an email containing an access link to the workspace will be sent to the recipient.
+{: .fs-5 }
+
 ---
 
 ## Invitation Object
