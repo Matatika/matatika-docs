@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Members
-permalink: /endpoints/members
-parent: Endpoints
-nav_order: 7
+permalink: /resources/members
+parent: Resources
+nav_order: 4
 components: request-md-components/members
 ---
 

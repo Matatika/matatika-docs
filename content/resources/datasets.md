@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Datasets
-permalink: /endpoints/datasets
-parent: Endpoints
-nav_order: 4
+permalink: /resources/datasets
+parent: Resources
+nav_order: 5
 components: request-md-components/datasets
 ---
 

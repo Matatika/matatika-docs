@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Invitations
-permalink: /endpoints/invitations
-parent: Endpoints
+permalink: /resources/invitations
+parent: Resources
 nav_order: 3
 components: request-md-components/invitations
 ---

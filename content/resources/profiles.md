@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Profiles
-permalink: /endpoints/profiles
-parent: Endpoints
+permalink: /resources/profiles
+parent: Resources
 nav_order: 1
 components: request-md-components/profiles
 ---

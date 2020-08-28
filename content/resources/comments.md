@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Comments
-permalink: /endpoints/comments
-parent: Endpoints
-nav_order: 6
+permalink: /resources/comments
+parent: Resources
+nav_order: 7
 components: request-md-components/comments
 ---
 

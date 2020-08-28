@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Workspaces
-permalink: /endpoints/workspaces
-parent: Endpoints
+permalink: /resources/workspaces
+parent: Resources
 nav_order: 2
 components: request-md-components/workspaces
 ---

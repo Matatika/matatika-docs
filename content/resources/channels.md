@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Channels
-permalink: /endpoints/channels
-parent: Endpoints
-nav_order: 4
+permalink: /resources/channels
+parent: Resources
+nav_order: 6
 components: request-md-components/channels
 ---
 
