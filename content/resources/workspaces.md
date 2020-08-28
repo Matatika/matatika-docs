@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Workspaces
-permalink: /endpoints/workspaces
-parent: Endpoints
+permalink: /resources/workspaces
+parent: Resources
 nav_order: 2
 components: request-md-components/workspaces
 ---
@@ -36,27 +36,6 @@ GET
 
 {% include snippets/workspaces/view-a-workspace/response-body.md %}
 
-
-## Member Object
-{: .no_toc}
-
-### Schema
-
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The member ID (derived from corresponding profile ID)
-`name` | `String` | The member name (derived from corresponding profile name)
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}/members/{member-id}
-{:.path .path-GET}
-
-{% include snippets/workspaces/view-a-member-of-a-workspace/response-body.md %}
-
 ---
 
 #### Requests
@@ -68,8 +47,6 @@ GET
 
 {% include {{page.components}}/view-all-workspaces.md %}
 {% include {{page.components}}/view-a-workspace.md %}
-{% include {{page.components}}/view-all-members-of-a-workspace.md %}
-{% include {{page.components}}/view-a-member-of-a-workspace.md %}
 {% include {{page.components}}/initialise-a-workspace.md %}
 {% include {{page.components}}/create-or-update-a-workspace.md %}
 {% include {{page.components}}/delete-a-workspace.md %}

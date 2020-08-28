@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Test
-permalink: /endpoints/test
-parent: Endpoints
-nav_order: 5
+permalink: /resources/test
+parent: Resources
+nav_order: 100
 ---
 
 - Node.js

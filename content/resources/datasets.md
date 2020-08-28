@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Datasets
-permalink: /endpoints/datasets
-parent: Endpoints
-nav_order: 4
+permalink: /resources/datasets
+parent: Resources
+nav_order: 5
 components: request-md-components/datasets
 ---
 
 # {{page.title}}
+
+Datasets are modules of data that can be published to workspaces. The visualisation of datasets is supported, following the Google Charts specification.
+{: .fs-5 }
 
 ---
 
@@ -31,7 +34,7 @@ Path | Type | Description
 `visualisation` | `String` | The dataset visualization metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start)
 `query` | `String` | The dataset query
 `likeCount` | `Integer` | The number of likes the dataset has received
-`likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the dataset
+`likedByProfiles` | `Array` of [`Member objects`](members#member-object) | The members that have liked the dataset
 `commentCount` | `Integer` | The number of comments the dataset has received
 `viewCount` | `Integer` | The number of views the dataset has received
 
@@ -58,7 +61,7 @@ GET
 {% include {{ page.components }}/view-datasets-by-channel-id.md %}
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
 {% include {{ page.components }}/publish-a-dataset-to-a-workspace.md %}
-{% include {{ page.components }}/add-a-view-to-a-dataset.md %}
-{% include {{ page.components }}/add-a-like-to-a-dataset.md %}
-{% include {{ page.components }}/add-a-comment-to-a-dataset.md %}
+{% include {{ page.components }}/record-a-view-of-a-dataset.md %}
+{% include {{ page.components }}/record-a-like-of-a-dataset.md %}
+{% include {{ page.components }}/remove-a-like-from-a-dataset.md %}
 {% include {{ page.components }}/withdraw-a-dataset.md %}

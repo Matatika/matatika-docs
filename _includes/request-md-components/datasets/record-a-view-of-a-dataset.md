@@ -1,4 +1,4 @@
-## Add a view to a dataset
+## Record a view of a dataset
 
 PUT
 {:.label .label-PUT}
@@ -6,7 +6,7 @@ PUT
 /api/datasets/{dataset-id}/view
 {:.path .path-PUT}
 
-Increments the view count of the dataset `{dataset-id}` by 1.
+Increments the view count `viewCount` of the dataset `{dataset-id}` by 1.
 
 ### Prerequisites
 
@@ -16,11 +16,11 @@ Increments the view count of the dataset `{dataset-id}` by 1.
 
 #### cURL
 
-{% include snippets/datasets/add-a-view-to-a-dataset/curl-request.md %}
+{% include snippets/datasets/record-a-view-of-a-dataset/curl-request.md %}
 
 #### Python (Requests)
 
-{% include snippets/datasets/add-a-view-to-a-dataset/python-requests.md %}
+{% include snippets/datasets/record-a-view-of-a-dataset/python-requests.md %}
 
 ### Response
 {: .d-inline-block }

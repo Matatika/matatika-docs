@@ -1,4 +1,4 @@
-## Remove a like to a comment
+## Remove a like from a comment
 
 DELETE
 {:.label .label-DELETE}
@@ -6,7 +6,7 @@ DELETE
 /api/comment/{comment-id}/like
 {:.path .path-DELETE}
 
-Removes a like to the comment `{comment-id}` from the user profile.
+Removes a like of the comment `{comment-id}` from the authenticated profile and decrements its like count `likeCount` by 1.
 
 ### Prerequisites
 

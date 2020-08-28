@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Channels
-permalink: /endpoints/channels
-parent: Endpoints
-nav_order: 4
+permalink: /resources/channels
+parent: Resources
+nav_order: 6
 components: request-md-components/channels
 ---
 
 # {{page.title}}
+
+Channels enable datasets to be categorised or grouped together. A single workspace can have multiple channels.
+{: .fs-5 }
 
 ---
 
@@ -18,7 +21,12 @@ components: request-md-components/channels
 
 Path | Type | Description
 ---- | ---- | -----------
-`placeholder` | `placeholder` | placeholder
+`id` | `String` | The channel ID
+`creator` | [`Member object`](members#member-object) | The channel creator
+`workspace` | [`Workspace object`](workspaces#workspace-object) (reduced fields) | The channel workspace 
+`name` | `String` | The channel name
+`description` | `String` | The channel description
+`picture` | `String` | The channel picture metadata
 
 ### Example Resource
 

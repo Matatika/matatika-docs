@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Comments
-permalink: /endpoints/comments
-parent: Endpoints
-nav_order: 6
+permalink: /resources/comments
+parent: Resources
+nav_order: 7
 components: request-md-components/comments
 ---
 
@@ -27,9 +27,7 @@ Path | Type | Description
 `likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the comment
 `created` | `String` | Timestamp denoting when the comment was created
 `lastModified` | `String` | Timestamp denoting when the comment was last modified
-`from` | `JSON Object` | The comment author object
-`from.id` | `String` | The comment author member ID
-`frame.name` | `String` | The comment author member name
+`from` | [`Member object`](members#member-object) | The comment author
 `commentCount` | `Integer` | The number of replies the comment has received
 `datasetId` | `String` | The ID of the dataset comment subject
 
@@ -57,6 +55,6 @@ GET
 {% include {{ page.components }}/initialise-a-comment-on-a-dataset.md %}
 {% include {{ page.components }}/create-a-comment.md %}
 {% include {{ page.components }}/update-a-comment.md %}
-{% include {{ page.components }}/add-a-like-to-a-comment.md %}
+{% include {{ page.components }}/record-a-like-of-a-comment.md %}
 {% include {{ page.components }}/remove-a-like-from-a-comment.md %}
 {% include {{ page.components }}/delete-a-comment.md %}
