@@ -34,7 +34,7 @@ Path | Type | Description
 `visualisation` | `String` | The dataset visualization metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start)
 `query` | `String` | The dataset query
 `likeCount` | `Integer` | The number of likes the dataset has received
-`likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the dataset
+`likedByProfiles` | `Array` | A collection of [Member objects](members#member-object) that have liked the dataset
 `commentCount` | `Integer` | The number of comments the dataset has received
 `viewCount` | `Integer` | The number of views the dataset has received
 
