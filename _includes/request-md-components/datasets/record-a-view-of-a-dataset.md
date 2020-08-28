@@ -6,7 +6,7 @@ PUT
 /api/datasets/{dataset-id}/view
 {:.path .path-PUT}
 
-Increments the view count of the dataset `{dataset-id}` by 1.
+Increments the view count `viewCount` of the dataset `{dataset-id}` by 1.
 
 ### Prerequisites
 
