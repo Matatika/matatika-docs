@@ -108,7 +108,7 @@ function createSnippetTabs() {
     let tab_buttons_div = $('<div class="tab-button"></div>').appendTo(base_div);
     let tab_content_div = $(`<div class="tab-content"></div>`).appendTo(base_div);
     let tab_div = null;
-    let elements = first_item.nextUntil($('.tabs-section-end').first().next()).addBack();
+    let elements = first_item.nextUntil('.tabs-section-end').addBack().add($(this).nextAll('.tabs-section-end').first())
 
     elements.each(function () {
       let elem = $(this);
