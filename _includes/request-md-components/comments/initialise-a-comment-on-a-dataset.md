@@ -6,7 +6,7 @@ POST
 /api/datasets/{dataset-id}/comments
 {:.path .path-POST}
 
-Initialises a new comment with a UUID. Post-initialisation, the comment can be created and subsequently updated.
+Initialises a new comment on the dataset `{dataset-id}`. Post-initialisation, the comment can be created and subsequently updated.
 
 ### Prerequisites
 
@@ -16,11 +16,11 @@ Initialises a new comment with a UUID. Post-initialisation, the comment can be c
 
 #### cURL
 
-{% include snippets/comments/initialise-a-comment/curl-request.md %}
+{% include snippets/comments/initialise-a-comment-on-a-dataset/curl-request.md %}
 
 #### Python (Requests)
 
-{% include snippets/comments/initialise-a-comment/python-requests.md %}
+{% include snippets/comments/initialise-a-comment-on-a-dataset/python-requests.md %}
 
 ### Response
 {: .d-inline-block }
