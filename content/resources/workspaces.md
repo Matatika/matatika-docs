@@ -48,5 +48,6 @@ GET
 {% include {{page.components}}/view-all-workspaces.md %}
 {% include {{page.components}}/view-a-workspace.md %}
 {% include {{page.components}}/initialise-a-workspace.md %}
-{% include {{page.components}}/create-or-update-a-workspace.md %}
+{% include {{page.components}}/create-a-workspace.md %}
+{% include {{page.components}}/update-a-workspace.md %}
 {% include {{page.components}}/delete-a-workspace.md %}
