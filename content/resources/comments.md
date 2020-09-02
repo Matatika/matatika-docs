@@ -50,6 +50,7 @@ GET
 
 ---
 
+{% include {{ page.components }}/view-all-comments-on-a-dataset.md %}
 {% include {{ page.components }}/view-a-comment.md %}
 {% include {{ page.components }}/view-the-edit-history-of-a-comment.md %}
 {% include {{ page.components }}/view-all-replies-to-a-comment.md %}
