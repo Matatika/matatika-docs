@@ -50,9 +50,12 @@ GET
 
 ---
 
+{% include {{ page.components }}/view-all-comments-on-a-dataset.md %}
 {% include {{ page.components }}/view-a-comment.md %}
 {% include {{ page.components }}/view-the-edit-history-of-a-comment.md %}
+{% include {{ page.components }}/view-all-replies-to-a-comment.md %}
 {% include {{ page.components }}/initialise-a-comment-on-a-dataset.md %}
+{% include {{ page.components }}/initialise-a-reply-to-a-comment.md %}
 {% include {{ page.components }}/create-a-comment.md %}
 {% include {{ page.components }}/update-a-comment.md %}
 {% include {{ page.components }}/record-a-like-of-a-comment.md %}

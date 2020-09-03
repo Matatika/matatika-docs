@@ -16,11 +16,11 @@ Returns the comments on the dataset `{dataset-id}`.
 
 #### cURL
 
-`snippet placeholder`
+{% include snippets/comments/view-all-comments-on-a-dataset/curl-request.md %}
 
 #### Python (Requests)
 
-`snippet placeholder`
+{% include snippets/comments/view-all-comments-on-a-dataset/python-requests.md %}
 
 ### Response
 {: .d-inline-block }
@@ -28,6 +28,6 @@ Returns the comments on the dataset `{dataset-id}`.
 200
 {:.label .label-GET}
 
-What does this return?
+[Comment object](#comment-object) collection with HAL links.
 
 ---
