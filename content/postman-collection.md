@@ -9,12 +9,12 @@ nav_order: 3
 
 ---
 
-We automatically maintain a fully-tested Postman collection for the Matatika API, which contains all the requests documented in [Endpoints](endpoints).
+We automatically maintain a fully-tested Postman collection for the Matatika API, which contains all the requests documented for each [resource](resources) type.
 
 Simply import the following collection URL into Postman to begin sending requests:
 
-`{{site.www_url}}/docs/matatika.json`
-{: .fs-6 .text-center}
+`{{site.www_url}}/docs/matatika.json`{: #postman-collection-url .fs-5 }
+{: .text-center }
 
 ---
 

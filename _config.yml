@@ -6,6 +6,9 @@ permalink: pretty
 theme: just-the-docs
 color_scheme: matatika
 
+kramdown:
+  toc_levels: [2]
+
 plugins:
   - jekyll-feed
 
