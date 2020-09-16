@@ -10,13 +10,16 @@ Returns all workspaces.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/workspaces/view-all-workspaces/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/workspaces/view-all-workspaces/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

@@ -14,13 +14,16 @@ Initialises a new comment on the dataset `{dataset-id}`. Post-initialisation, th
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/comments/initialise-a-comment-on-a-dataset/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/comments/initialise-a-comment-on-a-dataset/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

@@ -14,13 +14,16 @@ Returns the comments on the dataset `{dataset-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/comments/view-all-comments-on-a-dataset/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/comments/view-all-comments-on-a-dataset/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

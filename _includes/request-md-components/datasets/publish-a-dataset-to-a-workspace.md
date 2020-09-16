@@ -14,12 +14,16 @@ Publishes a dataset to the workspace `{workspace-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
+
 {% include snippets/datasets/publish-a-dataset-to-a-workspace/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/datasets/publish-a-dataset-to-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

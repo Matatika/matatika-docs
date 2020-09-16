@@ -24,12 +24,16 @@ Path | Type | Description | Constraints
 `name` | `String` | The workspace name | Must not be null
 `domains` | `String` | The allowed domains for workspace access control | N/A
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
+
 {% include snippets/workspaces/update-a-workspace/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/workspaces/update-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

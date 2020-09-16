@@ -14,13 +14,16 @@ Returns all members of the workspace `{workspace-id}`. A member is a profile tha
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/workspaces/view-all-members-of-a-workspace/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/workspaces/view-all-members-of-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

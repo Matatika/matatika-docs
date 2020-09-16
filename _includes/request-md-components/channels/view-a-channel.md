@@ -13,13 +13,16 @@ Returns the channel `{channel-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/channels/view-a-channel/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/channels/view-a-channel/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }
