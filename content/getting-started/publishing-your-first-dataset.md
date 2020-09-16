@@ -21,7 +21,7 @@ Now, we will perform a POST request to the `workspaces/{workspace-id}/datasets` 
 Field | Description | Example
 --- | --- | ---
 `"alias"` | A workspace-unique dataset indentifier | `"planet-orbits"`
-`"information"` | Information about the dataset | `"Planet Orbits in Our Solar System (Mercury-Saturn)"`
+`"title"` | The dataset title | `"Planet Orbits in Our Solar System (Mercury-Saturn)"`
 `"description"` | A description of the dataset | `"Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn"`
 `"questions"` | The question(s) the dataset may answer | `"How many Earth-years does it take for Jupiter to orbit the sun?"`
 `"rawData"` | The raw data of the dataset | `"[[\"Planet\", \"Orbit Distance (Light-hours)\", \"Orbit Duration (Earth-years)\"],[\"Mercury\", 0.3336, 0.2500],[\"Venus\", 0.6300, 0.5833],[\"Earth\", 0.8708, 1],[\"Mars\", 1.3242, 1.9167],[\"Jupiter\", 4.5287, 11.8333],[\"Saturn\", 8.2997, 29.5000]]"`
@@ -37,7 +37,7 @@ curl -i \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
     -d '{' \
     '"alias": "planet-orbits", ' \
-    '"information": "Planet Orbits in Our Solar System (Mercury-Saturn)", ' \
+    '"title": "Planet Orbits in Our Solar System (Mercury-Saturn)", ' \
     '"description": "Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn", ' \
     '"questions": "How many Earth-years does it take for Jupiter to orbit the sun?", ' \
     '"rawData": "[[\"Planet\", \"Orbit Distance (Light-hours)\", \"Orbit Duration (Earth-years)\"],[\"Mercury\", 0.3336, 0.2500],[\"Venus\", 0.6300, 0.5833],[\"Earth\", 0.8708, 1],[\"Mars\", 1.3242, 1.9167],[\"Jupiter\", 4.5287, 11.8333],[\"Saturn\", 8.2997, 29.5000]]", ' \
@@ -53,7 +53,7 @@ curl -i ^
     -H "Authorization: Bearer %ACCESS_TOKEN%" ^
     -d "{" ^
     """alias"": ""planet-orbits"", " ^
-    """information"": ""Planet Orbits in Our Solar System (Mercury-Saturn)"", " ^
+    """title"": ""Planet Orbits in Our Solar System (Mercury-Saturn)"", " ^
     """description"": ""Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn"", " ^
     """questions"": ""How many Earth-years does it take for Jupiter to orbit the sun?"", " ^
     """rawData"": ""[[\""Planet\"", \""Orbit Distance (Light-hours)\"", \""Orbit Duration (Earth-years)\""],[\""Mercury\"", 0.3336, 0.2500],[\""Venus\"", 0.6300, 0.5833],[\""Earth\"", 0.8708, 1],[\""Mars\"", 1.3242, 1.9167],[\""Jupiter\"", 4.5287, 11.8333],[\""Saturn\"", 8.2997, 29.5000]]"", " ^

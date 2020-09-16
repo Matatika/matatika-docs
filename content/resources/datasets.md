@@ -27,8 +27,8 @@ Path | Type | Description
 `workspaceId` | `String` | The workspace ID of the published dataset
 `channelId` | `String` | The channel ID of the published dataset
 `source` | `String` | The channel ID where the dataset was initially published to
-`information` | `String` | The dataset information
-`description` | `String` | The dataset description
+`title` | `String` | The dataset title
+`description` | `String` | The dataset description (may contain markdown)
 `questions` | `String` | The dataset questions
 `rawData` | `String` | The dataset raw data
 `visualisation` | `String` | The dataset visualization metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start)
