@@ -14,13 +14,16 @@ Returns the member `{member-id}` of the workspace `{workspace-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/workspaces/view-a-member-of-a-workspace/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/workspaces/view-a-member-of-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

@@ -14,13 +14,16 @@ Returns active invitations to the workspace `{workspace-id}` specific to the use
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/invitations/view-all-invitations-to-a-workspace/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/invitations/view-all-invitations-to-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

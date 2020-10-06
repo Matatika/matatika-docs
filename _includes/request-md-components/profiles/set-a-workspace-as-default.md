@@ -25,12 +25,16 @@ Path | Type | Description | Constraints
 `defaultWorkspace` | `JSON Object` | Default workspace object |
 `defaultWorkspace.id` | `String` | The default workspace ID | Must be a valid and existing UUID
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
+
 {% include snippets/profiles/set-a-workspace-as-default/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/profiles/set-a-workspace-as-default/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

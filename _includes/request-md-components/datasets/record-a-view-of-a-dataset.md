@@ -14,13 +14,16 @@ Increments the view count `viewCount` of the dataset `{dataset-id}` by 1.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/datasets/record-a-view-of-a-dataset/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/datasets/record-a-view-of-a-dataset/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

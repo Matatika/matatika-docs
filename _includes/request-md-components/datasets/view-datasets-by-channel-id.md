@@ -14,13 +14,16 @@ Returns all datasets of the channel `{channel-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/datasets/view-datasets-by-channel-id/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/datasets/view-datasets-by-channel-id/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

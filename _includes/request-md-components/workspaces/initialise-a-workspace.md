@@ -10,13 +10,16 @@ Initialises a new workspace with a UUID. Post-initialisation, the workspace can 
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/workspaces/initialise-a-workspace/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/workspaces/initialise-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

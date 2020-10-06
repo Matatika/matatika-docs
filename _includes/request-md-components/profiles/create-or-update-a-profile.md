@@ -24,13 +24,16 @@ Path | Type | Description | Constraints
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address | Must not be empty; must be a valid email address
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/profiles/update-a-profile/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/profiles/update-a-profile/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

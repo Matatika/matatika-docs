@@ -14,13 +14,16 @@ Returns a new comment `{comment-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/comments/view-a-comment/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/comments/view-a-comment/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

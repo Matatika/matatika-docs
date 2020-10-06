@@ -127,6 +127,41 @@ $matatika-default: #EE7A34;
 }
 // ----------------
 
+// tabs
+.tabs {
+    margin-top: 1em;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tab-button {
+    overflow: hidden;
+    border-bottom: 1px solid #eeebee;
+
+    button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 8px 12px;
+        transition: 0.3s;
+    }
+}
+
+.selected-tab {
+    color: $matatika-default;
+}
+
+.tab-content {
+    padding: 0.75rem;
+
+    & * {
+        margin: 0 !important;
+    }
+  }
+// ----------------
+
 // header
 #header {
     z-index: 200;
