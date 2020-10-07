@@ -32,4 +32,4 @@ prod: import
 	./build-docs.sh '--config _config.yml,_config_prod.yml'
 
 run: import
-	./build-docs.sh '--config _config.yml,_config_dev.yml --watch'
+	./build-docs.sh '--config _config.yml,_config_dev.yml --watch --force-polling --incremental'
