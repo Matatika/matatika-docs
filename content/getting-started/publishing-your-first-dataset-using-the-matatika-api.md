@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publishing Your First Dataset
-permalink: /getting-started/publishing-your-first-dataset
+title: Publishing Your First Dataset Using the Matatika API
+permalink: /getting-started/publishing-your-first-dataset-using-the-matatika-api
 parent: Getting Started
 nav_order: 3
 ---
