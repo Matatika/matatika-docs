@@ -1,12 +1,12 @@
-## Search for datasets in a workspace by tag name
+## Search for datasets in a workspace by free text
 
 GET
 {:.label .label-GET}
 
-/api/workspaces/{workspace-id}/search?q=tag:{tag-name}
+/api/workspaces/{workspaces-id}/search?q={free-text}
 {:.path .path-GET}
 
-Searches the workspace `{workspace-id}` for datasets by the tag `{tag-name}`.
+Searches the workspace `{workspace-id}` for datasets by the free text `{free-text}`.
 
 ### Prerequisites
 - Workspace `{workspace-id}` must exist
@@ -16,12 +16,12 @@ Searches the workspace `{workspace-id}` for datasets by the tag `{tag-name}`.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/search-for-datasets-in-a-workspace-by-tag-name/curl-request.md %}
+{% include snippets/search/search-for-datasets-in-a-workspace-by-free-text/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/search-for-datasets-in-a-workspace-by-tag-name/python-requests.md %}
+{% include snippets/search/search-for-datasets-in-a-workspace-by-free-text/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

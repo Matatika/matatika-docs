@@ -16,12 +16,12 @@ Searches the workspace `{workspace-id}` for datasets by the channel `{channel-na
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/search-for-datasets-in-a-workspace-by-channel-name/curl-request.md %}
+{% include snippets/search/search-for-datasets-in-a-workspace-by-channel-name/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/search-for-datasets-in-a-workspace-by-channel-name/python-requests.md %}
+{% include snippets/search/search-for-datasets-in-a-workspace-by-channel-name/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
