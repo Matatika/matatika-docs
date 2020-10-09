@@ -6,10 +6,10 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-GET}
 
-Returns the dataset {dataset-id}.
+Returns the dataset `{dataset-id}`.
 
 ### Prerequisites
-- Dataset {dataset-id} must exist
+- Dataset `{dataset-id}` must exist
 
 ### Request
 
