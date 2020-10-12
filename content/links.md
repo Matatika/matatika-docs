@@ -41,6 +41,7 @@ Parameter | Description | Query Parameter Syntax | Example
 - `channels`
 - `comments`
 
+---
 
 ## `self`
 Make a <span>GET</span>{:.label .label-GET} request to this link to return the current resource. Expect `200 OK` to indicate the resource was successfully returned.
@@ -51,11 +52,11 @@ Make a <span>GET</span>{:.label .label-GET} request to this link to a return a f
 ### Filters
 A `search` link relation accepts filtering parameters in a query to modify the response payload content.
 
-Query Parameter Syntax | Description | Example
---- | --- | ---
-`{free-text}` | The free text to filter by | `?=data%20insights`
-`in:{channel-name}` | The channel to filter by | `?=in:matatika-limited`
-`tag:{tag-name}` | The tag to filter by | `?=tag:#jupyternotebook`
+Filter Type | Query Parameter Syntax | Description | Example
+--- | --- | --- | ---
+Free text | `{free-text}` | The free text to filter by | `?=data%20insights`
+Channel | `in:{channel-name}` | The channel to filter by | `?=in:matatika-limited`
+Tag | `tag:{tag-name}` | The tag to filter by | `?=tag:jupyternotebook`
 
 The Matatika API supports multiple query filtering parameters of the same type. Different filtering parameters - as well as [paging parameters](#paging) - can be used together to form complex queries. 
 
