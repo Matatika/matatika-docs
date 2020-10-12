@@ -24,15 +24,6 @@ The following item link relations accept a <span>GET</span>{:.label .label-GET} 
 
 ## Collection Relations
 The following collection link relations accept a <span>GET</span>{:.label .label-GET} request and return the respective resource representation. Expect `200 OK` to indicate the resource was successfully returned.
-
-### Paging
-Collection link relations accept paging parameters in a query to modify the response payload dimensions.
-
-Parameter | Description | Query Parameter Syntax | Example
---- | --- | --- | ---
-`page` | The page of the collection | `page={page-number}` | `?page=1`
-`size` | The number of elements to display per page | `size={number-of-elements}` | `?size=20`
-
 - `profiles`
 - `workspaces`
 - `invitations`
@@ -40,6 +31,15 @@ Parameter | Description | Query Parameter Syntax | Example
 - `datasets`
 - `channels`
 - `comments`
+
+### Paging and Sorting
+Collection link relations accept paging parameters in a query to modify the response payload dimensions and order.
+
+Parameter | Description | Query Parameter Syntax | Example
+--- | --- | --- | ---
+`page` | The page of the collection | `page={page-number}` | `?page=1`
+`size` | The number of elements to display per page | `size={number-of-elements}` | `?size=20`
+`sort` | The property to sort the collection results by, in either ascending - `asc` - or descending - `desc` -  order | `sort={property-name},(asc|desc)` | `?sort=name,asc`
 
 ---
 
