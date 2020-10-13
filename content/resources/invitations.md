@@ -48,8 +48,8 @@ GET
 
 ---
 
-{% include {{ page.components }}/view-sent-invs.md %}
-{% include {{ page.components }}/view-received-invs.md %}
+{% include {{ page.components }}/view-all-sent-invitations.md %}
+{% include {{ page.components }}/view-all-received-invitations.md %}
 {% include {{ page.components }}/view-all-invitations-to-a-workspace.md %}
 {% include {{ page.components }}/create-an-invitation-to-a-workspace.md %}
 {% include {{ page.components }}/cancel-an-invitation-to-a-workspace.md %}
