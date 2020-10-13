@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publishing Your First Dataset
-permalink: /getting-started/publishing-your-first-dataset
+title: Publish with Matatika API
+permalink: /getting-started/publish-with-matatika-api
 parent: Getting Started
 nav_order: 3
 ---
@@ -12,9 +12,20 @@ nav_order: 3
 
 ---
 
-To "publish a dataset" means to submit data to a workspace. A dataset must have an unique indentifier in the workspace it is being published to, which is achieved through an `alias`. We can publish a empty dataset to an exisiting workspace using just `alias`, but we will provide a bit more information for the following example. 
+## Prerequisites
+You must have already:
+- Signed up for a Matatika account
+- Created a workspace through the [Matatika app]({{site.app_url}}) or API
 
-First, we will need to obtain the workspace ID of the workspace we wish to publish our dataset to. Following the same steps as in [Making Your First API Call]({{site.baseurl}}/getting-started/making-your-first-api-call) for your preferred tool, we can perform a GET request to the `/workspaces` endpoint to return a collection of the workspaces our profile is a member of. The response should contain the details of the workspace we created when signing into the Matatika app for the first time. From here, we can find the key `id` and extract its value - our workspace ID.
+Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
+
+---
+
+## Introduction
+
+When you "publish a dataset" you are creating a data view or visualisation within a workspace. A dataset must have an unique indentifier within a workspace, which is achieved through an `alias`, and you can even publish an empty dataset using just an `alias`. In this example, we will provide a some raw data and a simple visualisation.
+
+First, we will need to obtain the workspace ID of the workspace we wish to publish our dataset to. Following the same steps as in [Making Your First API Call]({{site.baseurl}}/getting-started/making-your-first-api-call) for your preferred API client, we can perform a GET request to the `/workspaces` endpoint to return a collection of the workspaces our profile is a member of. The response should contain the details of the workspace we created when signing into the Matatika app for the first time. From here, we will need to find the `id` property and extract its value - our workspace ID.
 
 Now, we will perform a POST request to the `workspaces/{workspace-id}/datasets` path in order to publish a dataset to our workspace, providing the following fields in the request body:
 

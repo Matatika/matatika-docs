@@ -14,13 +14,16 @@ Deletes the comment `{comment-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/comments/delete-a-comment/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/comments/delete-a-comment/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

@@ -22,13 +22,16 @@ Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `message` | `String` | The comment message | Must not be empty
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
-{% include snippets/comments/update-a-comment/curl-request.md %}
+{% include snippets/comments/view-a-comment/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
-{% include snippets/comments/update-a-comment/python-requests.md %}
+{% include snippets/comments/view-a-comment/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

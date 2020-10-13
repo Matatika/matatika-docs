@@ -88,7 +88,60 @@
   $(document).ready($.proxy(anchorScrolls, 'init'));
 })(window.document, window.history, window.location);
 
+
+
+
+function createSnippetTabs() {
+  // for every tab section
+  $('.tab.tabs-section-start').each(function (i) {
+    let first_item = $(this);
+
+    // give multiple tab sections unique ids
+    let id = null;
+    if (i != 0) {
+      id = `tabs-${i}`;
+    } else {
+      id = 'tabs';
+    }
+
+    let base_div = $(`<div id="${id}" class="tabs"></div>`).insertBefore(first_item);
+    let tab_buttons_div = $('<div class="tab-button"></div>').appendTo(base_div);
+    let tab_content_div = $(`<div class="tab-content"></div>`).appendTo(base_div);
+    let tab_div = null;
+    let elements = first_item.nextUntil('.tabs-section-end').addBack().add($(this).nextAll('.tabs-section-end').first())
+
+    elements.each(function () {
+      let elem = $(this);
+
+      if (elem.hasClass('tab')) {
+        let tab_name = elem.text().trim();
+        $(`<button>${tab_name}</button>`).appendTo(tab_buttons_div);
+        tab_div = $(`<div></div>`).appendTo(tab_content_div);
+      } else {
+        elem.clone().appendTo(tab_div)
+      }
+
+      elem.remove();
+    });
+  });
+}
+
+
 $(document).ready(function () {
+
+  createSnippetTabs();
+
+  $('.tab-button button').click(function () {
+    $(this).addClass('selected-tab');
+    $(this).siblings().removeClass('selected-tab');
+    let index = $(this).index();
+    $(this).parent().siblings('.tab-content').children().hide();
+    $(this).parent().siblings('.tab-content').children().eq(index).show();
+  });
+
+  $('.tab-button').each(function () {
+    $(this).find('button').eq(0).click();
+  });
 
   // open links external to /docs in new tabs
   $('a[href^=http').each(function () {
@@ -127,4 +180,5 @@ $(document).ready(function () {
     $('.copy').text("Copied!");
     $temp.remove();
   });
+
 });

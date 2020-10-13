@@ -14,13 +14,16 @@ Returns all replies to the comment `{comment-id}`.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/comments/view-all-replies-to-a-comment/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/comments/view-all-replies-to-a-comment/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

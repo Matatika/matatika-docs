@@ -14,13 +14,16 @@ Removes a like of the dataset `{dataset-id}` from the authenticated profile and 
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/datasets/remove-a-like-from-a-dataset/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/datasets/remove-a-like-from-a-dataset/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

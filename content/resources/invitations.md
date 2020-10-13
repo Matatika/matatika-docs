@@ -26,7 +26,7 @@ Path | Type | Description
 `lastModified` | `String` | Timestamp denoting when the invitation was last modified
 `status` | `String` | The invitation status
 `email` | `String` | The invitation target email address
-`creator` | [Member object](members#member-object) | The invitation creator
+`creator` | [`Member object`](members#member-object) | The invitation creator
 `workspace` | [`Workspace object`](workspaces#workspace-object) | The invitation target workspace
 
 ### Example Resource
@@ -48,8 +48,8 @@ GET
 
 ---
 
-{% include {{ page.components }}/view-sent-invs.md %}
-{% include {{ page.components }}/view-received-invs.md %}
+{% include {{ page.components }}/view-all-sent-invitations.md %}
+{% include {{ page.components }}/view-all-received-invitations.md %}
 {% include {{ page.components }}/view-all-invitations-to-a-workspace.md %}
 {% include {{ page.components }}/create-an-invitation-to-a-workspace.md %}
 {% include {{ page.components }}/cancel-an-invitation-to-a-workspace.md %}

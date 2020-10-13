@@ -14,13 +14,16 @@ Initialises a new reply comment to the comment `{comment-id}`. Post-initialisati
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/comments/initialise-a-reply-to-a-comment/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/comments/initialise-a-reply-to-a-comment/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

@@ -14,13 +14,16 @@ Returns the user profile.
 
 ### Request
 
-#### cURL
+- cURL
+{: .tab .tabs-section-start}
 
 {% include snippets/profiles/view-a-profile/curl-request.md %}
 
-#### Python (Requests)
+- Python (requests)
+{: .tab}
 
 {% include snippets/profiles/view-a-profile/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }
