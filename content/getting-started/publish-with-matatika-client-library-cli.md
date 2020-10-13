@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publishing A Dataset Using the Matatika Client Library
-permalink: /getting-started/publishing-a-dataset-using-the-matatika-client-library
+title: Publish with Matatika Client Library (CLI)
+permalink: /getting-started/publish-with-matatika-client-library-cli
 parent: Getting Started
 nav_order: 4
 ---
@@ -34,7 +34,7 @@ pip install matatika
 ---
 
 ## Dataset File Preparation
-As a command line utility, the client library can publish datasets from a YAML file. To keep things simple, we will be publishing the same dataset as in [Publishing Your First Dataset Using the Matatika API]({{site.baseurl}}/getting-started/publishing-your-first-dataset-using-the-matatika-api).
+As a command line utility, the client library can publish datasets from a YAML file. This YAML file could be managed in a source control repository, such as GIT, and automated in a DevOps or DataOps pipeline. To keep things simple, we will be publishing from the command line with the same dataset as in [Publishing Your First Dataset Using the Matatika API]({{site.baseurl}}/getting-started/publishing-your-first-dataset-using-the-matatika-api).
 
 The dataset file needs to adhere to the following YAML format:
 
