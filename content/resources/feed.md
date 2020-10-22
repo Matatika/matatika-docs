@@ -29,8 +29,6 @@ User and member interactions that affect a dataset's score:
 
 {% include {{ page.components }}/view-a-workspace-feed.md %}
 
----
-
 #### See Also
 
 - [View all datasets in a workspace](datasets#view-all-datasets-in-a-workspace)
