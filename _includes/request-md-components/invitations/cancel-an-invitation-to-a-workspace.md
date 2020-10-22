@@ -14,6 +14,10 @@ Cancels the pending invitation `{invitation-id}` to the workspace `{workspace-id
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

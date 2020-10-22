@@ -10,6 +10,10 @@ Returns all workspaces the authenticated user profile is an owner or member of.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

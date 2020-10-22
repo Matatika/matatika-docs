@@ -14,6 +14,10 @@ Initialises a new reply comment to the comment `{comment-id}`.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

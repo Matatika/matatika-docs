@@ -14,6 +14,10 @@ Removes a like of the dataset `{dataset-id}` from the authenticated user profile
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

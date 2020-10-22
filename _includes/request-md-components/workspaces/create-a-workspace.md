@@ -24,6 +24,7 @@ Path | Type | Description | Constraints
 `name` | `String` | The workspace name | Must not be null
 `domains` | `String` | The allowed domains for workspace access control | N/A
 
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

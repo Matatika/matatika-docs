@@ -20,6 +20,7 @@ Path | Type | Description | Required | Constraints
 `description` | `String` | A description of the datasource | No |
 `repositoryUrl` | `String` | A URL to the datasource repository | No |
 
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

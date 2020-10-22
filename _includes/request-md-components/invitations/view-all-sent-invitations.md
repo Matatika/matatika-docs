@@ -10,6 +10,10 @@ Returns all invitations sent by the authenticated user profile.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

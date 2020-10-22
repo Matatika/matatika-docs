@@ -24,6 +24,10 @@ Returns all active invitations to the workspace `{workspace-id}` sent by the aut
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 
