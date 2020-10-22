@@ -48,6 +48,7 @@ GET
 
 ---
 
+{% include {{page.components}}/view-all-profiles.md %}
 {% include {{page.components}}/view-a-profile.md %}
 {% include {{page.components}}/create-or-update-a-profile.md %}
 {% include {{page.components}}/set-a-workspace-as-default.md %}
