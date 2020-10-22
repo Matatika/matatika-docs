@@ -6,7 +6,7 @@ GET
 /api/workspaces
 {:.path .path-GET}
 
-Returns all workspaces.
+Returns all workspaces the authenticated user profile is an owner or member of.
 
 ### Request
 

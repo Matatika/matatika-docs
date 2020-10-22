@@ -6,7 +6,7 @@ PATCH
 /api/profiles/{profile-id}
 {:.path .path-PATCH}
 
-Sets a default workspace for the user profile.
+Sets a default workspace for the profile `{profile-id}`.
 
 ### Prerequisites
 

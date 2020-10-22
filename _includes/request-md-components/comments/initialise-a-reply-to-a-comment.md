@@ -6,7 +6,7 @@ POST
 /api/comments/{comment-id}
 {:.path .path-POST}
 
-Initialises a new reply comment to the comment `{comment-id}`. Post-initialisation, the comment can be created and subsequently updated.
+Initialises a new reply comment to the comment `{comment-id}`.
 
 ### Prerequisites
 

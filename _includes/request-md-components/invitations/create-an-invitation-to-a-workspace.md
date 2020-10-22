@@ -6,7 +6,7 @@ POST
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-POST}
 
-Creates a workspace invitation to the workspace `{workspace-id}`.
+Creates an invitation to the workspace `{workspace-id}`.
 
 ### Prerequisites
 

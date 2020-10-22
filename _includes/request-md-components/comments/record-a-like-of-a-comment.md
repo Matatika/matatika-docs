@@ -6,7 +6,7 @@ PUT
 /api/comment/{comment-id}/like
 {:.path .path-PUT}
 
-Records a like of the comment `{comment-id}` from the authenticated profile and increments its like count `likeCount` by 1.
+Records a like of the comment `{comment-id}` from the authenticated user profile.
 
 ### Prerequisites
 

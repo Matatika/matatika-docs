@@ -6,7 +6,7 @@ PUT
 /api/comments/{comment-id}
 {:.path .path-PUT}
 
-Creates a new comment `{comment-id}`.
+Creates the comment `{comment-id}`.
 
 ### Prerequisites
 

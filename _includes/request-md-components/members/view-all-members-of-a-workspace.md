@@ -6,7 +6,7 @@ GET
 /api/workspaces/{workspace-id}/members
 {:.path .path-GET}
 
-Returns all members of the workspace `{workspace-id}`. A member is a profile that belongs to particular workspace. Member resources contain only the associated profile ID and name.
+Returns all members of the workspace `{workspace-id}`.
 
 ### Prerequisites
 

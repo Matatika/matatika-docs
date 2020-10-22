@@ -6,7 +6,7 @@ DELETE
 /api/workspaces/{workspace-id}/invitations/{invitation-id}
 {:.path .path-DELETE}
 
-Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
+Cancels the pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
 
 ### Prerequisites
 

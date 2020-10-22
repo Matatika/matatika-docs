@@ -6,7 +6,7 @@ PUT
 /api/datasets/{dataset-id}/like
 {:.path .path-PUT}
 
-Records a like of the dataset `{dataset-id}` from the authenticated profile and increments its like count `likeCount` by 1.
+Records a like of the dataset `{dataset-id}` from the authenticated user profile.
 
 ### Prerequisites
 

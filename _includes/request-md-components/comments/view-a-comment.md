@@ -6,7 +6,7 @@ GET
 /api/comments/{comment-id}
 {:.path .path-GET}
 
-Returns a new comment `{comment-id}`.
+Returns the comment `{comment-id}`.
 
 ### Prerequisites
 

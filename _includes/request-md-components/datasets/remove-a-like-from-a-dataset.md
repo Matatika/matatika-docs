@@ -6,7 +6,7 @@ DELETE
 /api/datasets/{dataset-id}/like
 {:.path .path-DELETE}
 
-Removes a like of the dataset `{dataset-id}` from the authenticated profile and decrements its like count `likeCount` by 1.
+Removes a like of the dataset `{dataset-id}` from the authenticated user profile.
 
 ### Prerequisites
 

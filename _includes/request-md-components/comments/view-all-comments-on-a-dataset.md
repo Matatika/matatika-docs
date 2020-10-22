@@ -6,7 +6,7 @@ GET
 /api/datasets/{dataset-id}/comments
 {:.path .path-GET}
 
-Returns the comments on the dataset `{dataset-id}`.
+Returns all comments on the dataset `{dataset-id}`.
 
 ### Prerequisites
 

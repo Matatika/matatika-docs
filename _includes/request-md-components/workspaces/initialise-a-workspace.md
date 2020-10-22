@@ -6,7 +6,7 @@ POST
 /api/workspaces
 {:.path .path-POST}
 
-Initialises a new workspace with a UUID. Post-initialisation, the workspace can be created and subsequently updated.
+Initialises a new workspace.
 
 ### Request
 
