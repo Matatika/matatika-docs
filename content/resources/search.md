@@ -3,7 +3,7 @@ layout: default
 title: Search
 permalink: /resources/search
 parent: Resources
-nav_order: 9
+nav_order: 10
 components: request-md-components/search
 ---
 

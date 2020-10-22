@@ -3,7 +3,7 @@ layout: default
 title: Feed
 permalink: /resources/feed
 parent: Resources
-nav_order: 8
+nav_order: 9
 components: request-md-components/feed
 ---
 
