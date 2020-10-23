@@ -30,9 +30,10 @@ Path | Type | Description
 GET
 {:.label .label-GET}
 
-/api/workspaces/{workspace-id}
+/api/workspaces/{workspace-id}/tags/{tag-id}
 {:.path .path-GET}
 
+{% include snippets/tags/view-a-tag-in-a-workspace/response-body.md %}
 
 ---
 
