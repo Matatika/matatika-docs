@@ -26,6 +26,16 @@ Path | Type | Description
 `description` | `String` | A description of the datasource
 `repositoryUrl` | `String` | A URL to the datasource repository
 
+### Example Resource
+
+GET
+{:.label .label-GET}
+
+/api/datasource/{datasource-id}
+{:.path .path-GET}
+
+{% include snippets/datasources/view-a-datasource-by-a-workspace/response-body.md %}
+
 #### Requests
 
 - TOC
@@ -35,5 +45,6 @@ Path | Type | Description
 
 {% include {{ page.components }}/view-all-datasources.md %}
 {% include {{ page.components }}/view-all-datasources-by-a-workspace.md %}
+{% include {{ page.components }}/view-a-datasource-by-a-workspace.md %}
 {% include {{ page.components }}/initialise-a-datasource.md %}
 {% include {{ page.components }}/create-a-datasource.md %}
