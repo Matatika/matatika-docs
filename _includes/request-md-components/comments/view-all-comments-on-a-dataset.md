@@ -6,7 +6,7 @@ GET
 /api/datasets/{dataset-id}/comments
 {:.path .path-GET}
 
-Returns the comments on the dataset `{dataset-id}`.
+Returns all comments on the dataset `{dataset-id}`.
 
 ### Prerequisites
 
@@ -14,6 +14,10 @@ Returns the comments on the dataset `{dataset-id}`.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

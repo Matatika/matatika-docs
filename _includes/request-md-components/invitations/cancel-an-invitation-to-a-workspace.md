@@ -6,7 +6,7 @@ DELETE
 /api/workspaces/{workspace-id}/invitations/{invitation-id}
 {:.path .path-DELETE}
 
-Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
+Cancels the pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
 
 ### Prerequisites
 
@@ -14,6 +14,10 @@ Cancels a pending invitation `{invitation-id}` to the workspace `{workspace-id}`
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

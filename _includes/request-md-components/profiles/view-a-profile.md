@@ -1,4 +1,4 @@
-## View profile
+## View a profile
 
 GET
 {: .label .label-GET}
@@ -6,14 +6,18 @@ GET
 /api/profiles/{profile-id}
 {:.path .path-GET}
 
-Returns the user profile.
+Returns the profile `{profile-id`}.
 
 ### Prerequisites
 
-- The authentication subject must match the profile ID `{profile-id}`
+- Profile `{profile-id}` must exist under the authenticated user account
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

@@ -6,10 +6,14 @@ POST
 /api/workspaces
 {:.path .path-POST}
 
-Initialises a new workspace with a UUID. Post-initialisation, the workspace can be created and subsequently updated.
+Initialises a new workspace.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

@@ -22,6 +22,7 @@ Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `message` | `String` | The comment message | Must not be empty
 
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

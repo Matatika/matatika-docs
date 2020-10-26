@@ -6,7 +6,7 @@ PUT
 /api/datasets/{dataset-id}/view
 {:.path .path-PUT}
 
-Increments the view count `viewCount` of the dataset `{dataset-id}` by 1.
+"Adds a view to the dataset `{dataset-id}`.
 
 ### Prerequisites
 
@@ -14,6 +14,10 @@ Increments the view count `viewCount` of the dataset `{dataset-id}` by 1.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

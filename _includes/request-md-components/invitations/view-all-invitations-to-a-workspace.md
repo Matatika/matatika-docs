@@ -6,7 +6,17 @@ GET
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-Returns active invitations to the workspace `{workspace-id}` specific to the user. As a workspace owner, this instead returns all active invitations to the workspace across all members.
+
+
+*As a workspace owner...*
+{: .fs-2 }
+
+Returns all active invitations to the workspace `{workspace-id}`.
+
+*As a workspace member...*
+{: .fs-2 }
+
+Returns all active invitations to the workspace `{workspace-id}` sent by the authenticated user profile. 
 
 ### Prerequisites
 
@@ -14,6 +24,10 @@ Returns active invitations to the workspace `{workspace-id}` specific to the use
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

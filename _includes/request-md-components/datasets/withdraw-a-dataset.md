@@ -14,6 +14,10 @@ Withraws the dataset `{dataset-id}`.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

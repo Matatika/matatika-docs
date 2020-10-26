@@ -13,6 +13,10 @@ Searches the workspace `{workspace-id}` for datasets by the tag `{tag-name}`.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

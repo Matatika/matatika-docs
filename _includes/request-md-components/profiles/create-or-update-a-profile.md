@@ -24,6 +24,7 @@ Path | Type | Description | Constraints
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address | Must not be empty; must be a valid email address
 
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

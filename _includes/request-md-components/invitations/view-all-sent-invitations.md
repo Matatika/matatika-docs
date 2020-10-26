@@ -6,10 +6,14 @@ GET
 /api/invitations
 {:.path .path-GET}
 
-Returns all invitations sent by the user.
+Returns all invitations sent by the authenticated user profile.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

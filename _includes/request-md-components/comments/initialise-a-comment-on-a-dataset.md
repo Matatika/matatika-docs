@@ -6,7 +6,7 @@ POST
 /api/datasets/{dataset-id}/comments
 {:.path .path-POST}
 
-Initialises a new comment on the dataset `{dataset-id}`. Post-initialisation, the comment can be created and subsequently updated.
+Initialises a new comment on the dataset `{dataset-id}`.
 
 ### Prerequisites
 
@@ -14,6 +14,10 @@ Initialises a new comment on the dataset `{dataset-id}`. Post-initialisation, th
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

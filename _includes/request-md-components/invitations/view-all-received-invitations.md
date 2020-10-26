@@ -6,10 +6,14 @@ GET
 /api/invitations?email={user-email}
 {:.path .path-GET}
 
-Returns all invitations intended for the user.
+Returns all invitations received by the authenticated user profile.
 
 ### Request
 
+#### Body
+No request body required.
+
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

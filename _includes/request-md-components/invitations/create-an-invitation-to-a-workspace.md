@@ -6,7 +6,7 @@ POST
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-POST}
 
-Creates a workspace invitation to the workspace `{workspace-id}`.
+Creates an invitation to the workspace `{workspace-id}`.
 
 ### Prerequisites
 
@@ -22,6 +22,7 @@ Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `email` | `String` | The email address of the invitation recipient | Must not be empty; must be a valid email address; email address domain must exist in the workspace's list of allowed domains
 
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 

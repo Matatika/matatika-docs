@@ -6,7 +6,7 @@ PATCH
 /api/profiles/{profile-id}
 {:.path .path-PATCH}
 
-Sets a default workspace for the user profile.
+Sets a default workspace for the profile `{profile-id}`.
 
 ### Prerequisites
 
@@ -25,6 +25,7 @@ Path | Type | Description | Constraints
 `defaultWorkspace` | `JSON Object` | Default workspace object |
 `defaultWorkspace.id` | `String` | The default workspace ID | Must be a valid and existing UUID
 
+#### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 
