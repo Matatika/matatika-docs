@@ -39,7 +39,7 @@ from matatika.library import MatatikaClient
 
 # create the client and call 'fetch'
 client = MatatikaClient(auth_token, endpoint_url, None)
-df = client.fetch(dataset_id)
+data = client.fetch(dataset_id)
 ```
 
-By default, the method will return a [`pandas.DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) object constructed from the raw API response. From here it becomes easy to begin analysing, transforming and visualising the data in useful ways with the pandas library.
+By default, the method will return a Python dictionary object constructed from the raw API response. From here, with the use of data-centric libraries such as [pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/) or [SciPy](https://www.scipy.org/), it becomes easy to begin analysing, transforming and visualising the data in useful ways.
