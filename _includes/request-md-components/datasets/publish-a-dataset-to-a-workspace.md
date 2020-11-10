@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/publish-a-dataset-to-a-workspace/curl-request.md %}
+{% include snippets/api/datasets/publish-a-dataset-to-a-workspace/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/publish-a-dataset-to-a-workspace/python-requests.md %}
+{% include snippets/api/datasets/publish-a-dataset-to-a-workspace/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

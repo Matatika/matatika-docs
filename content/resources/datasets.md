@@ -46,7 +46,7 @@ GET
 /api/datasets/{dataset-id}
 {:.path .path-GET}
 
-{% include snippets/datasets/view-a-dataset/response-body.md %}
+{% include snippets/api/datasets/view-a-dataset/response-body.md %}
 
 ---
 

@@ -37,7 +37,7 @@ GET
 /api/workspaces/{workspace-id}/invitations
 {:.path .path-GET}
 
-{% include snippets/invitations/view-all-invitations-to-a-workspace/response-body.md %}
+{% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}
 
 ---
 

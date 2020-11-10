@@ -17,12 +17,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/profiles/view-all-profiles/curl-request.md %}
+{% include snippets/api/profiles/view-all-profiles/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/profiles/view-all-profiles/python-requests.md %}
+{% include snippets/api/profiles/view-all-profiles/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

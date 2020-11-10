@@ -32,7 +32,7 @@ GET
 /api/workspaces/{workspace-id}/members/{member-id}
 {:.path .path-GET}
 
-{% include snippets/workspaces/view-a-member-of-a-workspace/response-body.md %}
+{% include snippets/api/workspaces/view-a-member-of-a-workspace/response-body.md %}
 
 ---
 

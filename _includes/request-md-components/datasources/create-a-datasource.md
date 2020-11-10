@@ -12,7 +12,7 @@ Creates the datasource `{datasource-id}`.
 
 #### Body
 
-{% include snippets/datasources/create-a-datasource/request-body.md %}
+{% include snippets/api/datasources/create-a-datasource/request-body.md %}
 
 Path | Type | Description | Required | Constraints
 ---- | ---- | ----------- | -------- | -----------
@@ -24,12 +24,12 @@ Path | Type | Description | Required | Constraints
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasources/create-a-datasource/curl-request.md %}
+{% include snippets/api/datasources/create-a-datasource/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasources/create-a-datasource/python-requests.md %}
+{% include snippets/api/datasources/create-a-datasource/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

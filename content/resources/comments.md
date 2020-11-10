@@ -39,7 +39,7 @@ GET
 /api/comments/{comment-id}
 {:.path .path-GET}
 
-{% include snippets/comments/view-a-comment/response-body.md %}
+{% include snippets/api/comments/view-a-comment/response-body.md %}
 
 ---
 

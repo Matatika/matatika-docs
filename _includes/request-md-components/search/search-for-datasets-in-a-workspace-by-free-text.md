@@ -20,12 +20,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/search/search-for-datasets-in-a-workspace-by-free-text/curl-request.md %}
+{% include snippets/api/search/search-for-datasets-in-a-workspace-by-free-text/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/search/search-for-datasets-in-a-workspace-by-free-text/python-requests.md %}
+{% include snippets/api/search/search-for-datasets-in-a-workspace-by-free-text/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

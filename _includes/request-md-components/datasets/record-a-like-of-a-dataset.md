@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/record-a-like-of-a-dataset/curl-request.md %}
+{% include snippets/api/datasets/record-a-like-of-a-dataset/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/record-a-like-of-a-dataset/python-requests.md %}
+{% include snippets/api/datasets/record-a-like-of-a-dataset/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

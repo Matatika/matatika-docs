@@ -17,7 +17,7 @@ Creates the comment `{comment-id}`.
 
 #### Body
 
-{% include snippets/comments/create-a-comment/request-body.md %}
+{% include snippets/api/comments/create-a-comment/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
@@ -28,12 +28,12 @@ Path | Type | Description | Constraints
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/comments/create-a-comment/curl-request.md %}
+{% include snippets/api/comments/create-a-comment/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/comments/create-a-comment/python-requests.md %}
+{% include snippets/api/comments/create-a-comment/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

@@ -17,12 +17,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/workspaces/view-all-workspaces/curl-request.md %}
+{% include snippets/api/workspaces/view-all-workspaces/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/workspaces/view-all-workspaces/python-requests.md %}
+{% include snippets/api/workspaces/view-all-workspaces/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

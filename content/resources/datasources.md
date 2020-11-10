@@ -34,7 +34,7 @@ GET
 /api/datasource/{datasource-id}
 {:.path .path-GET}
 
-{% include snippets/datasources/view-a-datasource-by-a-workspace/response-body.md %}
+{% include snippets/api/datasources/view-a-datasource-by-a-workspace/response-body.md %}
 
 #### Requests
 

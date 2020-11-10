@@ -20,12 +20,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/tags/view-all-tags-in-a-workspace/curl-request.md %}
+{% include snippets/api/tags/view-all-tags-in-a-workspace/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/tags/view-all-tags-in-a-workspace/python-requests.md %}
+{% include snippets/api/tags/view-all-tags-in-a-workspace/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

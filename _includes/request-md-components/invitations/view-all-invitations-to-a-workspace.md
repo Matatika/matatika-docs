@@ -31,12 +31,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/invitations/view-all-invitations-to-a-workspace/curl-request.md %}
+{% include snippets/api/invitations/view-all-invitations-to-a-workspace/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/invitations/view-all-invitations-to-a-workspace/python-requests.md %}
+{% include snippets/api/invitations/view-all-invitations-to-a-workspace/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

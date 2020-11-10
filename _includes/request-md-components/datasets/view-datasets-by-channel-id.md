@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/view-datasets-by-channel-id/curl-request.md %}
+{% include snippets/api/datasets/view-datasets-by-channel-id/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/view-datasets-by-channel-id/python-requests.md %}
+{% include snippets/api/datasets/view-datasets-by-channel-id/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

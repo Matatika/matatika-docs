@@ -17,12 +17,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/invitations/view-all-sent-invitations/curl-request.md %}
+{% include snippets/api/invitations/view-all-sent-invitations/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/invitations/view-all-sent-invitations/python-requests.md %}
+{% include snippets/api/invitations/view-all-sent-invitations/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

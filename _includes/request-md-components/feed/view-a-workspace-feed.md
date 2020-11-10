@@ -20,12 +20,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/feed/view-a-workspace-feed/curl-request.md %}
+{% include snippets/api/feed/view-a-workspace-feed/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/feed/view-a-workspace-feed/python-requests.md %}
+{% include snippets/api/feed/view-a-workspace-feed/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

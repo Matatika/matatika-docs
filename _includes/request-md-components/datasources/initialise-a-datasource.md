@@ -17,12 +17,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasources/initialise-a-datasource/curl-request.md %}
+{% include snippets/api/datasources/initialise-a-datasource/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasources/initialise-a-datasource/python-requests.md %}
+{% include snippets/api/datasources/initialise-a-datasource/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

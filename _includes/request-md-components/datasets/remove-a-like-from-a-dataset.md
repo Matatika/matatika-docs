@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/remove-a-like-from-a-dataset/curl-request.md %}
+{% include snippets/api/datasets/remove-a-like-from-a-dataset/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/remove-a-like-from-a-dataset/python-requests.md %}
+{% include snippets/api/datasets/remove-a-like-from-a-dataset/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
