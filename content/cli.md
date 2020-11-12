@@ -2,7 +2,7 @@
 layout: default
 title: CLI
 permalink: /cli
-nav_order: 7
+nav_order: 8
 ---
 
 # {{page.title}}
@@ -19,13 +19,13 @@ A command-line interface for interacting with Matatika services.
 - Python >=3.7
 - pip
 
-The Matatika CLI is available through PyPi [here](https://pypi.org/project/matatika/) and can be installed using `pip`:
+The Matatika CLI/SDK is available through PyPi [here](https://pypi.org/project/matatika/) and can be installed using `pip`:
 
 ```
 pip install matatika
 ```
 
-You can check if the CLI installed succesfully by running the following command:
+You can check if the CLI/SDK installed succesfully by running the following command:
 
 ```
 matatika --version
