@@ -17,7 +17,7 @@ Updates the workspace `{workspace-id}`.
 
 #### Body
 
-{% include snippets/workspaces/update-a-workspace/request-body.md %}
+{% include snippets/api/workspaces/update-a-workspace/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
@@ -28,12 +28,12 @@ Path | Type | Description | Constraints
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/workspaces/update-a-workspace/curl-request.md %}
+{% include snippets/api/workspaces/update-a-workspace/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/workspaces/update-a-workspace/python-requests.md %}
+{% include snippets/api/workspaces/update-a-workspace/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

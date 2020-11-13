@@ -36,7 +36,7 @@ GET
 /api/channels/{channel-id}
 {:.path .path-GET}
 
-{% include snippets/channels/view-a-channel/response-body.md %}
+{% include snippets/api/channels/view-a-channel/response-body.md %}
 
 ---
 

@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/profiles/view-a-profile/curl-request.md %}
+{% include snippets/api/profiles/view-a-profile/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/profiles/view-a-profile/python-requests.md %}
+{% include snippets/api/profiles/view-a-profile/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

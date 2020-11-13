@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasets/withdraw-a-dataset/curl-request.md %}
+{% include snippets/api/datasets/withdraw-a-dataset/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasets/withdraw-a-dataset/python-requests.md %}
+{% include snippets/api/datasets/withdraw-a-dataset/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

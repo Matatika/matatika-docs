@@ -2,7 +2,7 @@
 layout: default
 title: Links
 permalink: /links
-nav_order: 8
+nav_order: 7
 ---
 
 # {{page.title}}

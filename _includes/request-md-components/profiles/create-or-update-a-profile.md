@@ -16,7 +16,7 @@ Creates or updates the user profile.
 
 #### Body
 
-{% include snippets/profiles/update-a-profile/request-body.md %}
+{% include snippets/api/profiles/update-a-profile/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
@@ -28,12 +28,12 @@ Path | Type | Description | Constraints
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/profiles/update-a-profile/curl-request.md %}
+{% include snippets/api/profiles/update-a-profile/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/profiles/update-a-profile/python-requests.md %}
+{% include snippets/api/profiles/update-a-profile/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

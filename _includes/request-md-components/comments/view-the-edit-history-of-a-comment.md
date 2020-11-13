@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/comments/view-the-edit-history-of-a-comment/curl-request.md %}
+{% include snippets/api/comments/view-the-edit-history-of-a-comment/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/comments/view-the-edit-history-of-a-comment/python-requests.md %}
+{% include snippets/api/comments/view-the-edit-history-of-a-comment/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
@@ -35,6 +35,6 @@ No request body required.
 200
 {:.label .label-GET}
 
-{% include snippets/comments/view-the-edit-history-of-a-comment/response-body.md %}
+{% include snippets/api/comments/view-the-edit-history-of-a-comment/response-body.md %}
 
 ---

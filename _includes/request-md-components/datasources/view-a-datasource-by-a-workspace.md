@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/datasources/view-a-datasource-by-a-workspace/curl-request.md %}
+{% include snippets/api/datasources/view-a-datasource-by-a-workspace/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/datasources/view-a-datasource-by-a-workspace/python-requests.md %}
+{% include snippets/api/datasources/view-a-datasource-by-a-workspace/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

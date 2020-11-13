@@ -20,12 +20,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/channels/view-a-channel/curl-request.md %}
+{% include snippets/api/channels/view-a-channel/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/channels/view-a-channel/python-requests.md %}
+{% include snippets/api/channels/view-a-channel/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

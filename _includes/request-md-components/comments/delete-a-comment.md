@@ -21,12 +21,12 @@ No request body required.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/comments/delete-a-comment/curl-request.md %}
+{% include snippets/api/comments/delete-a-comment/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/comments/delete-a-comment/python-requests.md %}
+{% include snippets/api/comments/delete-a-comment/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
