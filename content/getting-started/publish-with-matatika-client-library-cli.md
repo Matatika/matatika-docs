@@ -67,24 +67,35 @@ You can read more about the YAML format and its syntax [here](https://yaml.org/)
 
 ## Configuration
 
-Once installed, the first thing we need to do is login to a Matatika account. Grab an [API token]({{site.app_keys_url}}) from the Matatika app and run:
+Once installed, the first thing we need to do is create a new context. Grab an [API token]({{site.app_keys_url}}) from the Matatika app and run:
 
 ```bash
-matatika login -a $AUTH_TOKEN
+matatika context create $CONTEXT_NAME -a $AUTH_TOKEN
+matatika context use $CONTEXT_NAME
+matatika context default
 ```
 
-By default, the client library will verify login credentials against the production instance of the Matatika API. The `-e` option of `login` allows a user to override this default behaviour and specify a custom endpoint URL, if required.
+```
+CONTEXT NAME    example-context-1                                               
+AUTH TOKEN      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InMyR2RKS01LUXFwalh…
+ENDPOINT URL    https://catalog.matatika.com/api                                
+WORKSPACE ID    None
+```
 
-Provided the API token is valid, the utility will respond with a success message and state the profile ID and name of the authenticated user:
+This will create the context `$CONTEXT_NAME` with an `AUTH TOKEN` value of `$AUTH_TOKEN`, set it as the default context, and then print out the default context as a formatted table. You will notice that the `ENDPOINT URL` is populated with the production Matatika API URL by default. If required, this can be changed using the `-e` option when either creating a new context or updating the default context.
+
+Once a default context has been set, verify everything is working by running the `profile` command. If successfuly, this will state the profile ID and name of the authenticated user:
+
+```bash
+matatika profile
+```
 
 ```
-Successfully logged in
-
 ID      auth0|a1b2c3d4e5f6g7h8i9j10k11
 NAME    example@matatika.com
 ```
 
-Next we need to select a workspace which we will publish our dataset into. Invoke the `list` command with the `workspaces` subcommand to print out a list of workspaces the authenticated user is a member of:
+Next, we need to select a workspace which we will publish our dataset into. Invoke the `list` command with the `workspaces` subcommand to print out a list of workspaces the authenticated user is a member of:
 
 ```bash
 matatika list workspaces
@@ -99,15 +110,19 @@ ce21a13b-6d6b-42a6-bab7-4df1ae2b0fca    Example Workspace 1
 Total workspaces: 3
 ```
 
-From here, copy the corresponding ID of the workspace you wish to publish your dataset into. Use the `use` command with the `-w` option to set the workspace context:
+From here, copy the corresponding ID of the workspace you wish to publish your dataset into. Update the default context with the `-w` option to set a `WORKSPACE ID` value:
 
 ```bash
 # use Example Workspace 1
-matatika use -w ce21a13b-6d6b-42a6-bab7-4df1ae2b0fca
+matatika context update -w ce21a13b-6d6b-42a6-bab7-4df1ae2b0fca
+matatika context default
 ```
 
 ```
-Workspace context set to ce21a13b-6d6b-42a6-bab7-4df1ae2b0fca
+CONTEXT NAME    example-context-1                                               
+AUTH TOKEN      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InMyR2RKS01LUXFwalh…
+ENDPOINT URL    https://catalog.matatika.com/api                                
+WORKSPACE ID    ce21a13b-6d6b-42a6-bab7-4df1ae2b0fca
 ```
 
 ## Publishing a Dataset
