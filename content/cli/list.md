@@ -9,3 +9,20 @@ nav_order: 3
 # `{{page.title}}`
 
 {% include snippets/cli/matatika_list.md %}
+
+---
+
+#### Subcommands
+
+- TOC
+{: toc }
+
+---
+
+## `workspaces`
+{% include snippets/cli/matatika_list_workspaces.md %}
+
+---
+
+## `datasets`
+{% include snippets/cli/matatika_list_datasets.md %}
