@@ -29,11 +29,6 @@ nav_order: 2
 
 ---
 
-## `update`
-{% include snippets/cli/matatika_context_update.md %}
-
----
-
 ## `use`
 {% include snippets/cli/matatika_context_use.md %}
 
@@ -41,6 +36,11 @@ nav_order: 2
 
 ## `default`
 {% include snippets/cli/matatika_context_default.md %}
+
+---
+
+## `update`
+{% include snippets/cli/matatika_context_update.md %}
 
 ---
 
