@@ -68,6 +68,8 @@ If everything was configured correctly, the API should respond with a status of 
                 "id": "{workspace-id}",
                 "name": "{workspace-name}",
                 "domains": "{workspace-domains}",
+                "repositoryUrl" : "{repository-url}",
+                "defaultWorkspace" : false,
                 "_links": {
                     "self": {
                         "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}"
@@ -95,6 +97,21 @@ If everything was configured correctly, the API should respond with a status of 
                     },
                     "channels": {
                         "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/channels",
+                    },
+                    "tags" : {
+                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/tags"
+                    },
+                    "search" : {
+                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/search"
+                    },
+                    "feed" : {
+                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/feed"
+                    },
+                    "datasources" : {
+                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/datasources"
+                    },
+                    "pipelines" : {
+                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/pipelines"
                     }
                 }
             }
