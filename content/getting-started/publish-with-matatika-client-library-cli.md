@@ -59,7 +59,7 @@ datasets:
     visualisation: '{"google-chart": {"chartType": "ColumnChart"} }'
 ```
 
-Here, the `datasets` key can assume a value of multiple datasets. In this example, the `planet-orbits` entry forms a partial [Dataset object schema]({{site.baseurl}}/resources/datasets#schemap), with the key used as the `alias` and the value containing other relevant schema entries.
+Here, the `datasets` key can assume a value of multiple datasets. In this example, the `planet-orbits` entry forms a partial [Dataset object](resources/datasets#schema) schema, with the key used as the `alias` and the value containing other relevant schema entries.
 
 You can read more about the YAML format and its syntax [here](https://yaml.org/).
 
