@@ -34,8 +34,8 @@ nav_order: 2
 
 ---
 
-## `default`
-{% include snippets/cli/matatika_context_default.md %}
+## `info`
+{% include snippets/cli/matatika_context_info.md %}
 
 ---
 
