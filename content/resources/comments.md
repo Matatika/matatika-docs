@@ -24,12 +24,13 @@ Path | Type | Description
 `id` | `String` | The comment ID
 `message` | `String` | The comment message
 `likeCount` | `Integer` | The number of likes the comment has received
-`likedByProfiles` | `Array` | A collection of [Member objects](workspaces#member-object) that have liked the comment
+`likedByProfiles` | `Array` of [Member objects](workspaces#member-object) | The workspace members that have liked the comment
 `created` | `String` | Timestamp denoting when the comment was created
 `lastModified` | `String` | Timestamp denoting when the comment was last modified
 `from` | [`Member object`](members#member-object) | The comment author
 `commentCount` | `Integer` | The number of replies the comment has received
 `datasetId` | `String` | The ID of the dataset comment subject
+`parentId` | `String` | The ID of the parent comment
 
 ### Example Resource
 

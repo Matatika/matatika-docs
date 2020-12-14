@@ -31,12 +31,15 @@ Path | Type | Description
 `description` | `String` | The dataset description (may contain markdown)
 `questions` | `String` | The dataset questions
 `rawData` | `String` | The dataset raw data
-`visualisation` | `String` | The dataset visualization metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start)
+`visualisation` | `String` | The dataset visualisation metadata
+`metadata` | `String` | The dataset metadata
 `query` | `String` | The dataset query
 `likeCount` | `Integer` | The number of likes the dataset has received
 `likedByProfiles` | `Array` of [`Member objects`](members#member-object) | The members that have liked the dataset
 `commentCount` | `Integer` | The number of comments the dataset has received
 `viewCount` | `Integer` | The number of views the dataset has received
+`created` | `String` | Timestamp denoting when the dataset was created
+`score` | `Float` | The dataset score used to determine its position in the workspace [Feed](feed)
 
 ### Example Resource
 

@@ -25,9 +25,7 @@ Path | Type | Description
 `name` | `String` | The profile name
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address
-`defaultWorkspace` | `JSON Object` | The profile default workspace object
-`defaultWorkspace.name` | `String` | If applicable, the profile default workspace name
-`defaultWorkspace.domains` | `String` | If applicable, the profile default workspace allowed domains
+`defaultWorkspace` | Partial [`Workspace object`](workspaces#workspace-object) | The profile default workspace object
 
 ### Example Resource
 
@@ -37,7 +35,7 @@ GET
 /api/workspaces/{workspace-id}
 {:.path .path-GET}
 
-{% include snippets/api/workspaces/view-a-workspace/response-body.md %}
+{% include snippets/api/profiles/view-a-profile/response-body.md %}
 
 ---
 

@@ -23,7 +23,7 @@ Path | Type | Description
 ---- | ---- | -----------
 `id` | `String` | The channel ID
 `creator` | [`Member object`](members#member-object) | The channel creator
-`workspace` | [`Workspace object`](workspaces#workspace-object) (reduced fields) | The channel workspace 
+`workspace` | Partial [`Workspace object`](workspaces#workspace-object) | The channel workspace 
 `name` | `String` | The channel name
 `description` | `String` | The channel description
 `picture` | `String` | The channel picture metadata

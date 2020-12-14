@@ -24,6 +24,7 @@ Path | Type | Description
 `id` | `String` | The workspace ID
 `name` | `String` | The workspace name
 `domains` | `String` | The workspace allowed domains
+`repositoryUrl` | `String` | The workspace repository URL
 `defaultWorkspace` | `Boolean` | The workspace default status for the calling user
 
 ### Example Resource
