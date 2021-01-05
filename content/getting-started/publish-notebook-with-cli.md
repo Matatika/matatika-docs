@@ -32,12 +32,12 @@ A [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) is an interactiv
 
 ## Publish A Notebook
 
-In this example, we will be publishing the notebook we created in the [Fetch Data into a Jupyter Notebook](fetch-data-into-a-jupyter-notebook) guide as a new dataset - you can find the notebook file [here](https://github.com/Matatika/matatika-examples/tree/master/simple_jupyter_fetch). Alternatively, you can use your own notebook file. Keep in mind that when publishing any notebook, only the **text cells** and the **output of code cells** will be included in the resultant dataset.
+In this example, we will be publishing [this notebook](https://github.com/Matatika/matatika-examples/tree/master/simple_cli_publish_notebook). Alternatively, you can use your own notebook file. Keep in mind that when publishing any notebook, only the **text cells** and the **output of code cells** will be included in the resultant dataset.
 
 Firstly, download and/or locate the notebook file with the `.ipynb` extension. To publish the notebook, run:
 
 ```bash
-matatika publish simple_jupyter_fetch.ipynb
+matatika publish total_users_insights.ipynb
 ```
 
 If the process was successful, the CLI will respond with details of the publish:
@@ -45,8 +45,8 @@ If the process was successful, the CLI will respond with details of the publish:
 ```
 Successfully published 1 dataset(s)
 
-DATASET ID                          	ALIAS   TITLE                   STATUS      
-31b136c9-14c0-400d-90d5-8d078d1b34e9    None 	Total Website Users     NEW
+DATASET ID                              ALIAS   TITLE                                       STATUS
+053bd57c-2343-4244-905d-0cc6eb1c0318    None    Total Website Users Over the Last 50 Days   NEW
 ```
 
 Here we can see that the published dataset `title` was resolved from the first heading tag in the file. If no heading tag is present in the file, then an automatically generated title will be used instead.
