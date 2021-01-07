@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publish Jupyter Notebooks with Matatika CLI
-permalink: /getting-started/publish-jupyter-notebooks-with-matatika-cli
+title: Publish a Jupyter Notebook
+permalink: /getting-started/publish-a-jupyter-notebook
 parent: Getting Started
 nav_order: 6
 ---

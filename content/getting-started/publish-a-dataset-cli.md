@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publish with Matatika Client Library (CLI)
-permalink: /getting-started/publish-with-matatika-client-library-cli
+title: Publish a Dataset (CLI)
+permalink: /getting-started/publish-a-dataset-cli
 parent: Getting Started
 nav_order: 4
 ---

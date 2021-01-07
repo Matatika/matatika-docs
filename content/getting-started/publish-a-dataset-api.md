@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publish with Matatika API
-permalink: /getting-started/publish-with-matatika-api
+title: Publish a Dataset (API)
+permalink: /getting-started/publish-a-dataset-api
 parent: Getting Started
 nav_order: 3
 ---
