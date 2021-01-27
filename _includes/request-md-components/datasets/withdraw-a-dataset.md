@@ -6,7 +6,7 @@ DELETE
 /api/datasets/{dataset-id}
 {:.path .path-DELETE}
 
-Withraws the dataset `{dataset-id}`.
+Withdraws the dataset `{dataset-id}`.
 
 ### Prerequisites
 

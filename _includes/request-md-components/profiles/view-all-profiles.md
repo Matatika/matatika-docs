@@ -6,7 +6,7 @@ GET
 /api/profiles
 {:.path .path-GET}
 
-Returns all profiles under the authenicated user account.
+Returns all profiles under the authenticated user account.
 
 ### Request
 
@@ -32,6 +32,6 @@ No request body required.
 {:.label .label-GET}
 
 #### Body
-[Proile object](#profile-object) collection with HAL links.
+[Profile object](#profile-object) collection with HAL links.
 
 ---

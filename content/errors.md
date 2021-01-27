@@ -19,7 +19,7 @@ In general:
 
 Status Code | Text | Description
 ----------- | ---- | -----------
-200 | *OK* | The request was accepted and exisitng or modified data was returned.
+200 | *OK* | The request was accepted and existing or modified data was returned.
 201 | *Created* | The request was accepted and new data was added.
 202 | *Accepted* | The request was accepted and will be processed. New data will be added once processing is complete.
 400 | *Bad Request* | The request body contained malformed content of type `application/hal+json`.

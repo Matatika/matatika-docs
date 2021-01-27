@@ -84,7 +84,7 @@ WORKSPACE ID    None
 
 This will create the context `$CONTEXT_NAME` with an `AUTH TOKEN` value of `$AUTH_TOKEN`, set it as the default context, and then print out the default context as a formatted table. You will notice that the `ENDPOINT URL` is populated with the production Matatika API URL by default. If required, this can be changed using the `-e` option when either creating a new context or updating the default context.
 
-Once a default context has been set, verify everything is working by running the `profile` command. If successfuly, this will state the profile ID and name of the authenticated user:
+Once a default context has been set, verify everything is working by running the `profile` command. If successfully, this will state the profile ID and name of the authenticated user:
 
 ```bash
 matatika profile
@@ -95,7 +95,7 @@ ID      auth0|a1b2c3d4e5f6g7h8i9j10k11
 NAME    example@matatika.com
 ```
 
-Next, we need to select a workspace which we will publish our dataset into. Invoke the `list` command with the `workspaces` subcommand to print out a list of workspaces the authenticated user is a member of:
+Next, we need to select a workspace which we will publish our dataset into. Invoke the `list` command with the `workspaces` sub-command to print out a list of workspaces the authenticated user is a member of:
 
 ```bash
 matatika list workspaces

@@ -7,7 +7,7 @@ nav_order: 7
 
 # {{page.title}}
 
-The Matatika API uses link relations to communicate the capabilites of our resources.  Where you see a link with one of the following relations, you can expect our API to act accordingly provided nothing has changed in the meantime.
+The Matatika API uses link relations to communicate the capabilities of our resources.  Where you see a link with one of the following relations, you can expect our API to act accordingly provided nothing has changed in the meantime.
 {: .fs-5 }
 
 ---

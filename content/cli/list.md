@@ -12,7 +12,7 @@ nav_order: 4
 
 ---
 
-#### Subcommands
+#### Sub-Commands
 
 - TOC
 {: toc }

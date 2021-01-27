@@ -26,7 +26,7 @@ Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started)
 
 ## Introduction
 
-A [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) is an interactive Python environment formed of text and executable code blocks, offering a fleixble and iterative programmatic approach to research and development work. Notebooks are commonly used as a research tool in the data science field, but are now also emerging as viable or - in some cases - more practical alternatives to certain facets of business analytics, such as constructing performance reports.
+A [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) is an interactive Python environment formed of text and executable code blocks, offering a flexible and iterative programmatic approach to research and development work. Notebooks are commonly used as a research tool in the data science field, but are now also emerging as viable or - in some cases - more practical alternatives to certain facets of business analytics, such as constructing performance reports.
 
 ---
 

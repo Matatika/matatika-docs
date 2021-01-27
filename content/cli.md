@@ -25,7 +25,7 @@ The Matatika CLI/SDK is available through PyPi [here](https://pypi.org/project/m
 pip install matatika
 ```
 
-You can check if the CLI/SDK installed succesfully by running the following command:
+You can check if the CLI/SDK installed successfully by running the following command:
 
 ```
 matatika --version
