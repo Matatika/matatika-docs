@@ -9,7 +9,7 @@ components: request-md-components/datasets
 
 # {{page.title}}
 
-Datasets are modules of data that can be published to workspaces. The visualisation of datasets is supported, following the Google Charts specification.
+Datasets are modules of data that can be published to workspaces. Datasets are visualised in the Matatika app following the [Chart.js](https://www.chartjs.org/) and [Google Charts](https://developers.google.com/chart) specifications.
 {: .fs-5 }
 
 ---
@@ -61,8 +61,9 @@ GET
 ---
 
 {% include {{ page.components }}/view-a-dataset.md %}
-{% include {{ page.components }}/view-datasets-by-channel-id.md %}
+{% include {{ page.components }}/view-a-dataset-in-a-workspace.md %}
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
+{% include {{ page.components }}/view-datasets-by-channel-id.md %}
 {% include {{ page.components }}/view-the-data-of-a-dataset.md %}
 {% include {{ page.components }}/publish-a-dataset-to-a-workspace.md %}
 {% include {{ page.components }}/record-a-view-of-a-dataset.md %}

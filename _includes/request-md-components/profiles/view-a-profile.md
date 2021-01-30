@@ -36,6 +36,6 @@ No request body required.
 {:.label .label-GET}
 
 #### Body
-[Proile object](#profile-object) with HAL links.
+[Profile object](#profile-object) with HAL links.
 
 ---

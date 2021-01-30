@@ -6,7 +6,7 @@ The Matatika public developer documentation.
 - [Docker](https://docs.docker.com/get-docker/) installed
 - Ability to run API SITs, which in turn auto-generate the required snippets
 
-### Inital Setup
+### Initial Setup
 First, clone the repository and change into the directory.
 ```terminal
 git clone https://github.com/Matatika/matatika-docs.git
@@ -86,7 +86,7 @@ New markdown files must contain relevant [front matter](https://jekyllrb.com/doc
 | `title` | The page title - used to create navigation menu heading
 | `permalink` | The page permalink - can be used to override the default provided by the enclosing folder structure
 | `nav_order` | The position of the page within its navigation menu scope
-| `has_children` | Boolean value incdicating whether the page acts a parent: used to create a hierarchical navigation structure
+| `has_children` | Boolean value indicating whether the page acts a parent: used to create a hierarchical navigation structure
 | `parent` | The `title` value of an existing parent page, indicating whether the page acts as a child: used to create a hierarchical navigation structure
 
 The front matter of `content.md`
@@ -104,7 +104,7 @@ To make changes to the generated snippet content, see [matatika-sit](https://git
 
 ### Updating Snippets
 
-If the exisiting snippets have been updated by running subsequent API SITs, they can be copied over again by simply re-running the `import` directive. This can be done with the local server already running, where changes to site content are reflected in the static site dynamically.
+If the existing snippets have been updated by running subsequent API SITs, they can be copied over again by simply re-running the `import` directive. This can be done with the local server already running, where changes to site content are reflected in the static site dynamically.
 
 - If the generated snippets source directory has been modified (e.g. files and/or folders created, renamed or moved), run `clean` from the Makefile beforehand, in order to remove all files and folders within `./_includes/snippets/`. The server will need to be restarted for these changes to take effect.
 
