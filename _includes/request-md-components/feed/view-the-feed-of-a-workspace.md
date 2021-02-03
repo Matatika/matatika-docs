@@ -1,4 +1,4 @@
-## View a workspace feed
+## View the feed of a workspace
 
 GET
 {:.label .label-GET}

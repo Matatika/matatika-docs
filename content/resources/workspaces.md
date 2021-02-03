@@ -62,3 +62,4 @@ GET
 - [View all members of a workspace](members#view-all-members-of-a-workspace)
 - [View a member of a workspace](members#view-a-member-of-a-workspace)
 - [View all channels in a workspace](channels#view-all-channels-in-a-workspace)
+- [View the feed of a workspace](feed#view-the-feed-of-a-workspace)
