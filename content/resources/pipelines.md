@@ -26,3 +26,7 @@ A pipeline is a workspace-specific configuration or definition for extracting, l
 {% include {{page.components}}/initialise-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/create-or-update-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}
+
+#### See Also
+
+- [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)

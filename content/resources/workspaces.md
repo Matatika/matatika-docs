@@ -68,3 +68,4 @@ GET
 - [Initialise a pipeline in a workspace](pipelines#initialise-a-pipeline-in-a-workspace)
 - [Create or update a pipeline in a workspace](pipelines#create-or-update-a-pipeline-in-a-workspace)
 - [Remove a pipeline from a workspace](pipelines#remove-a-pipeline-from-a-workspace)
+- [View all running or completed jobs for a workspace](jobs#view-all-running-or-completed-jobs-for-a-workspace)
