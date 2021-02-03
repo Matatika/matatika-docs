@@ -60,10 +60,10 @@ GET
 
 ---
 
-{% include {{ page.components }}/view-a-dataset.md %}
-{% include {{ page.components }}/view-a-dataset-in-a-workspace.md %}
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
 {% include {{ page.components }}/view-datasets-by-channel-id.md %}
+{% include {{ page.components }}/view-a-dataset.md %}
+{% include {{ page.components }}/view-a-dataset-in-a-workspace.md %}
 {% include {{ page.components }}/view-the-data-of-a-dataset.md %}
 {% include {{ page.components }}/publish-a-dataset-to-a-workspace.md %}
 {% include {{ page.components }}/record-a-view-of-a-dataset.md %}
@@ -74,3 +74,6 @@ GET
 #### See Also
 
 - [View all comments on a dataset](comments#view-all-comments-on-a-dataset)
+- [Search for datasets in a workspace by free text](search#search-for-datasets-in-a-workspace-by-free-text)
+- [Search for datasets in a workspace by channel name](search#search-for-datasets-in-a-workspace-by-channel-name)
+- [Search for datasets in a workspace by tag name](search#search-for-datasets-in-a-workspace-by-tag-name)
