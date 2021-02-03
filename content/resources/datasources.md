@@ -9,7 +9,7 @@ components: request-md-components/datasources
 
 # {{page.title}}
 
-Datasources simply define a source of data from a given repository. Matatika provides a number of pre-configured platform-wide datasources out-the-box, as well as the ability to create custom datasources through the API. From these, [Pipeline]() jobs can be run to inject data into a workspace.
+Datasources simply define a source of data from a given repository. Matatika provides a number of pre-configured platform-wide datasources out-the-box, as well as the ability to create custom datasources through the API. From these, [Pipeline](pipelines) jobs can be run to inject data into a workspace.
 {: .fs-5 }
 
 ---

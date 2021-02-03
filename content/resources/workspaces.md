@@ -63,3 +63,8 @@ GET
 - [View a member of a workspace](members#view-a-member-of-a-workspace)
 - [View all channels in a workspace](channels#view-all-channels-in-a-workspace)
 - [View the feed of a workspace](feed#view-the-feed-of-a-workspace)
+- [View all pipelines in a workspace](pipelines#view-all-pipelines-in-a-workspace)
+- [View a pipeline in a workspace](pipelines#view-a-pipeline-in-a-workspace)
+- [Initialise a pipeline in a workspace](pipelines#initialise-a-pipeline-in-a-workspace)
+- [Create or update a pipeline in a workspace](pipelines#create-or-update-a-pipeline-in-a-workspace)
+- [Remove a pipeline from a workspace](pipelines#remove-a-pipeline-from-a-workspace)
