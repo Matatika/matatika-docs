@@ -13,8 +13,17 @@ Deletes the pipeline `{pipeline-id}`.
 
 ### Request
 
-#### Body
-No request body required.
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/pipelines/delete-a-pipeline/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/pipelines/delete-a-pipeline/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

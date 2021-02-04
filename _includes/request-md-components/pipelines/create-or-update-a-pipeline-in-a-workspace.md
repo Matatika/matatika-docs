@@ -21,6 +21,18 @@ Path | Type | Description | Constraints
 `dataSource` | `String` | The [datasource](datasources) of the pipeline |
 `properties` | `String` | | 
 
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/python-requests.md %}
+{: .tabs-section-end}
+
 ### Response
 {: .d-inline-block }
 

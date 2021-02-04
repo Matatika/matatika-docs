@@ -13,8 +13,17 @@ Returns the pipeline `{pipeline-id}`.
 
 ### Request
 
-#### Body
-No request body required.
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/pipelines/view-a-pipeline/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/pipelines/view-a-pipeline/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }

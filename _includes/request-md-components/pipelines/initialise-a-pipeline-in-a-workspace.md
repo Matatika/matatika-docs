@@ -13,8 +13,17 @@ Initialises a new pipeline in the workspace `{workspace-id}`.
 
 ### Request
 
-#### Body
-No request body required.
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/pipelines/initialise-a-pipeline-in-a-workspace/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/pipelines/initialise-a-pipeline-in-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }
