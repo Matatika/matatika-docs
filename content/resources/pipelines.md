@@ -14,6 +14,31 @@ A pipeline is a workspace-specific configuration or definition for extracting, l
 
 ---
 
+## Pipeline Object
+{: .no_toc}
+
+### Schema
+
+Path | Type | Description
+---- | ---- | -----------
+`id` | `String` | The pipeline ID 
+`name` | `String` | The pipeline name
+`created` | `String` | Timestamp denoting when the pipeline was create
+`lastModified` | `String` | Timestamp denoting when the dataset was last modified
+`dataSource` | `String` | The pipeline [datasource](datasources) `name`
+
+### Example Resource
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}
+{:.path .path-GET}
+
+{% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
+
+--
+
 #### Requests
 
 - TOC
