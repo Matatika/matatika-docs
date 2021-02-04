@@ -6,7 +6,7 @@ POST
 /api/pipeline/{pipeline-id}/jobs
 {:.path .path-POST}
 
-Returns all running or completed jobs for the pipeline `{pipeline-id}`.
+Starts a new job from the pipeline `{pipeline-id}`.
 
 ### Prerequisites
 - Pipeline `{pipeline-id}` must exist and not already be running
