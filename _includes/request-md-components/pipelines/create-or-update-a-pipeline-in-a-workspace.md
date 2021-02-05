@@ -18,8 +18,8 @@ Creates or updates the pipeline `{pipeline-id}` in the workspace `{workspace-id}
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `name` | `String` | The pipeline name | 
-`dataSource` | `String` | The [datasource](datasources) of the pipeline |
-`properties` | `String` | | 
+`dataSource` | `String` | The pipeline target [datasource](datasources) `name` |
+`properties` | `String` | The [datasource](datasources) 
 
 #### Example Snippets
 - cURL
@@ -39,6 +39,6 @@ Path | Type | Description | Constraints
 201 / 200
 {:.label .label-PUT}
 
-[Pipeline object](#pipeline-object) with HAL links.
+[Pipeline] (#pipeline) object with HAL links.
 
 ---
