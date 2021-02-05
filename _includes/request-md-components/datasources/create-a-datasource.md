@@ -18,7 +18,8 @@ Path | Type | Description | Required | Constraints
 ---- | ---- | ----------- | -------- | -----------
 `name` | `String` | The datasource name | Yes | Not empty
 `description` | `String` | A description of the datasource | No |
-`repositoryUrl` | `String` | A URL to the datasource repository | No |
+`repositoryUrl` | `String` | The datasource repository URL | No |
+`settings` | `Array` of [`Setting`](#setting) objects | The datasource settings | No |
 
 #### Example Snippets
 - cURL
