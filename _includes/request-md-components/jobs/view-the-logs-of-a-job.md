@@ -6,7 +6,7 @@ GET
 /api/jobs/{job-id}/logs?sequence={sequence}
 {:.path .path-GET}
 
-Returns the logs of the job `{job-id}` as a streamed response, in the sequence `{sequence}`.
+Returns the logs of the job `{job-id}` as a streamed response, from the sequence `{sequence}`.
 
 ### Prerequisites
 - Job `{job-id}` must exist
@@ -24,7 +24,7 @@ Key | Value | Description
 
 Parameter | Parsed Type | Default Value | Description
 --------- | ----------- | ------------- | -----------
-`sequence` | `Integer` | `0` |
+`sequence` | `Integer` | `0` | The section in the logs to read from
 
 
 ### Response
