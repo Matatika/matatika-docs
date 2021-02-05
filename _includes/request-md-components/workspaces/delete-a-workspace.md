@@ -13,10 +13,6 @@ Deletes the workspace `{workspace-id}`.
 - The user must be the owner of workspace `{workspace-id}`
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

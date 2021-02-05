@@ -13,10 +13,6 @@ Returns the edit history of the comment `{comment-id}`.
 - Comment `{comment-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

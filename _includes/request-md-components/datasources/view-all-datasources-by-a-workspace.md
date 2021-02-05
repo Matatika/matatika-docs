@@ -12,10 +12,6 @@ Returns all available datasources by the workspace `{workspace-id}`.
 - Workspace `{workspace-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

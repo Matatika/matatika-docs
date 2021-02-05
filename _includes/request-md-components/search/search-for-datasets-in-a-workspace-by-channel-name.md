@@ -12,10 +12,6 @@ Searches the workspace `{workspace-id}` for datasets by the channel `{channel-na
 - Workspace `{workspace-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

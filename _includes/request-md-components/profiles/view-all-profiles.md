@@ -9,10 +9,6 @@ GET
 Returns all profiles under the authenticated user account.
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

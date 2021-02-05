@@ -13,10 +13,6 @@ Returns the datasource `{datasource-id}` by the workspace `{workspace-id}`.
 - Datasource `{datasource-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

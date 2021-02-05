@@ -13,10 +13,6 @@ Returns datasets by the channel `{channel-id}`.
 - Channel `{channel-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
