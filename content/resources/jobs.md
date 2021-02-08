@@ -13,10 +13,23 @@ A job is an executing instance of a [pipeline](pipelines) that carries out the [
 
 ---
 
-## Job Object
+## Example Resource
+{: .no_toc }
+
+GET
+{:.label .label-GET}
+
+/api/workspaces/{workspace-id}
+{:.path .path-GET}
+
+{% include snippets/api/jobs/view-a-job/response-body.md %}
+
+---
+
+## Objects
 {: .no_toc}
 
-### Schema
+### Job
 
 Path | Type | Description | Behaviour
 ---- | ---- | ----------- | -----

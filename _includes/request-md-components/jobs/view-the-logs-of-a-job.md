@@ -20,6 +20,18 @@ Key | Value | Description
 `Accept` | `text/plain` | Sets the response content type format to `text/plain`
 `Accept` | `*/*` (all other values) | Sets the response content type format to `text/plain`
 
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/jobs/view-the-logs-of-a-job_json/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/jobs/view-the-logs-of-a-job_json/python-requests.md %}
+{: .tabs-section-end}
+
 #### Query Parameters
 
 Parameter | Parsed Type | Default Value | Description
