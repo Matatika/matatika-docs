@@ -3,7 +3,7 @@ layout: default
 title: fetch
 permalink: /cli/fetch
 parent: CLI
-nav_order: 5
+nav_order: 6
 ---
 
 # `{{page.title}}`
