@@ -1,10 +1,10 @@
 ## Remove a subscription
 
-GET
-{:.label .label-GET}
+DELETE
+{:.label .label-DELETE}
 
 /api/subscriptions/{subscription-id}
-{:.path .path-GET}
+{:.path .path-DELETE}
 
 Removes the subscription `{subscription-id}`.
 
@@ -15,7 +15,7 @@ Removes the subscription `{subscription-id}`.
 {: .d-inline-block }
 
 204
-{:.label .label-GET}
+{:.label .label-DELETE}
 
 No response body provided.
 
