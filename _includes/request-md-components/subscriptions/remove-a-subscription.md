@@ -11,6 +11,19 @@ Removes the subscription `{subscription-id}`.
 ### Prerequisites
 - Subscription `{subscription-id}` must exist
 
+### Request
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/subscriptions/remove-a-subscription/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/subscriptions/remove-a-subscription/python-requests.md %}
+{: .tabs-section-end}
+
 ### Response
 {: .d-inline-block }
 

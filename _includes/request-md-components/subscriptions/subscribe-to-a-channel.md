@@ -8,8 +8,23 @@ POST
 
 Subscribes the authenticated user profile to the channel `{channel-id}`.
 
+By default, the subscription is configured for all channel events (see [Subscription Type](#subscription-type) for more information)
+
 ### Prerequisites
 - Channel `{channel-id}` must exist
+
+### Request
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/subscriptions/subscribe-to-a-channel/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/subscriptions/subscribe-to-a-channel/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }
@@ -18,5 +33,7 @@ Subscribes the authenticated user profile to the channel `{channel-id}`.
 {:.label .label-POST}
 
 [Subscription](#subscription) object with HAL links.
+
+{% include snippets/api/subscriptions/subscribe-to-a-channel/response-body.md %}
 
 ---

@@ -11,6 +11,18 @@ Returns the subscription `{subscription-id}`.
 ### Prerequisites
 - Subscription `{subscription-id}` must exist
 
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/subscriptions/view-a-subscription/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/subscriptions/view-a-subscription/python-requests.md %}
+{: .tabs-section-end}
+
 ### Response
 {: .d-inline-block }
 
@@ -18,5 +30,7 @@ Returns the subscription `{subscription-id}`.
 {:.label .label-GET}
 
 [Subscription](#subscription) object with HAL links.
+
+{% include snippets/api/subscriptions/view-a-subscription/response-body.md %}
 
 ---

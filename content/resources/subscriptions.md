@@ -26,6 +26,8 @@ Path | Type | Format | Description
 `lastModified` | `String` | ISO 8601 timestamp | The instant the subscription was last modified at
 `type` | `String` | [Subscription Type](#subscription-type) | The type of subscription
 
+{% include snippets/api/subscriptions/view-a-subscription/response-body.md %}
+
 ## Formats
 {: .no_toc}
 
