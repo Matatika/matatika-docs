@@ -16,7 +16,7 @@ Returns all notifications for the workspace `{workspace-id}`.
 
 Parameter | Required | Format | Default Value | Description
 --------- | -------- | ------ | ------------- | -----------
-`all` | No | Boolean | | Whether or not to return all notifications, ignoring any defined range
+`all` | No | Boolean | | Whether or not to return both read and unread notifications
 `before` | No | ISO 8601 timestamp | The instant at which the request was made | The instant to return any notifications created before
 `since` | No | ISO 8601 timestamp | `2021-02-11T11:12` | The instant to return any notifications created since
 
