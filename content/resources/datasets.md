@@ -14,40 +14,31 @@ Datasets are modules of data that can be published to workspaces. Datasets are v
 
 ---
 
-## Dataset Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Dataset
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The dataset ID
-`published` | `String` | Timestamp denoting when the dataset was published
-`alias` | `String` | The dataset alias
-`workspaceId` | `String` | The workspace ID of the published dataset
-`channelId` | `String` | The channel ID of the published dataset
-`source` | `String` | The channel ID where the dataset was initially published to
-`title` | `String` | The dataset title
-`description` | `String` | The dataset description (may contain markdown)
-`questions` | `String` | The dataset questions
-`rawData` | `String` | The dataset raw data
-`visualisation` | `String` | The dataset visualisation metadata
-`metadata` | `String` | The dataset metadata
-`query` | `String` | The dataset query
-`likeCount` | `Integer` | The number of likes the dataset has received
-`likedByProfiles` | `Array` of [`Member objects`](members#member-object) | The members that have liked the dataset
-`commentCount` | `Integer` | The number of comments the dataset has received
-`viewCount` | `Integer` | The number of views the dataset has received
-`created` | `String` | Timestamp denoting when the dataset was created
-`score` | `Float` | The dataset score used to determine its position in the workspace [Feed](feed)
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/datasets/{dataset-id}
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The dataset ID
+`published` | `String` | ISO 8601 timestamp | The instant the dataset was published
+`alias` | `String` | | The dataset alias
+`workspaceId` | `String` | Version 4 UUID | The workspace ID of the published dataset
+`source` | `String` | | The channel ID where the dataset was initially published to
+`title` | `String` | | The dataset title
+`description` | `String` | | The dataset description (may contain markdown)
+`questions` | `String` | | The dataset questions
+`rawData` | `String` | JSON | The dataset raw data
+`visualisation` | `String` | JSON | The dataset visualisation metadata
+`metadata` | `String` | JSON | The dataset metadata
+`query` | `String` | SQL statement | The dataset query
+`likeCount` | `Integer` | | The number of likes the dataset has received
+`likedByProfiles` | `Array` of [`Member objects`](members#member-object) | | The members that have liked the dataset
+`commentCount` | `Integer` | | The number of comments the dataset has received
+`viewCount` | `Integer` | | The number of views the dataset has received
+`created` | `String` | ISO 8601 timestamp | The instant the dataset was create
+`score` | `Float` | | The dataset score used to determine its position in the workspace [Feed](feed)
 
 {% include snippets/api/datasets/view-a-dataset/response-body.md %}
 
@@ -61,11 +52,12 @@ GET
 ---
 
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
-{% include {{ page.components }}/view-datasets-by-channel-id.md %}
+{% include {{ page.components }}/view-datasets-by-channel.md %}
 {% include {{ page.components }}/view-a-dataset.md %}
 {% include {{ page.components }}/view-a-dataset-in-a-workspace.md %}
 {% include {{ page.components }}/view-the-data-of-a-dataset.md %}
 {% include {{ page.components }}/publish-a-dataset-to-a-workspace.md %}
+{% include {{ page.components }}/update-a-dataset.md %}
 {% include {{ page.components }}/record-a-view-of-a-dataset.md %}
 {% include {{ page.components }}/record-a-like-of-a-dataset.md %}
 {% include {{ page.components }}/remove-a-like-from-a-dataset.md %}
@@ -77,3 +69,4 @@ GET
 - [Search for datasets in a workspace by free text](search#search-for-datasets-in-a-workspace-by-free-text)
 - [Search for datasets in a workspace by channel name](search#search-for-datasets-in-a-workspace-by-channel-name)
 - [Search for datasets in a workspace by tag name](search#search-for-datasets-in-a-workspace-by-tag-name)
+- [Subscribe to a dataset](subscriptions#subscribe-to-a-dataset)

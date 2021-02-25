@@ -1,4 +1,4 @@
-## View datasets by channel ID
+## View datasets by channel
 
 GET
 {:.label .label-GET}
@@ -17,12 +17,12 @@ Returns datasets by the channel `{channel-id}`.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/datasets/view-datasets-by-channel-id/curl-request.md %}
+{% include snippets/api/datasets/view-datasets-by-channel/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/datasets/view-datasets-by-channel-id/python-requests.md %}
+{% include snippets/api/datasets/view-datasets-by-channel/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
@@ -31,6 +31,8 @@ Returns datasets by the channel `{channel-id}`.
 200
 {:.label .label-GET}
 
-[Dataset object](#dataset-object) collection with HAL links.
+[Dataset](#dataset) object collection with HAL links.
+
+{% include snippets/api/datasets/view-datasets-by-channel/response-body.md %}
 
 ---

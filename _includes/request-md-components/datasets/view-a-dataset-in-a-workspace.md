@@ -33,6 +33,8 @@ Returns the dataset `{dataset-id-or-alias}` in the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Dataset object](#dataset-object) with HAL links.
+[Dataset](#dataset) object with HAL links.
+
+{% include snippets/api/datasets/view-a-dataset-in-a-workspace/response-body.md %}
 
 ---

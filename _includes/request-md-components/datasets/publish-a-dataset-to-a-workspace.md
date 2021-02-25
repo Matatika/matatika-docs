@@ -13,6 +13,23 @@ Publishes a dataset to the workspace `{workspace-id}`.
 - The user must be a member of the workspace `{workspace-id}`
 
 ### Request
+Making the request with an existing `id` or `alias` will result in the respective dataset being overwritten.
+
+#### Body
+
+Path | Type | Format | Description | Required
+---- | ---- | ------ | ----------- | --------
+`id` | `String` | Version 4 UUID | The dataset ID | Only if `alias` is not specified
+`alias` | `String` | | The dataset alias | Only if `id` is not specified
+`description` | `String` | | The dataset description (may contain markdown) | No
+`questions` | `String` | | The dataset questions | No
+`rawData` | `String` | JSON | The dataset raw data | No
+`visualisation` | `String` | JSON | The dataset visualisation metadata | No
+`metadata` | `String` | JSON | The dataset metadata | No
+`query` | `String` | SQL statement | The dataset query | No
+
+{% include snippets/api/datasets/publish-a-dataset-to-a-workspace/request-body.md %}
+
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
@@ -31,6 +48,8 @@ Publishes a dataset to the workspace `{workspace-id}`.
 201 / 200
 {:.label .label-POST}
 
-[Dataset object](#dataset-object) with HAL links.
+[Dataset](#dataset) object with HAL links.
+
+{% include snippets/api/datasets/publish-a-dataset-to-a-workspace/response-body.md %}
 
 ---
