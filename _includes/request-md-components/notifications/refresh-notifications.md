@@ -16,6 +16,18 @@ Parameter | Required | Format | Default Value | Description
 `read` | Yes | Boolean | `true` | Whether or not any existing notifications should be marked as read
 `lastReadAt` | No | ISO 8601 timestamp | The instant at which the request was made | The instant to mark any notifications created before as read
 
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/notifications/refresh-notifications/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/notifications/refresh-notifications/python-requests.md %}
+{: .tabs-section-end}
+
 ### Response
 {: .d-inline-block }
 
@@ -23,5 +35,7 @@ Parameter | Required | Format | Default Value | Description
 {:.label .label-PUT}
 
 [Notification](#notification) object collection with HAL links.
+
+{% include snippets/api/notifications/refresh-notifications/response-body.md %}
 
 ---
