@@ -8,12 +8,18 @@ POST
 
 Subscribes the authenticated user profile to the dataset `{dataset-id}`.
 
-By default, the subscription is configured for all dataset events (see [Subscription Type](#subscription-type) for more information)
+By default, the subscription is configured for all dataset events (see [Subscription Type](#subscription-type) for more information).
 
 ### Prerequisites
 - Dataset `{dataset-id}` must exist
 
 ### Request
+#### Query Parameters
+
+Parameter | Required | Format | Default Value | Description
+--------- | -------- | ------ | ------------- | -----------
+`allMembers` | No | Boolean | `false` | Whether or not to subscribe the workspace to dataset events, enabling notifications for all [members](members) by default
+
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

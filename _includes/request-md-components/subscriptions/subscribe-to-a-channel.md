@@ -8,12 +8,18 @@ POST
 
 Subscribes the authenticated user profile to the channel `{channel-id}`.
 
-By default, the subscription is configured for all channel events (see [Subscription Type](#subscription-type) for more information)
+By default, the subscription is configured for all channel events (see [Subscription Type](#subscription-type) for more information).
 
 ### Prerequisites
 - Channel `{channel-id}` must exist
 
 ### Request
+#### Query Parameters
+
+Parameter | Required | Format | Default Value | Description
+--------- | -------- | ------ | ------------- | -----------
+`allMembers` | No | Boolean | `false` | Whether or not to subscribe the workspace to channel events, enabling notifications for all [members](members) by default
+
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

@@ -55,6 +55,7 @@ Value | Description
 {% include {{page.components}}/view-all-subscriptions.md %}
 {% include {{page.components}}/view-all-member-subscriptions-to-a-workspace.md %}
 {% include {{page.components}}/view-a-subscription.md %}
+{% include {{page.components}}/subscribe-to-a-workspace.md %}
 {% include {{page.components}}/subscribe-to-a-channel.md %}
 {% include {{page.components}}/subscribe-to-a-dataset.md %}
 {% include {{page.components}}/subscribe-to-a-pipeline.md %}
