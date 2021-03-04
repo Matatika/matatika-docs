@@ -19,6 +19,20 @@ Path | Type | Format | Description
 `recipientId` | `String` | | The recipient profile ID
 `message` | `String` | | The dataset message content
 
+{% include snippets/api/datasets/create-or-update-a-dataset-message/request-body.md %}
+
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/datasets/create-or-update-a-dataset-message/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/datasets/create-or-update-a-dataset-message/python-requests.md %}
+{: .tabs-section-end}
+
 ### Response
 {: .d-inline-block }
 
@@ -26,5 +40,7 @@ Path | Type | Format | Description
 {:.label .label-PUT}
 
 [Dataset Message](#dataset-message) object with HAL links.
+
+{% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 
 ---

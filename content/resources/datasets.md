@@ -49,7 +49,9 @@ Path | Type | Format | Description
 `id` | `String` | Version 4 UUID | The dataset message ID (shared with the resulting [notification](notifications))
 `recipientId` | `String` | | The recipient profile ID
 `message` | `String` | | The dataset message content
-`datasetId` | `String` | Version 4 UUID | The message subject dataset ID 
+`datasetId` | `String` | Version 4 UUID | The message subject dataset ID
+
+{% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 
 ---
 
