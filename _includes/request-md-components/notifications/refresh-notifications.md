@@ -3,7 +3,7 @@
 PUT
 {:.label .label-PUT}
 
-/api/notifications?read={read}&lastReadAt={lastReadAt}
+/api/notifications?since={since}&markAsRead={markAsRead}
 {:.path .path-PUT}
 
 Returns new notifications for the authenticated user profile, optionally marking existing notifications recieved as read before a specific instant.
