@@ -13,8 +13,8 @@ Returns new notifications for the authenticated user profile, optionally marking
 
 Parameter | Required | Format | Default Value | Description
 --------- | -------- | ------ | ------------- | -----------
-`lastReadAt` | No | ISO 8601 timestamp | The instant at which the request was made | The instant to fetch any new notifications from
-`read` | Yes | Boolean | `true` | Whether or not to mark notifications created before `lastReadAt` as read
+`since` | No | ISO 8601 timestamp | The instant at which the request was made | The instant to fetch any new notifications from
+`markAsRead` | No | Boolean | `true` | Whether or not to mark notifications created before `since` as read
 
 #### Example Snippets
 - cURL
