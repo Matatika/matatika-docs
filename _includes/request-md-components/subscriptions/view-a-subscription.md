@@ -11,6 +11,7 @@ Returns the subscription `{subscription-id}`.
 ### Prerequisites
 - Subscription `{subscription-id}` must exist
 
+### Request
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

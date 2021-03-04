@@ -9,7 +9,7 @@ components: request-md-components/subscriptions
 
 # {{page.title}}
 
-Subscriptions are a declaration of interest in a particular resource, allowing a user to recieve [notifications]() when certain events occur. The events that trigger [notifications]() are controlled by the [type of subscription](#subscription-type).
+Subscriptions are a declaration of interest in a particular resource, allowing a user to recieve [notifications](notifications) when certain events occur. The events that trigger [notifications](notifications) are controlled by the [type of subscription](#subscription-type).
 {: .fs-5 }
 
 ---
@@ -39,9 +39,9 @@ Path | Type | Format | Description
 
 Value | Description
 ----- | -----------
-`ALL` | Triggers [notifications]() for all resource events
-`ALERTS` | Triggers [notifications]() for resource alert events only
-`NONE` | Does not trigger any [notifications]()
+`ALL` | Triggers [notifications](notifications) for all resource events
+`ALERTS` | Triggers [notifications](notifications) for resource alert events only
+`NONE` | Does not trigger any [notifications](notifications)
 
 ---
 
@@ -53,7 +53,7 @@ Value | Description
 ---
 
 {% include {{page.components}}/view-all-subscriptions.md %}
-{% include {{page.components}}/view-all-subscriptions-to-a-workspace.md %}
+{% include {{page.components}}/view-all-member-subscriptions-to-a-workspace.md %}
 {% include {{page.components}}/view-a-subscription.md %}
 {% include {{page.components}}/subscribe-to-a-channel.md %}
 {% include {{page.components}}/subscribe-to-a-dataset.md %}
