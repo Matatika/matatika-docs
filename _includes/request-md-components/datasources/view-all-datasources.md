@@ -27,6 +27,8 @@ Returns all available datasources.
 200
 {:.label .label-GET}
 
-[Datasource object](#datasource-object) collection with HAL links.
+[Datasource](#datasource) object collection with HAL links.
+
+{% include snippets/api/datasources/view-all-datasources/response-body.md %}
 
 ---

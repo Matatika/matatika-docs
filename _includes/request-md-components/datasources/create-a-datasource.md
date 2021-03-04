@@ -9,7 +9,6 @@ PUT
 Creates the datasource `{datasource-id}`.
 
 ### Request
-
 #### Body
 
 {% include snippets/api/datasources/create-a-datasource/request-body.md %}
@@ -39,6 +38,9 @@ Path | Type | Description | Required | Constraints
 201
 {:.label .label-PUT}
 
-[Datasource object](#datasource-object) with HAL links.
+[Datasource](#datasource) object with HAL links.
+
+
+{% include snippets/api/datasources/update-a-datasource/response-body.md %}
 
 ---
