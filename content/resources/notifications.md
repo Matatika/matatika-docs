@@ -27,6 +27,8 @@ Path | Type | Format | Description
 `type` | `String` | [Notification Type](#notification-type) | The type of notification
 `resolved` | `Boolean` | | Whether or not the notification has been read
 
+{% include snippets/api/notifications/view-a-notification/response-body.md %}
+
 ## Formats
 {: .no_toc}
 
