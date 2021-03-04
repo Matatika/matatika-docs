@@ -42,6 +42,15 @@ Path | Type | Format | Description
 
 {% include snippets/api/datasets/view-a-dataset/response-body.md %}
 
+### Dataset Message
+
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The dataset message ID (shared with the resulting [notification](notifications))
+`recipientId` | `String` | | The recipient profile ID
+`message` | `String` | | The dataset message content
+`datasetId` | `String` | Version 4 UUID | The message subject dataset ID 
+
 ---
 
 #### Requests
@@ -61,6 +70,8 @@ Path | Type | Format | Description
 {% include {{ page.components }}/record-a-view-of-a-dataset.md %}
 {% include {{ page.components }}/record-a-like-of-a-dataset.md %}
 {% include {{ page.components }}/remove-a-like-from-a-dataset.md %}
+{% include {{ page.components }}/initialise-a-new-dataset-message.md %}
+{% include {{ page.components }}/create-or-update-a-dataset-message.md %}
 {% include {{ page.components }}/withdraw-a-dataset.md %}
 
 #### See Also

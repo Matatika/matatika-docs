@@ -43,6 +43,7 @@ Value | Description
 `DATASET_ACTIVITY` | Any activity on the [dataset](datasets)
 `DATASET_ANOMOLY` | A detected anomoly in the [dataset](datasets) data
 `DATASET_COMMENT` | A [comment](comments) on the [dataset](datasets)
+`DATASET_MESSAGE` | A [message](datasets#dataset-message) about the [dataset](datasets)
 
 ---
 
@@ -58,3 +59,7 @@ Value | Description
 {% include {{page.components}}/view-a-notification.md %}
 {% include {{page.components}}/refresh-notifications.md %}
 {% include {{page.components}}/delete-a-notification.md %}
+
+#### See Also
+
+- [Create or update a dataset message](datasets#create-or-update-a-dataset-message)
