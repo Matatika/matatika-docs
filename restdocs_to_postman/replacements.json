@@ -1,7 +1,7 @@
 {
     "pathReplacements": [
         {
-            "oldValueRegex": "(?<=profile\\/)[^/?]*",
+            "oldValueRegex": "(?<=profiles\\/)[^/?]*",
             "newValue": "{{profile-id}}"
         },
         {
