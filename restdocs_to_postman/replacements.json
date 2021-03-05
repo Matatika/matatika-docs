@@ -35,6 +35,46 @@
         {
             "oldValueRegex": "(?<=datasources\\/)[a-z0-9-]*",
             "newValue": "{{datasource-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=subscriptions\\/)[a-z0-9-]*",
+            "newValue": "{{subscription-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=notifications\\/)[a-z0-9-]*",
+            "newValue": "{{notification-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=messages\\/)[a-z0-9-]*",
+            "newValue": "{{message-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=pipelines\\/)[a-z0-9-]*",
+            "newValue": "{{pipeline-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=jobs\\/)[a-z0-9-]*",
+            "newValue": "{{job-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=tags\\/)[a-z0-9-]*",
+            "newValue": "{{tag-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=email\\=)[\\w-+%\\.@]+",
+            "newValue": "{{email}}"
+        },
+        {
+            "oldValueRegex": "(?<=sequence\\=)[0-9]+",
+            "newValue": "{{sequence}}"
+        },
+        {
+            "oldValueRegex": "(?<=since\\=)(?<=since\\=)[A-Z0-9-%\\.:]+",
+            "newValue": "{{since}}"
+        },
+        {
+            "oldValueRegex": "(?<=before\\=)(?<=since\\=)[A-Z0-9-%\\.:]+",
+            "newValue": "{{before}}"
         }
     ]
 }
