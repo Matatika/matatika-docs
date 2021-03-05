@@ -1,80 +1,88 @@
 {
     "pathReplacements": [
         {
-            "oldValueRegex": "(?<=profiles\\/)[a-zA-Z0-9%]*",
+            "oldValueRegex": "(?<=profile\\/)[^/?]*",
             "newValue": "{{profile-id}}"
         },
         {
-            "oldValueRegex": "(?<=workspaces\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=workspaces\\/)[^/?]*",
             "newValue": "{{workspace-id}}"
         },
         {
-            "oldValueRegex": "(?<=datasets\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=datasets\\/)[^/?]*",
             "newValue": "{{dataset-id}}"
         },
         {
-            "oldValueRegex": "(?<=members\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=members\\/)(?!subscriptions)[^/?]*",
             "newValue": "{{member-id}}"
         },
         {
-            "oldValueRegex": "(?<=invitations\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=invitations\\/)[^/?]*",
             "newValue": "{{invitation-id}}"
         },
         {
-            "oldValueRegex": "(?<=channels\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=channels\\/)[^/?]*",
             "newValue": "{{channel-id}}"
         },
         {
-            "oldValueRegex": "(?<=comments\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=comments\\/)[^/?]*",
             "newValue": "{{comment-id}}"
         },
         {
-            "oldValueRegex": "(?<=parentId\\=)[a-z0-9-]*",
-            "newValue": "{{parent-comment-id}}"
-        },
-        {
-            "oldValueRegex": "(?<=datasources\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=datasources\\/)[^/?]*",
             "newValue": "{{datasource-id}}"
         },
         {
-            "oldValueRegex": "(?<=subscriptions\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=subscriptions\\/)[^/?]*",
             "newValue": "{{subscription-id}}"
         },
         {
-            "oldValueRegex": "(?<=notifications\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=notifications\\/)[^/?]*",
             "newValue": "{{notification-id}}"
         },
         {
-            "oldValueRegex": "(?<=messages\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=messages\\/)[^/?]*",
             "newValue": "{{message-id}}"
         },
         {
-            "oldValueRegex": "(?<=pipelines\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=pipelines\\/)[^/?]*",
             "newValue": "{{pipeline-id}}"
         },
         {
-            "oldValueRegex": "(?<=jobs\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=jobs\\/)[^/?]*",
             "newValue": "{{job-id}}"
         },
         {
-            "oldValueRegex": "(?<=tags\\/)[a-z0-9-]*",
+            "oldValueRegex": "(?<=tags\\/)[^/?]*",
             "newValue": "{{tag-id}}"
         },
         {
-            "oldValueRegex": "(?<=email\\=)[\\w-+%\\.@]+",
+            "oldValueRegex": "(?<=parentId\\=)[^&]*",
+            "newValue": "{{parent-comment-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=email\\=)[^&]*",
             "newValue": "{{email}}"
         },
         {
-            "oldValueRegex": "(?<=sequence\\=)[0-9]+",
+            "oldValueRegex": "(?<=sequence\\=)[^&]*",
             "newValue": "{{sequence}}"
         },
         {
-            "oldValueRegex": "(?<=since\\=)(?<=since\\=)[A-Z0-9-%\\.:]+",
+            "oldValueRegex": "(?<=since\\=)[^&]*",
             "newValue": "{{since}}"
         },
         {
-            "oldValueRegex": "(?<=before\\=)(?<=since\\=)[A-Z0-9-%\\.:]+",
+            "oldValueRegex": "(?<=before\\=)[^&]*",
             "newValue": "{{before}}"
+        },
+        {
+            "oldValueRegex": "(?<=allMembers\\=)[^&]*",
+            "newValue": "{{all-members}}"
+        },
+        {
+            "oldValueRegex": "(?<=q\\=)[^&]*",
+            "newValue": "{{query}}"
         }
     ]
 }
