@@ -19,10 +19,10 @@ nav_order: 5
 
 ---
 
-## `workspace`
-{% include snippets/cli/matatika_delete_workspace.md %}
+## `workspaces`
+{% include snippets/cli/matatika_delete_workspaces.md %}
 
 ---
 
-## `dataset`
-{% include snippets/cli/matatika_delete_dataset.md %}
+## `datasets`
+{% include snippets/cli/matatika_delete_datasets.md %}
