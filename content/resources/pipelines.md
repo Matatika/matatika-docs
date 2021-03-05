@@ -69,3 +69,4 @@ Path | Type | Description
 #### See Also
 
 - [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)
+- [Subscribe to a pipeline](subscriptions#subscribe-to-a-pipeline)

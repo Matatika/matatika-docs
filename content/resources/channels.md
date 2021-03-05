@@ -49,3 +49,7 @@ GET
 
 {% include request-md-components/channels/view-a-channel.md %}
 {% include request-md-components/channels/view-all-channels-in-a-workspace.md %}
+
+#### See Also
+
+- [Subscribe to a channel](subscriptions#subscribe-to-a-channel)
