@@ -3,10 +3,10 @@
 PUT
 {:.label .label-PUT}
 
-/api/notifications?since={since}&markAsRead={markAsRead}
+/api/notifications?since={since}&markAsResolved={markAsResolved}
 {:.path .path-PUT}
 
-Returns new notifications for the authenticated user profile, optionally marking existing notifications recieved as read before a specific instant.
+Returns new notifications for the authenticated user profile, optionally marking existing notifications recieved as resolved before a specific instant.
 
 ### Request
 #### Query Parameters
@@ -14,7 +14,7 @@ Returns new notifications for the authenticated user profile, optionally marking
 Parameter | Required | Format | Default Value | Description
 --------- | -------- | ------ | ------------- | -----------
 `since` | No | ISO 8601 timestamp | The instant at which the request was made | The instant to fetch any new notifications from
-`markAsRead` | No | Boolean | `true` | Whether or not to mark notifications created before `since` as read
+`markAsResolved` | No | Boolean | `true` | Whether or not to mark notifications created before `since` as resolved
 
 #### Example Snippets
 - cURL
