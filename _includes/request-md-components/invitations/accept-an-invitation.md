@@ -32,6 +32,6 @@ Accepts the invitation `{invitation-id}` to the workspace `{workspace-id}`.
 200
 {:.label .label-PATCH}
 
-[Invitation object](#invitation-object) with HAL links.
+[Invitation](#invitation) object with HAL links.
 
 ---

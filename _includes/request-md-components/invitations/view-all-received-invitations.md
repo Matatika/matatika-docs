@@ -27,6 +27,6 @@ Returns all invitations received by the authenticated user profile.
 200
 {:.label .label-GET}
 
-[Invitation object](invitations#invitation-object) collection with HAL links.
+[Invitation](#invitation) object collection with HAL links.
 
 ---
