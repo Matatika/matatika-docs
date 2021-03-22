@@ -21,6 +21,12 @@ The following item link relations accept a <span>GET</span>{:.label .label-GET} 
 - `dataset`
 - `channel`
 - `comment`
+- `tag`
+- `datasource`
+- `pipeline`
+- `job`
+- `subscription`
+- `notification`
 
 ## Collection Relations
 The following collection link relations accept a <span>GET</span>{:.label .label-GET} request and return the respective resource representation. Expect `200 OK` to indicate the resource was successfully returned.
@@ -31,6 +37,12 @@ The following collection link relations accept a <span>GET</span>{:.label .label
 - `datasets`
 - `channels`
 - `comments`
+- `tags`
+- `datasources`
+- `pipelines`
+- `jobs`
+- `subscriptions`
+- `notifications`
 
 ### Paging and Sorting
 Collection link relations accept paging parameters in a query to modify the response payload dimensions and order.
