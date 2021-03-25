@@ -45,6 +45,7 @@ GET
 ---
 
 {% include {{ page.components }}/view-all-tags-in-a-workspace.md %}
+{% include {{ page.components }}/view-all-tags-in-the-news-for-a-workspace.md %}
 {% include {{ page.components }}/view-a-tag-in-a-workspace.md %}
 
 #### See Also
