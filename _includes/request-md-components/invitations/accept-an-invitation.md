@@ -14,10 +14,6 @@ Accepts the invitation `{invitation-id}` to the workspace `{workspace-id}`.
 - Invitation `{invitation-id}` must exist for the authenticated user profile
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
@@ -36,6 +32,6 @@ No request body required.
 200
 {:.label .label-PATCH}
 
-[Invitation object](#invitation-object) with HAL links.
+[Invitation](#invitation) object with HAL links.
 
 ---

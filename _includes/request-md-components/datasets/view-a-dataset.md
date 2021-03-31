@@ -12,10 +12,6 @@ Returns the dataset `{dataset-id}`.
 - Dataset `{dataset-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
@@ -34,6 +30,8 @@ No request body required.
 200
 {:.label .label-GET}
 
-[Dataset object](#dataset-object) with HAL links.
+[Dataset](#dataset) object with HAL links.
+
+{% include snippets/api/datasets/view-a-dataset/response-body.md %}
 
 ---

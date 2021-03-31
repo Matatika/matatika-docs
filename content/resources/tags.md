@@ -9,7 +9,7 @@ components: request-md-components/tags
 
 # {{page.title}}
 
-Tags are hash-prefixed keywords or phrases that appear in the title and/or description of a dataset. Tags can be used to index datasets by their contained tags with a search, which allows for topical dataset categorisation.
+Tags are hash-prefixed keywords or phrases that appear in the title, description, or comments of a dataset. Tags can be used to index datasets by their contained tags with a search, which allows for topical dataset categorisation.
 {: .fs-5 }
 
 ---
@@ -45,6 +45,7 @@ GET
 ---
 
 {% include {{ page.components }}/view-all-tags-in-a-workspace.md %}
+{% include {{ page.components }}/view-all-tags-in-the-news-for-a-workspace.md %}
 {% include {{ page.components }}/view-a-tag-in-a-workspace.md %}
 
 #### See Also

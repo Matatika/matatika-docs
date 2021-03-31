@@ -21,6 +21,12 @@ The following item link relations accept a <span>GET</span>{:.label .label-GET} 
 - `dataset`
 - `channel`
 - `comment`
+- `tag`
+- `datasource`
+- `pipeline`
+- `job`
+- `subscription`
+- `notification`
 
 ## Collection Relations
 The following collection link relations accept a <span>GET</span>{:.label .label-GET} request and return the respective resource representation. Expect `200 OK` to indicate the resource was successfully returned.
@@ -31,6 +37,12 @@ The following collection link relations accept a <span>GET</span>{:.label .label
 - `datasets`
 - `channels`
 - `comments`
+- `tags`
+- `datasources`
+- `pipelines`
+- `jobs`
+- `subscriptions`
+- `notifications`
 
 ### Paging and Sorting
 Collection link relations accept paging parameters in a query to modify the response payload dimensions and order.
@@ -81,8 +93,8 @@ Make a <span>PUT</span>{:.label .label-PUT} request to this link to update a res
 ## `edit`
 Make a <span>PATCH</span>{:.label .label-PATCH} request to this link to edit a resource. Expect `200 OK` to indicate the resource was successfully edited.
 
-## `cancel` 
-Make a <span>DELETE</span>{:.label .label-DELETE} request to this link to cancel pending access to a resource. Expect `204 No Content` to indicate pending access to the resource was successfully cancelled.
+## `withdraw` 
+Make a <span>DELETE</span>{:.label .label-DELETE} request to this link to withdraw a resource. Expect `204 No Content` to indicate the resource was successfully withdrawn.
 
 ## `delete`
 Make a <span>DELETE</span>{:.label .label-DELETE} request to this link to delete a resource. Expect `204 No Content` to indicate the resource was successfully deleted.

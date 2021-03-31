@@ -27,7 +27,7 @@ User and member interactions that affect a dataset's score:
 
 ---
 
-{% include {{ page.components }}/view-a-workspace-feed.md %}
+{% include {{ page.components }}/view-the-feed-of-a-workspace.md %}
 
 #### See Also
 

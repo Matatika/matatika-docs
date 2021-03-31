@@ -1,4 +1,4 @@
-## View a workspace feed
+## View the feed of a workspace
 
 GET
 {:.label .label-GET}
@@ -12,10 +12,6 @@ Returns the feed of the workspace `{workspace-id}`.
 - Workspace `{workspace-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
@@ -34,6 +30,6 @@ No request body required.
 200
 {:.label .label-GET}
 
-[Dataset object](datasets#dataset-object) collection with HAL links.
+[Dataset](datasets#dataset) object collection with HAL links.
 
 ---

@@ -1,0 +1,88 @@
+{
+    "pathReplacements": [
+        {
+            "oldValueRegex": "(?<=profiles\\/)[^/?]*",
+            "newValue": "{{profile-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=workspaces\\/)[^/?]*",
+            "newValue": "{{workspace-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=datasets\\/)[^/?]*",
+            "newValue": "{{dataset-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=members\\/)(?!subscriptions)[^/?]*",
+            "newValue": "{{member-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=invitations\\/)[^/?]*",
+            "newValue": "{{invitation-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=channels\\/)[^/?]*",
+            "newValue": "{{channel-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=comments\\/)[^/?]*",
+            "newValue": "{{comment-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=datasources\\/)[^/?]*",
+            "newValue": "{{datasource-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=subscriptions\\/)[^/?]*",
+            "newValue": "{{subscription-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=notifications\\/)[^/?]*",
+            "newValue": "{{notification-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=messages\\/)[^/?]*",
+            "newValue": "{{message-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=pipelines\\/)[^/?]*",
+            "newValue": "{{pipeline-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=jobs\\/)[^/?]*",
+            "newValue": "{{job-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=tags\\/)[^/?]*",
+            "newValue": "{{tag-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=parentId\\=)[^&]*",
+            "newValue": "{{parent-comment-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=email\\=)[^&]*",
+            "newValue": "{{email}}"
+        },
+        {
+            "oldValueRegex": "(?<=sequence\\=)[^&]*",
+            "newValue": "{{sequence}}"
+        },
+        {
+            "oldValueRegex": "(?<=since\\=)[^&]*",
+            "newValue": "{{since}}"
+        },
+        {
+            "oldValueRegex": "(?<=before\\=)[^&]*",
+            "newValue": "{{before}}"
+        },
+        {
+            "oldValueRegex": "(?<=allMembers\\=)[^&]*",
+            "newValue": "{{all-members}}"
+        },
+        {
+            "oldValueRegex": "(?<=q\\=)[^&]*",
+            "newValue": "{{query}}"
+        }
+    ]
+}

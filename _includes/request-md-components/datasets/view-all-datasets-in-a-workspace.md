@@ -13,10 +13,6 @@ Returns all datasets in the workspace `{workspace-id}`.
 - The user must be a member of the workspace `{workspace-id}`
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
@@ -35,6 +31,8 @@ No request body required.
 200
 {:.label .label-GET}
 
-[Dataset object](#dataset-object) collection with HAL links.
+[Dataset](#dataset) object collection with HAL links.
+
+{% include snippets/api/datasets/view-all-datasets-in-a-workspace/response-body.md %}
 
 ---

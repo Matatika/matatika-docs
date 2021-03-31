@@ -13,10 +13,6 @@ Withdraws the dataset `{dataset-id}`.
 - Dataset `{dataset-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}

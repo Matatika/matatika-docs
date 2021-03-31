@@ -9,10 +9,6 @@ GET
 Returns all available datasources.
 
 ### Request
-
-#### Body
-No request body required.
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
@@ -31,6 +27,8 @@ No request body required.
 200
 {:.label .label-GET}
 
-[Datasource object](#datasource-object) collection with HAL links.
+[Datasource](#datasource) object collection with HAL links.
+
+{% include snippets/api/datasources/view-all-datasources/response-body.md %}
 
 ---

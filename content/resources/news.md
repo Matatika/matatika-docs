@@ -1,0 +1,28 @@
+---
+layout: default
+title: News
+permalink: /resources/news
+parent: Resources
+nav_order: 16
+components: request-md-components/news
+---
+
+# {{page.title}}
+
+News is a collection of [notifications](notifications) resulting from all configured [subscriptions](subscriptions). News is used to form a feed of [datasets](datasets) specific to the authenticated user profile, in the context of a [workspace](workspaces).
+{: .fs-5 }
+
+---
+
+#### Requests
+
+- TOC
+{: toc }
+
+---
+
+{% include {{page.components}}/view-the-news-for-a-workspace.md %}
+
+#### See Also
+
+- [View all tags in the news for a workspace](tags#view-all-tags-in-the-news-for-a-workspace)

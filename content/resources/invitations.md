@@ -9,35 +9,41 @@ components: request-md-components/invitations
 
 # {{page.title}}
 
-Invitations allow access to private workspaces. When an invitation is created, an email containing an access link to the workspace will be sent to the recipient.
+Invitations allow access to private workspaces. When an invitation is created, an email containing an access link to the workspace will be sent to the recipient. Invitations can be sent to email addresses under the allowed domains configured for a workspace.
 {: .fs-5 }
 
 ---
 
-## Invitation Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Invitation
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The invitation ID
-`created` | `String` | Timestamp denoting when the invitation was created
-`lastModified` | `String` | Timestamp denoting when the invitation was last modified
-`status` | `String` | The invitation status
-`email` | `String` | The invitation target email address
-`creator` | [`Member object`](members#member-object) | The invitation creator
-`workspace` | [`Workspace object`](workspaces#workspace-object) | The invitation target workspace
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}/invitations
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The invitation ID
+`created` | `String` | ISO 8601 timestamp | The instant the invitation was created
+`lastModified` | `String` | ISO 8601 timestamp | The instant the invitation was last modified
+`status` | `String` | [Status Type](#status-type) | The invitation status
+`email` | `String` | Email address | The invitation target email address
+`creator` | [`Member object`](members#member-object) | | The invitation creator
+`workspace` | [`Workspace object`](workspaces#workspace-object) | | The invitation target workspace
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}
+
+## Formats
+{: .no_toc}
+
+### Status Type
+{: .d-inline-block }
+
+`String`
+{: .float-right .mt-5 }
+
+Value | Description
+----- | -----------
+`PENDING` | The invitation has been sent to the recipient and is awaiting acceptance
+`ACCEPTED` | The invitation has been accepted by the recipient
 
 ---
 
@@ -52,5 +58,5 @@ GET
 {% include {{ page.components }}/view-all-received-invitations.md %}
 {% include {{ page.components }}/view-all-invitations-to-a-workspace.md %}
 {% include {{ page.components }}/create-an-invitation-to-a-workspace.md %}
-{% include {{ page.components }}/cancel-an-invitation-to-a-workspace.md %}
 {% include {{ page.components }}/accept-an-invitation.md %}
+{% include {{ page.components }}/withdraw-an-invitation-to-a-workspace.md %}

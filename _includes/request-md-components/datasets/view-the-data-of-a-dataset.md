@@ -12,10 +12,6 @@ Returns the data of the dataset `{dataset-id}`.
 - Dataset `{dataset-id}` must exist
 
 ### Request
-
-#### Body
-No request body required.
-
 ### Response
 - `200`: The dataset data.
 - `204`: No response body provided.

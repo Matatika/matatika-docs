@@ -8,17 +8,19 @@ PUT
 
 Updates the datasource `{datasource-id}`.
 
-### Request
+### Prerequisites
+- Datasource `{datasource-id}` must exist
 
+### Request
 #### Body
 
 {% include snippets/api/datasources/update-a-datasource/request-body.md %}
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
-`name` | `String` | The datasource name | 
 `description` | `String` | A description of the datasource |
 `repositoryUrl` | `String` | A URL to the datasource repository | 
+`settings` | `Array` of [`Setting`](#setting) objects | The datasource settings |
 
 #### Example Snippets
 - cURL
@@ -35,9 +37,12 @@ Path | Type | Description | Constraints
 ### Response
 {: .d-inline-block }
 
-201
+200
 {:.label .label-PUT}
 
-[Datasource object](#datasource-object) with HAL links.
+[Datasource](#datasource) object with HAL links.
+
+
+{% include snippets/api/datasources/update-a-datasource/response-body.md %}
 
 ---
