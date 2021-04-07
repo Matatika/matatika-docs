@@ -18,6 +18,7 @@ Parameter | Required | Format | Default Value | Description
 `all` | No | Boolean | `true` | Whether or not to return both resolved and unresolved notifications
 `before` | No | ISO 8601 timestamp | The instant at which the request was made | The instant to return any notifications created before
 `since` | No | ISO 8601 timestamp | `2021-02-11T11:12` | The instant to return any notifications created since
+`q` | No | Tag [filter]({{site.baseurl}}/links#filter) | | The tag(s) to search notifications by
 
 ### Response
 {: .d-inline-block }
