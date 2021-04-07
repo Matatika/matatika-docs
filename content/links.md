@@ -44,11 +44,11 @@ The following collection link relations accept a <span>GET</span>{:.label .label
 - `subscriptions`
 - `notifications`
 
-### Paging and Sorting
-Collection link relations accept paging parameters in a query to modify the response payload dimensions and order.
+### Paging, Sizing and Sorting
+Collection link relations accept paging, sizing and sorting query parameters, used to modify the dimensions of the response payload.
 
-Parameter | Description | Query Parameter Syntax | Example
---- | --- | --- | ---
+Query Parameter | Description | Syntax | Example
+--------------- | ----------- | ------ | -------
 `page` | The page of the collection | `page={page-number}` | `?page=1`
 `size` | The number of elements to display per page | `size={number-of-elements}` | `?size=20`
 `sort` | The property to sort the collection results by, in either ascending - `asc` - or descending - `desc` -  order | `sort={property-name},(asc|desc)` | `?sort=name,asc`
@@ -61,16 +61,26 @@ Make a <span>GET</span>{:.label .label-GET} request to this link to return the c
 ## `search`
 Make a <span>GET</span>{:.label .label-GET} request to this link to a return a filtered view of the current resource. Expect `200 OK` to indicate the resource was successfully returned.
 
-### Filters
-A `search` link relation accepts filtering parameters in a query to modify the response payload content.
+### Filtering
+A `search` link relation accepts the `q` query parameter, used to filter the content returned in the response payload. Filter definitions control the type of filtering applied.
 
-Filter Type | Query Parameter Syntax | Description | Example
---- | --- | --- | ---
-Free text | `{free-text}` | The free text to filter by | `?=data%20insights`
-Channel | `in:{channel-name}` | The channel to filter by | `?=in:matatika-limited`
-Tag | `tag:{tag-name}` | The tag to filter by | `?=tag:jupyternotebook`
+#### Filter
 
-The Matatika API supports multiple query filtering parameters of the same type. Different filtering parameters - as well as [paging parameters](#paging) - can be used together to form complex queries. 
+Type | Description | Syntax | Example
+---- | ----------- | ------ | -------
+Free text | The free text to filter by | `{free-text}` | `?q=data%20insights`
+Channel | The channel to filter by | `in:{channel-name}` | `?q=in:matatika-limited`
+Tag | The tag to filter by | `tag:{tag-name}` | `?q=tag:jupyternotebook`
+
+The Matatika API supports multiple filter definitions, including those of the same type:
+
+```
+?q=data%20insights in:matatika-limited tag:jupyternotebook`
+```
+
+```
+?tag:ai tag:deeplearning tag:machinelearning
+```
 
 ## `make-default`
 Make a <span>POST</span>{:.label .label-POST} request to this link to set a particular resource within a collection as default. Expect `200 OK` to indicate the resource was successfully set as default.
