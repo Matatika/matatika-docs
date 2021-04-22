@@ -11,6 +11,18 @@ Deletes and stops the execution of the job `{job-id}`.
 ### Prerequisites
 - Job `{job-id}` must exist
 
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/jobs/delete-a-job/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/jobs/delete-a-job/python-requests.md %}
+{: .tabs-section-end}
+
 ### Response
 {: .d-inline-block }
 
