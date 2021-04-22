@@ -1,4 +1,4 @@
-## Start a job from a pipeline
+## Create a job from a pipeline
 
 POST
 {:.label .label-POST}
@@ -6,7 +6,7 @@ POST
 /api/pipeline/{pipeline-id}/jobs
 {:.path .path-POST}
 
-Starts a new job from the pipeline `{pipeline-id}`.
+Creates a new job from the pipeline `{pipeline-id}`.
 
 ### Prerequisites
 - Pipeline `{pipeline-id}` must exist and not already be running
@@ -23,12 +23,12 @@ Key | Value | Description
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/jobs/start-a-job-from-a-pipeline/curl-request.md %}
+{% include snippets/api/jobs/create-a-job-from-a-pipeline/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/jobs/start-a-job-from-a-pipeline/python-requests.md %}
+{% include snippets/api/jobs/create-a-job-from-a-pipeline/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
