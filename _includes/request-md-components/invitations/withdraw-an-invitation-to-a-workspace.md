@@ -1,16 +1,17 @@
-## Withdraw an invitation to a workspace
+## Withdraw an invitation
 
-DELETE
-{:.label .label-DELETE}
+PUT
+{:.label .label-PUT}
 
-/api/workspaces/{workspace-id}/invitations/{invitation-id}
-{:.path .path-DELETE}
+/api/invitations/{invitation-id}/revoked
+{:.path .path-PUT}
 
-Withdraws the pending invitation `{invitation-id}` to the workspace `{workspace-id}`.
+Withdraws the pending or accepted invitation `{invitation-id}`.
 
 ### Prerequisites
 
-- The user must be the owner of workspace `{workspace-id}`
+- The authenticated user must be the owner of workspace the invitation belongs to
+- or the authenticated user must have sent the invitation `{invitation-id}`
 
 ### Request
 #### Example Snippets
@@ -28,8 +29,8 @@ Withdraws the pending invitation `{invitation-id}` to the workspace `{workspace-
 ### Response
 {: .d-inline-block }
 
-204
-{:.label .label-DELETE}
+200
+{:.label .label-PUT}
 
 No response body provided.
 

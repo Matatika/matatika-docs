@@ -3,10 +3,10 @@
 PATCH
 {:.label .label-PATCH}
 
-/api/workspaces/{workspace-id}/invitations/{invitation-id}
+/api/invitations/{invitation-id}
 {:.path .path-PATCH}
 
-Accepts the invitation `{invitation-id}` to the workspace `{workspace-id}`.
+Accepts the invitation `{invitation-id}`.
 
 ### Prerequisites
 
