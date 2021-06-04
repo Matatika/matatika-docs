@@ -22,6 +22,8 @@ $matatika-default: #EE7A34;
     margin-top: $header-offset;
 }
 
+.highlighter-rouge { margin-bottom: 0.75rem; white-space: nowrap; }
+
 @media (min-width: 50rem) {
     .hamburger {
         display: none !important;
