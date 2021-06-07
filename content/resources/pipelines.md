@@ -53,12 +53,19 @@ Path | Type | Description
 ... | ...
 `settings[n-1].name` | `settings[n-1].kind` | Refer to `settings[n-1].description`
 
---
+---
 
 #### Requests
 
 - TOC
 {: toc }
+
+
+#### See Also
+
+- [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)
+- [Create a job from a pipeline](jobs#create-a-job-from-a-pipeline)
+- [Subscribe to a pipeline](subscriptions#subscribe-to-a-pipeline)
 
 ---
 
@@ -68,7 +75,3 @@ Path | Type | Description
 {% include {{page.components}}/create-or-update-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}
 
-#### See Also
-
-- [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)
-- [Subscribe to a pipeline](subscriptions#subscribe-to-a-pipeline)
