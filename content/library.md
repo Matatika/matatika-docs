@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SDK
-permalink: /sdk
+title: Library
+permalink: /library
 nav_order: 9
 ---
 
