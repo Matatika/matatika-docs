@@ -2,7 +2,7 @@
 layout: default
 title: API
 permalink: /api/
-nav_order: 12
+nav_order: 5
 has_children: true
 ---
 
