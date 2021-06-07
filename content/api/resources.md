@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Resources
-permalink: /resources/
-nav_order: 6
+permalink: /api/resources/
+nav_order: 3
+parent: API
 has_children: true
 ---
 

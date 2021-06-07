@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Channels
-permalink: /resources/channels
+permalink: /api/resources/channels
 parent: Resources
+grand_parent: API
 nav_order: 6
 components: request-md-components/channels
 ---

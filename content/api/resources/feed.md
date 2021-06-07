@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Feed
-permalink: /resources/feed
+permalink: /api/resources/feed
 parent: Resources
+grand_parent: API
 nav_order: 9
 components: request-md-components/feed
 ---

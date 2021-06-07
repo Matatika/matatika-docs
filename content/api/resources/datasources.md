@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Datasources
-permalink: /resources/datasources
+permalink: /api/resources/datasources
 parent: Resources
+grand_parent: API
 nav_order: 11
 components: request-md-components/datasources
 ---

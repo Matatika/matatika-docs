@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Search
-permalink: /resources/search
+permalink: /api/resources/search
 parent: Resources
+grand_parent: API
 nav_order: 10
 components: request-md-components/search
 ---

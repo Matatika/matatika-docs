@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Notifications
-permalink: /resources/notifications
+permalink: /api/resources/notifications
 parent: Resources
+grand_parent: API
 nav_order: 15
 components: request-md-components/notifications
 ---

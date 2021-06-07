@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Pipelines
-permalink: /resources/pipelines
+permalink: /api/resources/pipelines
 parent: Resources
+grand_parent: API
 nav_order: 12
 components: request-md-components/pipelines
 ---

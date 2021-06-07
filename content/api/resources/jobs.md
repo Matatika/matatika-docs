@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Jobs
-permalink: /resources/jobs
+permalink: /api/resources/jobs
 parent: Resources
+grand_parent: API
 nav_order: 13
 components: request-md-components/jobs
 ---

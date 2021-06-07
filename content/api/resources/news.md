@@ -1,8 +1,9 @@
 ---
 layout: default
 title: News
-permalink: /resources/news
+permalink: /api/resources/news
 parent: Resources
+grand_parent: API
 nav_order: 16
 components: request-md-components/news
 ---

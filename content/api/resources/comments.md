@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Comments
-permalink: /resources/comments
+permalink: /api/resources/comments
 parent: Resources
+grand_parent: API
 nav_order: 7
 components: request-md-components/comments
 ---

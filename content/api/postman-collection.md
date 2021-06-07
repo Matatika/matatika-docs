@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Postman Collection
-permalink: /postman-collection
-nav_order: 3
+permalink: /api/postman-collection
+parent: API
+nav_order: 1
 ---
 
 # {{page.title}}

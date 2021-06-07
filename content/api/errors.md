@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Status Codes and Errors
-permalink: /errors
-nav_order: 5
+permalink: /api/errors
+parent: API
+nav_order: 2
 ---
 
 # {{page.title}}

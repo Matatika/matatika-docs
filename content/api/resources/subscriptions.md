@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Subscriptions
-permalink: /resources/subscriptions
+permalink: /api/resources/subscriptions
 parent: Resources
+grand_parent: API
 nav_order: 14
 components: request-md-components/subscriptions
 ---
