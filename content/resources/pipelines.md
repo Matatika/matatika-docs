@@ -60,7 +60,6 @@ Path | Type | Description
 - TOC
 {: toc }
 
-
 #### See Also
 
 - [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)

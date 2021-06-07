@@ -42,12 +42,13 @@ GET
 - TOC
 {: toc }
 
+#### See Also
+
+- [Search for datasets in a workspace by tag name](search#search-for-datasets-in-a-workspace-by-tag-name)
+
 ---
 
 {% include {{ page.components }}/view-all-tags-in-a-workspace.md %}
 {% include {{ page.components }}/view-all-tags-in-the-news-for-a-workspace.md %}
 {% include {{ page.components }}/view-a-tag-in-a-workspace.md %}
 
-#### See Also
-
-- [Search for datasets in a workspace by tag name](search#search-for-datasets-in-a-workspace-by-tag-name)

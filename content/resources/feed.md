@@ -25,10 +25,10 @@ User and member interactions that affect a dataset's score:
 - TOC
 {: toc }
 
----
-
-{% include {{ page.components }}/view-the-feed-of-a-workspace.md %}
-
 #### See Also
 
 - [View all datasets in a workspace](datasets#view-all-datasets-in-a-workspace)
+
+---
+
+{% include {{ page.components }}/view-the-feed-of-a-workspace.md %}

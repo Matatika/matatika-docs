@@ -54,6 +54,10 @@ Value | Description
 - TOC
 {: toc }
 
+#### See Also
+
+- [Create or update a dataset message](datasets#create-or-update-a-dataset-message)
+
 ---
 
 {% include {{page.components}}/view-all-notifications.md %}
@@ -62,6 +66,3 @@ Value | Description
 {% include {{page.components}}/refresh-notifications.md %}
 {% include {{page.components}}/delete-a-notification.md %}
 
-#### See Also
-
-- [Create or update a dataset message](datasets#create-or-update-a-dataset-message)
