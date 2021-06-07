@@ -1,8 +1,9 @@
 ---
 layout: default
 title: context
-permalink: /cli/context
-parent: CLI
+permalink: /cli/cli-commands/context
+parent: CLI Commands
+grand_parent: CLI
 nav_order: 2
 ---
 

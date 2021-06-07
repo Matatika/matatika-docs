@@ -1,8 +1,9 @@
 ---
 layout: default
 title: profile
-permalink: /cli/profile
-parent: CLI
+permalink: /cli/cli-commands/profile
+parent: CLI Commands
+grand_parent: CLI
 nav_order: 3
 ---
 

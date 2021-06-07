@@ -1,8 +1,9 @@
 ---
 layout: default
 title: publish
-permalink: /cli/publish
-parent: CLI
+permalink: /cli/cli-commands/publish
+parent: CLI Commands
+grand_parent: CLI
 nav_order: 7
 ---
 
