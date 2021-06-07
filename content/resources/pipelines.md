@@ -30,14 +30,16 @@ GET
 
 ### Pipeline
 
-Path | Type | Description
+Path | Type | Format | Description
 ---- | ---- | -----------
-`id` | `String (version 4 UUID)` | The pipeline ID 
-`name` | `String` | The pipeline name
-`created` | `String (ISO 8601)` | When the pipeline was created
-`lastModified` | `String (ISO 8601)` | When the pipeline was last modified
-`properties` | [`Properties`](#properties) object | The properties to run the pipeline with, defined by the pipeline [datasource](datasources) `settings`
-`dataSource` | `String` | The pipeline target [datasource](datasources) `name`
+`id` | `String` | Version 4 UUID) | The pipeline ID 
+`name` | `String` | | The pipeline name
+`created` | `String` | ISO 8601 timestamp | When the pipeline was created
+`lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
+`properties` | [`Properties`](#properties) object | | The properties to run the pipeline with, defined by the pipeline [datasource](datasources) `settings`
+`dataSource` | `String` | | The pipeline target [datasource](datasources) `name`
+`schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
+`script` | `String` | Bash | Custom script to be executed as the pipeline job
 
 ### Properties
 
@@ -51,12 +53,18 @@ Path | Type | Description
 ... | ...
 `settings[n-1].name` | `settings[n-1].kind` | Refer to `settings[n-1].description`
 
---
+---
 
 #### Requests
 
 - TOC
 {: toc }
+
+#### See Also
+
+- [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)
+- [Create a job from a pipeline](jobs#create-a-job-from-a-pipeline)
+- [Subscribe to a pipeline](subscriptions#subscribe-to-a-pipeline)
 
 ---
 
@@ -66,7 +74,3 @@ Path | Type | Description
 {% include {{page.components}}/create-or-update-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}
 
-#### See Also
-
-- [View all running or completed jobs for a pipeline](jobs#view-all-running-or-completed-jobs-for-a-pipeline)
-- [Subscribe to a pipeline](subscriptions#subscribe-to-a-pipeline)

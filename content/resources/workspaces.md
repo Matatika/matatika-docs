@@ -44,15 +44,6 @@ GET
 - TOC
 {: toc}
 
----
-
-{% include {{page.components}}/view-all-workspaces.md %}
-{% include {{page.components}}/view-a-workspace.md %}
-{% include {{page.components}}/initialise-a-workspace.md %}
-{% include {{page.components}}/create-a-workspace.md %}
-{% include {{page.components}}/update-a-workspace.md %}
-{% include {{page.components}}/delete-a-workspace.md %}
-
 #### See Also
 
 - [Set a workspace as default](profiles#set-a-workspace-as-default)
@@ -69,3 +60,12 @@ GET
 - [Create or update a pipeline in a workspace](pipelines#create-or-update-a-pipeline-in-a-workspace)
 - [Remove a pipeline from a workspace](pipelines#remove-a-pipeline-from-a-workspace)
 - [View all running or completed jobs for a workspace](jobs#view-all-running-or-completed-jobs-for-a-workspace)
+
+---
+
+{% include {{page.components}}/view-all-workspaces.md %}
+{% include {{page.components}}/view-a-workspace.md %}
+{% include {{page.components}}/initialise-a-workspace.md %}
+{% include {{page.components}}/create-a-workspace.md %}
+{% include {{page.components}}/update-a-workspace.md %}
+{% include {{page.components}}/delete-a-workspace.md %}

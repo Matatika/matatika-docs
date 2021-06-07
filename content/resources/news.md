@@ -19,10 +19,11 @@ News is a collection of [notifications](notifications) resulting from all config
 - TOC
 {: toc }
 
+#### See Also
+
+- [View all tags in the news for a workspace](tags#view-all-tags-in-the-news-for-a-workspace)
+
 ---
 
 {% include {{page.components}}/view-the-news-for-a-workspace.md %}
 
-#### See Also
-
-- [View all tags in the news for a workspace](tags#view-all-tags-in-the-news-for-a-workspace)

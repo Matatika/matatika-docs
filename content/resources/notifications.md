@@ -24,6 +24,7 @@ Path | Type | Format | Description
 `id` | `String` | Version 4 UUID | The notification ID
 `created` | `String` | ISO 8601 timestamp | The instant the notification was created at
 `lastModified` | `String` | ISO 8601 timestamp | The instant the notification was last modified at
+`actor` | [`Member object`](members#member-object) | | The member whose action raised this notification
 `type` | `String` | [Notification Type](#notification-type) | The type of notification
 `resolved` | `Boolean` | | Whether or not the notification has been read
 
@@ -43,6 +44,7 @@ Value | Description
 `DATASET_ACTIVITY` | Any activity on the [dataset](datasets)
 `DATASET_ANOMOLY` | A detected anomoly in the [dataset](datasets) data
 `DATASET_COMMENT` | A [comment](comments) on the [dataset](datasets)
+`DATASET_LIKE` | A [like](datasets#record-a-like-of-a-dataset) recorded on the [dataset](datasets)
 `DATASET_MESSAGE` | A [message](datasets#dataset-message) about the [dataset](datasets)
 
 ---
@@ -52,6 +54,10 @@ Value | Description
 - TOC
 {: toc }
 
+#### See Also
+
+- [Create or update a dataset message](datasets#create-or-update-a-dataset-message)
+
 ---
 
 {% include {{page.components}}/view-all-notifications.md %}
@@ -60,6 +66,3 @@ Value | Description
 {% include {{page.components}}/refresh-notifications.md %}
 {% include {{page.components}}/delete-a-notification.md %}
 
-#### See Also
-
-- [Create or update a dataset message](datasets#create-or-update-a-dataset-message)

@@ -22,7 +22,8 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 Path | Type | Description
 ---- | ---- | -----------
 `id` | `String` | The profile ID 
-`name` | `String` | The profile name
+`name` | `String` | The full name of the person or entity represented by this profile
+`handle` | `String` | The unique @handle for this profile (generated and read-only)
 `phone` | `String` | The profile phone number
 `email` | `String` | The profile email address
 `defaultWorkspace` | Partial [`Workspace object`](workspaces#workspace-object) | The profile default workspace object

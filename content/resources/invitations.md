@@ -42,8 +42,9 @@ Path | Type | Format | Description
 
 Value | Description
 ----- | -----------
-`PENDING` | The invitation has been sent to the recipient and is awaiting acceptance
 `ACCEPTED` | The invitation has been accepted by the recipient
+`PENDING` | The invitation has been sent to the recipient and is awaiting acceptance
+`REVOKED` | The invitation has been revoked and can no longer be accepted
 
 ---
 
@@ -59,4 +60,5 @@ Value | Description
 {% include {{ page.components }}/view-all-invitations-to-a-workspace.md %}
 {% include {{ page.components }}/create-an-invitation-to-a-workspace.md %}
 {% include {{ page.components }}/accept-an-invitation.md %}
+{% include {{ page.components }}/delete-an-invitation-to-a-workspace.md %}
 {% include {{ page.components }}/withdraw-an-invitation-to-a-workspace.md %}

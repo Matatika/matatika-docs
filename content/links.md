@@ -100,11 +100,11 @@ Make a <span>PUT</span>{:.label .label-PUT} request to this link to create a new
 ## `update`
 Make a <span>PUT</span>{:.label .label-PUT} request to this link to update a resource. Expect `200 OK` to indicate the resource was successfully updated.
 
+## `withdraw` 
+Make a <span>PUT</span>{:.label .label-PUT} request to this link to withdraw a resource. Expect `200 OK` to indicate the resource was successfully withdrawn.
+
 ## `edit`
 Make a <span>PATCH</span>{:.label .label-PATCH} request to this link to edit a resource. Expect `200 OK` to indicate the resource was successfully edited.
-
-## `withdraw` 
-Make a <span>DELETE</span>{:.label .label-DELETE} request to this link to withdraw a resource. Expect `204 No Content` to indicate the resource was successfully withdrawn.
 
 ## `delete`
 Make a <span>DELETE</span>{:.label .label-DELETE} request to this link to delete a resource. Expect `204 No Content` to indicate the resource was successfully deleted.

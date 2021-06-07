@@ -60,6 +60,14 @@ Path | Type | Format | Description
 - TOC
 {: toc }
 
+#### See Also
+
+- [View all comments on a dataset](comments#view-all-comments-on-a-dataset)
+- [Search for datasets in a workspace by free text](search#search-for-datasets-in-a-workspace-by-free-text)
+- [Search for datasets in a workspace by channel name](search#search-for-datasets-in-a-workspace-by-channel-name)
+- [Search for datasets in a workspace by tag name](search#search-for-datasets-in-a-workspace-by-tag-name)
+- [Subscribe to a dataset](subscriptions#subscribe-to-a-dataset)
+
 ---
 
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
@@ -76,10 +84,3 @@ Path | Type | Format | Description
 {% include {{ page.components }}/create-or-update-a-dataset-message.md %}
 {% include {{ page.components }}/withdraw-a-dataset.md %}
 
-#### See Also
-
-- [View all comments on a dataset](comments#view-all-comments-on-a-dataset)
-- [Search for datasets in a workspace by free text](search#search-for-datasets-in-a-workspace-by-free-text)
-- [Search for datasets in a workspace by channel name](search#search-for-datasets-in-a-workspace-by-channel-name)
-- [Search for datasets in a workspace by tag name](search#search-for-datasets-in-a-workspace-by-tag-name)
-- [Subscribe to a dataset](subscriptions#subscribe-to-a-dataset)
