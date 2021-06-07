@@ -1,0 +1,65 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js'></script>
+
+<div>
+    <canvas name='Example Max Scale Line Chart' id='e71d855e-281b-4db9-a96b-ceb72c12dc27'></canvas>
+</div>
+<script>
+    require.config({
+        paths: {
+            chartjs: 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min'
+        }
+    });
+
+    require(['chartjs'], function(Chart) {
+        const ctx = document.getElementById('e71d855e-281b-4db9-a96b-ceb72c12dc27').getContext('2d');
+        new Chart(ctx,{ type: 'line', data: {
+    'datasets': [
+        {
+            'data': [
+                80,
+                80,
+                80,
+                80,
+                80
+            ],
+            'label': 'Sales Target Percentage',
+            'backgroundColor': 'rgba(255, 99, 132, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(255, 99, 132, 1)',
+            'borderWidth': 1
+        },
+        {
+            'data': [
+                67,
+                81,
+                85,
+                64,
+                74
+            ],
+            'label': 'Sales Percentage',
+            'backgroundColor': 'rgba(54, 162, 235, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(54, 162, 235, 1)',
+            'borderWidth': 1
+        }
+    ],
+    'labels': [
+        'Shop One',
+        'Shop Two',
+        'Shop Three',
+        'Shop Four',
+        'Shop Five'
+    ]
+}, options: {
+    'scales': {
+        'yAxes': [
+            {
+                'ticks': {
+                    'max': 100
+                }
+            }
+        ]
+    }
+} });
+    });
+</script>

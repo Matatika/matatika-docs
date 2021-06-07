@@ -1,0 +1,60 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js'></script>
+
+<div>
+    <canvas name='Example Labeled Scatter Chart' id='c7211830-4eab-47c5-99e2-95baa1882a54'></canvas>
+</div>
+<script>
+    require.config({
+        paths: {
+            chartjs: 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min'
+        }
+    });
+
+    require(['chartjs'], function(Chart) {
+        const ctx = document.getElementById('c7211830-4eab-47c5-99e2-95baa1882a54').getContext('2d');
+        new Chart(ctx,{ type: 'line', data: {
+    'datasets': [
+        {
+            'data': [
+                1150,
+                980,
+                1020,
+                1410,
+                890
+            ],
+            'label': 'Visitors',
+            'backgroundColor': 'rgba(255, 99, 132, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(255, 99, 132, 1)',
+            'borderWidth': 1
+        }
+    ],
+    'labels': [
+        '1040',
+        '670',
+        '990',
+        '1020',
+        '800'
+    ]
+}, options: {
+    'scales': {
+        'yAxes': [
+            {
+                'scaleLabel': {
+                    'display': true,
+                    'labelString': 'Number of Visitors'
+                }
+            }
+        ],
+        'xAxes': [
+            {
+                'scaleLabel': {
+                    'display': true,
+                    'labelString': 'Number of Sales'
+                }
+            }
+        ]
+    }
+} });
+    });
+</script>
