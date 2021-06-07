@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Authorisation
-permalink: /authorisation
+title: Security
+permalink: /security
 nav_order: 4
 ---
 
