@@ -8,3 +8,8 @@ has_children: true
 ---
 
 # {{page.title}}
+
+---
+
+The available CLI commands are documented below.
+{: .fs-5 }

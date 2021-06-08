@@ -7,3 +7,8 @@ has_children: true
 ---
 
 # {{page.title}}
+
+---
+
+Examples and details about data visualisation.
+{: .fs-5 }

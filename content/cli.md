@@ -61,7 +61,3 @@ export WORKSPACE_ID=$WORKSPACE_ID_VALUE
 
 ### Default context
 See the documentation for [creating a context](cli-commands/context#create) and [using a context](cli-commands/context#use).
-
----
-
-The available CLI commands are documented below.
