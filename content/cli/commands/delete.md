@@ -1,8 +1,8 @@
 ---
 layout: default
 title: delete
-permalink: /cli/cli-commands/delete
-parent: CLI Commands
+permalink: /cli/commands/delete
+parent: Commands
 grand_parent: CLI
 nav_order: 5
 ---
