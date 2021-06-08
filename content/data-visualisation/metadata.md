@@ -11,8 +11,10 @@ nav_order: 4
 ---
 
 You can change the format and display of your chart by using the `metadata` key of the [Matatika dataset yaml file](../cli/dataset-yaml).
+{: .fs-5 }
 
 The `metadata` key relates to how the data from the [`query`](query) within the dataset is displayed as an insight.
+{: .fs-5 }
 
 ### Example
 

@@ -11,10 +11,13 @@ nav_order: 4
 ---
 
 You select the data for your chart by using the `query` key of the [Matatika dataset yaml file](../cli/dataset-yaml).
+{: .fs-5 }
 
 The `query` key in the dataset file is the sql query that is run against your chosen data store to retrieve data for use in displaying the insight.
+{: .fs-5 }
 
 You use the [`metadata`](metadata) key to format how you are displaying the returned information.
+{: .fs-5 }
 
 ### Example
 
