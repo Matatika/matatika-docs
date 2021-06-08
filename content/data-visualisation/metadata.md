@@ -10,7 +10,9 @@ nav_order: 4
 
 ---
 
-The `metadata` key relates to how the data from the sql query within the dataset is displayed as an insight.
+You can change the format and display of your chart by using the `metadata` key of the [matatika dataset yaml file](../cli/dataset-yaml).
+
+The `metadata` key relates to how the data from the [`query`](query) within the dataset is displayed as an insight.
 
 ### Example
 
@@ -29,12 +31,6 @@ metadata: |-
         }
     }
 ```
-
----
-
-Dataset Key | Datatype | Information
------------ | -------- | -----------
-`metadata` | `string` of JSON | Details about how the dataset’s chart is laid out.
 
 ---
 
@@ -92,3 +88,9 @@ metadata: |-
         }
     }
 ```
+---
+
+Further Reading: 
+
+- [API Datasets](../api/resources/datasets)
+- [Example Charts](examples)

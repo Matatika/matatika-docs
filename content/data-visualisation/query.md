@@ -10,7 +10,11 @@ nav_order: 4
 
 ---
 
-The `query` key in the dataset file is the sql query that is run against your chosen data store to retrieve data to use in displaying the insight.
+You select the data for your chart by using the `query` key of the [matatika dataset yaml file](../cli/dataset-yaml).
+
+The `query` key in the dataset file is the sql query that is run against your chosen data store to retrieve data for use in displaying the insight.
+
+You use the [`metadata`](metadata) key to format how you are displaying the returned information.
 
 ### Example
 
@@ -25,9 +29,8 @@ query: |-
     GROUP BY report_date 
     ORDER BY report_date
 ```
-
 ---
 
-Dataset Key | Datatype | Information
------------ | -------- | -----------
-`query` | `string` of SQL | The query that returns the data from your datastore for use in the dataset’s chart and related table.
+Further Reading: 
+
+- [API Datasets](../api/resources/datasets)

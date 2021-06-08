@@ -11,6 +11,10 @@ nav_order: 2
 
 ---
 
+These charts are the output of the [matatika dataset yaml file](../../cli/dataset-yaml) listed below each of them.
+
+---
+
 ## Labeled Axis
 
 {% include example_charts/advanced_examples/Example_Labeled_Scatter_Chart.html %}

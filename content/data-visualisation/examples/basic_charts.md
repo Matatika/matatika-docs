@@ -11,6 +11,10 @@ nav_order: 1
 
 ---
 
+These charts are the output of the [matatika dataset yaml file](../../cli/dataset-yaml) listed below each of them.
+
+---
+
 ## Basic Bar Chart
 
 {% include example_charts/basic_charts/Example_Basic_Bar_Chart.html %}

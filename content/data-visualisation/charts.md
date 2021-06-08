@@ -10,7 +10,9 @@ nav_order: 2
 
 ---
 
-The `visulisation` key of the dataset contains information about displaying the chart for the insight.
+You can use different chart types by utilizing the `visulisation` key of the [matatika dataset yaml file](../cli/dataset-yaml).
+
+The `visualisation` key contains information about displaying the chart for the insight.
 
 ### Example
 
@@ -20,10 +22,6 @@ visualisation: |-
 ```
 
 ---
-
-Dataset Key | Datatype | Information
------------ | -------- | -----------
-`visualisation` | `string` of JSON | Details about the precise visualisation of the datasets chart.
 
 ### chartType Table
 
@@ -37,4 +35,13 @@ Value | Description
 `scatter` | Scatter Chart.
 `treemap` | Treemap Chart.
 
+We have documentation on [examples of charts](examples) and their [matatika dataset yaml file](../cli/dataset-yaml).
+
 For more information on Chart.js, see their documentation at [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/)
+
+---
+
+Further Reading: 
+
+- [API Datasets](../api/resources/datasets)
+- [Example Charts](examples)
