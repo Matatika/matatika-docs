@@ -11,8 +11,12 @@ parent: CLI
 ---
 
 The Matatika dataset file is a way to create and format insights for your workspace.
+{: .fs-5 }
 
 Our dataset files are stored as YAML files, you can read more about the YAML format and its syntax [here](https://yaml.org/).
+{: .fs-5 }
+
+---
 
 ### Dataset Layout
 
@@ -95,3 +99,10 @@ title: |-
 ```
 
 The multiline string is generally the best way to display the `String` of JSON or SQL.
+
+---
+
+Further Reading: 
+
+- [API Datasets](../api/resources/datasets)
+- [Example Charts](../data-visualisation/examples)
