@@ -10,7 +10,7 @@ components: request-md-components/datasets
 
 # {{page.title}}
 
-Datasets are modules of data that can be published to workspaces. Datasets are visualised in the Matatika app following the [Chart.js](https://www.chartjs.org/) and [Google Charts](https://developers.google.com/chart) specifications.
+Datasets are modules of data that can be published to workspaces. Datasets are visualised in the Matatika app following the [Chart.js](https://www.chartjs.org/) specifications.
 {: .fs-5 }
 
 ---
@@ -31,9 +31,9 @@ Path | Type | Format | Description
 `description` | `String` | | The dataset description (may contain markdown)
 `questions` | `String` | | The dataset questions
 `rawData` | `String` | JSON | The dataset raw data
-`visualisation` | `String` | JSON | The dataset visualisation metadata
-`metadata` | `String` | JSON | The dataset metadata
-`query` | `String` | SQL statement | The dataset query
+`visualisation` | `String` | JSON | The dataset visualisation metadata. [More Info](../../data-visualisation/charts)
+`metadata` | `String` | JSON | The dataset metadata. [More Info](../../data-visualisation/metadata)
+`query` | `String` | SQL statement | The dataset query. [More Info](../../data-visualisation/query)
 `likeCount` | `Integer` | | The number of likes the dataset has received
 `likedByProfiles` | `Array` of [`Member objects`](members#member-object) | | The members that have liked the dataset
 `commentCount` | `Integer` | | The number of comments the dataset has received
@@ -85,3 +85,9 @@ Path | Type | Format | Description
 {% include {{ page.components }}/create-or-update-a-dataset-message.md %}
 {% include {{ page.components }}/withdraw-a-dataset.md %}
 
+---
+
+Further Reading:
+
+- [Matatika dataset yaml file](../../cli/dataset-yaml)
+- [Example Charts](../../data-visualisation/examples)
