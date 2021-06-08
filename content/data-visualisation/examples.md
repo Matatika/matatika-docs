@@ -8,3 +8,7 @@ has_children: true
 ---
 
 # {{page.title}}
+
+---
+
+These example charts are fully interactive, and show the whole [matatika dataset yaml file](../cli/dataset-yaml) beneath them.

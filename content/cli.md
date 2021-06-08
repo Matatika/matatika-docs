@@ -43,7 +43,7 @@ Each variable is resolve separately, meaning that it is possible to - for exampl
 
 ### Command option
 `-a` / `--auth-token` and `-e` / `--endpoint-url` options can be specified on the base [`matatika`](matatika) command.
-`-w` / `--workspace-id` can be specified on certain commands that involve interacting with a workspace (e.g. the [`list datasets` command](list#datasets)). See command-specific documentation for more information.
+`-w` / `--workspace-id` can be specified on certain commands that involve interacting with a workspace (e.g. the [`list datasets` command](cli-commands/list#datasets)). See command-specific documentation for more information.
 
 Additionally, including `--help` after any CLI command will provide detailed information on its usage.
 
@@ -60,7 +60,7 @@ export WORKSPACE_ID=$WORKSPACE_ID_VALUE
 ```
 
 ### Default context
-See the documentation for [creating a context](context#create) and [using a context](context#use).
+See the documentation for [creating a context](cli-commands/context#create) and [using a context](cli-commands/context#use).
 
 ---
 
