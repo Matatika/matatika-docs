@@ -6,7 +6,7 @@ parent: Data Visualisation
 nav_order: 4
 ---
 
-# `{{page.title}}`
+# {{page.title}}
 
 ---
 
