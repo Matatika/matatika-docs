@@ -11,7 +11,7 @@ nav_order: 1
 
 ---
 
-These charts are the output of the [matatika dataset yaml file](../../cli/dataset-yaml) listed below each of them.
+These charts are the output of the [Matatika dataset yaml file](../../cli/dataset-yaml) listed below each of them.
 
 ---
 

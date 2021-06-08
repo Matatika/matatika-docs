@@ -74,9 +74,9 @@ Dataset Key | Datatype |  Information
 `title` | `String` | The title at the top of the insight.
 `questions` | `String` | Questions that your dataset awnsers, so people can find the dataset just by asking questions.
 `description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevent information. You can also add `#tags`.
-`metadata` | `String` of JSON | Details about how the dataset's chart is laid out.
-`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart.
-`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table.
+`metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info](../data-visualisation/metadata)
+`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info](../data-visualisation/charts)
+`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info](../data-visualisation/query)
 `rawData` | `String` of a List | The rawData key allows you to hardcode data directly into your dataset.
 
 ## String Formatting
