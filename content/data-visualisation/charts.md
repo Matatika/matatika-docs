@@ -35,8 +35,6 @@ Value | Description
 `scatter` | Scatter Chart.
 `treemap` | Treemap Chart.
 
-We have documentation on [examples of charts](examples) and their [matatika dataset yaml file](../cli/dataset-yaml).
-
 For more information on Chart.js, see their documentation at [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/)
 
 ---
