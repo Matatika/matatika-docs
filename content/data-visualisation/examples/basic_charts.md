@@ -11,8 +11,10 @@ nav_order: 1
 
 ---
 
-These charts are the output of the [Matatika dataset yaml file](../../cli/dataset-yaml) listed below each of them.
+These charts are the output of the [Matatika dataset YAML file](../../cli/dataset-yaml) listed below each of them.
 {: .fs-5 }
+
+You can find the original YAML files in our [examples github repo](https://github.com/Matatika/matatika-examples/tree/master/example_datasets).
 
 ---
 
