@@ -11,5 +11,5 @@ has_children: true
 
 ---
 
-These example charts are fully interactive, and show the whole [Matatika dataset yaml file](../../cli/dataset-yaml) beneath them.
+These example charts are fully interactive, and show the whole [Matatika dataset YAML file](../../cli/dataset-yaml) beneath them.
 {: .fs-5 }

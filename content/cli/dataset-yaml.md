@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dataset Yaml
+title: Dataset YAML
 permalink: /cli/dataset-yaml
 nav_order: 2
 parent: CLI

@@ -41,7 +41,7 @@ Matatika has made a custom converter to turn Meltano reports into Matatika datas
 
 6. Upon completion of the installation you can run the command `meltano invoke matatika-meltano-report-converter`.
 
-7. Any meltano report you have saved in the default location  `.meltano/analyze/reports`  will be found and converted into Matatika dataset yamls. These new datasets can be found in a directory called `converted_meltano_reports` in the root of your Meltano project.
+7. Any meltano report you have saved in the default location  `.meltano/analyze/reports`  will be found and converted into Matatika dataset YAMLs. These new datasets can be found in a directory called `converted_meltano_reports` in the root of your Meltano project.
 
 You can see what an example meltano project with converted datasets looks like on our github here: [Example Meltano Project](https://github.com/Matatika/matatika-examples/tree/master/converting_meltano_reports)
 

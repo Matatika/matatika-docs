@@ -89,5 +89,5 @@ Path | Type | Format | Description
 
 Further Reading:
 
-- [Matatika dataset yaml file](../../cli/dataset-yaml)
+- [Matatika dataset YAML file](../../cli/dataset-yaml)
 - [Example Charts](../../data-visualisation/examples)
