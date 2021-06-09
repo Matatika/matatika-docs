@@ -1,0 +1,60 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js'></script>
+
+<div>
+    <canvas name='Example Stacked Bar Chart' id='281c5732-00b0-43e1-ac7f-b85131d630ea'></canvas>
+</div>
+<script>
+    require.config({
+        paths: {
+            chartjs: 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min'
+        }
+    });
+
+    require(['chartjs'], function(Chart) {
+        const ctx = document.getElementById('281c5732-00b0-43e1-ac7f-b85131d630ea').getContext('2d');
+        new Chart(ctx,{ type: 'bar', data: {
+    'datasets': [
+        {
+            'data': [
+                0.8708,
+                1.3242,
+                4.5287,
+                8.2997
+            ],
+            'label': 'Orbit Distance (Light Years)',
+            'backgroundColor': 'rgba(255, 99, 132, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(255, 99, 132, 1)',
+            'borderWidth': 1
+        },
+        {
+            'data': [
+                1,
+                1.9167,
+                11.8333,
+                29.5
+            ],
+            'label': 'Orbit Duration (Earth Years)',
+            'backgroundColor': 'rgba(54, 162, 235, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(54, 162, 235, 1)',
+            'borderWidth': 1
+        }
+    ],
+    'labels': [
+        'Earth',
+        'Mars',
+        'Jupiter',
+        'Saturn'
+    ]
+}, options: {
+    'scales': {
+        'xAxes': [
+            {
+                'stacked': true
+            }
+        ]
+    }
+} });
+    });
+</script>

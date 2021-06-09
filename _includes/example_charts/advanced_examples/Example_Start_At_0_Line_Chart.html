@@ -1,0 +1,65 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js'></script>
+
+<div>
+    <canvas name='Example Start At 0 Line Chart' id='b3c06058-08ee-4cfa-a7a6-acdfa737fcf5'></canvas>
+</div>
+<script>
+    require.config({
+        paths: {
+            chartjs: 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min'
+        }
+    });
+
+    require(['chartjs'], function(Chart) {
+        const ctx = document.getElementById('b3c06058-08ee-4cfa-a7a6-acdfa737fcf5').getContext('2d');
+        new Chart(ctx,{ type: 'line', data: {
+    'datasets': [
+        {
+            'data': [
+                1150,
+                980,
+                1020,
+                1410,
+                890
+            ],
+            'label': 'Visitors',
+            'backgroundColor': 'rgba(255, 99, 132, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(255, 99, 132, 1)',
+            'borderWidth': 1
+        },
+        {
+            'data': [
+                1040,
+                670,
+                990,
+                1020,
+                800
+            ],
+            'label': 'Sales',
+            'backgroundColor': 'rgba(54, 162, 235, 0.2)',
+            'fill': false,
+            'borderColor': 'rgba(54, 162, 235, 1)',
+            'borderWidth': 1
+        }
+    ],
+    'labels': [
+        'Shop One',
+        'Shop Two',
+        'Shop Three',
+        'Shop Four',
+        'Shop Five'
+    ]
+}, options: {
+    'scales': {
+        'yAxes': [
+            {
+                'ticks': {
+                    'beginAtZero': true
+                }
+            }
+        ]
+    }
+} });
+    });
+</script>
