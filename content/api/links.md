@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Links
-permalink: /links
+permalink: /api/links
+parent: API
 nav_order: 8
 ---
 
