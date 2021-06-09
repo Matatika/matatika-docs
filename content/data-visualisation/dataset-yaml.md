@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Dataset YAML
-permalink: /cli/dataset-yaml
-nav_order: 2
-parent: CLI
+permalink: /data-visualisation/dataset-yaml
+nav_order: 1
+parent: Data Visualisation
 ---
 
 # {{page.title}}
