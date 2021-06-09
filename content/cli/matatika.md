@@ -1,9 +1,8 @@
 ---
 layout: default
 title: matatika
-permalink: /cli/commands/matatika
-parent: Commands
-grand_parent: CLI
+permalink: /cli/matatika
+parent: CLI
 nav_order: 1
 ---
 

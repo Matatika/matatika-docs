@@ -1,9 +1,8 @@
 ---
 layout: default
 title: list
-permalink: /cli/commands/list
-parent: Commands
-grand_parent: CLI
+permalink: /cli/list
+parent: CLI
 nav_order: 4
 ---
 

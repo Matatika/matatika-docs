@@ -1,9 +1,8 @@
 ---
 layout: default
 title: fetch
-permalink: /cli/commands/fetch
-parent: Commands
-grand_parent: CLI
+permalink: /cli/fetch
+parent: CLI
 nav_order: 6
 ---
 
