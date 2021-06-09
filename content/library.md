@@ -7,7 +7,7 @@ nav_order: 7
 
 # {{page.title}}
 
-A software development kit for interacting with Matatika services.
+A python library for interacting with Matatika services.
 {: .fs-5 }
 
 ---
