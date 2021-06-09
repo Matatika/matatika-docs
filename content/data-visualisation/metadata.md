@@ -10,7 +10,7 @@ nav_order: 4
 
 ---
 
-You can change the format and display of your chart by using the `metadata` key of the [Matatika dataset YAML file](../data-visualisation/dataset-yaml).
+You can change the format and display of your chart by using the `metadata` key of the [Matatika dataset YAML file]({{site.baseurl}}/data-visualisation/dataset-yaml).
 {: .fs-5 }
 
 The `metadata` key relates to how the data from the [`query`](query) within the dataset is displayed as an insight.
@@ -94,5 +94,5 @@ metadata: |-
 
 Further Reading: 
 
-- [API Datasets](../api/resources/datasets)
+- [API Datasets]({{site.baseurl}}/api/resources/datasets)
 - [Example Charts](examples)

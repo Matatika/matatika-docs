@@ -10,7 +10,7 @@ nav_order: 3
 
 ---
 
-You can use different chart types by utilizing the `visulisation` key of the [Matatika dataset YAML file](../data-visualisation/dataset-yaml).
+You can use different chart types by utilizing the `visulisation` key of the [Matatika dataset YAML file]({{site.baseurl}}/data-visualisation/dataset-yaml).
 {: .fs-5 }
 
 The `visualisation` key contains information about displaying the chart for the insight.
@@ -43,5 +43,5 @@ For more information on Chart.js, see their documentation at [https://www.chartj
 
 Further Reading: 
 
-- [API Datasets](../api/resources/datasets)
+- [API Datasets]({{site.baseurl}}/api/resources/datasets)
 - [Example Charts](examples)

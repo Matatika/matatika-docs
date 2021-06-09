@@ -10,7 +10,7 @@ nav_order: 5
 
 ---
 
-You select the data for your chart by using the `query` key of the [Matatika dataset YAML file](../data-visualisation/dataset-yaml).
+You select the data for your chart by using the `query` key of the [Matatika dataset YAML file]({{site.baseurl}}/data-visualisation/dataset-yaml).
 {: .fs-5 }
 
 The `query` key in the dataset file is the sql query that is run against your chosen data store to retrieve data for use in displaying the insight.
@@ -36,4 +36,4 @@ query: |-
 
 Further Reading: 
 
-- [API Datasets](../api/resources/datasets)
+- [API Datasets]({{site.baseurl}}/api/resources/datasets)
