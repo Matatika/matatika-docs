@@ -39,3 +39,10 @@ Path | Type | Format | Description
 {: toc}
 
 ---
+
+{% include {{page.components}}/view-all-api-keys.md %}
+{% include {{page.components}}/view-an-api-key.md %}
+{% include {{page.components}}/initialise-an-api-key.md %}
+{% include {{page.components}}/create-an-api-key.md %}
+{% include {{page.components}}/update-an-api-key.md %}
+{% include {{page.components}}/delete-an-api-key.md %}
