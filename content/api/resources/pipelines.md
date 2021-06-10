@@ -32,8 +32,8 @@ GET
 ### Pipeline
 
 Path | Type | Format | Description
----- | ---- | -----------
-`id` | `String` | Version 4 UUID) | The pipeline ID 
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The pipeline ID 
 `name` | `String` | | The pipeline name
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
@@ -74,4 +74,3 @@ Path | Type | Description
 {% include {{page.components}}/initialise-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/create-or-update-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}
-
