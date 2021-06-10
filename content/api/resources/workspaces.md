@@ -29,15 +29,15 @@ Path | Type | Format | Description
 `name` | `String` | | The workspace name
 `domains` | `String` | Comma-separated list | The workspace allowed domains
 `repositoryUrl` | `String` | URL | The workspace repository URL
-`status` | `String` | [Status Type](#status-type) | The workspace status
-`defaultWorkspace` | `Boolean` | | Wether or not the workspace is set as the default the authenticated user
+`status` | `String` | [Workspace Status](#workspace-status) | The workspace status
+`defaultWorkspace` | `Boolean` | | Whether or not the workspace is set as the default the authenticated user
 
 {% include snippets/api/workspaces/view-a-workspace/response-body.md %}
 
 ## Formats
 {: .no_toc}
 
-### Status Type
+### Workspace Status
 {: .d-inline-block }
 
 `String`
