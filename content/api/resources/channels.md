@@ -15,27 +15,19 @@ Channels enable datasets to be categorised or grouped together. A single workspa
 
 ---
 
-## Channel Object
+## Objects
 {: .no_toc }
 
-### Schema
+### Channel
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The channel ID
-`creator` | [`Member object`](members#member-object) | The channel creator
-`workspace` | Partial [`Workspace object`](workspaces#workspace-object) | The channel workspace 
-`name` | `String` | The channel name
-`description` | `String` | The channel description
-`picture` | `String` | The channel picture metadata
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/channels/{channel-id}
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The channel ID
+`creator` | [`Member object`](members#member-object) | | The channel creator
+`workspace` | [`Workspace object`](workspaces#workspace-object) | | The channel workspace 
+`name` | `String` | | The channel name
+`description` | `String` | | The channel description
+`picture` | `String` | URL | The channel picture metadata
 
 {% include snippets/api/channels/view-a-channel/response-body.md %}
 

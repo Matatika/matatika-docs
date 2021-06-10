@@ -30,6 +30,6 @@ Returns the channel `{channel-id}`.
 200
 {:.label .label-GET}
 
-[Channel object](#channel-object) with HAL links.
+[Channel object](#channel) with HAL links.
 
 ---
