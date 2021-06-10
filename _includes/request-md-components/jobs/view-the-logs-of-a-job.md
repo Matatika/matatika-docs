@@ -24,12 +24,12 @@ Key | Value | Description
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/jobs/view-the-logs-of-a-job_json/curl-request.md %}
+{% include snippets/api/jobs/view-the-logs-of-a-job-as-json/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/jobs/view-the-logs-of-a-job_json/python-requests.md %}
+{% include snippets/api/jobs/view-the-logs-of-a-job-as-json/python-requests.md %}
 {: .tabs-section-end}
 
 #### Query Parameters

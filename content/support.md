@@ -2,7 +2,7 @@
 layout: default
 title: Support
 permalink: /support
-nav_order: 10
+nav_order: 8
 ---
 
 # {{page.title}}
