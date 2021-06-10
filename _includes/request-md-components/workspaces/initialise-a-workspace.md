@@ -27,6 +27,6 @@ Initialises a new workspace.
 200
 {:.label .label-POST}
 
-[Workspace object](#workspace-object) with HAL links.
+[Workspace object](#workspace) with HAL links.
 
 ---

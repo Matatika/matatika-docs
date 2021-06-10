@@ -22,7 +22,7 @@ A workspace can be set as default, which defines the environment the Matatika ap
 
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
-`defaultWorkspace` | Partial [`Workspace object`](workspaces#workspace-object) | Default workspace object | Must be a valid and existing workspace
+`defaultWorkspace` | Partial [`Workspace object`](workspaces#workspace) | Default workspace object | Must be a valid and existing workspace
 
 #### Example Snippets
 - cURL

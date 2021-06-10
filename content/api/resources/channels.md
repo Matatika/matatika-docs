@@ -24,7 +24,7 @@ Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The channel ID
 `creator` | [`Member object`](members#member) | | The channel creator
-`workspace` | [`Workspace object`](workspaces#workspace-object) | | The channel workspace 
+`workspace` | [`Workspace object`](workspaces#workspace) | | The channel workspace 
 `name` | `String` | | The channel name
 `description` | `String` | | The channel description
 `picture` | `String` | URL | The channel picture metadata

@@ -27,6 +27,6 @@ Returns all workspaces the authenticated user profile is an owner or member of.
 200
 {:.label .label-GET}
 
-[Workspace object](#workspace-object) collection with HAL links.
+[Workspace object](#workspace) collection with HAL links.
 
 ---

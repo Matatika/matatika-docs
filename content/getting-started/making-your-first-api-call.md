@@ -58,7 +58,7 @@ Once completed, open the *Workspaces* folder, select the request titled *View al
 
 ---
 
-If everything was configured correctly, the API should respond with a status of `200 OK` and a JSON-formatted [Workspace object](resources/workspaces#workspace-object) body:
+If everything was configured correctly, the API should respond with a status of `200 OK` and a JSON-formatted [Workspace object](resources/workspaces#workspace) body:
 
 ```json
 {

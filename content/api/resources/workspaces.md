@@ -15,28 +15,39 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 
 ---
 
-## Workspace Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Workspace
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The workspace ID
-`name` | `String` | The workspace name
-`domains` | `String` | The workspace allowed domains
-`repositoryUrl` | `String` | The workspace repository URL
-`defaultWorkspace` | `Boolean` | The workspace default status for the calling user
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The workspace ID
+`created` | `String` | ISO 8601 timestamp | The instant the workspace was created
+`lastModified` | `String` | ISO 8601 timestamp | The instant the workspace was last modified
+`alias` | `String` | | The workspace alias and database schema name
+`name` | `String` | | The workspace name
+`domains` | `String` | Comma-separated list | The workspace allowed domains
+`repositoryUrl` | `String` | URL | The workspace repository URL
+`status` | `String` | [Status Type](#status-type) | The workspace status
+`defaultWorkspace` | `Boolean` | | Wether or not the workspace is set as the default the authenticated user
 
 {% include snippets/api/workspaces/view-a-workspace/response-body.md %}
+
+## Formats
+{: .no_toc}
+
+### Status Type
+{: .d-inline-block }
+
+`String`
+{: .float-right .mt-5 }
+
+Value | Description
+----- | -----------
+`READY` | The workspace completed processing resource changes
+`PROVISIONING` | The workspace is processing resource changes
+`FAILED` | The workspace failed to process resource changes
 
 ---
 

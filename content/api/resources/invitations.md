@@ -28,7 +28,7 @@ Path | Type | Format | Description
 `status` | `String` | [Status Type](#status-type) | The invitation status
 `email` | `String` | Email address | The invitation target email address
 `creator` | [`Member object`](members#member) | | The invitation creator
-`workspace` | [`Workspace object`](workspaces#workspace-object) | | The invitation target workspace
+`workspace` | [`Workspace object`](workspaces#workspace) | | The invitation target workspace
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}
 

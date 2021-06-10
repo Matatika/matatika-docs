@@ -27,7 +27,7 @@ Path | Type | Format | Description
 `handle` | `String` | The unique `@`-prefixed handle for this profile (generated and read-only)
 `phone` | `String` | Phone number | The profile phone number
 `email` | `String` | Email address | The profile email address
-`defaultWorkspace` | [`Workspace object`](workspaces#workspace-object) | The profile default workspace
+`defaultWorkspace` | [`Workspace object`](workspaces#workspace) | The profile default workspace
 
 {% include snippets/api/profiles/view-a-profile/response-body.md %}
 
