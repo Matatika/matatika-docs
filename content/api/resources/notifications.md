@@ -42,11 +42,11 @@ Path | Type | Format | Description
 
 Value | Description
 ----- | -----------
-`DATASET_ACTIVITY` | Any activity on the [dataset](datasets)
-`DATASET_ANOMOLY` | A detected anomoly in the [dataset](datasets) data
-`DATASET_COMMENT` | A [comment](comments#comment) on the [dataset](datasets)
-`DATASET_LIKE` | A [like](datasets#record-a-like-of-a-dataset) recorded on the [dataset](datasets)
-`DATASET_MESSAGE` | A [message](datasets#dataset-message) about the [dataset](datasets)
+`DATASET_ACTIVITY` | Any activity on the [dataset](datasets#dataset)
+`DATASET_ANOMOLY` | A detected anomoly in the [dataset](datasets#dataset) data
+`DATASET_COMMENT` | A [comment](comments#comment) on the [dataset](datasets#dataset)
+`DATASET_LIKE` | A [like](datasets#record-a-like-of-a-dataset) recorded on the [dataset](datasets#dataset)
+`DATASET_MESSAGE` | A [message](datasets#dataset-message) about the [dataset](datasets#dataset)
 
 ---
 
