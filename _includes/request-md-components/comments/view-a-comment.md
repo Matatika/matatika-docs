@@ -31,6 +31,6 @@ Returns the comment `{comment-id}`.
 200
 {:.label .label-GET}
 
-[Comment object](#comment-object) with HAL links.
+[Comment object](comments#comment) with HAL links.
 
 ---

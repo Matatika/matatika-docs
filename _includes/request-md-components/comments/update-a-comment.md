@@ -40,6 +40,6 @@ Path | Type | Description | Constraints
 200
 {:.label .label-PUT}
 
-[Comment object](#comment-object) with HAL links.
+[Comment object](comments#comment) with HAL links.
 
 ---
