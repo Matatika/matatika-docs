@@ -59,6 +59,10 @@
         {
             "key": "notification-id",
             "type": "string"
+        },
+        {
+            "key": "apikey-id",
+            "type": "string"
         }
     ],
     "auth": {
