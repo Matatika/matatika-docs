@@ -39,6 +39,6 @@ Path | Type | Description | Constraints
 201 / 200
 {:.label .label-PUT}
 
-[Pipeline](#pipeline) object with HAL links.
+[Pipeline](#pipeline) with HAL links.
 
 ---

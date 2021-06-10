@@ -31,6 +31,6 @@ Returns all configured pipelines in the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Pipeline](#pipeline) object collection with HAL links.
+[Pipeline](#pipeline) collection with HAL links.
 
 ---

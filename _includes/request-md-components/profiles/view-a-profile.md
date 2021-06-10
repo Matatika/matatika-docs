@@ -32,6 +32,6 @@ Returns the profile `{profile-id`}.
 {:.label .label-GET}
 
 #### Body
-[Profile object](#profile) with HAL links.
+[Profile](#profile) with HAL links.
 
 ---

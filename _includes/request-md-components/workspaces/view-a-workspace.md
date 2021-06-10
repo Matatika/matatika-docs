@@ -31,6 +31,6 @@ Returns the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Workspace object](#workspace) with HAL links.
+[Workspace](#workspace) with HAL links.
 
 ---

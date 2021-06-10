@@ -27,7 +27,7 @@ Initialises a new datasource.
 200
 {:.label .label-POST}
 
-[Datasource](#datasource) object with HAL links.
+[Datasource](#datasource) with HAL links.
 
 
 {% include snippets/api/datasources/initialise-a-new-datasource/response-body.md %}

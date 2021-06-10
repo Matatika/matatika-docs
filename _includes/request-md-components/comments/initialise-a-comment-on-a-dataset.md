@@ -31,6 +31,6 @@ Initialises a new comment on the dataset `{dataset-id}`.
 200
 {:.label .label-POST}
 
-[Comment object](comments#comment) with HAL links.
+[Comment](comments#comment) with HAL links.
 
 ---

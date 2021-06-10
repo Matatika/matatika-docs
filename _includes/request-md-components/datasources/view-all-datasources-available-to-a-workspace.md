@@ -30,7 +30,7 @@ Returns all datasources available to the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Datasource](#datasource) object collection with HAL links.
+[Datasource](#datasource) collection with HAL links.
 
 {% include snippets/api/datasources/view-all-datasources-available-to-a-workspace/response-body.md %}
 

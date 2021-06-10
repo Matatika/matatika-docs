@@ -42,6 +42,6 @@ Path | Type | Description | Constraints
 200
 {:.label .label-PUT}
 
-[Workspace object](#workspace) with HAL links.
+[Workspace](#workspace) with HAL links.
 
 ---

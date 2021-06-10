@@ -31,6 +31,6 @@ Initialises a new reply comment to the comment `{comment-id}`.
 200
 {:.label .label-POST}
 
-[Comment object](comments#comment) with HAL links.
+[Comment](comments#comment) with HAL links.
 
 ---

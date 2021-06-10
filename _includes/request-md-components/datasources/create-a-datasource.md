@@ -18,7 +18,7 @@ Path | Type | Description | Required | Constraints
 `name` | `String` | The datasource name | Yes | Not empty
 `description` | `String` | A description of the datasource | No |
 `repositoryUrl` | `String` | The datasource repository URL | No |
-`settings` | `Array` of [`Setting`](#setting) objects | The datasource settings | No |
+`settings` | `Array` of [`Setting`](#setting)s | The datasource settings | No |
 
 #### Example Snippets
 - cURL
@@ -38,7 +38,7 @@ Path | Type | Description | Required | Constraints
 201
 {:.label .label-PUT}
 
-[Datasource](#datasource) object with HAL links.
+[Datasource](#datasource) with HAL links.
 
 
 {% include snippets/api/datasources/update-a-datasource/response-body.md %}

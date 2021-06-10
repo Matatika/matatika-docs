@@ -37,7 +37,7 @@ Path | Type | Format | Description
 `name` | `String` | | The pipeline name
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
-`properties` | [`Properties`](#properties) object | | The properties to run the pipeline with, defined by the pipeline [datasource](datasources) `settings`
+`properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [datasource](datasources) `settings`
 `dataSource` | `String` | | The pipeline target [datasource](datasources) `name`
 `schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
 `script` | `String` | Bash | Custom script to be executed as the pipeline job

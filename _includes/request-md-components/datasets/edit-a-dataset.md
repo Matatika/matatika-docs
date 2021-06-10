@@ -14,7 +14,7 @@ Edits the dataset `{dataset-id}`.
 ### Request
 #### Body
 
-This request can update one or more of the [dataset](#dataset) object fields at once. With a single request, it is possible to - *for example* - edit the dataset `title` only, or both `title` and `description` (shown below).
+This request can update one or more of the [dataset](#dataset) fields at once. With a single request, it is possible to - *for example* - edit the dataset `title` only, or both `title` and `description` (shown below).
 
 {% include snippets/api/datasets/edit-a-dataset/request-body.md %}
 
@@ -36,7 +36,7 @@ This request can update one or more of the [dataset](#dataset) object fields at 
 200
 {:.label .label-PATCH}
 
-[Dataset](#dataset) object with HAL links.
+[Dataset](#dataset) with HAL links.
 
 {% include snippets/api/datasets/edit-a-dataset/response-body.md %}
 

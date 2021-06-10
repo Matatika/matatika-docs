@@ -32,6 +32,6 @@ Accepts the invitation `{invitation-id}`.
 200
 {:.label .label-PATCH}
 
-[Invitation](#invitation) object with HAL links.
+[Invitation](#invitation) with HAL links.
 
 ---

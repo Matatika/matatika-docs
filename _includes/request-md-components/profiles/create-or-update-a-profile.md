@@ -44,6 +44,6 @@ Path | Type | Description | Constraints
 
 #### Body
 
-[Profile object](#profile) with HAL links.
+[Profile](#profile) with HAL links.
 
 ---

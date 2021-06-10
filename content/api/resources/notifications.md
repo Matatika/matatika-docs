@@ -25,7 +25,7 @@ Path | Type | Format | Description
 `id` | `String` | Version 4 UUID | The notification ID
 `created` | `String` | ISO 8601 timestamp | The instant the notification was created at
 `lastModified` | `String` | ISO 8601 timestamp | The instant the notification was last modified at
-`actor` | [`Member object`](members#member) | | The member whose action raised this notification
+`actor` | [`Member`](members#member) | | The member whose action raised this notification
 `type` | `String` | [Notification Type](#notification-type) | The type of notification
 `resolved` | `Boolean` | | Whether or not the notification has been read
 

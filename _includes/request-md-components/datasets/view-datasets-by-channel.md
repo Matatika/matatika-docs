@@ -31,7 +31,7 @@ Returns datasets by the channel `{channel-id}`.
 200
 {:.label .label-GET}
 
-[Dataset](#dataset) object collection with HAL links.
+[Dataset](#dataset) collection with HAL links.
 
 {% include snippets/api/datasets/view-datasets-by-channel/response-body.md %}
 

@@ -26,7 +26,7 @@ Path | Type | Format | Description
 `name` | `String` | | The datasource name
 `description` | `String` | | A description of the datasource
 `repositoryUrl` | `String` | URL | The datasource repository URL
-`settings` | `Array` of [`Setting`](#setting) objects | | The datasource settings
+`settings` | `Array` of [`Setting`](#setting)s | | The datasource settings
 
 {% include snippets/api/datasources/view-a-datasource-available-to-a-workspace/response-body.md %}
 
@@ -41,9 +41,9 @@ Path | Type | Format | Description
 `kind` | `String` | [Setting Kind](#setting-kind) | The setting kind
 `description` | `String` | | A description of the setting
 `placeholder` | `String` | | The setting placeholder text
-`envAliases` | `Array` of `String` objects | | Environment variable aliases for the setting
+`envAliases` | `Array` of `String` | | Environment variable aliases for the setting
 `documentation` | `String` | URL | The setting documentation URL
-`oauth` | [`OAuth`](#oauth) object | | The setting OAuth configuration
+`oauth` | [`OAuth`](#oauth) | | The setting OAuth configuration
 `env` | `String` | | 
 
 ### OAuth

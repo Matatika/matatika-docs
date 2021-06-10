@@ -30,6 +30,6 @@ Returns the feed of the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Dataset](datasets#dataset) object collection with HAL links.
+[Dataset](datasets#dataset) collection with HAL links.
 
 ---

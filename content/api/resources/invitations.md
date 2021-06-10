@@ -27,8 +27,8 @@ Path | Type | Format | Description
 `lastModified` | `String` | ISO 8601 timestamp | The instant the invitation was last modified
 `status` | `String` | [Status Type](#status-type) | The invitation status
 `email` | `String` | Email address | The invitation target email address
-`creator` | [`Member object`](members#member) | | The invitation creator
-`workspace` | [`Workspace object`](workspaces#workspace) | | The invitation target workspace
+`creator` | [`Member`](members#member) | | The invitation creator
+`workspace` | [`Workspace`](workspaces#workspace) | | The invitation target workspace
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}
 

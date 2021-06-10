@@ -31,7 +31,7 @@ Returns the datasource `{datasource-id}` available to the workspace `{workspace-
 200
 {:.label .label-GET}
 
-[Datasource](#datasource) object with HAL links.
+[Datasource](#datasource) with HAL links.
 
 {% include snippets/api/datasources/view-a-datasource-available-to-a-workspace/response-body.md %}
 

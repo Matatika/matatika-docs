@@ -39,7 +39,7 @@ Path | Type | Format | Description
 200 / 201
 {:.label .label-PUT}
 
-[Dataset Message](#dataset-message) object with HAL links.
+[Dataset Message](#dataset-message) with HAL links.
 
 {% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 

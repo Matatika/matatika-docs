@@ -31,6 +31,6 @@ Returns all replies to the comment `{comment-id}`.
 200
 {:.label .label-GET}
 
-[Comment object](comments#comment) with HAL links.
+[Comment](comments#comment) with HAL links.
 
 ---

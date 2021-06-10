@@ -31,6 +31,6 @@ Returns the pipeline `{pipeline-id}`.
 200
 {:.label .label-GET}
 
-[Pipeline](#pipeline) object with HAL links.
+[Pipeline](#pipeline) with HAL links.
 
 ---

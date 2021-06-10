@@ -30,7 +30,7 @@ Returns the dataset `{dataset-id}`.
 200
 {:.label .label-GET}
 
-[Dataset](#dataset) object with HAL links.
+[Dataset](#dataset) with HAL links.
 
 {% include snippets/api/datasets/view-a-dataset/response-body.md %}
 
