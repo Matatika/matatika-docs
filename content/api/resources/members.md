@@ -10,7 +10,7 @@ components: request-md-components/members
 
 # {{page.title}}
 
-Members are users that belong to a particular [workspace](workspaces). Every member is derived from a corresponding [profile](profiles#profile-object), inheriting its `id` and `name`. Within the scope of a workspace, each member is visible to one another, so operating with a reduced property set allows for enhanced data security.
+Members are users that belong to a particular [workspace](workspaces). Every member is derived from a corresponding [profile](profiles#profile), inheriting its `id` and `name`. Within the scope of a workspace, each member is visible to one another, so operating with a reduced property set allows for enhanced data security.
 {: .fs-5 }
 
 ---

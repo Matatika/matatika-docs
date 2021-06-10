@@ -15,27 +15,19 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 
 ---
 
-## Profile Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Profile
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The profile ID 
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The profile ID 
 `name` | `String` | The full name of the person or entity represented by this profile
-`handle` | `String` | The unique @handle for this profile (generated and read-only)
-`phone` | `String` | The profile phone number
-`email` | `String` | The profile email address
-`defaultWorkspace` | Partial [`Workspace object`](workspaces#workspace-object) | The profile default workspace object
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}
-{:.path .path-GET}
+`handle` | `String` | The unique `@`-prefixed handle for this profile (generated and read-only)
+`phone` | `String` | Phone number | The profile phone number
+`email` | `String` | Email address | The profile email address
+`defaultWorkspace` | [`Workspace object`](workspaces#workspace-object) | The profile default workspace
 
 {% include snippets/api/profiles/view-a-profile/response-body.md %}
 
