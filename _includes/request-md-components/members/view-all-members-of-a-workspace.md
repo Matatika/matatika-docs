@@ -31,6 +31,6 @@ Returns all members of the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Member object](#member-object) collection with HAL links.
+[Member object](#member) collection with HAL links.
 
 ---

@@ -23,7 +23,7 @@ Channels enable datasets to be categorised or grouped together. A single workspa
 Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The channel ID
-`creator` | [`Member object`](members#member-object) | | The channel creator
+`creator` | [`Member object`](members#member) | | The channel creator
 `workspace` | [`Workspace object`](workspaces#workspace-object) | | The channel workspace 
 `name` | `String` | | The channel name
 `description` | `String` | | The channel description

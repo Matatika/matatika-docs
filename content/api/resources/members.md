@@ -15,24 +15,16 @@ Members are users that belong to a particular [workspace](workspaces). Every mem
 
 ---
 
-## Member Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Member
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The member ID (derived from corresponding profile ID)
-`name` | `String` | The member name (derived from corresponding profile name)
-`handle` | `String` | The unique @handle for this member (derived from corresponding profile handle)
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}/members/{member-id}
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The member ID (derived from corresponding profile ID)
+`name` | `String` | | The member name (derived from corresponding profile name)
+`handle` | `String` | | The unique `@`-prefixed handle for this member (derived from corresponding profile handle)
 
 {% include snippets/api/workspaces/view-a-member-of-a-workspace/response-body.md %}
 
