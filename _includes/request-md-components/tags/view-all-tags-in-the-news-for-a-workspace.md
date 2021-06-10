@@ -17,6 +17,6 @@ Returns all tags in the news for the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Tag object](#tag-object) collection with HAL links.
+[Tag object](#tag) collection with HAL links.
 
 ---

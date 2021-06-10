@@ -31,6 +31,6 @@ Returns the tag `{tag-id}` in the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Tag object](#tag-object) with HAL links.
+[Tag object](#tag) with HAL links.
 
 ---

@@ -15,24 +15,16 @@ Tags are hash-prefixed keywords or phrases that appear in the title, description
 
 ---
 
-## Profile Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Tag
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The tag ID 
-`name` | `String` | The tag name
-`usage` | `Integer` | Number of times the tag is used within the workspace
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}/tags/{tag-id}
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The tag ID 
+`name` | `String` | | The tag name
+`usage` | `Integer` | Unsigned | Number of times the tag is used within the workspace
 
 {% include snippets/api/tags/view-a-tag-in-a-workspace/response-body.md %}
 
