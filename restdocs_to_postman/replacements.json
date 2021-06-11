@@ -1,63 +1,63 @@
 {
     "pathReplacements": [
         {
-            "oldValueRegex": "(?<=profiles\\/)[^/?]*",
+            "oldValueRegex": "(?<=profiles\\/)[^/?]+",
             "newValue": "{{profile-id}}"
         },
         {
-            "oldValueRegex": "(?<=workspaces\\/)[^/?]*",
+            "oldValueRegex": "(?<=workspaces\\/)[^/?]+",
             "newValue": "{{workspace-id}}"
         },
         {
-            "oldValueRegex": "(?<=datasets\\/)[^/?]*",
+            "oldValueRegex": "(?<=datasets\\/)[^/?]+",
             "newValue": "{{dataset-id}}"
         },
         {
-            "oldValueRegex": "(?<=members\\/)(?!subscriptions)[^/?]*",
+            "oldValueRegex": "(?<=members\\/)(?!subscriptions)[^/?]+",
             "newValue": "{{member-id}}"
         },
         {
-            "oldValueRegex": "(?<=invitations\\/)[^/?]*",
+            "oldValueRegex": "(?<=invitations\\/)[^/?]+",
             "newValue": "{{invitation-id}}"
         },
         {
-            "oldValueRegex": "(?<=channels\\/)[^/?]*",
+            "oldValueRegex": "(?<=channels\\/)[^/?]+",
             "newValue": "{{channel-id}}"
         },
         {
-            "oldValueRegex": "(?<=comments\\/)[^/?]*",
+            "oldValueRegex": "(?<=comments\\/)[^/?]+",
             "newValue": "{{comment-id}}"
         },
         {
-            "oldValueRegex": "(?<=datasources\\/)[^/?]*",
+            "oldValueRegex": "(?<=datasources\\/)[^/?]+",
             "newValue": "{{datasource-id}}"
         },
         {
-            "oldValueRegex": "(?<=subscriptions\\/)[^/?]*",
+            "oldValueRegex": "(?<=subscriptions\\/)[^/?]+",
             "newValue": "{{subscription-id}}"
         },
         {
-            "oldValueRegex": "(?<=notifications\\/)[^/?]*",
+            "oldValueRegex": "(?<=notifications\\/)[^/?]+",
             "newValue": "{{notification-id}}"
         },
         {
-            "oldValueRegex": "(?<=messages\\/)[^/?]*",
+            "oldValueRegex": "(?<=messages\\/)[^/?]+",
             "newValue": "{{message-id}}"
         },
         {
-            "oldValueRegex": "(?<=pipelines\\/)[^/?]*",
+            "oldValueRegex": "(?<=pipelines\\/)[^/?]+",
             "newValue": "{{pipeline-id}}"
         },
         {
-            "oldValueRegex": "(?<=jobs\\/)[^/?]*",
+            "oldValueRegex": "(?<=jobs\\/)[^/?]+",
             "newValue": "{{job-id}}"
         },
         {
-            "oldValueRegex": "(?<=tags\\/)[^/?]*",
+            "oldValueRegex": "(?<=tags\\/)[^/?]+",
             "newValue": "{{tag-id}}"
         },
         {
-            "oldValueRegex": "(?<=apikeys\\/)[^/?]*",
+            "oldValueRegex": "(?<=apikeys\\/)[^/?]+",
             "newValue": "{{apikey-id}}"
         },
         {
