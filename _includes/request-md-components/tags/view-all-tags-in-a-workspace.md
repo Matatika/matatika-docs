@@ -30,6 +30,6 @@ Returns all tags in the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Tag object](#tag-object) collection with HAL links.
+[Tag](#tag) collection with HAL links.
 
 ---

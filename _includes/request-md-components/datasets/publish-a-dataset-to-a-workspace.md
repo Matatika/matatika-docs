@@ -48,7 +48,7 @@ Path | Type | Format | Description | Required
 201 / 200
 {:.label .label-POST}
 
-[Dataset](#dataset) object with HAL links.
+[Dataset](#dataset) with HAL links.
 
 {% include snippets/api/datasets/publish-a-dataset-to-a-workspace/response-body.md %}
 

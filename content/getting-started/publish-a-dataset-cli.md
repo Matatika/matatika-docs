@@ -77,7 +77,7 @@ rawData: |-
 visualisation: '{"chartjs-chart": {"chartType": "bar"}}'
 ```
 
-Here, the `datasets` key can assume a value of multiple datasets. In this example, the `planet-orbits` entry forms a partial [Dataset](resources/datasets#dataset) object schema, with the key used as the `alias` and the value containing other relevant schema entries.
+Here, the `datasets` key can assume a value of multiple datasets. In this example, the `planet-orbits` entry forms a partial [Dataset](resources/datasets#dataset) schema, with the key used as the `alias` and the value containing other relevant schema entries.
 
 You can read more about the YAML format and its syntax [here](https://yaml.org/).
 

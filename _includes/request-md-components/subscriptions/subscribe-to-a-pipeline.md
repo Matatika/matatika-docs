@@ -38,7 +38,7 @@ Parameter | Required | Format | Default Value | Description
 200
 {:.label .label-POST}
 
-[Subscription](#subscription) object with HAL links.
+[Subscription](#subscription) with HAL links.
 
 {% include snippets/api/subscriptions/subscribe-to-a-pipeline/response-body.md %}
 

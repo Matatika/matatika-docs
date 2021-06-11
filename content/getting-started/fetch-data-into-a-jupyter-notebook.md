@@ -50,7 +50,7 @@ By default, the method will return a Python dictionary object constructed from t
 
 ## Using the Data
 
-We can create a [`pandas.DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) object using the [`from_dict`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.from_dict.html) method, and supplying the Matatika client-library `fetch` method return value as the argument.
+We can create a [`pandas.DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) using the [`from_dict`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.from_dict.html) method, and supplying the Matatika client-library `fetch` method return value as the argument.
 
 ```py
 import pandas as pd

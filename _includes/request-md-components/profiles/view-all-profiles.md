@@ -28,6 +28,6 @@ Returns all profiles under the authenticated user account.
 {:.label .label-GET}
 
 #### Body
-[Profile object](#profile-object) collection with HAL links.
+[Profile](#profile) collection with HAL links.
 
 ---

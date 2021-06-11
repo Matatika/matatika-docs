@@ -25,17 +25,17 @@ Path | Type | Format | Description
 `id` | `String` | Version 4 UUID | The invitation ID
 `created` | `String` | ISO 8601 timestamp | The instant the invitation was created
 `lastModified` | `String` | ISO 8601 timestamp | The instant the invitation was last modified
-`status` | `String` | [Status Type](#status-type) | The invitation status
+`status` | `String` | [Invitation Status](#invitation-status) | The invitation status
 `email` | `String` | Email address | The invitation target email address
-`creator` | [`Member object`](members#member-object) | | The invitation creator
-`workspace` | [`Workspace object`](workspaces#workspace-object) | | The invitation target workspace
+`creator` | [`Member`](members#member) | | The invitation creator
+`workspace` | [`Workspace`](workspaces#workspace) | | The invitation target workspace
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}
 
 ## Formats
 {: .no_toc}
 
-### Status Type
+### Invitation Status
 {: .d-inline-block }
 
 `String`

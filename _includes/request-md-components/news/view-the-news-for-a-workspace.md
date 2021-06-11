@@ -25,6 +25,6 @@ Parameter | Required | Format | Default Value | Description
 200
 {:.label .label-GET}
 
-[Notification](notifications#notification) object collection with HAL links.
+[Notification](notifications#notification) collection with HAL links.
 
 ---

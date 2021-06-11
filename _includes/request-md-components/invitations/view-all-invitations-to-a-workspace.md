@@ -41,6 +41,6 @@ Returns all active invitations to the workspace `{workspace-id}` sent by the aut
 200
 {:.label .label-GET}
 
-[Invitation](#invitation) object collection with HAL links.
+[Invitation](#invitation) collection with HAL links.
 
 ---

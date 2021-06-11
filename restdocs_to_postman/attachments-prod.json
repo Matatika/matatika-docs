@@ -37,7 +37,31 @@
             "type": "string"
         },
         {
+            "key": "tag-id",
+            "type": "string"
+        },
+        {
             "key": "datasource-id",
+            "type": "string"
+        },
+        {
+            "key": "pipeline-id",
+            "type": "string"
+        },
+        {
+            "key": "job-id",
+            "type": "string"
+        },
+        {
+            "key": "subscription-id",
+            "type": "string"
+        },
+        {
+            "key": "notification-id",
+            "type": "string"
+        },
+        {
+            "key": "apikey-id",
             "type": "string"
         }
     ],

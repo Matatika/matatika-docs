@@ -31,6 +31,6 @@ Initialises a new pipeline in the workspace `{workspace-id}`.
 200
 {:.label .label-POST}
 
-[Pipeline](#pipeline) object with HAL links.
+[Pipeline](#pipeline) with HAL links.
 
 ---

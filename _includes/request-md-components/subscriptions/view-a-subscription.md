@@ -30,7 +30,7 @@ Returns the subscription `{subscription-id}`.
 200
 {:.label .label-GET}
 
-[Subscription](#subscription) object with HAL links.
+[Subscription](#subscription) with HAL links.
 
 {% include snippets/api/subscriptions/view-a-subscription/response-body.md %}
 

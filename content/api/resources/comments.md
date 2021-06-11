@@ -15,31 +15,23 @@ Comments aid conversation and collaboration around workspace datasets. Comments 
 
 ---
 
-## Comment Object
+## Objects
 {: .no_toc}
 
-### Schema
+### Comment
 
-Path | Type | Description
----- | ---- | -----------
-`id` | `String` | The comment ID
-`message` | `String` | The comment message
-`likeCount` | `Integer` | The number of likes the comment has received
-`likedByProfiles` | `Array` of [Member objects](workspaces#member-object) | The workspace members that have liked the comment
-`created` | `String` | Timestamp denoting when the comment was created
-`lastModified` | `String` | Timestamp denoting when the comment was last modified
-`from` | [`Member object`](members#member-object) | The comment author
-`commentCount` | `Integer` | The number of replies the comment has received
-`datasetId` | `String` | The ID of the dataset comment subject
-`parentId` | `String` | The ID of the parent comment
-
-### Example Resource
-
-GET
-{:.label .label-GET}
-
-/api/comments/{comment-id}
-{:.path .path-GET}
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`id` | `String` | Version 4 UUID | The comment ID
+`message` | `String` | | The comment message
+`likeCount` | `Integer` | Unsigned | The number of likes the comment has received
+`likedByProfiles` | `Array` of [`Member`](workspaces#member) | | The workspace members that have liked the comment
+`created` | `String` | ISO 8601 timestamp | Timestamp denoting when the comment was created
+`lastModified` | `String` | ISO 8601 timestamp | Timestamp denoting when the comment was last modified
+`from` | [`Member`](members#member) | | The comment author
+`commentCount` | `Integer` | Unsigned | The number of replies the comment has received
+`datasetId` | `String` | Version 4 UUID | The ID of the dataset comment subject
+`parentId` | `String` | Version 4 UUID | The ID of the parent comment
 
 {% include snippets/api/comments/view-a-comment/response-body.md %}
 

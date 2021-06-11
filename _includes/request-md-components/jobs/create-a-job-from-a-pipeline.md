@@ -16,8 +16,8 @@ Creates a new job from the pipeline `{pipeline-id}`.
 
 Key | Value | Description
 --- | ----- | -----------
-`enable-task-details` | `true` | Enables detailed task information in the resulting [Job](#job) object response
-`enable-task-details` | `false` (default) | Disables detailed task information in the resulting [Job](#job) object response
+`enable-task-details` | `true` | Enables detailed task information in the resulting [Job](#job) response
+`enable-task-details` | `false` (default) | Disables detailed task information in the resulting [Job](#job) response
 
 #### Example Snippets
 - cURL
@@ -37,6 +37,6 @@ Key | Value | Description
 201
 {:.label .label-POST}
 
-[Job](#job) object with HAL links.
+[Job](#job) with HAL links.
 
 ---

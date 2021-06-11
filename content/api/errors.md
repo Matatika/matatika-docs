@@ -20,27 +20,27 @@ In general:
 
 Status Code | Text | Description
 ----------- | ---- | -----------
-200 | *OK* | The request was accepted and existing or modified data was returned.
-201 | *Created* | The request was accepted and new data was added.
-202 | *Accepted* | The request was accepted and will be processed. New data will be added once processing is complete.
-400 | *Bad Request* | The request body contained malformed content of type `application/hal+json`.
-401 | *Unauthorized* | The request does not have a valid API token.
-403 | *Forbidden* | The request has a valid API token, but is not permitted.
-404 | *Not Found* | The request URI is invalid.
-405 | *Method Not Allowed* | The request HTTP method is not supported by the endpoint.
-409 | *Conflict* | The request conflicts with current state of the server.
-503 | *Service Unavailable* | The API has encountered an error. Try again later.
+`200` | `OK` | The request was accepted and existing or modified data was returned.
+`201` | `Created` | The request was accepted and new data was added.
+`202` | `Accepted` | The request was accepted and will be processed. New data will be added once processing is complete.
+`400` | `Bad Request` | The request body contained malformed content of type `application/hal+json`.
+`401` | `Unauthorized` | The request does not have a valid API token.
+`403` | `Forbidden` | The request has a valid API token, but is not permitted.
+`404` | `Not Found` | The request URI is invalid.
+`405` | `Method Not Allowed` | The request HTTP method is not supported by the endpoint.
+`409` | `Conflict` | The request conflicts with current state of the server.
+`503` | `Service Unavailable`| The API has encountered an error. Try again later.
 
 ---
 
 ## Validation errors - `4xx`
 ### Schema
 
-Path | Type | Description
----- | ---- | -----------
-`timestamp` | `String` | Timestamp denoting when the error was encountered
-`status` | `Integer` | The error response code
-`error` | `String` | The error response text
-`errors` | `Array` | Error object collection
-`message` | `String` | The error description
-`path` | `String` | The request path that resulted in the thrown error(s)
+Path | Type | Format | Description
+---- | ---- | ------ | -----------
+`timestamp` | `String` | ISO 8601 timestamp | The instant when the error was encountered
+`status` | `Integer` | HTTP status code | The error response code
+`error` | `String` | | The error response text
+`errors` | `Array` | | Error object collection
+`message` | `String` | | The error description
+`path` | `String` | | The request path that resulted in the thrown error(s)

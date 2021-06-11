@@ -31,6 +31,6 @@ Returns all comments on the dataset `{dataset-id}`.
 200
 {:.label .label-GET}
 
-[Comment object](#comment-object) collection with HAL links.
+[Comment](comments#comment) collection with HAL links.
 
 ---

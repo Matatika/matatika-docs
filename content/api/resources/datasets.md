@@ -35,7 +35,7 @@ Path | Type | Format | Description
 `metadata` | `String` | JSON | The dataset metadata. [More Info]({{site.baseurl}}/data-visualisation/metadata)
 `query` | `String` | SQL statement | The dataset query. [More Info]({{site.baseurl}}/data-visualisation/query)
 `likeCount` | `Integer` | | The number of likes the dataset has received
-`likedByProfiles` | `Array` of [`Member objects`](members#member-object) | | The members that have liked the dataset
+`likedByProfiles` | `Array` of [`Member`](members#member) | | The members that have liked the dataset
 `commentCount` | `Integer` | | The number of comments the dataset has received
 `viewCount` | `Integer` | | The number of views the dataset has received
 `created` | `String` | ISO 8601 timestamp | The instant the dataset was create

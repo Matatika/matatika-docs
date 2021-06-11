@@ -38,7 +38,7 @@ Parameter | Required | Format | Default Value | Description
 200
 {:.label .label-GET}
 
-[Notification](#notification) object collection with HAL links.
+[Notification](#notification) collection with HAL links.
 
 {% include snippets/api/notifications/view-all-notifications-for-a-workspace/response-body.md %}
 
