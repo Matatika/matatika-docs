@@ -12,12 +12,6 @@ Creates a new job from the pipeline `{pipeline-id}`.
 - Pipeline `{pipeline-id}` must exist and not already be running
 
 ### Request
-#### Headers
-
-Key | Value | Description
---- | ----- | -----------
-`enable-task-details` | `true` | Enables detailed task information in the resulting [Job](#job) response
-`enable-task-details` | `false` (default) | Disables detailed task information in the resulting [Job](#job) response
 
 #### Example Snippets
 - cURL

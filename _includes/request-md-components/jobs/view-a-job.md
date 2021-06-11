@@ -12,12 +12,6 @@ Returns the job `{job-id}`.
 - Job `{job-id}` must exist
 
 ### Request
-#### Headers
-
-Key | Value | Description
---- | ----- | -----------
-`enable-task-details` | `true` | Enables detailed task information in the resulting [Job](#job) response
-`enable-task-details` | `false` (default) | Disables detailed task information in the resulting [Job](#job) response
 
 #### Example Snippets
 - cURL

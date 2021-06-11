@@ -21,16 +21,12 @@ A job is an executing instance of a [pipeline](pipelines) that carries out the [
 ### Job
 
 Path | Type | Format | Description
----- | ---- | ----------- | -----
+---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The subscription ID
 `exitCode` | `Integer` | Process exit status | The job task exit code
 `startTime` | `String` | ISO 8601 timestamp | Timestamp denoting when the job run started
 `endTime` | `String` | ISO 8601 timestamp | Timestamp denoting when the job run ended
 `status` | `String` | [Job Status](#job-status) | The job status
-`taskName` | `String` | | The job task name (`null` unless header `enable-task-details true` is provided)
-`exitMessage` | `String` | | The job task exit message (`null` unless header `enable-task-details true` is provided)
-`arguments` | `Array` of `String` | | The job arguments (`null` unless header `enable-task-details true` is provided)
-`errorMessage` | `String` | | The job error message (`null` unless header `enable-task-details true` is provided)
 
 {% include snippets/api/jobs/view-a-job/response-body.md %}
 
