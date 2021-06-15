@@ -33,6 +33,4 @@ Returns all datasets in the workspace `{workspace-id}`.
 
 [Dataset](#dataset) collection with HAL links.
 
-{% include snippets/api/datasets/view-all-datasets-in-a-workspace/response-body.md %}
-
 ---

@@ -38,6 +38,4 @@ This request can update one or more of the [dataset](#dataset) fields at once. W
 
 [Dataset](#dataset) with HAL links.
 
-{% include snippets/api/datasets/edit-a-dataset/response-body.md %}
-
 ---

@@ -41,6 +41,4 @@ Path | Type | Format | Description
 
 [Dataset Message](#dataset-message) with HAL links.
 
-{% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
-
 ---

@@ -50,6 +50,4 @@ Path | Type | Format | Description | Required
 
 [Dataset](#dataset) with HAL links.
 
-{% include snippets/api/datasets/publish-a-dataset-to-a-workspace/response-body.md %}
-
 ---

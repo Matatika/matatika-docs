@@ -32,6 +32,4 @@ Returns the dataset `{dataset-id}`.
 
 [Dataset](#dataset) with HAL links.
 
-{% include snippets/api/datasets/view-a-dataset/response-body.md %}
-
 ---
