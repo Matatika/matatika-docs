@@ -12,6 +12,12 @@ Returns the logs of the job `{job-id}` as a streamed response, from the sequence
 - Job `{job-id}` must exist
 
 ### Request
+#### Query Parameters
+
+Parameter | Parsed Type | Default Value | Description
+--------- | ----------- | ------------- | -----------
+`sequence` | `Integer` | `0` | The section in the logs to read from
+
 #### Headers
 
 Key | Value | Description
@@ -32,15 +38,10 @@ Key | Value | Description
 {% include snippets/api/jobs/view-the-logs-of-a-job-as-json/python-requests.md %}
 {: .tabs-section-end}
 
-#### Query Parameters
-
-Parameter | Parsed Type | Default Value | Description
---------- | ----------- | ------------- | -----------
-`sequence` | `Integer` | `0` | The section in the logs to read from
-
-
 ### Response
 - `200`: The job logs in the format specified by associated request `Accept` header
 - `204`: No response body provided.
+
+{% include snippets/api/jobs/view-the-logs-of-a-job-as-plain-text/response-body.md %}
 
 ---
