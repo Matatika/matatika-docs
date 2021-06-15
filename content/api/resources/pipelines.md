@@ -35,14 +35,10 @@ Path | Type | Format | Description
 
 ### Properties
 
-For a [datasource](datasources) with `n` [`settings`](datasources#setting):
+For a [datasource](datasources) with `n > 0` [`settings`](datasources#setting):
 
 Path | Type | Description
 ---- | ---- | -----------
-`settings[0].name` | `settings[0].kind` | Refer to `settings[0].description`
-`settings[1].name` | `settings[1].kind` | Refer to `settings[1].description`
-`settings[2].name` | `settings[2].kind` | Refer to `settings[2].description`
-... | ...
 `settings[n-1].name` | `settings[n-1].kind` | Refer to `settings[n-1].description`
 
 ---
