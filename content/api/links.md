@@ -28,6 +28,7 @@ The following item link relations accept a <span>GET</span>{:.label .label-GET} 
 - `job`
 - `subscription`
 - `notification`
+- `apikey`
 
 ## Collection Relations
 The following collection link relations accept a <span>GET</span>{:.label .label-GET} request and return the respective resource representation. Expect `200 OK` to indicate the resource was successfully returned.
@@ -44,6 +45,8 @@ The following collection link relations accept a <span>GET</span>{:.label .label
 - `jobs`
 - `subscriptions`
 - `notifications`
+- `news`
+- `apikeys`
 
 ### Paging, Sizing and Sorting
 Collection link relations accept paging, sizing and sorting query parameters, used to modify the dimensions of the response payload.
