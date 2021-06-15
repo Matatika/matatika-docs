@@ -15,17 +15,6 @@ A pipeline is a workspace-specific configuration or definition for extracting, l
 
 ---
 
-## Example Resource
-{: .no_toc }
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}
-{:.path .path-GET}
-
-{% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
-
 ## Objects
 {: .no_toc }
 
@@ -41,6 +30,8 @@ Path | Type | Format | Description
 `dataSource` | `String` | | The pipeline target [datasource](datasources) `name`
 `schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
 `script` | `String` | Bash | Custom script to be executed as the pipeline job
+
+{% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
 ### Properties
 
