@@ -41,10 +41,11 @@ Path | Type | Format | Description
 
 Value | Description
 ----- | -----------
-`RUNNING` | Job is running
-`COMPLETE` | Job finished with no errors
-`ERROR` | Job finished with errors
-`UNKNOWN` | Job status is unknown
+`QUEUED` | The job is queued
+`RUNNING` | The job is running
+`COMPLETE` | The job finished with no errors
+`ERROR` | The job finished with errors
+`STOPPED` | The job was manually stopped or timed out
 
 ---
 
