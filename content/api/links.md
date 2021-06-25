@@ -23,7 +23,7 @@ The following item link relations accept a <span>GET</span>{:.label .label-GET} 
 - `channel`
 - `comment`
 - `tag`
-- `datasource`
+- `dataplugin`
 - `pipeline`
 - `job`
 - `subscription`
@@ -40,7 +40,7 @@ The following collection link relations accept a <span>GET</span>{:.label .label
 - `channels`
 - `comments`
 - `tags`
-- `datasources`
+- `dataplugins`
 - `pipelines`
 - `jobs`
 - `subscriptions`

@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Datasources
-permalink: /api/resources/datasources
+title: Dataplugins
+permalink: /api/resources/dataplugins
 parent: Resources
 grand_parent: API
 nav_order: 11
-components: request-md-components/datasources
+components: request-md-components/dataplugins
 ---
 
 # {{page.title}}
 
-Datasources simply define a source of data from a given repository. Matatika provides a number of pre-configured platform-wide datasources out-the-box, as well as the ability to create custom datasources through the API. From these, [Pipeline](pipelines) jobs can be run to inject data into a workspace.
+Dataplugins simply define a source of data from a given repository. Matatika provides a number of pre-configured platform-wide dataplugins out-the-box, as well as the ability to create custom dataplugins through the API. From these, [Pipeline](pipelines) jobs can be run to inject data into a workspace.
 {: .fs-5 }
 
 ---
@@ -18,17 +18,17 @@ Datasources simply define a source of data from a given repository. Matatika pro
 ## Objects
 {: .no_toc}
 
-### Datasource
+### Dataplugin
 
 Path | Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The datasource ID
-`name` | `String` | | The datasource name
-`description` | `String` | | A description of the datasource
-`repositoryUrl` | `String` | URL | The datasource repository URL
-`settings` | `Array` of [`Setting`](#setting)s | | The datasource settings
+`id` | `String` | Version 4 UUID | The dataplugin ID
+`name` | `String` | | The dataplugin name
+`description` | `String` | | A description of the dataplugin
+`repositoryUrl` | `String` | URL | The dataplugin repository URL
+`settings` | `Array` of [`Setting`](#setting)s | | The dataplugin settings
 
-{% include snippets/api/datasources/view-a-datasource-available-to-a-workspace/response-body.md %}
+{% include snippets/api/dataplugins/view-a-dataplugin-available-to-a-workspace/response-body.md %}
 
 ### Setting
 
@@ -83,10 +83,10 @@ Value | Description
 
 ---
 
-{% include {{ page.components }}/view-all-datasources.md %}
-{% include {{ page.components }}/view-all-datasources-available-to-a-workspace.md %}
-{% include {{ page.components }}/view-a-datasource-available-to-a-workspace.md %}
-{% include {{ page.components }}/initialise-a-new-datasource.md %}
-{% include {{ page.components }}/create-a-datasource.md %}
-{% include {{ page.components }}/update-a-datasource.md %}
-{% include {{ page.components }}/delete-a-datasource.md %}
+{% include {{ page.components }}/view-all-dataplugins.md %}
+{% include {{ page.components }}/view-all-dataplugins-available-to-a-workspace.md %}
+{% include {{ page.components }}/view-a-dataplugin-available-to-a-workspace.md %}
+{% include {{ page.components }}/initialise-a-new-dataplugin.md %}
+{% include {{ page.components }}/create-a-dataplugin.md %}
+{% include {{ page.components }}/update-a-dataplugin.md %}
+{% include {{ page.components }}/delete-a-dataplugin.md %}

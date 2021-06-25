@@ -10,7 +10,7 @@ components: request-md-components/jobs
 
 # {{page.title}}
 
-A job is an executing instance of a [pipeline](pipelines) that carries out the [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform) process for the configured [datasource](datasources). Jobs can be run manually or on a defined schedule, to inject data into a workspace either instantly or periodically. Only a single job can be run at a time for a given pipeline.
+A job is an executing instance of a [pipeline](pipelines) that carries out the [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform) process for the configured [dataplugin](dataplugins). Jobs can be run manually or on a defined schedule, to inject data into a workspace either instantly or periodically. Only a single job can be run at a time for a given pipeline.
 {: .fs-5 }
 
 ---

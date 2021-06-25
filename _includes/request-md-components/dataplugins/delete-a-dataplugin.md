@@ -1,24 +1,24 @@
-## Delete a datasource
+## Delete a dataplugin
 
 DELETE
 {:.label .label-DELETE}
 
-/api/datasources/{datasource-id}
+/api/dataplugins/{dataplugin-id}
 {:.path .path-DELETE}
 
-Deletes the datasource `{datasource-id}`.
+Deletes the dataplugin `{dataplugin-id}`.
 
 ### Request
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/datasources/delete-a-datasource/curl-request.md %}
+{% include snippets/api/dataplugins/delete-a-dataplugin/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/datasources/delete-a-datasource/python-requests.md %}
+{% include snippets/api/dataplugins/delete-a-dataplugin/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

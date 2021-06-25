@@ -18,8 +18,8 @@ Creates or updates the pipeline `{pipeline-id}` in the workspace `{workspace-id}
 Path | Type | Description | Constraints
 ---- | ---- | ----------- | -----------
 `name` | `String` | The pipeline name | 
-`dataSource` | `String` | The pipeline target [datasource](datasources) `name` |
-`properties` | `String` | The [datasource](datasources) 
+`dataSource` | `String` | The pipeline target [dataplugin](dataplugins) `name` |
+`properties` | `String` | The [dataplugin](dataplugins) 
 
 #### Example Snippets
 - cURL

@@ -10,7 +10,7 @@ components: request-md-components/pipelines
 
 # {{page.title}}
 
-A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [datasource](datasources) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform). Pipelines can be run as [jobs](jobs) to load data into a workspace.
+A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform). Pipelines can be run as [jobs](jobs) to load data into a workspace.
 {: .fs-5 }
 
 ---
@@ -26,8 +26,8 @@ Path | Type | Format | Description
 `name` | `String` | | The pipeline name
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
-`properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [datasource](datasources) `settings`
-`dataSource` | `String` | | The pipeline target [datasource](datasources) `name`
+`properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [dataplugin](dataplugins) `settings`
+`dataSource` | `String` | | The pipeline target [dataplugin](dataplugins) `name`
 `schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
 `script` | `String` | Bash | Custom script to be executed as the pipeline job
 
@@ -35,7 +35,7 @@ Path | Type | Format | Description
 
 ### Properties
 
-For a [datasource](datasources) with `n > 0` [`settings`](datasources#setting):
+For a [dataplugin](dataplugins) with `n > 0` [`settings`](dataplugins#setting):
 
 Path | Type | Description
 ---- | ---- | -----------
