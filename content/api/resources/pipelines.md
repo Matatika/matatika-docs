@@ -60,4 +60,5 @@ Path | Type | Description
 {% include {{page.components}}/view-a-pipeline.md %}
 {% include {{page.components}}/initialise-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/create-or-update-a-pipeline-in-a-workspace.md %}
+{% include {{page.components}}/verify-a-pipeline.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}
