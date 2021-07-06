@@ -23,13 +23,15 @@ A pipeline is a workspace-specific configuration or definition for extracting, l
 Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The pipeline ID 
+`status` | `String` | [Pipeline Status](#pipeline-status)
 `name` | `String` | | The pipeline name
+`schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
+`timeout` | `Integer` | Unsigned | The number of seconds after which the job will terminate - if set to `0`, an implicit default value of 300 seconds is used
+`script` | `String` | Bash | Custom script to be executed as the pipeline job
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
 `properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [dataplugin](dataplugins) `settings`
 `dataSource` | `String` | | The pipeline target [dataplugin](dataplugins) `name`
-`schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
-`script` | `String` | Bash | Custom script to be executed as the pipeline job
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
@@ -40,6 +42,18 @@ For a [dataplugin](dataplugins) with `n > 0` [`settings`](dataplugins#setting):
 Path | Type | Description
 ---- | ---- | -----------
 `settings[n-1].name` | `settings[n-1].kind` | Refer to `settings[n-1].description`
+
+## Formats
+{: .no_toc}
+
+### Pipeline Status
+{: .d-inline-block }
+
+Value | Description
+----- | -----------
+`READY` | The pipeline completed processing resource changes
+`PROVISIONING` | The pipeline is processing resource changes
+`FAILED` | The pipeline failed to process resource changes
 
 ---
 
