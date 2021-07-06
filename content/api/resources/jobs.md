@@ -22,11 +22,13 @@ A job is an executing instance of a [pipeline](pipelines) that carries out the [
 
 Path | Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The subscription ID
-`exitCode` | `Integer` | Process exit status | The job task exit code
-`startTime` | `String` | ISO 8601 timestamp | Timestamp denoting when the job run started
-`endTime` | `String` | ISO 8601 timestamp | Timestamp denoting when the job run ended
+`id` | `String` | Version 4 UUID | The job ID
+`created` | `String` | ISO 8601 timestamp | The instant at which the job was created
+`type` | `String` | [Job Type](#job-type)
+`exitCode` | `Integer` | Process exit status | The job exit code
 `status` | `String` | [Job Status](#job-status) | The job status
+`startTime` | `String` | ISO 8601 timestamp | The instant at which the job run started
+`endTime` | `String` | ISO 8601 timestamp | The instant at which the job run ended
 
 {% include snippets/api/jobs/view-a-job/response-body.md %}
 
@@ -46,6 +48,19 @@ Value | Description
 `COMPLETE` | The job finished with no errors
 `ERROR` | The job finished with errors
 `STOPPED` | The job was manually stopped or timed out
+
+### Job Type
+{: .d-inline-block }
+
+`String`
+{: .float-right .mt-5 }
+
+Value | Description
+----- | -----------
+`WORKSPACE_INIT` | A workspace initialisation job
+`PIPELINE_CONFIG` | A pipeline configuration job
+`PIPELINE_ENV` | A pipeline environment job
+`PIPELINE_RUN` | A pipeline run job
 
 ---
 
