@@ -31,7 +31,11 @@ Path | Type | Format | Description
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
 `properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [dataplugin](dataplugins) `settings`
-`dataSource` | `String` | | The pipeline target [dataplugin](dataplugins) `name`
+`dataSource` | `String` | | The pipeline datasource [dataplugin](dataplugins) `name`
+`dataStore` | `String` | Version 4 UUID | The pipeline datastore `id`
+`_embedded.dataSource` | [`DataPlugin`](dataplugins#dataplugin) | | The pipeline datasource [dataplugin](dataplugins)
+`_embedded.dataStore` | `DataStore` | | The pipeline datastore
+`_embedded.'latest job'` | [`Job`](jobs#job) | | The latest [job](jobs) run from the pipeline
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
