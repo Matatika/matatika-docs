@@ -11,6 +11,11 @@ Creates or updates the datastore `{datastore-id}` in the workspace `{workspace-i
 ### Prerequisites
 - Workspace `{workspace-id}` must exist
 
+### Request
+
+#### Body
+[Datastore](#datastore) resource.
+
 ### Response
 {: .d-inline-block }
 

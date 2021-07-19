@@ -18,12 +18,14 @@ Datastores define a destination for data loaded into a [workspace](workspaces) b
 ## Objects
 {: .no_toc}
 
-### Dataplugin
+### Datastore
 
 Path | Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The dataplugin ID
-`name` | `String` | | The dataplugin name
+`id` | `String` | Version 4 UUID | The datastore ID
+`created` | `String` | ISO 8601 timestamp | The instant at which the datastore was created
+`lastModified` | `String` | ISO 8601 timestamp | The instant at which the datastore was last modified
+`name` | `String` | | The datastore name
 `loader` | `String` | | The datastore loader [dataplugin](dataplugins#dataplugin) `name`
 `workspace` | `String` | Version 4 UUID | The datastore [workspace](workspaces#workspace) `id`
 `jdbcUrl` | `String` | [JDBC URL](https://docs.oracle.com/cd/E17952_01/connector-j-8.0-en/connector-j-reference-jdbc-url-format.html) | The datastore JDBC URL
