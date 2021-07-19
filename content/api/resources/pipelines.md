@@ -41,11 +41,11 @@ Path | Type | Format | Description
 
 ### Properties
 
-For a [dataplugin](dataplugins) with `n > 0` [`settings`](dataplugins#setting):
+For each setting `s` in the [dataplugin](dataplugins) [`settings`](dataplugins#setting):
 
 Path | Type | Description
 ---- | ---- | -----------
-`settings[n-1].name` | `settings[n-1].kind` | Refer to `settings[n-1].description`
+`s.name` | `s.kind` | Refer to `s.description`
 
 ## Formats
 {: .no_toc}
