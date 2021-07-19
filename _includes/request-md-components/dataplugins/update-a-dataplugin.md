@@ -13,7 +13,7 @@ Updates the dataplugin `{dataplugin-id}`.
 
 ### Request
 #### Body
-
+[Dataplugin](#dataplugin) resource.
 {% include snippets/api/dataplugins/update-a-dataplugin/request-body.md %}
 
 Path | Type | Description | Constraints

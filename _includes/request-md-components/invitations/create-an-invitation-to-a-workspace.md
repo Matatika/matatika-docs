@@ -15,12 +15,8 @@ Creates an invitation to the workspace `{workspace-id}`.
 ### Request
 
 #### Body
-
+[Invitation](#invitation) resource.
 {% include snippets/api/invitations/create-an-invitation-to-a-workspace/request-body.md %}
-
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`email` | `String` | The email address of the invitation recipient | Must not be empty; must be a valid email address; email address domain must exist in the workspace allowed domains
 
 #### Example Snippets
 - cURL

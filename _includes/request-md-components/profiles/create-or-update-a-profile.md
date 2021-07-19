@@ -15,14 +15,8 @@ Creates or updates the user profile.
 ### Request
 
 #### Body
-
+[Profile](#profile) resource.
 {% include snippets/api/profiles/update-a-profile/request-body.md %}
-
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`name` | `String` | The profile name | Must not be empty
-`phone` | `String` | The profile phone number
-`email` | `String` | The profile email address | Must not be empty; must be a valid email address
 
 #### Example Snippets
 - cURL
@@ -41,8 +35,6 @@ Path | Type | Description | Constraints
 
 201 / 200
 {:.label .label-PUT}
-
-#### Body
 
 [Profile](#profile) with HAL links.
 

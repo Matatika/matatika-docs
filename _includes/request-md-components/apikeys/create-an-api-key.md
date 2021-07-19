@@ -14,12 +14,8 @@ Creates the API key `{apikey-id}`.
 ### Request
 
 #### Body
-
+[API key](#api-key) resource.
 {% include snippets/api/apikeys/create-an-api-key/request-body.md %}
-
-Path | Type | Description
----- | ---- | -----------
-`name` | `String` | The API key name
 
 #### Example Snippets
 - cURL

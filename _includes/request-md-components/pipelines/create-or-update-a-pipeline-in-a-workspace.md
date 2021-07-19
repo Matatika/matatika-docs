@@ -14,12 +14,8 @@ Creates or updates the pipeline `{pipeline-id}` in the workspace `{workspace-id}
 ### Request
 
 #### Body
-
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`name` | `String` | The pipeline name | 
-`dataSource` | `String` | The pipeline target [dataplugin](dataplugins) `name` |
-`properties` | `String` | The [dataplugin](dataplugins) 
+[Pipeline](#pipeline) resource.
+{% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/request-body.md %}
 
 #### Example Snippets
 - cURL

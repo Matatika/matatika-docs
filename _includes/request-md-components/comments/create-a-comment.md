@@ -14,15 +14,9 @@ Creates the comment `{comment-id}`.
 - The target dataset `{dataset-id}` or comment `{comment-id}` must exist
 
 ### Request
-
 #### Body
-
+[Comment](#comment) resource.
 {% include snippets/api/comments/create-a-comment/request-body.md %}
-
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`message` | `String` | The comment message | Must not be empty
-`datasetId` | `String` | The target dataset ID of the comment | Must be a valid and existing dataset UUID
 
 #### Example Snippets
 - cURL
@@ -42,6 +36,6 @@ Path | Type | Description | Constraints
 201
 {:.label .label-PUT}
 
-[Comment](comments#comment) with HAL links.
+[Comment](#comment) with HAL links.
 
 ---

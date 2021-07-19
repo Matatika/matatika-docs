@@ -10,15 +10,8 @@ Creates the dataplugin `{dataplugin-id}`.
 
 ### Request
 #### Body
-
+[Dataplugin](#dataplugin) resource.
 {% include snippets/api/dataplugins/create-a-dataplugin/request-body.md %}
-
-Path | Type | Description | Required | Constraints
----- | ---- | ----------- | -------- | -----------
-`name` | `String` | The dataplugin name | Yes | Not empty
-`description` | `String` | A description of the dataplugin | No |
-`repositoryUrl` | `String` | The dataplugin repository URL | No |
-`settings` | `Array` of [`Setting`](#setting)s | The dataplugin settings | No |
 
 #### Example Snippets
 - cURL
