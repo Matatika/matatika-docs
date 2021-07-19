@@ -10,10 +10,12 @@ Returns all available dataplugins.
 
 ### Request
 #### Headers
+##### Accept
 
-Key | Value | Description
---- | ----- | -----------
-`Accept` | `application/hal+json` | Returns the response data in HAL JSON format.
+Media Type(s) | Description
+------------- | -----------
+`*/*` | Set the response content to the Matatika [`discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins)
+`application/hal+json` | Sets the response content type format to [HAL JSON](https://en.wikipedia.org/wiki/Hypertext_Application_Language) format.
 
 #### Example Snippets
 - cURL

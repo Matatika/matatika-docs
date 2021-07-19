@@ -6,7 +6,7 @@ GET
 /api/jobs/{job-id}/logs?sequence={sequence}
 {:.path .path-GET}
 
-Returns the logs of the job `{job-id}` as a streamed response, from the sequence `{sequence}`.
+Returns the logs of the job `{job-id}`.
 
 ### Prerequisites
 - Job `{job-id}` must exist
@@ -14,17 +14,18 @@ Returns the logs of the job `{job-id}` as a streamed response, from the sequence
 ### Request
 #### Query Parameters
 
-Parameter | Parsed Type | Default Value | Description
---------- | ----------- | ------------- | -----------
-`sequence` | `Integer` | `0` | The section in the logs to read from
+Query Parameter | Format | Default Value | Description
+--------------- | ------ | ------------- | -----------
+`sequence` | Unsigned integer | `0` | The line number in the logs to read from
 
 #### Headers
+##### Accept
 
-Key | Value | Description
---- | ----- | -----------
-`Accept` | `application/stream+json` | Sets the response content type format to `application/stream+json`
-`Accept` | `text/plain` | Sets the response content type format to `text/plain`
-`Accept` | `*/*` (all other values) | Sets the response content type format to `text/plain`
+Media Type(s) | Description
+------------- | -----------
+`text/plain` `*/*` | Sets the response content type format to plain text
+`application/stream+json` `application/x-ndjson` | Sets the response content type format to [NDJSON](http://ndjson.org/)
+
 
 #### Example Snippets
 - cURL

@@ -13,10 +13,14 @@ Returns the data of the dataset `{dataset-id}`.
 
 ### Request
 #### Headers
+##### Accept
 
-Key | Value | Description
---- | ----- | -----------
-`Accept` | `text/csv` | Returns the data in CSV format.
+Media Type(s) | Description
+------------- | -----------
+`application/json` `*/*` | Sets the response content type format to JSON
+`text/csv` | Sets the response content type format to CSV
+
+Defaults to `application/json` (given `Accept */*` or no `Accept` header).
 
 #### Example Snippets
 - cURL
