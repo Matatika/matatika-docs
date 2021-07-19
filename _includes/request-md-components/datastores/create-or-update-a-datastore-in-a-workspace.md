@@ -15,6 +15,19 @@ Creates or updates the datastore `{datastore-id}` in the workspace `{workspace-i
 
 #### Body
 [Datastore](#datastore) resource.
+{% include snippets/api/datastores/create-a-datastore-in-a-workspace/request-body.md %}
+
+#### Example Snippets
+- cURL
+{: .tab .tabs-section-start}
+
+{% include snippets/api/datastores/create-a-datastore-in-a-workspace/curl-request.md %}
+
+- Python (requests)
+{: .tab}
+
+{% include snippets/api/datastores/create-a-datastore-in-a-workspace/python-requests.md %}
+{: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }
