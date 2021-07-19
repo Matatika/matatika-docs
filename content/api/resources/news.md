@@ -4,7 +4,7 @@ title: News
 permalink: /api/resources/news
 parent: Resources
 grand_parent: API
-nav_order: 16
+nav_order: 17
 components: request-md-components/news
 ---
 

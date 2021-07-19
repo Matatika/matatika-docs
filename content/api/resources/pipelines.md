@@ -4,7 +4,7 @@ title: Pipelines
 permalink: /api/resources/pipelines
 parent: Resources
 grand_parent: API
-nav_order: 12
+nav_order: 13
 components: request-md-components/pipelines
 ---
 
