@@ -9,6 +9,12 @@ GET
 Returns all available dataplugins.
 
 ### Request
+#### Headers
+
+Key | Value | Description
+--- | ----- | -----------
+`Accept` | `application/hal+json` | Returns the response data in HAL JSON format.
+
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
