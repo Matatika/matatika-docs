@@ -3,7 +3,7 @@
 GET
 {:.label .label-GET}
 
-/api/workspace/{channel-id}/channels
+/api/workspaces/{channel-id}/channels
 {:.path .path-GET}
 
 Returns all channels in the workspace `{workspace-id}`.

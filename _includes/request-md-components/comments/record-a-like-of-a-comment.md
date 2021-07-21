@@ -3,7 +3,7 @@
 PUT
 {:.label .label-PUT}
 
-/api/comment/{comment-id}/like
+/api/comments/{comment-id}/like
 {:.path .path-PUT}
 
 Records a like of the comment `{comment-id}` from the authenticated user profile.

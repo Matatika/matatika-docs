@@ -3,7 +3,7 @@
 POST
 {:.label .label-POST}
 
-/api/pipeline/{pipeline-id}/jobs
+/api/pipelines/{pipeline-id}/jobs
 {:.path .path-POST}
 
 Creates a new job from the pipeline `{pipeline-id}`.

@@ -3,7 +3,7 @@
 GET
 {:.label .label-GET}
 
-/api/workspace/{workspace-id}/members/subscriptions
+/api/workspaces/{workspace-id}/members/subscriptions
 {:.path .path-GET}
 
 Returns all member subscriptions to the workspace `{workspace-id}`.

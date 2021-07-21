@@ -3,7 +3,7 @@
 GET
 {:.label .label-GET}
 
-/api/pipeline/{pipeline-id}/jobs
+/api/pipelines/{pipeline-id}/jobs
 {:.path .path-GET}
 
 Returns all running or completed jobs for the pipeline `{pipeline-id}`.
