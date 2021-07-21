@@ -47,7 +47,7 @@ Value | Description
 `RUNNING` | The job is running
 `COMPLETE` | The job finished with no errors
 `ERROR` | The job finished with errors
-`STOPPED` | The job was manually stopped or timed out
+`STOPPED` | The job timed out or was manually stopped
 
 ### Job Type
 {: .d-inline-block }
@@ -76,4 +76,5 @@ Value | Description
 {% include {{page.components}}/view-a-job.md %}
 {% include {{page.components}}/view-the-logs-of-a-job.md %}
 {% include {{page.components}}/create-a-job-from-a-pipeline.md %}
+{% include {{page.components}}/stop-a-job.md %}
 {% include {{page.components}}/delete-a-job.md %}
