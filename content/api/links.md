@@ -95,6 +95,9 @@ Make a <span>POST</span>{:.label .label-POST} request to this link to initialise
 ## `publish`
 Make a <span>POST</span>{:.label .label-POST} request to this link to publish data into a resource. Expect `201 Created` or `200 OK` to indicate the resource was successfully published.
 
+## `validate`
+Make a <span>POST</span>{:.label .label-POST} request to this link to validate a resource. Expect `200 OK` to indicate the resource was successfully validated.
+
 ## `verify`
 Make a <span>POST</span>{:.label .label-POST} request to this link to verify a resource. Expect `200 OK` to indicate the resource was successfully verified.
 
