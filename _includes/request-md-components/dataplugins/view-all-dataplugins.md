@@ -14,7 +14,7 @@ Returns all available dataplugins.
 
 Media Type(s) | Description
 ------------- | -----------
-`*/*` | Set the response content to the Matatika [`discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins)
+`*/*` | Set the response content type format to [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins)
 `application/hal+json` | Sets the response content type format to [HAL JSON](https://en.wikipedia.org/wiki/Hypertext_Application_Language) format.
 
 #### Example Snippets
@@ -38,5 +38,9 @@ Media Type(s) | Description
 [Dataplugin](#dataplugin) collection with HAL links.
 
 {% include snippets/api/dataplugins/view-all-dataplugins/response-body.md %}
+
+[Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins).
+
+{% include snippets/api/dataplugins/view-all-supported-and-custom-dataplugins-discovery-yml/response-body.md %}
 
 ---
