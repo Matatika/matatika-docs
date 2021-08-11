@@ -1,4 +1,4 @@
-## Withdraw a dataset
+## Deletes a dataset
 
 DELETE
 {:.label .label-DELETE}
@@ -6,7 +6,7 @@ DELETE
 /api/datasets/{dataset-id}
 {:.path .path-DELETE}
 
-Withdraws the dataset `{dataset-id}`.
+Deletes the dataset `{dataset-id}`.
 
 ### Prerequisites
 
@@ -17,12 +17,12 @@ Withdraws the dataset `{dataset-id}`.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/datasets/withdraw-a-dataset/curl-request.md %}
+{% include snippets/api/datasets/delete-a-dataset/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/datasets/withdraw-a-dataset/python-requests.md %}
+{% include snippets/api/datasets/delete-a-dataset/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
