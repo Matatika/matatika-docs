@@ -1,4 +1,4 @@
-## Deletes a dataset
+## Delete a dataset
 
 DELETE
 {:.label .label-DELETE}
