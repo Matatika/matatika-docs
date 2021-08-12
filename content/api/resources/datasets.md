@@ -83,7 +83,7 @@ Path | Type | Format | Description
 {% include {{ page.components }}/remove-a-like-from-a-dataset.md %}
 {% include {{ page.components }}/initialise-a-new-dataset-message.md %}
 {% include {{ page.components }}/create-or-update-a-dataset-message.md %}
-{% include {{ page.components }}/withdraw-a-dataset.md %}
+{% include {{ page.components }}/delete-a-dataset.md %}
 
 ---
 
