@@ -1,7 +1,7 @@
 ---
-layour: default
+layout: default
 title: tap-google-analytics
-permalink: /datasources/tap-google-analytics
+permalink: /datasources/tap-google-analytics/
 parent: Datasources
 has_children: true
 nav_order: 1
@@ -68,8 +68,9 @@ Providing a start date allows you to set how much historical data you wish to im
 
 This date has to be in the ISO-8601 date format, see the example below.
 
-Example: 2020-10-01T13:12:11Z
+Format: `YYYY-MM-DDTHH:MM:SSZ`
 
+Example: `2020-10-01T13:12:11Z`
 
 ## End Date
 
@@ -77,7 +78,9 @@ Providing an end date allows you to limit how much data you wish to import into 
 
 This date has to be in the ISO-8601 date format, see the example below.
 
-Example: 2020-10-01T13:12:11Z
+Format: `YYYY-MM-DDTHH:MM:SSZ`
+
+Example: `2020-10-01T13:12:11Z`
 
 ## Reports
 
