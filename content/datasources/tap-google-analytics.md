@@ -28,33 +28,33 @@ For setting up your oauth authentication for Google Analytics, we recommend usin
 
 Google Analytics API `oauth_credentials.access_token`
 
-To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
-More Info: [https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
+More Info: [OAuth2 Authorization Google Analytics](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
 
 ## Client ID
 
 Google Analytics API `oauth_credentials.client_id`
 
-To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
-More Info: [https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
+More Info: [OAuth2 Authorization Google Analytics](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
 
 ## Client Secret
 
 Google Analytics API `oauth_credentials.client_secret`
 
-To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
-More Info: [https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
+More Info: [OAuth2 Authorization Google Analytics](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
 
 ## Refresh Token
 
 Google Analytics API `oauth_credentials.refresh_token`
 
-To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your Access Token you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
-More Info: [https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
+More Info: [OAuth2 Authorization Google Analytics](https://developers.google.com/analytics/devguides/reporting/core/v4/authorization#OAuth2Authorizing)
 
 ## View ID
 
