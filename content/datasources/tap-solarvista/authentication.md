@@ -33,7 +33,12 @@ Once you have Postman installed, download our [Solarvista Postman Collection]() 
 
 ## Postman Setup
 
+Once you have [Postman](https://www.postman.com/) downloaded and installed, you should download our [Solarvista Postman Collection]().
 
+Below are links to useful Postman Documentation that will help you with the Solarvista API Access Setup:
+- [Installing Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/)
+- [Navigating Postman](https://learning.postman.com/docs/getting-started/navigating-postman/)
+- [Importing Collections to Postman](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/)
 
 ## Solarvista API Access Setup
 
