@@ -4,7 +4,7 @@ title: tap-solarvista
 permalink: /datasources/tap-solarvista
 parent: Datasources
 has_children: true
-nav_order: 1
+nav_order: 2
 ---
 
 # {{page.title}}
@@ -18,7 +18,7 @@ We make use of our own Meltano extractor [`tap-solarvista`](https://github.com/M
 
 ## Authentication
 
-To get the properties required to extract data from your Solarvista API, you can follow the steps laid out in our [Authenticaion Guide]().
+To get the properties required to extract data from your Solarvista API, you can follow the steps laid out in our [Authentication Guide](authentication).
 
 ---
 
@@ -28,19 +28,19 @@ To get the properties required to extract data from your Solarvista API, you can
 
 Solarvista API `account`
 
-To get your `account` id you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your `account` id you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
 ## ClientId
 
 Solarvista API `clientId`
 
-To get your `clientId` you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your `clientId` you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
 ## Code
 
 Solarvista API `code`
 
-To get your `code` you will need to follow the steps that are linked in our [Authentication](#authenticaion) section.
+To get your `code` you will need to follow the steps that are linked in our [Authentication](#authentication) section.
 
 ## Datasources
 
