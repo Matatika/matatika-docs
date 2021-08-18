@@ -29,11 +29,12 @@ If you do not have a Solarvista account with API access you will need to ask you
 
 [Postman](https://www.postman.com/) is an application used API calling, testing and development. We use it in our set up guide to get the authentication details from your Solarvista API.
 
-Once you have Postman installed, download our [Solarvista Postman Collection]() which has all the API requests you need to follow the below steps.
-
 ## Postman Setup
 
-Once you have [Postman](https://www.postman.com/) downloaded and installed, you should download our [Solarvista Postman Collection]().
+Once you have [Postman](https://www.postman.com/) downloaded and installed, you should download our Solarvista Postman Collection.
+
+`{{site.www_url}}/docs/datasources/tap-solarvista/solarvista_api.json`{: #postman-collection-url .fs-5 }
+{: .text-center }
 
 Below are links to useful Postman Documentation that will help you with the Solarvista API Access Setup:
 - [Installing Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/)
