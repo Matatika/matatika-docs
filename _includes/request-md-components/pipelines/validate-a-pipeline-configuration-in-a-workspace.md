@@ -3,7 +3,7 @@
 POST
 {:.label .label-POST}
 
-/api/workspaces/{workspace-id}/pipelines/validate
+/api/workspaces/{workspace-id}/pipelines/validation
 {:.path .path-POST}
 
 Validates a pipeline configuration in the workspace `{workspace-id}`.

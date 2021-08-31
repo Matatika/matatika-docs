@@ -3,7 +3,7 @@
 POST
 {:.label .label-POST}
 
-/api/pipelines/{pipeline-id}/verify
+/api/pipelines/{pipeline-id}/verification
 {:.path .path-POST}
 
 Verifies the configuration of the pipeline `{pipeline-id}`.
