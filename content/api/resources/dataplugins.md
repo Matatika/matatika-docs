@@ -83,9 +83,9 @@ Value | Description
 
 ---
 
-{% include {{ page.components }}/view-all-dataplugins.md %}
-{% include {{ page.components }}/view-all-dataplugins-available-to-a-workspace.md %}
-{% include {{ page.components }}/view-a-dataplugin-available-to-a-workspace.md %}
+{% include {{ page.components }}/view-all-supported-dataplugins.md %}
+{% include {{ page.components }}/view-all-workspace-dataplugins.md %}
+{% include {{ page.components }}/view-a-workspace-dataplugin.md %}
 {% include {{ page.components }}/initialise-a-new-dataplugin.md %}
 {% include {{ page.components }}/create-a-dataplugin.md %}
 {% include {{ page.components }}/update-a-dataplugin.md %}

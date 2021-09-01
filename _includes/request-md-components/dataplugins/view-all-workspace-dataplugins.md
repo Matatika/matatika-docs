@@ -1,4 +1,4 @@
-## View all dataplugins available to a workspace
+## View all workspace dataplugins
 
 GET
 {:.label .label-GET}
@@ -16,22 +16,22 @@ Returns all dataplugins available to the workspace `{workspace-id}`.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/dataplugins/view-all-dataplugins-available-to-a-workspace/curl-request.md %}
+{% include snippets/api/dataplugins/view-all-workspace-dataplugins/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/dataplugins/view-all-dataplugins-available-to-a-workspace/python-requests.md %}
+{% include snippets/api/dataplugins/view-all-workspace-dataplugins/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
 {: .d-inline-block }
 
-200
-{:.label .label-GET}
+### `200 OK`
+{: .fs-4 .path-GET }
 
 [Dataplugin](#dataplugin) collection with HAL links.
 
-{% include snippets/api/dataplugins/view-all-dataplugins-available-to-a-workspace/response-body.md %}
+{% include snippets/api/dataplugins/view-all-workspace-dataplugins/response-body.md %}
 
 ---
