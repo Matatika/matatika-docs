@@ -65,6 +65,7 @@ Value | Description
 - [View all members of a workspace](members#view-all-members-of-a-workspace)
 - [View a member of a workspace](members#view-a-member-of-a-workspace)
 - [View all channels in a workspace](channels#view-all-channels-in-a-workspace)
+- [View all liked datasets in a workspace](datasets#view-all-liked-datasets-in-a-workspace)
 - [View the feed of a workspace](feed#view-the-feed-of-a-workspace)
 - [View all pipelines in a workspace](pipelines#view-all-pipelines-in-a-workspace)
 - [View a pipeline in a workspace](pipelines#view-a-pipeline-in-a-workspace)

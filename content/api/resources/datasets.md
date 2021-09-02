@@ -72,6 +72,7 @@ Path | Type | Format | Description
 ---
 
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
+{% include {{ page.components }}/view-datasets-in-a-workspace-liked-by-profile.md %}
 {% include {{ page.components }}/view-datasets-by-channel.md %}
 {% include {{ page.components }}/view-a-dataset.md %}
 {% include {{ page.components }}/view-a-dataset-in-a-workspace.md %}
