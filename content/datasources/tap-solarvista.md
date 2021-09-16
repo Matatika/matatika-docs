@@ -1,6 +1,6 @@
 ---
 layout: default
-title: tap-solarvista
+title: Solarvista
 permalink: /datasources/tap-solarvista
 parent: Datasources
 has_children: true

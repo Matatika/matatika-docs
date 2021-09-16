@@ -2,7 +2,7 @@
 layout: default
 title: Prerequisites
 permalink: /datasources/tap-solarvista/prerequisites
-parent: tap-solarvista
+parent: Solarvista
 grand_parent: Datasources
 nav_order: 1
 

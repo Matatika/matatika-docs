@@ -2,7 +2,7 @@
 layout: default
 title: Insights
 permalink: /datasources/tap-solarvista/insights
-parent: tap-solarvista
+parent: Solarvista
 grand_parent: Datasources
 nav_order: 2
 
