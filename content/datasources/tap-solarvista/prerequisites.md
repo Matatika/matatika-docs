@@ -1,19 +1,14 @@
 ---
 layout: default
-title: Authentication
-permalink: /datasources/tap-solarvista/authentication
+title: Prerequisites
+permalink: /datasources/tap-solarvista/prerequisites
 parent: tap-solarvista
 grand_parent: Datasources
-nav_order: 2
+nav_order: 1
 
 ---
 
-# {{page.title}}
-
----
-
-Solarvista Authentication Guide
-{: .fs-5 }
+# Solarvista {{page.title}}
 
 ---
 
@@ -29,6 +24,8 @@ If you do not have a Solarvista account with API access you will need to ask you
 
 [Postman](https://www.postman.com/) is an application used API calling, testing and development. We use it in our set up guide to get the authentication details from your Solarvista API.
 
+---
+
 ## Postman Setup
 
 Once you have [Postman](https://www.postman.com/) downloaded and installed, you should download our Solarvista Postman Collection.
@@ -41,8 +38,23 @@ Below are links to useful Postman Documentation that will help you with the Sola
 - [Navigating Postman](https://learning.postman.com/docs/getting-started/navigating-postman/)
 - [Importing Collections to Postman](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/)
 
+---
+
+## Importing the Solarvista Postman Collection
+
+Once you have postman install and running:
+
+1. Download our Solarvista Postman Collection.
+2. Create or enter a Postman Workspace.
+3. Click the Import button, found just left of the top of the main center screen.
+4. Drag and drop, or browse to the solarvista_postman_collection.json you downloaded onto the window.
+5. Now you should see Solarvista API in your list of collections.
+
+---
+
 ## Solarvista API Access Setup
 
+1. Download and Import our Solarvista Postman Collection
 1. Click on the name of the collection in the list of collections on the left hand side of Postman.
 2. Click on the three dots at the end of the name.
 3. In center of your screen the Solarvista collection will have opened. Click on the `Variables` tab just below the name.
@@ -55,3 +67,5 @@ Below are links to useful Postman Documentation that will help you with the Sola
 10. Expand the collection in the list of the left hand side of Postman, and click on `Setup Token` right at the bottom.
 11. Click the `Send` button in the top right.
 12. You will then get a reponse in the bottom center of Postman with your `clientId` and `code` which are required for a Solarvista Pipeline.
+
+If at any stage you get a message saying you do not have access to this API, you will need to get you admininstator to update your account's permissions.
