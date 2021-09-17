@@ -66,6 +66,7 @@ Once you have postman install and running:
 9. After choosing your account, the window will countdown from 5, and then display a `MANAGE ACCESS TOKENS` window. Click `Use Token` in the top right.
 10. Expand the collection in the list of the left hand side of Postman, and click on `Setup Token` right at the bottom.
 11. Click the `Send` button in the top right.
-12. You will then get a reponse in the bottom center of Postman with your `clientId` and `code` which are required for a Solarvista Pipeline.
+12. You will then get a response in the bottom center of Postman with your `clientId` and `code` which are required for a Solarvista Pipeline.
+13. (Optional) In the collection list on the left hand side of postman, there is a POST request called Work-Items. Click this and click the Send button. If you get a list of Work Items as the response, you know you have API access on your user account.
 
 If at any stage you get a message saying you do not have access to this API, you will need to get you admininstator to update your account's permissions.
