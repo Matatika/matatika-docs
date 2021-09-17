@@ -1,6 +1,6 @@
 ---
 layout: default
-title: tap-google-analytics
+title: Google Analytics
 permalink: /datasources/tap-google-analytics/
 parent: Datasources
 has_children: true
