@@ -4,7 +4,7 @@ title: Insights
 permalink: /datasources/tap-google-analytics/insights
 parent: Google Analytics
 grand_parent: Datasources
-nav_order: 1
+nav_order: 2
 ---
 
 # {{page.title}}
