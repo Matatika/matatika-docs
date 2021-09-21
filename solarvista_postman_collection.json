@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "ca029862-cce2-42fd-9911-58999e7978b6",
+		"name": "Solarvista API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "client_id=pat&grant_type=password&username={{clientId}}&password={{code}}"
+				},
+				"url": {
+					"raw": "https://auth.solarvista.com/connect/token",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"solarvista",
+						"com"
+					],
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Work-Items",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.solarvista.com/datagateway/v3/{{account}}/datasources/ref/work-item/data/query",
+					"protocol": "https",
+					"host": [
+						"api",
+						"solarvista",
+						"com"
+					],
+					"path": [
+						"datagateway",
+						"v3",
+						"{{account}}",
+						"datasources",
+						"ref",
+						"work-item",
+						"data",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Setup Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let json = pm.response.json()",
+							"pm.collectionVariables.set(\"clientId\", json.clientId)",
+							"console.log(\"Set clientId collection variable from response\")",
+							"pm.collectionVariables.set(\"code\", json.code);",
+							"console.log(\"Set code collection variable from response\")"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"displayName\": \"newPat\",\n  \"installationId\": \"{{$randomUUID}}\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth.solarvista.com/api/pat/new",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"solarvista",
+						"com"
+					],
+					"path": [
+						"api",
+						"pat",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "{{setupTokenName}}",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "api",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://postman.zappforms.com/token",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "implicit",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{setupClientId}}",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://auth.zappforms.com/connect/authorize",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "account",
+			"value": ""
+		},
+		{
+			"key": "clientId",
+			"value": ""
+		},
+		{
+			"key": "code",
+			"value": ""
+		},
+		{
+			"key": "workitem",
+			"value": ""
+		},
+		{
+			"key": "projectId",
+			"value": ""
+		},
+		{
+			"key": "setupTokenName",
+			"value": "default"
+		},
+		{
+			"key": "setupClientId",
+			"value": ""
+		}
+	]
+}
