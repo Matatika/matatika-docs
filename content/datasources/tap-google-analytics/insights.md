@@ -2,9 +2,9 @@
 layout: default
 title: Insights
 permalink: /datasources/tap-google-analytics/insights
-parent: tap-google-analytics
+parent: Google Analytics
 grand_parent: Datasources
-nav_order: 1
+nav_order: 2
 ---
 
 # {{page.title}}
