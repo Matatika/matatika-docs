@@ -30,8 +30,8 @@ Each datasource for the pipelines require different settings and configurations 
 
 ## Set Up Steps
 
-1. When in your workspace, click your profile image in the top-right of the screen, and select `Datasources` from the drop down menu.
-2. Click the `Add Data` button just below your profile image.
+1. When in your workspace, click your profile image in the top-right of the screen, and select `Data sources` from the drop down menu.
+2. Click the `Import` button just below your profile image.
 3. At the top in `Import name` add a name for your pipeline.
 4. Then below that choose your datasource. When you click on one you will see helpful documentation on the right side of your screen.
 5. Click `Next`
