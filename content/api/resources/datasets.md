@@ -72,6 +72,7 @@ Path | Type | Format | Description
 ---
 
 {% include {{ page.components }}/view-all-datasets-in-a-workspace.md %}
+{% include {{ page.components }}/view-datasets-in-a-workspace-liked-by-profile.md %}
 {% include {{ page.components }}/view-datasets-by-channel.md %}
 {% include {{ page.components }}/view-a-dataset.md %}
 {% include {{ page.components }}/view-a-dataset-in-a-workspace.md %}
@@ -83,7 +84,7 @@ Path | Type | Format | Description
 {% include {{ page.components }}/remove-a-like-from-a-dataset.md %}
 {% include {{ page.components }}/initialise-a-new-dataset-message.md %}
 {% include {{ page.components }}/create-or-update-a-dataset-message.md %}
-{% include {{ page.components }}/withdraw-a-dataset.md %}
+{% include {{ page.components }}/delete-a-dataset.md %}
 
 ---
 

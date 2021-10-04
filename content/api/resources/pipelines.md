@@ -4,27 +4,16 @@ title: Pipelines
 permalink: /api/resources/pipelines
 parent: Resources
 grand_parent: API
-nav_order: 12
+nav_order: 13
 components: request-md-components/pipelines
 ---
 
 # {{page.title}}
 
-A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [datasource](datasources) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform). Pipelines can be run as [jobs](jobs) to load data into a workspace.
+A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform). Pipelines can be run as [jobs](jobs) to load data into a workspace.
 {: .fs-5 }
 
 ---
-
-## Example Resource
-{: .no_toc }
-
-GET
-{:.label .label-GET}
-
-/api/workspaces/{workspace-id}
-{:.path .path-GET}
-
-{% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
 ## Objects
 {: .no_toc }
@@ -34,25 +23,41 @@ GET
 Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The pipeline ID 
+`status` | `String` | [Pipeline Status](#pipeline-status)
 `name` | `String` | | The pipeline name
+`schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
+`timeout` | `Integer` | Unsigned | The number of seconds after which the job will terminate - if set to `0`, an implicit default value of 300 seconds is used
+`script` | `String` | Bash | Custom script to be executed as the pipeline job
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
-`properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [datasource](datasources) `settings`
-`dataSource` | `String` | | The pipeline target [datasource](datasources) `name`
-`schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
-`script` | `String` | Bash | Custom script to be executed as the pipeline job
+`properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [dataplugin](dataplugins) `settings`
+`dataSource` | `String` | | The pipeline datasource [dataplugin](dataplugins) `name`
+`dataStore` | `String` | Version 4 UUID | The pipeline datastore `id`
+`_embedded.dataSource` | [`DataPlugin`](dataplugins#dataplugin) | | The pipeline datasource [dataplugin](dataplugins)
+`_embedded.dataStore` | `DataStore` | | The pipeline datastore
+`_embedded.'latest job'` | [`Job`](jobs#job) | | The latest [job](jobs) run from the pipeline
+
+{% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
 ### Properties
 
-For a [datasource](datasources) with `n` [`settings`](datasources#setting):
+For each setting `s` in the [dataplugin](dataplugins) [`settings`](dataplugins#setting):
 
 Path | Type | Description
 ---- | ---- | -----------
-`settings[0].name` | `settings[0].kind` | Refer to `settings[0].description`
-`settings[1].name` | `settings[1].kind` | Refer to `settings[1].description`
-`settings[2].name` | `settings[2].kind` | Refer to `settings[2].description`
-... | ...
-`settings[n-1].name` | `settings[n-1].kind` | Refer to `settings[n-1].description`
+`s.name` | `s.kind` | Refer to `s.description`
+
+## Formats
+{: .no_toc}
+
+### Pipeline Status
+{: .d-inline-block }
+
+Value | Description
+----- | -----------
+`READY` | The pipeline completed processing resource changes
+`PROVISIONING` | The pipeline is processing resource changes
+`FAILED` | The pipeline failed to process resource changes
 
 ---
 
@@ -73,4 +78,6 @@ Path | Type | Description
 {% include {{page.components}}/view-a-pipeline.md %}
 {% include {{page.components}}/initialise-a-pipeline-in-a-workspace.md %}
 {% include {{page.components}}/create-or-update-a-pipeline-in-a-workspace.md %}
+{% include {{page.components}}/validate-a-pipeline-configuration-in-a-workspace.md %}
+{% include {{page.components}}/verify-a-pipeline.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}

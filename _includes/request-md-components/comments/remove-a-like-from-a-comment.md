@@ -3,7 +3,7 @@
 DELETE
 {:.label .label-DELETE}
 
-/api/comment/{comment-id}/like
+/api/comments/{comment-id}/like
 {:.path .path-DELETE}
 
 Removes a like of the comment `{comment-id}` from the authenticated user profile.

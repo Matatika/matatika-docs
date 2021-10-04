@@ -107,8 +107,8 @@ If everything was configured correctly, the API should respond with a status of 
                     "feed" : {
                         "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/feed"
                     },
-                    "datasources" : {
-                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/datasources"
+                    "dataplugins" : {
+                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/dataplugins"
                     },
                     "pipelines" : {
                         "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/pipelines"

@@ -35,6 +35,4 @@ Returns the dataset `{dataset-id-or-alias}` in the workspace `{workspace-id}`.
 
 [Dataset](#dataset) with HAL links.
 
-{% include snippets/api/datasets/view-a-dataset-in-a-workspace/response-body.md %}
-
 ---

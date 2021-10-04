@@ -1,28 +1,27 @@
-## Withdraw a dataset
+## Delete a datastore
 
 DELETE
 {:.label .label-DELETE}
 
-/api/datasets/{dataset-id}
+/api/datastores/{datastore-id}
 {:.path .path-DELETE}
 
-Withdraws the dataset `{dataset-id}`.
+Deletes the datastore `{datastore-id}`.
 
 ### Prerequisites
-
-- Dataset `{dataset-id}` must exist
+- Datastore `{datastore-id}` must exist
 
 ### Request
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/datasets/withdraw-a-dataset/curl-request.md %}
+{% include snippets/api/datastores/delete-a-datastore/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/datasets/withdraw-a-dataset/python-requests.md %}
+{% include snippets/api/datastores/delete-a-datastore/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response

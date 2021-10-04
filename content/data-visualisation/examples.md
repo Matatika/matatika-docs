@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Examples
-permalink: /data-visualisation/examples
+permalink: /data-visualisation/examples/
 parent: Data Visualisation
 nav_order: 2
 has_children: true

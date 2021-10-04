@@ -13,14 +13,9 @@ Updates the comment `{comment-id}`.
 - Comment `{comment-id}` must exist
 
 ### Request
-
 #### Body
-
+[Comment](#comment) resource.
 {% include snippets/api/comments/update-a-comment/request-body.md %}
-
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`message` | `String` | The comment message | Must not be empty
 
 #### Example Snippets
 - cURL

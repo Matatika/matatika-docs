@@ -13,12 +13,7 @@ Creates or updates the dataset message `{message-id}` for the dataset `{dataset-
 
 ### Request
 #### Body
-
-Path | Type | Format | Description
----- | ---- | ------ | -----------
-`recipientId` | `String` | | The recipient profile ID
-`message` | `String` | | The dataset message content
-
+[Dataset Message](#dataset-message) resource.
 {% include snippets/api/datasets/create-or-update-a-dataset-message/request-body.md %}
 
 #### Example Snippets
@@ -40,7 +35,5 @@ Path | Type | Format | Description
 {:.label .label-PUT}
 
 [Dataset Message](#dataset-message) with HAL links.
-
-{% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 
 ---

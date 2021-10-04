@@ -6,19 +6,26 @@ GET
 /api/jobs/{job-id}/logs?sequence={sequence}
 {:.path .path-GET}
 
-Returns the logs of the job `{job-id}` as a streamed response, from the sequence `{sequence}`.
+Returns the logs of the job `{job-id}`.
 
 ### Prerequisites
 - Job `{job-id}` must exist
 
 ### Request
-#### Headers
+#### Query Parameters
 
-Key | Value | Description
---- | ----- | -----------
-`Accept` | `application/stream+json` | Sets the response content type format to `application/stream+json`
-`Accept` | `text/plain` | Sets the response content type format to `text/plain`
-`Accept` | `*/*` (all other values) | Sets the response content type format to `text/plain`
+Query Parameter | Format | Default Value | Description
+--------------- | ------ | ------------- | -----------
+`sequence` | Unsigned integer | `0` | The line number in the logs to read from
+
+#### Headers
+##### Accept
+
+Media Type(s) | Description
+------------- | -----------
+`text/plain` `*/*` | Sets the response content type format to plain text
+`application/stream+json` `application/x-ndjson` | Sets the response content type format to [NDJSON](http://ndjson.org/)
+
 
 #### Example Snippets
 - cURL
@@ -32,15 +39,10 @@ Key | Value | Description
 {% include snippets/api/jobs/view-the-logs-of-a-job-as-json/python-requests.md %}
 {: .tabs-section-end}
 
-#### Query Parameters
-
-Parameter | Parsed Type | Default Value | Description
---------- | ----------- | ------------- | -----------
-`sequence` | `Integer` | `0` | The section in the logs to read from
-
-
 ### Response
 - `200`: The job logs in the format specified by associated request `Accept` header
 - `204`: No response body provided.
+
+{% include snippets/api/jobs/view-the-logs-of-a-job-as-plain-text/response-body.md %}
 
 ---

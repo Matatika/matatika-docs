@@ -3,7 +3,7 @@
 GET
 {:.label .label-GET}
 
-/api/pipeline/{pipeline-id}/jobs
+/api/pipelines/{pipeline-id}/jobs
 {:.path .path-GET}
 
 Returns all running or completed jobs for the pipeline `{pipeline-id}`.
@@ -12,12 +12,6 @@ Returns all running or completed jobs for the pipeline `{pipeline-id}`.
 - Pipeline `{pipeline-id}` must exist
 
 ### Request
-#### Headers
-
-Key | Value | Description
---- | ----- | -----------
-`enable-task-details` | `true` | Enables detailed task information in the resulting [Job](#job) response
-`enable-task-details` | `false` (default) | Disables detailed task information in the resulting [Job](#job) response
 
 #### Example Snippets
 - cURL

@@ -30,7 +30,6 @@ Searches the workspace `{workspace-id}` for datasets by the channel `{channel-na
 200 / 204
 {:.label .label-GET}
 
-#### Body
 - `200`: [Dataset](datasets#dataset) collection with HAL links.
 - `204`: No response body provided.
 

@@ -4,7 +4,7 @@ title: Notifications
 permalink: /api/resources/notifications
 parent: Resources
 grand_parent: API
-nav_order: 15
+nav_order: 16
 components: request-md-components/notifications
 ---
 
