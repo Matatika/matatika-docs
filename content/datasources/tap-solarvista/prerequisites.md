@@ -58,7 +58,7 @@ Once you have postman install and running:
 1. Click on the name of the collection in the list of collections on the left hand side of Postman.
 2. Click on the three dots at the end of the name.
 3. In center of your screen the Solarvista collection will have opened. Click on the `Variables` tab just below the name.
-4. Set the `account` varaible in Postman to your Solarvista `AccountId`.
+4. Set the `account` variable in Postman to your Solarvista `AccountId`.
 5. Set the `setupClientId` variable in postman to the `Client ID` supplied to you by the administator of your Solarvista API.
 6. In the tabs where you found `Variables`, click on `Authorization`.
 7. Scroll to the bottom of the `Authorization` tab and click `Get New Access Token`.
