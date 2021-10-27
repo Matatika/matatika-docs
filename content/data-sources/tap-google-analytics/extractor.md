@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Extractor
-permalink: /datasources/tap-google-analytics/extractor
+permalink: /data-sources/tap-google-analytics/extractor
 parent: Google Analytics
-grand_parent: Datasources
+grand_parent: Data Sources
 nav_order: 3
 
 ---

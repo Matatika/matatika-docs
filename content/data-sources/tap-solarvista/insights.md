@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Insights
-permalink: /datasources/tap-solarvista/insights
+permalink: /data-sources/tap-solarvista/insights
 parent: Solarvista
-grand_parent: Datasources
+grand_parent: Data Sources
 nav_order: 2
 
 ---
