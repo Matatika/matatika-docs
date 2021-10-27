@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Insights
-permalink: /datasources/tap-google-analytics/insights
+permalink: /data-sources/tap-google-analytics/insights
 parent: Google Analytics
-grand_parent: Datasources
+grand_parent: Data Sources
 nav_order: 2
 ---
 

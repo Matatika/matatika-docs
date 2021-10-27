@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Extractor
-permalink: /datasources/tap-solarvista/extractor
+permalink: /data-sources/tap-solarvista/extractor
 parent: Solarvista
-grand_parent: Datasources
+grand_parent: Data Sources
 nav_order: 3
 
 ---

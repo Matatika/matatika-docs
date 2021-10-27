@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Datasources
-permalink: /datasources/
+title: Data Sources
+permalink: /data-sources/
 nav_order: 7
 has_children: true
 ---
