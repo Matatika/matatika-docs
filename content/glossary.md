@@ -55,7 +55,7 @@ Once you have set up a data import, it will run a config job which will set up t
 
 A data source is a data extraction script. When you choose a data source to use in a [data import](#data-import), you will usually be required to supply settings to allow the our data source to connect to your data. 
 
-Some of our supported data sources come with related transforms and [datasets]({{site.baseurl}}/data-visualisation/dataset-yaml), these data sources are marked with the Matatika logo in the top left.
+Some of our supported data sources come with related transforms and [datasets](#dataset), these data sources are marked with the Matatika logo in the top left.
 
 ---
 

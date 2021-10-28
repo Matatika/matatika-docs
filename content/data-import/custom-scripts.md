@@ -18,7 +18,7 @@ By passing a custom script to a data import you can completly control the your d
 
 ## Basics
 
-Custom scripts are bash scripts that generally invoke meltano commands. As mentioned before you can also control the data import's enviroment in these scripts as seen in the `Default actions` script below:
+Custom scripts are bash scripts that generally invoke [Meltano](https://meltano.com/docs/plugin-management.html) commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) enviroment in these scripts as seen in the `Default actions` script below:
 ```bash
 export EXTRACTOR='[(${pipeline.dataSource.extractor.name})]'
 export LOADER='[(${pipeline.dataStore.loader.name})]'
