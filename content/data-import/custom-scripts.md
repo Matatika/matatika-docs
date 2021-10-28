@@ -12,13 +12,13 @@ parent: Data Import
 
 Custom scripts can be used by [data imports]({{site.baseurl}}/glossary#data-import) by choosing `Advanced` from `Section 2 - Clean, transform and organise` when creating or editing your data import.
 
-By passing a custom script to a data import you can completly control the your data import's enviroment as well as provide custom step to happen during your data import run.
+By passing a custom script to a data import you can completely control the your data import's environment as well as provide custom step to happen during your data import run.
 
 ---
 
 ## Basics
 
-Custom scripts are bash scripts that generally invoke [Meltano](https://meltano.com/docs/plugin-management.html) commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) enviroment in these scripts as seen in the `Default actions` script below:
+Custom scripts are bash scripts that generally invoke [Meltano](https://meltano.com/docs/plugin-management.html) commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) environment in these scripts as seen in the `Default actions` script below:
 ```bash
 export EXTRACTOR='[(${pipeline.dataSource.extractor.name})]'
 export LOADER='[(${pipeline.dataStore.loader.name})]'
@@ -50,7 +50,7 @@ Above is the exact script that is run by default on a data import run.
 - Work out if there are transforms to be done with dbt
 - Finally run the `meltano elt` with the transform setting being worked out in the previous step.
 
-As seen in the `Default actions` script, you can do anything you could normally do with bash. Set enviroment variables you want, change ones that are pre-set, handle conditional logic, add or remove data processing steps and so on.
+As seen in the `Default actions` script, you can do anything you could normally do with bash. Set environment variables you want, change ones that are pre-set, handle conditional logic, add or remove data processing steps and so on.
 
 ---
 
@@ -76,7 +76,7 @@ meltano invoke dbt deps
 meltano invoke dbt run
 ```
 
-By invoking other plugins through Meltano, you gain the benefit of Meltano taking base level enviroment variables and passing them these plugins to use. This isnt perfect in every case, but generally will get you around setting a lot of enviroment variables manually.
+By invoking other plugins through Meltano, you gain the benefit of Meltano taking base level environment variables and passing them these plugins to use. This isn't perfect in every case, but generally will get you around setting a lot of environment variables manually.
 
 ## Further Reading
 

@@ -22,7 +22,7 @@ You can find the technical glossary [here](https://github.com/Matatika/matatika-
 
 ## Channel
 
-Channels are a way to group [datasets](#dataset) together into a single source. Channels are made automatically if you push a [dataset](#dataset) with a source that doesnt exist in your [workspace](#workspace).
+Channels are a way to group [datasets](#dataset) together into a single source. Channels are made automatically if you push a [dataset](#dataset) with a source that doesn't exist in your [workspace](#workspace).
 
 - [How to assign a source to a dataset]({{site.baseurl}}/data-visualisation/dataset-yaml)
 
@@ -35,15 +35,15 @@ Datasets are the insights within the Matatika platform. They can be charts, tabl
 [Visulisation Examples]({{site.baseurl}}/data-visualisation/examples/)
 [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets)
 
-Once you have set up a [data import](#data-import), if there are any Matatika datasets associated with your datasource, they will be added to your workspace during the data import config job. This job sets up the workspace with settings and files needed to run your data import.
+Once you have set up a [data import](#data-import), if there are any Matatika datasets associated with your data source, they will be added to your workspace during the data import config job. This job sets up the workspace with settings and files needed to run your data import.
 
-If you make your own datasets you can publish them by folllowing our [Getting Started Tutorial - Publish a Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli).
+If you make your own datasets you can publish them by following our [Getting Started Tutorial - Publish a Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli).
 
 ---
 
 ## Data Import
 
-A data import is effectivly a pipeline that connects a [data source](#data-source) to a [data store](#data-store).
+A data import is effectively a pipeline that connects a [data source](#data-source) to a [data store](#data-store).
 
 You can find your [workspace's](#workspace) data import by clicking on your profile image in the top right, then selecting data imports from the drop down menu. Note you can only access the data imports of a workspace if you are either the owner or a admin of the workspace.
 
