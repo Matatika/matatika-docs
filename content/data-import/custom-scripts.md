@@ -44,7 +44,7 @@ meltano elt "$EXTRACTOR" "$LOADER" --transform="$transform"
 Above is the exact script that is run by default on a data import run. 
 
 - First it determines the data source and data store name from the pipeline (data import).
-- Then attempts to find any custom scripts we sometimes include in an [analyze file bundle](), if your data source came with one.
+- Then attempts to find any custom scripts we sometimes include in an [analyze file bundle](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#analyze-file-bundle), if your data source came with one.
 - If it finds one of our custom scripts, it runs those steps instead. Otherwise:
 - Install the meltano plugins relevant to this data import run.
 - Work out if there are transforms to be done with dbt
@@ -77,3 +77,9 @@ meltano invoke dbt run
 ```
 
 By invoking other plugins through Meltano, you gain the benefit of Meltano taking base level enviroment variables and passing them these plugins to use. This isnt perfect in every case, but generally will get you around setting a lot of enviroment variables manually.
+
+## Further Reading
+
+- [Matatika Examples of Custom Scripts](https://github.com/Matatika/matatika-examples/tree/master/example_data_import_scripts)
+- [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#custom-data-source)
+- [Meltano Documentation](https://meltano.com/docs/plugin-management.html)
