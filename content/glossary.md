@@ -2,7 +2,7 @@
 layout: default
 title: Glossary
 permalink: /glossary
-nav_order: 10
+nav_order: 9
 ---
 
 # {{page.title}}
@@ -24,15 +24,15 @@ You can find the technical glossary [here](https://github.com/Matatika/matatika-
 
 Channels are a way to group [datasets](#dataset) together into a single source. Channels are made automatically if you push a [dataset](#dataset) with a source that doesn't exist in your [workspace](#workspace).
 
-- [How to assign a source to a dataset]({{site.baseurl}}/data-visualisation/dataset-yaml)
+- [How to assign a source to a dataset]({{site.baseurl}}//data/data-visualisation/dataset-yaml)
 
 ---
 
 ## Dataset
 
-Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/data-visualisation/dataset-yaml). 
+Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/data/data-visualisation/dataset-yaml). 
 
-[Visulisation Examples]({{site.baseurl}}/data-visualisation/examples/)
+[Visulisation Examples]({{site.baseurl}}/data/data-visualisation/examples/)
 [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets)
 
 Once you have set up a [data import](#data-import), if there are any Matatika datasets associated with your data source, they will be added to your workspace during the data import config job. This job sets up the workspace with settings and files needed to run your data import.
