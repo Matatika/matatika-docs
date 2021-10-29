@@ -10,5 +10,5 @@ has_children: true
 
 ---
 
-Examples and details about data visualisation.
+Examples and details about artifacts, objects and files related to data in the Matatika platform.
 {: .fs-5 }
