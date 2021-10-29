@@ -24,7 +24,8 @@ You can find the technical glossary [here](https://github.com/Matatika/matatika-
 
 Channels are a way to group [datasets](#dataset) together into a single source. Channels are made automatically if you push a [dataset](#dataset) with a source that doesn't exist in your [workspace](#workspace).
 
-- [How to assign a source to a dataset]({{site.baseurl}}//data/data-visualisation/dataset-yaml)
+- [Channel YAML file documentation]({{site.baseurl}}/data/channel/channel-yaml)
+- [How to assign a source to a dataset]({{site.baseurl}}/data/data-visualisation/dataset-yaml)
 
 ---
 

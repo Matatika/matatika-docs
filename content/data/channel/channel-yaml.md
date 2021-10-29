@@ -65,4 +65,5 @@ description: |-
 
 Further Reading: 
 
+- [Glossary Channels]({{site.baseurl}}/glossary#channel)
 - [API Channels]({{site.baseurl}}/api/resources/channels)
