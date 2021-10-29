@@ -2,7 +2,7 @@
 layout: default
 title: Data Import
 permalink: /data/data-import/
-nav_order: 1
+nav_order: 2
 parent: Data
 has_children: true
 ---
@@ -12,3 +12,4 @@ has_children: true
 ---
 
 Documentation about data imports.
+{: .fs-5 }
