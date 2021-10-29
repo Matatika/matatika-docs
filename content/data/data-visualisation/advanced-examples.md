@@ -186,7 +186,7 @@ questions: How many deliveries does each shop have?
 description: |-
   #Example
 
-  This dataset show the shop and how many daily deliveries they recieve.
+  This dataset show the shop and how many daily deliveries they receive.
 metadata: |-
   {
     "name": "shop", 
