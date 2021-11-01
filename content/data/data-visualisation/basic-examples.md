@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Example Basic Charts
-permalink: data-visualisation/examples/example-basic-charts
-parent: Examples
-grand_parent: Data Visualisation
-nav_order: 1
+title: Basic Examples
+permalink: /data/data-visualisation/basic-examples
+parent: Data Visualisation
+grand_parent: Data 
+nav_order: 5
 ---
 
 # {{page.title}}
 
 ---
 
-These charts are the output of the [Matatika dataset YAML file]({{site.baseurl}}/data-visualisation/dataset-yaml) listed below each of them.
+These charts are the output of the [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml) listed below each of them.
 {: .fs-5 }
 
 You can find the original YAML files in our [examples github repo](https://github.com/Matatika/matatika-examples/tree/master/example_datasets).
@@ -139,7 +139,7 @@ visualisation: |-
 ```
 ---
 
-## Doughtnut Chart
+## Doughnut Chart
 
 {% include example_charts/basic_charts/Example_Basic_Doughnut_Chart.html %}
 

@@ -2,7 +2,7 @@
 layout: default
 title: Library
 permalink: /library
-nav_order: 9
+nav_order: 8
 ---
 
 # {{page.title}}
