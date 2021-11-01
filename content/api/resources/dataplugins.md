@@ -88,6 +88,7 @@ Value | Description
 {% include {{ page.components }}/view-a-workspace-dataplugin.md %}
 {% include {{ page.components }}/view-the-matatika-discovery-yml.md %}
 {% include {{ page.components }}/view-a-workspace-discovery-yml.md %}
+{% include {{ page.components }}/publish-dataplugins-from-a-discovery-yml.md %}
 {% include {{ page.components }}/initialise-a-new-dataplugin.md %}
 {% include {{ page.components }}/create-a-dataplugin.md %}
 {% include {{ page.components }}/update-a-dataplugin.md %}
