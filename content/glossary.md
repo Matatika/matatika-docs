@@ -2,7 +2,7 @@
 layout: default
 title: Glossary
 permalink: /glossary
-nav_order: 10
+nav_order: 9
 ---
 
 # {{page.title}}
@@ -24,7 +24,8 @@ You can find the technical glossary [here](https://github.com/Matatika/matatika-
 
 Channels are a way to group [datasets](#dataset) together into a single source. Channels are made automatically if you push a [dataset](#dataset) with a source that doesn't exist in your [workspace](#workspace).
 
-- [How to assign a source to a dataset]({{site.baseurl}}/data-visualisation/dataset-yaml)
+- [Channel YAML file documentation]({{site.baseurl}}/data/channel/channel-yaml)
+- [How to assign a source to a dataset]({{site.baseurl}}/data/data-visualisation/dataset-yaml)
 
 ---
 
@@ -38,9 +39,9 @@ All data processing and analytical configuration is managed through code, with t
 
 ## Dataset
 
-Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/data-visualisation/dataset-yaml). 
+Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/data/data-visualisation/dataset-yaml). 
 
-[Visulisation Examples]({{site.baseurl}}/data-visualisation/examples/)
+[Visulisation Examples]({{site.baseurl}}/data/data-visualisation/examples/)
 [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets)
 
 Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli).

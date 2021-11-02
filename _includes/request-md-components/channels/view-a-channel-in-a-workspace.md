@@ -1,4 +1,4 @@
-## View all channels in a workspace
+## View a channel in a workspace
 
 GET
 {:.label .label-GET}
@@ -6,7 +6,7 @@ GET
 /api/workspaces/{workspace-id}/channels/{channel-id}
 {:.path .path-GET}
 
-Returns all channels in the workspace `{workspace-id}`.
+Returns a channel in the workspace `{workspace-id}`.
 
 ### Prerequisites
 - Workspace `{workspace-id}` must exist
@@ -17,12 +17,12 @@ Returns all channels in the workspace `{workspace-id}`.
 - cURL
 {: .tab .tabs-section-start}
 
-{% include snippets/api/channels/view-all-channels-in-a-workspace/curl-request.md %}
+{% include snippets/api/channels/view-a-channel-in-a-workspace/curl-request.md %}
 
 - Python (requests)
 {: .tab}
 
-{% include snippets/api/channels/view-all-channels-in-a-workspace/python-requests.md %}
+{% include snippets/api/channels/view-a-channel-in-a-workspace/python-requests.md %}
 {: .tabs-section-end}
 
 ### Response
@@ -31,6 +31,6 @@ Returns all channels in the workspace `{workspace-id}`.
 200
 {:.label .label-GET}
 
-[Channel](#channel) collection with HAL links.
+[Channel](#channel) with HAL links.
 
 ---
