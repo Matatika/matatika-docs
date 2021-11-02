@@ -14,15 +14,15 @@ nav_order: 1
 
 ## Requirements
 
-To complete the following setup guide and obtain your required authentication details:
- - You will need access to a Solarvista account with access to your API.
- - You will need the `AccountId` from your Solarvista account.
- - You will need a `Client ID` to create your access token and then credentials. The administator for your API should be able to provide you with this.
+To connect to Solarvista you will need the following:
+ - an account for Solarvista with API access.
+ - the `AccountId` for your Solarvista account.  Please contact your Account Manager if you don't know what this is.
+ - a `Client ID` to create your access token and credentials. Your Solarvista administator should be able to provide you with this.
  - You will need to have [Postman](https://www.postman.com/) installed.
 
 If you do not have a Solarvista account with API access you will need to ask your administator to create one for you.
 
-[Postman](https://www.postman.com/) is an application used API calling, testing and development. We use it in our set up guide to get the authentication details from your Solarvista API.
+[Postman](https://www.postman.com/) is an application used mainly by developers to create, share, test and document APIs. We use it in this set up guide to get the authentication details from your Solarvista API.
 
 ---
 
