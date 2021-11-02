@@ -46,6 +46,9 @@ Path | Type | Format | Description
 
 ---
 
+{% include request-md-components/channels/initialise-a-channel.md %}
 {% include request-md-components/channels/view-a-channel.md %}
+{% include request-md-components/channels/view-a-channel-in-a-workspace.md %}
 {% include request-md-components/channels/view-all-channels-in-a-workspace.md %}
-
+{% include request-md-components/channels/create-or-update-a-channel-in-a-workspace-by-name.md %}
+{% include request-md-components/channels/delete-a-channel.md %}
