@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Solarvista
-permalink: /datasources/tap-solarvista/
-parent: Datasources
+permalink: /data-sources/tap-solarvista/
+parent: Data Sources
 has_children: true
 nav_order: 2
 ---

@@ -24,7 +24,9 @@ Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The channel ID
 `creator` | [`Member`](members#member) | | The channel creator
-`workspace` | [`Workspace`](workspaces#workspace) | | The channel workspace 
+`workspace` | [`Workspace`](workspaces#workspace) | | The channel workspace
+`created` | `String` |  ISO 8601 timestamp | The channel created at timestamp
+`lastModified` | `String` | ISO 8601 timestamp | The channel last modified timestamp
 `name` | `String` | | The channel name
 `description` | `String` | | The channel description
 `picture` | `String` | URL | The channel picture metadata
@@ -44,6 +46,9 @@ Path | Type | Format | Description
 
 ---
 
+{% include request-md-components/channels/initialise-a-channel.md %}
 {% include request-md-components/channels/view-a-channel.md %}
+{% include request-md-components/channels/view-a-channel-in-a-workspace.md %}
 {% include request-md-components/channels/view-all-channels-in-a-workspace.md %}
-
+{% include request-md-components/channels/create-or-update-a-channel-in-a-workspace.md %}
+{% include request-md-components/channels/delete-a-channel.md %}

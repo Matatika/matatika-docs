@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Prerequisites
-permalink: /datasources/tap-solarvista/prerequisites
+permalink: /data-sources/tap-solarvista/prerequisites
 parent: Solarvista
-grand_parent: Datasources
+grand_parent: Data Sources
 nav_order: 1
 
 ---

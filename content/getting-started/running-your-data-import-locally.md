@@ -63,7 +63,7 @@ Some taps and loaders require a lot of extra enviroment variables to function co
 
 Activate your virtual enviroment if you are using one for Meltano, then run the command: `meltano install`
 
-After all this set up your local workspace repo should look like this one: [Github Example Link](https://github.com/Matatika/matatika-examples/tree/master/example_local_pipeline_workspace)
+After all this set up your local workspace repo should look like this one: [Github Example Link](https://github.com/Matatika/matatika-examples/tree/master/example_local_data_import_workspace)
 
 ---
 

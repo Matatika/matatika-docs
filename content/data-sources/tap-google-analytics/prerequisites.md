@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Prerequisites
-permalink: /datasources/tap-google-analytics/prerequisites
+permalink: /data-sources/tap-google-analytics/prerequisites
 parent: Google Analytics
-grand_parent: Datasources
+grand_parent: Data Sources
 nav_order: 1
 ---
 

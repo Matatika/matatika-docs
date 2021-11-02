@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Data Visualisation
-permalink: /data-visualisation/
-nav_order: 4
+permalink: /data/data-visualisation/
+nav_order: 3
+parent: Data
 has_children: true
 ---
 

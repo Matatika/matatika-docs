@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Overview
-nav_order: 1
+title: Home
+nav_order: 0
 ---
 
 # Welcome to the Matatika Documentation
@@ -10,38 +10,21 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Not a customer yet?*
 
-[Register Now]({{site.baseurl}}/register-now){:.btn}
+[Sign Up]({{site.www_url}}/try-buy){:.btn}
 
 ---
 
-## Platform Overview
-Our platform is a cloud native, mobile and API first secure data aggregation and collaboration platform.  What does all that mean?
-
-Simple.  Our platform makes it easy for you to:
-
-- Efficiently extract, move and store data 
-- Rapidly prepare data for processing
-- Cost effectively process data and produce real-time results
-- Seamlessly share and collaborating on insights
-
-Whatever your domain or line of business, you can spend more time developing insights and getting answers to plain english questions, and less time dealing with infrastructure.
 
 
-![platform techonology](https://www-staging.matatika.com/wp-content/uploads/2020/03/Platform-technology.png)
+*Do you need to import data from a [Singer.io tap](https://www.singer.io/) or [Meltano plugin](https://meltano.com/docs/plugins.html)?*
 
-As part of our software service we provide fully supported connectors to your data and the ability to deploy custom connectors in our Premium service.  Our team are constantly adding insights to our data channels and your own data science teams can create custom insights in our Premium service.
+*Do you need to automatically run and publish [Jupyter Notebooks](https://jupyter.org/)?*
 
-Leveraging cloud-native and open source technologies ensures our Community is never constrained by storage, compute, or even us as the software vendor.
+*Do you need [data visualisations](/docs/data-visualisation/) in a mobile app?*
 
-Interested in meeting up with like minded data innovators?  We run virtual meetups -
-
-[![alt data innovators meetup](https://www-staging.matatika.com/wp-content/uploads/2020/03/Data-Innovators-Meetup-2-300x167.png)](https://www.meetup.com/London-Data-Innovators/)
-
-*Are you a Data Engineer who builds connectors to cloud apps and data?*
-
-*Are you a Data Scientist who discovers insights and models?*
+*Do you need [a secure API](/docs/api/) to your private data?*
 
 *Are you a curious person who asks questions?*
 
-[Get Started]({{site.baseurl}}/getting-started){: .btn .fs-6}
+[Let's go!]({{site.baseurl}}/getting-started){: .btn .fs-6}
 {: .text-center}

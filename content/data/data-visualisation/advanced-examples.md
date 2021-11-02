@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Advanced Visualisation
-permalink: data-visualisation/examples/advanced-visualisation
-parent: Examples
-grand_parent: Data Visualisation
-nav_order: 2
+title: Advanced Examples
+permalink: /data/data-visualisation/advanced-examples
+parent: Data Visualisation
+grand_parent: Data 
+nav_order: 6
 ---
 
 # {{page.title}}
 
 ---
 
-These charts are the output of the [Matatika dataset YAML file]({{site.baseurl}}/data-visualisation/dataset-yaml) listed below each of them.
+These charts are the output of the [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml) listed below each of them.
 {: .fs-5 }
 
 You can find the original YAML files in our [examples github repo](https://github.com/Matatika/matatika-examples/tree/master/example_datasets).
@@ -186,7 +186,7 @@ questions: How many deliveries does each shop have?
 description: |-
   #Example
 
-  This dataset show the shop and how many daily deliveries they recieve.
+  This dataset show the shop and how many daily deliveries they receive.
 metadata: |-
   {
     "name": "shop", 

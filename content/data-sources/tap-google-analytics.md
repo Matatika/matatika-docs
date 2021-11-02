@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Google Analytics
-permalink: /datasources/tap-google-analytics/
-parent: Datasources
+permalink: /data-sources/tap-google-analytics/
+parent: Data Sources
 has_children: true
 nav_order: 1
 ---

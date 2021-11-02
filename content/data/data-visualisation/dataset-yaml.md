@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Dataset YAML
-permalink: /data-visualisation/dataset-yaml
+permalink: /data/data-visualisation/dataset-yaml
 nav_order: 1
 parent: Data Visualisation
+grand_parent: Data
 ---
 
 # {{page.title}}
@@ -76,12 +77,12 @@ Dataset Key | Datatype |  Information
 `version` | `String` | The version determines how the CLI handles publishing the dataset. 
 `source` | `String`  | A channel name to be used to group up related datasets in your workspace.
 `title` | `String` | The title at the top of the insight.
-`questions` | `String` | Questions that your dataset awnsers, so people can find the dataset just by asking questions.
-`description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevent information. You can also add `#tags`.
+`questions` | `String` | Questions that your dataset answers, so people can find the dataset just by asking questions.
+`description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevant information. You can also add `#tags`.
 `metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/data-visualisation/metadata)
 `visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/data-visualisation/charts)
 `query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/data-visualisation/query)
-`rawData` | `String` of a List | The rawData key allows you to hardcode data directly into your dataset.
+`rawData` | `String` of a List | The rawData key allows you to hard-code data directly into your dataset.
 
 ## String Formatting
 
