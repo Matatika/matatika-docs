@@ -8,6 +8,9 @@ DELETE
 
 Delete a channel.
 
+### Prerequisites
+- The user must be a admin of the workspace the channel is in.
+
 ### Request
 #### Example Snippets
 - cURL

@@ -12,7 +12,7 @@ This endpoint takes either a `{channel-id}` (UUID) or `{channel-name}` (String),
 
 ### Prerequisites
 - Workspace `{workspace-id}` must exist
-- The user must be a member of the workspace `{workspace-id}`
+- The user must be a admin in the workspace `{workspace-id}`
 
 ### Request
 #### Example Snippets
