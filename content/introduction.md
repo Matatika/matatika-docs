@@ -7,9 +7,11 @@ nav_order: 1
 
 # {{page.title}}
 
-***Matatika is a private data collaboration platform***. Typical end users of the *Matatika App* are internal team members or customers who collaborate through private, invite-only [workspaces](glossary#workspace).
+***Matatika is a private data collaboration platform***.
 
-The *Matatika Platform* is primarily managed by data scientists and analysts who need an out-of-the-box solution to:
+The *Matatika App* provides collaboration through private, invite only [workspaces](glossary#workspace) which you set up and share with internal teams or customers.
+
+The *Matatika Platform* is managed by data scientists and analysts who need an out-of-the-box solution to:
 
 - Import and store large amounts of data
 - Process and produce real-time business intelligence
@@ -56,7 +58,7 @@ Leveraging cloud-native and open-source technologies ensures our community is ne
 
 ## Modern - No Limits Data Stack
 
-There are many opinions on the "Modern Data Stack" - frankly one size cannot fit both of Google scale and a five-person startup. At Matatika, we have selected components that we believe provide you the best combination of ***Scalability***, ***Performance***, ***Flexibility*** and lowest total cost-of-ownership. Ultimately, our goal is to provide a data stack with No Limits.
+There are many opinions on the "Modern Data Stack" - frankly one size cannot fit both Google scale and a five-person startup. At Matatika, we have selected components that we believe provide you the best combination of ***Scalability***, ***Performance***, ***Flexibility*** and lowest total cost-of-ownership. Ultimately, our goal is to provide a data stack with No Limits.
 
 ### Extraction
 
@@ -64,11 +66,11 @@ There are many opinions on the "Modern Data Stack" - frankly one size cannot fit
 
 ### Warehousing
 
-[PostgreSQL](https://www.postgresql.org/) is the default data storage technology in your in your Matatika [workspace](glossary#workspace). Data technologies will to continue to advance and therefore, we believe it is vital your stack be database agnostic. Currently, SQL with [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity)/[JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) are the most widely adopted business intelligence data interfaces. The *Matatika Platform* supports any JDBC-compliant database or serverless data warehouses, such as Google BigQuery or AWS Athena.
+[PostgreSQL](https://www.postgresql.org/) is the default data storage technology in your Matatika [workspace](glossary#workspace). Data technologies will continue to advance and therefore, we believe it is vital your stack be database agnostic. Currently, SQL with [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity)/[JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) are the most widely adopted business intelligence data interfaces. The *Matatika Platform* supports any JDBC-compliant database or serverless data warehouses, such as Google BigQuery or AWS Athena.
 
 ### Transformation
 
-[dbt](https://www.getdbt.com/) is the default transformation technology in your in your Matatika [workspace](glossary#workspace). SQL-based transformations in code and testing considerations by design, provide the fundamentals required to support [Data Ops](#data-ops) methodologies at the transformation layer. The *Matatika Platform* is able to execute any transformation technology in isolated containers.
+[dbt](https://www.getdbt.com/) is the default transformation technology in your Matatika [workspace](glossary#workspace). SQL-based transformations in code and testing considerations by design, provide the fundamentals required to support [Data Ops](#data-ops) methodologies at the transformation layer. The *Matatika Platform* is able to execute any transformation technology in isolated containers.
 
 ### Orchestration
 
