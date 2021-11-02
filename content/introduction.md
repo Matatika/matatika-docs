@@ -39,9 +39,9 @@ Matatika has assembled the best of breed, open source components into a fully ma
 Leveraging cloud-native and open source technologies ensures our Community is never constrained by storage, compute, or even us as the software vendor.
 
 
-## Modern Data Stack
+## Modern - No Limits Data Stack
 
-There are many opinions on the "Modern Data Stack"; frankly one size cannot fit both Google scale and a five person startup.  At Matatika, we have selected components that we believe provide you the best combination of ***Scalability***, ***Performance***, ***Flexibility*** and lowest total cost of ownership if you decide to host these yourself at any point in the future.
+There are many opinions on the "Modern Data Stack"; frankly one size cannot fit both Google scale and a five person startup.  At Matatika, we have selected components that we believe provide you the best combination of ***Scalability***, ***Performance***, ***Flexibility*** and lowest total cost of ownership.  Ultimately, our goal is to provide a data stack with No Limits.
 
 ### Extraction
 
