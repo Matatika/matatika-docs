@@ -19,7 +19,7 @@ A command-line interface for interacting with Matatika services.
 - Python >=3.7
 - pip
 
-The Matatika CLI/SDK is available through PyPi [here](https://pypi.org/project/matatika/) and can be installed using `pip`:
+The Matatika CLI/SDK is available through PyPi [here](https://pypi.org/project/matatika/){:target="_blank"} and can be installed using `pip`:
 
 ```
 pip install matatika

@@ -53,7 +53,7 @@ PG_SCHEMA=your_schema
 TAP_SPREADSHEETS_ANYWHERE_TABLES=array_of_json_objects
 ```
 
-For more information about `TAP_SPREADSHEETS_ANYWHERE_TABLES` see [Tap Spreadsheets Anywhere Documentation](https://github.com/ets/tap-spreadsheets-anywhere). There is also documentation available when you create the data import in your workspace and select `tap-spreadsheets-anywhere`.
+For more information about `TAP_SPREADSHEETS_ANYWHERE_TABLES` see [Tap Spreadsheets Anywhere Documentation](https://github.com/ets/tap-spreadsheets-anywhere){:target="_blank"}. There is also documentation available when you create the data import in your workspace and select `tap-spreadsheets-anywhere`.
 
 Things to note:
 
@@ -63,7 +63,7 @@ Some taps and loaders require a lot of extra enviroment variables to function co
 
 Activate your virtual enviroment if you are using one for Meltano, then run the command: `meltano install`
 
-After all this set up your local workspace repo should look like this one: [Github Example Link](https://github.com/Matatika/matatika-examples/tree/master/example_local_data_import_workspace)
+After all this set up your local workspace repo should look like this one: [Github Example Link](https://github.com/Matatika/matatika-examples/tree/master/example_local_data_import_workspace){:target="_blank"}
 
 ---
 

@@ -10,7 +10,7 @@ components: request-md-components/datasets
 
 # {{page.title}}
 
-Datasets are modules of data that can be published to workspaces. Datasets are visualised in the Matatika app following the [Chart.js](https://www.chartjs.org/) specifications.
+Datasets are modules of data that can be published to workspaces. Datasets are visualised in the Matatika app following the [Chart.js](https://www.chartjs.org/){:target="_blank"} specifications.
 {: .fs-5 }
 
 ---
