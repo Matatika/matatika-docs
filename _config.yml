@@ -1,6 +1,6 @@
 baseurl: /docs
 title: Matatika API Docs
-logo: "/images/Logo-small.svg"
+logo: "/docs/assets/img/Logo-small.svg"
 permalink: pretty
 
 theme: just-the-docs
