@@ -36,3 +36,7 @@ Path | Type | Format | Description
 {: toc }
 
 ---
+
+{% include {{page.components}}/view-all-administrators-of-a-workspace.md %}
+{% include {{page.components}}/add-an-administrator-to-a-workspace.md %}
+{% include {{page.components}}/withdraw-an-administrator-from-a-workspace.md %}
