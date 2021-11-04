@@ -7,4 +7,4 @@ services:
         volumes:
             - ${PWD}:/srv/jekyll
             - ${PWD}/vendor/bundle:/usr/local/bundle
-        command: jekyll serve --config _config.yml,_config_dev.yml
+        command: jekyll serve --config _config.yml,_config_prod.yml
