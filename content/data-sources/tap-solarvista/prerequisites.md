@@ -18,25 +18,25 @@ To connect to Solarvista you will need the following:
  - an account for Solarvista with API access.
  - the `AccountId` for your Solarvista account.  Please contact your Account Manager if you don't know what this is.
  - a `Client ID` to create your access token and credentials. Your Solarvista administator should be able to provide you with this.
- - You will need to have [Postman](https://www.postman.com/) installed.
+ - You will need to have [Postman](https://www.postman.com/){:target="_blank"} installed.
 
 If you do not have a Solarvista account with API access you will need to ask your administator to create one for you.
 
-[Postman](https://www.postman.com/) is an application used mainly by developers to create, share, test and document APIs. We use it in this set up guide to get the authentication details from your Solarvista API.
+[Postman](https://www.postman.com/){:target="_blank"} is an application used mainly by developers to create, share, test and document APIs. We use it in this set up guide to get the authentication details from your Solarvista API.
 
 ---
 
 ## Postman Setup
 
-Once you have [Postman](https://www.postman.com/) downloaded and installed, you should download our Solarvista Postman Collection.
+Once you have [Postman](https://www.postman.com/){:target="_blank"} downloaded and installed, you should download our Solarvista Postman Collection.
 
 `{{site.www_url}}/docs/solarvista_postman_collection.json`{: #postman-collection-url .fs-5 }
 {: .text-center }
 
 Below are links to useful Postman Documentation that will help you with the Solarvista API Access Setup:
-- [Installing Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/)
-- [Navigating Postman](https://learning.postman.com/docs/getting-started/navigating-postman/)
-- [Importing Collections to Postman](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/)
+- [Installing Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/){:target="_blank"}
+- [Navigating Postman](https://learning.postman.com/docs/getting-started/navigating-postman/){:target="_blank"}
+- [Importing Collections to Postman](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/){:target="_blank"}
 
 ---
 

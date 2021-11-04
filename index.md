@@ -10,15 +10,15 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Not a customer yet?*
 
-[Sign Up]({{site.www_url}}/try-buy){:.btn}
+[Sign Up]({{site.www_url}}/sign-up){:.btn}
 
 ---
 
 
 
-*Do you need to import data from a [Singer.io tap](https://www.singer.io/) or [Meltano plugin](https://meltano.com/docs/plugins.html)?*
+*Do you need to import data from a [Singer.io tap](https://www.singer.io/){:target="_blank"} or [Meltano plugin](https://meltano.com/docs/plugins.html){:target="_blank"}?*
 
-*Do you need to automatically run and publish [Jupyter Notebooks](https://jupyter.org/)?*
+*Do you need to automatically run and publish [Jupyter Notebooks](https://jupyter.org/){:target="_blank"}?*
 
 *Do you need [data visualisations](/docs/data-visualisation/) in a mobile app?*
 

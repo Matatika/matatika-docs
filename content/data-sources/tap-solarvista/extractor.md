@@ -16,10 +16,10 @@ Our Solarvista datasource uses a singer tap we created called `tap-solarvista` t
 
 You can find documentation about `tap-solarvista` on the [tap-solarvista]({{site.baseurl}}/datasources/tap-solarvista) overview page.
 
-`tap-solarvista` is open source, and you can see the code on [GitHub](https://github.com/Matatika/tap-solarvista).
+`tap-solarvista` is open source, and you can see the code on [GitHub](https://github.com/Matatika/tap-solarvista){:target="_blank"}.
 
 ---
 
 ## Other Links
 
-[Singer Documentation](https://github.com/singer-io/getting-started)
+[Singer Documentation](https://github.com/singer-io/getting-started){:target="_blank"}

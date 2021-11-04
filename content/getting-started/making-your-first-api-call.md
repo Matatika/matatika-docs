@@ -12,7 +12,7 @@ nav_order: 2
 
 ---
 
-You are now ready to make your first call the Matatika API! The tool you use to accomplish this is up to you, but we recommend [cURL](https://curl.haxx.se/docs/manual.html) or [Postman](https://learning.postman.com/docs/postman/launching-postman/introduction/).
+You are now ready to make your first call the Matatika API! The tool you use to accomplish this is up to you, but we recommend [cURL](https://curl.haxx.se/docs/manual.html){:target="_blank"} or [Postman](https://learning.postman.com/docs/postman/launching-postman/introduction/){:target="_blank"}.
 
 In this example, we will be querying the Matatika API `workspaces` endpoint to list the workspaces our profile is a member of. In the response of this request, details of the workspace created earlier in this guide should be found.
 
@@ -52,7 +52,7 @@ curl -i ^
 ```
 
 ## Postman
-The Postman app is available for download [here](https://www.postman.com/downloads/). Once installed, follow these steps to import and set up authorisation for our maintained Postman collection.
+The Postman app is available for download [here](https://www.postman.com/downloads/){:target="_blank"}. Once installed, follow these steps to import and set up authorisation for our maintained Postman collection.
 
 Once completed, open the *Workspaces* folder, select the request titled *View all workspaces* and click *Send*.
 
@@ -131,5 +131,5 @@ If everything was configured correctly, the API should respond with a status of 
 }
 ```
 
-[Publish Your First Dataset]({{site.baseurl}}/getting-started/publishing-your-first-dataset){: .btn}
+[Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-api){: .btn}
 {: .text-center}

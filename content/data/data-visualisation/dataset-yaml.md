@@ -14,7 +14,7 @@ grand_parent: Data
 The Matatika dataset file is a way to create and format insights for your workspace.
 {: .fs-5 }
 
-Our dataset files are stored as YAML files, you can read more about the YAML format and its syntax [here](https://yaml.org/).
+Our dataset files are stored as YAML files, you can read more about the YAML format and its syntax [here](https://yaml.org/){:target="_blank"}.
 {: .fs-5 }
 
 ---

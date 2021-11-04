@@ -38,7 +38,7 @@ Value | Description
 `scatter` | Scatter Chart.
 `treemap` | Treemap Chart.
 
-For more information on Chart.js, see their documentation at [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/)
+For more information on Chart.js, see their documentation at [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/){:target="_blank"}
 
 ---
 

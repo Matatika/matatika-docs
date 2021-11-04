@@ -143,11 +143,6 @@ $(document).ready(function () {
     $(this).find('button').eq(0).click();
   });
 
-  // open links external to /docs in new tabs
-  $('a[href^=http').each(function () {
-    $(this).attr("target", "_blank");
-  });
-
   // menu icon behaviour
   $('.hamburger').click(function () {
     const content = document.querySelector('.main');

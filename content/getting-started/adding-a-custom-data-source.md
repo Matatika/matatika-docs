@@ -94,5 +94,5 @@ When the data import job has completed, you will be able to see populated datase
 More resources for adding your own custom data source:
 
 - [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#custom-data-source)
-- [Matatika Data Imports Custom Scripts]({{site.baseurl}}/data-import/custom-scripts)
+- [Matatika Data Imports Custom Scripts]({{site.baseurl}}/data/data-import/custom-scripts)
 - [Matatika Examples of Custom Scripts](https://github.com/Matatika/matatika-examples/tree/master/example_data_import_scripts)
