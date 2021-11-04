@@ -11,7 +11,7 @@ nav_order: 1
 
 ---
 
-To use our Google Analytics datasource there are a few prerequisites you are required to have set up to immediately use our google oauth access.
+To use our Google Analytics data source there are a few prerequisites you are required to have set up to immediately use our google oauth access.
 {: .fs-5 }
 
 ---

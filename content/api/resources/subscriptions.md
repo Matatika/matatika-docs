@@ -10,7 +10,7 @@ components: request-md-components/subscriptions
 
 # {{page.title}}
 
-Subscriptions are a declaration of interest in a particular resource, allowing a user to recieve [notifications](notifications) when certain events occur. The events that trigger [notifications](notifications) are controlled by the [type of subscription](#subscription-type).
+Subscriptions are a declaration of interest in a particular resource, allowing a user to receive [notifications](notifications) when certain events occur. The events that trigger [notifications](notifications) are controlled by the [type of subscription](#subscription-type).
 {: .fs-5 }
 
 ---

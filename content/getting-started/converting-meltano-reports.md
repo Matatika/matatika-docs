@@ -26,7 +26,7 @@ Matatika has made a custom converter to turn Meltano reports into Matatika datas
 
 ## Converting Meltano Reports Locally
 
-1. First open the terminal and naviagate to the directory above the Meltano project you have chosen to convert reports for.
+1. First open the terminal and navigate to the directory above the Meltano project you have chosen to convert reports for.
 
 2. `git clone` the `matatika-meltano-report-converter` repository, found at: [https://github.com/Matatika/matatika-meltano-report-converter](https://github.com/Matatika/matatika-meltano-report-converter){:target="_blank"}.
 

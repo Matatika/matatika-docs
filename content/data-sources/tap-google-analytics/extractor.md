@@ -12,7 +12,7 @@ nav_order: 3
 
 ---
 
-Our Google Analytics datasource uses a singer tap we have forked and customised called `tap-google-analytics` to extract your data. 
+Our Google Analytics data source uses a singer tap we have forked and customised called `tap-google-analytics` to extract your data. 
 
 You can find documentation about `tap-google-analytics` on the [tap-google-analytics]({{site.baseurl}}/data-sources/tap-google-analytics) overview page.
 

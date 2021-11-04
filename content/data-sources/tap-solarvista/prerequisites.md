@@ -17,10 +17,10 @@ nav_order: 1
 To connect to Solarvista you will need the following:
  - an account for Solarvista with API access.
  - the `AccountId` for your Solarvista account.  Please contact your Account Manager if you don't know what this is.
- - a `Client ID` to create your access token and credentials. Your Solarvista administator should be able to provide you with this.
+ - a `Client ID` to create your access token and credentials. Your Solarvista administrator should be able to provide you with this.
  - You will need to have [Postman](https://www.postman.com/){:target="_blank"} installed.
 
-If you do not have a Solarvista account with API access you will need to ask your administator to create one for you.
+If you do not have a Solarvista account with API access you will need to ask your administrator to create one for you.
 
 [Postman](https://www.postman.com/){:target="_blank"} is an application used mainly by developers to create, share, test and document APIs. We use it in this set up guide to get the authentication details from your Solarvista API.
 
@@ -59,7 +59,7 @@ Once you have postman install and running:
 2. Click on the three dots at the end of the name.
 3. In center of your screen the Solarvista collection will have opened. Click on the `Variables` tab just below the name.
 4. Set the `account` variable in Postman to your Solarvista `AccountId`.
-5. Set the `setupClientId` variable in postman to the `Client ID` supplied to you by the administator of your Solarvista API.
+5. Set the `setupClientId` variable in postman to the `Client ID` supplied to you by the administrator of your Solarvista API.
 6. In the tabs where you found `Variables`, click on `Authorization`.
 7. Scroll to the bottom of the `Authorization` tab and click `Get New Access Token`.
 8. A window will pop up, click through the options and select the account you with to generate this token for.
@@ -69,4 +69,4 @@ Once you have postman install and running:
 12. You will then get a response in the bottom center of Postman with your `clientId` and `code` which are required for a Solarvista Pipeline.
 13. (Optional) In the collection list on the left hand side of postman, there is a POST request called Work-Items. Click this and click the Send button. If you get a list of Work Items as the response, you know you have API access on your user account.
 
-If at any stage you get a message saying you do not have access to this API, you will need to get you admininstator to update your account's permissions.
+If at any stage you get a message saying you do not have access to this API, you will need to get you administrator to update your account's permissions.

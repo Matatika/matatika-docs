@@ -12,7 +12,7 @@ nav_order: 3
 
 ---
 
-Our Solarvista datasource uses a singer tap we created called `tap-solarvista` to extract your data. 
+Our Solarvista data source uses a singer tap we created called `tap-solarvista` to extract your data. 
 
 You can find documentation about `tap-solarvista` on the [tap-solarvista]({{site.baseurl}}/data-sources/tap-solarvista) overview page.
 

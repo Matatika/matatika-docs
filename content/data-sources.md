@@ -8,5 +8,5 @@ has_children: true
 
 # {{page.title}}
 
-The documentaion for our supported datasources.
+The documentation for our supported data sources.
 {: .fs-5 }
