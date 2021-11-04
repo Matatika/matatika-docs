@@ -9,7 +9,7 @@ PUT
 Adds the profile `{profile-id}` as an administrator to the workspace `{workspace-id}`.
 
 ### Prerequisites
-- The authenticated user profile must be the owner or an administrator of the workspace `{workspace-id}`
+- The authenticated user profile must be the owner of the workspace `{workspace-id}`
 - The profile `{profile-id}` must be a [member](members) of the workspace `{workspace-id}`
 
 ### Request
