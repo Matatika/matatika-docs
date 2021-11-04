@@ -20,9 +20,9 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Do you need to automatically run and publish [Jupyter Notebooks](https://jupyter.org/){:target="_blank"}?*
 
-*Do you need [data visualisations](/docs/data-visualisation/) in a mobile app?*
+*Do you need [data visualisations](data/data-visualisation/) in a mobile app?*
 
-*Do you need [a secure API](/docs/api/) to your private data?*
+*Do you need [a secure API](api) to your private data?*
 
 *Are you a curious person who asks questions?*
 

@@ -96,4 +96,4 @@ metadata: |-
 Further Reading: 
 
 - [API Datasets]({{site.baseurl}}/api/resources/datasets)
-- [Example Charts](examples)
+- [Example Charts](basic-examples)

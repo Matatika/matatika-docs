@@ -37,7 +37,7 @@ pip install matatika
 
 ## Dataset File Preparation
 
-As a command line utility, the client library can publish datasets from a YAML file. This YAML file could be managed in a source control repository, such as GIT, and automated in a DevOps or DataOps pipeline. To keep things simple, we will be publishing from the command line with the same dataset as in [Publishing Your First Dataset Using the Matatika API]({{site.baseurl}}/getting-started/publishing-your-first-dataset-using-the-matatika-api).
+As a command line utility, the client library can publish datasets from a YAML file. This YAML file could be managed in a source control repository, such as GIT, and automated in a DevOps or DataOps pipeline. To keep things simple, we will be publishing from the command line with the same dataset as in [Publishing Your First Dataset Using the Matatika API]({{site.baseurl}}/getting-started/publish-a-dataset-cli).
 
 The dataset file needs to adhere to the following YAML format:
 
@@ -77,7 +77,7 @@ rawData: |-
 visualisation: '{"chartjs-chart": {"chartType": "bar"}}'
 ```
 
-Here, the `datasets` key can assume a value of multiple datasets. In this example, the `planet-orbits` entry forms a partial [Dataset](resources/datasets#dataset) schema, with the key used as the `alias` and the value containing other relevant schema entries.
+Here, the `datasets` key can assume a value of multiple datasets. In this example, the `planet-orbits` entry forms a partial [Dataset]({{site.baseurl}}/api/resources/datasets#dataset) schema, with the key used as the `alias` and the value containing other relevant schema entries.
 
 You can read more about the YAML format and its syntax [here](https://yaml.org/).
 

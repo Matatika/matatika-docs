@@ -45,4 +45,4 @@ For more information on Chart.js, see their documentation at [https://www.chartj
 Further Reading: 
 
 - [API Datasets]({{site.baseurl}}/api/resources/datasets)
-- [Example Charts](examples)
+- [Example Charts](basic-examples)

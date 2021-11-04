@@ -31,9 +31,9 @@ Path | Type | Format | Description
 `description` | `String` | | The dataset description (may contain markdown)
 `questions` | `String` | | The dataset questions
 `rawData` | `String` | JSON | The dataset raw data
-`visualisation` | `String` | JSON | The dataset visualisation metadata. [More Info]({{site.baseurl}}/data-visualisation/charts)
-`metadata` | `String` | JSON | The dataset metadata. [More Info]({{site.baseurl}}/data-visualisation/metadata)
-`query` | `String` | SQL statement | The dataset query. [More Info]({{site.baseurl}}/data-visualisation/query)
+`visualisation` | `String` | JSON | The dataset visualisation metadata. [More Info]({{site.baseurl}}/data/data-visualisation/charts)
+`metadata` | `String` | JSON | The dataset metadata. [More Info]({{site.baseurl}}/data/data-visualisation/metadata)
+`query` | `String` | SQL statement | The dataset query. [More Info]({{site.baseurl}}/data/data-visualisation/query)
 `likeCount` | `Integer` | | The number of likes the dataset has received
 `likedByProfiles` | `Array` of [`Member`](members#member) | | The members that have liked the dataset
 `commentCount` | `Integer` | | The number of comments the dataset has received
@@ -90,5 +90,5 @@ Path | Type | Format | Description
 
 Further Reading:
 
-- [Matatika dataset YAML file]({{site.baseurl}}/data-visualisation/dataset-yaml)
-- [Example Charts]({{site.baseurl}}/data-visualisation/examples)
+- [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml)
+- [Example Charts]({{site.baseurl}}/data/data-visualisation/basic-examples)

@@ -10,7 +10,7 @@ components: request-md-components/notifications
 
 # {{page.title}}
 
-Notifications are alerts triggered by certain events pertaining to a resource. To recieve notifications for a specific resource, a user must have a [subscription](subscriptions) to the resource.
+Notifications are alerts triggered by certain events pertaining to a resource. To receive notifications for a specific resource, a user must have a [subscription](subscriptions) to the resource.
 {: .fs-5 }
 
 ---
