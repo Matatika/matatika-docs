@@ -13,7 +13,7 @@ components: request-md-components/search
 [Datasets](datasets#dataset) can be searched for within their containing [workspace](workspaces). Searches can filter datasets by arbitrary text, [channel](channels) name, or [tag](tags) name.
 {: .fs-5 }
 
-See [here]({{site.baseurl}}/links#search) for more information on constructing a search filter query.
+See [here]({{site.baseurl}}/api/links#search) for more information on constructing a search filter query.
 
 ---
 

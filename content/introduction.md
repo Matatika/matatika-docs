@@ -78,7 +78,7 @@ There are many opinions on the "Modern Data Stack" - frankly one size cannot fit
 
 ### Catalog
 
-Your datasets and models are published, indexed and searchable via the Matatika [API](api/resources), [CLI](cli), or [Configuration Repository](#configuration-repository). The *Matatika Platform* provides a personalised feed of insights by scoring your datasets by usage.
+Your datasets and models are published, indexed and searchable via the Matatika [API](api/resources), [CLI](cli), or [Configuration Repository](glossary#configuration-repository). The *Matatika Platform* provides a personalised feed of insights by scoring your datasets by usage.
 
 ### Analytics
 
@@ -88,6 +88,6 @@ Your datasets and models are published, indexed and searchable via the Matatika 
 
 ## Data Ops
 
-Your Matatika [workspace](glossary#workspace) is a unique Business Intelligence as Code solution. All artifacts are managed in a [Git Configuration Repository](#configuration-repository) with credentials securely stored inside the platform. We enable you to deliver a robust analytics solution without restricting you to any specific Data Ops methodology.
+Your Matatika [workspace](glossary#workspace) is a unique Business Intelligence as Code solution. All artifacts are managed in a [Git Configuration Repository](glossary#configuration-repository) with credentials securely stored inside the platform. We enable you to deliver a robust analytics solution without restricting you to any specific Data Ops methodology.
 
 ![Data Ops]({{site.baseurl}}/assets/img/DataOps.png)

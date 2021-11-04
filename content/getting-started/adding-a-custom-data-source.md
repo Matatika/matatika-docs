@@ -24,7 +24,7 @@ You must have:
 
 We support custom [data sources]({{site.baseurl}}/glossary#data-source) being set and used in our [data imports]({{site.baseurl}}/glossary#data-import). You can add your custom data source along with any relevent plugins, like transforms or file bundles all at once.
 
-In this example we will create a custom version of the data source `tap-spreadsheets-anywhere`. We already support this data source, so we will have to make changes to the discovery yaml file we use to create this custom data source. Alongside these changes we will also add a related analyze file bundle containing some [datasets]({{site.baseurl}}/data-visualisation/dataset-yaml), so you can immediatly see your new custom data source's data.
+In this example we will create a custom version of the data source `tap-spreadsheets-anywhere`. We already support this data source, so we will have to make changes to the discovery yaml file we use to create this custom data source. Alongside these changes we will also add a related analyze file bundle containing some [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml), so you can immediatly see your new custom data source's data.
 
 
 ---
@@ -63,7 +63,7 @@ files:
     pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
 ```
 
-We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/data-visualisation/dataset-yaml) so we can see the data being extracted by the tap in [visulisations]({{site.baseurl}}/data-visualisation/charts). By adding this bundle and setting the correct namespaces we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you run a `tap-example-custom-data-source` data import, you should include any other plugins with the same namespace.
+We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) so we can see the data being extracted by the tap in [visulisations]({{site.baseurl}}/data/data-visualisation/charts). By adding this bundle and setting the correct namespaces we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you run a `tap-example-custom-data-source` data import, you should include any other plugins with the same namespace.
 
 - Click next and you will now be on a screen that expects the settings for your [data source]({{site.baseurl}}/glossary#data-source).
 - Our custom data source will require a Tables array, we will use:
@@ -81,7 +81,7 @@ We are including a analyze file bundle that contains Matatika [datasets]({{site.
 - For this example we can leave `Section 3 - Automate your import` on `Manual`.
 - Finally click save
 
-Your new custom [data source]({{site.baseurl}}/glossary#data-source) will be added to your workspace repository, along with any other associated plugins, during a data import config job which when you go back to your data imports screen, will be running immediatly. This config job will also publish the analyze file bundle's [datasets]({{site.baseurl}}/data-visualisation/dataset-yaml) to your [workspace]({{site.baseurl}}/glossary#workspace).
+Your new custom [data source]({{site.baseurl}}/glossary#data-source) will be added to your workspace repository, along with any other associated plugins, during a data import config job which when you go back to your data imports screen, will be running immediatly. This config job will also publish the analyze file bundle's [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) to your [workspace]({{site.baseurl}}/glossary#workspace).
 
 Once the config job has completed, you can run your data import by pressing the start job button. (Solid Arrow).
 
