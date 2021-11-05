@@ -10,7 +10,7 @@ components: request-md-components/pipelines
 
 # {{page.title}}
 
-A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform). Pipelines can be run as [jobs](jobs) to load data into a workspace.
+A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. Pipelines can be run as [jobs](jobs) to load data into a workspace.
 {: .fs-5 }
 
 ---
@@ -31,10 +31,10 @@ Path | Type | Format | Description
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
 `properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [dataplugin](dataplugins) `settings`
-`dataSource` | `String` | | The pipeline datasource [dataplugin](dataplugins) `name`
+`dataSource` | `String` | | The pipeline data source [dataplugin](dataplugins) `name`
 `dataStore` | `String` | Version 4 UUID | The pipeline datastore `id`
-`_embedded.dataSource` | [`DataPlugin`](dataplugins#dataplugin) | | The pipeline datasource [dataplugin](dataplugins)
-`_embedded.dataStore` | `DataStore` | | The pipeline datastore
+`_embedded.dataSource` | [`DataPlugin`](dataplugins#dataplugin) | | The pipeline data source [dataplugin](dataplugins)
+`_embedded.dataStore` | `DataStore` | | The pipeline data store
 `_embedded.'latest job'` | [`Job`](jobs#job) | | The latest [job](jobs) run from the pipeline
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}

@@ -36,7 +36,7 @@ Field | Description | Example
 `"description"` | A description of the dataset | `"Sun orbit data for Mercury, Venus, Earth, Mars, Jupiter and Saturn"`
 `"questions"` | The question(s) the dataset may answer | `"How many Earth-years does it take for Jupiter to orbit the sun?"`
 `"rawData"` | The raw data of the dataset | `"[[\"Planet\", \"Orbit Distance (Light-hours)\", \"Orbit Duration (Earth-years)\"],[\"Mercury\", 0.3336, 0.2500],[\"Venus\", 0.6300, 0.5833],[\"Earth\", 0.8708, 1],[\"Mars\", 1.3242, 1.9167],[\"Jupiter\", 4.5287, 11.8333],[\"Saturn\", 8.2997, 29.5000]]"`
-`"visualisation"` | The visualisation metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start) | `"{\"google-chart\": {\"chartType\": \"Bar\", \"options\": {\"width\" : 600, \"height\" : 400}}}"`
+`"visualisation"` | The visualisation metadata, defined by [Google Charts](https://developers.google.com/chart/interactive/docs/quick_start){:target="_blank"} | `"{\"google-chart\": {\"chartType\": \"Bar\", \"options\": {\"width\" : 600, \"height\" : 400}}}"`
 
 ## cURL
 Again, make sure to substitute `$ACCESS_TOKEN` or `%ACCESS_TOKEN%`with your API token and `$WORKSPACE_ID` or `%WORKSPACE_ID%` with your workspace ID.
@@ -75,7 +75,7 @@ curl -i ^
 
 ## Postman
 {% raw %}
-Within the Matatika API collection, find the *Publish a workspace dataset* request under the *Workspaces* folder. [Follow these steps](https://learning.postman.com/docs/sending-requests/variables/) to assign the variable `{{workspace-id}}` with the value of the workspace ID we obtained earlier, and press the *Send* button.
+Within the Matatika API collection, find the *Publish a workspace dataset* request under the *Workspaces* folder. [Follow these steps](https://learning.postman.com/docs/sending-requests/variables/){:target="_blank"} to assign the variable `{{workspace-id}}` with the value of the workspace ID we obtained earlier, and press the *Send* button.
 {% endraw %}
 
 ---

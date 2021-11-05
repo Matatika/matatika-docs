@@ -15,7 +15,7 @@ The Matatika API uses link relations to communicate the capabilities of our reso
 
 ## Resource Type Relations
 
-All resource types define an item and collection relation. These appear as or in (alongside [actions](#action)) link relations throughout the Matatika API.
+All resource types define an item and collection relation. These appear as or in (alongside [actions](#actions)) link relations throughout the Matatika API.
 
 Resource | Item relation | Collection relation
 -------- | ------------- | -------------------

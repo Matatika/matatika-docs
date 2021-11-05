@@ -1,7 +1,11 @@
-baseurl: /docs
 title: Matatika API Docs
-logo: "/images/Logo-small.svg"
+logo: "/assets/img/Logo-small.svg"
 permalink: pretty
+
+www_url: www-localhost.matatika.com
+app_url: https://localhost:3443/
+api_keys_url: https://localhost:3443/api-key
+catalog_uri: http://localhost:8080/api
 
 theme: just-the-docs
 color_scheme: matatika

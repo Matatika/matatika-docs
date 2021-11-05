@@ -26,9 +26,9 @@ Matatika has made a custom converter to turn Meltano reports into Matatika datas
 
 ## Converting Meltano Reports Locally
 
-1. First open the terminal and naviagate to the directory above the Meltano project you have chosen to convert reports for.
+1. First open the terminal and navigate to the directory above the Meltano project you have chosen to convert reports for.
 
-2. `git clone` the `matatika-meltano-report-converter` repository, found at: [https://github.com/Matatika/matatika-meltano-report-converter](https://github.com/Matatika/matatika-meltano-report-converter).
+2. `git clone` the `matatika-meltano-report-converter` repository, found at: [https://github.com/Matatika/matatika-meltano-report-converter](https://github.com/Matatika/matatika-meltano-report-converter){:target="_blank"}.
 
 3. `cd` into your meltano project.
 
@@ -43,13 +43,13 @@ Matatika has made a custom converter to turn Meltano reports into Matatika datas
 
 7. Any meltano report you have saved in the default location  `.meltano/analyze/reports`  will be found and converted into Matatika dataset YAMLs. These new datasets can be found in a directory called `converted_meltano_reports` in the root of your Meltano project.
 
-You can see what an example meltano project with converted datasets looks like on our github here: [Example Meltano Project](https://github.com/Matatika/matatika-examples/tree/master/converting_meltano_reports)
+You can see what an example meltano project with converted datasets looks like on our github here: [Example Meltano Project](https://github.com/Matatika/matatika-examples/tree/master/converting_meltano_reports){:target="_blank"}
 
 ## Working With Your Converted Datasets
 
 Now you have your Matatika datasets, you can easily change, customize and publish them.
 
-[Matatika Dataset Documentation]({{site.baseurl}}/data-visualisation/dataset-yaml){: .btn}
+[Matatika Dataset Documentation]({{site.baseurl}}/data/data-visualisation/dataset-yaml){: .btn}
 {: .text-center}
 
 [Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli){: .btn}

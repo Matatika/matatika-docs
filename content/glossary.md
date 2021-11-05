@@ -10,7 +10,7 @@ nav_order: 9
 Glossary of Matatika terms.
 {: .fs-5 }
 
-You can find the technical glossary [here](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary).
+You can find the technical glossary [here](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary){:target="_blank"}.
 {: .fs-5 }
 
 ---
@@ -31,7 +31,7 @@ Channels are a way to group [datasets](#dataset) together into a single source. 
 
 ## Configuration Repository
 
-Each [workspace](#workspace) is backed by a [Git](https://github.com/MatatikaBytes) configuration repository.
+Each [workspace](#workspace) is backed by a [Git](https://github.com/MatatikaBytes){:target="_blank"} configuration repository.
 
 All data processing and analytical configuration is managed through code, with the Matatika Platform securely managing credentials to [Data Sources](#data-source) and [Data Stores](#data-store).
 
@@ -41,8 +41,8 @@ All data processing and analytical configuration is managed through code, with t
 
 Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/data/data-visualisation/dataset-yaml). 
 
-[Visulisation Examples]({{site.baseurl}}/data/data-visualisation/examples/)
-[Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets)
+[Visulisation Examples]({{site.baseurl}}/data/data-visualisation/basic-examples)
+[Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}
 
 Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli).
 
@@ -60,7 +60,7 @@ A data import is a scheduled set of tasks that extracts data from a [Data Source
 
 A data source is a file, cloud app or database that you import data from. When you choose a data source to use in a [data import](#data-import), you will usually be required to supply settings that control how Matatika connect's to your data for import. At Matatika, we building a catalog of [data sources]({{site.baseurl}}/data-sources/) that come with related [transforms](#transforms) and [datasets](#dataset).
 
-A Matatika workspace can import data from any of the [300+ Meltano extractors and Singer Taps](https://hub.meltano.com/)
+A Matatika workspace can import data from any of the [300+ Meltano extractors and Singer Taps](https://hub.meltano.com/){:target="_blank"}
 
 ---
 
@@ -74,9 +74,9 @@ A Matatika workspace can use any number of JDBC compliant database or serverless
 
 ## Transforms
 
-Transforms are used to prepare your data for analysis.  For example, aggregrating measurements can make big data managable or more performant, dealing with changing names can avoid misleading inconsistencies, and naming your measures and dimensions can align analysis with your business vocabulary.
+Transforms are used to prepare your data for analysis.  For example, aggregating measurements can make big data manageable or more performant, dealing with changing names can avoid misleading inconsistencies, and naming your measures and dimensions can align analysis with your business vocabulary.
 
-A Matatika workspace uses [dbt](https://www.getdbt.com/) for robust and reusable transforms.
+A Matatika workspace uses [dbt](https://www.getdbt.com/){:target="_blank"} for robust and reusable transforms.
 
 ---
 

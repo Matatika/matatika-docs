@@ -38,11 +38,11 @@ Value | Description
 `scatter` | Scatter Chart.
 `treemap` | Treemap Chart.
 
-For more information on Chart.js, see their documentation at [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/)
+For more information on Chart.js, see their documentation at [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/){:target="_blank"}
 
 ---
 
 Further Reading: 
 
 - [API Datasets]({{site.baseurl}}/api/resources/datasets)
-- [Example Charts](examples)
+- [Example Charts](basic-examples)

@@ -15,7 +15,7 @@ nav_order: 2
 This is a gallery of our insights included when you add and run Solarvista pipeline to your workspace.
 {: .fs-5 }
 
-You can see the dataset files in our [analyze-solarvista](https://github.com/Matatika/analyze-solarvista) github repository.
+You can see the dataset files in our [analyze-solarvista](https://github.com/Matatika/analyze-solarvista){:target="_blank"} github repository.
 {: .fs-5 }
 
 ---
