@@ -69,7 +69,7 @@ We are including a analyze file bundle that contains Matatika [datasets]({{site.
 - Our custom data source will require a Tables array, we will use:
 ```json
 [{
-  "path":"https://raw.githubusercontent.com/Matatika/matatika-examples/master/example_adding_a_custom_data_source/imdb_top_20_films.csv",
+  "path":"https://raw.githubusercontent.com/Matatika/matatika-examples/master/example_adding_a_custom_data_source",
   "name":"imdb_top_20_films",
   "pattern":"imdb_top_20_films.csv",
   "start_date":"2021-01-01T00:00:00Z",
