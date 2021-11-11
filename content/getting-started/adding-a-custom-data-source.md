@@ -63,13 +63,13 @@ files:
     pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
 ```
 
-We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) so we can see the data being extracted by the tap in [visulisations]({{site.baseurl}}/data/data-visualisation/charts). By adding this bundle and setting the correct namespaces we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you run a `tap-example-custom-data-source` data import, you should include any other plugins with the same namespace.
+We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) so we can see the data being extracted by the tap in [visualisations]({{site.baseurl}}/data/data-visualisation/charts). By adding this bundle and setting the same namespace we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you configure a `tap-example-custom-data-source` data import, you should also add this bundle.
 
 - Click next and you will now be on a screen that expects the settings for your [data source]({{site.baseurl}}/glossary#data-source).
 - Our custom data source will require a Tables array, we will use:
 ```json
 [{
-  "path":"https://raw.githubusercontent.com/Matatika/matatika-examples/feature/glossary--example-data-import-scripts--example-custom-data-source/example_adding_a_custom_data_source",
+  "path":"https://raw.githubusercontent.com/Matatika/matatika-examples/master/example_adding_a_custom_data_source/imdb_top_20_films.csv",
   "name":"imdb_top_20_films",
   "pattern":"imdb_top_20_films.csv",
   "start_date":"2021-01-01T00:00:00Z",
