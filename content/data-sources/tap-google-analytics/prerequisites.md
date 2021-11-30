@@ -18,7 +18,7 @@ To use our Google Analytics data source there are a few prerequisites you are re
 
 ## Overview
 
-There are currently two version of Google Analytics:
+There are currently two versions of Google Analytics:
 - Universal Analytics, which we support and is the older more widely used version.
 - Google Analytics 4, which is newer and we are working towards supporting.
 
