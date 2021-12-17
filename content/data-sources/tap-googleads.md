@@ -10,4 +10,6 @@ nav_order: 1
 # {{page.title}}
 
 ---
+
+![google-ads-logo](/assets/datasource_images/tap-googleads.svg)
 {% include snippets/api/markdown-descriptions/tap-googleads/dataplugin-description.md %}
