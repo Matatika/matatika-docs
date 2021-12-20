@@ -11,5 +11,6 @@ nav_order: 1
 
 ---
 
-![google-analytics-logo](/assets/datasource_images/tap-google-analytics.svg)
+![google-analytics-logo]({{site.baseurl}}/assets/data_source_images/tap-google-analytics.svg)
+
 {% include snippets/api/markdown-descriptions/tap-google-analytics/dataplugin-description.md %}

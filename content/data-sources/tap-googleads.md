@@ -11,5 +11,6 @@ nav_order: 1
 
 ---
 
-![google-ads-logo](/assets/datasource_images/tap-googleads.svg)
+![google-ads-logo]({{site.baseurl}}/assets/data_source_images/tap-googleads.svg)
+
 {% include snippets/api/markdown-descriptions/tap-googleads/dataplugin-description.md %}
