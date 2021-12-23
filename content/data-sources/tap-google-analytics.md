@@ -10,4 +10,7 @@ nav_order: 1
 # {{page.title}}
 
 ---
+
+![google-analytics-logo]({{site.baseurl}}/assets/data_source_images/tap-google-analytics.svg)
+
 {% include snippets/api/markdown-descriptions/tap-google-analytics/dataplugin-description.md %}

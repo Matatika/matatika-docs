@@ -11,4 +11,6 @@ nav_order: 2
 
 ---
 
+![solarvista-logo]({{site.baseurl}}/assets/data_source_images/tap-solarvista.png)
+
 {% include snippets/api/markdown-descriptions/tap-solarvista/dataplugin-description.md %}
