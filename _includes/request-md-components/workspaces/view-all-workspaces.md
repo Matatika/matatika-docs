@@ -28,5 +28,6 @@ Returns all workspaces the authenticated user profile is an owner or member of.
 {:.label .label-GET}
 
 [Workspace](#workspace) collection with HAL links.
+{% include snippets/api/workspaces/view-all-workspaces/response-body.md %}
 
 ---

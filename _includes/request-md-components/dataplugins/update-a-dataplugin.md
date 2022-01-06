@@ -41,8 +41,6 @@ Path | Type | Description | Constraints
 {:.label .label-PUT}
 
 [Dataplugin](#dataplugin) with HAL links.
-
-
 {% include snippets/api/dataplugins/update-a-dataplugin/response-body.md %}
 
 ---

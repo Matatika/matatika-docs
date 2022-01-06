@@ -32,5 +32,6 @@ Creates a new job from the pipeline `{pipeline-id}`.
 {:.label .label-POST}
 
 [Job](#job) with HAL links.
+{% include snippets/api/jobs/create-a-job-from-a-pipeline/response-body.md %}
 
 ---

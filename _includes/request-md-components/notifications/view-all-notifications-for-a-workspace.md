@@ -39,7 +39,6 @@ Parameter | Required | Format | Default Value | Description
 {:.label .label-GET}
 
 [Notification](#notification) collection with HAL links.
-
 {% include snippets/api/notifications/view-all-notifications-for-a-workspace/response-body.md %}
 
 ---

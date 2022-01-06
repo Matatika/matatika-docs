@@ -30,4 +30,6 @@ Delete a channel.
 204
 {:.label .label-DELETE}
 
+No response body provided.
+
 ---

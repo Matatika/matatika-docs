@@ -31,6 +31,9 @@ Searches the workspace `{workspace-id}` for datasets by the tag `{tag-name}`.
 {:.label .label-GET}
 
 - `200`: [Dataset](datasets#dataset) collection with HAL links.
+
+{% include snippets/api/search/search-for-datasets-in-a-workspace-by-tag-name/response-body.md %}
+
 - `204`: No response body provided.
 
 ---

@@ -31,5 +31,6 @@ Returns the datastores in the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Datastore](#datastore) collection with HAL links.
+{% include snippets/api/datastores/view-all-datastores-in-a-workspace/response-body.md %}
 
 ---

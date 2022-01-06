@@ -37,5 +37,6 @@ Creates the comment `{comment-id}`.
 {:.label .label-PUT}
 
 [Comment](#comment) with HAL links.
+{% include snippets/api/comments/create-a-comment/response-body.md %}
 
 ---

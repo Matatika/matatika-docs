@@ -32,5 +32,6 @@ Returns all members of the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Member](#member) collection with HAL links.
+{% include snippets/api/workspaces/view-all-members-of-a-workspace/response-body.md %}
 
 ---

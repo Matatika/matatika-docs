@@ -32,5 +32,6 @@ Verifies the configuration of the pipeline `{pipeline-id}`.
 {:.label .label-POST}
 
 [Job](jobs#job) with HAL links.
+{% include snippets/api/pipelines/verify-a-pipeline/response-body.md %}
 
 ---

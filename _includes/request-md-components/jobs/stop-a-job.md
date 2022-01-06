@@ -33,7 +33,6 @@ Stops the execution of the job `{job-id}`.
 {:.label .label-PUT}
 
 Job stop acceptance message.
-
 {% include snippets/api/jobs/stop-a-job/response-body.md %}
 
 ---

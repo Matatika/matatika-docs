@@ -32,5 +32,6 @@ Initialises a new pipeline in the workspace `{workspace-id}`.
 {:.label .label-POST}
 
 [Pipeline](#pipeline) with HAL links.
+{% include snippets/api/pipelines/initialise-a-pipeline-in-a-workspace/response-body.md %}
 
 ---

@@ -32,7 +32,6 @@ Withdraws the profile `{profile-id}` as an administrator from the workspace `{wo
 {:.label .label-DELETE}
 
 [Administrator](#administrator) with HAL links.
-
 {% include snippets/api/workspaces/withdraw-an-administrator-from-a-workspace/response-body.md %}
 
 ---

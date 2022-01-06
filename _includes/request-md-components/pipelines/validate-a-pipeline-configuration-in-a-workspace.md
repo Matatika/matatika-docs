@@ -39,7 +39,6 @@ No response body provided.
 {: .fs-4 .path-POST }
 
 [Pipeline property](pipelines#properties) validation errors.
-
 {% include snippets/api/pipelines/validate-a-pipeline-configuration-in-a-workspace/response-body.md %}
 
 ---

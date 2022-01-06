@@ -37,5 +37,6 @@ This request can update one or more of the [dataset](#dataset) fields at once. W
 {:.label .label-PATCH}
 
 [Dataset](#dataset) with HAL links.
+{% include snippets/api/datasets/edit-a-dataset/response-body.md %}
 
 ---

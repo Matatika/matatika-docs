@@ -31,5 +31,6 @@ Returns the datastore `{datastore-id}`.
 {:.label .label-GET}
 
 [Datastore](#datastore) with HAL links.
+{% include snippets/api/datastores/view-a-datastore/response-body.md %}
 
 ---

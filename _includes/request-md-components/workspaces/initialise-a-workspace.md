@@ -28,5 +28,6 @@ Initialises a new workspace.
 {:.label .label-POST}
 
 [Workspace](#workspace) with HAL links.
+{% include snippets/api/workspaces/initialise-a-workspace/response-body.md %}
 
 ---

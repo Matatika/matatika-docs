@@ -32,5 +32,6 @@ Returns the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Workspace](#workspace) with HAL links.
+{% include snippets/api/workspaces/view-a-workspace/response-body.md %}
 
 ---

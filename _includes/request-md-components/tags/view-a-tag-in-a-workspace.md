@@ -33,4 +33,6 @@ Returns the tag `{tag-id}` in the workspace `{workspace-id}`.
 
 [Tag](#tag) with HAL links.
 
+{% include snippets/api/tags/view-a-tag-in-a-workspace/response-body.md %}
+
 ---

@@ -31,5 +31,6 @@ Initialises a new dataset message for the dataset `{dataset-id}`
 {:.label .label-POST}
 
 [Dataset Message](#dataset-message) with HAL links.
+{% include snippets/api/datasets/initialise-a-new-dataset-message/response-body.md %}
 
 ---

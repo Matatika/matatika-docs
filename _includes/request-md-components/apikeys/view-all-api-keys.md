@@ -33,5 +33,6 @@ Returns all API keys owned by the authenticated user profile.
 {:.label .label-GET}
 
 [API key](#api-key) collection with HAL links.
+{% include snippets/api/apikeys/view-all-api-keys/response-body.md %}
 
 ---

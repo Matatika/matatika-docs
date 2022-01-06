@@ -30,8 +30,10 @@ Searches the workspace `{workspace-id}` for datasets by the free text `{free-tex
 200 / 204
 {:.label .label-GET}
 
-#### Body
 - `200`: [Dataset](datasets#dataset) collection with HAL links.
+
+{% include snippets/api/search/search-for-datasets-in-a-workspace-by-free-text/response-body.md %}
+
 - `204`: No response body provided.
 
 ---

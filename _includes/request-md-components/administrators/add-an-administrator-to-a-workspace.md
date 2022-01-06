@@ -32,7 +32,6 @@ Adds the profile `{profile-id}` as an administrator to the workspace `{workspace
 {:.label .label-PUT}
 
 [Administrator](#administrator) with HAL links.
-
 {% include snippets/api/workspaces/add-an-administrator-to-a-workspace/response-body.md %}
 
 ---

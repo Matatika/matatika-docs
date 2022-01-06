@@ -39,7 +39,6 @@ Path | Type | Format | Description
 {:.label .label-PUT}
 
 [Subscription](#subscription) with HAL links.
-
 {% include snippets/api/subscriptions/update-a-subscription/response-body.md %}
 
 ---

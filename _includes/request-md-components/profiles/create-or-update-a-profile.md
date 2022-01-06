@@ -31,11 +31,10 @@ Creates or updates the user profile.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201 / 200
-{:.label .label-PUT}
+### `200 OK` / `2
+{: .fs-4 .path-POST }
 
 [Profile](#profile) with HAL links.
+{% include snippets/api/profiles/update-a-profile/response-body.md %}
 
 ---

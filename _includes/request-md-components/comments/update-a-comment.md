@@ -36,5 +36,6 @@ Updates the comment `{comment-id}`.
 {:.label .label-PUT}
 
 [Comment](comments#comment) with HAL links.
+{% include snippets/api/comments/view-a-comment/response-body.md %}
 
 ---

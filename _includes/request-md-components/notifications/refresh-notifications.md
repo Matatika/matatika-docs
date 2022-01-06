@@ -35,7 +35,6 @@ Parameter | Required | Format | Default Value | Description
 {:.label .label-PUT}
 
 [Notification](#notification) collection with HAL links.
-
 {% include snippets/api/notifications/refresh-notifications/response-body.md %}
 
 ---

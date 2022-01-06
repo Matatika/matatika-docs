@@ -32,5 +32,6 @@ Returns all datasets in the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Dataset](#dataset) collection with HAL links.
+{% include snippets/api/datasets/view-all-datasets-in-a-workspace/response-body.md %}
 
 ---

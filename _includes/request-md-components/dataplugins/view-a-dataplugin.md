@@ -31,7 +31,6 @@ Returns the dataplugin `{dataplugin-id}`.
 {: .fs-4 .path-GET }
 
 [Dataplugin](#dataplugin) with HAL links.
-
 {% include snippets/api/dataplugins/view-a-dataplugin/response-body.md %}
 
 ---

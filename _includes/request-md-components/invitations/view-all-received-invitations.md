@@ -28,5 +28,6 @@ Returns all invitations received by the authenticated user profile.
 {:.label .label-GET}
 
 [Invitation](#invitation) collection with HAL links.
+{% include snippets/api/invitations/view-all-received-invitations/response-body.md %}
 
 ---

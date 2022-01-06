@@ -28,7 +28,6 @@ Returns all dataplugins supported by Matatika.
 {: .fs-4 .path-GET }
 
 [Dataplugin](#dataplugin) collection with HAL links.
-
 {% include snippets/api/dataplugins/view-all-supported-dataplugins/response-body.md %}
 
 ---

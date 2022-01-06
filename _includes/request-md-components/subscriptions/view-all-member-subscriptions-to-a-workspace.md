@@ -31,7 +31,6 @@ Returns all member subscriptions to the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Subscription](#subscription) collection with HAL links.
-
 {% include snippets/api/subscriptions/view-all-member-subscriptions-to-a-workspace/response-body.md %}
 
 ---

@@ -39,7 +39,6 @@ Parameter | Required | Format | Default Value | Description
 {:.label .label-POST}
 
 [Subscription](#subscription) with HAL links.
-
 {% include snippets/api/subscriptions/subscribe-to-a-channel/response-body.md %}
 
 ---

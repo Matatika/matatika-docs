@@ -35,5 +35,6 @@ Creates or updates the datastore `{datastore-id}` in the workspace `{workspace-i
 {:.label .label-PUT}
 
 [Datastore](#datastore) with HAL links.
+{% include snippets/api/datastores/create-a-datastore-in-a-workspace/response-body.md %}
 
 ---

@@ -38,5 +38,6 @@ A workspace can be set as default, which defines the environment the Matatika ap
 {:.label .label-PATCH}
 
 [Profile](#profile) with HAL links.
+{% include snippets/api/profiles/set-a-workspace-as-default/response-body.md %}
 
 ---

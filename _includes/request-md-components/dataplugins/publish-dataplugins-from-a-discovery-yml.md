@@ -36,7 +36,6 @@ Publishes dataplugins from a [Meltano `discovery.yml`](https://meltano.com/docs/
 {: .fs-4 .path-POST }
 
 [Dataplugin](#dataplugin) collection with HAL links.
-
 {% include snippets/api/dataplugins/publish-dataplugins-from-a-discovery-yml/response-body.md %}
 
 ---

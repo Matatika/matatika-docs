@@ -32,5 +32,6 @@ Returns all running or completed jobs for the pipeline `{pipeline-id}`.
 {:.label .label-GET}
 
 [Job](#job) collection with HAL links.
+{% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-pipeline/response-body.md %}
 
 ---

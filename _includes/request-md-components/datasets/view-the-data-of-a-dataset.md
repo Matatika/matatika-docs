@@ -36,8 +36,9 @@ Defaults to `application/json` (given `Accept */*` or no `Accept` header).
 
 ### Response
 - `200`: The dataset data (defaults to JSON format).
-- `204`: No response body provided.
 
 {% include snippets/api/datasets/view-the-data-of-a-dataset/response-body.md %}
+
+- `204`: No response body provided.
 
 ---

@@ -32,4 +32,6 @@ Returns all tags in the workspace `{workspace-id}`.
 
 [Tag](#tag) collection with HAL links.
 
+{% include snippets/api/tags/view-all-tags-in-a-workspace/response-body.md %}
+
 ---

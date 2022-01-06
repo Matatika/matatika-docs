@@ -31,5 +31,6 @@ Returns the feed of the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Dataset](datasets#dataset) collection with HAL links.
+{% include snippets/api/feed/view-a-workspace-feed/response-body.md %}
 
 ---

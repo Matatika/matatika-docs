@@ -31,7 +31,6 @@ Returns the subscription `{subscription-id}`.
 {:.label .label-GET}
 
 [Subscription](#subscription) with HAL links.
-
 {% include snippets/api/subscriptions/view-a-subscription/response-body.md %}
 
 ---

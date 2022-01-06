@@ -31,7 +31,6 @@ Returns all dataplugins available to the workspace `{workspace-id}`.
 {: .fs-4 .path-GET }
 
 [Dataplugin](#dataplugin) collection with HAL links.
-
 {% include snippets/api/dataplugins/view-all-workspace-dataplugins/response-body.md %}
 
 ---

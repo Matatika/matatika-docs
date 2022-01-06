@@ -28,5 +28,6 @@ Initialise a channel.
 {:.label .label-POST}
 
 [Channel](#channel) with HAL links.
+{% include snippets/api/channels/initialise-a-channel/response-body.md %}
 
 ---

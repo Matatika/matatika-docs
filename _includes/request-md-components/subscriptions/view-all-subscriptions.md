@@ -28,7 +28,6 @@ Returns all subscriptions for the authenticated user profile.
 {:.label .label-GET}
 
 [Subscription](#subscription) collection with HAL links.
-
 {% include snippets/api/subscriptions/view-all-subscriptions/response-body.md %}
 
 ---

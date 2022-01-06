@@ -32,5 +32,6 @@ Returns the profile `{profile-id`}.
 {:.label .label-GET}
 
 [Profile](#profile) with HAL links.
+{% include snippets/api/profiles/view-a-profile/response-body.md %}
 
 ---

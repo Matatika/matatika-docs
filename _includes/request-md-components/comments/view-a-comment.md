@@ -32,5 +32,6 @@ Returns the comment `{comment-id}`.
 {:.label .label-GET}
 
 [Comment](comments#comment) with HAL links.
+{% include snippets/api/comments/view-a-comment/response-body.md %}
 
 ---

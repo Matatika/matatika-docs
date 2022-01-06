@@ -32,5 +32,6 @@ Returns the pipeline `{pipeline-id}`.
 {:.label .label-GET}
 
 [Pipeline](#pipeline) with HAL links.
+{% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
 ---

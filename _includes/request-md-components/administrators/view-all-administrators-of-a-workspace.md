@@ -31,7 +31,6 @@ Returns all administrators of the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Administrator](#administrator) collection with HAL links.
-
 {% include snippets/api/workspaces/view-all-administrators-of-a-workspace/response-body.md %}
 
 ---

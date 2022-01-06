@@ -33,5 +33,6 @@ Accepts the invitation `{invitation-id}`.
 {:.label .label-PATCH}
 
 [Invitation](#invitation) with HAL links.
+{% include snippets/api/invitations/accept-an-invitation/response-body.md %}
 
 ---

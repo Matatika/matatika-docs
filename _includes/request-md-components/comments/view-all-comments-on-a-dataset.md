@@ -32,5 +32,6 @@ Returns all comments on the dataset `{dataset-id}`.
 {:.label .label-GET}
 
 [Comment](comments#comment) collection with HAL links.
+{% include snippets/api/comments/view-all-comments-on-a-dataset/response-body.md %}
 
 ---

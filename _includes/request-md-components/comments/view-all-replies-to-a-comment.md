@@ -32,5 +32,6 @@ Returns all replies to the comment `{comment-id}`.
 {:.label .label-GET}
 
 [Comment](comments#comment) with HAL links.
+{% include snippets/api/comments/view-all-replies-to-a-comment/response-body.md %}
 
 ---

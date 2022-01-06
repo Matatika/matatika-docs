@@ -28,8 +28,6 @@ Initialises a new dataplugin.
 {:.label .label-POST}
 
 [Dataplugin](#dataplugin) with HAL links.
-
-
 {% include snippets/api/dataplugins/initialise-a-new-dataplugin/response-body.md %}
 
 ---

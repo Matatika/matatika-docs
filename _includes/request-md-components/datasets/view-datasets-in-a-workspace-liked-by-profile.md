@@ -32,5 +32,6 @@ Returns all datasets in the workspace `{workspace-id}` liked by the authenticate
 {:.label .label-GET}
 
 [Dataset](#dataset) collection with HAL links.
+{% include snippets/api/datasets/view-datasets-in-a-workspace-liked-by-profile/response-body.md %}
 
 ---

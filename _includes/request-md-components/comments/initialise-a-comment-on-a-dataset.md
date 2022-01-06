@@ -32,5 +32,6 @@ Initialises a new comment on the dataset `{dataset-id}`.
 {:.label .label-POST}
 
 [Comment](comments#comment) with HAL links.
+{% include snippets/api/comments/initialise-a-comment-on-a-dataset/response-body.md %}
 
 ---

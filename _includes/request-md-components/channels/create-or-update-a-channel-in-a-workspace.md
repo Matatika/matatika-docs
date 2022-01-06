@@ -34,5 +34,6 @@ This endpoint takes either a `{channel-id}` (UUID) or `{channel-name}` (String),
 {:.label .label-PUT}
 
 [Channel](#channel) with HAL links.
+{% include snippets/api/channels/create-a-channel-in-a-workspace-by-id/response-body.md %}
 
 ---

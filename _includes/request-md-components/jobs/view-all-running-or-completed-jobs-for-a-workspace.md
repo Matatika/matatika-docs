@@ -32,5 +32,6 @@ Returns all running or completed jobs for the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Job](#job) collection with HAL links.
+{% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-workspace/response-body.md %}
 
 ---

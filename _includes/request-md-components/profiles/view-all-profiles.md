@@ -27,7 +27,7 @@ Returns all profiles under the authenticated user account.
 200
 {:.label .label-GET}
 
-#### Body
 [Profile](#profile) collection with HAL links.
+{% include snippets/api/profiles/view-all-profiles/response-body.md %}
 
 ---

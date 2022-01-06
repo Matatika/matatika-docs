@@ -32,5 +32,6 @@ Returns the job `{job-id}`.
 {:.label .label-GET}
 
 [Job](#job) with HAL links.
+{% include snippets/api/jobs/view-a-job/response-body.md %}
 
 ---

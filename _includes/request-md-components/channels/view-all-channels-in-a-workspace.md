@@ -32,5 +32,6 @@ Returns all channels in the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Channel](#channel) collection with HAL links.
+{% include snippets/api/channels/view-all-channels-in-a-workspace/response-body.md %}
 
 ---

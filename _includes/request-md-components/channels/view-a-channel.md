@@ -31,5 +31,6 @@ Returns the channel `{channel-id}`.
 {:.label .label-GET}
 
 [Channel](#channel) with HAL links.
+{% include snippets/api/channels/view-a-channel/response-body.md %}
 
 ---

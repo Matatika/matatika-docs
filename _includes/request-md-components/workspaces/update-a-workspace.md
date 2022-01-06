@@ -37,5 +37,6 @@ Updates the workspace `{workspace-id}`.
 {:.label .label-PUT}
 
 [Workspace](#workspace) with HAL links.
+{% include snippets/api/workspaces/update-a-workspace/response-body.md %}
 
 ---

@@ -31,7 +31,6 @@ Returns the notification `{notification-id}`.
 {:.label .label-GET}
 
 [Notification](#notification) with HAL links.
-
 {% include snippets/api/notifications/view-a-notification/response-body.md %}
 
 ---

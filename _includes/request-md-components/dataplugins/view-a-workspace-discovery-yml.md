@@ -31,7 +31,6 @@ Returns a [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discov
 {: .fs-4 .path-GET }
 
 [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins).
-
 {% include snippets/api/dataplugins/view-a-workspace-discovery-yml/response-body.md %}
 
 ---

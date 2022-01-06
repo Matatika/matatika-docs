@@ -35,5 +35,6 @@ Creates or updates the dataset message `{message-id}` for the dataset `{dataset-
 {:.label .label-PUT}
 
 [Dataset Message](#dataset-message) with HAL links.
+{% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 
 ---

@@ -36,5 +36,6 @@ Updates the API key `{apikey-id}`.
 {:.label .label-PUT}
 
 [API key](#api-key) with HAL links.
+{% include snippets/api/apikeys/update-an-api-key/response-body.md %}
 
 ---

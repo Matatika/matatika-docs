@@ -38,5 +38,6 @@ Making the request with an existing `id` or `alias` will result in the respectiv
 {:.label .label-POST}
 
 [Dataset](#dataset) with HAL links.
+{% include snippets/api/datasets/publish-a-dataset-to-a-workspace/response-body.md %}
 
 ---

@@ -33,5 +33,6 @@ Returns the API key `{apikey-id}`.
 {:.label .label-GET}
 
 [API key](#api-key) with HAL links.
+{% include snippets/api/apikeys/view-an-api-key/response-body.md %}
 
 ---

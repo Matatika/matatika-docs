@@ -32,5 +32,6 @@ Returns all configured pipelines in the workspace `{workspace-id}`.
 {:.label .label-GET}
 
 [Pipeline](#pipeline) collection with HAL links.
+{% include snippets/api/pipelines/view-all-pipelines-in-a-workspace/response-body.md %}
 
 ---

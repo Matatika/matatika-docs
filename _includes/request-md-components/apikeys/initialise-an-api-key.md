@@ -32,5 +32,6 @@ Initialises a new API key.
 {:.label .label-POST}
 
 [API key](#api-key) with HAL links.
+{% include snippets/api/apikeys/initialise-an-api-key/response-body.md %}
 
 ---
