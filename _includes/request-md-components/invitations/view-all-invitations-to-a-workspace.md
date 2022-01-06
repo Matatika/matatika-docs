@@ -36,10 +36,8 @@ Returns all active invitations to the workspace `{workspace-id}` sent by the aut
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Invitation](#invitation) collection with HAL links.
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}

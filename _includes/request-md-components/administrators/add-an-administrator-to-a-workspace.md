@@ -26,10 +26,8 @@ Adds the profile `{profile-id}` as an administrator to the workspace `{workspace
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 [Administrator](#administrator) with HAL links.
 {% include snippets/api/workspaces/add-an-administrator-to-a-workspace/response-body.md %}

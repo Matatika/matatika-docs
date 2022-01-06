@@ -26,10 +26,8 @@ Creates the dataplugin `{dataplugin-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201
-{:.label .label-PUT}
+`201 Created`
+{: .dummy-heading .path-PUT}
 
 [Dataplugin](#dataplugin) with HAL links.
 {% include snippets/api/dataplugins/update-a-dataplugin/response-body.md %}

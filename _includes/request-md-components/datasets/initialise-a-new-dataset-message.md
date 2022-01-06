@@ -25,10 +25,8 @@ Initialises a new dataset message for the dataset `{dataset-id}`
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Dataset Message](#dataset-message) with HAL links.
 {% include snippets/api/datasets/initialise-a-new-dataset-message/response-body.md %}

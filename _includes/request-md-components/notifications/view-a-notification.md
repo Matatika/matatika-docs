@@ -25,10 +25,8 @@ Returns the notification `{notification-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Notification](#notification) with HAL links.
 {% include snippets/api/notifications/view-a-notification/response-body.md %}

@@ -22,10 +22,8 @@ Returns all invitations sent by the authenticated user profile.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Invitation](#invitation) collection with HAL links.
 {% include snippets/api/invitations/view-all-sent-invitations/response-body.md %}

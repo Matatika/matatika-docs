@@ -26,10 +26,8 @@ Returns all datasets in the workspace `{workspace-id}` liked by the authenticate
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Dataset](#dataset) collection with HAL links.
 {% include snippets/api/datasets/view-datasets-in-a-workspace-liked-by-profile/response-body.md %}

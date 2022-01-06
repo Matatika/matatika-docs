@@ -26,10 +26,8 @@ Returns all comments on the dataset `{dataset-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Comment](comments#comment) collection with HAL links.
 {% include snippets/api/comments/view-all-comments-on-a-dataset/response-body.md %}

@@ -26,10 +26,8 @@ Returns all running or completed jobs for the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Job](#job) collection with HAL links.
 {% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-workspace/response-body.md %}

@@ -20,10 +20,8 @@ Parameter | Required | Format | Default Value | Description
 `q` | No | Tag [filter]({{site.baseurl}}/api/links#filter) | | The tag(s) to search notifications by
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Notification](notifications#notification) collection with HAL links.
 

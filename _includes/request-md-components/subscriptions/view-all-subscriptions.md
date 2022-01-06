@@ -22,10 +22,8 @@ Returns all subscriptions for the authenticated user profile.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Subscription](#subscription) collection with HAL links.
 {% include snippets/api/subscriptions/view-all-subscriptions/response-body.md %}

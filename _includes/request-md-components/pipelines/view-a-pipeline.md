@@ -26,10 +26,8 @@ Returns the pipeline `{pipeline-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Pipeline](#pipeline) with HAL links.
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}

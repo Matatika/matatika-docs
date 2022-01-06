@@ -28,10 +28,8 @@ This endpoint takes either a `{channel-id}` (UUID) or `{channel-name}` (String),
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201 or 200
-{:.label .label-PUT}
+`200 OK / 201 Created`
+{: .dummy-heading .path-PUT}
 
 [Channel](#channel) with HAL links.
 {% include snippets/api/channels/create-a-channel-in-a-workspace-by-id/response-body.md %}

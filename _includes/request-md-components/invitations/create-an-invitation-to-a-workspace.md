@@ -31,10 +31,8 @@ Creates an invitation to the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-202
-{:.label .label-POST}
+`202 Accepted`
+{: .dummy-heading .path-POST}
 
 No response body provided.
 

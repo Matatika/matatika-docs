@@ -26,10 +26,8 @@ Returns all configured pipelines in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Pipeline](#pipeline) collection with HAL links.
 {% include snippets/api/pipelines/view-all-pipelines-in-a-workspace/response-body.md %}

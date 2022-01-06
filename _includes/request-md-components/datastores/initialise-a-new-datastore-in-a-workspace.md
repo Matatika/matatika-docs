@@ -25,10 +25,8 @@ Initialises a new datastore in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Datastore](#datastore) with HAL links.
 {% include snippets/api/datastores/initialise-a-new-datastore-in-a-workspace/response-body.md %}

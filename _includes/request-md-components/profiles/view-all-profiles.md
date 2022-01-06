@@ -22,10 +22,8 @@ Returns all profiles under the authenticated user account.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Profile](#profile) collection with HAL links.
 {% include snippets/api/profiles/view-all-profiles/response-body.md %}

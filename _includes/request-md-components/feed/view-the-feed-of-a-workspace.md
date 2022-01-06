@@ -25,10 +25,8 @@ Returns the feed of the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Dataset](datasets#dataset) collection with HAL links.
 {% include snippets/api/feed/view-a-workspace-feed/response-body.md %}

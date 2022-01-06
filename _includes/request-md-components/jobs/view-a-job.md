@@ -26,10 +26,8 @@ Returns the job `{job-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Job](#job) with HAL links.
 {% include snippets/api/jobs/view-a-job/response-body.md %}

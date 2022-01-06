@@ -25,10 +25,8 @@ Returns all administrators of the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Administrator](#administrator) collection with HAL links.
 {% include snippets/api/workspaces/view-all-administrators-of-a-workspace/response-body.md %}

@@ -29,10 +29,8 @@ Creates or updates the datastore `{datastore-id}` in the workspace `{workspace-i
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201 / 200
-{:.label .label-PUT}
+`200 OK / 201 Created`
+{: .dummy-heading .path-PUT}
 
 [Datastore](#datastore) with HAL links.
 {% include snippets/api/datastores/create-a-datastore-in-a-workspace/response-body.md %}

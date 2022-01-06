@@ -25,10 +25,8 @@ Returns all member subscriptions to the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Subscription](#subscription) collection with HAL links.
 {% include snippets/api/subscriptions/view-all-member-subscriptions-to-a-workspace/response-body.md %}

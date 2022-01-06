@@ -26,10 +26,8 @@ Initialises a new pipeline in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Pipeline](#pipeline) with HAL links.
 {% include snippets/api/pipelines/initialise-a-pipeline-in-a-workspace/response-body.md %}

@@ -27,10 +27,8 @@ Returns the API key `{apikey-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [API key](#api-key) with HAL links.
 {% include snippets/api/apikeys/view-an-api-key/response-body.md %}

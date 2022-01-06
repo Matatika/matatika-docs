@@ -26,10 +26,8 @@ Returns the comment `{comment-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Comment](comments#comment) with HAL links.
 {% include snippets/api/comments/view-a-comment/response-body.md %}

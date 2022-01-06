@@ -26,10 +26,8 @@ Initialises a new reply comment to the comment `{comment-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Comment](comments#comment) with HAL links.
 {% include snippets/api/comments/initialise-a-reply-to-a-comment/response-body.md %}

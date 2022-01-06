@@ -26,10 +26,8 @@ Records a like of the dataset `{dataset-id}` from the authenticated user profile
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 No response body provided.
 

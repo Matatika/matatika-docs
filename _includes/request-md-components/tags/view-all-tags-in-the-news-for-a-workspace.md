@@ -12,10 +12,8 @@ Returns all tags in the news for the workspace `{workspace-id}`.
 - Workspace `{workspace-id}` must exist
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Tag](#tag) collection with HAL links.
 

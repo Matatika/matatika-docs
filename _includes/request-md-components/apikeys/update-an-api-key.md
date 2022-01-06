@@ -30,10 +30,8 @@ Updates the API key `{apikey-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 [API key](#api-key) with HAL links.
 {% include snippets/api/apikeys/update-an-api-key/response-body.md %}

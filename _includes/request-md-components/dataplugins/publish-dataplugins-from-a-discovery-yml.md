@@ -30,10 +30,8 @@ Publishes dataplugins from a [Meltano `discovery.yml`](https://meltano.com/docs/
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-### `201 Created`
-{: .fs-4 .path-POST }
+`201 Created`
+{: .dummy-heading .path-POST}
 
 [Dataplugin](#dataplugin) collection with HAL links.
 {% include snippets/api/dataplugins/publish-dataplugins-from-a-discovery-yml/response-body.md %}

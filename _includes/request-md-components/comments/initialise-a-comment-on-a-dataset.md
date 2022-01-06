@@ -26,10 +26,8 @@ Initialises a new comment on the dataset `{dataset-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Comment](comments#comment) with HAL links.
 {% include snippets/api/comments/initialise-a-comment-on-a-dataset/response-body.md %}

@@ -26,10 +26,8 @@ Initialises a new API key.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [API key](#api-key) with HAL links.
 {% include snippets/api/apikeys/initialise-an-api-key/response-body.md %}

@@ -26,10 +26,8 @@ Returns the member `{member-id}` of the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Member](#member) with HAL links.
 {% include snippets/api/workspaces/view-a-member-of-a-workspace/response-body.md %}

@@ -26,10 +26,8 @@ Returns a channel in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Channel](#channel) with HAL links.
 {% include snippets/api/channels/view-a-channel-in-a-workspace/response-body.md %}

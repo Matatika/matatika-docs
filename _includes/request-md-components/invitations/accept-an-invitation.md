@@ -27,10 +27,8 @@ Accepts the invitation `{invitation-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PATCH}
+`200 OK`
+{: .dummy-heading .path-PATCH}
 
 [Invitation](#invitation) with HAL links.
 {% include snippets/api/invitations/accept-an-invitation/response-body.md %}

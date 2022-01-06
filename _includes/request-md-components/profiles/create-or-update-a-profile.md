@@ -31,8 +31,8 @@ Creates or updates the user profile.
 {: .tabs-section-end}
 
 ### Response
-### `200 OK` / `2
-{: .fs-4 .path-POST }
+`200 OK / 201 Created`
+{: .dummy-heading .path-PUT}
 
 [Profile](#profile) with HAL links.
 {% include snippets/api/profiles/update-a-profile/response-body.md %}

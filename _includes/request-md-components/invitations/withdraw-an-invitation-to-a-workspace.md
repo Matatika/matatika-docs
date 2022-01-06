@@ -27,10 +27,8 @@ Withdraws the pending or accepted invitation `{invitation-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 No response body provided.
 

@@ -314,3 +314,12 @@ header.shrink .hamburger-inner, header.shrink .hamburger-inner:after, header.shr
     transform: rotate(-90deg);
     width: 35px;
 }
+
+p.dummy-heading {
+    margin-top: 1.5em !important;
+    margin-bottom: 0.25em;
+
+    + p {
+        margin-top: 0;
+    }
+}

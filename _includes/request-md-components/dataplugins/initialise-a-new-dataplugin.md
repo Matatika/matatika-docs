@@ -22,10 +22,8 @@ Initialises a new dataplugin.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Dataplugin](#dataplugin) with HAL links.
 {% include snippets/api/dataplugins/initialise-a-new-dataplugin/response-body.md %}

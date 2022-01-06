@@ -32,10 +32,8 @@ Making the request with an existing `id` or `alias` will result in the respectiv
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201 / 200
-{:.label .label-POST}
+`200 OK / 201 Created`
+{: .dummy-heading .path-POST}
 
 [Dataset](#dataset) with HAL links.
 {% include snippets/api/datasets/publish-a-dataset-to-a-workspace/response-body.md %}

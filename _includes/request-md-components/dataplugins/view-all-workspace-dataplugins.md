@@ -25,10 +25,8 @@ Returns all dataplugins available to the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-### `200 OK`
-{: .fs-4 .path-GET }
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Dataplugin](#dataplugin) collection with HAL links.
 {% include snippets/api/dataplugins/view-all-workspace-dataplugins/response-body.md %}

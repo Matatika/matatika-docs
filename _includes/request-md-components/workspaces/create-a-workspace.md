@@ -31,10 +31,8 @@ Creates the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201
-{:.label .label-PUT}
+`201 Created`
+{: .dummy-heading .path-PUT}
 
 [Workspace](#workspace) with HAL links.
 {% include snippets/api/workspaces/create-a-workspace/response-body.md %}

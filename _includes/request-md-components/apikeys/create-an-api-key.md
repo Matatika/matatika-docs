@@ -30,10 +30,8 @@ Creates the API key `{apikey-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201
-{:.label .label-PUT}
+`201 Created`
+{: .dummy-heading .path-PUT}
 
 [API key](#api-key) with HAL links.
 {% include snippets/api/apikeys/create-an-api-key/response-body.md %}
