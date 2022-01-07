@@ -10,7 +10,7 @@ components: request-md-components/pipelines
 
 # {{page.title}}
 
-A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. Pipelines can be run as [jobs](jobs) to load data into a workspace.
+A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. Pipelines are run as [jobs](jobs) to load data into a workspace, either manually or on a predetermined schedule. Only a single pipeline can be run at any given time.
 {: .fs-5 }
 
 ---
