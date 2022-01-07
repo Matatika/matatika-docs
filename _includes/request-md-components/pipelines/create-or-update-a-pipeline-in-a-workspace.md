@@ -31,7 +31,7 @@ Creates or updates the pipeline `{pipeline-id}` in the workspace `{workspace-id}
 
 ### Response
 `200 OK / 201 Created`
-{: .dummy-heading .path-POST}
+{: .dummy-heading .path-PUT}
 
 [Pipeline](#pipeline) with HAL links.
 {% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/response-body.md %}
