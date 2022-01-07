@@ -26,13 +26,10 @@ Withdraws the profile `{profile-id}` as an administrator from the workspace `{wo
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-DELETE}
+`200 OK`
+{: .dummy-heading .path-DELETE}
 
 [Administrator](#administrator) with HAL links.
-
 {% include snippets/api/workspaces/withdraw-an-administrator-from-a-workspace/response-body.md %}
 
 ---

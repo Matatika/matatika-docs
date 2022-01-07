@@ -25,9 +25,9 @@ Delete a channel.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
+`204 No Content`
+{: .dummy-heading .path-DELETE}
 
-204
-{:.label .label-DELETE}
+No response body provided.
 
 ---

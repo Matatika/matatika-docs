@@ -30,16 +30,15 @@ Validates a pipeline configuration in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-### `200 OK`
-{: .fs-4 .path-POST }
+`200 OK`
+{: .dummy-heading .path-POST}
 
 No response body provided.
 
-### `400 Bad Request`
-{: .fs-4 .path-POST }
+`400 Bad Request`
+{: .dummy-heading .path-POST}
 
 [Pipeline property](pipelines#properties) validation errors.
-
 {% include snippets/api/pipelines/validate-a-pipeline-configuration-in-a-workspace/response-body.md %}
 
 ---

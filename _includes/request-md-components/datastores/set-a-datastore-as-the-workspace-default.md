@@ -25,10 +25,8 @@ Sets the datastore `{datastore-id}` as the workspace default.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 No response body provided.
 

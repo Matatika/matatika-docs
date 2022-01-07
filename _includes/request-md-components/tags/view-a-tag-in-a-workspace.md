@@ -26,11 +26,11 @@ Returns the tag `{tag-id}` in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Tag](#tag) with HAL links.
+
+{% include snippets/api/tags/view-a-tag-in-a-workspace/response-body.md %}
 
 ---

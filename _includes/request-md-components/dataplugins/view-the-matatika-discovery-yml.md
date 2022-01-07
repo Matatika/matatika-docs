@@ -22,13 +22,10 @@ Returns a [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discov
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-### `200 OK`
-{: .fs-4 .path-GET }
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins).
-
 {% include snippets/api/dataplugins/view-the-matatika-discovery-yml/response-body.md %}
 
 ---

@@ -26,11 +26,10 @@ Verifies the configuration of the pipeline `{pipeline-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Job](jobs#job) with HAL links.
+{% include snippets/api/pipelines/verify-a-pipeline/response-body.md %}
 
 ---

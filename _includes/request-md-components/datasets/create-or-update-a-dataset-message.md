@@ -29,11 +29,10 @@ Creates or updates the dataset message `{message-id}` for the dataset `{dataset-
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200 / 201
-{:.label .label-PUT}
+`200 OK / 201 Created`
+{: .dummy-heading .path-PUT}
 
 [Dataset Message](#dataset-message) with HAL links.
+{% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 
 ---

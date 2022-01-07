@@ -10,7 +10,7 @@ components: request-md-components/jobs
 
 # {{page.title}}
 
-A job is an executing instance of a [pipeline](pipelines) that carries out the [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"} process for the configured [dataplugin](dataplugins). Jobs can be run manually or on a defined schedule, to inject data into a workspace either instantly or periodically. Only a single job can be run at a time for a given pipeline.
+A job is an arbitrary task with some stored state, pertaining to the governing [workspace](workspaces). Typically, jobs are orchestrated by [pipeline](pipelines) operations, but can also represent tasks for the user to complete.
 {: .fs-5 }
 
 ---
@@ -24,7 +24,7 @@ Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `id` | `String` | Version 4 UUID | The job ID
 `created` | `String` | ISO 8601 timestamp | The instant at which the job was created
-`type` | `String` | [Job Type](#job-type)
+`type` | `String` | [Job Type](#job-type) | The descriptor for the process undertaken by the job
 `exitCode` | `Integer` | Process exit status | The job exit code
 `status` | `String` | [Job Status](#job-status) | The job status
 `startTime` | `String` | ISO 8601 timestamp | The instant at which the job run started
@@ -57,10 +57,12 @@ Value | Description
 
 Value | Description
 ----- | -----------
-`WORKSPACE_INIT` | A workspace initialisation job
-`PIPELINE_CONFIG` | A pipeline configuration job
-`PIPELINE_ENV` | A pipeline environment job
-`PIPELINE_RUN` | A pipeline run job
+`WORKSPACE_INIT` | A system task to create a Meltano project in a [workspace](workspaces) repository - automatically run when a workspace is created
+`PIPELINE_CONFIG` | A system task to configure the Meltano project and publish [datasets](datasets) with reference to a [pipeline](pipelines) - automatically run when a pipeline is created, or a pipeline with a [`status`](pipelines#pipeline-status) of `FAILED` is updated
+`PIPELINE_VERFIY` | A system task to isplay and test the configuration of a [pipeline](pipelines)
+`PIPELINE_RUN` | A system task to run a [pipeline](pipelines) to load data into the [workspace](workspace)  default [datastore](datastores), or some other destination external to the platform - manually run by the user or automatically run on the defined `schedule`
+`PROFILE_COLLABORATE` | A user task to send an [invitation](invitations)
+`PROFILE_IMPORT` | A user task to create a [pipeline](pipelines)
 
 ---
 

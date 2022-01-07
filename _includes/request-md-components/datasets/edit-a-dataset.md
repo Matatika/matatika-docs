@@ -31,11 +31,10 @@ This request can update one or more of the [dataset](#dataset) fields at once. W
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PATCH}
+`200 OK`
+{: .dummy-heading .path-PATCH}
 
 [Dataset](#dataset) with HAL links.
+{% include snippets/api/datasets/edit-a-dataset/response-body.md %}
 
 ---

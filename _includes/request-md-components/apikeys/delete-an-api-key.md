@@ -27,10 +27,8 @@ Deletes the API key `{apikey-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-204
-{:.label .label-DELETE}
+`204 No Content`
+{: .dummy-heading .path-DELETE}
 
 No response body provided.
 

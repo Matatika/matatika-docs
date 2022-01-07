@@ -33,13 +33,10 @@ Parameter | Required | Format | Default Value | Description
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Subscription](#subscription) with HAL links.
-
 {% include snippets/api/subscriptions/subscribe-to-a-channel/response-body.md %}
 
 ---

@@ -22,13 +22,10 @@ Returns all dataplugins supported by Matatika.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-### `200 OK`
-{: .fs-4 .path-GET }
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Dataplugin](#dataplugin) collection with HAL links.
-
 {% include snippets/api/dataplugins/view-all-supported-dataplugins/response-body.md %}
 
 ---

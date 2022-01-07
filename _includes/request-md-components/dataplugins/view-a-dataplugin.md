@@ -25,13 +25,10 @@ Returns the dataplugin `{dataplugin-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-### `200 OK`
-{: .fs-4 .path-GET }
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Dataplugin](#dataplugin) with HAL links.
-
 {% include snippets/api/dataplugins/view-a-dataplugin/response-body.md %}
 
 ---

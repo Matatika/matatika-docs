@@ -30,13 +30,10 @@ Parameter | Required | Format | Default Value | Description
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Notification](#notification) collection with HAL links.
-
 {% include snippets/api/notifications/view-all-notifications/response-body.md %}
 
 ---

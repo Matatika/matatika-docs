@@ -41,8 +41,9 @@ Media Type(s) | Description
 
 ### Response
 - `200`: The job logs in the format specified by associated request `Accept` header
-- `204`: No response body provided.
 
-{% include snippets/api/jobs/view-the-logs-of-a-job-as-plain-text/response-body.md %}
+{% include snippets/api/jobs/view-the-logs-of-a-job-as-json/response-body.md %}
+
+- `204`: No response body provided.
 
 ---

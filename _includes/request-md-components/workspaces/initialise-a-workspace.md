@@ -22,11 +22,10 @@ Initialises a new workspace.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Workspace](#workspace) with HAL links.
+{% include snippets/api/workspaces/initialise-a-workspace/response-body.md %}
 
 ---

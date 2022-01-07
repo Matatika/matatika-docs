@@ -27,11 +27,10 @@ Returns all API keys owned by the authenticated user profile.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [API key](#api-key) collection with HAL links.
+{% include snippets/api/apikeys/view-all-api-keys/response-body.md %}
 
 ---

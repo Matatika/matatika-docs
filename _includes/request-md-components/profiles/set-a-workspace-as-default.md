@@ -32,11 +32,10 @@ A workspace can be set as default, which defines the environment the Matatika ap
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PATCH}
+`200 OK`
+{: .dummy-heading .path-PATCH}
 
 [Profile](#profile) with HAL links.
+{% include snippets/api/profiles/set-a-workspace-as-default/response-body.md %}
 
 ---

@@ -30,11 +30,10 @@ Creates or updates the pipeline `{pipeline-id}` in the workspace `{workspace-id}
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201 / 200
-{:.label .label-PUT}
+`200 OK / 201 Created`
+{: .dummy-heading .path-POST}
 
 [Pipeline](#pipeline) with HAL links.
+{% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/response-body.md %}
 
 ---

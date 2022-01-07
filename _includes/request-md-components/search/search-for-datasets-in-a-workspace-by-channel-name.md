@@ -25,12 +25,15 @@ Searches the workspace `{workspace-id}` for datasets by the channel `{channel-na
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
+`200 OK`
+{: .dummy-heading .path-POST}
 
-200 / 204
-{:.label .label-GET}
+[Dataset](datasets#dataset) collection with HAL links.
+{% include snippets/api/search/search-for-datasets-in-a-workspace-by-channel-name/response-body.md %}
 
-- `200`: [Dataset](datasets#dataset) collection with HAL links.
-- `204`: No response body provided.
+`204 No Content`
+{: .dummy-heading .path-POST}
+
+No response body provided.
 
 ---

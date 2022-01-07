@@ -33,13 +33,10 @@ Path | Type | Format | Description
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 [Subscription](#subscription) with HAL links.
-
 {% include snippets/api/subscriptions/update-a-subscription/response-body.md %}
 
 ---

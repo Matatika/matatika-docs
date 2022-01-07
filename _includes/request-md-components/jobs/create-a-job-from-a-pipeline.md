@@ -26,11 +26,10 @@ Creates a new job from the pipeline `{pipeline-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201
-{:.label .label-POST}
+`201 Created`
+{: .dummy-heading .path-POST}
 
 [Job](#job) with HAL links.
+{% include snippets/api/jobs/create-a-job-from-a-pipeline/response-body.md %}
 
 ---

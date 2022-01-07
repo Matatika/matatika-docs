@@ -29,13 +29,10 @@ Parameter | Required | Format | Default Value | Description
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 [Notification](#notification) collection with HAL links.
-
 {% include snippets/api/notifications/refresh-notifications/response-body.md %}
 
 ---

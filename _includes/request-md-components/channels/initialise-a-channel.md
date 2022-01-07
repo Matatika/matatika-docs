@@ -22,11 +22,10 @@ Initialise a channel.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-POST}
+`200 OK`
+{: .dummy-heading .path-POST}
 
 [Channel](#channel) with HAL links.
+{% include snippets/api/channels/initialise-a-channel/response-body.md %}
 
 ---

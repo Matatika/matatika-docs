@@ -27,13 +27,10 @@ Stops the execution of the job `{job-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-202
-{:.label .label-PUT}
+`202 Accepted`
+{: .dummy-heading .path-PUT}
 
 Job stop acceptance message.
-
 {% include snippets/api/jobs/stop-a-job/response-body.md %}
 
 ---

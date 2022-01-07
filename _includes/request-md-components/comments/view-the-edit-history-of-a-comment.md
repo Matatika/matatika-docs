@@ -26,10 +26,8 @@ Returns the edit history of the comment `{comment-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 {% include snippets/api/comments/view-the-edit-history-of-a-comment/response-body.md %}
 

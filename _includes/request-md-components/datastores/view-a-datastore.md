@@ -25,11 +25,10 @@ Returns the datastore `{datastore-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Datastore](#datastore) with HAL links.
+{% include snippets/api/datastores/view-a-datastore/response-body.md %}
 
 ---

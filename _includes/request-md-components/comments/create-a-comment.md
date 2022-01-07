@@ -31,11 +31,10 @@ Creates the comment `{comment-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-201
-{:.label .label-PUT}
+`201 Created`
+{: .dummy-heading .path-PUT}
 
 [Comment](#comment) with HAL links.
+{% include snippets/api/comments/create-a-comment/response-body.md %}
 
 ---

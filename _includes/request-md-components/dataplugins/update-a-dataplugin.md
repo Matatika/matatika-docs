@@ -35,14 +35,10 @@ Path | Type | Description | Constraints
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-PUT}
+`200 OK`
+{: .dummy-heading .path-PUT}
 
 [Dataplugin](#dataplugin) with HAL links.
-
-
 {% include snippets/api/dataplugins/update-a-dataplugin/response-body.md %}
 
 ---

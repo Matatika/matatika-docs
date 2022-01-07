@@ -22,11 +22,10 @@ Returns all workspaces the authenticated user profile is an owner or member of.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Workspace](#workspace) collection with HAL links.
+{% include snippets/api/workspaces/view-all-workspaces/response-body.md %}
 
 ---

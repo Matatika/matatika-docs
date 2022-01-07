@@ -25,11 +25,11 @@ Returns all tags in the workspace `{workspace-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Tag](#tag) collection with HAL links.
+
+{% include snippets/api/tags/view-all-tags-in-a-workspace/response-body.md %}
 
 ---

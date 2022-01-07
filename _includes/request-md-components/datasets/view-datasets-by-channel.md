@@ -26,11 +26,10 @@ Returns datasets by the channel `{channel-id}`.
 {: .tabs-section-end}
 
 ### Response
-{: .d-inline-block }
-
-200
-{:.label .label-GET}
+`200 OK`
+{: .dummy-heading .path-GET}
 
 [Dataset](#dataset) collection with HAL links.
+{% include snippets/api/datasets/view-datasets-by-channel/response-body.md %}
 
 ---
