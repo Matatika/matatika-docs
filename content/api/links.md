@@ -23,6 +23,7 @@ Resource | Item relation | Collection relation
 [Workspace](resources/workspaces) | `workspace` | `workspaces`
 [Invitation](resources/invitations) | `invitation` | `invitations`
 [Member](resources/members) | `member` | `members`
+[Administrator](resources/administrators) | `administrator` | `administrators`
 [Dataset](resources/datasets) | `dataset` | `datasets`
 [Channel](resources/channels) | `channel` | `channels`
 [Comment](resources/comments) | `comment` | `comments`
@@ -58,8 +59,8 @@ A [`search` action](#search) indicates the acceptance of the `q` query parameter
 Type | Description | Syntax | Example
 ---- | ----------- | ------ | -------
 Free text | The free text to filter by | `{free-text}` | `?q=data%20insights`
-Channel | The channel to filter by | `in:{channel-name}` | `?q=in:matatika-limited`
-Tag | The tag to filter by | `tag:{tag-name}` | `?q=tag:jupyternotebook`
+Channel | The [channel](resources/channels) to filter by | `in:{channel-name}` | `?q=in:matatika-limited`
+Tag | The [tag](resources/tags) to filter by | `tag:{tag-name}` | `?q=tag:jupyternotebook`
 
 The Matatika API supports multiple filter definitions, including those of the same type:
 
@@ -110,6 +111,9 @@ Make a <span>PUT</span>{:.label .label-PUT} request to this link to add a new re
 
 ### `create`
 Make a <span>PUT</span>{:.label .label-PUT} request to this link to create a new resource. Expect `201 Created` or `202 Accepted` to indicate the resource was successfully created.
+
+### `draft`
+Make a <span>PUT</span>{:.label .label-PUT} request to this link to create or update a draft resource. Expect `200 OK` or `201 Created` to indicate the resource was successfully drafted.
 
 ### `make-default`
 Make a <span>PUT</span>{:.label .label-PUT} request to this link to set a particular resource within a collection as default. Expect `200 OK` to indicate the resource was successfully set as default.

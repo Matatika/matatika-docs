@@ -1,10 +1,10 @@
 ## Set a datastore as the workspace default
 
-POST
-{:.label .label-POST}
+PUT
+{:.label .label-PUT}
 
 /api/datastores/{datastore-id}/default
-{:.path .path-POST}
+{:.path .path-PUT}
 
 Sets the datastore `{datastore-id}` as the workspace default.
 
@@ -26,7 +26,7 @@ Sets the datastore `{datastore-id}` as the workspace default.
 
 ### Response
 `200 OK`
-{: .dummy-heading .path-POST}
+{: .dummy-heading .path-PUT}
 
 No response body provided.
 
