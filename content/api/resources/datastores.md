@@ -29,9 +29,6 @@ Path | Type | Format | Description
 `loader` | `String` | | The datastore loader [dataplugin](dataplugins#dataplugin) `name`
 `workspace` | `String` | Version 4 UUID | The datastore [workspace](workspaces#workspace) `id`
 `jdbcUrl` | `String` | [JDBC URL](https://docs.oracle.com/cd/E17952_01/connector-j-8.0-en/connector-j-reference-jdbc-url-format.html){:target="_blank"} | The datastore JDBC URL
-`username` | `String` | | The datastore username
-`password` | `String` | | THe datastore password
-`schema` | `String` | | The datastore schema
 `properties` | [`Properties`](#properties) | | The datastore properties
 
 ### Properties
