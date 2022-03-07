@@ -11,7 +11,7 @@ nav_order: 2
 
 ---
 
-This is a gallery of our insights included when you add and run Google Ads pipeline to your workspace.
+This is a gallery of our insights included when you add our Google Ads data source to your workspace.
 {: .fs-5 }
 
 You can see the dataset files in our [analyze-googleads](https://github.com/Matatika/analyze-googleads){:target="_blank"} github repository.
