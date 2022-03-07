@@ -14,7 +14,7 @@ nav_order: 1
 
 ## Requirements
 
-There are two setting that you are required to provide to use our Trello data source.
+There are two settings that you are required to provide to use our Trello data source.
 
 ### Developer API Key
 
