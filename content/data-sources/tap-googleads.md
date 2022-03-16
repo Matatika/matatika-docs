@@ -4,7 +4,7 @@ title: Google Ads
 permalink: /data-sources/tap-googleads/
 parent: Data Sources
 has_children: true
-nav_order: 1
+nav_order: 2
 ---
 
 # {{page.title}}
