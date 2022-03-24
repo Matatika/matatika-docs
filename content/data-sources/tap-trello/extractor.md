@@ -14,7 +14,7 @@ nav_order: 3
 
 Our Trello data source uses a singer tap we created called `tap-trello` to extract your data. 
 
-You can find documentation about `tap-trello` on the [tap-solarvista]({{site.baseurl}}/data-sources/tap-trello) overview page.
+You can find documentation about `tap-trello` on the [tap-trello]({{site.baseurl}}/data-sources/tap-trello) overview page.
 
 `tap-trello` is open source, and you can see the code on [GitHub](https://github.com/Matatika/tap-trello){:target="_blank"}.
 
