@@ -11,7 +11,7 @@ nav_order: 2
 
 ---
 
-This is a gallery of our insights included when you add and run a Meltano pipeline to your workspace.
+This is a gallery of our insights included when you add our Meltano data source to your workspace.
 {: .fs-5 }
 
 You can see the dataset files in our [analyze-meltano](https://github.com/Matatika/analyze-meltano){:target="_blank"} github repository.

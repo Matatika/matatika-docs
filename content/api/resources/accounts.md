@@ -10,7 +10,7 @@ components: request-md-components/accounts
 
 # {{page.title}}
 
-account desc
+Accounts are passive entities that store quota information for resources consumed by associated [profiles](profiles). An account is created for a user when they first sign up.
 {: .fs-5 }
 
 ---
@@ -30,13 +30,3 @@ Path | Type | Format | Description
 `maxRows` | `Integer` | The maximum number of managed database rows available to the account
 `minutesPerMonth` | `Integer` | | The number of [pipeline](pipelines) run minutes available to the account per month
 `minutesUsed` | `Integer` | | The number of [pipeline](pipelines) run minutes used by the account per month
-{% include snippets/api/profiles/view-a-profile/response-body.md %}
-
----
-
-#### Requests
-
-- TOC
-{: toc }
-
----

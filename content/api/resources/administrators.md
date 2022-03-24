@@ -28,6 +28,8 @@ Path | Type | Format | Description
 ---- | ---- | ------ | -----------
 `administrator` | `Boolean` | | Whether or not the [member](members) is an administrator
 
+{% include snippets/api/workspaces/add-an-administrator-to-a-workspace/response-body.md %}
+
 ---
 
 #### Requests
