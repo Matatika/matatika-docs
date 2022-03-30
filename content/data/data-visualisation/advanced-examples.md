@@ -25,7 +25,7 @@ You can find the original YAML files in our [examples github repo](https://githu
 
 ```yaml
 version: datasets/v0.2
-title: Example Labeled Scatter Chart
+title: Example Labeled Line Chart
 questions: How do the shops compare against visitors and sales?
 description: |-
   #Example
@@ -53,25 +53,26 @@ rawData: |-
   ]
 visualisation: |-
   {"chartjs-chart": 
-    {"chartType": "scatter", 
+    {"chartType": "line", 
       "options": {
         "scales": {
-          "yAxes": [{
-            "scaleLabel": {
+          "y": {
+            "title": {
               "display": true,
-              "labelString": "Number of Visitors"
+              "text": "Number of Visitors"
             }
-          }],
-          "xAxes": [{
-            "scaleLabel": {
+          },
+          "x": {
+            "title": {
               "display": true,
-              "labelString": "Number of Sales"
+              "text": "Number of Sales"
             }
-          }]
+          }
         }    
       }
     }
   }
+
 ```
 ---
 
@@ -113,11 +114,9 @@ visualisation: |-
     {"chartType": "line", 
       "options": {
         "scales": {
-          "yAxes": [{
-            "ticks": {
-              "max": 100
-            }
-          }]
+          "y": {
+            "max": 100
+          }
         }
       }
     }
@@ -163,11 +162,9 @@ visualisation: |-
     {"chartType": "line", 
       "options": {
         "scales": {
-          "yAxes": [{
-            "ticks": {
-              "beginAtZero": true
-            }
-          }]
+          "y": {
+            "beginAtZero": true
+          }
         }
       }
     }
@@ -186,7 +183,7 @@ questions: How many deliveries does each shop have?
 description: |-
   #Example
 
-  This dataset show the shop and how many daily deliveries they receive.
+  This dataset show the shop and how many daily deliveries they recieve.
 metadata: |-
   {
     "name": "shop", 
@@ -210,12 +207,12 @@ visualisation: |-
     {"chartType": "bar",
       "options": {
         "scales": {
-          "yAxes": [{
+          "y": {
+            "beginAtZero": true,
             "ticks": {
-              "beginAtZero": true,
               "stepSize": 1
             }
-          }]
+          }
         }
       }
     }
