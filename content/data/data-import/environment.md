@@ -39,7 +39,7 @@ By default we set every data import's `MELTANO_DATABASE_URI` to be the `public` 
 
 ### Editing Your Environment
 
-You can add to or overwrite your environment variables by using a [custom data import script](site.baseurl}}/data/custom-scripts). How to use and whats expected when you do use a custom data import script can also be found [here](site.baseurl}}/data/custom-scripts).
+You can add to or overwrite your environment variables by using a [custom data import script](custom-scripts). How to use and whats expected when you do use a custom data import script can also be found [here](custom-scripts).
 
 In your custom data import script you can add new or overwrite existing environment variables with a single line:
 
