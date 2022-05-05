@@ -4,7 +4,7 @@ title: Solarvista
 permalink: /data-sources/tap-solarvista/
 parent: Data Sources
 has_children: true
-nav_order: 5
+nav_order: 6
 ---
 
 # {{page.title}}
