@@ -11,6 +11,6 @@ nav_order: 8
 
 ---
 
-<img src="{{site.baseurl}}/assets/data_source_images/tap-trello.png" width="125">
+<img src="{{site.baseurl}}/assets/data_source_images/tap-trello.png" width="125" alt="trello">
 
 {% include snippets/api/markdown-descriptions/tap-trello/dataplugin-description.md %}

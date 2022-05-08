@@ -11,6 +11,6 @@ nav_order: 7
 
 ---
 
-<img src="{{site.baseurl}}/assets/data_source_images/tap-spotify.png" width="125">
+<img src="{{site.baseurl}}/assets/data_source_images/tap-spotify.png" width="125" alt="spotify">
 
 {% include snippets/api/markdown-descriptions/tap-spotify/dataplugin-description.md %}
