@@ -11,47 +11,15 @@ grand_parent: Data
 
 ---
 
-Custom scripts can be used by [data imports]({{site.baseurl}}/glossary#data-import) by choosing `Advanced` from `Section 2 - Clean, transform and organise` when creating or editing your data import.
-
-By passing a custom script to a data import you can completely control the your data import's environment as well as provide custom step to happen during your data import run.
+Custom scripts can be used by [data imports]({{site.baseurl}}/glossary#data-import) by choosing `Script` from `Section 2 - Clean, transform and organise` when creating or editing your data import.
 
 ---
 
 ## Basics
 
-Custom scripts are bash scripts that generally invoke [Meltano](https://meltano.com/docs/plugin-management.html){:target="_blank"} commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) environment in these scripts as seen in the `Default actions` script below:
-```bash
-export EXTRACTOR='[(${pipeline.dataSource.extractor.name})]'
-export LOADER='[(${pipeline.dataStore.loader.name})]'
+Custom scripts are bash scripts that generally invoke [Meltano](https://meltano.com/docs/plugin-management.html){:target="_blank"} commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) environment in these scripts.
 
-script="orchestrate/$EXTRACTOR/elt.sh"
-if [ -f "$script" ]; then . "$script"; exit $?; fi
-
-# install plugins
-meltano install extractor "$EXTRACTOR"
-meltano install loader "$LOADER"
-meltano install transform "$EXTRACTOR"
-meltano install transformer dbt
-
-transform='skip'
-if [ -d .meltano/transformers/dbt ]; then
-    transform='run'
-fi
-
-# run elt
-meltano elt "$EXTRACTOR" "$LOADER" --transform="$transform"
-```
-
-Above is the exact script that is run by default on a data import run. 
-
-- First it determines the data source and data store name from the pipeline (data import).
-- Then attempts to find any custom scripts we sometimes include in an [analyze file bundle](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#analyze-file-bundle){:target="_blank"}, if your data source came with one.
-- If it finds one of our custom scripts, it runs those steps instead. Otherwise:
-- Install the meltano plugins relevant to this data import run.
-- Work out if there are transforms to be done with dbt
-- Finally run the `meltano elt` with the transform setting being worked out in the previous step.
-
-As seen in the `Default actions` script, you can do anything you could normally do with bash. Set environment variables you want, change ones that are pre-set, handle conditional logic, add or remove data processing steps and so on.
+When you provide a `Script` to a pipeline, we will still add your plugins properties to the pipeline environment. Other than that, you are now in complete control of the environment, installation of plugins and execution of your pipeline.
 
 ---
 
@@ -62,13 +30,20 @@ As seen in the `Default actions` script, you can do anything you could normally 
 Generally at a minimum you will need to:
 
 ```bash
+MELTANO_ENVIRONMENT=<env_name>
+meltano environment add <env_name>
+
+export MELTANO_ENVIRONMENT
+
 meltano install
-meltano elt <tap_name> <target_name>
+meltano run <tap_name> <target_name>
 ```
+
+Adding a Meltano environment will allow your tap to save a state for next time it runs, if your tap supports this.
 
 Running `meltano install` will install all plugins in your workspace. You can run `meltano install <plugin_type> <plugin_name>` to install specific ones if you wish.
 
-`meltano elt <tap_name> <target_name>` is the actual command to run the data import and get your data into your data store.
+`meltano run <tap_name> <target_name>` is the actual command to run the data import and get your data into your data store.
 
 ### Using Meltano To Invoke Other Plugins
 
@@ -82,5 +57,6 @@ By invoking other plugins through Meltano, you gain the benefit of Meltano takin
 ## Further Reading
 
 - [Matatika Examples of Custom Scripts](https://github.com/Matatika/matatika-examples/tree/master/example_data_import_scripts){:target="_blank"}
+- [Matatika Default Pipeline Run Script](https://github.com/Matatika/matatika-examples/blob/master/example_data_import_scripts/default.sh)
 - [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#custom-data-source){:target="_blank"}
 - [Meltano Documentation](https://meltano.com/docs/plugin-management.html){:target="_blank"}
