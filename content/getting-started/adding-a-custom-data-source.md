@@ -33,11 +33,12 @@ In this example we will create a custom version of the data source `tap-spreadsh
 
 We will be naming our "custom" `tap-spreadsheets-anywhere` [data source]({{site.baseurl}}/glossary#data-source) `tap-example-custom-data-source`.
 
-To add this custom data source you first need to navigate to the [data imports]({{site.baseurl}}/glossary#data-import) screen:
+To add this custom data source you first need to navigate to the pipelines screen:
 
-- Click on your profile picture in the top right and select `Data Imports` from the drop down.
-- Click on the `+ Import` button just below your profile picture.
-- Select `Custom Data Source` and click next.
+- Click on the `Lab` button.
+- Go to the `Pipelines` page.
+- Click `+ Import`
+- Select the `Custom` tab at the top and click `Connect` on the Custom option.
 - In the pop up window you can select your discovery.yml file (can be any name, just need to be in the correct yaml format), or paste in your plugin definition.
 
 For `tap-example-custom-data-source` we will be using:
@@ -65,7 +66,8 @@ files:
 
 We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) so we can see the data being extracted by the tap in [visualisations]({{site.baseurl}}/data/data-visualisation/charts). By adding this bundle and setting the same namespace we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you configure a `tap-example-custom-data-source` data import, you should also add this bundle.
 
-- Click next and you will now be on a screen that expects the settings for your [data source]({{site.baseurl}}/glossary#data-source).
+- Click next and you will now be on a screen that expects the settings for your pipeline.
+- Expand the `tap-example-custom-data-source` section.
 - Our custom data source will require a Tables array, we will use:
 ```json
 [{
@@ -77,11 +79,11 @@ We are including a analyze file bundle that contains Matatika [datasets]({{site.
   "format":"csv" 
 }]
 ```
-- For this example we can leave `Section 2 - Clean, transform and organise` on `Default Actions`.
+- For this example we can leave `Section 2 - Clean, transform and organise` on `Default`.
 - For this example we can leave `Section 3 - Automate your import` on `Manual`.
 - Finally click save
 
-Your new custom [data source]({{site.baseurl}}/glossary#data-source) will be added to your workspace repository, along with any other associated plugins, during a data import config job which when you go back to your data imports screen, will be running immediately. This config job will also publish the analyze file bundle's [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) to your [workspace]({{site.baseurl}}/glossary#workspace).
+Your new custom [data source]({{site.baseurl}}/glossary#data-source) will be added to your workspace repository, along with any other associated plugins, during a data import config job which when you go back to your data imports screen will be running immediately. This config job will also publish the analyze file bundle's [datasets]({{site.baseurl}}/data/data-visualisation/dataset-yaml) to your [workspace]({{site.baseurl}}/glossary#workspace).
 
 Once the config job has completed, you can run your data import by pressing the start job button. (Solid Arrow).
 

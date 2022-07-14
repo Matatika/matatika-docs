@@ -23,7 +23,7 @@ You must have:
 ---
 
 ## Introduction
-Data import pipelines in Matatika workspaces are run using [Meltano](https://meltano.com/){:target="_blank"}. Each Matatika workspace is backed by a repository containing a Meltano project hosted on GitHub, which can easily be cloned locally in order to run data import pipelines external to the Matatika platfrom.
+Data import pipelines in Matatika workspaces are run using [Meltano](https://meltano.com/){:target="_blank"}. Each Matatika workspace is backed by a repository containing a Meltano project hosted on GitHub, which can easily be cloned locally in order to run data import pipelines external to the Matatika platform.
 
 ---
 
@@ -35,7 +35,7 @@ Data import pipelines in Matatika workspaces are run using [Meltano](https://mel
     git clone https://github.com/MatatikaBytes/example-workspace
     ```
 1. Change into the cloned directory and create a new `.env` file
-1. Head back to the Matatika app and navigate to the workspace 'Data Imports' page, and expand the data import pipeline you wish to run locally
+1. Head back to the Matatika app and navigate to the workspace `Lab` then `Pipelines` page, and expand the data import pipeline you wish to run locally
 1. Select the 'Environment' tab and click the `.env` text field to copy the environment configuration 
 1. Paste the copied environment configuration into the `.env` file you created earlier
     ```
@@ -65,5 +65,5 @@ Your local workspace repository should now be set up similar to this one: [Githu
     ```
 1. Run your data import pipeline
     ```
-    meltano elt tap-example target-example
+    meltano run tap-example target-example
     ```
