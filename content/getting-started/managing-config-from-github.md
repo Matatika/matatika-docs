@@ -36,7 +36,7 @@ In this guide we will show you the steps to set up a GitHub Webhook where each p
 1. Go to your workspace settings screen.
 2. Go to your Workspace's repository on GitHub.
 3. Go to your GitHub repositories `Settings` > `Webhooks` > `Add webhook`
-4. Your `Payload URL` will be `https://catalog.matatika.com/api/workspaces/<workspace_id>/deployments/github-webhook`
+4. Your `Payload URL` will be `{{site.catalog_uri}}/workspaces/<workspace_id>/deployments/github-webhook`
 You can get your `<workspace_id>` by going to your workspace and finding the UUID in the URL.
 5. Set the Content Type to `application/json`
 6. Your Secret is the Deployment Secret from your workspace settings page.
