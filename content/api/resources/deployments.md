@@ -25,3 +25,5 @@ This can be done manually or via a GitHub Webhook which you can see how to set u
 ---
 
 {% include {{ page.components }}/deploy-workspace.md %}
+
+{% include {{ page.components }}/github-webhook.md %}
