@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Solarvista
 permalink: /data-sources/tap-solarvista/
 parent: Data Sources

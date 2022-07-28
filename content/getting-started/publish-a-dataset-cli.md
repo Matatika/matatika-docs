@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Publish a Dataset (CLI)
 permalink: /getting-started/publish-a-dataset-cli
 parent: Getting Started

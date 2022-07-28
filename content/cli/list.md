@@ -1,5 +1,4 @@
 ---
-layout: default
 title: list
 permalink: /cli/list
 parent: CLI

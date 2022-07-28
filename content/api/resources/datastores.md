@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Datastores
 permalink: /api/resources/datastores
 parent: Resources

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Deployments
 permalink: /api/resources/deployments
 parent: Resources

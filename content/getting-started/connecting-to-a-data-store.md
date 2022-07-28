@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Connecting to a Data Store
 permalink: /getting-started/connecting-to-a-data-store
 parent: Getting Started

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Shopify
 permalink: /data-sources/tap-shopify/
 parent: Data Sources

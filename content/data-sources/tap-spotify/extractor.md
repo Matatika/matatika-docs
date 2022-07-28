@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Extractor
 permalink: /data-sources/tap-spotify/extractor
 parent: Spotify

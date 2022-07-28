@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Channel YAML
 permalink: /data/channel/channel-yaml
 parent: Channel

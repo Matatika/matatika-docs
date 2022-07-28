@@ -1,5 +1,4 @@
 ---
-layout: default
 title: fetch
 permalink: /cli/fetch
 parent: CLI

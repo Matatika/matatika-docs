@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Custom Scripts
 permalink: /data/data-import/custom-scripts
 nav_order: 1

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Administrators
 permalink: api/resources/administrators
 parent: Resources

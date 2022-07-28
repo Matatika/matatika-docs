@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Feed
 permalink: /api/resources/feed
 parent: Resources

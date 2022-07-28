@@ -1,5 +1,4 @@
 ---
-layout: default
 title: CLI
 permalink: /cli/
 nav_order: 5

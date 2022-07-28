@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Pipelines
 permalink: /api/resources/pipelines
 parent: Resources

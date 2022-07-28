@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Security
 permalink: /security
 nav_order: 3

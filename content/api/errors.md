@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Status Codes and Errors
 permalink: /api/errors
 parent: API

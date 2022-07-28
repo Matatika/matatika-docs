@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Data Visualisation
 permalink: /data/data-visualisation/
 nav_order: 3

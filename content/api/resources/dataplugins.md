@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Dataplugins
 permalink: /api/resources/dataplugins
 parent: Resources

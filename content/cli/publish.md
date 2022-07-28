@@ -1,5 +1,4 @@
 ---
-layout: default
 title: publish
 permalink: /cli/publish
 parent: CLI

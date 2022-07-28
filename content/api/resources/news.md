@@ -1,5 +1,4 @@
 ---
-layout: default
 title: News
 permalink: /api/resources/news
 parent: Resources

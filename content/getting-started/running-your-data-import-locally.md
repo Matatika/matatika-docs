@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Running Your Data Import Locally
 permalink: /getting-started/running-your-data-import-locally
 parent: Getting Started

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Profiles
 permalink: /api/resources/profiles
 parent: Resources

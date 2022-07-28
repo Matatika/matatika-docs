@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Auth0
 permalink: /data-sources/tap-auth0/
 parent: Data Sources

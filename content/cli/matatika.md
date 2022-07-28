@@ -1,5 +1,4 @@
 ---
-layout: default
 title: matatika
 permalink: /cli/matatika
 parent: CLI

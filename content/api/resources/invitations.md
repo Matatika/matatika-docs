@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Invitations
 permalink: /api/resources/invitations
 parent: Resources

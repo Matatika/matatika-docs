@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Query
 permalink: /data/data-visualisation/query
 parent: Data Visualisation

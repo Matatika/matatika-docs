@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Publish a Jupyter Notebook
 permalink: /getting-started/publish-a-jupyter-notebook
 parent: Getting Started

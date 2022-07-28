@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Managing Config From GitHub
 permalink: /getting-started/managing-config-from-github
 parent: Getting Started

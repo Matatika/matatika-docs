@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Charts
 permalink: /data/data-visualisation/charts
 parent: Data Visualisation

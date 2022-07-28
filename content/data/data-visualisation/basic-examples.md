@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Basic Examples
 permalink: /data/data-visualisation/basic-examples
 parent: Data Visualisation

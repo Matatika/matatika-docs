@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Trello
 permalink: /data-sources/tap-trello/
 parent: Data Sources
