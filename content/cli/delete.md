@@ -1,5 +1,4 @@
 ---
-layout: default
 title: delete
 permalink: /cli/delete
 parent: CLI

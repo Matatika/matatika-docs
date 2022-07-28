@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Making Your First API Call
 permalink: /getting-started/making-your-first-api-call
 parent: Getting Started

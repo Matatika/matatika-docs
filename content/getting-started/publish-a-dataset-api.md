@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Publish a Dataset (API)
 permalink: /getting-started/publish-a-dataset-api
 parent: Getting Started

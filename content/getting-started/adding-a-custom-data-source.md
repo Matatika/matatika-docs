@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Adding a Custom Data Source
 permalink: /getting-started/adding-a-custom-data-source
 parent: Getting Started

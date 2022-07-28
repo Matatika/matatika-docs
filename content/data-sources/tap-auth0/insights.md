@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Insights
 permalink: /data-sources/tap-auth0/insights
 parent: Auth0

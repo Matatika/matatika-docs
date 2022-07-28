@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Library
 permalink: /library
 nav_order: 8

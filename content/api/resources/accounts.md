@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Accounts
 permalink: /api/resources/accounts
 parent: Resources

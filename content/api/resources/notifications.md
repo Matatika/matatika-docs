@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Notifications
 permalink: /api/resources/notifications
 parent: Resources

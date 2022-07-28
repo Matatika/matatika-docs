@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Support
 permalink: /support
 nav_order: 10

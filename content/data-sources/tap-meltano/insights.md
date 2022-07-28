@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Insights
 permalink: /data-sources/tap-meltano/insights
 parent: Meltano

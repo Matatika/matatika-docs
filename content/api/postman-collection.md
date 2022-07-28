@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Postman Collection
 permalink: /api/postman-collection
 parent: API

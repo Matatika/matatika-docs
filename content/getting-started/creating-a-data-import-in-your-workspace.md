@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Creating A Data Import In Your Workspace
 permalink: /getting-started/creating-a-data-import-in-your-workspace
 parent: Getting Started

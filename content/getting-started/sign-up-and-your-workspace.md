@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Sign-Up and Your Workspace
 permalink: /getting-started/sign-up-and-your-workspace
 parent: Getting Started

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Google Ads
 permalink: /data-sources/tap-googleads/
 parent: Data Sources

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Channel
 permalink: /data/channel/
 nav_order: 1

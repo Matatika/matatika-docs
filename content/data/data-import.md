@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Data Import
 permalink: /data/data-import/
 nav_order: 2

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Channels
 permalink: /api/resources/channels
 parent: Resources

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Converting Meltano Reports
 permalink: /getting-started/converting-meltano-reports
 parent: Getting Started

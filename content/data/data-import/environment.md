@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Environment
 permalink: /data/data-import/environment
 nav_order: 2

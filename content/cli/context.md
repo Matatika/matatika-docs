@@ -1,5 +1,4 @@
 ---
-layout: default
 title: context
 permalink: /cli/context
 parent: CLI

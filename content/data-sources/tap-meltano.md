@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Meltano
 permalink: /data-sources/tap-meltano/
 parent: Data Sources

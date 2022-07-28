@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Comments
 permalink: /api/resources/comments
 parent: Resources

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Search
 permalink: /api/resources/search
 parent: Resources

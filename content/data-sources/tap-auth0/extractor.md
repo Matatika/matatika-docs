@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Extractor
 permalink: /data-sources/tap-auth0/extractor
 parent: Auth0

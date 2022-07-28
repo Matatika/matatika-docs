@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Dataset YAML
 permalink: /data/data-visualisation/dataset-yaml
 nav_order: 1

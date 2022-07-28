@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Data
 permalink: /data/
 nav_order: 6

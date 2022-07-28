@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Prerequisites
 permalink: /data-sources/tap-solarvista/prerequisites
 parent: Solarvista

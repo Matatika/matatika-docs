@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Fetch Data into a Jupyter Notebook
 permalink: /getting-started/fetch-data-into-a-jupyter-notebook
 parent: Getting Started
