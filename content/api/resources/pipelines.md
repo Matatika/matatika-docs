@@ -9,7 +9,7 @@ components: request-md-components/pipelines
 
 # {{page.title}}
 
-A pipeline is a workspace-specific configuration or definition for extracting, loading and transforming data from a given [dataplugin](dataplugins) - following the concept of [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. Pipelines are run as [jobs](jobs) to load data into a workspace, either manually or on a predetermined schedule. Only a single pipeline can be run at any given time.
+A pipeline defines a set of runnable actions composed from [datacomponents](datacomponents) to complete a set of tasks - for example, [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. Pipelines are run as [jobs](jobs), either manually or on a predetermined schedule. Only a single pipeline can be run at any given time.
 {: .fs-5 }
 
 ---
@@ -26,25 +26,25 @@ Path | Type | Format | Description
 `name` | `String` | | The pipeline name
 `schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
 `timeout` | `Integer` | Unsigned | The number of seconds after which the job will terminate - if set to `0`, an implicit default value of 300 seconds is used
-`script` | `String` | Bash | Custom script to be executed as the pipeline job
+`script` | `String` | Bash script | Custom script to execute during a [job](jobs)
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
-`properties` | [`Properties`](#properties) | | The properties to run the pipeline with, defined by the pipeline [dataplugin](dataplugins) `settings`
-`dataSource` | `String` | | The pipeline data source [dataplugin](dataplugins) `name`
-`dataStore` | `String` | Version 4 UUID | The pipeline datastore `id`
-`_embedded.dataSource` | [`DataPlugin`](dataplugins#dataplugin) | | The pipeline data source [dataplugin](dataplugins)
-`_embedded.dataStore` | `DataStore` | | The pipeline data store
-`_embedded.'latest job'` | [`Job`](jobs#job) | | The latest [job](jobs) run from the pipeline
+`properties` | [`Properties`](#properties) | | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)
+`dataComponents` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s
+`actions` | `Array` of `String` | `Array` of [`Dataplugin`](dataplugins) `name`s or commands | The pipeline actions to run during a [job](jobs)
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
 ### Properties
 
-For each setting `s` in the [dataplugin](dataplugins) [`settings`](dataplugins#setting):
+For each setting `s` in the [datacomponents](datacomponents)' [dataplugin](dataplugins) [`settings`](dataplugins#setting) for each 
 
 Path | Type | Description
 ---- | ---- | -----------
 `s.name` | `s.kind` | Refer to `s.description`
+
+- Any required settings not satisfied by a [datacomponent](datacomponents) property must be provided as a pipeline property
+- Any settings that are already satisfied by a [datacomponent](datacomponents) property can be overridden by a pipeline property
 
 ## Formats
 {: .no_toc}
