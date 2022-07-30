@@ -8,9 +8,11 @@ defaults:
     values:
       layout: default
 
-www_url: http://www-localhost.matatika.com
-app_url: http://localhost:3443
-catalog_uri: http://localhost:8080/api
+matatika:
+  links:
+    www: http://www-localhost.matatika.com
+    app: http://localhost:3443
+    catalog: http://localhost:8080/api
 
 theme: just-the-docs
 color_scheme: matatika

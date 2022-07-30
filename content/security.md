@@ -13,7 +13,7 @@ The Matatika API uses authorisation to both secure and prevent unwanted access t
 
 ## Getting a Token
 
-You can obtain an API Bearer token [here]({{site.app_url}}/api-key).
+You can obtain an API Bearer token [here]({{site.matatika.links.app}}/api-key).
 - This token will be valid for **2 hours** under the condition that the user remains logged into the app
 - If the user logs out of the app during the token's active period or the token expires, the token is revoked and a new one will be issued on a subsequent sign-in
 

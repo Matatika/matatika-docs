@@ -14,7 +14,7 @@ nav_order: 3
 ## Prerequisites
 You must have already:
 - Signed up for a Matatika account
-- Created a workspace through the [Matatika app]({{site.app_url}}) or API
+- Created a workspace through the [Matatika app]({{site.matatika.links.app}}) or API
 
 Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
 
@@ -53,7 +53,7 @@ curl -i \
     '"rawData": "[[\"Planet\", \"Orbit Distance (Light-hours)\", \"Orbit Duration (Earth-years)\"],[\"Mercury\", 0.3336, 0.2500],[\"Venus\", 0.6300, 0.5833],[\"Earth\", 0.8708, 1],[\"Mars\", 1.3242, 1.9167],[\"Jupiter\", 4.5287, 11.8333],[\"Saturn\", 8.2997, 29.5000]]", ' \
     '"visualisation": "{\"google-chart\": {\"chartType\": \"Bar\", \"options\": {\"width\" : 600, \"height\" : 400}}}"' \
     '}' \
-    {{ site.catalog_uri }}/api/workspaces/$WORKSPACE_ID/datasets
+    {{ site.matatika.links.catalog }}/api/workspaces/$WORKSPACE_ID/datasets
 ```
 
 ### Windows
@@ -69,7 +69,7 @@ curl -i ^
     """rawData"": ""[[\""Planet\"", \""Orbit Distance (Light-hours)\"", \""Orbit Duration (Earth-years)\""],[\""Mercury\"", 0.3336, 0.2500],[\""Venus\"", 0.6300, 0.5833],[\""Earth\"", 0.8708, 1],[\""Mars\"", 1.3242, 1.9167],[\""Jupiter\"", 4.5287, 11.8333],[\""Saturn\"", 8.2997, 29.5000]]"", " ^
     """visualisation"": ""{\""google-chart\"": {\""chartType\"": \""Bar\"", \""options\"": {\""width\"" : 600, \""height\"" : 400}}}""" ^
     "}" ^
-    {{ site.catalog_uri }}/workspaces/%WORKSPACE_ID%/datasets
+    {{ site.matatika.links.catalog }}/workspaces/%WORKSPACE_ID%/datasets
 ```
 
 ## Postman
@@ -79,6 +79,6 @@ Within the Matatika API collection, find the *Publish a workspace dataset* reque
 
 ---
 
-That's all there is to it! If everything was set up correctly, you should have received a response with a status of `201 Created` and a body containing information about the dataset you just published. Subsequent requests to this same URL using the same `alias` will yield a status of `200 OK`. You should also see your dataset appear in the [Matatika app]({{site.app_url}}) within the context of the workspace you published to.
+That's all there is to it! If everything was set up correctly, you should have received a response with a status of `201 Created` and a body containing information about the dataset you just published. Subsequent requests to this same URL using the same `alias` will yield a status of `200 OK`. You should also see your dataset appear in the [Matatika app]({{site.matatika.links.app}}) within the context of the workspace you published to.
 
 ![successfully published dataset in the matatika app]({{site.baseurl}}/assets/img/app-published-dataset.png)

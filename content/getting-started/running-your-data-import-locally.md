@@ -27,7 +27,7 @@ Data import pipelines in Matatika workspaces are run using [Meltano](https://mel
 ---
 
 ## Setup
-1. Within the [Matatika app]({{site.app_url}}){:target="_blank"}, switch to the workspace that contains the data import pipeline you wish to run locally
+1. Within the [Matatika app]({{site.matatika.links.app}}){:target="_blank"}, switch to the workspace that contains the data import pipeline you wish to run locally
 1. Navigate to the workspace 'Settings' page and copy the repository URL
 1. Clone the workspace to your local system
     ```

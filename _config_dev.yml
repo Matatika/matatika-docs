@@ -1,4 +1,7 @@
 baseurl: /docs
-www_url: https://www-staging.matatika.com
-app_url: https://app-staging.matatika.com
-catalog_uri: https://catalog-staging.matatika.com/api
+
+matatika:
+  links:
+    www: https://www-staging.matatika.com
+    app: https://app-staging.matatika.com
+    catalog: https://catalog-staging.matatika.com/api

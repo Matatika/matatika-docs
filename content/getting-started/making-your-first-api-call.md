@@ -22,14 +22,14 @@ cURL is installed by default on Windows 10, macOS and some Linux distributions (
 ```bash
 curl -i \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
-    {{ site.catalog_uri }}/workspaces
+    {{ site.matatika.links.catalog }}/workspaces
 ```
 
 ### Windows
 ```bat
 curl -i ^
     -H "Authorization: Bearer %ACCESS_TOKEN%" ^
-    {{ site.catalog_uri }}/workspaces
+    {{ site.matatika.links.catalog }}/workspaces
 ```
 
 If you plan to explore the Matatika API further, it may make sense to resolve the Bearer token to a temporary environment variable.
@@ -39,7 +39,7 @@ If you plan to explore the Matatika API further, it may make sense to resolve th
 ACCESS_TOKEN="..."
 curl -i \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
-    {{ site.catalog_uri }}/workspaces
+    {{ site.matatika.links.catalog }}/workspaces
 ```
 
 ### Windows
@@ -47,7 +47,7 @@ curl -i \
 set ACCESS_TOKEN="..."
 curl -i ^
     -H "Authorization: Bearer %ACCESS_TOKEN%" ^
-    {{ site.catalog_uri }}/workspaces
+    {{ site.matatika.links.catalog }}/workspaces
 ```
 
 ## Postman
