@@ -37,3 +37,9 @@ exclude:
   - azure-pipelines.yml
   - build-docs.sh
   - restdocs-to-postman/
+
+# build
+strict_front_matter: true
+
+# serve
+livereload: true

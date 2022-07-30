@@ -4,7 +4,8 @@ services:
         image: jekyll/minimal:4.1.0
         ports:
             - 4000:4000
+            - 35729:35729
         volumes:
             - ${PWD}:/srv/jekyll
             - ${PWD}/vendor/bundle:/usr/local/bundle
-        command: jekyll serve --incremental --config _config.yml
+        command: jekyll serve --incremental
