@@ -43,4 +43,3 @@ strict_front_matter: true
 
 # serve
 livereload: true
-skip_initial_build: true
