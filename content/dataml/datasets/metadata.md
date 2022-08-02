@@ -1,8 +1,8 @@
 ---
 title: Metadata
-permalink: /data/data-visualisation/metadata
-parent: Data Visualisation
-grand_parent: Data
+permalink: /dataml/datasets/metadata
+parent: Datasets
+grand_parent: DataML 
 nav_order: 4
 ---
 
@@ -10,7 +10,7 @@ nav_order: 4
 
 ---
 
-You can change the format and display of your chart by using the `metadata` key of the [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml).
+You can change the format and display of your chart by using the `metadata` key of the [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasets/dataset-yaml).
 {: .fs-5 }
 
 The `metadata` key relates to how the data from the [`query`](query) within the dataset is displayed as an insight.

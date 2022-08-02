@@ -1,8 +1,8 @@
 ---
 title: Query
-permalink: /data/data-visualisation/query
-parent: Data Visualisation
-grand_parent: Data
+permalink: /dataml/datasets/query
+parent: Datasets
+grand_parent: DataML 
 nav_order: 5
 ---
 
@@ -10,7 +10,7 @@ nav_order: 5
 
 ---
 
-You select the data for your chart by using the `query` key of the [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml).
+You select the data for your chart by using the `query` key of the [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasets/dataset-yaml).
 {: .fs-5 }
 
 The `query` key in the dataset file is the sql query that is run against your chosen data store to retrieve data for use in displaying the insight.

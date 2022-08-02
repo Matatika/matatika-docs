@@ -1,16 +1,16 @@
 ---
 title: Custom Scripts
-permalink: /data/data-import/custom-scripts
-nav_order: 1
-parent: Data Import
-grand_parent: Data
+permalink: /dataml/pipelines/custom-scripts
+nav_order: 3
+parent: Pipelines
+grand_parent: DataML
 ---
 
 # {{page.title}}
 
 ---
 
-Custom scripts can be used by [data imports]({{site.baseurl}}/glossary#data-import) by choosing `Script` from `Section 2 - Clean, transform and organise` when creating or editing your data import.
+Custom scripts can be used in [Pipelines]({{site.baseurl}}/glossary#pipeline) by choosing `Script` from `Section 2 - Clean, transform and organise` when creating or editing your data import or by defining an 'inline_script' in your [Pipeline YAML]({{site.baseurl}}/dataml/pipelines/pipeline-yaml).
 
 ---
 

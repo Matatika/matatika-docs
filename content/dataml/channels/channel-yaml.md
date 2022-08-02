@@ -1,8 +1,8 @@
 ---
 title: Channel YAML
-permalink: /data/channel/channel-yaml
-parent: Channel
-grand_parent: Data
+permalink: /dataml/channels/channel-yaml
+parent: Channels
+grand_parent: DataML
 nav_order: 1
 ---
 
@@ -10,7 +10,7 @@ nav_order: 1
 
 ---
 
-The Matatika channel file is a way to create channels in your workspace. These channels can be used to "group up" related datasets.
+Use the Matatika channel YAML to group related datasets in your workspace as code.
 {: .fs-5 }
 
 Our channel files are stored as YAML files, you can read more about the YAML format and its syntax [here](https://yaml.org/){:target="_blank"}.

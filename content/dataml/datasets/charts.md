@@ -1,8 +1,8 @@
 ---
 title: Charts
-permalink: /data/data-visualisation/charts
-parent: Data Visualisation
-grand_parent: Data
+permalink: /dataml/datasets/charts
+parent: Datasets
+grand_parent: DataML 
 nav_order: 3
 ---
 
@@ -10,7 +10,7 @@ nav_order: 3
 
 ---
 
-You can use different chart types by utilizing the `visulisation` key of the [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml).
+You can use different chart types by utilizing the `visulisation` key of the [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasets/dataset-yaml).
 {: .fs-5 }
 
 The `visualisation` key contains information about displaying the chart for the insight.

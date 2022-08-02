@@ -1,16 +1,16 @@
 ---
 title: Environment
-permalink: /data/data-import/environment
+permalink: /dataml/pipelines/environment
 nav_order: 2
-parent: Data Import
-grand_parent: Data
+parent: Pipelines
+grand_parent: DataML
 ---
 
 # {{page.title}}
 
 ---
 
-[Data imports]({{site.baseurl}}/glossary#data-import) have environments that are used to pass settings to your [data source]({{site.baseurl}}/glossary#data-source), [data stores]({{site.baseurl}}/glossary#data-store) and other plugins.
+[Pipelines]({{site.baseurl}}/glossary#data-import) have environments that are used to pass settings to your [data source]({{site.baseurl}}/glossary#data-source), [data stores]({{site.baseurl}}/glossary#data-store) and other plugins.
 
 ---
 
