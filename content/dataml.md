@@ -9,5 +9,5 @@ has_children: true
 
 ---
 
-Examples and reference documentation for **DataML** artifacts - objects and files of the **Data Management Language**.
+Examples and reference documentation for **Data Management Language** **(DataML)** artifacts.
 {: .fs-5 }
