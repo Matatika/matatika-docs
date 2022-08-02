@@ -8,4 +8,4 @@ services:
     volumes:
       - ${PWD}:/srv/jekyll
       - ${PWD}/vendor/bundle:/usr/local/bundle
-    command: jekyll serve --incremental --skip-initial-build
+    command: jekyll serve --incremental
