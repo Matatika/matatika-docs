@@ -1,14 +1,16 @@
 ---
-title: Channel YAML
-permalink: /dataml/channels/channel-yaml
-parent: Channels
-grand_parent: DataML
+title: ChannelML
+permalink: /dataml/channelml/
 nav_order: 1
+parent: DataML
 ---
 
 # {{page.title}}
 
 ---
+
+Examples and reference documentation for organising your datasets into channels.
+{: .fs-5 }
 
 Use the Matatika channel YAML to group related datasets in your workspace as code.
 {: .fs-5 }
@@ -18,16 +20,7 @@ Our channel files are stored as YAML files, you can read more about the YAML for
 
 ---
 
-### Channel YAML Layout
-
-```yaml
-version: channels/v0.1
-name: <channel_alias>
-description: <channel_description>
-image: <channel_image>
-```
-
-### Channel YAML Example
+### Example: `analyze/channels/tap-google-analytics/google_analytics.yml`
 
 ```yaml
 version: channels/v0.1
@@ -36,7 +29,7 @@ description: Google Analytics
 picture: https://www.matatika.com/wp-content/uploads/2020/03/google_analytics-icon.svg
 ```
 
-### Channel Key Information
+### Key Information
 
 Channel Key | Datatype |  Information
 ----------- | -------- | -----------

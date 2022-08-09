@@ -1,8 +1,8 @@
 ---
 title: Environment
-permalink: /dataml/pipelines/environment
-nav_order: 2
-parent: Pipelines
+permalink: /dataml/pipelineml/environment
+nav_order: 1
+parent: PipelineML
 grand_parent: DataML
 ---
 

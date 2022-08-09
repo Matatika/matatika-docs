@@ -1,14 +1,17 @@
 ---
-title: Dataset YAML
-permalink: /dataml/datasets/dataset-yaml
-nav_order: 1
-parent: Datasets
-grand_parent: DataML
+title: DatasetML
+permalink: /dataml/datasetml/
+nav_order: 2
+parent: DataML
+has_children: true
 ---
 
 # {{page.title}}
 
 ---
+
+Examples and reference documentation for datasets and visualisation.
+{: .fs-5 }
 
 Use the Matatika dataset YAML to create and format insights in your workspace as code.
 {: .fs-5 }
@@ -18,21 +21,7 @@ Our dataset files are stored as YAML files, you can read more about the YAML for
 
 ---
 
-### Dataset Layout
-
-```yaml
-version: datasets/v0.2
-source: <channel_name>
-title: <dataset_title>
-questions: <dataset_questions>
-description: <dataset_description>
-metadata: <dataset_metadata>
-visualisation: <dataset_visulisation>
-query: <dataset_query>
-rawData: <dataset_data>
-```
-
-### Dataset Example
+### Example: `analyze/datasets/tap-google-analytics/google_analytics_daily_users_last_14_days.yml`
 
 ```yaml
 version: datasets/v0.2
@@ -69,7 +58,7 @@ query: |-
     ORDER BY report_date
 ```
 
-### Dataset Key Information
+### Key Information
 
 Dataset Key | Datatype |  Information
 ----------- | -------- | -----------

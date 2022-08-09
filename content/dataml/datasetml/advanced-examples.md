@@ -1,9 +1,9 @@
 ---
 title: Advanced Examples
-permalink: /dataml/datasets/advanced-examples
-parent: Datasets
+permalink: /dataml/datasetml/advanced-examples
+parent: DatasetML
 grand_parent: DataML 
-nav_order: 7
+nav_order: 5
 ---
 
 # {{page.title}}

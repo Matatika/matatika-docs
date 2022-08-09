@@ -1,9 +1,9 @@
 ---
 title: Charts
-permalink: /dataml/datasets/charts
-parent: Datasets
+permalink: /dataml/datasetml/charts
+parent: DatasetML
 grand_parent: DataML 
-nav_order: 3
+nav_order: 1
 ---
 
 # {{page.title}}

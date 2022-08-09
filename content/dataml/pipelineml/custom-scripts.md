@@ -1,8 +1,8 @@
 ---
 title: Custom Scripts
-permalink: /dataml/pipelines/custom-scripts
-nav_order: 3
-parent: Pipelines
+permalink: /dataml/pipelineml/custom-scripts
+nav_order: 2
+parent: PipelineML
 grand_parent: DataML
 ---
 

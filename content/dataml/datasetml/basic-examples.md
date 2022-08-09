@@ -1,9 +1,9 @@
 ---
 title: Basic Examples
-permalink: /dataml/datasets/basic-examples
-parent: Datasets
+permalink: /dataml/datasetml/basic-examples
+parent: DatasetML
 grand_parent: DataML 
-nav_order: 6
+nav_order: 4
 ---
 
 # {{page.title}}

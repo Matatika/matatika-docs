@@ -1,9 +1,9 @@
 ---
 title: Query
-permalink: /dataml/datasets/query
-parent: Datasets
+permalink: /dataml/datasetml/query
+parent: DatasetML
 grand_parent: DataML 
-nav_order: 5
+nav_order: 3
 ---
 
 # {{page.title}}
