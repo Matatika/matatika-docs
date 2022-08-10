@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Subscriptions
 permalink: /api/resources/subscriptions
 parent: Resources

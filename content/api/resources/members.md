@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Members
 permalink: api/resources/members
 parent: Resources

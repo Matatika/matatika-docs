@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Prerequisites
 permalink: /data-sources/tap-solarvista/prerequisites
 parent: Solarvista
@@ -30,7 +29,7 @@ If you do not have a Solarvista account with API access you will need to ask you
 
 Once you have [Postman](https://www.postman.com/){:target="_blank"} downloaded and installed, you should download our Solarvista Postman Collection.
 
-`{{site.www_url}}/docs/solarvista_postman_collection.json`{: #postman-collection-url .fs-5 }
+`{{site.matatika.links.www}}/docs/solarvista_postman_collection.json`{: #postman-collection-url .fs-5 }
 {: .text-center }
 
 Below are links to useful Postman Documentation that will help you with the Solarvista API Access Setup:

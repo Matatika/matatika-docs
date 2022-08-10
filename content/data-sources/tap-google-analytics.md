@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Google Analytics
 permalink: /data-sources/tap-google-analytics/
 parent: Data Sources

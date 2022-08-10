@@ -10,7 +10,7 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Not a customer yet?*
 
-[Sign Up]({{site.www_url}}/sign-up){:.btn}
+[Sign Up]({{site.matatika.links.www}}/sign-up){:.btn}
 
 ---
 

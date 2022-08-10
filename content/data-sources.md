@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Data Sources
 permalink: /data-sources/
 nav_order: 7

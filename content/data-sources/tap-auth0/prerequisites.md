@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Prerequisites
 permalink: /data-sources/tap-auth0/prerequisites
 parent: Auth0

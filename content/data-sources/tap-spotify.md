@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Spotify
 permalink: /data-sources/tap-spotify/
 parent: Data Sources

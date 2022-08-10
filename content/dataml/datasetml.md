@@ -1,17 +1,19 @@
 ---
-layout: default
-title: Dataset YAML
-permalink: /data/data-visualisation/dataset-yaml
-nav_order: 1
-parent: Data Visualisation
-grand_parent: Data
+title: DatasetML
+permalink: /dataml/datasetml/
+nav_order: 2
+parent: DataML
+has_children: true
 ---
 
 # {{page.title}}
 
 ---
 
-The Matatika dataset file is a way to create and format insights for your workspace.
+Examples and reference documentation for datasets and visualisation.
+{: .fs-5 }
+
+Use the Matatika dataset YAML to create and format insights in your workspace as code.
 {: .fs-5 }
 
 Our dataset files are stored as YAML files, you can read more about the YAML format and its syntax [here](https://yaml.org/){:target="_blank"}.
@@ -19,21 +21,7 @@ Our dataset files are stored as YAML files, you can read more about the YAML for
 
 ---
 
-### Dataset Layout
-
-```yaml
-version: datasets/v0.2
-source: <channel_name>
-title: <dataset_title>
-questions: <dataset_questions>
-description: <dataset_description>
-metadata: <dataset_metadata>
-visualisation: <dataset_visulisation>
-query: <dataset_query
-rawData: <dataset_data>
-```
-
-### Dataset Example
+### Example: `analyze/datasets/tap-google-analytics/google_analytics_daily_users_last_14_days.yml`
 
 ```yaml
 version: datasets/v0.2
@@ -70,7 +58,7 @@ query: |-
     ORDER BY report_date
 ```
 
-### Dataset Key Information
+### Key Information
 
 Dataset Key | Datatype |  Information
 ----------- | -------- | -----------
@@ -79,9 +67,9 @@ Dataset Key | Datatype |  Information
 `title` | `String` | The title at the top of the insight.
 `questions` | `String` | Questions that your dataset answers, so people can find the dataset just by asking questions.
 `description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevant information. You can also add `#tags`.
-`metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/data/data-visualisation/metadata)
-`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/data/data-visualisation/charts)
-`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/data/data-visualisation/query)
+`metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/dataml/datasets/metadata)
+`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasets/charts)
+`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/dataml/datasets/query)
 `rawData` | `String` of a List | The rawData key allows you to hard-code data directly into your dataset.
 
 ## String Formatting
@@ -106,4 +94,4 @@ The multiline string is generally the best way to display the `String` of JSON o
 Further Reading: 
 
 - [API Datasets]({{site.baseurl}}/api/resources/datasets)
-- [Example Charts]({{site.baseurl}}/data/data-visualisation/basic-examples)
+- [Example Charts]({{site.baseurl}}/dataml/datasets/basic-examples)

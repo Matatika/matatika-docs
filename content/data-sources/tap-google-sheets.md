@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Google Sheets
 permalink: /data-sources/tap-google-sheets/
 parent: Data Sources

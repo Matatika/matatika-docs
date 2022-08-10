@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Prerequisites
 permalink: /data-sources/tap-spotify/prerequisites
 parent: Spotify
@@ -19,7 +18,7 @@ There are three settings that you are required to provide to use our Spotify dat
 
 ### Getting your credentials
 
-To get your Spotify credentials we suggest following this postman example: [Shopify Postman Collection](https://documenter.getpostman.com/view/583/spotify-playlist-generator/2MtDWP).
+To get your Spotify credentials we suggest following this postman example: [Spotify Postman Collection](https://documenter.getpostman.com/view/583/spotify-playlist-generator/2MtDWP).
 
 You will need to completed only step `1. SPOTIFY` of SETUP THE ENVIRONMENT, and the only setting you will need to change is to the `Scope` setting where we require `user-top-read`.
 

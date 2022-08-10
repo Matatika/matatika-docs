@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Workspaces
 permalink: /api/resources/workspaces
 parent: Resources

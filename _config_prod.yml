@@ -1,7 +1,7 @@
 baseurl: /docs
-logo: "/assets/img/Logo-small.svg"
-www_url: https://www.matatika.com
-app_url: https://app.matatika.com
-api_keys_url: https://app.matatika.com/api-key
 
-catalog_uri: https://catalog.matatika.com/api
+matatika:
+  links:
+    www: https://www.matatika.com
+    app: https://app.matatika.com
+    catalog: https://catalog.matatika.com/api

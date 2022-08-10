@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Extractor
 permalink: /data-sources/tap-google-analytics/extractor
 parent: Google Analytics

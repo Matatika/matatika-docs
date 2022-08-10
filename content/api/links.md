@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Links
 permalink: /api/links
 parent: API

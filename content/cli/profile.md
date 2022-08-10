@@ -1,5 +1,4 @@
 ---
-layout: default
 title: profile
 permalink: /cli/profile
 parent: CLI

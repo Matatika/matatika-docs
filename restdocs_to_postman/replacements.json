@@ -29,8 +29,16 @@
             "newValue": "{{comment-id}}"
         },
         {
-            "oldValueRegex": "(?<=datasources\\/)[^/?]+",
-            "newValue": "{{datasource-id}}"
+            "oldValueRegex": "(?<=dataplugins\\/)[^/?]+",
+            "newValue": "{{dataplugin-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=datacomponents\\/)[^/?]+",
+            "newValue": "{{datacomponent-id}}"
+        },
+        {
+            "oldValueRegex": "(?<=datastores\\/)[^/?]+",
+            "newValue": "{{datastore-id}}"
         },
         {
             "oldValueRegex": "(?<=subscriptions\\/)[^/?]+",

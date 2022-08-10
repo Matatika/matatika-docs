@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Converting Meltano Reports
 permalink: /getting-started/converting-meltano-reports
 parent: Getting Started
@@ -49,7 +48,7 @@ You can see what an example meltano project with converted datasets looks like o
 
 Now you have your Matatika datasets, you can easily change, customize and publish them.
 
-[Matatika Dataset Documentation]({{site.baseurl}}/data/data-visualisation/dataset-yaml){: .btn}
+[Matatika Dataset Documentation]({{site.baseurl}}/dataml/datasets/dataset-yaml){: .btn}
 {: .text-center}
 
 [Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli){: .btn}

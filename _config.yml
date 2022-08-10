@@ -1,11 +1,18 @@
 title: Matatika Documentation
-logo: "/assets/img/Logo-small.svg"
+logo: /assets/img/Logo-small.svg
 permalink: pretty
 
-www_url: www-localhost.matatika.com
-app_url: https://localhost:3443/
-api_keys_url: https://localhost:3443/api-key
-catalog_uri: http://localhost:8080/api
+defaults:
+  - scope:
+      path: content/**/*.md
+    values:
+      layout: default
+
+matatika:
+  links:
+    www: http://www-localhost.matatika.com
+    app: http://localhost:3443
+    catalog: http://localhost:8080/api
 
 theme: just-the-docs
 color_scheme: matatika
@@ -18,15 +25,21 @@ plugins:
   - jekyll-seo-tag
 
 exclude:
-    - .sass-cache/
-    - .jekyll-cache/
-    - gemfiles/
-    - Gemfile
-    - Gemfile.lock
-    - vendor
-    - docker-compose.yml
-    - README.md
-    - Makefile
-    - azure-pipelines.yml
-    - build-docs.sh
-    - restdocs-to-postman/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - docker-compose.yml
+  - README.md
+  - Makefile
+  - azure-pipelines.yml
+  - build-docs.sh
+  - restdocs-to-postman/
+
+# build
+strict_front_matter: true
+
+# serve
+livereload: true

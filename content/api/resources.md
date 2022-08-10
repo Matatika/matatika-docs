@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Resources
 permalink: /api/resources/
 nav_order: 3

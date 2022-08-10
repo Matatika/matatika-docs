@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Publish a Dataset (CLI)
 permalink: /getting-started/publish-a-dataset-cli
 parent: Getting Started
@@ -17,7 +16,7 @@ nav_order: 4
 You must have already:
 
 - Signed up for a Matatika account
-- Created a workspace through the [Matatika app]({{site.app_url}}) or API
+- Created a workspace through the [Matatika app]({{site.matatika.links.app}}) or API
 
 Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
 

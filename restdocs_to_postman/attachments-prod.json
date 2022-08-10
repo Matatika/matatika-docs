@@ -41,7 +41,15 @@
             "type": "string"
         },
         {
-            "key": "datasource-id",
+            "key": "dataplugin-id",
+            "type": "string"
+        },
+        {
+            "key": "datacomponent-id",
+            "type": "string"
+        },
+        {
+            "key": "datastore-id",
             "type": "string"
         },
         {

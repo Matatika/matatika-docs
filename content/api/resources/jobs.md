@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Jobs
 permalink: /api/resources/jobs
 parent: Resources

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Channels
 permalink: /api/resources/channels
 parent: Resources
@@ -52,3 +51,4 @@ Path | Type | Format | Description
 {% include request-md-components/channels/view-all-channels-in-a-workspace.md %}
 {% include request-md-components/channels/create-or-update-a-channel-in-a-workspace.md %}
 {% include request-md-components/channels/delete-a-channel.md %}
+{% include request-md-components/channels/view-all-channels-in-your-workspace-news.md %}

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Tags
 permalink: /api/resources/tags
 parent: Resources

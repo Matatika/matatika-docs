@@ -1,17 +1,16 @@
 ---
-layout: default
 title: Advanced Examples
-permalink: /data/data-visualisation/advanced-examples
-parent: Data Visualisation
-grand_parent: Data 
-nav_order: 6
+permalink: /dataml/datasetml/advanced-examples
+parent: DatasetML
+grand_parent: DataML 
+nav_order: 5
 ---
 
 # {{page.title}}
 
 ---
 
-These charts are the output of the [Matatika dataset YAML file]({{site.baseurl}}/data/data-visualisation/dataset-yaml) listed below each of them.
+These charts are the output of the [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasets/dataset-yaml) listed below each of them.
 {: .fs-5 }
 
 You can find the original YAML files in our [examples github repo](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}.
