@@ -89,5 +89,5 @@ Path | Type | Format | Description
 
 Further Reading:
 
-- [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasetml)
+- [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasetml/)
 - [Example Charts]({{site.baseurl}}/dataml/datasetml/basic-examples)

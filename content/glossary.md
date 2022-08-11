@@ -23,8 +23,8 @@ You can find the technical glossary [here](https://github.com/Matatika/matatika-
 
 Channels are a way to group [datasets](#dataset) together into a single source. Channels are made automatically if you push a [dataset](#dataset) with a source that doesn't exist in your [workspace](#workspace).
 
-- [Channel YAML file documentation]({{site.baseurl}}/dataml/channels/channel-yaml)
-- [How to assign a source to a dataset]({{site.baseurl}}/dataml/datasetml)
+- [Channel YAML file documentation]({{site.baseurl}}/dataml/channelml/)
+- [How to assign a source to a dataset]({{site.baseurl}}/dataml/datasetml/)
 
 ---
 
@@ -38,7 +38,7 @@ All data processing and analytical configuration is managed through code, with t
 
 ## Dataset
 
-Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/dataml/datasetml). 
+Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/dataml/datasetml/). 
 
 [Visulisation Examples]({{site.baseurl}}/dataml/datasetml/basic-examples)
 [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}
