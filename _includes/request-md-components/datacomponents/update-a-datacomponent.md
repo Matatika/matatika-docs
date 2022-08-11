@@ -16,12 +16,6 @@ Updates the datacomponent `{datacomponent-id}`.
 [Datacomponent](#datacomponent) resource.
 {% include snippets/api/datacomponents/update-a-datacomponent/request-body.md %}
 
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`description` | `String` | A description of the datacomponent |
-`repositoryUrl` | `String` | A URL to the datacomponent repository | 
-`settings` | `Array` of [`Setting`](#setting)s | The datacomponent settings |
-
 #### Example Snippets
 - cURL
 {: .tab .tabs-section-start}
