@@ -81,7 +81,7 @@ Your datasets and models are published, indexed and searchable via the Matatika 
 
 ### Analytics
 
-[Jupyter Notebooks](https://jupyter.org/){:target="_blank"} and [visualisations](dataml/datasets) in [ChartJS](https://www.chartjs.org/){:target="_blank"} and [Google Charts](https://developers.google.com/chart){:target="_blank"} formats can be published to your [workspace](glossary#workspace). The Matatika dataset format gives you full control of the chart visualisation as code, supporting [Data Ops](#data-ops) through to the analytics layer of your stack.
+[Jupyter Notebooks](https://jupyter.org/){:target="_blank"} and [visualisations](dataml/datasetml/charts) in [ChartJS](https://www.chartjs.org/){:target="_blank"} and [Google Charts](https://developers.google.com/chart){:target="_blank"} formats can be published to your [workspace](glossary#workspace). The Matatika dataset format gives you full control of the chart visualisation as code, supporting [Data Ops](#data-ops) through to the analytics layer of your stack.
 
 ![Modern Data Stack]({{site.baseurl}}/assets/img/ModernDataStack.png)
 

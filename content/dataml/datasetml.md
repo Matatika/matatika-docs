@@ -67,9 +67,9 @@ Dataset Key | Datatype |  Information
 `title` | `String` | The title at the top of the insight.
 `questions` | `String` | Questions that your dataset answers, so people can find the dataset just by asking questions.
 `description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevant information. You can also add `#tags`.
-`metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/dataml/datasets/metadata)
-`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasets/charts)
-`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/dataml/datasets/query)
+`metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
+`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasetml/charts)
+`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/dataml/datasetml/query)
 `rawData` | `String` of a List | The rawData key allows you to hard-code data directly into your dataset.
 
 ## String Formatting
@@ -94,4 +94,4 @@ The multiline string is generally the best way to display the `String` of JSON o
 Further Reading: 
 
 - [API Datasets]({{site.baseurl}}/api/resources/datasets)
-- [Example Charts]({{site.baseurl}}/dataml/datasets/basic-examples)
+- [Example Charts]({{site.baseurl}}/dataml/datasetml/basic-examples)
