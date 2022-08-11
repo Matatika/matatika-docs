@@ -10,7 +10,7 @@ nav_order: 1
 
 ---
 
-You can use different chart types by utilizing the `visulisation` key of the [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasets/dataset-yaml).
+You can use different chart types by utilizing the `visulisation` key of the [Matatika dataset YAML file]({{site.baseurl}}/dataml/datasetml/).
 {: .fs-5 }
 
 The `visualisation` key contains information about displaying the chart for the insight.

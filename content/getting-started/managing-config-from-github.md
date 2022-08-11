@@ -22,7 +22,7 @@ You must have:
 
 ## Introduction
 
-Matatika can support a full DataOps lifecycle where all of your [configuration]({{site.baseurl}}/data) is managed through your workspace GitHub repository. To deploy your configuration you can use our [deployments]({{site.baseurl}}/api/resources/deployments) API or configure a GitHub Webhook.
+Matatika can support a full DataOps lifecycle where all of your [configuration]({{site.baseurl}}/dataml) is managed through your workspace GitHub repository. To deploy your configuration you can use our [deployments]({{site.baseurl}}/api/resources/deployments) API or configure a GitHub Webhook.
 
 A deployment will update your workspace in the Matatika cloud with your version controlled configuration from your GitHub repository. Creating a stable change management and release process for your workspaces.
 

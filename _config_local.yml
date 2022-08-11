@@ -1,0 +1,7 @@
+baseurl: /docs
+
+matatika:
+  links:
+    www: https://www-localhost.matatika.com
+    app: https://localhost:3443
+    catalog: https://localhost:8080/api

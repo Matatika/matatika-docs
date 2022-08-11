@@ -47,7 +47,7 @@ As a data scientist or analyst, implementing a business intelligence solution or
 
     *You need an open solution that is fully customisable and can be deployed partly or completely by your own team, if required.*
 
-Matatika has assembled the best-of-breed, open-source components into a fully managed environment so you can [Sign Up]({{site.matatika.links.www}}/sign-up) and deploy your solution in minutes, with full confidence that:
+Matatika has assembled the best-of-breed, open-source components into a fully managed environment so you can [Sign Up]({{site.matatika.links.www}}/sign-up/) and deploy your solution in minutes, with full confidence that:
 
 - the underlying [Data Store](glossary#data-store) scales to billions of rows
 - the [multi-level aggregation](glossary#transforms) and caching architecture is capable of performing well for most business intelligence use-cases
@@ -77,11 +77,11 @@ There are many opinions on the "Modern Data Stack" - frankly one size cannot fit
 
 ### Catalog
 
-Your datasets and models are published, indexed and searchable via the Matatika [API](api/resources), [CLI](cli), or [Configuration Repository](glossary#configuration-repository). The *Matatika Platform* provides a personalised feed of insights by scoring your datasets by usage.
+Your datasets and models are published, indexed and searchable via the Matatika [API](api/resources/), [CLI](cli/), or [Configuration Repository](glossary#configuration-repository). The *Matatika Platform* provides a personalised feed of insights by scoring your datasets by usage.
 
 ### Analytics
 
-[Jupyter Notebooks](https://jupyter.org/){:target="_blank"} and [visualisations](dataml/datasets) in [ChartJS](https://www.chartjs.org/){:target="_blank"} and [Google Charts](https://developers.google.com/chart){:target="_blank"} formats can be published to your [workspace](glossary#workspace). The Matatika dataset format gives you full control of the chart visualisation as code, supporting [Data Ops](#data-ops) through to the analytics layer of your stack.
+[Jupyter Notebooks](https://jupyter.org/){:target="_blank"} and [visualisations](dataml/datasetml/charts) in [ChartJS](https://www.chartjs.org/){:target="_blank"} and [Google Charts](https://developers.google.com/chart){:target="_blank"} formats can be published to your [workspace](glossary#workspace). The Matatika dataset format gives you full control of the chart visualisation as code, supporting [Data Ops](#data-ops) through to the analytics layer of your stack.
 
 ![Modern Data Stack]({{site.baseurl}}/assets/img/ModernDataStack.png)
 

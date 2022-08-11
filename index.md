@@ -10,7 +10,7 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Not a customer yet?*
 
-[Sign Up]({{site.matatika.links.www}}/sign-up){:.btn}
+[Sign Up]({{site.matatika.links.www}}/sign-up/){:.btn}
 
 ---
 
@@ -20,11 +20,11 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Do you need to automatically run and publish [Jupyter Notebooks](https://jupyter.org/){:target="_blank"}?*
 
-*Do you need [data visualisations](data/data-visualisation/) in a mobile app?*
+*Do you need [data visualisations](dataml/datasetml/charts) in a mobile app?*
 
-*Do you need [a secure API](api) to your private data?*
+*Do you need [a secure API](api/) to your private data?*
 
 *Are you a curious person who asks questions?*
 
-[Let's go!]({{site.baseurl}}/getting-started){: .btn .fs-6}
+[Let's go!]({{site.baseurl}}/getting-started/){: .btn .fs-6}
 {: .text-center}

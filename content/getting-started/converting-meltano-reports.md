@@ -48,7 +48,7 @@ You can see what an example meltano project with converted datasets looks like o
 
 Now you have your Matatika datasets, you can easily change, customize and publish them.
 
-[Matatika Dataset Documentation]({{site.baseurl}}/dataml/datasets/dataset-yaml){: .btn}
+[Matatika Dataset Documentation]({{site.baseurl}}/dataml/datasetml/){: .btn}
 {: .text-center}
 
 [Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli){: .btn}

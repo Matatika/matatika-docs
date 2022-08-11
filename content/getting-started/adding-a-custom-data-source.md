@@ -23,7 +23,7 @@ You must have:
 
 We support custom [data sources]({{site.baseurl}}/glossary#data-source) being set and used in our [data imports]({{site.baseurl}}/glossary#data-import). You can add your custom data source along with any relevant plugins, like transforms or file bundles all at once.
 
-In this example we will create a custom version of the data source `tap-spreadsheets-anywhere`. We already support this data source, so we will have to make changes to the discovery yaml file we use to create this custom data source. Alongside these changes we will also add a related analyze file bundle containing some [datasets]({{site.baseurl}}/dataml/datasets/dataset-yaml), so you can immediately see your new custom data source's data.
+In this example we will create a custom version of the data source `tap-spreadsheets-anywhere`. We already support this data source, so we will have to make changes to the discovery yaml file we use to create this custom data source. Alongside these changes we will also add a related analyze file bundle containing some [datasets]({{site.baseurl}}/dataml/datasetml/), so you can immediately see your new custom data source's data.
 
 
 ---
@@ -63,7 +63,7 @@ files:
     pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
 ```
 
-We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/dataml/datasets/dataset-yaml) so we can see the data being extracted by the tap in [visualisations]({{site.baseurl}}/dataml/datasets/charts). By adding this bundle and setting the same namespace we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you configure a `tap-example-custom-data-source` data import, you should also add this bundle.
+We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/dataml/datasetml/) so we can see the data being extracted by the tap in [visualisations]({{site.baseurl}}/dataml/datasetml/charts). By adding this bundle and setting the same namespace we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you configure a `tap-example-custom-data-source` data import, you should also add this bundle.
 
 - Click next and you will now be on a screen that expects the settings for your pipeline.
 - Expand the `tap-example-custom-data-source` section.
@@ -82,7 +82,7 @@ We are including a analyze file bundle that contains Matatika [datasets]({{site.
 - For this example we can leave `Section 3 - Automate your import` on `Manual`.
 - Finally click save
 
-Your new custom [data source]({{site.baseurl}}/glossary#data-source) will be added to your workspace repository, along with any other associated plugins, during a data import config job which when you go back to your data imports screen will be running immediately. This config job will also publish the analyze file bundle's [datasets]({{site.baseurl}}/dataml/datasets/dataset-yaml) to your [workspace]({{site.baseurl}}/glossary#workspace).
+Your new custom [data source]({{site.baseurl}}/glossary#data-source) will be added to your workspace repository, along with any other associated plugins, during a data import config job which when you go back to your data imports screen will be running immediately. This config job will also publish the analyze file bundle's [datasets]({{site.baseurl}}/dataml/datasetml/) to your [workspace]({{site.baseurl}}/glossary#workspace).
 
 Once the config job has completed, you can run your data import by pressing the start job button. (Solid Arrow).
 
@@ -95,5 +95,5 @@ When the data import job has completed, you will be able to see populated datase
 More resources for adding your own custom data source:
 
 - [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#custom-data-source)
-- [Matatika Data Imports Custom Scripts]({{site.baseurl}}/dataml/pipelines/custom-scripts)
+- [Matatika Data Imports Custom Scripts]({{site.baseurl}}/dataml/pipelineml/custom-scripts)
 - [Matatika Examples of Custom Scripts](https://github.com/Matatika/matatika-examples/tree/master/example_data_import_scripts)
