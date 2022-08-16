@@ -1,6 +1,6 @@
 ---
-title: WorkspacesML
-permalink: /dataml/workspacesml/
+title: WorkspaceML
+permalink: /dataml/workspaceml/
 nav_order: 4
 parent: DataML
 ---
