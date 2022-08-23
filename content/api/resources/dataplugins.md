@@ -27,7 +27,7 @@ Path | Type | Format | Description
 `repositoryUrl` | `String` | URL | The dataplugin repository URL
 `settings` | `Array` of [`Setting`](#setting) | | The dataplugin settings
 
-{% include snippets/api/dataplugins/view-a-dataplugin-available-to-a-workspace/response-body.md %}
+{% include snippets/api/dataplugins/view-a-dataplugin/response-body.md %}
 
 ### Setting
 
