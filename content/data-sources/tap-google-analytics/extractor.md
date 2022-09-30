@@ -22,5 +22,3 @@ You can find documentation about `tap-google-analytics` on the [tap-google-analy
 ## Other Links
 
 [Singer Documentation](https://github.com/singer-io/getting-started){:target="_blank"}
-
-Original [tap-google-analytics](https://gitlab.com/meltano/tap-google-analytics) which is owned and maintained by [Meltano](https://meltano.com/){:target="_blank"}

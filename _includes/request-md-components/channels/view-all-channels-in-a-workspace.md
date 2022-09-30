@@ -3,10 +3,19 @@
 GET
 {:.label .label-GET}
 
-/api/workspaces/{workspace-id}/channels/{channel-id}
+/api/workspaces/{workspace-id}/channels/{channel-id}?type={type}&source={source}&containsDataset={datasetId}
 {:.path .path-GET}
 
 Returns all channels in the workspace `{workspace-id}`.
+
+### Request
+#### Query Parameters
+
+Parameter | Required | Format | Default Value | Description
+--------- | -------- | ------ | ------------- | -----------
+`type` | No | string | None | Return channels by types: `list` or `source`
+`source` | No | string | None | Return channels by source: `profile` or `workspace`
+`containsDataset` | No | string | None | Adds a `containsDataset` boolean field to all channels returning if it contains the dataset
 
 ### Prerequisites
 - Workspace `{workspace-id}` must exist

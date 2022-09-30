@@ -3,12 +3,12 @@
 PUT
 {:.label .label-PUT}
 
-/api/workspaces/{workspace-id}/channels/{channel-id} or {channel-name}
+/api/workspaces/{workspace-id}/channels/{channel-id}
 {:.path .path-PUT}
 
 Creates or Updates a channel in the workspace `{workspace-id}`.
 
-This endpoint takes either a `{channel-id}` (UUID) or `{channel-name}` (String), and based on the supplied value and the channels that already exist in the workspace, will update or create a channel accordingly.
+This endpoint takes a `{channel-id}` (UUID) and based on the supplied value and the channels that already exist in the workspace, will update or create a channel accordingly.
 
 ### Prerequisites
 - Workspace `{workspace-id}` must exist

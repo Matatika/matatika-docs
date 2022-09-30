@@ -52,3 +52,5 @@ Path | Type | Format | Description
 {% include request-md-components/channels/create-or-update-a-channel-in-a-workspace.md %}
 {% include request-md-components/channels/delete-a-channel.md %}
 {% include request-md-components/channels/view-all-channels-in-your-workspace-news.md %}
+{% include request-md-components/channels/add-dataset-to-list-channel.md %}
+{% include request-md-components/channels/remove-dataset-from-list-channel.md %}
