@@ -54,3 +54,5 @@ Path | Type | Format | Description
 {% include request-md-components/channels/view-all-channels-in-your-workspace-news.md %}
 {% include request-md-components/channels/add-dataset-to-list-channel.md %}
 {% include request-md-components/channels/remove-dataset-from-list-channel.md %}
+{% include request-md-components/channels/add-workspace-scope-to-a-channel.md %}
+{% include request-md-components/channels/withdraw-workspace-scope-from-a-channel.md %}
