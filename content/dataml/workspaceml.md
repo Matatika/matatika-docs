@@ -57,6 +57,8 @@ app_properties:
   APP_MENU_ITEMS: '[{"name": "explore", "faIcon": "users", "label": "Profiles"}, {"name": "library", "faIcon": "list"}, {"name": "starred", "faIcon": "star"}]'
   LIBRARY_LIST_INFO_ITEM_TEXT: Profile(s)
   DATASET_ACTIONS: star,share,table,save
+  MEMBER_COMMENTS_READ_ONLY: true
+  MEMBER_COMMENTS_READ_ONLY_MESSAGE: Comments are set to read-only
 ```
 
 ### Key Information
