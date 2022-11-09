@@ -9,6 +9,6 @@ nav_order: 4
 
 ---
 
-<img src="{{site.baseurl}}/assets/utility_images/sendgrid.png" width="125" alt="auth0">
+<img src="{{site.baseurl}}/assets/utility_images/sendgrid.png" width="125" alt="Sendgrid">
 
 {% include snippets/api/markdown-descriptions/sendgrid/dataplugin-description.md %}

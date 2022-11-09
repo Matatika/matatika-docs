@@ -9,6 +9,6 @@ nav_order: 3
 
 ---
 
-<img src="{{site.baseurl}}/assets/utility_images/notebook.png" width="125" alt="auth0">
+<img src="{{site.baseurl}}/assets/utility_images/notebook.png" width="125" alt="Notebook">
 
 {% include snippets/api/markdown-descriptions/notebook/dataplugin-description.md %}

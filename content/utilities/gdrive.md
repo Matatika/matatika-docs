@@ -9,6 +9,6 @@ nav_order: 1
 
 ---
 
-<img src="{{site.baseurl}}/assets/utility_images/gdrive.png" width="125" alt="auth0">
+<img src="{{site.baseurl}}/assets/utility_images/gdrive.png" width="125" alt="Google Drive">
 
 {% include snippets/api/markdown-descriptions/gdrive/dataplugin-description.md %}
