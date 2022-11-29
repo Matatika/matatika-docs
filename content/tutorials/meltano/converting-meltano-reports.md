@@ -52,7 +52,7 @@ Now you have your Matatika datasets, you can easily change, customize and publis
 [Matatika Dataset Documentation]({{site.baseurl}}/dataml/datasetml/){: .btn}
 {: .text-center}
 
-[Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli){: .btn}
+[Publish Your First Dataset]({{site.baseurl}}/tutorials/data/publish-a-dataset-cli){: .btn}
 {: .text-center}
 
 

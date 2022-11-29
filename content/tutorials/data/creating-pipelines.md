@@ -46,4 +46,4 @@ Creating a [pipeline]({{site.baseurl}}/glossary#pipeline) this way gives you com
 
 ## Getting Started Guide
 
-- [Creating a Data Import pipeline in your Workspace]({{site.baseurl}}/getting-started/creating-a-data-import-in-your-workspace)
+- [Creating a Data Import pipeline in your Workspace]({{site.baseurl}}/tutorials/data/creating-a-data-import-in-your-workspace)

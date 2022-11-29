@@ -43,7 +43,7 @@ Datasets are the insights within the Matatika platform. They can be charts, tabl
 [Visulisation Examples]({{site.baseurl}}/dataml/datasetml/basic-examples)
 [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}
 
-Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli).
+Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/tutorials/data/publish-a-dataset-cli).
 
 Matatika Data Sources will automatically publish datasets during the [data import](#data-import) configuration.
 

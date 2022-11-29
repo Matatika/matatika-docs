@@ -132,5 +132,5 @@ If everything was configured correctly, the API should respond with a status of 
 }
 ```
 
-[Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-api){: .btn}
+[Publish Your First Dataset]({{site.baseurl}}/tutorials/data/publish-a-dataset-api){: .btn}
 {: .text-center}

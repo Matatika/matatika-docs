@@ -45,4 +45,4 @@ Each data source for a data import require different settings and configurations
 
 ## Tutorials
 
-- [Creating Pipelines]({{site.baseurl}}/tutorials/creating-pipelines/)
+- [Creating Pipelines]({{site.baseurl}}/tutorials/data/creating-pipelines)
