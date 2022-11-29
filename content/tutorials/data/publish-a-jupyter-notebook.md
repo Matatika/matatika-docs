@@ -20,8 +20,6 @@ You must have already:
 - Created a workspace through the [Matatika app]({{site.matatika.links.app}}) or API
 - Installed the [Matatika CLI]({{site.baseurl}}/cli) and configured a context
 
-Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
-
 ---
 
 ## Introduction

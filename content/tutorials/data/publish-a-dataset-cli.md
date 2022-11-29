@@ -19,8 +19,6 @@ You must have already:
 - Signed up for a Matatika account
 - Created a workspace through the [Matatika app]({{site.matatika.links.app}}) or API
 
-Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
-
 ---
 
 ## Introduction
