@@ -1,8 +1,10 @@
 ---
 title: Making Your First API Call
-permalink: /getting-started/making-your-first-api-call
-parent: Getting Started
-nav_order: 2
+permalink: /tutorials/api/making-your-first-api-call
+parent: API
+grand_parent: Tutorials
+nav_order: 1
+
 ---
 
 # {{page.title}}

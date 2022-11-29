@@ -1,8 +1,10 @@
 ---
 title: Managing Config From GitHub
-permalink: /getting-started/managing-config-from-github
-parent: Getting Started
-nav_order: 12
+permalink: /tutorials/workspace/managing-config-from-github
+parent: Workspaces
+grand_parent: Tutorials
+nav_order: 1
+
 ---
 
 # {{page.title}}

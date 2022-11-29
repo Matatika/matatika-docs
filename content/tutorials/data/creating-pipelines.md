@@ -1,8 +1,9 @@
 ---
 title: Creating Pipelines
-permalink: /tutorials/creating-pipelines/
-parent: Tutorials
-nav_order: 1
+permalink: /tutorials/data/creating-pipelines
+parent: Data
+grand_parent: Tutorials
+nav_order: 2
 
 ---
 

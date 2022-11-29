@@ -1,8 +1,9 @@
 ---
 title: Creating A Data Import In Your Workspace
-permalink: /getting-started/creating-a-data-import-in-your-workspace
-parent: Getting Started
-nav_order: 9
+permalink: /tutorials/data/creating-a-data-import-in-your-workspace
+parent: Data
+grand_parent: Tutorials
+nav_order: 1
 ---
 
 # {{page.title}}

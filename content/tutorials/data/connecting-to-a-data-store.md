@@ -1,8 +1,9 @@
 ---
 title: Connecting to a Data Store
-permalink: /getting-started/connecting-to-a-data-store
-parent: Getting Started
-nav_order: 11
+permalink: /tutorials/data/connecting-to-a-data-store
+parent: Data
+grand_parent: Tutorials
+nav_order: 4
 ---
 
 # {{page.title}}

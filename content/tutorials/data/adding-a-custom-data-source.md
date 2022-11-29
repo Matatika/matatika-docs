@@ -1,8 +1,9 @@
 ---
 title: Adding a Custom Data Source
-permalink: /getting-started/adding-a-custom-data-source
-parent: Getting Started
-nav_order: 10
+permalink: /tutorials/data/adding-a-custom-data-source
+parent: Data
+grand_parent: Tutorials
+nav_order: 3
 ---
 
 # {{page.title}}

@@ -1,8 +1,9 @@
 ---
 title: Publish a Dataset (API)
-permalink: /getting-started/publish-a-dataset-api
-parent: Getting Started
-nav_order: 3
+permalink: /tutorials/data/publish-a-dataset-api
+parent: Data
+grand_parent: Tutorials
+nav_order: 5
 ---
 
 # {{page.title}}

@@ -1,8 +1,9 @@
 ---
 title: Publish a Dataset (CLI)
-permalink: /getting-started/publish-a-dataset-cli
-parent: Getting Started
-nav_order: 4
+permalink: /tutorials/data/publish-a-dataset-cli
+parent: Data
+grand_parent: Tutorials
+nav_order: 6
 ---
 
 # {{page.title}}

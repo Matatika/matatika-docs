@@ -1,8 +1,9 @@
 ---
 title: Converting Meltano Reports
-permalink: /getting-started/converting-meltano-reports
-parent: Getting Started
-nav_order: 7
+permalink: /tutorial/meltano/converting-meltano-reports
+parent: Meltano
+grand_parent: Tutorials
+nav_order: 1
 ---
 
 # {{page.title}}
