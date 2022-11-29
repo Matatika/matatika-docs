@@ -1,7 +1,7 @@
 ---
 title: Glossary
 permalink: /glossary
-nav_order: 10
+nav_order: 11
 ---
 
 # {{page.title}}

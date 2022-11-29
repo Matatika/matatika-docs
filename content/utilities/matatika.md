@@ -12,3 +12,5 @@ nav_order: 2
 <img src="{{site.baseurl}}/assets/utility_images/matatika.png" width="125" alt="Matatika">
 
 {% include snippets/api/markdown-descriptions/matatika/dataplugin-description.md %}
+
+[Use Matatika in a pipeline]({{site.baseurl}}/tutorials/creating-pipelines/)
