@@ -1,7 +1,7 @@
 ---
 title: Making Your First API Call
-permalink: /tutorials/api/making-your-first-api-call
-parent: API
+permalink: /tutorials/matatika-api/making-your-first-api-call
+parent: Matatika API
 grand_parent: Tutorials
 nav_order: 1
 
