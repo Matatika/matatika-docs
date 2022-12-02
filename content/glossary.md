@@ -51,7 +51,7 @@ Matatika Data Sources will automatically publish datasets during the [data impor
 
 ## Data Import
 
-A data import is another name for a [Pipeline](#pipeline), these scheduled set of tasks extract data from a [Data Source](#data-source), load the data into a [Data Store](#data-store), and perform the configured [Transforms](#transforms).  You need adminstrator access to managed the [Workspace](#workspace) data imports.
+A data import is another name for a [Pipeline](#pipeline), these scheduled set of tasks extract data from a [Data Source](#data-source), load the data into a [Data Store](#data-store), and perform the configured [Transforms](#transforms).  You need administrator access to managed the [Workspace](#workspace) data imports.
 
 ---
 
@@ -73,7 +73,7 @@ A Matatika workspace can use any number of JDBC compliant database or serverless
 
 ## Pipeline
 
-A Pipeline is scheduled set of Data Component tasks.  You need adminstrator access to managed the [Workspace](#workspace) pipelines.
+A Pipeline is scheduled set of Data Component tasks.  You need administrator access to managed the [Workspace](#workspace) pipelines.
 
 ---
 
