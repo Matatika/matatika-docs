@@ -23,7 +23,7 @@ You must have already:
 
 When you "publish a dataset" you are creating a data view or visualisation within a workspace. A dataset must have an unique identifier within a workspace, which is achieved through an `alias`, and you can even publish an empty dataset using just an `alias`. In this example, we will provide a some raw data and a simple visualisation.
 
-First, we will need to obtain the workspace ID of the workspace we wish to publish our dataset to. Following the same steps as in [Making Your First API Call]({{site.baseurl}}/tutorials/api/making-your-first-api-call) for your preferred API client, we can perform a GET request to the `/workspaces` endpoint to return a collection of the workspaces our profile is a member of. The response should contain the details of the workspace we created when signing into the Matatika app for the first time. From here, we will need to find the `id` property and extract its value - our workspace ID.
+First, we will need to obtain the workspace ID of the workspace we wish to publish our dataset to. Following the same steps as in [Making Your First API Call]({{site.baseurl}}/tutorials/matatika-api/making-your-first-api-call) for your preferred API client, we can perform a GET request to the `/workspaces` endpoint to return a collection of the workspaces our profile is a member of. The response should contain the details of the workspace we created when signing into the Matatika app for the first time. From here, we will need to find the `id` property and extract its value - our workspace ID.
 
 Now, we will perform a POST request to the `workspaces/{workspace-id}/datasets` path in order to publish a dataset to our workspace, providing the following fields in the request body:
 
