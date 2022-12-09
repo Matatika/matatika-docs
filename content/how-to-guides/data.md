@@ -1,6 +1,6 @@
 ---
 title: Data
-permalink: /tutorials/data/
+permalink: /how-to-guides/data/
 parent: Tutorials
 has_children: true
 nav_order: 1

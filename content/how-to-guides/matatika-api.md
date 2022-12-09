@@ -1,6 +1,6 @@
 ---
 title: Matatika API
-permalink: /tutorials/matatika-api/
+permalink: /how-to-guides/matatika-api/
 parent: Tutorials
 has_children: true
 nav_order: 2

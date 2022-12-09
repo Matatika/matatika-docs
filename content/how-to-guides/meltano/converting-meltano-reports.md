@@ -1,6 +1,6 @@
 ---
 title: Converting Meltano Reports
-permalink: /tutorial/meltano/converting-meltano-reports
+permalink: /how-to-guides/meltano/converting-meltano-reports
 parent: Meltano
 grand_parent: Tutorials
 nav_order: 1
@@ -52,7 +52,7 @@ Now you have your Matatika datasets, you can easily change, customize and publis
 [Matatika Dataset Documentation]({{site.baseurl}}/dataml/datasetml/){: .btn}
 {: .text-center}
 
-[Publish Your First Dataset]({{site.baseurl}}/tutorials/data/publish-a-dataset-cli){: .btn}
+[Publish Your First Dataset]({{site.baseurl}}/how-to-guides/data/publish-a-dataset-cli){: .btn}
 {: .text-center}
 
 

@@ -1,6 +1,6 @@
 ---
 title: Meltano
-permalink: /tutorials/meltano/
+permalink: /how-to-guides/meltano/
 parent: Tutorials
 has_children: true
 nav_order: 4

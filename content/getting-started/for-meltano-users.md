@@ -53,6 +53,6 @@ Congratulations, you now have the Matatika lab running against your Meltano proj
 
 ## Further Reading
 
-- Get an overview of the Matatika Lab: [Matatika Lab Overview]({{site.baseurl}}/tutorials/workspaces/matatika-lab-overview)
+- Get an overview of the Matatika Lab: [Matatika Lab Overview]({{site.baseurl}}/how-to-guides/workspaces/matatika-lab-overview)
 - Find out how Matatika works with Meltano by reading about the Matatika concepts and artifacts: [Matatika Glossary](glossary) and [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary){:target="_blank"}
-- Create your first pipeline: [Creating Pipelines]({{site.baseurl}}/tutorials/data/creating-pipelines)
+- Create your first pipeline: [Creating Pipelines]({{site.baseurl}}/tutorials/creating-pipelines)

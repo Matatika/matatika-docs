@@ -1,6 +1,6 @@
 ---
 title: Managing Config From GitHub
-permalink: /tutorials/workspace/managing-config-from-github
+permalink: /how-to-guides/workspace/managing-config-from-github
 parent: Workspaces
 grand_parent: Tutorials
 nav_order: 1

@@ -1,9 +1,9 @@
 ---
 title: Fetch Data into a Jupyter Notebook
-permalink: /tutorials/data/fetch-data-into-a-jupyter-notebook
+permalink: /how-to-guides/data/fetch-data-into-a-jupyter-notebook
 parent: Data
 grand_parent: Tutorials
-nav_order: 9
+nav_order: 7
 ---
 
 # {{page.title}}

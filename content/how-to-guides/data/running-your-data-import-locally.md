@@ -1,9 +1,9 @@
 ---
 title: Running Your Data Import Locally
-permalink: /tutorials/data/running-your-data-import-locally
+permalink: /how-to-guides/data/running-your-data-import-locally
 parent: Data
 grand_parent: Tutorials
-nav_order: 8
+nav_order: 6
 ---
 
 # {{page.title}}

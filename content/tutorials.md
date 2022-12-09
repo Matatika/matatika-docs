@@ -8,5 +8,5 @@ has_children: true
 
 # {{page.title}}
 
-A collection of tutorials to help you set up your workspace.
+A collection of tutorials that will give you an overview of how Matatika works.
 {: .fs-5 }

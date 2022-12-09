@@ -1,9 +1,8 @@
 ---
 title: Creating Pipelines
-permalink: /tutorials/data/creating-pipelines
-parent: Data
-grand_parent: Tutorials
-nav_order: 2
+permalink: /tutorials/creating-pipelines
+parent: Tutorials
+nav_order: 1
 
 ---
 
@@ -46,4 +45,4 @@ Creating a [pipeline]({{site.baseurl}}/glossary#pipeline) this way gives you com
 
 ## Example
 
-- [Creating a Data Import pipeline in your Workspace]({{site.baseurl}}/tutorials/data/creating-a-data-import-in-your-workspace)
+- [Creating a Data Import pipeline in your Workspace]({{site.baseurl}}/how-to-guides/data/creating-a-data-import-in-your-workspace)

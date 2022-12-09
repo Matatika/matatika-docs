@@ -13,4 +13,4 @@ nav_order: 2
 
 {% include snippets/api/markdown-descriptions/matatika/dataplugin-description.md %}
 
-[Use Matatika in a pipeline]({{site.baseurl}}/tutorials/data/creating-pipelines)
+[Use Matatika in a pipeline]({{site.baseurl}}/tutorials/creating-pipelines)

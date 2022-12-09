@@ -1,6 +1,6 @@
 ---
 title: Creating A Data Import In Your Workspace
-permalink: /tutorials/data/creating-a-data-import-in-your-workspace
+permalink: /how-to-guides/data/creating-a-data-import-in-your-workspace
 parent: Data
 grand_parent: Tutorials
 nav_order: 1
@@ -45,4 +45,4 @@ Each data source for a data import require different settings and configurations
 
 ## Tutorials
 
-- [Creating Pipelines]({{site.baseurl}}/tutorials/data/creating-pipelines)
+- [Creating Pipelines]({{site.baseurl}}/tutorials/creating-pipelines)
