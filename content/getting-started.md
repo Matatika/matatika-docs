@@ -2,24 +2,19 @@
 title: Getting Started
 permalink: /getting-started/
 nav_order: 2
+has_children: true
 
 ---
 
-# Sign-Up and Your Workspace
+# {{page.title}}
 
-- Time required: *5 minutes*
+In these guides we go over the ways to get started using Matatika.
+{: .fs-5 }
 
 ---
 
-## Sign Up
-Head to the [Matatika website]({{site.matatika.links.www}}){:target="_blank"} and register for early access.  Once your registration has been processed, we'll send you a link to sign up for an account. You will need to verify your account through the email you signed up with - be sure to check your spam folder if you don't see the email!
+## Overview
 
-## Create a Workspace
-The first time you sign-in to the Matatika app, you will be prompted to create a new workspace  : fill out the 'Name' field (and optionally 'Approved Domains') and click 'Continue'.
+Cloud is by far the easiest way to get started.
 
-![new workspace in the matatika app]({{site.baseurl}}/assets/img/app-new-workspace.png)
-
-Once completed, you will have full access to the app. Keep the name you gave your workspace in mind for the following step.
-
-[Make Your First API Call]({{site.baseurl}}/tutorials/matatika-api/making-your-first-api-call){: .btn}
-{: .text-center}
+If you are a Meltano user, our For Meltano Users guide is a great way to power up your existing Meltano projects.
