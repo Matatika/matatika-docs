@@ -1,7 +1,7 @@
 ---
 title: Meltano
 permalink: /how-to-guides/meltano/
-parent: Tutorials
+parent: How-To Guides
 has_children: true
 nav_order: 4
 
@@ -9,5 +9,5 @@ nav_order: 4
 
 # {{page.title}}
 
-Tutorials and examples for Meltano.
+How-to guides for Meltano.
 {: .fs-5 }

@@ -2,7 +2,7 @@
 title: Publish a Jupyter Notebook
 permalink: /how-to-guides/data/publish-a-jupyter-notebook
 parent: Data
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 5
 ---
 

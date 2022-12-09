@@ -2,7 +2,7 @@
 title: Converting Meltano Reports
 permalink: /how-to-guides/meltano/converting-meltano-reports
 parent: Meltano
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 1
 ---
 

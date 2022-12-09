@@ -2,7 +2,7 @@
 title: Fetch Data into a Jupyter Notebook
 permalink: /how-to-guides/data/fetch-data-into-a-jupyter-notebook
 parent: Data
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 7
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Workspaces
 permalink: /how-to-guides/workspace/
-parent: Tutorials
+parent: How-To Guides
 has_children: true
 nav_order: 3
 
@@ -9,5 +9,5 @@ nav_order: 3
 
 # {{page.title}}
 
-Tutorials and examples for Matatika workspaces.
+How-to guides for Matatika workspaces.
 {: .fs-5 }

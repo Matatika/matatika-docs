@@ -2,7 +2,7 @@
 title: Managing Config From GitHub
 permalink: /how-to-guides/workspace/managing-config-from-github
 parent: Workspaces
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 1
 
 ---

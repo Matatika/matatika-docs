@@ -2,7 +2,7 @@
 title: Creating A Data Import In Your Workspace
 permalink: /how-to-guides/data/creating-a-data-import-in-your-workspace
 parent: Data
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Matatika API
 permalink: /how-to-guides/matatika-api/
-parent: Tutorials
+parent: How-To Guides
 has_children: true
 nav_order: 2
 
@@ -9,5 +9,5 @@ nav_order: 2
 
 # {{page.title}}
 
-Tutorials and examples of the Matatika api.
+How-to guides for the Matatika api.
 {: .fs-5 }

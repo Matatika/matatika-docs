@@ -2,7 +2,7 @@
 title: Adding a Custom Data Source
 permalink: /how-to-guides/data/adding-a-custom-data-source
 parent: Data
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 2
 ---
 

@@ -2,7 +2,7 @@
 title: Publish a Dataset (API)
 permalink: /how-to-guides/data/publish-a-dataset-api
 parent: Data
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 3
 ---
 

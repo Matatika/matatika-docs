@@ -2,7 +2,7 @@
 title: Running Your Data Import Locally
 permalink: /how-to-guides/data/running-your-data-import-locally
 parent: Data
-grand_parent: Tutorials
+grand_parent: How-To Guides
 nav_order: 6
 ---
 
