@@ -17,7 +17,7 @@ The *Matatika Platform* is managed by data scientists and analysts who need an o
 - Share or embed data in other apps through an API
 - Collaborate on insights in a native mobile app
 
-With the *Matatika Platform*, you provision a [Modern Data Stack](#modern-data-stack) within minutes and customise the platform with code according to your own [Data Ops](#data-ops) methodology. Since we've taken care of the platform and get you started instantly, you spend more time developing insights and less time dealing with infrastructure.
+With the *Matatika Platform*, you provision a [Modern Data Stack](concepts#modern-data-stack) within minutes and customise the platform with code according to your own [Data Ops](concepts#data-ops) methodology. Since we've taken care of the platform and get you started instantly, you spend more time developing insights and less time dealing with infrastructure.
 
 ## Why Matatika?
 
