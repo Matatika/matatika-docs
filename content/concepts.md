@@ -16,6 +16,8 @@ An quick walk through of some fundamental Matatika concepts and their usage.
 
 There are many opinions on the "Modern Data Stack" - frankly one size cannot fit both Google scale and a five-person startup. At Matatika, we have selected components that we believe provide you the best combination of ***Scalability***, ***Performance***, ***Flexibility*** and lowest total cost-of-ownership. Ultimately, our goal is to provide a modern data stack with No Limits.
 
+![Data Ops]({{site.baseurl}}/assets/img/platform-overview.png)
+
 ### Extraction
 
 [Meltano](https://meltano.com/){:target="_blank"} is primarily used to manage the data extraction in your Matatika [workspace](glossary#workspace). Matatika are active contributors to Meltano and will continue to invest in other technologies that advance our customers' ability to implement [Data Ops](#data-ops) extraction methodologies.
