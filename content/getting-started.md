@@ -17,4 +17,4 @@ In these guides we go over the ways to get started using Matatika.
 
 Cloud is by far the easiest way to get started.
 
-If you are a Meltano user, our For Meltano Users guide is a great way to power up your existing Meltano projects.
+For Meltano Users is a great way for Meltano users to power up their existing Meltano projects.
