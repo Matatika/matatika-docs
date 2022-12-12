@@ -50,6 +50,9 @@ localhost:3443
 
 Congratulations, you now have the Matatika lab running against your Meltano project!
 
+[Using the Matatika API]({{site.baseurl}}/tutorials/using-the-api){: .btn}
+{: .text-center}
+
 ---
 
 ## Further Reading
