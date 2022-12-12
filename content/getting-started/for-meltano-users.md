@@ -36,6 +36,7 @@ This getting started guide will get your Meltano project up and running with the
 ```terminal
 meltano add files files-matatika-lab
 ```
+- If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` for the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
 1. In your terminal run:
 ```terminal
 docker compose up
