@@ -25,17 +25,18 @@ The Postman app is available for download [here](https://www.postman.com/downloa
 3. In your Matatika workspace, click your Profile Picture in the top right, and go to `API Keys`
 
 **If you are using Matatika in the Cloud**
-- Copy your `Developer Token` and in Postman, on the `Matatika API` collection, click the three dots and `Edit`.
+- Copy your `Developer Token`
 
 **If you are using Matatika with your Meltano project locally**
-- Go to the `Variables` tab, and paste the `Access Token` found under `Personal Access Tokens` into the `BEARER_TOKEN` variable's `CURRENT_VALUE`
+- Copy the first `Access Token` found under `Personal Access Tokens`
 
+In Postman, on the `Matatika API` collection, click the three dots and `Edit`. Go to the `Variables` tab, and paste your token into into the `BEARER_TOKEN` variable's `CURRENT_VALUE`.
 
-Now you are all set up to use our API through postman. Note that your `Developer Token` / `BEARER_TOKEN` is relatively short lived so you many need to refresh it from time to time.
+---
 
-Also in the `Variables` tab that you put your `BEARER_TOKEN` you can set other variables that we use by default through other requests in our Postman collection. Feel free to fill in any you want to use.
+You can now make requests through our API to configure and update your workspace. Note that your `BEARER_TOKEN` is relatively short lived so you many need to refresh it from time to time.
 
-You can now make requests through our API to configure and update your workspace.
+Also in the `Variables` tab where you put your `BEARER_TOKEN` you can set other variables that we use by default through other requests in our Postman collection.
 
 ---
 
