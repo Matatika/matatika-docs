@@ -1,6 +1,6 @@
 ---
-title: Connecting to a Data Store
-permalink: /tutorials/connecting-to-a-data-store
+title: Setup a Data Store
+permalink: /tutorials/setup-a-data-store
 parent: Tutorials
 nav_order: 2
 ---
@@ -23,7 +23,7 @@ Changing the default [data store]({{site.baseurl}}/glossary#data-store) of a [wo
 
 ---
 
-## Connecting to a data store
+## Setup a new data store
 Matatika supports connecting to a number of [data stores]({{site.baseurl}}/glossary#data-store), such as [PostgreSQL](https://www.postgresql.org/){:target="_blank"} and [Snowflake](https://www.snowflake.com/){:target="_blank"}.
 
 1. Within the [Matatika app]({{site.matatika.links.app}}){:target="_blank"}, switch to the [workspace]({{site.baseurl}}/glossary#workspace) that you wish to set an alternate [data store]({{site.baseurl}}/glossary#data-store) for

@@ -14,7 +14,7 @@ nav_order: 1
 
 You will need to be an admin of the [workspace]({{site.baseurl}}/glossary#workspace) you want to add a pipeline to.
 
-## Creating a Data Source (Import) pipeline
+## Creating an Import pipeline
 
 Creating a [pipeline]({{site.baseurl}}/glossary#pipeline) using a [Data Source]({{site.baseurl}}/data-sources) plugin, or by creating an Import pipeline will automatically add the Matatika supported plugins for that Data Source. These include pre build data models and [datasets]({{site.baseurl}}/glossary#dataset) that you can see in your app.
 
