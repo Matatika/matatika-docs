@@ -1,7 +1,7 @@
 ---
 title: Adding a Custom Data Source
-permalink: /how-to-guides/data/adding-a-custom-data-source
-parent: Data
+permalink: /how-to-guides/import-data/adding-a-custom-data-source
+parent: Import Data
 grand_parent: How-To Guides
 nav_order: 2
 ---

@@ -1,9 +1,9 @@
 ---
 title: Publish a Dataset (CLI)
-permalink: /how-to-guides/data/publish-a-dataset-cli
-parent: Data
+permalink: /how-to-guides/analyze-your-data/publish-a-dataset-cli
+parent: Analyze Your Data
 grand_parent: How-To Guides
-nav_order: 4
+nav_order: 1
 ---
 
 # {{page.title}}
