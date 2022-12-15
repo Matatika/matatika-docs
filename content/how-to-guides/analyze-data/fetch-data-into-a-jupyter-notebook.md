@@ -1,7 +1,7 @@
 ---
 title: Fetch Data into a Jupyter Notebook
-permalink: /how-to-guides/analyze-your-data/fetch-data-into-a-jupyter-notebook
-parent: Analyze Your Data
+permalink: /how-to-guides/analyze-data/fetch-data-into-a-jupyter-notebook
+parent: Analyze Data
 grand_parent: How-To Guides
 nav_order: 3
 ---

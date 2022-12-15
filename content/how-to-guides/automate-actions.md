@@ -1,6 +1,6 @@
 ---
-title: Automate Your Actions
-permalink: /how-to-guides/automate-your-actions/
+title: Automate Actions
+permalink: /how-to-guides/automate-actions/
 parent: How-To Guides
 has_children: true
 nav_order: 4

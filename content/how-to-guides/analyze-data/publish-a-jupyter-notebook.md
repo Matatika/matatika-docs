@@ -1,7 +1,7 @@
 ---
 title: Publish a Jupyter Notebook
-permalink: /how-to-guides/analyze-your-data/publish-a-jupyter-notebook
-parent: Analyze Your Data
+permalink: /how-to-guides/analyze-data/publish-a-jupyter-notebook
+parent: Analyze Data
 grand_parent: How-To Guides
 nav_order: 2
 ---
