@@ -22,5 +22,5 @@ The first time you sign-in to the Matatika app, you will be prompted to create a
 
 Once completed, you will have full access to the app. Keep the name you gave your workspace in mind for the following step.
 
-[Make Your First API Call]({{site.baseurl}}/how-to-guides/matatika-api/making-your-first-api-call){: .btn}
+[Make Your First API Call]({{site.baseurl}}/how-to-guides/use-the-matatika-api/making-your-first-api-call){: .btn}
 {: .text-center}
