@@ -3,7 +3,7 @@ title: Adding a Custom Data Source
 permalink: /how-to-guides/import-data/adding-a-custom-data-source
 parent: Import Data
 grand_parent: How-To Guides
-nav_order: 2
+nav_order: 3
 ---
 
 # {{page.title}}
@@ -46,6 +46,7 @@ For `tap-example-custom-data-source` we will be using:
 ```yaml
 extractors:
   - name: tap-example-custom-data-source
+    variant: matatika
     namespace: tap_example_custom_data_source
     pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
     executable: tap-spreadsheets-anywhere
@@ -58,6 +59,7 @@ extractors:
         kind: array
 files:
   - name: analyze-example-custom-data-source
+    variant: matatika
     namespace: tap_example_custom_data_source
     update:
       analyze/datasets/tap-example-custom-data-source: true
