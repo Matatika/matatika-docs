@@ -32,13 +32,15 @@ The Postman app is available for download [here](https://www.postman.com/downloa
 
 In Postman, on the `Matatika API` collection, click the three dots and `Edit`. Go to the `Variables` tab, and paste your token into into the `BEARER_TOKEN` variable's `CURRENT_VALUE`.
 
----
-
 You can now make requests through our API to configure and update your workspace. Note that your `BEARER_TOKEN` is relatively short lived so you many need to refresh it from time to time.
 
 Also in the `Variables` tab where you put your `BEARER_TOKEN` you can set other variables that we use by default through other requests in our Postman collection.
 
----
+### Using the API other ways
+
+Using our Postman collection is great as you have all the API calls in one place, but you can use our API however you would like. 
+
+Our [API Resources]({{site.baseurl}}/api/resources) documentation has code snippets for using our API with cURL and the Python requests library.
 
 ## Further Reading
 

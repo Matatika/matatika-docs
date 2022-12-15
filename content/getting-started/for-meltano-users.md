@@ -20,8 +20,8 @@ This getting started guide will get your Meltano project up and running with the
 
 ## Requirements
 
-- Have Meltano installed - [How to get Meltano](https://docs.meltano.com/getting-started/installation){:target="_blank"}
-- Have Docker installed - [How to get Docker](https://docs.docker.com/get-docker/){:target="_blank"}
+- Meltano installed - [How to get Meltano](https://docs.meltano.com/getting-started/installation){:target="_blank"}
+- Docker installed - [How to get Docker](https://docs.docker.com/get-docker/){:target="_blank"}
 
 ---
 
