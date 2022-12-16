@@ -35,7 +35,7 @@ pip install matatika
 
 ## Dataset File Preparation
 
-As a command line utility, the client library can publish datasets from a YAML file. This YAML file could be managed in a source control repository, such as GIT, and automated in a DevOps or DataOps pipeline. To keep things simple, we will be publishing from the command line with the same dataset as in [Publishing Your First Dataset Using the Matatika API]({{site.baseurl}}/how-to-guides/use-the-matatika-api/publish-a-dataset-cli).
+As a command line utility, the client library can publish datasets from a YAML file. This YAML file could be managed in a source control repository, such as GIT, and automated in a DevOps or DataOps pipeline. To keep things simple, we will be publishing from the command line with the same dataset as in [Publishing Your First Dataset Using the Matatika API]({{site.baseurl}}/how-to-guides/use-the-matatika-api/publish-a-dataset-api).
 
 The dataset file needs to adhere to the following YAML format:
 

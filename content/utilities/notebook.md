@@ -13,4 +13,4 @@ nav_order: 3
 
 {% include snippets/api/markdown-descriptions/notebook/dataplugin-description.md %}
 
-[Use Notebook in a pipeline]({{site.baseurl}}/tutorials/creating-pipelines)
+[Use Notebook in a pipeline]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)

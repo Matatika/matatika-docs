@@ -35,4 +35,4 @@ We support postgres and snowflake as datastores that are able to power your work
 
 - [Postgres Datastore](./postgres)
 - [Snowflake Datastore](./snowflake)
-- [Using datastores in pipelines - Creating Pipelines]({{site.baseurl}}/tutorials/creating-pipelines)
+- [Using datastores in pipelines - Creating Custom Pipelines]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)

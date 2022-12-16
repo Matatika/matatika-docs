@@ -15,4 +15,4 @@ parent: Datastores
 
 ## Links
 
-- [Using datastores in pipelines - Creating Pipelines]({{site.baseurl}}/tutorials/creating-pipelines)
+- [Using datastores in pipelines - Creating Custom Pipelines]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)

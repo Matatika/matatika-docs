@@ -46,7 +46,7 @@ localhost:3443
 
 Congratulations, you now have the Matatika lab running against your Meltano project!
 
-[Using the Matatika API]({{site.baseurl}}/tutorials/using-the-api){: .btn}
+[Make Your First API Call]({{site.baseurl}}/how-to-guides/use-the-matatika-api/making-your-first-api-call){: .btn}
 {: .text-center}
 
 ---
@@ -54,4 +54,4 @@ Congratulations, you now have the Matatika lab running against your Meltano proj
 ## Further Reading
 
 - Find out how Matatika works with Meltano by reading about the Matatika concepts and artifacts: [Matatika Concepts]({{site.baseurl}}/concepts), [Matatika Glossary]({{site.baseurl}}/glossary) and [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary){:target="_blank"}
-- Create your first pipeline: [Creating Pipelines]({{site.baseurl}}/tutorials/creating-pipelines)
+- Create your first pipeline: [Create A Data Import Pipeline]({{site.baseurl}}/how-to-guides/import-data/create-a-data-import-pipeline)
