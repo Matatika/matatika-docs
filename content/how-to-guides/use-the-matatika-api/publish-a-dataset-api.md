@@ -3,7 +3,7 @@ title: Publish a Dataset (API)
 permalink: /how-to-guides/use-the-matatika-api/publish-a-dataset-api
 parent: Use the Matatika API
 grand_parent: How-To Guides
-nav_order: 2
+nav_order: 3
 ---
 
 # {{page.title}}

@@ -13,6 +13,7 @@ matatika:
     www: http://www-localhost.matatika.com
     app: http://localhost:3443
     catalog: http://localhost:8080/api
+    auth0_domain: identity-staging.matatika.com
 
 theme: just-the-docs
 color_scheme: matatika

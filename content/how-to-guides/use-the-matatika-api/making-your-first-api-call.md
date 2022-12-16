@@ -3,7 +3,7 @@ title: Making Your First API Call
 permalink: /how-to-guides/use-the-matatika-api/making-your-first-api-call
 parent: Use the Matatika API
 grand_parent: How-To Guides
-nav_order: 1
+nav_order: 2
 
 ---
 
