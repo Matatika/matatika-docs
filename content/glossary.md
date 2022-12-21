@@ -1,7 +1,7 @@
 ---
 title: Glossary
 permalink: /glossary
-nav_order: 10
+nav_order: 15
 ---
 
 # {{page.title}}
@@ -43,7 +43,7 @@ Datasets are the insights within the Matatika platform. They can be charts, tabl
 [Visulisation Examples]({{site.baseurl}}/dataml/datasetml/basic-examples)
 [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}
 
-Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-cli).
+Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/how-to-guides/analyze-data/publish-a-dataset-cli).
 
 Matatika Data Sources will automatically publish datasets during the [data import](#data-import) configuration.
 
@@ -51,7 +51,7 @@ Matatika Data Sources will automatically publish datasets during the [data impor
 
 ## Data Import
 
-A data import is another name for a [Pipeline](#pipeline), these scheduled set of tasks extract data from a [Data Source](#data-source), load the data into a [Data Store](#data-store), and perform the configured [Transforms](#transforms).  You need adminstrator access to managed the [Workspace](#workspace) data imports.
+A data import is another name for a [Pipeline](#pipeline), these scheduled set of tasks extract data from a [Data Source](#data-source), load the data into a [Data Store](#data-store), and perform the configured [Transforms](#transforms).  You need administrator access to managed the [Workspace](#workspace) data imports.
 
 ---
 
@@ -73,7 +73,7 @@ A Matatika workspace can use any number of JDBC compliant database or serverless
 
 ## Pipeline
 
-A Pipeline is scheduled set of Data Component tasks.  You need adminstrator access to managed the [Workspace](#workspace) pipelines.
+A Pipeline is scheduled set of Data Component tasks.  You need administrator access to managed the [Workspace](#workspace) pipelines.
 
 ---
 

@@ -1,8 +1,9 @@
 ---
-title: Creating A Data Import In Your Workspace
-permalink: /getting-started/creating-a-data-import-in-your-workspace
-parent: Getting Started
-nav_order: 9
+title: Create A Data Import Pipeline
+permalink: /how-to-guides/import-data/create-a-data-import-pipeline
+parent: Import Data
+grand_parent: How-To Guides
+nav_order: 2
 ---
 
 # {{page.title}}
@@ -29,13 +30,19 @@ Each data source for a data import require different settings and configurations
 
 ## Set Up Steps
 
-1. When in your workspace, click the `Lab` button on the menu, and select `Pipelines` from the menu.
-2. Click the `+ Import` button just below your profile image.
-3. Choose your data source. When you click on one you will see helpful documentation on the right side of your screen.
-4. At the top in `Name` add a name for your data import.
-5. Expand the settings menu(s) and fill in the required settings which are marked with a `*` or `Connect to Google`.
+1. When in your workspace, click the `Lab` button on the menu, select `Plugins` from the menu and go the the `AVAILABLE` tab.
+2. Find or search for the [data source]({{site.baseurl}}/data-sources){:target="_blank"} you want and click the `INSTALL` button. You will be moved to the `INSTALLED` tab.
+3. Click the `+ PIPELINE` button next to the your chosen data source plugin.
+4. At the top in `Name` you can add a custom name for your pipeline.
+5. Expand the settings menu(s) and fill in at least all the required settings which are marked with a `*` or `Connect to Google`.
 6. In the second section `Clean, transform and organise`, decide if you want to use our default data import script by leaving `Default Actions` selected, or supply your own custom actions or script.
 7. In the third and last section `Automate your import`, you can choose how often your data import should run. There are a few example schedules or you can use `Custom` to create your own.
 8. Click `Save`. A green bar will appear at the top of your screen telling you your data import was saved.
 9. Head back to the `Pipelines` screen, where for the next 1 to 2 minutes a `config job` will be running on your data import. This will set everything up and commit your new data imports's changes to your workspace repository.
 10. Once the `config job` has completed you are free to run your data import, or leave it to its schedule.
+
+---
+
+## Custom Pipelines
+
+If you want more control of your pipeline, or don't want to use a data source plugin, you can create a use a custom pipeline: [Create a Custom Pipeline]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline){:target="_blank"}

@@ -1,8 +1,10 @@
 ---
 title: Making Your First API Call
-permalink: /getting-started/making-your-first-api-call
-parent: Getting Started
+permalink: /how-to-guides/use-the-matatika-api/making-your-first-api-call
+parent: Use the Matatika API
+grand_parent: How-To Guides
 nav_order: 2
+
 ---
 
 # {{page.title}}
@@ -130,5 +132,5 @@ If everything was configured correctly, the API should respond with a status of 
 }
 ```
 
-[Publish Your First Dataset]({{site.baseurl}}/getting-started/publish-a-dataset-api){: .btn}
+[Publish Your First Dataset]({{site.baseurl}}/how-to-guides/use-the-matatika-api/publish-a-dataset-api){: .btn}
 {: .text-center}

@@ -1,7 +1,7 @@
 ---
 title: Library
 permalink: /library
-nav_order: 9
+nav_order: 14
 ---
 
 # {{page.title}}

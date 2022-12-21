@@ -1,8 +1,9 @@
 ---
-title: Connecting to a Data Store
-permalink: /getting-started/connecting-to-a-data-store
-parent: Getting Started
-nav_order: 11
+title: Setup a Data New Store
+permalink: /how-to-guides/import-data/setup-a-new-data-store
+parent: Import Data
+grand_parent: How-To Guides
+nav_order: 5
 ---
 
 # {{page.title}}
@@ -23,19 +24,19 @@ Changing the default [data store]({{site.baseurl}}/glossary#data-store) of a [wo
 
 ---
 
-## Connecting to a data store
+## Setup a new data store
 Matatika supports connecting to a number of [data stores]({{site.baseurl}}/glossary#data-store), such as [PostgreSQL](https://www.postgresql.org/){:target="_blank"} and [Snowflake](https://www.snowflake.com/){:target="_blank"}.
 
-1. Within the [Matatika app]({{site.matatika.links.app}}){:target="_blank"}, switch to the [workspace]({{site.baseurl}}/glossary#workspace) that you wish to set an alternate [data store]({{site.baseurl}}/glossary#data-store) for
+1. Within the [Matatika app]({{site.matatika.links.app}}){:target="_blank"}, switch to the [workspace]({{site.baseurl}}/glossary#workspace) that you wish to set an alternate [data store]({{site.baseurl}}/glossary#data-store) for.
 1. Navigate to the workspace 'Data Stores' page
-1. Click 'Add', select your preferred [data store]({{site.baseurl}}/glossary#data-store) and click 'Connect'
+1. Click 'Add', on the next screen 'Install' your preferred [data store]({{site.baseurl}}/glossary#data-store) and click 'Add'
 1. Enter the relevant credentials and other properties for the selected [data store]({{site.baseurl}}/glossary#data-store)
-1. Click 'Save' and then navigate back to the 'Data Stores' page
+1. Click 'Save' and then navigate back to the 'Stores' page
 1. Locate the [data store]({{site.baseurl}}/glossary#data-store) you wish to set as default, click the 'More' context menu button, and then select 'Make default'
   - Once a [data store]({{site.baseurl}}/glossary#data-store) is set the default for a [workspace]({{site.baseurl}}/glossary#workspace), it cannot be deleted until another data store is made the default
 
 After completing these steps:
-- All future [data import]({{site.baseurl}}/glossary#data-import) runs will load data into the new default [data store]({{site.baseurl}}/glossary#data-store)
+- All future created [data imports]({{site.baseurl}}/glossary#data-import) will load data into the new default [data store]({{site.baseurl}}/glossary#data-store) unless you choose another.
 - All [datasets]({{site.baseurl}}/glossary#dataset) will query from the new default [data store]({{site.baseurl}}/glossary#data-store)
 
 No data is transferred or deleted from the Matatika-managed [PostgreSQL](https://www.postgresql.org/){:target="_blank"} database, and it can be made the default [data store]({{site.baseurl}}/glossary#data-store) again at any time.

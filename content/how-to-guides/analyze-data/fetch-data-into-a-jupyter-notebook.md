@@ -1,8 +1,9 @@
 ---
 title: Fetch Data into a Jupyter Notebook
-permalink: /getting-started/fetch-data-into-a-jupyter-notebook
-parent: Getting Started
-nav_order: 5
+permalink: /how-to-guides/analyze-data/fetch-data-into-a-jupyter-notebook
+parent: Analyze Data
+grand_parent: How-To Guides
+nav_order: 3
 ---
 
 # {{page.title}}
@@ -18,8 +19,6 @@ You must have already:
 - Signed up for a Matatika account
 - Created a workspace through the [Matatika app]({{site.matatika.links.app}}) or API
 - Published a dataset or access to an existing dataset
-
-Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
 
 ---
 

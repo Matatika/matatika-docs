@@ -30,8 +30,8 @@ Path | Type | Format | Description
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
 `properties` | [`Properties`](#properties) | | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)
-`dataComponents` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s
-`actions` | `Array` of `String` | `Array` of [`Dataplugin`](dataplugins) `name`s or commands | The pipeline actions to run during a [job](jobs)
+`dataComponents` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s or create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
+`actions` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s or commands | The pipeline actions to run during a [job](jobs)
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 

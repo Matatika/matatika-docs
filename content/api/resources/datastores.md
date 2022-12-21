@@ -25,7 +25,7 @@ Path | Type | Format | Description
 `created` | `String` | ISO 8601 timestamp | The instant at which the datastore was created
 `lastModified` | `String` | ISO 8601 timestamp | The instant at which the datastore was last modified
 `name` | `String` | | The datastore name
-`loader` | `String` | | The datastore loader [dataplugin](dataplugins#dataplugin) `name`
+`dataPlugin` | `String` | | Create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
 `workspace` | `String` | Version 4 UUID | The datastore [workspace](workspaces#workspace) `id`
 `jdbcUrl` | `String` | [JDBC URL](https://docs.oracle.com/cd/E17952_01/connector-j-8.0-en/connector-j-reference-jdbc-url-format.html){:target="_blank"} | The datastore JDBC URL
 `properties` | [`Properties`](#properties) | | The datastore properties

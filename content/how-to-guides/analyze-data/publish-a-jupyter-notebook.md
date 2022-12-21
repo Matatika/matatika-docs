@@ -1,8 +1,9 @@
 ---
 title: Publish a Jupyter Notebook
-permalink: /getting-started/publish-a-jupyter-notebook
-parent: Getting Started
-nav_order: 6
+permalink: /how-to-guides/analyze-data/publish-a-jupyter-notebook
+parent: Analyze Data
+grand_parent: How-To Guides
+nav_order: 2
 ---
 
 # {{page.title}}
@@ -18,8 +19,6 @@ You must have already:
 - Signed up for a Matatika account
 - Created a workspace through the [Matatika app]({{site.matatika.links.app}}) or API
 - Installed the [Matatika CLI]({{site.baseurl}}/cli) and configured a context
-
-Refer to the previous [Getting Started guides]({{site.baseurl}}/getting-started) if you are unsure of these requirements.
 
 ---
 
