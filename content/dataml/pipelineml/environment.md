@@ -50,5 +50,5 @@ EXPORT <NEW_OR_EXISTING_SETTING_NAME>=<NEW_VALUE>
 
 ## Further Reading
 
-- [Meltano Documentation](https://meltano.com/docs/plugin-management.html){:target="_blank"}
+- [Meltano Documentation](https://docs.meltano.com/concepts/environments){:target="_blank"}
 - [Meltano Database URI Documentation](https://docs.meltano.com/reference/settings#database_uri){:target="_blank"}

@@ -55,11 +55,11 @@ Your local workspace repository should now be set up similar to this one: [Githu
 ## Running Locally
 (activate your virtual environment if you are using one for Meltano)
 
-1. Install the [extractor](https://meltano.com/docs/plugins.html#extractors){:target="_blank"}
+1. Install the [extractor](https://docs.meltano.com/concepts/plugins#extractors){:target="_blank"}
     ```
     meltano install extractor tap-example
     ```
-1. Install the [loader](https://meltano.com/docs/plugins.html#loaders){:target="_blank"}
+1. Install the [loader](https://docs.meltano.com/concepts/plugins#loaders){:target="_blank"}
     ```
     meltano install loader target-example
     ```
