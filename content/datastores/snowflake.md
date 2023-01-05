@@ -11,7 +11,7 @@ parent: Datastores
 
 <img src="{{site.baseurl}}/assets/datastore_images/target-snowflake.png" width="125" alt="auth0">
 
-{% include snippets/api/markdown-descriptions/target-postgres/dataplugin-description.md %}
+{% include snippets/api/markdown-descriptions/target-snowflake/dataplugin-description.md %}
 
 ## Links
 
