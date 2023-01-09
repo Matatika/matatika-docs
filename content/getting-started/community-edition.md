@@ -27,21 +27,27 @@ This getting started guide get Matatika Community Edition up and running on your
 
 ## Install the Matatika Community Edition
 
-1. Go to `https://github.com/Matatika/matatika-ce` and clone the repository.
-1. In your terminal, move to the `matatika-ce` directory
-- If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` for the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
-1. In your terminal run:
+1. Go to [https://github.com/Matatika/matatika-ce](https://github.com/Matatika/matatika-ce), clone the repository, docker compose up Matatika Community Edition.
 ```terminal
-docker compose up
+git clone https://github.com/Matatika/matatika-ce
+cd matatika-ce
+docker-compose up
 ```
-(This may take some time to download the docker images for the first run).
+- Coffee time.  This may take a few minutes to download the docker images for the first run.
+- If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` using the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
 1. Once everything is running, in your browser go to:
 ```
 localhost:3443
 ```
-1. You will now see a login screen. If you already have a Matatika account you can just login, otherwise sign up.
+1. Login with your Matatika Account. Or use the sign up link to create an account.
+- No data will be stored in our cloud.  Your Matatika Account keeps your data safe with [Auth0](https://auth0.com/)
+1. Create your first Workspace.  All configuration is managed as code in your `workspaces` directory:
+```
+ls -al matatika-ce/workspaces
+```
 
-Congratulations, you now have the Matatika Community Edition running!
+
+Congratulations, you can now manage all your data with the Matatika Community Edition!
 
 [Make Your First API Call]({{site.baseurl}}/how-to-guides/use-the-matatika-api/making-your-first-api-call){: .btn}
 {: .text-center}

@@ -30,7 +30,8 @@ has_toc: false
           Run and host Matatika where you want
           <ul>
             <li>Local development</li>
-            <li>Locally deployed PostgreSQL database</li>
+            <li>Local PostgreSQL database</li>
+            <li>Local Workspaces</li>
           </ul>
         </div>
         <button style="background-color: orange; border-radius: 4px; border: 1px solid orange; font-size: 15px; color: white; width: 130px;" type="button" onclick="location.href='{{site.baseurl}}/getting-started/community-edition'">GET STARTED</button>
