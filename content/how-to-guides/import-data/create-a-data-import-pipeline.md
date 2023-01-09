@@ -45,4 +45,4 @@ Each data source for a data import require different settings and configurations
 
 ## Custom Pipelines
 
-If you want more control of your pipeline, or don't want to use a data source plugin, you can create a use a custom pipeline: [Create a Custom Pipeline]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline){:target="_blank"}
+If you want more control of your pipeline, or don't want to use a data source plugin, you can create a use a custom pipeline: [Create a Custom Pipeline]({{site.baseurl}}/how-to-guides/automate-actions/create-a-custom-pipeline){:target="_blank"}
