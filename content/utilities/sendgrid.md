@@ -13,4 +13,4 @@ nav_order: 4
 
 {% include snippets/api/markdown-descriptions/sendgrid/dataplugin-description.md %}
 
-[Use Sendgrid in a pipeline]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)
+[Use Sendgrid in a pipeline]({{site.baseurl}}/how-to-guides/automate-actions/create-a-custom-pipeline)

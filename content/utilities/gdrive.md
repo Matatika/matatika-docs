@@ -14,4 +14,4 @@ nav_order: 1
 
 {% include snippets/api/markdown-descriptions/gdrive/dataplugin-description.md %}
 
-[Use Google Drive in a pipeline]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)
+[Use Google Drive in a pipeline]({{site.baseurl}}/how-to-guides/automate-actions/create-a-custom-pipeline)

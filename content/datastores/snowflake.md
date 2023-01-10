@@ -11,8 +11,8 @@ parent: Datastores
 
 <img src="{{site.baseurl}}/assets/datastore_images/target-snowflake.png" width="125" alt="auth0">
 
-{% include snippets/api/markdown-descriptions/target-postgres/dataplugin-description.md %}
+{% include snippets/api/markdown-descriptions/target-snowflake/dataplugin-description.md %}
 
 ## Links
 
-- [Using datastores in pipelines - Creating Custom Pipelines]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)
+- [Using datastores in pipelines - Creating Custom Pipelines]({{site.baseurl}}/how-to-guides/automate-actions/create-a-custom-pipeline)

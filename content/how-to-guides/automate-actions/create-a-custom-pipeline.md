@@ -1,7 +1,7 @@
 ---
 title: Create a Custom Pipeline
-permalink: /how-to-guides/automate-data/create-a-custom-pipeline
-parent: Automate Data
+permalink: /how-to-guides/automate-actions/create-a-custom-pipeline
+parent: Automate Actions
 grand_parent: How-To Guides
 nav_order: 1
 ---

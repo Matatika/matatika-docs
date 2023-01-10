@@ -39,7 +39,7 @@ The plugin has now been added to your workspace, if you have installed a data so
 
 If you have installed a different sort of plugin or want complete control over the your pipeline then your next step should be:
 
-[Create a Custom Pipeline]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline){: .btn}
+[Create a Custom Pipeline]({{site.baseurl}}/how-to-guides/automate-actions/create-a-custom-pipeline){: .btn}
 {: .text-center}
 
 ---

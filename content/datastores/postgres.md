@@ -16,4 +16,4 @@ parent: Datastores
 ## Links
 
 - [Use your own postgres database as your datastore]({{site.baseurl}}/datastores/default-datastore)
-- [Using datastores in pipelines - Creating Custom Pipelines]({{site.baseurl}}/how-to-guides/automate-data/create-a-custom-pipeline)
+- [Using datastores in pipelines - Creating Custom Pipelines]({{site.baseurl}}/how-to-guides/automate-actions/create-a-custom-pipeline)
