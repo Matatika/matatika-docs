@@ -46,11 +46,37 @@ localhost:3443
 ls -al matatika-ce/workspaces
 ```
 
-
 Congratulations, you can now manage all your data with the Matatika Community Edition!
 
 [Make Your First API Call]({{site.baseurl}}/how-to-guides/use-the-matatika-api/making-your-first-api-call){: .btn}
 {: .text-center}
+
+---
+
+## Update
+To update the Community Edition to the latest version, within the `matatika-ce` directory, run
+
+```sh
+git pull
+```
+
+If a new version has been released, this will bring in upstream changes to the `docker-compose.yml` file referencing new image tags. [Check here for new releases.](https://github.com/Matatika/matatika-ce/releases)
+
+### Specific version
+To update (or rollback) to a specific release version, within the `matatika-ce` directory, run
+
+```sh
+git checkout main
+git pull
+git checkout <RELEASE TAG>
+# e.g. `git checkout 10244` for https://github.com/Matatika/matatika-ce/releases/tag/10244
+```
+
+To find what release tags are available, [check here](https://github.com/Matatika/matatika-ce/tags), or run
+
+```
+git tag --list
+```
 
 ---
 
