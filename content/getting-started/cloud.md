@@ -8,7 +8,7 @@ parent: Getting Started
 
 # Getting Started With Matatika {{page.title}}
 
-- Time required: *5 minutes*
+*Time required: **5 minutes***
 
 ---
 

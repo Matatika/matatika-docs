@@ -8,7 +8,7 @@ parent: Getting Started
 
 # Getting Started {{page.title}}
 
-- Time required: *10 minutes*
+*Time required: **10 minutes***
 
 ---
 

@@ -7,7 +7,7 @@ nav_order: 5
 ---
 
 # {{page.title}}
-- Time required: _5 minutes_
+*Time required: **5 minutes***
 
 ---
 
