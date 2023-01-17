@@ -20,7 +20,47 @@ You must have already:
 
 ---
 
-##  Introduction
+## Introduction
+Using environments and multiple workspaces, it is possible to implement a development-to-production DataOps workflow for a project:
+
+1. Create a workspace for development (e.g. `My Workspace (dev)`)
+    1. Open the drop-down menu
+    1. Select `New workspace`
+    1. Provide a workspace name in the `Name *` field
+    1. Click `Save`
+1. Create another workspace for staging (e.g. `My Workspace (staging)`)
+1. Set the staging workspace active environment to `staging` in workspace settings
+    1. Open the drop-down menu
+    1. Select `Settings`
+    1. Provide the name of the active environment in the `Active environment` field
+    1. Click `Save`
+1. Create another workspace for production (e.g. `My Workspace`)
+1. Set the production workspace active environment to `prod`
+1. Make changes and test in the development workspace
+1. When ready, merge changes from the development workspace into the staging workspace (the repository URL for each workspace can be found in workspace settings)
+    ```sh
+    git clone git@github.com:MatatikaBytes/My-Workspace-staging-kklcdol
+    cd My-Workspace-staging-kklcdol
+
+    git remote add dev git@github.com:MatatikaBytes/My-Workspace-dev-zgtzhjd
+    git pull -X theirs --allow-unrelated-histories dev main
+
+    # ensure everything is correct before pushing
+    git push
+    ```
+1. When ready, merge changes from the staging workspace into the production workspace
+    ```sh
+    git clone git@github.com:MatatikaBytes/My-Workspace-setarqi
+    cd My-Workspace-setarqi
+
+    git remote add staging git@github.com:MatatikaBytes/My-Workspace-staging-kklcdol
+    git pull -X theirs --allow-unrelated-histories staging main
+
+    # ensure everything is correct before pushing
+    git push
+    ```
+
+### What are environments?
 Workspaces are backed by [environments](https://docs.meltano.com/concepts/environments) - a Meltano concept allowing configuration to be separated into different namespaces. In a workspace, the configuration pipelines run with can be controlled by its active environment. The following environment are provided when a workspace is created:
 
 - `dev` (default active environment)
@@ -79,15 +119,3 @@ When the workspace active environment is set to `prod`:
 - `domain` of `matatika.eu.auth0.com` (from `prod` environment)
 
 ---
-
-## Environments for DataOps
-Using environments and multiple workspaces, it is possible to implement a development-to-production DataOps workflow for a project:
-
-1. Create a workspace for development (e.g. `(dev) My Workspace`)
-1. Create another workspace for pre-production (e.g. `(staging) My Workspace`)
-1. Set the pre-production workspace active environment to `staging`
-1. Create another workspace for production (e.g. `My Workspace`)
-1. Set the production workspace active environment to `prod`
-1. Make changes and test in the development workspace
-1. When ready, merge changes from the development workspace into the pre-production workspace (i.e. `git merge`)
-1. When ready, merge changes from the pre-production workspace into the production workspace
