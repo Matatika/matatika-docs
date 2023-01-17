@@ -1,6 +1,6 @@
 ---
-title: Managing Environment Configuration
-permalink: /how-to-guides/manage-workspaces/managing-environment-configuration
+title: Promoting Changes with DataOps
+permalink: /how-to-guides/manage-workspaces/promoting-changes-with-dataops
 parent: Manage Workspaces
 grand_parent: How-To Guides
 nav_order: 2
