@@ -27,24 +27,34 @@ This getting started guide get Matatika Community Edition up and running on your
 
 ## Install the Matatika Community Edition
 
-1. Go to [https://github.com/Matatika/matatika-ce](https://github.com/Matatika/matatika-ce), clone the repository, docker compose up Matatika Community Edition.
-```terminal
-git clone https://github.com/Matatika/matatika-ce
-cd matatika-ce
-docker-compose up
-```
-- Coffee time.  This may take a few minutes to download the docker images for the first run.
-- If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` using the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
-1. Once everything is running, in your browser go to:
-```
-localhost:3443
-```
-1. Login with your Matatika Account. Or use the sign up link to create an account.
-- No data will be stored in our cloud.  Your Matatika Account keeps your data safe with [Auth0](https://auth0.com/)
-1. Create your first Workspace.  All configuration is managed as code in your `workspaces` directory:
-```
-ls -al matatika-ce/workspaces
-```
+1. Go to [https://github.com/Matatika/matatika-ce](https://github.com/Matatika/matatika-ce), clone the repository and use Docker Compose to run the application:
+    ```sh
+    git clone https://github.com/Matatika/matatika-ce
+    cd matatika-ce
+
+    # depending on the version of Docker you have installed, Docker Compose may not
+    # exist as its own executable, but as a subcommand of `docker` instead - in this
+    # case, you should substitute the below `docker-compose` with `docker compose`
+    #
+    # if you are using Docker Desktop for Linux, do not set `userID` or `groupID` as
+    # this will interfere with the VM file sharing service (i.e. just run
+    # `docker compose up`)
+    userID=$(id -u) groupID=$(id -g) docker-compose up
+    ```
+
+    Coffee time. This may take a few minutes to download the Docker images on the first run.
+
+    If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` using the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
+
+1. Once everything is running, go to `localhost:3443` in your browser, then login with your Matatika account or use the sign up link to create one.
+
+    No data will be stored in our cloud. Your Matatika account keeps your data safe with [Auth0](https://auth0.com/).
+
+1. Create your first workspace. All configuration is managed as code in your `workspaces` directory:
+
+    ```sh
+    ls -al workspaces
+    ```
 
 Congratulations, you can now manage all your data with the Matatika Community Edition!
 
