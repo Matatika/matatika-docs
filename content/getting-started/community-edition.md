@@ -90,6 +90,49 @@ git tag --list
 
 ---
 
+## Specify a Custom Auth0 Identity Provider
+The Community Edition can be configured to use a custom Auth0 identity provider, if required. This will replace Matatika as the default identity provider responsible for login and user authentication.
+
+1. [Create a new Single Page Web Application](https://auth0.com/docs/get-started/auth0-overview/create-applications/single-page-web-apps)
+1. Click `Settings` and add
+    ```
+    https://localhost:3443
+    ```
+    to `Allowed Callback URLs`, `Allowed Logout URLs` and `Allowed Web Origins`
+1. Export the following environment variables:
+    ```sh
+    # your tenant domain ("Settings" > "Basic Information" > "Domain")
+    export APP_IDENTITY_DOMAIN=
+
+    # your client ID ("Settings" > "Basic Information" > "Client ID")
+    export APP_IDENTITY_CLIENT_ID=
+
+    # your client database connection name ("Connections" > "Database")
+    export APP_IDENTITY_CONNECTION=
+
+    # your tenant identity provider settings (run once `APP_IDENTITY_DOMAIN` is set
+    # - do not modify)
+    export CATALOG_AUTH_IDPS_PRIMARY_ISSUER_URI=https://$APP_IDENTITY_DOMAIN/
+    export CATALOG_AUTH_IDPS_PRIMARY_JWK_SET_URI=https://$APP_IDENTITY_DOMAIN/.well-known/jwks.json
+
+    # optional secondary tenant identity provider settings
+    # export CATALOG_AUTH_IDPS_SECONDARY_ISSUER_URI=
+    # export CATALOG_AUTH_IDPS_SECONDARY_JWK_SET_URI=
+    ```
+1. Run the application:
+    ```sh
+    # depending on the version of Docker you have installed, Docker Compose may not
+    # exist as its own executable, but as a subcommand of `docker` instead - in this
+    # case, you should substitute the below `docker-compose` with `docker compose`
+    #
+    # if you are using Docker Desktop for Linux, do not set `userID` or `groupID` as
+    # this will interfere with the VM file sharing service (i.e. just run
+    # `docker compose up`)
+    userID=$(id -u) groupID=$(id -g) docker-compose up
+    ```
+
+---
+
 ## Further Reading
 
 - Create your first pipeline: [Create A Data Import Pipeline]({{site.baseurl}}/how-to-guides/import-data/create-a-data-import-pipeline)
