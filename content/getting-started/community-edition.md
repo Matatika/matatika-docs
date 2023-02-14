@@ -91,7 +91,7 @@ git tag --list
 ---
 
 ## Specify a Custom Auth0 Identity Provider
-The Community Edition can be configured to use a custom Auth0 identity provider, if required. This will replace Matatika as the default identity provider responsible for login and user authentication.
+If you want to use your own company login from within the UI, the Community Edition can be configured to use a custom Auth0 identity provider. This will replace Matatika as the default identity provider responsible for login and user authentication.
 
 1. [Create a new Single Page Web Application](https://auth0.com/docs/get-started/auth0-overview/create-applications/single-page-web-apps)
 1. Click `Settings` and add
