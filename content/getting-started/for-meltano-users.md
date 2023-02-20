@@ -33,26 +33,17 @@ This getting started guide will get your Meltano project up and running with the
     ```sh
     meltano add files files-matatika-lab
     ```
-- If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` for the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
 1. In your terminal run:
     ```sh
     # depending on the version of Docker you have installed, Docker Compose may not
     # exist as its own executable, but as a subcommand of `docker` instead - in this
     # case, you should substitute the below `docker-compose` with `docker compose`
-    #
-    # if you are using Docker Desktop for Linux, do not set `userID` or `groupID` as
-    # this will interfere with the VM file sharing service (i.e. just run
-    # `docker compose up`)
 
-    userID=$(id -u) groupID=$(id -g) docker-compose up
+    docker-compose up
     ```
-
 (This may take some time to download the docker images for the first run).
-1. Once everything is running, in your browser go to:
-```
-localhost:3443
-```
-1. You will now see a login screen. If you already have a Matatika account you can just login, otherwise sign up.
+1. Open [https://localhost:3443](https://localhost:3443)
+1. You will now see a login screen. If you already have a Matatika account you can just login, otherwise sign up here: [Matatika Sign Up](https://www.matatika.com/sign-up/).
 
 Congratulations, you now have the Matatika lab running against your Meltano project!
 
