@@ -1,12 +1,12 @@
 ---
-title: Library
-permalink: /library
-nav_order: 14
+title: SDK
+permalink: /sdk
+nav_order: 9
 ---
 
 # {{page.title}}
 
-A python library for interacting with Matatika services.
+A python library for building applications with Matatika services.
 {: .fs-5 }
 
 ---

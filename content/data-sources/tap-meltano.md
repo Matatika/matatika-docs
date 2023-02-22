@@ -3,7 +3,7 @@ title: Meltano
 permalink: /data-sources/tap-meltano/
 parent: Data Sources
 has_children: true
-nav_order: 5
+nav_order: 6
 ---
 
 # {{page.title}}
