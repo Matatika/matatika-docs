@@ -9,7 +9,7 @@ components: request-md-components/apikeys
 
 # {{page.title}}
 
-API keys offer an alternate method of authentication to the Matatika API using a [client ID and secret](https://www.oauth.com/oauth2-servers/client-registration/client-id-secret/){:target="_blank"}. Access using API key credentials is supported by the Matatika [CLI]({{site.baseurl}}/cli) and [library]({{site.baseurl}}/library), which allows a user to remain authenticated permanently.
+API keys offer an alternate method of authentication to the Matatika API using a [client ID and secret](https://www.oauth.com/oauth2-servers/client-registration/client-id-secret/){:target="_blank"}. Access using API key credentials is supported by the Matatika [CLI]({{site.baseurl}}/cli) and [SDK]({{site.baseurl}}/sdk), which allows a user to remain authenticated permanently.
 {: .fs-5 }
 
 ---

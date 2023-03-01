@@ -3,7 +3,7 @@ title: Spotify
 permalink: /data-sources/tap-spotify/
 parent: Data Sources
 has_children: true
-nav_order: 8
+nav_order: 9
 ---
 
 # {{page.title}}

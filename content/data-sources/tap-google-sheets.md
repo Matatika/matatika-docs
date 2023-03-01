@@ -3,7 +3,7 @@ title: Google Sheets
 permalink: /data-sources/tap-google-sheets/
 parent: Data Sources
 has_children: true
-nav_order: 3
+nav_order: 4
 ---
 
 # {{page.title}}
