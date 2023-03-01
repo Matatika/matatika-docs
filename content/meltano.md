@@ -12,7 +12,7 @@ nav_order: 14
 
 ## Overview
 
-How to get a UI, schedule and basic visulisation for your Meltano project using the Matatika plugin.
+How to get a UI, orchestrator and basic visulisation for your Meltano project using the Matatika plugin.
 
 ---
 
@@ -35,7 +35,7 @@ How to get a UI, schedule and basic visulisation for your Meltano project using 
     meltano invoke matatika lab start
     ```
 (This may take some time to download the docker images for the first run).
-1. Once the docker images are running your browser will open to [https://localhost:3443](https://localhost:3443)
+1. Once the docker images are running your browser will open to `https://localhost:3443`
 1. You will now see a login screen. If you already have a Matatika account you can just login, otherwise sign up here: [Matatika Sign Up](https://www.matatika.com/sign-up/).
 
 Congratulations, you now have the Matatika Lab running against your Meltano project!
