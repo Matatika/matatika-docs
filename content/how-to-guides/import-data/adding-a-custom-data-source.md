@@ -66,7 +66,7 @@ files:
     pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
 ```
 
-We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/dataml/datasetml/) so we can see the data being extracted by the tap in [visualisations]({{site.baseurl}}/dataml/datasetml/charts). By adding this bundle and setting the same namespace we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you configure a `tap-example-custom-data-source` data import, you should also add this bundle.
+We are including a analyze file bundle that contains Matatika [datasets]({{site.baseurl}}/dataml/datasetml/) so we can see the data being extracted by the tap in [visualisations]({{site.baseurl}}/dataml/datasetml/visualisation). By adding this bundle and setting the same namespace we effectively tell our [data import]({{site.baseurl}}/glossary#data-import) that when you configure a `tap-example-custom-data-source` data import, you should also add this bundle.
 
 - Click next and you will now be on a screen that expects the settings for your pipeline.
 - Expand the `tap-example-custom-data-source` section.

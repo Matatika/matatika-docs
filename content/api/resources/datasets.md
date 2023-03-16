@@ -30,7 +30,7 @@ Path | Type | Format | Description
 `description` | `String` | | The dataset description (may contain markdown)
 `questions` | `String` | | The dataset questions
 `rawData` | `String` | JSON | The dataset raw data
-`visualisation` | `String` | JSON | The dataset visualisation metadata. [More Info]({{site.baseurl}}/dataml/datasetml/charts)
+`visualisation` | `String` | JSON | The dataset visualisation metadata. [More Info]({{site.baseurl}}/dataml/datasetml/visualisation)
 `metadata` | `String` | JSON | The dataset metadata. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
 `query` | `String` | SQL statement | The dataset query. [More Info]({{site.baseurl}}/dataml/datasetml/query)
 `likeCount` | `Integer` | | The number of likes the dataset has received

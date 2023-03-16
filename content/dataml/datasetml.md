@@ -68,7 +68,7 @@ Dataset Key | Datatype |  Information
 `questions` | `String` | Questions that your dataset answers, so people can find the dataset just by asking questions.
 `description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevant information. You can also add `#tags`.
 `metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
-`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasetml/charts)
+`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasetml/visualisation)
 `query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/dataml/datasetml/query)
 `rawData` | `String` of a List | The rawData key allows you to hard-code data directly into your dataset.
 
