@@ -36,4 +36,16 @@ has_toc: false
         </div>
         <button style="background-color: orange; border-radius: 4px; border: 1px solid orange; font-size: 15px; color: white; width: 130px;" type="button" onclick="location.href='{{site.baseurl}}/getting-started/community-edition'">GET STARTED</button>
     </div>
+      <div style="display: flex; width: 400px; padding: 50px; border-radius: 10px; border: 2px solid grey; justify-content: space-between; flex-direction: column;">
+        <div style="width: auto; padding-right: 15px;">
+          <p style="font-size: 20px; font-weight: bold;">For Meltano Edition</p>
+          Run and host Matatika where you want
+          <ul>
+            <li>Based on Community Edition</li>
+            <li>Lightweight, fast startup</li>
+            <li>Designed for Meltano users</li>
+          </ul>
+        </div>
+        <button style="background-color: orange; border-radius: 4px; border: 1px solid orange; font-size: 15px; color: white; width: 130px;" type="button" onclick="location.href='{{site.baseurl}}/getting-started/meltano-edition'">GET STARTED</button>
+    </div>
 </div>
