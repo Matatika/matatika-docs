@@ -30,6 +30,7 @@ _create_to_dir: clean
 
 # check appropriate az credentials are set
 _check_az_env:
+	@test -n "$(AZURE_STORAGE_ACCOUNT)" || (echo 'AZURE_STORAGE_ACCOUNT not set' && exit 1)
 	@test -n "$(AZURE_STORAGE_KEY)" || (echo 'AZURE_STORAGE_KEY not set' && exit 1)
 
 # copies all files and folders from the given path argument'FROM_DIR' - this is the
@@ -37,7 +38,7 @@ _check_az_env:
 import: _create_to_dir
 	@cp -r $(FROM_DIR)/* $(TO_DIR)
 
-IMPORT_BLOB_SNIPPETS := AZURE_STORAGE_ACCOUNT=matatika AZURE_STORAGE_KEY=$(AZURE_STORAGE_KEY) az storage blob download-batch -d $(TO_DIR) -s
+IMPORT_BLOB_SNIPPETS := AZURE_STORAGE_ACCOUNT=$(AZURE_STORAGE_ACCOUNT) AZURE_STORAGE_KEY=$(AZURE_STORAGE_KEY) az storage blob download-batch -d $(TO_DIR) -s
 
 # download snippets from dev Azure Blob storage container
 import-dev: _create_to_dir _check_az_env
