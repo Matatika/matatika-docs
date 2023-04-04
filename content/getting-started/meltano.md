@@ -1,12 +1,12 @@
 ---
-title: Meltano Edition
-permalink: /getting-started/meltano-edition
+title: Meltano
+permalink: /getting-started/meltano
 nav_order: 3
 parent: Getting Started
 
 ---
 
-# Get Our UI for {{page.title}}
+# Getting started for Meltano users
 
 - Time required: *5 minutes*
 
@@ -14,7 +14,7 @@ parent: Getting Started
 
 ## Overview
 
-How to get a UI, orchestrator and basic visulisation for your Meltano project using the Matatika plugin.
+How to get a UI, orchestrator and basic visualization for your Meltano project using the Matatika plugin.
 
 ---
 
@@ -25,7 +25,7 @@ How to get a UI, orchestrator and basic visulisation for your Meltano project us
 
 ---
 
-## Install the Matatika Plugin into your project
+## Install
 
 1. In your terminal `cd` into your Meltano project
 2. In your terminal run:
@@ -47,7 +47,7 @@ Congratulations, you now have the Matatika Lab running against your Meltano proj
 
 ---
 
-## STOP the Matatika Plugin
+## Stop
 1. In your terminal window where lab was started, press CTRL+C to stop the process
 2. In your terminal run:
     ```sh
@@ -56,18 +56,20 @@ Congratulations, you now have the Matatika Lab running against your Meltano proj
 This command will gracefully stop the lab docker containers.
 
 3. Below command with extra --reset option, will reset the volumes mounted, including the internal database. That means all the settings/changes are lost.
-    ```sh
+
+    ```
     meltano invoke matatika lab stop --reset
     ```
 
 ---
 
-## UPGRADE the Matatika plugin in existing Meltano project
-1. If you installed previously the Matatika lab and a new plugin version is available in Meltano Hub, you need to run those commands to upgrade the plugin:
-    ```sh
-    meltano lock --update utility matatika
-    meltano install --clean utility matatika
-    ```
+## Upgrade
+To update the Matatika utility to the newest version available from Meltano Hub, run the following commands: 
+
+```
+meltano lock --update utility matatika
+meltano install --clean utility matatika
+```
 
 ---
 
