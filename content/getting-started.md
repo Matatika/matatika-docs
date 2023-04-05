@@ -36,4 +36,8 @@ has_toc: false
         </div>
         <button style="background-color: orange; border-radius: 4px; border: 1px solid orange; font-size: 15px; color: white; width: 130px;" type="button" onclick="location.href='{{site.baseurl}}/getting-started/community-edition'">GET STARTED</button>
     </div>
+
+    <div>
+        <a href="{{site.baseurl}}/getting-started/meltano" style="color: orange;">Check out our utility for Meltano users</a>
+    </div>
 </div>
