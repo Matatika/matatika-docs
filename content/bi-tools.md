@@ -1,5 +1,6 @@
 ---
 title: BI Tools
+description: Documentation for using Matatika with BI Tools.
 permalink: /bi-tools/
 nav_order: 14
 has_children: true
@@ -7,5 +8,5 @@ has_children: true
 
 # {{page.title}}
 
-The documentation for how to use Matatika with BI Tools.
+The documentation for using Matatika with BI Tools.
 {: .fs-5 }
