@@ -1,5 +1,6 @@
 ---
 title: Overview
+description: Matatika is a private data collaboration platform
 permalink: /overview
 nav_order: 1
 ---
