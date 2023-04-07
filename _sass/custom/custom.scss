@@ -1,6 +1,10 @@
 $header-offset: 80px;
 $matatika-default: #EE7A34;
 
+.main-header {
+    display: block;
+}
+
 .site-header {
     display: none;
 }
@@ -52,8 +56,8 @@ $matatika-default: #EE7A34;
 }
 
 @media (min-width: 66.5rem) {
-.side-bar {
-    max-width: 391px;
+    .side-bar {
+        max-width: 391px;
     }
 }
 // Request paths

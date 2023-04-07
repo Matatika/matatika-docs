@@ -1,5 +1,6 @@
 ---
 title: SDK
+description: Overview of the python library for building data applications with Matatika services
 permalink: /sdk
 nav_order: 9
 ---

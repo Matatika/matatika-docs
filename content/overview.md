@@ -1,12 +1,13 @@
 ---
 title: Overview
+description: Overview of the Matatika enterprise data collaboration platform
 permalink: /overview
 nav_order: 1
 ---
 
 # {{page.title}}
 
-***Matatika is a private data collaboration platform***.
+***Matatika is an enterprise data collaboration platform***.
 
 The *Matatika App* provides collaboration through private, invite only [workspaces](glossary#workspace) which you set up and share with internal teams or customers.
 

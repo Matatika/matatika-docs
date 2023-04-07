@@ -1,5 +1,6 @@
 ---
 title: CLI
+description: Documentation for the Matatika command-line interface.
 permalink: /cli/
 nav_order: 8
 has_children: true

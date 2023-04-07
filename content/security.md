@@ -1,5 +1,6 @@
 ---
 title: Security
+description: Guide to how Matatika API uses authorisation to prevent unwanted access to your data.
 permalink: /security
 nav_order: 6
 ---
