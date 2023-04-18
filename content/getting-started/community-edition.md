@@ -133,6 +133,39 @@ If you want to use your own company login from within the UI, the Community Edit
 
 ---
 
+## Specify a Custom Google OAuth Provider
+The Matatika UI supports the Google OAuth credentials flow when using any of our Google plugins. To take advantage of this, you will need to provide the credentials of you Google OAuth Client for a Web Application.
+
+[How to create a new Google OAuth 2.0 Web Server Application](https://developers.google.com/identity/protocols/oauth2/web-server#prerequisites)
+
+While following the above steps you will need to enable the following APIs:
+- Google Ads API
+- Google Analytics API
+- Google Drive API
+- Google Sheets API
+
+When creating your OAuth Consent Screen you will need to select the following scopes:
+- Google Ads API: `../auth/adwords`
+- Google Analytics API: `../auth/analytics.readonly`
+- Google Drive API: `../auth/drive.readonly`
+- Google Sheets API: `../auth/spreadsheets.readonly`
+
+Once you have set everything up on Google's side you just need to update your Matatika CE `docker-compose.yml`. Add your new Google credentials under `services > catalog > environment`:
+
+```sh
+OAUTH2-GOOGLE_CLIENTID=yourvalue
+OAUTH2-GOOGLE_CLIENTSECRET= yourvalue
+```
+
+---
+
+## Deploy Your Own Plugins
+To deploy your own plugins to use in the Matatika UI, you just need to drop the `plugin.yml` file into the root `plugins` folder of the `matatika-ce` repository. (Make sure to put it in the correct plugin type).
+
+By default the CE will detect and automatically deploy any new plugins found, which you can use right away by installing them into your workspace from the plugins screen.
+
+---
+
 ## Further Reading
 
 - Create your first pipeline: [Create A Data Import Pipeline]({{site.baseurl}}/how-to-guides/import-data/create-a-data-import-pipeline)
