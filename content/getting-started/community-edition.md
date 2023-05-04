@@ -134,28 +134,47 @@ If you want to use your own company login from within the UI, the Community Edit
 ---
 
 ## Specify a Custom Google OAuth Provider
-The Matatika UI supports the Google OAuth credentials flow when using any of our Google plugins. To take advantage of this, you will need to provide the credentials of you Google OAuth Client for a Web Application.
+The Matatika UI supports OAuth sign-in for any of the avialable Google plugins, to make configuration easy for a user. To take advantage of this, you will need to provide your own Google OAuth client ID credentials for a web application.
 
-[How to create a new Google OAuth 2.0 Web Server Application](https://developers.google.com/identity/protocols/oauth2/web-server#prerequisites)
+1. [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project)
+1. Enable any of the following APIs for your project, based on your requirements: 
+    - [Google Ads API](https://console.cloud.google.com/apis/library/googleads.googleapis.com)
+    - [Google Analytics API](https://console.cloud.google.com/apis/library/analytics.googleapis.com)
+    - [Google Drive API](https://console.cloud.google.com/apis/library/drive.googleapis.com)
+    - [Google Sheets API](https://console.cloud.google.com/apis/library/sheets.googleapis.com)
+1. [Create OAuth client ID credentials for a web application](https://developers.google.com/workspace/guides/create-credentials#oauth-client-id)
+    
+    Under `Under Authorized JavaScript origins`, click `Add URI` and set to
+    ```
+    https://localhost:3443
+    ```
 
-While following the above steps you will need to enable the following APIs:
-- Google Ads API
-- Google Analytics API
-- Google Drive API
-- Google Sheets API
+    Under `Authorised redirect URIs`, click `Add URI` and set to
+    ```
+    https://localhost/oauth2-google
+    ```
+1. Export the following environment variables:
+    ```sh
+    # your client ID ("Additional information" > "Client ID")
+    export OAUTH2_GOOGLE_CLIENT_ID=
 
-When creating your OAuth Consent Screen you will need to select the following scopes:
-- Google Ads API: `../auth/adwords`
-- Google Analytics API: `../auth/analytics.readonly`
-- Google Drive API: `../auth/drive.readonly`
-- Google Sheets API: `../auth/spreadsheets.readonly`
+    # your client secret ("Additional information" > "Client secrets" > "Client secret")
+    export OAUTH2_GOOGLE_CLIENT_SECRET=
 
-Once you have set everything up on Google's side you just need to update your Matatika CE `docker-compose.yml`. Add your new Google credentials under `services > catalog > environment`:
-
-```sh
-OAUTH2-GOOGLE_CLIENTID=yourvalue
-OAUTH2-GOOGLE_CLIENTSECRET= yourvalue
-```
+    # (run once `OAUTH2_GOOGLE_CLIENT_ID` is set - do not modify)
+    export APP_OAUTH_GOOGLE_CLIENT_ID=$OAUTH2_GOOGLE_CLIENT_ID
+    ```
+1. Run the application:
+    ```sh
+    # depending on the version of Docker you have installed, Docker Compose may not
+    # exist as its own executable, but as a subcommand of `docker` instead - in this
+    # case, you should substitute the below `docker-compose` with `docker compose`
+    #
+    # if you are using Docker Desktop for Linux, do not set `userID` or `groupID` as
+    # this will interfere with the VM file sharing service (i.e. just run
+    # `docker compose up`)
+    userID=$(id -u) groupID=$(id -g) docker-compose up
+    ```
 
 ---
 
