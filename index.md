@@ -12,6 +12,10 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 [Sign Up]({{site.matatika.links.www}}/sign-up/){:.btn}
 
+*Got a question?*
+
+[Ask us on Slack](https://join.slack.com/t/matatika/shared_invite/zt-19n1bfokx-F31DNitTpSxWCFO2aFlgxg){:target="_blank"}{:.btn}
+
 ---
 
 
