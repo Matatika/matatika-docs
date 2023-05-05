@@ -13,7 +13,7 @@ nav_order: 3
 
 Our Auth0 data source uses a singer tap we created called `tap-auth0` to extract your data. 
 
-You can find documentation about `tap-auth0` on the [tap-auth0]({{site.baseurl}}/data-sources/tap-auth0) overview page.
+You can find documentation about `tap-auth0` on the [tap-auth0]({{site.baseurl}}/data-sources/tap-auth0/) overview page.
 
 `tap-auth0` is open source, and you can see the code on [GitHub](https://github.com/Matatika/tap-auth0){:target="_blank"}.
 
