@@ -133,6 +133,58 @@ If you want to use your own company login from within the UI, the Community Edit
 
 ---
 
+## Specify a Custom Google OAuth Provider
+The Matatika UI supports OAuth sign-in for any of the avialable Google plugins, to make configuration easy for a user. To take advantage of this, you will need to provide your own Google OAuth client ID credentials for a web application.
+
+1. [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project)
+1. Enable any of the following APIs for your project, based on your requirements: 
+    - [Google Ads API](https://console.cloud.google.com/apis/library/googleads.googleapis.com)
+    - [Google Analytics API](https://console.cloud.google.com/apis/library/analytics.googleapis.com)
+    - [Google Drive API](https://console.cloud.google.com/apis/library/drive.googleapis.com)
+    - [Google Sheets API](https://console.cloud.google.com/apis/library/sheets.googleapis.com)
+1. [Create OAuth client ID credentials for a web application](https://developers.google.com/workspace/guides/create-credentials#oauth-client-id)
+    
+    Under `Under Authorized JavaScript origins`, click `Add URI` and set to
+    ```
+    https://localhost:3443
+    ```
+
+    Under `Authorised redirect URIs`, click `Add URI` and set to
+    ```
+    https://localhost/oauth2-google
+    ```
+1. Export the following environment variables:
+    ```sh
+    # your client ID ("Additional information" > "Client ID")
+    export OAUTH2_GOOGLE_CLIENT_ID=
+
+    # your client secret ("Additional information" > "Client secrets" > "Client secret")
+    export OAUTH2_GOOGLE_CLIENT_SECRET=
+
+    # (run once `OAUTH2_GOOGLE_CLIENT_ID` is set - do not modify)
+    export APP_OAUTH_GOOGLE_CLIENT_ID=$OAUTH2_GOOGLE_CLIENT_ID
+    ```
+1. Run the application:
+    ```sh
+    # depending on the version of Docker you have installed, Docker Compose may not
+    # exist as its own executable, but as a subcommand of `docker` instead - in this
+    # case, you should substitute the below `docker-compose` with `docker compose`
+    #
+    # if you are using Docker Desktop for Linux, do not set `userID` or `groupID` as
+    # this will interfere with the VM file sharing service (i.e. just run
+    # `docker compose up`)
+    userID=$(id -u) groupID=$(id -g) docker-compose up
+    ```
+
+---
+
+## Deploy Your Own Plugins
+To deploy your own plugins to use in the Matatika UI, you just need to drop the `plugin.yml` file into the root `plugins` folder of the `matatika-ce` repository. (Make sure to put it in the correct plugin type).
+
+By default the CE will detect and automatically deploy any new plugins found, which you can use right away by installing them into your workspace from the plugins screen.
+
+---
+
 ## Further Reading
 
 - Create your first pipeline: [Create A Data Import Pipeline]({{site.baseurl}}/how-to-guides/import-data/create-a-data-import-pipeline)
