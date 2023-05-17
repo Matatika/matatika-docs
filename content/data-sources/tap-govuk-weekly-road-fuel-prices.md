@@ -13,3 +13,7 @@ nav_order: 2
 <img src="{{site.baseurl}}/assets/data_source_images/national-statistics.png" width="125" alt="github">
 
 {% include snippets/api/markdown-descriptions/tap-govuk-weekly-road-fuel-prices/dataplugin-description.md %}
+
+## Learn more
+
+[Weekly road fuel prices](https://www.gov.uk/government/statistics/weekly-road-fuel-prices)

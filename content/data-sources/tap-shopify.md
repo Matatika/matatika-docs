@@ -13,3 +13,7 @@ nav_order: 7
 <img src="{{site.baseurl}}/assets/data_source_images/tap-shopify.png" width="125" alt="shopify">
 
 {% include snippets/api/markdown-descriptions/tap-shopify/dataplugin-description.md %}
+
+## Learn more
+
+[View this plugin on the Meltano Hub](https://hub.meltano.com/extractors/tap-shopify)
