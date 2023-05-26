@@ -1,5 +1,6 @@
 ---
 title: Deployments
+description: Matatika Deployments resource reference documentation
 permalink: /api/resources/deployments
 parent: Resources
 grand_parent: API

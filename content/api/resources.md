@@ -1,5 +1,6 @@
 ---
 title: Resources
+description: Reference documentation for the resources available via the Matatika API
 permalink: /api/resources/
 nav_order: 3
 parent: API

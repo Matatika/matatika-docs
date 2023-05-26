@@ -1,5 +1,6 @@
 ---
 title: Pipelines
+description: Matatika Pipelines resource reference documentation
 permalink: /api/resources/pipelines
 parent: Resources
 grand_parent: API

@@ -1,5 +1,6 @@
 ---
 title: Search
+description: Matatika Search resource reference documentation
 permalink: /api/resources/search
 parent: Resources
 grand_parent: API

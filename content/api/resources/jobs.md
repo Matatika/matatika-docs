@@ -1,5 +1,6 @@
 ---
 title: Jobs
+description: Matatika Jobs resource reference documentation
 permalink: /api/resources/jobs
 parent: Resources
 grand_parent: API

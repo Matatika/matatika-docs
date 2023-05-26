@@ -1,5 +1,6 @@
 ---
 title: Invitations
+description: Matatika Invitations resource reference documentation
 permalink: /api/resources/invitations
 parent: Resources
 grand_parent: API

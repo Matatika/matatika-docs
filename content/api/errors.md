@@ -1,5 +1,6 @@
 ---
 title: Status Codes and Errors
+description: Reference documentation for standard HTTP status codes and error structures returned from the Matatika API
 permalink: /api/errors
 parent: API
 nav_order: 2
