@@ -183,6 +183,34 @@ To deploy your own plugins to use in the Matatika UI, you just need to drop the 
 
 By default the CE will detect and automatically deploy any new plugins found, which you can use right away by installing them into your workspace from the plugins screen.
 
+### Add plugins to your Meltano project
+The CE can be used as a private plugin index for a Meltano project, removing the dependency on [Meltano Hub](https://hub.meltano.com/) entirely.
+
+Simply configure Meltano with the following environment:
+
+```sh
+# all supported plugins
+export MELTANO_HUB_API_ROOT=http://localhost:8080/api
+
+# all installed plugins for a workspace
+# export MELTANO_HUB_API_ROOT=http://localhost:8080/api/workspaces/<WORKSPACE ID>
+
+# profile menu > "API Keys" > "Developer Token" 
+export MELTANO_HUB_URL_AUTH='Bearer <API TOKEN>'
+```
+
+Meltano will now reference the CE for plugin definitions, meaning that you can deploy a plugin and then `meltano add` it to your project straight away - no UI required.
+
+```sh
+# deploy plugin
+cd matatika-ce
+mv tap-example--custom.yml plugins/extractors
+
+# add plugin to project
+cd workspaces/my-project
+meltano add extractor tap-example
+```
+
 ---
 
 ## Further Reading
