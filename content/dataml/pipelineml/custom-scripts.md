@@ -16,7 +16,7 @@ Custom scripts can be used in [Pipelines]({{site.baseurl}}/glossary#pipeline) by
 
 ## Basics
 
-Custom scripts are bash scripts that generally invoke [Meltano](https://meltano.com/docs/plugin-management.html){:target="_blank"} commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) environment in these scripts.
+Custom scripts are bash scripts that generally invoke [Meltano](https://docs.meltano.com/guide/plugin-management){:target="_blank"} commands. As mentioned before you can also control the [data import's]({{site.baseurl}}/glossary#data-import) environment in these scripts.
 
 When you provide a `Script` to a pipeline, we will still add your plugins properties to the pipeline environment. Other than that, you are now in complete control of the environment, installation of plugins and execution of your pipeline.
 
@@ -58,4 +58,4 @@ By invoking other plugins through Meltano, you gain the benefit of Meltano takin
 - [Matatika Examples of Custom Scripts](https://github.com/Matatika/matatika-examples/tree/master/example_data_import_scripts){:target="_blank"}
 - [Matatika Default Pipeline Run Script](https://github.com/Matatika/matatika-examples/blob/master/example_data_import_scripts/default.sh)
 - [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary#custom-data-source){:target="_blank"}
-- [Meltano Documentation](https://meltano.com/docs/plugin-management.html){:target="_blank"}
+- [Meltano Documentation](https://docs.meltano.com/guide/plugin-management){:target="_blank"}

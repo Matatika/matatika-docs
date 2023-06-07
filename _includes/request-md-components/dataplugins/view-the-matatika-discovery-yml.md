@@ -6,7 +6,7 @@ GET
 /api/discovery.yml
 {:.path .path-GET}
 
-Returns a [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins) containing all dataplugins supported by Matatika.
+Returns a [Meltano `discovery.yml`](https://docs.meltano.com/reference/settings#discovery_url) containing all dataplugins supported by Matatika.
 
 ### Request
 #### Example Snippets
@@ -25,7 +25,7 @@ Returns a [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discov
 `200 OK`
 {: .dummy-heading .path-GET}
 
-[Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins).
+[Meltano `discovery.yml`](https://docs.meltano.com/reference/settings#discovery_url).
 {% include snippets/api/dataplugins/view-the-matatika-discovery-yml/response-body.md %}
 
 ---

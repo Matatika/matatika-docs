@@ -6,7 +6,7 @@ POST
 /api/workspaces/{workspace-id}/discovery.yml
 {:.path .path-POST}
 
-Publishes dataplugins from a [Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins).
+Publishes dataplugins from a [Meltano `discovery.yml`](https://docs.meltano.com/reference/settings#discovery_url).
 
 ### Prerequisites
 - Workspace `{workspace-id}` must exist
@@ -14,7 +14,7 @@ Publishes dataplugins from a [Meltano `discovery.yml`](https://meltano.com/docs/
 ### Request
 
 #### Body
-[Meltano `discovery.yml`](https://meltano.com/docs/plugins.html#discoverable-plugins)
+[Meltano `discovery.yml`](https://docs.meltano.com/reference/settings#discovery_url)
 {% include snippets/api/dataplugins/publish-dataplugins-from-a-discovery-yml/request-body.md %}
 
 #### Example Snippets
