@@ -1,9 +1,9 @@
 ---
 title: Setup a Data New Store
-permalink: /how-to-guides/import-data/setup-a-new-data-store
-parent: Import Data
+permalink: /how-to-guides/manage-data-stores/setup-a-new-data-store
+parent: Manage Data Stores
 grand_parent: How-To Guides
-nav_order: 5
+nav_order: 2
 ---
 
 # {{page.title}}

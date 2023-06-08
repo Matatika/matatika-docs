@@ -3,7 +3,7 @@ title: Adding a Custom Data Source
 permalink: /how-to-guides/import-data/adding-a-custom-data-source
 parent: Import Data
 grand_parent: How-To Guides
-nav_order: 3
+nav_order: 4
 ---
 
 # {{page.title}}
