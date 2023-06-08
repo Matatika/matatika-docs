@@ -2,7 +2,7 @@
 title: Glossary
 description: Matatika glossary of technical terms
 permalink: /glossary
-nav_order: 16
+nav_order: 12
 ---
 
 # {{page.title}}

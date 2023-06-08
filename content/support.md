@@ -2,7 +2,7 @@
 title: Support
 description: How to get help from Matatika
 permalink: /support
-nav_order: 17
+nav_order: 13
 ---
 
 # {{page.title}}
