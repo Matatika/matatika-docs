@@ -3,7 +3,7 @@ title: Shopify
 permalink: /instant-insights/tap-shopify/
 parent: Instant Insights
 has_children: true
-nav_order: 7
+nav_order: 6
 ---
 
 # {{page.title}}

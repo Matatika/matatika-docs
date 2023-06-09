@@ -3,7 +3,7 @@ title: Solarvista
 permalink: /instant-insights/tap-solarvista/
 parent: Instant Insights
 has_children: true
-nav_order: 8
+nav_order: 7
 ---
 
 # {{page.title}}
