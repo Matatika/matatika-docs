@@ -3,7 +3,6 @@ title: DatastoreML
 permalink: /dataml/datastoreml/
 nav_order: 4
 parent: DataML
-has_children: true
 ---
 
 # {{page.title}}
