@@ -1,5 +1,6 @@
 ---
 title: Links
+description: Reference documentation for link relations used by the Matatika API to communicate the capabilities of our resources
 permalink: /api/links
 parent: API
 nav_order: 8

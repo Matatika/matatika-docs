@@ -1,5 +1,6 @@
 ---
 title: News
+description: Matatika News resource reference documentation
 permalink: /api/resources/news
 parent: Resources
 grand_parent: API

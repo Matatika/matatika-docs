@@ -1,7 +1,7 @@
 ---
 title: WorkspaceML
 permalink: /dataml/workspaceml/
-nav_order: 4
+nav_order: 5
 parent: DataML
 ---
 
@@ -25,6 +25,7 @@ The workspace file is stored in YAML file format, you can read more about the YA
 ```yaml
 version: workspaces/v0.1
 name: My Workspace Name
+default_data_store: Warehouse
 image_url: http://www.example.com/pepsi.jpg
 dataset_paths:
   - analyze/datasets
@@ -63,19 +64,21 @@ app_properties:
 
 ### Key Information
 
-Key               | Datatype | Information
------------------ | -------- | -----------
-`version`         | `String` | The version identifies this artifact type.
-`name `           | `String` | Name of your workspace. 
-`image_url`       | `String` | The Meltano tasks that will be run.
-`dataset_paths`   | `Array`  | Paths for your workspace to deploy datasets from.
-`channel_paths`   | `Array`  | Paths for your workspace to deploy channels from.
-`pipeline_paths`  | `Array`  | Paths for your workspace to deploy pipelines from.
-`plugin_paths`    | `Array`  | Paths for your workspace to deploy plugins from.
-`app_properties`  | `Map`    | A map of optional properties to customize your workspace. (See the example above).
+Key                  | Datatype | Information
+-------------------- | -------- | -----------
+`version`            | `String` | The version identifies this artifact type.
+`name`               | `String` | Name of your workspace.
+`default_data_store` | `String` | Name of your workspace's default data store. (See Further Reading > Data Store ML).
+`image_url`          | `String` | The Meltano tasks that will be run.
+`dataset_paths`      | `Array`  | Paths for your workspace to deploy datasets from.
+`channel_paths`      | `Array`  | Paths for your workspace to deploy channels from.
+`pipeline_paths`     | `Array`  | Paths for your workspace to deploy pipelines from.
+`plugin_paths`       | `Array`  | Paths for your workspace to deploy plugins from.
+`app_properties`     | `Map`    | A map of optional properties to customize your workspace. (See the example above).
 
 ---
 
 Further Reading: 
 
 - [API Workspaces]({{site.baseurl}}/api/resources/workspaces)
+- [Data Store ML]({{site.baseurl}}/dataml/datastoreml)

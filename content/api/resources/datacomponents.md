@@ -1,5 +1,6 @@
 ---
 title: Datacomponents
+description: Matatika Datacomponents resource reference documentation
 permalink: /api/resources/datacomponents
 parent: Resources
 grand_parent: API

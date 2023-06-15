@@ -1,5 +1,6 @@
 ---
 title: Tags
+description: Matatika Tags resource reference documentation
 permalink: /api/resources/tags
 parent: Resources
 grand_parent: API

@@ -1,5 +1,6 @@
 ---
 title: Dataplugins
+description: Matatika Dataplugins resource reference documentation
 permalink: /api/resources/dataplugins
 parent: Resources
 grand_parent: API

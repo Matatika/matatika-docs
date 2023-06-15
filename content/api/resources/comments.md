@@ -1,5 +1,6 @@
 ---
 title: Comments
+description: Matatika Comments resource reference documentation
 permalink: /api/resources/comments
 parent: Resources
 grand_parent: API

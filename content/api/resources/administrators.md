@@ -1,5 +1,6 @@
 ---
 title: Administrators
+description: Matatika Administrators resource reference documentation
 permalink: api/resources/administrators
 parent: Resources
 grand_parent: API

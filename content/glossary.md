@@ -2,7 +2,7 @@
 title: Glossary
 description: Matatika glossary of technical terms
 permalink: /glossary
-nav_order: 16
+nav_order: 12
 ---
 
 # {{page.title}}
@@ -58,7 +58,7 @@ A data import is another name for a [Pipeline](#pipeline), these scheduled set o
 
 ## Data Source
 
-A data source is a file, cloud app or database that you import data from. When you choose a data source to use in a [data import](#data-import), you will usually be required to supply settings that control how Matatika connect's to your data for import. At Matatika, we building a catalog of [data sources]({{site.baseurl}}/data-sources/) that come with related [transforms](#transforms) and [datasets](#dataset).
+A data source is a file, cloud app or database that you import data from. When you choose a data source to use in a [data import](#data-import), you will usually be required to supply settings that control how Matatika connect's to your data for import. At Matatika, we building a catalog of [data sources]({{site.baseurl}}/instant-insights/) that come with related [transforms](#transforms) and [datasets](#dataset).
 
 A Matatika workspace can import data from any of the [300+ Meltano extractors and Singer Taps](https://hub.meltano.com/){:target="_blank"}
 

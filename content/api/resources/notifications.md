@@ -1,5 +1,6 @@
 ---
 title: Notifications
+description: Matatika Notifications resource reference documentation
 permalink: /api/resources/notifications
 parent: Resources
 grand_parent: API
