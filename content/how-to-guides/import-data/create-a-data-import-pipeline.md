@@ -31,7 +31,7 @@ Each data source for a data import require different settings and configurations
 ## Set Up Steps
 
 1. When in your workspace, click the `Lab` button on the menu, select `Plugins` from the menu and go the the `AVAILABLE` tab.
-2. Find or search for the [data source]({{site.baseurl}}/data-sources){:target="_blank"} you want and click the `INSTALL` button. You will be moved to the `INSTALLED` tab.
+2. Find or search for the [data source](https://www.matatika.com/data/){:target="_blank"} you want and click the `INSTALL` button. You will be moved to the `INSTALLED` tab.
 3. Click the `+ PIPELINE` button next to the your chosen data source plugin.
 4. At the top in `Name` you can add a custom name for your pipeline.
 5. Expand the settings menu(s) and fill in at least all the required settings which are marked with a `*` or `Connect to Google`.
