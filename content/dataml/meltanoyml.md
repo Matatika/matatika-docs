@@ -15,7 +15,7 @@ Reference documentation for Meltano files.
 [Meltano](https://meltano.com/) is a data automation tool and used to manage data plugins in [workspaces]({{site.baseurl}}/api/resources/workspaces). 
 {: .fs-5 }
 
-The [meltano.yml](https://docs.meltano.com/concepts/project#meltanoyml-project-file) file is where your workspace, a Meltano project, will store information about your [data sources]({{site.baseurl}}/data-sources), [data stores]({{site.baseurl}}/api/resources/datastores) and any other plugins used in your workspace.
+The [meltano.yml](https://docs.meltano.com/concepts/project#meltanoyml-project-file) file is where your workspace, a Meltano project, will store information about your data sources, [data stores]({{site.baseurl}}/dataml/datastoreml) and any other plugins used in your workspace.
 {: .fs-5 }
 
 ---
