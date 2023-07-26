@@ -99,6 +99,11 @@ If you want to use your own company login from within the UI, the Community Edit
     https://localhost:3443
     ```
     to `Allowed Callback URLs`, `Allowed Logout URLs` and `Allowed Web Origins`
+1. [Create a new API](https://auth0.com/docs/get-started/auth0-overview/set-up-apis)
+1. In `Identifier *` add:
+    ```
+    http://localhost:8080/api
+    ```
 1. Export the following environment variables:
     ```sh
     # your tenant domain ("Settings" > "Basic Information" > "Domain")
