@@ -3,7 +3,7 @@ title: Spotify
 permalink: /instant-insights/tap-spotify/
 parent: Instant Insights
 has_children: true
-nav_order: 8
+nav_order: 9
 ---
 
 # {{page.title}}

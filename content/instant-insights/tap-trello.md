@@ -3,7 +3,7 @@ title: Trello
 permalink: /instant-insights/tap-trello/
 parent: Instant Insights
 has_children: true
-nav_order: 9
+nav_order: 10
 ---
 
 # {{page.title}}
