@@ -3,7 +3,7 @@ title: Google Analytics
 permalink: /instant-insights/tap-google-analytics/
 parent: Instant Insights
 has_children: true
-nav_order: 3
+nav_order: 4
 ---
 
 # {{page.title}}

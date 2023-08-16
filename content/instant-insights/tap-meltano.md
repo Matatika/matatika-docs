@@ -3,7 +3,7 @@ title: Meltano
 permalink: /instant-insights/tap-meltano/
 parent: Instant Insights
 has_children: true
-nav_order: 5
+nav_order: 6
 ---
 
 # {{page.title}}
