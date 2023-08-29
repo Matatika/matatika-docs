@@ -4,7 +4,6 @@ description: A collection of how-to guides for Matatika workspaces
 permalink: /how-to-guides/
 nav_order: 5
 has_children: true
-
 ---
 
 # {{page.title}}

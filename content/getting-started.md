@@ -3,9 +3,7 @@ title: Getting Started
 description: Guides for getting started with Matatika cloud, community edition, and Meltano projects.
 permalink: /getting-started/
 nav_order: 3
-has_children: yes
-has_toc: false
-
+has_children: true
 ---
 
 # {{page.title}}
