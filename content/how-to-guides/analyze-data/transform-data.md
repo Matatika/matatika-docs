@@ -1,6 +1,6 @@
 ---
-title: Define a Data Transform
-permalink: /how-to-guides/analyze-data/define-a-data-transform
+title: Transform Data
+permalink: /how-to-guides/analyze-data/transform-data
 parent: Analyze Data
 grand_parent: How-To Guides
 nav_order: 1
