@@ -1,6 +1,6 @@
 ---
-title: Develop Locally
-permalink: /how-to-guides/develop-locally
+title: Setup your Development Environment
+permalink: /how-to-guides/setup-your-development-environment
 parent: How-To Guides
 ---
 

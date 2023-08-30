@@ -13,7 +13,7 @@ nav_order: 1
 ---
 
 ## Prerequisites
-- [Develop locally]({{site.baseurl}}/how-to-guides/develop-locally)
+- [Setup your Development Environment]({{site.baseurl}}/how-to-guides/setup-your-development-environment)
 
 ---
 
