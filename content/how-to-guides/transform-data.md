@@ -1,9 +1,7 @@
 ---
 title: Transform Data
-permalink: /how-to-guides/analyze-data/transform-data
-parent: Analyze Data
-grand_parent: How-To Guides
-nav_order: 1
+permalink: /how-to-guides/transform-data
+parent: How-To Guides
 ---
 
 # {{page.title}}
