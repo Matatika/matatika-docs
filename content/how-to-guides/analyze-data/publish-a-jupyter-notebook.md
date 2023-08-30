@@ -3,7 +3,7 @@ title: Publish a Jupyter Notebook
 permalink: /how-to-guides/analyze-data/publish-a-jupyter-notebook
 parent: Analyze Data
 grand_parent: How-To Guides
-nav_order: 2
+nav_order: 3
 ---
 
 # {{page.title}}

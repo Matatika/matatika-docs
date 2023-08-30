@@ -3,7 +3,7 @@ title: Fetch Data into a Jupyter Notebook
 permalink: /how-to-guides/analyze-data/fetch-data-into-a-jupyter-notebook
 parent: Analyze Data
 grand_parent: How-To Guides
-nav_order: 3
+nav_order: 4
 ---
 
 # {{page.title}}
