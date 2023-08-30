@@ -58,6 +58,8 @@ select * from orders_cast_quantity
 {% endraw %}
 
 ## Run your models
+dbt models require the source tables to exist before they are run. If the data isn't already present, you need to [run your data import locally]({{site.baseurl}}/how-to-guides/import-data/running-your-data-import-locally).
+
 ```sh
 # ensure dbt is installed
 meltano install transformer dbt
