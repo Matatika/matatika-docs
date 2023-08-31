@@ -9,3 +9,5 @@ services:
       - ${PWD}:/srv/jekyll
       - ${PWD}/vendor/bundle:/usr/local/bundle
     command: jekyll serve --incremental
+    environment:
+      - JEKYLL_ROOTLESS=true

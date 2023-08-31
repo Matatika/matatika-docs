@@ -40,19 +40,19 @@ import: _create_to_dir
 
 IMPORT_BLOB_SNIPPETS := AZURE_STORAGE_ACCOUNT=$(AZURE_STORAGE_ACCOUNT) AZURE_STORAGE_KEY=$(AZURE_STORAGE_KEY) az storage blob download-batch -d $(TO_DIR) -s
 
-# download snippets from dev Azure Blob storage container
-import-dev: _create_to_dir _check_az_env
-	@$(IMPORT_BLOB_SNIPPETS) dev-generated-snippets
+# download snippets from staging Azure Blob storage container
+import-staging: _create_to_dir _check_az_env
+	@$(IMPORT_BLOB_SNIPPETS) staging-generated-snippets
 
 # download snippets from prod Azure Blob storage container
 import-prod: _create_to_dir _check_az_env
 	@$(IMPORT_BLOB_SNIPPETS) prod-generated-snippets
 
 dev: import
-	./build-docs.sh '--config _config.yml,_config_dev.yml'
+	./build-docs.sh '--config _config.yml,_config_staging.yml'
 
 prod: import
 	./build-docs.sh '--config _config.yml,_config_prod.yml'
 
 run: import
-	./build-docs.sh '--config _config.yml,_config_dev.yml --watch --force-polling --incremental'
+	./build-docs.sh '--config _config.yml,_config_staging.yml --watch --force-polling --incremental'

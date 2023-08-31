@@ -3,7 +3,6 @@ title: Concepts
 description: An overview of fundamental Matatika concepts and its usage.
 permalink: /concepts
 nav_order: 2
-has_children:
 ---
 
 # {{page.title}}
