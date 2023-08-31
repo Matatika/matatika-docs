@@ -16,7 +16,12 @@ parent: How-To Guides
 ---
 
 ## Introduction
-A Matatika workspace project is fully compliant with Meltano. Once the workspace repository has been cloned locally, `meltano` commands can be run against the project as normal - for example, to add configuration to the `meltano.yml` or run a pipeline manually with `meltano run`. Any local changes can then be committed and pushed back to the remote repository, where they will be picked up deployed to the workspace in the Matatika platform.
+Within an organisation, it is necessary to manage the importing and transforming of data into analytics-ready models, as well as the collaboration on code artifacts (e.g. sources, pipelines, models, datasets). To manage these changes safely, teams need to develop and test changes in an isolated development environment.
+
+A Matatika [workspace]({{site.baseurl}}/glossary#workspace) manages the configuration of your project for a specific environment, and project code is committed to a Git repository with full version control. Keeping these concepts separate means that we can have environments for different tasks - whether that's development, testing, or the most stable - production. This leads to a very portable and simple way to develop and debug - you can run our entire platform on your local machine with the Matatika CE, using Docker Compose or inside VS Code, or even in just a simple Python virtual environment.
+
+## Meltano
+A Matatika workspace project can be treated as a standalone Meltano project. Once the workspace repository has been cloned locally, `meltano` commands can be run against the project as normal - for example, to add configuration to the `meltano.yml` or run a pipeline manually with `meltano run`. Any local changes can then be committed and pushed back to the remote repository, where they will be picked up deployed to the workspace in the Matatika platform.
 
 > See [how to manage workspace configuration from GitHub]({{site.baseurl}}/how-to-guides/manage-workspaces/managing-config-from-github) for more information
 
