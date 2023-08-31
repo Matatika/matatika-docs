@@ -16,7 +16,7 @@ parent: How-To Guides
 ---
 
 ## Introduction
-A data transform is a layer of logic that transforms one set of data into another - this is typically the 'T' in [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. An example of a simple transform might be to convert integer numbers given as a string to their numeric representation in a given dialect. Matatika uses [dbt](https://www.getdbt.com/){:target="_blank"} as a transformation tool, which operates on the concept of transforms-as-code, in the form of templated SQL files.
+A data transform is a layer of logic that transforms one set of data into another - this is typically the 'T' in [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform){:target="_blank"}. An example of a simple transform might be to calculate the total amount each customer has spent across all orders they have placed. Matatika uses [dbt](https://www.getdbt.com/){:target="_blank"} as a transformation tool, which operates on the concept of transforms-as-code, in the form of templated SQL files.
 
 ## Create a source
 A dbt source is a definition of the "source" database schema. To define a source, create a YAML file (e.g. `my_source.yml`) under the `transforms/models` directory (refer to the [dbt docs](https://docs.getdbt.com/reference/source-properties){:target="_blank"} for more information):
@@ -29,6 +29,7 @@ sources:
   - name: my_source
     schema: "{{ env_var('DBT_SOURCE_SCHEMA') }}"
     tables:
+      - name: customers
       - name: orders
 ```
 {% endraw %}
@@ -40,18 +41,23 @@ A dbt model translates to a database table that is created and updated by dbt. T
 ```sql
 {{ config(materialized='table') }}
 
-with orders as (
+with customers as (
+    select * from {{ source('my_source', 'customers') }}
+),
+orders as (
     select * from {{ source('my_source', 'orders') }}
 ),
-orders_cast_quantity as (
+"final" as (
   select
-    id
-    , customer_id
-    , product_id
-    , quantity::INT  -- cast quantity to an integer
-  from orders
+    c.id
+    , c."name"
+    , SUM(o.product_price * o.quantity) as total_spend
+  from customers c
+  join orders o on o.customer_id = c.id
+  group by c.id, c."name"
+  order by total_spend desc
 )
-select * from orders_cast_quantity
+select * from "final"
 ```
 {% endraw %}
 
