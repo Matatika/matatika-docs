@@ -21,7 +21,7 @@ You must have already:
 ---
 
 ## Introduction
-Workspaces are backed by [environments](https://docs.meltano.com/concepts/environments){:target="_blank"} - a Meltano concept controlled configuration to be separated into different namespaces. In a workspace, the project component configuration that is loaded is dictated by its default environment. The following environments are provided when a workspace is created:
+Workspaces are backed by Meltano [environments](https://docs.meltano.com/concepts/environments){:target="_blank"} - a concept by which configuration can be separated into different namespaces. In a workspace, the project component configuration that is loaded is dictated by its default environment. The following environments are provided when a workspace is created:
 
 - `dev` (default)
 - `staging`
@@ -77,8 +77,4 @@ When the workspace default environment is set to `prod`:
 - `domain` of `matatika.eu.auth0.com` (from `prod` environment)
 
 ## Switching environments
-The default environment can be switched in the UI from the workspace settings, or updated in the repository `workspace.yml` directly. 
-
-Updating the default environment will load the corresponding environment configuration for components from the `meltano.yml`. As a result, the runtime configuration of pipelines referencing these components will change - the pipline 'Environment' tab can be used to verify this.
-
----
+The default environment is initially loaded from the `default_environment` property of the project `meltano.yml`, and can be switched in the UI from workspace settings. Updating the default environment will load the corresponding environment configuration for components from the `meltano.yml`. As a result, the runtime configuration of pipelines referencing these components will change - the pipline 'Environment' tab can be used to verify this.
