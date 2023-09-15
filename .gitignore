@@ -7,3 +7,4 @@ vendor
 _includes/snippets
 .settings
 .project
+.bundle
