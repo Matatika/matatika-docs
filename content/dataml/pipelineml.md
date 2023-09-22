@@ -31,19 +31,21 @@ data_components:
 actions:
 - notebook:run-convert
 - sendgrid:send
+timeout: 1500
 schedule: 0 0 0 * * 0
 ```
 
 ### Key Information
 
-Key               | Datatype | Information
------------------ | -------- | -----------
-`version`         | `String` | The version identifies this artifact type.
-`data_components` | `Array`  | The meltano.yml data component name.
-`actions`         | `Array`  | The Meltano tasks that will be run.
-`inline_script`   | `String` | Custom [Bash](https://www.gnu.org/software/bash/) script.  Overrides actions if supplied.
-`properties`      | `Map`    | A map of properties, with Data Component name and setting as the key and the value e.g. `data-component-name.setting=value`, that configures the pipeline environment.
-`schedule`        | `String` | The automated schedule for this pipeline, in a standard cron format with seconds.  `0 0 9-17 * * MON-FRI` on the hour nine-to-five weekdays.
+Key               | Datatype  | Information
+----------------- | --------- | -----------
+`version`         | `String`  | The version identifies this artifact type.
+`data_components` | `Array`   | The meltano.yml data component name.
+`actions`         | `Array`   | The Meltano tasks that will be run as defined in your meltano.yml or Plugins.
+`inline_script`   | `String`  | Custom [Bash](https://www.gnu.org/software/bash/) script.  Overrides actions if supplied.
+`timeout`         | `Integer` | A timeout value in seconds that prevents pipelines from running for too long. A pipeline running longer that the timeout setting is automatically stopped by Matatika.
+`properties`      | `Map`     | A map of properties, with Data Component name and setting as the key and the value e.g. `data-component-name.setting=value`, that configures the pipeline environment.
+`schedule`        | `String`  | The automated schedule for this pipeline, in a standard cron format with seconds.  `0 0 9-17 * * MON-FRI` on the hour nine-to-five weekdays.
 
 ---
 
