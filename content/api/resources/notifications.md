@@ -47,6 +47,8 @@ Value | Description
 `DATASET_COMMENT` | A [comment](comments#comment) on the [dataset](datasets#dataset)
 `DATASET_LIKE` | A [like](datasets#record-a-like-of-a-dataset) recorded on the [dataset](datasets#dataset)
 `DATASET_MESSAGE` | A [message](datasets#dataset-message) about the [dataset](datasets#dataset)
+`JOB_STARTED` | A [job](jobs#job) started for a [pipeline](pipelines#pipeline)
+`JOB_ENDED` | A [job](jobs#job) ended for a [pipeline](pipelines#pipeline)
 
 ---
 
