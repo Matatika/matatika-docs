@@ -104,7 +104,10 @@ If you want to use your own company login from within the UI, the Community Edit
     ```
     http://localhost:8080/api
     ```
-1. Export the following environment variables:
+
+    Terminal
+    {: .tab .tabs-section-start}
+
     ```sh
     # your tenant domain ("Settings" > "Basic Information" > "Domain")
     export APP_IDENTITY_DOMAIN=
@@ -124,6 +127,29 @@ If you want to use your own company login from within the UI, the Community Edit
     # export CATALOG_AUTH_IDPS_SECONDARY_ISSUER_URI=
     # export CATALOG_AUTH_IDPS_SECONDARY_JWK_SET_URI=
     ```
+
+    `docker-compose.yml`
+    {: .tab}
+
+    ```yml
+    services:
+        catalog:
+            environment:
+                # your tenant domain ("Settings" > "Basic Information" > "Domain")
+                - APP_IDENTITY_DOMAIN=
+                # your client ID ("Settings" > "Basic Information" > "Client ID")
+                - APP_IDENTITY_CLIENT_ID=
+                # your client database connection name ("Connections" > "Database")
+                - APP_IDENTITY_CONNECTION=
+                # your tenant identity provider settings
+                - CATALOG_AUTH_IDPS_PRIMARY_ISSUER_URI=https://<app_identity_domain>/
+                - CATALOG_AUTH_IDPS_PRIMARY_JWK_SET_URI=https://<app_identity_domain>/.well-known/jwks.json
+                # optional secondary tenant identity provider settings
+                # - CATALOG_AUTH_IDPS_SECONDARY_ISSUER_URI=
+                # - CATALOG_AUTH_IDPS_SECONDARY_JWK_SET_URI=
+    ```
+    {: .tabs-section-end}
+   
 1. Run the application:
     ```sh
     # depending on the version of Docker you have installed, Docker Compose may not
@@ -193,16 +219,38 @@ The CE can be used as a private plugin index for a Meltano project, removing the
 
 Simply configure Meltano with the following environment:
 
+
+Terminal
+{: .tab .tabs-section-start}
+
 ```sh
 # all supported plugins
 export MELTANO_HUB_API_ROOT=http://localhost:8080/api
 
 # all installed plugins for a workspace
-# export MELTANO_HUB_API_ROOT=http://localhost:8080/api/workspaces/<WORKSPACE ID>
+# export MELTANO_HUB_API_ROOT=http://localhost:8080/api/workspaces/<workspace_id>
 
 # profile menu > "API Keys" > "Developer Token" 
-export MELTANO_HUB_URL_AUTH='Bearer <API TOKEN>'
+export MELTANO_HUB_URL_AUTH='Bearer <auth_token>'
 ```
+
+`docker-compose.yml`
+{: .tab}
+
+```yml
+services:
+    catalog:
+        environment:
+            # all supported plugins
+            - MELTANO_HUB_API_ROOT=http://localhost:8080/api
+
+            # all installed plugins for a workspace
+            # - MELTANO_HUB_API_ROOT=http://localhost:8080/api/workspaces/<workspace_id>
+
+            # profile menu > "API Keys" > "Developer Token" 
+            - MELTANO_HUB_URL_AUTH='Bearer <auth_token>'
+```
+{: .tabs-section-end}
 
 Meltano will now reference the CE for plugin definitions, meaning that you can deploy a plugin and then `meltano add` it to your project straight away - no UI required.
 
