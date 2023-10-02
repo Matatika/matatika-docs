@@ -114,8 +114,7 @@ function createSnippetTabs() {
       let elem = $(this);
 
       if (elem.hasClass('tab')) {
-        let tab_name = elem.text().trim();
-        $(`<button>${tab_name}</button>`).appendTo(tab_buttons_div);
+        $(`<button>${elem.html()}</button>`).appendTo(tab_buttons_div);
         tab_div = $(`<div></div>`).appendTo(tab_content_div);
       } else {
         elem.clone().appendTo(tab_div)
