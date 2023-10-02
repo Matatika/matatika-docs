@@ -14,12 +14,12 @@ Adds the profile `{profile-id}` as an administrator to the workspace `{workspace
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/workspaces/add-an-administrator-to-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/workspaces/add-an-administrator-to-a-workspace/python-requests.md %}

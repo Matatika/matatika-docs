@@ -18,12 +18,12 @@ Publishes dataplugins from a [Meltano `discovery.yml`](https://docs.meltano.com/
 {% include snippets/api/dataplugins/publish-dataplugins-from-a-discovery-yml/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/publish-dataplugins-from-a-discovery-yml/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/publish-dataplugins-from-a-discovery-yml/python-requests.md %}

@@ -14,12 +14,12 @@ Returns the comment `{comment-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/comments/view-a-comment/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/comments/view-a-comment/python-requests.md %}

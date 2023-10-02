@@ -19,12 +19,12 @@ Creates the workspace `{workspace-id}`.
 {% include snippets/api/workspaces/create-a-workspace/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/workspaces/create-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/workspaces/create-a-workspace/python-requests.md %}

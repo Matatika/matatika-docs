@@ -23,12 +23,12 @@ Path | Type | Description | Constraints
 `settings` | `Array` of [`Setting`](#setting)s | The dataplugin settings |
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/update-a-dataplugin/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/update-a-dataplugin/python-requests.md %}

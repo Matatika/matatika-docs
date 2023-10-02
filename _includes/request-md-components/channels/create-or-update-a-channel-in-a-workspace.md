@@ -16,12 +16,12 @@ This endpoint takes a `{channel-id}` (UUID) and based on the supplied value and 
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/create-a-channel-in-a-workspace-by-id/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/create-a-channel-in-a-workspace-by-id/python-requests.md %}

@@ -14,12 +14,12 @@ Returns all running or completed jobs for the workspace `{workspace-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-workspace/python-requests.md %}

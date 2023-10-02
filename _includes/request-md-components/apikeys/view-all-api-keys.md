@@ -15,12 +15,12 @@ Returns all API keys owned by the authenticated user profile.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/apikeys/view-all-api-keys/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/apikeys/view-all-api-keys/python-requests.md %}

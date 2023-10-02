@@ -14,12 +14,12 @@ Records a like of the comment `{comment-id}` from the authenticated user profile
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/comments/record-a-like-of-a-comment/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/comments/record-a-like-of-a-comment/python-requests.md %}

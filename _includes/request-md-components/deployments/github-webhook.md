@@ -10,12 +10,12 @@ Receives `POST` requests from GitHub and starts a workspace deploy job.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/deployment/github-webhook-deploy/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/deployment/github-webhook-deploy/python-requests.md %}

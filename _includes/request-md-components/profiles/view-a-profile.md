@@ -14,12 +14,12 @@ Returns the profile `{profile-id`}.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/profiles/view-a-profile/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/profiles/view-a-profile/python-requests.md %}

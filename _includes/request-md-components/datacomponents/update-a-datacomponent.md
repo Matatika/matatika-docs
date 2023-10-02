@@ -17,12 +17,12 @@ Updates the datacomponent `{datacomponent-id}`.
 {% include snippets/api/datacomponents/update-a-datacomponent/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datacomponents/update-a-datacomponent/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datacomponents/update-a-datacomponent/python-requests.md %}

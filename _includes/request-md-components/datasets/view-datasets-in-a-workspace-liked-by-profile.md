@@ -14,12 +14,12 @@ Returns all datasets in the workspace `{workspace-id}` liked by the authenticate
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/view-datasets-in-a-workspace-liked-by-profile/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/view-datasets-in-a-workspace-liked-by-profile/python-requests.md %}

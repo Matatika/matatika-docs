@@ -10,12 +10,12 @@ Returns all workspaces the authenticated user profile is an owner or member of.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/workspaces/view-all-workspaces/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/workspaces/view-all-workspaces/python-requests.md %}

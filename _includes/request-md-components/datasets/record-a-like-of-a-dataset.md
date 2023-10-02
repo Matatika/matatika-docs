@@ -14,12 +14,12 @@ Records a like of the dataset `{dataset-id}` from the authenticated user profile
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/record-a-like-of-a-dataset/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/record-a-like-of-a-dataset/python-requests.md %}

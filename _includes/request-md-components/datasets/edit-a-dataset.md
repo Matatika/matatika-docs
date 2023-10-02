@@ -19,12 +19,12 @@ This request can update one or more of the [dataset](#dataset) fields at once. W
 {% include snippets/api/datasets/edit-a-dataset/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/edit-a-dataset/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/edit-a-dataset/python-requests.md %}

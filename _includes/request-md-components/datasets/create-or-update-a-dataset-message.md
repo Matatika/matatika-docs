@@ -17,12 +17,12 @@ Creates or updates the dataset message `{message-id}` for the dataset `{dataset-
 {% include snippets/api/datasets/create-or-update-a-dataset-message/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/create-or-update-a-dataset-message/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/create-or-update-a-dataset-message/python-requests.md %}

@@ -14,12 +14,12 @@ PUT
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/record-a-view-of-a-dataset/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/record-a-view-of-a-dataset/python-requests.md %}

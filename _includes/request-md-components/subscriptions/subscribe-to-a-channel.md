@@ -21,12 +21,12 @@ Parameter | Required | Format | Default Value | Description
 `allMembers` | No | Boolean | `false` | Whether or not to subscribe the workspace to channel events, enabling notifications for all [members](members) by default (applicable for the workspace owner only)
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/subscriptions/subscribe-to-a-channel/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/subscriptions/subscribe-to-a-channel/python-requests.md %}

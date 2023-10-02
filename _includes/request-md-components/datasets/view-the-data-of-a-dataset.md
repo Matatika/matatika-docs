@@ -23,12 +23,12 @@ Media Type(s) | Description
 Defaults to `application/json` (given `Accept */*` or no `Accept` header).
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/view-the-data-of-a-dataset/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/view-the-data-of-a-dataset/python-requests.md %}

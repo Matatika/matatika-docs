@@ -13,12 +13,12 @@ Searches the workspace `{workspace-id}` for datasets by the free text `{free-tex
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/search/search-for-datasets-in-a-workspace-by-free-text/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/search/search-for-datasets-in-a-workspace-by-free-text/python-requests.md %}

@@ -20,12 +20,12 @@ A workspace can be set as default, which defines the environment the Matatika ap
 {% include snippets/api/profiles/set-a-workspace-as-default/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/profiles/set-a-workspace-as-default/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/profiles/set-a-workspace-as-default/python-requests.md %}

@@ -12,12 +12,12 @@ Deletes and stops the execution of the job `{job-id}`.
 - Job `{job-id}` must exist
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/jobs/delete-a-job/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/jobs/delete-a-job/python-requests.md %}

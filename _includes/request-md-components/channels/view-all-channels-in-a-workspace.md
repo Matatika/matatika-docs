@@ -23,12 +23,12 @@ Parameter | Required | Format | Default Value | Description
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/view-all-channels-in-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/view-all-channels-in-a-workspace/python-requests.md %}

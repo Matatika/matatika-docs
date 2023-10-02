@@ -13,12 +13,12 @@ Returns all dataplugins available to the workspace `{workspace-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/view-all-workspace-dataplugins/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/view-all-workspace-dataplugins/python-requests.md %}

@@ -10,12 +10,12 @@ Returns all channels in your news for the workspace.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/channels-in-news/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/channels-in-news/python-requests.md %}

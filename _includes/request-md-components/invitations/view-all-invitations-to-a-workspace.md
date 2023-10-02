@@ -24,12 +24,12 @@ Returns all active invitations to the workspace `{workspace-id}` sent by the aut
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/python-requests.md %}

@@ -13,12 +13,12 @@ Returns a [Meltano `discovery.yml`](https://docs.meltano.com/reference/settings#
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/view-a-workspace-discovery-yml/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/view-a-workspace-discovery-yml/python-requests.md %}

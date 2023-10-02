@@ -10,12 +10,12 @@ Initialises a new workspace.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/workspaces/initialise-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/workspaces/initialise-a-workspace/python-requests.md %}

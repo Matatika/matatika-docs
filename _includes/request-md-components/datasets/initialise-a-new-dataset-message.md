@@ -13,12 +13,12 @@ Initialises a new dataset message for the dataset `{dataset-id}`
 
 ### Requests
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/initialise-a-new-dataset-message/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/initialise-a-new-dataset-message/python-requests.md %}

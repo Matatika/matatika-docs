@@ -10,12 +10,12 @@ Removes a dataset from a channel with type list.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/remove-dataset-from-list-channel/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/remove-dataset-from-list-channel/python-requests.md %}

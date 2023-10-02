@@ -15,12 +15,12 @@ Accepts the invitation `{invitation-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/invitations/accept-an-invitation/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/invitations/accept-an-invitation/python-requests.md %}

@@ -13,12 +13,12 @@ Returns the feed of the workspace `{workspace-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/feed/view-a-workspace-feed/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/feed/view-a-workspace-feed/python-requests.md %}

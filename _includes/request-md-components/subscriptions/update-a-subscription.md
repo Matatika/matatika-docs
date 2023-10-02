@@ -21,12 +21,12 @@ Path | Type | Format | Description
 {% include snippets/api/subscriptions/update-a-subscription/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/subscriptions/update-a-subscription/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/subscriptions/update-a-subscription/python-requests.md %}
