@@ -209,6 +209,47 @@ The Matatika UI supports OAuth sign-in for any of the avialable Google plugins, 
 
 ---
 
+## Specify a Custom Email Service Provider
+To allow Matatika CE to send emails (e.g. invitations, job notifications), you can configure a custom email service provider. The following providers are supported:
+
+Provider | Identifier | Settings
+--- | --- | ---
+[SendGrid](https://sendgrid.com/){:target="_blank"} | `sendgrid` | `API_KEY`<br />`SOURCE_EMAIL`<br />`BYPASS_EMAILS`
+
+Terminal
+{: .tab .tabs-section-start}
+
+```sh
+# supported email service implementation
+export EMAIL_SERVICE_IMPLEMENTATION=sendgrid
+# https://docs.sendgrid.com/ui/account-and-settings/api-keys#creating-an-api-key
+export SENDGRID_API_KEY=
+# email address used to send emails from as the platform
+export SENDGRID_SOURCE_EMAIL=noreply@matatika.com
+# comma-separated list of email addresses to bypass when sending an email
+export SENDGRID_BYPASS_EMAILS=
+```
+
+`docker-compose.yml`
+{: .tab}
+
+```yml
+services:
+    catalog:
+        environment:
+            # supported email service implementation
+            - EMAIL_SERVICE_IMPLEMENTATION=sendgrid
+            # https://docs.sendgrid.com/ui/account-and-settings/api-keys#creating-an-api-key
+            - SENDGRID_API_KEY=
+            # email address used to send emails from as the platform
+            - SENDGRID_SOURCE_EMAIL=noreply@matatika.com
+            # comma-separated list of email addresses to bypass when sending an email
+            - SENDGRID_BYPASS_EMAILS=
+```
+{: .tabs-section-end}
+
+---
+
 ## Deploy Your Own Plugins
 To deploy your own plugins to use in the Matatika UI, you just need to drop the `plugin.yml` file into the root `plugins` folder of the `matatika-ce` repository. (Make sure to put it in the correct plugin type).
 
