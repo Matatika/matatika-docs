@@ -1,5 +1,6 @@
 ---
 title: context
+description: Matatika cli documentation 'context' command
 permalink: /cli/context
 parent: CLI
 nav_order: 2
