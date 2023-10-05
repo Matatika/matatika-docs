@@ -15,12 +15,12 @@ Returns the API key `{apikey-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/apikeys/view-an-api-key/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/apikeys/view-an-api-key/python-requests.md %}

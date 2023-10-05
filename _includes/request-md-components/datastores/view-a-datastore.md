@@ -13,12 +13,12 @@ Returns the datastore `{datastore-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datastores/view-a-datastore/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datastores/view-a-datastore/python-requests.md %}

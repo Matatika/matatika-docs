@@ -15,12 +15,12 @@ Stops the execution of the job `{job-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/jobs/stop-a-job/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/jobs/stop-a-job/python-requests.md %}

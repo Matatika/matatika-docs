@@ -17,12 +17,12 @@ Parameter | Required | Format | Default Value | Description
 `markAsResolved` | No | Boolean | `true` | Whether or not to mark notifications created up to `since` as resolved
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/notifications/refresh-notifications/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/notifications/refresh-notifications/python-requests.md %}

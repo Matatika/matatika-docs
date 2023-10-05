@@ -10,12 +10,12 @@ Adds a dataset to a channel with type list.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/add-dataset-to-list-channel/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/add-dataset-to-list-channel/python-requests.md %}

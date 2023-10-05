@@ -14,12 +14,12 @@ Returns the tag `{tag-id}` in the workspace `{workspace-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/tags/view-a-tag-in-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/tags/view-a-tag-in-a-workspace/python-requests.md %}

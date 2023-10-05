@@ -14,12 +14,12 @@ View an alert.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/alerts/view-an-alert/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/alerts/view-an-alert/python-requests.md %}

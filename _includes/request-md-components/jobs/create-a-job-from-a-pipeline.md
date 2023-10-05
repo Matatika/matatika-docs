@@ -14,12 +14,12 @@ Creates a new job from the pipeline `{pipeline-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/jobs/create-a-job-from-a-pipeline/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/jobs/create-a-job-from-a-pipeline/python-requests.md %}

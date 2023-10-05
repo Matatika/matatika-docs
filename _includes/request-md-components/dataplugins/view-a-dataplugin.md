@@ -13,12 +13,12 @@ Returns the dataplugin `{dataplugin-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/view-a-dataplugin/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/view-a-dataplugin/python-requests.md %}

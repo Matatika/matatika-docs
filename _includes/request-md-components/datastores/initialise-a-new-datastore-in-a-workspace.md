@@ -13,12 +13,12 @@ Initialises a new datastore in the workspace `{workspace-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datastores/initialise-a-new-datastore-in-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datastores/initialise-a-new-datastore-in-a-workspace/python-requests.md %}

@@ -18,12 +18,12 @@ Creates or updates the pipeline `{pipeline-id}` in the workspace `{workspace-id}
 {% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/pipelines/create-a-pipeline-in-a-workspace/python-requests.md %}

@@ -13,12 +13,12 @@ Searches the workspace `{workspace-id}` for datasets by the channel `{channel-na
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/search/search-for-datasets-in-a-workspace-by-channel-name/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/search/search-for-datasets-in-a-workspace-by-channel-name/python-requests.md %}

@@ -13,12 +13,12 @@ Deletes the notification `{notification-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/notifications/delete-a-notification/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/notifications/delete-a-notification/python-requests.md %}

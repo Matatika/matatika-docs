@@ -10,12 +10,12 @@ Deletes the datacomponent `{datacomponent-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datacomponents/delete-a-datacomponent/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datacomponents/delete-a-datacomponent/python-requests.md %}

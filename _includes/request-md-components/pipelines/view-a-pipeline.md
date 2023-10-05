@@ -14,12 +14,12 @@ Returns the pipeline `{pipeline-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/pipelines/view-a-pipeline/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/pipelines/view-a-pipeline/python-requests.md %}

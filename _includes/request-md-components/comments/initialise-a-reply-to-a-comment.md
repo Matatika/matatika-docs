@@ -14,12 +14,12 @@ Initialises a new reply comment to the comment `{comment-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/comments/initialise-a-reply-to-a-comment/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/comments/initialise-a-reply-to-a-comment/python-requests.md %}

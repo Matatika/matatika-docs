@@ -14,12 +14,12 @@ Creates or updates the datacomponent `{datacomponent-id}` in the workspace `{wor
 {% include snippets/api/datacomponents/create-or-update-a-datacomponent-in-a-workspace/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datacomponents/create-or-update-a-datacomponent-in-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datacomponents/create-or-update-a-datacomponent-in-a-workspace/python-requests.md %}

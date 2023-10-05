@@ -19,12 +19,12 @@ Creates an invitation to the workspace `{workspace-id}`.
 {% include snippets/api/invitations/create-an-invitation-to-a-workspace/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/invitations/create-an-invitation-to-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/invitations/create-an-invitation-to-a-workspace/python-requests.md %}

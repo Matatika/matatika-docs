@@ -28,12 +28,12 @@ Media Type(s) | Description
 
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/jobs/view-the-logs-of-a-job-as-json/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/jobs/view-the-logs-of-a-job-as-json/python-requests.md %}

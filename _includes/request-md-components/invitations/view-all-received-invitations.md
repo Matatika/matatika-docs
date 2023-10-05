@@ -10,12 +10,12 @@ Returns all invitations received by the authenticated user profile.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/invitations/view-all-received-invitations/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/invitations/view-all-received-invitations/python-requests.md %}

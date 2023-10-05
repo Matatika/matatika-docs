@@ -18,12 +18,12 @@ Updates the comment `{comment-id}`.
 {% include snippets/api/comments/update-a-comment/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/comments/view-a-comment/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/comments/view-a-comment/python-requests.md %}

@@ -20,12 +20,12 @@ Making the request with an existing `id` or `alias` will result in the respectiv
 {% include snippets/api/datasets/publish-a-dataset-to-a-workspace/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datasets/publish-a-dataset-to-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datasets/publish-a-dataset-to-a-workspace/python-requests.md %}

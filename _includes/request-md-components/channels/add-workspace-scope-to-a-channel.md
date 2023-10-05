@@ -10,12 +10,12 @@ Add workspace scope to a channel.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/add-workspace-scope-to-a-channel/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/add-workspace-scope-to-a-channel/python-requests.md %}

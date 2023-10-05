@@ -14,12 +14,12 @@ Withdraws the profile `{profile-id}` as an administrator from the workspace `{wo
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/workspaces/withdraw-an-administrator-from-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/workspaces/withdraw-an-administrator-from-a-workspace/python-requests.md %}

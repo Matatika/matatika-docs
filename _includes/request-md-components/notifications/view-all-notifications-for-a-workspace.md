@@ -21,12 +21,12 @@ Parameter | Required | Format | Default Value | Description
 `since` | No | ISO 8601 timestamp | `2021-02-11T11:12` | The instant to return any notifications created since
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/notifications/view-all-notifications-for-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/notifications/view-all-notifications-for-a-workspace/python-requests.md %}

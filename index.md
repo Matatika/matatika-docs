@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+description: Matatika reference documentation, quick starts, code snippets and examples.
 nav_order: 0
 ---
 

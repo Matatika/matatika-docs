@@ -10,12 +10,12 @@ Returns all profiles under the authenticated user account.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/profiles/view-all-profiles/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/profiles/view-all-profiles/python-requests.md %}

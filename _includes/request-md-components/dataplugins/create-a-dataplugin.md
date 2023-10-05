@@ -14,12 +14,12 @@ Creates the dataplugin `{dataplugin-id}`.
 {% include snippets/api/dataplugins/create-a-dataplugin/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/create-a-dataplugin/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/create-a-dataplugin/python-requests.md %}

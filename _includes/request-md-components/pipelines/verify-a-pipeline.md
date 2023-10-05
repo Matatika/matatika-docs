@@ -14,12 +14,12 @@ Verifies the configuration of the pipeline `{pipeline-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/pipelines/verify-a-pipeline/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/pipelines/verify-a-pipeline/python-requests.md %}

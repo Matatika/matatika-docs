@@ -15,12 +15,12 @@ Withdraws the pending or accepted invitation `{invitation-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/invitations/withdraw-an-invitation-to-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/invitations/withdraw-an-invitation-to-a-workspace/python-requests.md %}

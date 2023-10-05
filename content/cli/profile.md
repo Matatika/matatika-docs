@@ -1,5 +1,6 @@
 ---
 title: profile
+description: Matatika cli documentation 'profile' command
 permalink: /cli/profile
 parent: CLI
 nav_order: 3

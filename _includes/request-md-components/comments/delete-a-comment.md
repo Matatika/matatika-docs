@@ -14,12 +14,12 @@ Deletes the comment `{comment-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/comments/delete-a-comment/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/comments/delete-a-comment/python-requests.md %}

@@ -10,12 +10,12 @@ Initialises a new datacomponent in the workspace `{workspace-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/datacomponents/initialise-a-new-datacomponent-in-a-workspace/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/datacomponents/initialise-a-new-datacomponent-in-a-workspace/python-requests.md %}

@@ -18,12 +18,12 @@ Updates the API key `{apikey-id}`.
 {% include snippets/api/apikeys/update-an-api-key/request-body.md %}
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/apikeys/update-an-api-key/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/apikeys/update-an-api-key/python-requests.md %}

@@ -10,12 +10,12 @@ Returns all dataplugins supported by Matatika.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/dataplugins/view-all-supported-dataplugins/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/dataplugins/view-all-supported-dataplugins/python-requests.md %}

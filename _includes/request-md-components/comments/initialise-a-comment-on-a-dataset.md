@@ -14,12 +14,12 @@ Initialises a new comment on the dataset `{dataset-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/comments/initialise-a-comment-on-a-dataset/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/comments/initialise-a-comment-on-a-dataset/python-requests.md %}

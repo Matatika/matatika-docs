@@ -13,12 +13,12 @@ Returns the subscription `{subscription-id}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/subscriptions/view-a-subscription/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/subscriptions/view-a-subscription/python-requests.md %}

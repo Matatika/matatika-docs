@@ -14,12 +14,12 @@ Create a new alert on a dataset.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/alerts/create-an-alert-on-a-dataset/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/alerts/create-an-alert-on-a-dataset/python-requests.md %}

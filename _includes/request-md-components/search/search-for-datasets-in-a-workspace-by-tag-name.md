@@ -13,12 +13,12 @@ Searches the workspace `{workspace-id}` for datasets by the tag `{tag-name}`.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/search/search-for-datasets-in-a-workspace-by-tag-name/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/search/search-for-datasets-in-a-workspace-by-tag-name/python-requests.md %}

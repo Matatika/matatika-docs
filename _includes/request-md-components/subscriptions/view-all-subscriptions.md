@@ -10,12 +10,12 @@ Returns all subscriptions for the authenticated user profile.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/subscriptions/view-all-subscriptions/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/subscriptions/view-all-subscriptions/python-requests.md %}

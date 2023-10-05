@@ -1,5 +1,6 @@
 ---
 title: list
+description: Matatika cli documentation 'list' command
 permalink: /cli/list
 parent: CLI
 nav_order: 4

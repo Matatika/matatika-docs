@@ -10,12 +10,12 @@ Withdraw workspace scope from a channel.
 
 ### Request
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/channels/withdraw-workspace-scope-from-a-channel/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/channels/withdraw-workspace-scope-from-a-channel/python-requests.md %}

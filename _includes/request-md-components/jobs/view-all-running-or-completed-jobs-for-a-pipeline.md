@@ -14,12 +14,12 @@ Returns all running or completed jobs for the pipeline `{pipeline-id}`.
 ### Request
 
 #### Example Snippets
-- cURL
+cURL
 {: .tab .tabs-section-start}
 
 {% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-pipeline/curl-request.md %}
 
-- Python (requests)
+Python (`requests`)
 {: .tab}
 
 {% include snippets/api/jobs/view-all-running-or-completed-jobs-for-a-pipeline/python-requests.md %}

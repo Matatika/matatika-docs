@@ -1,5 +1,6 @@
 ---
 title: delete
+description: Matatika cli documentation 'delete' command
 permalink: /cli/delete
 parent: CLI
 nav_order: 5
