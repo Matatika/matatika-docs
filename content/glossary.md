@@ -41,12 +41,12 @@ All data processing and analytical configuration is managed through code, with t
 
 Datasets are the insights within the Matatika platform. They can be charts, tables, or csv (excel) download links. The easiest way to define a new dataset is to use the [dataset file format]({{site.baseurl}}/dataml/datasetml/). 
 
-[Visulisation Examples]({{site.baseurl}}/dataml/datasetml/basic-examples)
-[Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}
+- [Visulisation Examples]({{site.baseurl}}/dataml/datasetml/basic-examples)
+- [Dataset File Examples](https://github.com/Matatika/matatika-examples/tree/master/example_datasets){:target="_blank"}
 
-Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources) or [CLI]({{site.baseurl}}/cli).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/how-to-guides/analyze-data/publish-a-dataset-cli).
+Custom datasets can be published with the Matatika [API]({{site.baseurl}}/api/resources/) or [CLI]({{site.baseurl}}/cli/).  Try it for yourself with our [Getting Started guide to publishing a Dataset]({{site.baseurl}}/how-to-guides/analyze-data/publish-a-dataset-cli).
 
-Matatika Data Sources will automatically publish datasets during the [data import](#data-import) configuration.
+Matatika Data Sources with [Instant Insights]({{site.baseurl}}/instant-insights/) will automatically publish datasets during the [data import](#data-import) configuration.
 
 ---
 
