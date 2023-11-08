@@ -27,3 +27,4 @@ See [here]({{site.baseurl}}/api/links#search) for more information on constructi
 {% include {{ page.components }}/search-for-datasets-in-a-workspace-by-free-text.md %}
 {% include {{ page.components }}/search-for-datasets-in-a-workspace-by-channel-name.md %}
 {% include {{ page.components }}/search-for-datasets-in-a-workspace-by-tag-name.md %}
+{% include {{ page.components }}/msearch-in-a-workspace-by-free-text.md %}
