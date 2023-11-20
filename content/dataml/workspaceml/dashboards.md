@@ -10,10 +10,7 @@ grand_parent: DataML
 
 ---
 
-Reference documentation for Dashboards in the Matatika app.
-{: .fs-5 }
-
-Dashboards allow you to design a layout for data and datasets in your workspace. They are fully customizable and will render custom `HTML` and `CSS` letting you format them as required.
+Dashboards allow you to design a layout for data and datasets in your workspace. These are fully customizable and render custom HTML and CSS, letting you format them as required.
 {: .fs-5 }
 
 ---

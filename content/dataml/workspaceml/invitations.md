@@ -1,6 +1,6 @@
 ---
-title: Invitation email
-permalink: /dataml/workspaceml/invitation-email/
+title: Invitations
+permalink: /dataml/workspaceml/invitations/
 nav_order: 1
 parent: WorkspaceML
 grand_parent: DataML
@@ -10,7 +10,7 @@ grand_parent: DataML
 
 ---
 
-Define a custom email invitation to customise the onboarding experience for new members of your workspace.
+Invitations allow you to customise the onboarding experience for new members of your workspace.
 {: .fs-5 }
 
 ---
