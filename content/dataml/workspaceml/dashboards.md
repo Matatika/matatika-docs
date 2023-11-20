@@ -1,7 +1,7 @@
 ---
 title: Dashboards
 permalink: /dataml/workspaceml/dashboards/
-nav_order: 6
+nav_order: 2
 parent: WorkspaceML
 grand_parent: DataML
 ---
