@@ -3,6 +3,7 @@ title: WorkspaceML
 permalink: /dataml/workspaceml/
 nav_order: 5
 parent: DataML
+has_children: true
 ---
 
 # {{page.title}}
@@ -22,6 +23,7 @@ The workspace file is stored in YAML file format, you can read more about the YA
 
 ### Example: `workspace.yml`
 
+{% raw %}
 ```yaml
 version: workspaces/v0.1
 name: My Workspace Name
@@ -60,7 +62,41 @@ app_properties:
   DATASET_ACTIONS: star,share,table,save
   MEMBER_COMMENTS_READ_ONLY: true
   MEMBER_COMMENTS_READ_ONLY_MESSAGE: Comments are set to read-only
+  INVITATION_EMAIL_RESULT_URL: https://join.slack.com/t/matatika/shared_invite/zt-1shuod7dx-nrmh6aP8ZuBcS9XY~7BuGw
+  INVITATION_EMAIL_SUBJECT: You have been invited to a workspace
+  INVITATION_EMAIL_TEMPLATE: |-
+    <!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    </head>
+    <body>
+      <h2 th:inline="text">[[${invitationCreatorName}]] ([[${invitationCreatorEmail}]]) has
+        invited you to the '[[${workspaceName}]]' Workspace.</h2>
+
+      <p>
+        <a th:href="${passwordResetTicketUrl}">Accept invitation</a>
+      </p>
+
+      <br />
+      <hr style="border: 2px solid #EAEEF3; border-bottom: 0;" />
+    </body>
+    </html>
+  DASHBOARD_PAGE_TITLE: Data Observability Dashboard
+  DASHBOARD_CONTENT: |-
+    <div style={{'display':'flex', 'justify-content': 'center'}}>
+        <div style={{'border-right': '2px solid #D3D3D3'}}>
+            <h2>Test results breakdown</h2>
+            <DatasetChart alias="data-observability/test-results-breakdown"/>
+        </div>
+        <div>
+            <h2>Tables health</h2>
+            <DatasetLink alias="data-observability/table-health-breakdown">
+                <DatasetChart alias="data-observability/tables-health" />
+            </DatasetLink>
+        </div>
+    </div>
 ```
+{% endraw %}
 
 ### Key Information
 
