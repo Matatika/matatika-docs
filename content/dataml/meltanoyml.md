@@ -1,7 +1,7 @@
 ---
 title: meltano.yml
 permalink: /dataml/meltanoyml/
-nav_order: 6
+nav_order: 7
 parent: DataML
 ---
 
