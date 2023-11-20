@@ -61,7 +61,7 @@ visualisation: |-
 
 ## HTML metric
 
-Metric layout for datasets can be achieved with the `html-table` visualisation type.
+Metric layout for datasets can be achieved with the `html-metric` visualisation type.
 
 ```yaml
 visualisation: |-
