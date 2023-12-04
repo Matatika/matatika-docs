@@ -18,18 +18,26 @@ The `metadata` key relates to how the data from the [`query`](query) within the 
 
 ### Example
 
-```yaml
+```yml
 metadata: |-
     {
         "name": "google_analytics_locations",
         "label": "Daily Users",
         "related_table": {
-        "columns": [
-            {"name": "report_date", "label": "Date", "description": "Date"}
-        ], 
-        "aggregates": [
-            {"name": "total_users", "label": "Total Users", "description": "Total Users"}
-        ]
+            "columns": [
+                {
+                    "name": "report_date",
+                    "label": "Date",
+                    "description": "Date"
+                }
+            ], 
+            "aggregates": [
+                {
+                    "name": "total_users",
+                    "label": "Total Users",
+                    "description": "Total Users"
+                }
+            ]
         }
     }
 ```
@@ -45,6 +53,58 @@ Metadata Key | Details
 `aggregates` | Bars, Points, Lines that show the information over the `columns` catagories.
 `links` | Can be defined to connect datasets or external links, either by clicking on specific aggregates, or defining a link globally.
 
+
+## Post-processing
+`columns` and `aggregates` support post-processing to modify values before they are rendered by the visualisation. This can be supplied in one of two ways:
+
+- A named post-processor: `post_process` 
+- An expression: `post_process_expr`
+
+When both `post_process` and `post_process_expr` are supplied for a single column or aggregate, `post_process_expr` will take precedence.
+
+### Named post-processors
+Named post-processors are aliases for common processing methods. A named post-processor can be specified using `post_process`. 
+
+Name | Description
+--- | ---
+`json_parse` | Parse a JSON string
+
+```yml
+metadata: |-
+    {
+        "name": "test_failures",
+        "label": "Test failures",
+        "related_table": {
+            "columns": [
+                {
+                    "name": "rows_json",
+                    "label": "Rows JSON",
+                    "post_process": "json_parse"
+                }
+            ]
+        }
+    }
+```
+
+### Expressions
+Expressions can be used to modify values with a JavaScript function that accepts a single argument as the value and returns the processed value. This function can be named (e.g. [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse_)) or anonymous (e.g. `value => value.toUpperCase()`). An expression can be specified using `post_process_expr`.
+
+```yml
+metadata: |-
+    {
+        "name": "test_failures",
+        "label": "Test failures",
+        "related_table": {
+            "columns": [
+                {
+                    "name": "rows_json",
+                    "label": "Rows JSON",
+                    "post_process_expr": "JSON.parse"
+                }
+            ]
+        }
+    }
+```
 
 ## Examples of Links
 
