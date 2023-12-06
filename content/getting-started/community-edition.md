@@ -46,11 +46,11 @@ This getting started guide get Matatika Community Edition up and running on your
 
     If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` using the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
 
-1. Once everything is running, go to `localhost:3443` in your browser, then login with your Matatika account or use the sign up link to create one.
+1. Once everything is running, go to the Matatika Lab at `localhost:3443` in your browser, then login with your Matatika account or use the sign up link to create one.
 
     No data will be stored in our cloud. Your Matatika account keeps your data safe with [Auth0](https://auth0.com/).
 
-1. Create your first workspace. All configuration is managed as code in your `workspaces` directory:
+1. [Initialise a meltano project](https://docs.meltano.com/getting-started/part1#create-your-meltano-project) here or [create your first workspace]({{site.baseurl}}/tutorials/creating-workspaces/) with the Matatika lab. All configuration is managed as code in your `workspaces` directory:
 
     ```sh
     ls -al workspaces
