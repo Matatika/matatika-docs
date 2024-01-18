@@ -87,7 +87,7 @@ metadata: |-
 ```
 
 ### Expressions
-Expressions can be used to modify values with a JavaScript function that accepts a single argument as the value and returns the processed value. This function can be named (e.g. [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse_)) or anonymous (e.g. `value => value.toUpperCase()`). An expression can be specified using `post_process_expr`.
+Expressions can be used to modify values with a JavaScript function that accepts a single argument as the value and returns the processed value. This function can be named (e.g. [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)) or anonymous (e.g. `value => value.toUpperCase()`). An expression can be specified using `post_process_expr`.
 
 ```yml
 metadata: |-
