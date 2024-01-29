@@ -77,9 +77,29 @@ A list of `faIcons` for your Dashboard can be found here: [FontAwesome Icons v5]
 
 ### Dashboard Components
 
-Component | Description 
------------ | --------
-`DatasetChart` | Allows you to choose any dataset in your workspace by its alias, and render it on your dashboard.
-`DatasetLink` | Wraps elements or text and create an internal, (no page reload), link to a dataset in your workspace.
-`Back` | Renders a back button.
+#### `DatasetChart`
+Allows you to choose any dataset in your workspace by its alias, and render it on your dashboard.
 
+Prop | Type | Description | Required | Default
+--- | --- | --- | ---
+`alias` | String | The dataset alias to fetch for render | If `dataset` not specified |
+`dataset` | Object | The dataset to render | If `alias` not specified |
+`showTable` | Boolean | Show the dataset data as a table | No | `false`
+
+#### `DatasetLink`
+Wraps elements or text and create an internal link to a dataset in your workspace (no page reload).
+
+Prop | Type | Description | Required | Default
+--- | --- | --- | --- | ---
+`alias` | String | The dataset alias | Yes |
+
+#### `Back`
+Renders a back button.
+
+#### `DownloadResource`
+Download a resource from the workspace. 
+
+Prop | Type | Description | Required | Default
+--- | --- | --- | --- | ---
+`path` | String | The resource path | Yes |
+`tooltip` | String | The text displayed on hover | No | `Download {path}`
