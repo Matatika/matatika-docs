@@ -1,7 +1,7 @@
 ---
 title: Community Edition
 permalink: /getting-started/community-edition
-nav_order: 2
+nav_order: 3
 parent: Getting Started
 
 ---
