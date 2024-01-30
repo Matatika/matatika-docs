@@ -12,7 +12,7 @@ parent: Getting Started
 
 ---
 
-## Getting Started in Your Cloud
+## Overview
 The Matatika Platform can run in your own cloud.  This documentation aims to provide you with everything you need to get up and running including:
 
 - The architecture and examples to run on an Azure AKS cluster, with one node.
@@ -20,11 +20,19 @@ The Matatika Platform can run in your own cloud.  This documentation aims to pro
 - Scripts that create the infrastructure, example configuration files, and and Azure DevOps pipeline example to deploy and upgrade automatically.
 
 
-## Clone repository
-Clone repository [Matatika Build](https://github.com/Matatika/matatika-build){:target="_blank"} to get started. Go through the README and example files inside repository.
+## Get started now
+Start by cloning the [Matatika Build](https://github.com/Matatika/matatika-build){:target="_blank"} repository.
 
+The README will guide you though the setup and provides fully tested deployment examples.
 
 Once completed, you will be able login to the Matatika Lab on your domain and start producing trusted data!
 
-If you have a any questions, please contact us on Slack support channel (link to be added).
+*Got a question?*
 
+[Ask us on Slack](https://join.slack.com/t/matatika/shared_invite/zt-19n1bfokx-F31DNitTpSxWCFO2aFlgxg){:target="_blank"}{:.btn}
+
+
+## Further Reading
+
+- Find out how Matatika works with Meltano by reading about the Matatika concepts and artifacts: [Matatika Concepts]({{site.baseurl}}/concepts), [Matatika Glossary]({{site.baseurl}}/glossary) and [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary){:target="_blank"}
+- Create your first pipeline: [Create A Data Import Pipeline]({{site.baseurl}}/how-to-guides/import-data/create-a-data-import-pipeline)
