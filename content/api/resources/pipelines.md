@@ -82,3 +82,4 @@ Value | Description
 {% include {{page.components}}/validate-a-pipeline-configuration-in-a-workspace.md %}
 {% include {{page.components}}/verify-a-pipeline.md %}
 {% include {{page.components}}/delete-a-pipeline.md %}
+{% include {{page.components}}/view-the-pipeline-metrics-data.md %}
