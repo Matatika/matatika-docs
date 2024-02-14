@@ -23,6 +23,10 @@ The Matatika Platform can run in your own cloud.  This documentation aims to pro
 ## Get started now
 Start by cloning the [Matatika Build](https://github.com/Matatika/matatika-build){:target="_blank"} repository.
 
+```
+$ git clone git@github.com:Matatika/matatika-build.git
+```
+
 The README will guide you though the setup and provides fully tested deployment examples.
 
 Once completed, you will be able login to the Matatika Lab on your domain and start producing trusted data!
