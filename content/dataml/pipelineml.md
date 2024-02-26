@@ -31,6 +31,8 @@ data_components:
 actions:
 - notebook:run-convert
 - sendgrid:send
+properties:
+  notebook.path: notebook/data_quality_report.ipynb
 timeout: 1500
 schedule: 0 0 0 * * 0
 ```
