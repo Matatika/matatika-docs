@@ -105,6 +105,7 @@ Key                  | Datatype | Information
 `version`            | `String` | The version identifies this artifact type.
 `name`               | `String` | Name of your workspace.
 `default_data_store` | `String` | Name of your workspace's default data store. (See Further Reading > Data Store ML).
+`pipelines_image`    | `String` | The path name of an image to run pipelines from
 `image_url`          | `String` | The Meltano tasks that will be run.
 `dataset_paths`      | `Array`  | Paths for your workspace to deploy datasets from.
 `channel_paths`      | `Array`  | Paths for your workspace to deploy channels from.
