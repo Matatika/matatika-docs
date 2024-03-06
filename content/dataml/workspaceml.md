@@ -115,6 +115,39 @@ Key                  | Datatype | Information
 
 ---
 
+### Environment-specific workspace configuration
+Workspace configuration files with a `-*` suffix (e.g. `workspace-dev.yml`) define environment-specific workspace configuration. During deployment of a workspace, the base `workspace.yml` configuration is loaded, followed by a `workspace-*.yml` matching the active environment (if present).
+
+Environment-specific workspace configuration files only need to contain the properties a user wants to override from the `workspace.yml` (`version` is required regardless).
+
+`workspace.yml`
+{: .tab .tabs-section-start}
+
+```yml
+version: workspaces/v0.1
+name: My workspace
+default_data_store: Warehouse
+dataset_paths:
+  - analyze/datasets
+channel_paths:
+  - analyze/channels
+pipeline_paths:
+  - pipelines
+plugin_paths:
+  - plugins
+```
+
+`workspace-dev.yml`
+{: .tab}
+
+```yml
+version: workspaces/v0.1
+name: My workspace (dev)
+pipelines_image: my-workspace-image:latest-dev
+```
+{: .tabs-section-end}
+
+
 Further Reading: 
 
 - [API Workspaces]({{site.baseurl}}/api/resources/workspaces)
