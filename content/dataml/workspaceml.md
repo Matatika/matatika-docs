@@ -105,6 +105,7 @@ Key                  | Datatype | Information
 `version`            | `String` | The version identifies this artifact type.
 `name`               | `String` | Name of your workspace.
 `default_data_store` | `String` | Name of your workspace's default data store. (See Further Reading > Data Store ML).
+`pipelines_image`    | `String` | The path name of an image to run pipelines from
 `image_url`          | `String` | The Meltano tasks that will be run.
 `dataset_paths`      | `Array`  | Paths for your workspace to deploy datasets from.
 `channel_paths`      | `Array`  | Paths for your workspace to deploy channels from.
@@ -113,6 +114,39 @@ Key                  | Datatype | Information
 `app_properties`     | `Map`    | A map of optional properties to customize your workspace. (See the example above).
 
 ---
+
+### Environment-specific workspace configuration
+Workspace configuration files with a `-*` suffix (e.g. `workspace-dev.yml`) define environment-specific workspace configuration. During deployment of a workspace, the base `workspace.yml` configuration is loaded, followed by a `workspace-*.yml` matching the active environment (if present).
+
+Environment-specific workspace configuration files only need to contain the properties a user wants to override from the `workspace.yml` (`version` is required regardless).
+
+`workspace.yml`
+{: .tab .tabs-section-start}
+
+```yml
+version: workspaces/v0.1
+name: My workspace
+default_data_store: Warehouse
+dataset_paths:
+  - analyze/datasets
+channel_paths:
+  - analyze/channels
+pipeline_paths:
+  - pipelines
+plugin_paths:
+  - plugins
+```
+
+`workspace-dev.yml`
+{: .tab}
+
+```yml
+version: workspaces/v0.1
+name: My workspace (dev)
+pipelines_image: my-workspace-image:latest-dev
+```
+{: .tabs-section-end}
+
 
 Further Reading: 
 

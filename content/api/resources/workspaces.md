@@ -29,6 +29,7 @@ Path | Type | Format | Description
 `name` | `String` | | The workspace name
 `domains` | `String` | Comma-separated list | The workspace allowed domains
 `repositoryUrl` | `String` | URL | The workspace repository URL
+`pipelinesImage` | `String` | Container image name path | The path name of an image to run pipelines from
 `imageUrl` | `String` | Image [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs){:target="_blank"} | The workspace image data URL
 `status` | `String` | [Workspace Status](#workspace-status) | The workspace status
 `defaultWorkspace` | `Boolean` | | Whether or not the workspace is set as the default the authenticated user
