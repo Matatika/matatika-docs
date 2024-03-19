@@ -1,24 +1,30 @@
 ---
 title: Overview
-description: Overview of the Matatika enterprise data collaboration platform
+description: Overview of the Matatika enterprise data platform
 permalink: /overview
 nav_order: 1
 ---
 
 # {{page.title}}
 
-***Matatika is an enterprise data collaboration platform***.
+***Matatika is an enterprise data platform***.
 
-The *Matatika App* provides collaboration through private, invite only [workspaces](glossary#workspace) which you set up and share with internal teams or customers.
+The *Matatika Platform* is built with open, secure, and scalable technologies - fully supported by Matatika.
 
-The *Matatika Platform* is managed by data scientists and analysts who need an out-of-the-box solution to:
+We enable data teams to deploy a [Modern Data Stack](concepts#modern-data-stack) within minutes and customise the platform with code according to their [Data Ops](concepts#data-ops) methodology. Since we've taken care of the platform and get you started instantly, you spend more time developing insights and less time dealing with infrastructure.
+
+![Matatika Data Platform]({{site.baseurl}}/assets/img/MatatikaDataPlatform.png)
+
+The *Matatika Platform* is designed for data scientists and analysts who need an out-of-the-box solution to:
 
 - Import and store large amounts of data
 - Process and produce real-time business intelligence
 - Share or embed data in other apps through an API
 - Collaborate on insights in a native mobile app
 
-With the *Matatika Platform*, you provision a [Modern Data Stack](concepts#modern-data-stack) within minutes and customise the platform with code according to your own [Data Ops](concepts#data-ops) methodology. Since we've taken care of the platform and get you started instantly, you spend more time developing insights and less time dealing with infrastructure.
+The *Matatika App* provides collaboration through private, invite only [workspaces](glossary#workspace) which you set up and share with internal teams or customers.
+
+
 
 ## Why Matatika?
 
@@ -52,6 +58,6 @@ Matatika has assembled the best-of-breed, open-source components into a fully ma
 
 - the underlying [Data Store](glossary#data-store) scales to billions of rows
 - the [multi-level aggregation](glossary#transforms) and caching architecture is capable of performing well for most business intelligence use-cases
-- change is expected and all configuration to collect, process, and visualize data from [300+ data sources](glossary#data-source) is managed in code through a [Git Configuration Repository](glossary#configuration-repository)
+- change is expected and all configuration to collect, process, and visualize data from [500+ data sources]({{site.matatika.links.www}}/data/) is managed in code through a [Git Configuration Repository](glossary#configuration-repository)
 
 Leveraging cloud-native and open-source technologies ensures our community is never constrained by storage, compute, or even us as the software vendor.
