@@ -20,7 +20,7 @@ There are many opinions on the "Modern Data Stack" - frankly one size cannot fit
 
 ### Extraction
 
-[Meltano](https://meltano.com/){:target="_blank"} is primarily used to manage the data extraction in your Matatika [workspace](glossary#workspace). Matatika are active contributors to Meltano and will continue to invest in other technologies that advance our customers' ability to implement [Data Ops](#data-ops) extraction methodologies.
+[Meltano](https://meltano.com/){:target="_blank"} is primarily used to manage the data extraction in your Matatika [workspace](glossary#workspace). Matatika are active contributors to Meltano and will continue to invest in other technologies that advance our customers' ability to implement [Data Ops](#data-ops) methodologies.
 
 ### Warehousing
 
