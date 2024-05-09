@@ -35,6 +35,9 @@ properties:
   notebook.path: notebook/data_quality_report.ipynb
 timeout: 1500
 schedule: 0 0 0 * * 0
+triggered_by:
+- other-pipelines
+- deploy
 ```
 
 ### Key Information
@@ -48,6 +51,7 @@ Key               | Datatype  | Information
 `timeout`         | `Integer` | A timeout value in seconds that prevents pipelines from running for too long. A pipeline running longer that the timeout setting is automatically stopped by Matatika.
 `properties`      | `Map`     | A map of properties, with Data Component name and setting as the key and the value e.g. `data-component-name.setting=value`, that configures the pipeline environment.
 `schedule`        | `String`  | The automated schedule for this pipeline, in a standard cron format with seconds.  `0 0 9-17 * * MON-FRI` on the hour nine-to-five weekdays.
+`triggered_by`    | `Array` of `String` | Pipelines or workspace tasks that will trigger the pipeline on successful completion.<br>Supported values for workspace tasks (case-insensitive):<ul><li>`deploy` - workspace [deployment]({{site.baseurl}}/api/resources/deployments)</li></ul>
 
 ---
 
