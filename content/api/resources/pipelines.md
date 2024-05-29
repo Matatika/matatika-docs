@@ -33,7 +33,7 @@ Path | Type | Format | Description
 `properties` | [`Properties`](#properties) | | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)
 `dataComponents` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s or create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
 `actions` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s or commands | The pipeline actions to run during a [job](jobs)
-`triggeredBy` | `Array` of `String` | `Array` of [pipeline](pipelines) `name`s or workspace task identifiers | Pipelines or workspace tasks that will trigger the pipeline on successful completion<br>Supported values for workspace tasks (case-insensitive):<ul><li>`deploy` - workspace [deployment](deployments)</li></ul>
+`triggeredBy` | `Array` of `String` | `Array` of [pipeline](pipelines) `name`s or workspace task identifiers | Pipelines or workspace tasks that will trigger the pipeline on successful completion<br>Supported values for workspace tasks (case-insensitive):{::nomarkdown}<ul><li>{:/nomarkdown}`deploy` - workspace [deployment](deployments){::nomarkdown}</li></ul>{:/nomarkdown}
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 
