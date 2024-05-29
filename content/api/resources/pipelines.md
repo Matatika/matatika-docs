@@ -27,6 +27,7 @@ Path | Type | Format | Description
 `name` | `String` | | The pipeline name
 `schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
 `timeout` | `Integer` | Unsigned | The number of seconds after which the job will terminate - if set to `0`, an implicit default value of 300 seconds is used
+`maxRetries` | `Integer` | Unsigned | The maximum number of retries to attempt for a job ending with `ERROR`
 `script` | `String` | Bash script | Custom script to execute during a [job](jobs)
 `created` | `String` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
