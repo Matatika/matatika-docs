@@ -46,6 +46,20 @@ This getting started guide get Matatika Community Edition up and running on your
 
     If you plan on hosting the lab for other users to connect to, we suggest setting your own secret in the `docker-compose.yml` using the environment variable `MATATIKA_AUTH_LOCAL_SECRET`.
 
+    ---
+
+    During startup, if you encounter this error
+
+    ```
+    Elasticsearch: Max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+    ```
+
+    you will need to run the following command before retrying:
+
+    ```sh
+    sysctl -w vm.max_map_count=262144  # https://stackoverflow.com/a/51448773/19106124
+    ```
+
 1. Once everything is running, go to the Matatika Lab at `localhost:3443` in your browser, then login with your Matatika account or use the sign up link to create one.
 
     No data will be stored in our cloud. Your Matatika account keeps your data safe with [Auth0](https://auth0.com/).
