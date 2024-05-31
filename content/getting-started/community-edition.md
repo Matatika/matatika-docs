@@ -305,6 +305,56 @@ cd workspaces/my-project
 meltano add extractor tap-example
 ```
 
+## Configuring HTTPS
+
+Note that you will need to follow the steps to [configure your own Auth0 IDP](#specify-a-custom-auth0-identity-provider), making sure to replace references to `localhost` with your custom domain.
+
+1. Generate a keystore and a certificate/key entry using OpenSSL:
+
+    ```sh
+    openssl pkcs12 -export \
+        -in <path_to_certificate> \
+        -inkey <path_to_key> \
+        -out config/certs/keystore.p12 \
+        -name springboot \
+        -passout pass:password
+    ```
+
+1. Provide the following environment configuration for the `catalog` and `app` services:
+
+    ```yml
+    services:
+        catalog:
+            environment:
+                - SERVER_PORT=8443
+                - SERVER_SSL_ENABLED=true
+                - SERVER_SSL_KEY_STORE=/certs/keystore.p12
+                - SERVER_SSL_KEY_STORE_PASSWORD=password
+                - SERVER_SSL_KEY_STORE_TYPE=pkcs12
+                - SERVER_SSL_KEY_ALIAS=springboot
+                # - SERVER_SSL_KEY_PASSWORD=  # leave commented out for no password
+                - CATALOG_ALLOWED_ORIGINS=https://<domain>:3443
+                - CATALOG_AUTH_IDPS_LOCAL_ISSUER_URI=https://<domain>:8443
+                - CATALOG_AUTH_IDPS_LOCAL_AUDIENCE=https://<domain>:8443/api
+                - CATALOG_AUTH_IDPS_PRIMARY_AUDIENCE=https://<domain>:8443/api
+                - CATALOG_AUTH_IDPS_SECONDARY_AUDIENCE=https://<domain>:8443/api
+        app:
+            environment:
+                - APP_SERVER_URI=https://<domain>:8443/api
+    ```
+
+1. Run the application:
+    ```sh
+    # depending on the version of Docker you have installed, Docker Compose may not
+    # exist as its own executable, but as a subcommand of `docker` instead - in this
+    # case, you should substitute the below `docker-compose` with `docker compose`
+    #
+    # if you are using Docker Desktop for Linux, do not set `userID` or `groupID` as
+    # this will interfere with the VM file sharing service (i.e. just run
+    # `docker compose up`)
+    userID=$(id -u) groupID=$(id -g) docker-compose up
+    ```
+
 ---
 
 ## Further Reading
