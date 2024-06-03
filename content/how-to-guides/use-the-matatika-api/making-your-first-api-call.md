@@ -73,46 +73,46 @@ If everything was configured correctly, the API should respond with a status of 
                 "defaultWorkspace" : false,
                 "_links": {
                     "self": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}"
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}"
                     },
                     "update delete workspace": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}"
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}"
                     },
                     "make-default": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/default"
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/default"
                     },
                     "members": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/members"
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/members"
                     },
                     "invitations": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/invitations"
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/invitations"
                     },
                     "create invitation": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/invitations",
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/invitations",
                     },
                     "datasets": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/datasets",
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/datasets",
                     },
                     "publish dataset": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/datasets",
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/datasets",
                     },
                     "channels": {
-                        "href": "https://catalog.matatika.com/api/workspaces/{workspace-id}/channels",
+                        "href": "https://app.matatika.com/api/workspaces/{workspace-id}/channels",
                     },
                     "tags" : {
-                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/tags"
+                        "href" : "http://app.matatika.com/api/workspaces/{workspace-id}/tags"
                     },
                     "search" : {
-                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/search"
+                        "href" : "http://app.matatika.com/api/workspaces/{workspace-id}/search"
                     },
                     "feed" : {
-                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/feed"
+                        "href" : "http://app.matatika.com/api/workspaces/{workspace-id}/feed"
                     },
                     "dataplugins" : {
-                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/dataplugins"
+                        "href" : "http://app.matatika.com/api/workspaces/{workspace-id}/dataplugins"
                     },
                     "pipelines" : {
-                        "href" : "http://catalog.matatika.com/api/workspaces/{workspace-id}/pipelines"
+                        "href" : "http://app.matatika.com/api/workspaces/{workspace-id}/pipelines"
                     }
                 }
             }
@@ -120,7 +120,7 @@ If everything was configured correctly, the API should respond with a status of 
     },
     "_links": {
         "self": {
-            "href": "https://catalog.matatika.com/api/workspaces?page=0&size=20"
+            "href": "https://app.matatika.com/api/workspaces?page=0&size=20"
         }
     },
     "page": {

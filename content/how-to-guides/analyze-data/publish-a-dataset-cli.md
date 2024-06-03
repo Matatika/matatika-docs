@@ -94,7 +94,7 @@ matatika context default
 ```
 CONTEXT NAME    example-context-1                                               
 AUTH TOKEN      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InMyR2RKS01LUXFwalh…
-ENDPOINT URL    https://catalog.matatika.com/api                                
+ENDPOINT URL    https://app.matatika.com/api                                
 WORKSPACE ID    None
 ```
 
@@ -137,7 +137,7 @@ matatika context default
 ```
 CONTEXT NAME    example-context-1                                               
 AUTH TOKEN      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InMyR2RKS01LUXFwalh…
-ENDPOINT URL    https://catalog.matatika.com/api                                
+ENDPOINT URL    https://app.matatika.com/api                                
 WORKSPACE ID    ce21a13b-6d6b-42a6-bab7-4df1ae2b0fca
 ```
 
