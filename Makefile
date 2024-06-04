@@ -38,15 +38,13 @@ _check_az_env:
 import: _create_to_dir
 	@cp -r $(FROM_DIR)/* $(TO_DIR)
 
-IMPORT_BLOB_SNIPPETS := AZURE_STORAGE_ACCOUNT=$(AZURE_STORAGE_ACCOUNT) AZURE_STORAGE_KEY=$(AZURE_STORAGE_KEY) az storage blob download-batch -d $(TO_DIR) -s
-
 # download snippets from staging Azure Blob storage container
 import-staging: _create_to_dir _check_az_env
-	@$(IMPORT_BLOB_SNIPPETS) staging-generated-snippets
+	AZURE_STORAGE_KEY=$(AZURE_STORAGE_KEY) az storage copy --recursive -s https://$(AZURE_STORAGE_ACCOUNT).blob.core.windows.net/staging-generated-snippets/* -d $(TO_DIR)
 
 # download snippets from prod Azure Blob storage container
 import-prod: _create_to_dir _check_az_env
-	@$(IMPORT_BLOB_SNIPPETS) prod-generated-snippets
+	AZURE_STORAGE_KEY=$(AZURE_STORAGE_KEY) az storage copy --recursive -s https://$(AZURE_STORAGE_ACCOUNT).blob.core.windows.net/prod-generated-snippets/* -d $(TO_DIR)
 
 dev: import
 	./build-docs.sh '--config _config.yml,_config_staging.yml'

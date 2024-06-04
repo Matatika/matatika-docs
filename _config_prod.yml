@@ -4,5 +4,5 @@ matatika:
   links:
     www: https://www.matatika.com
     app: https://app.matatika.com
-    catalog: https://catalog.matatika.com/api
+    catalog: https://app.matatika.com/api
     auth0_domain: identity.matatika.com
