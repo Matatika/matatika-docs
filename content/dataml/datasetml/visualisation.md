@@ -48,6 +48,56 @@ For more information on Chart.js, see their documentation at [https://www.chartj
 
 ---
 
+## Mermaid diagrams
+
+[Mermaid diagrams](https://mermaid.js.org/intro/#diagram-types){:target="_blank"} are supported with the `mermaid` visualisation type. The [diagram syntax](https://mermaid.js.org/intro/syntax-reference.html){:target="_blank"} should be provided in `rawData`.
+
+```yaml
+visualisation: |-
+    {"mermaid": {}}
+rawData: |-
+    erDiagram
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+        CUSTOMER ||--o{ ORDER : places
+        CUSTOMER ||--o{ INVOICE : "liable for"
+        DELIVERY-ADDRESS ||--o{ ORDER : receives
+        INVOICE ||--|{ ORDER : covers
+        ORDER ||--|{ ORDER-ITEM : includes
+        PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+        PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+```
+
+---
+
+## Carousel
+
+You can display images side-by-side with back/next buttons using the `carousel` visualisation type.
+
+```yaml
+visualisation: |-
+    {"carousel": {}}
+```
+
+### Options
+
+#### `style`
+
+CSS overrides to set on the main carousel container element, to override its default styling.
+
+Type: object
+Default: none
+
+```yaml
+visualisation: |-
+    {"carousel": {"style": {
+        "max-width": "600px",
+        "padding": "12px",
+        "background-color": "rgba(0, 0, 0, 0.1)"
+    }}}
+```
+
+---
+
 ## HTML table
 
 Basic table layout for datasets can be achieved with the `html-table` visualisation type.
