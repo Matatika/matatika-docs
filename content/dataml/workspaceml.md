@@ -56,7 +56,7 @@ app_properties:
   ALERTS_HELP_TEXT: Watch for alerts or all activity.
   DISCUSSION_HELP_TEXT: Talk about this dataset!
   RELATED_HELP_TEXT: Datasets related to this one.
-  DATASET_VIEW_TAB_ORDER: alerts, discussion, related
+  DATASET_VIEW_TABS: alerts,discussion,related
   APP_MENU_ITEMS: '[{"name": "explore", "faIcon": "users", "label": "Profiles"}, {"name": "library", "faIcon": "list"}, {"name": "starred", "faIcon": "star"}]'
   LIBRARY_LIST_INFO_ITEM_TEXT: Profile(s)
   DATASET_ACTIONS: star,share,table,save
