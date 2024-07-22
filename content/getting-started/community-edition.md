@@ -347,13 +347,13 @@ Note that you will need to follow the steps to [configure your own Auth0 IDP](#s
                 - SERVER_SSL_KEY_STORE_TYPE=pkcs12
                 - SERVER_SSL_KEY_ALIAS=springboot
                 # - SERVER_SSL_KEY_PASSWORD=  # leave commented out for no password
+                - CATALOG_URL=https://<domain>:8443/api
                 - CATALOG_ALLOWED_ORIGINS=https://<domain>:3443
                 - CATALOG_AUTH_IDPS_LOCAL_ISSUER_URI=https://<domain>:8443
                 - CATALOG_AUTH_IDPS_LOCAL_AUDIENCE=https://<domain>:8443/api
                 - CATALOG_AUTH_IDPS_PRIMARY_AUDIENCE=https://<domain>:8443/api
                 - CATALOG_AUTH_IDPS_SECONDARY_AUDIENCE=https://<domain>:8443/api
-        app:
-            environment:
+                - APP_URL=https://<domain>:8443
                 - APP_SERVER_URI=https://<domain>:8443/api
     ```
 
