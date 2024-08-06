@@ -1,1 +1,1 @@
-docker-compose run --entrypoint "jekyll build $@" jekyll-docs
+docker compose run --entrypoint "jekyll build $@" jekyll-docs
