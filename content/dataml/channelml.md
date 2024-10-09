@@ -1,5 +1,6 @@
 ---
 title: ChannelML
+description: Reference documentation for channel definition model.
 permalink: /dataml/channelml/
 nav_order: 1
 parent: DataML
