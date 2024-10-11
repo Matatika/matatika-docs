@@ -1,5 +1,6 @@
 ---
 title: Environment
+description: Reference documentation for pipeline environment customisation.
 permalink: /dataml/pipelineml/environment
 nav_order: 1
 parent: PipelineML

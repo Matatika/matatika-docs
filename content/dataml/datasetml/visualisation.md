@@ -1,5 +1,6 @@
 ---
 title: Visualisation
+description: Reference documentation for dataset visualisation customisation.
 permalink: /dataml/datasetml/visualisation
 parent: DatasetML
 grand_parent: DataML 

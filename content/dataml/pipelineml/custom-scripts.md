@@ -1,5 +1,6 @@
 ---
 title: Custom Scripts
+description: Reference documentation for pipeline custom scripts.
 permalink: /dataml/pipelineml/custom-scripts
 nav_order: 2
 parent: PipelineML

@@ -1,5 +1,6 @@
 ---
 title: WorkspaceML
+description: Reference documentation for workspace definition model.
 permalink: /dataml/workspaceml/
 nav_order: 5
 parent: DataML

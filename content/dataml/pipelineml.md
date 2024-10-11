@@ -1,5 +1,6 @@
 ---
 title: PipelineML
+description: Reference documentation for pipeline definition model.
 permalink: /dataml/pipelineml/
 nav_order: 3
 parent: DataML

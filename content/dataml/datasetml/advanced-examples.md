@@ -1,5 +1,6 @@
 ---
 title: Advanced Examples
+description: Dataset advanced examples.
 permalink: /dataml/datasetml/advanced-examples
 parent: DatasetML
 grand_parent: DataML 

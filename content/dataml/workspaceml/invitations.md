@@ -1,5 +1,6 @@
 ---
 title: Invitations
+description: Reference documentation for workspace invitation customisation.
 permalink: /dataml/workspaceml/invitations/
 nav_order: 1
 parent: WorkspaceML

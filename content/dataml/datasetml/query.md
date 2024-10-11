@@ -1,5 +1,6 @@
 ---
 title: Query
+description: Reference documentation for dataset queries.
 permalink: /dataml/datasetml/query
 parent: DatasetML
 grand_parent: DataML 
