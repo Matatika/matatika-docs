@@ -1,5 +1,6 @@
 ---
 title: Community Edition
+description: Get started with the Matatika Community Edition
 permalink: /getting-started/community-edition
 nav_order: 3
 parent: Getting Started
