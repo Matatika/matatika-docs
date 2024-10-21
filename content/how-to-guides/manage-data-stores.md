@@ -1,5 +1,6 @@
 ---
 title: Manage Data Stores
+description: How to manage data stores with Matatika
 permalink: /how-to-guides/manage-data-stores/
 parent: How-To Guides
 has_children: true

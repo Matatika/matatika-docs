@@ -1,5 +1,6 @@
 ---
 title: Analyze Data
+description: How to analyze data with Matatika
 permalink: /how-to-guides/analyze-data/
 parent: How-To Guides
 has_children: true

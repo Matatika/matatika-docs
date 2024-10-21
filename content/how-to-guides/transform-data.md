@@ -1,5 +1,6 @@
 ---
 title: Transform Data
+description: How to transform data with Matatika
 permalink: /how-to-guides/transform-data
 parent: How-To Guides
 ---

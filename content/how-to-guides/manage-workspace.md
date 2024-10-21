@@ -1,5 +1,6 @@
 ---
 title: Manage Workspaces
+description: How to manage workspaces with Matatika
 permalink: /how-to-guides/manage-workspaces/
 parent: How-To Guides
 has_children: true
