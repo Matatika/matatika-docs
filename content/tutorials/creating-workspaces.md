@@ -1,5 +1,6 @@
 ---
 title: Creating Workspaces
+description: Step by step guide to creating Matatika workspaces
 permalink: /tutorials/creating-workspaces/
 parent: Tutorials
 nav_order: 1

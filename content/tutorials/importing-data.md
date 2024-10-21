@@ -1,5 +1,6 @@
 ---
 title: Importing Data
+description: Step by step guide to importing data to your Matatika workspace
 permalink: /tutorials/importing-data/
 parent: Tutorials
 nav_order: 2
