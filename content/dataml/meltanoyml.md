@@ -1,5 +1,6 @@
 ---
 title: meltano.yml
+description: Reference documentation for meltano.yml
 permalink: /dataml/meltanoyml/
 nav_order: 7
 parent: DataML

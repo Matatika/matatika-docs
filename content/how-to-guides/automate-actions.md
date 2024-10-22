@@ -1,5 +1,6 @@
 ---
 title: Automate Actions
+description: How to automate actions with Matatika
 permalink: /how-to-guides/automate-actions/
 parent: How-To Guides
 has_children: true

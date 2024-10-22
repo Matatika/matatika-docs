@@ -1,5 +1,6 @@
 ---
 title: DatasetML
+description: Reference documentation for dataset definition model.
 permalink: /dataml/datasetml/
 nav_order: 2
 parent: DataML

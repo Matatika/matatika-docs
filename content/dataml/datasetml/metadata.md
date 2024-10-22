@@ -1,5 +1,6 @@
 ---
 title: Metadata
+description: Reference documentation for dataset metadata.
 permalink: /dataml/datasetml/metadata
 parent: DatasetML
 grand_parent: DataML 

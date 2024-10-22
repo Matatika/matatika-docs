@@ -1,5 +1,6 @@
 ---
 title: Watch Pipelines
+description: How to watch Matatika pipelines
 permalink: /how-to-guides/automate-actions/watch-pipelines
 parent: Automate Actions
 grand_parent: How-To Guides

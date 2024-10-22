@@ -19,7 +19,7 @@ There are two settings that you are required to provide to use our Shopify data 
 
 To read data from your store, you need a Shopify access token.
 
-For a single store, Shopify recommends you create a [Custom App](https://help.shopify.com/en/manual/apps/custom-apps)
+For a single store, Shopify recommends you create a [Custom App](https://help.shopify.com/en/manual/apps/app-types/custom-apps)
 
 1. Log in to your Shopify store admin at https://<store>.myshopify.com/admin
 

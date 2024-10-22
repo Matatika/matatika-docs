@@ -1,5 +1,6 @@
 ---
 title: Import Data
+description: How to import data with Matatika
 permalink: /how-to-guides/import-data/
 parent: How-To Guides
 has_children: true

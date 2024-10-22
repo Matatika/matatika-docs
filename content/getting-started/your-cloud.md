@@ -1,5 +1,6 @@
 ---
 title: Your Cloud
+description: Get started with the Matatika on your own cloud
 permalink: /getting-started/your-cloud
 nav_order: 2
 parent: Getting Started

@@ -1,5 +1,6 @@
 ---
 title: Dashboards
+description: Reference documentation for workspace dashboard customisation.
 permalink: /dataml/workspaceml/dashboards/
 nav_order: 2
 parent: WorkspaceML

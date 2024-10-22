@@ -1,5 +1,6 @@
 ---
 title: Setup your Development Environment
+description: How to setup your Matatika development environment
 permalink: /how-to-guides/setup-your-development-environment
 parent: How-To Guides
 ---

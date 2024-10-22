@@ -1,5 +1,6 @@
 ---
 title: Meltano
+description: Get started with the Matatika Meltano UI
 permalink: /getting-started/meltano
 nav_order: 4
 parent: Getting Started
