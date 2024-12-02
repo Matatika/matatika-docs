@@ -106,6 +106,15 @@ Prop | Type | Description | Required | Default
 #### `Back`
 Renders a back button.
 
+#### `DownloadDataset`
+Download a dataset from the workspace. 
+
+Prop | Type | Description | Required | Default
+--- | --- | --- | --- | ---
+`alias` | String | The dataset alias to fetch for render | If `dataset` not specified |
+`dataset` | Object | The dataset to render | If `alias` not specified |
+`tooltip` | String | The text displayed on hover | No | `Download {dataset title OR dataset alias}`
+
 #### `DownloadResource`
 Download a resource from the workspace. 
 
