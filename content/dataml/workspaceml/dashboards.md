@@ -87,6 +87,15 @@ Prop | Type | Description | Required | Default
 `dataset` | Object | The dataset to render | If `alias` not specified |
 `showTable` | Boolean | Show the dataset data as a table | No | `false`
 
+#### `DatasetData`
+Allows you to render custom JSX in the context of a dataset and its data.
+
+Prop | Type | Description | Required | Default
+--- | --- | --- | --- | ---
+`alias` | String | The dataset alias to fetch for render | If `dataset` not specified |
+`dataset` | Object | The dataset to render | If `alias` not specified |
+`render` | Function | The JSX content to render (args: `dataset`, `data`) | Yes | |
+
 #### `DatasetLink`
 Wraps elements or text and create an internal link to a dataset in your workspace (no page reload).
 
@@ -96,6 +105,15 @@ Prop | Type | Description | Required | Default
 
 #### `Back`
 Renders a back button.
+
+#### `DownloadDataset`
+Download a dataset from the workspace. 
+
+Prop | Type | Description | Required | Default
+--- | --- | --- | --- | ---
+`alias` | String | The dataset alias to fetch for render | If `dataset` not specified |
+`dataset` | Object | The dataset to render | If `alias` not specified |
+`tooltip` | String | The text displayed on hover | No | `Download {dataset title OR dataset alias}`
 
 #### `DownloadResource`
 Download a resource from the workspace. 
