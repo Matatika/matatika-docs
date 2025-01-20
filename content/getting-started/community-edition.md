@@ -105,6 +105,34 @@ git tag --list
 
 ---
 
+## Specify a custom database
+If want to switch to a custom database over the default Postgres service container, override the persistence datasource configuration for `catalog`/`warehouse`:
+- `catalog` refers to the main application database
+- `warehouse` refers to workspace databases (if not specified, `warehouse` will default to `catalog` configuration)
+
+`docker-compose.yml`
+```yml
+services:
+    catalog:
+        environment:
+            - PERSISTENCE_CATALOG_URL=jdbc:postgresql://<host>:<port>/<db_name>
+            - PERSISTENCE_CATALOG_USERNAME=<username>
+            - PERSISTENCE_CATALOG_PASSWORD=<password>
+            # change to your database type (your mileage may vary if not Postgres)
+            # - PERSISTENCE_CATALOG_DRIVER_CLASS_NAME=org.postgresql.Driver
+            # optional warehouse configuration - use if you want workspace databases to
+            # be created in a separate instance from the main application database 
+            # - PERSISTENCE_WAREHOUSE_URL=jdbc:postgresql://<host>:<port>/<db_name>
+            # - PERSISTENCE_WAREHOUSE_USERNAME=<username>
+            # - PERSISTENCE_WAREHOUSE_PASSWORD=<password>
+```
+
+The `warehouse` database referenced with this configuration (`catalog` if omitted) must have the capability to create other databases within the connection, as part of provisioning a workspace.
+
+By default, this database is also used to back the workspace state datastore. In this case, the database **must** be a Postgres instance.
+
+---
+
 ## Specify a Custom Auth0 Identity Provider
 If you want to use your own company login from within the UI, the Community Edition can be configured to use a custom Auth0 identity provider. This will replace Matatika as the default identity provider responsible for login and user authentication.
 
