@@ -37,6 +37,9 @@ Once completed, you will be able login to the Matatika Lab on your domain and st
 [Ask us on Slack](https://join.slack.com/t/matatika/shared_invite/zt-19n1bfokx-F31DNitTpSxWCFO2aFlgxg){:target="_blank"}{:.btn}
 
 
+### Reverse proxy configuration
+If deploying behind an application gateway/reverse proxy, ensure that an `X-Forward-Host` header with the external host is sent with all requests. This will allow the catalog API to generate resource links targeting the correct host, which the app uses to navigate the API following subsequent user actions.
+
 ## Further Reading
 
 - Find out how Matatika works with Meltano by reading about the Matatika concepts and artifacts: [Matatika Concepts]({{site.baseurl}}/concepts), [Matatika Glossary]({{site.baseurl}}/glossary) and [Matatika Technical Glossary](https://github.com/Matatika/matatika-examples/tree/master/matatika_technical_glossary){:target="_blank"}
