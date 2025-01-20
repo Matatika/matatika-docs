@@ -26,18 +26,24 @@ The workspace file is stored in YAML file format, you can read more about the YA
 
 {% raw %}
 ```yaml
-version: workspaces/v0.1
-name: My Workspace Name
+version: workspaces/v0.2
+name: My workspace
+domains:
+  - matatika.com
+  - example.co.uk
 default_data_store: Warehouse
-image_url: http://www.example.com/pepsi.jpg
+state_data_store: Warehouse
 dataset_paths:
   - analyze/datasets
+  - .meltano/analyze/datasets
 channel_paths:
   - analyze/channels
 pipeline_paths:
   - pipelines
 plugin_paths:
   - plugins
+data_store_paths:
+  - datastores
 app_properties:
   WELCOME_DATASET_ALIAS: analyze/datasets/welcome
   WELCOME_MESSAGE: Welcome to the workspace
@@ -125,24 +131,31 @@ Environment-specific workspace configuration files only need to contain the prop
 {: .tab .tabs-section-start}
 
 ```yml
-version: workspaces/v0.1
+version: workspaces/v0.2
 name: My workspace
+domains:
+  - matatika.com
+  - example.co.uk
 default_data_store: Warehouse
+state_data_store: Warehouse
 dataset_paths:
   - analyze/datasets
+  - .meltano/analyze/datasets
 channel_paths:
   - analyze/channels
 pipeline_paths:
   - pipelines
 plugin_paths:
   - plugins
+data_store_paths:
+  - datastores
 ```
 
 `workspace-dev.yml`
 {: .tab}
 
 ```yml
-version: workspaces/v0.1
+version: workspaces/v0.2
 name: My workspace (dev)
 pipelines_image: my-workspace-image:latest-dev
 ```
