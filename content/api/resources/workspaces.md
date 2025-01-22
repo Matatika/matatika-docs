@@ -27,7 +27,7 @@ Path | Type | Format | Description
 `lastModified` | `String` | ISO 8601 timestamp | The instant the workspace was last modified
 `alias` | `String` | | The workspace alias and database schema name
 `name` | `String` | | The workspace name
-`domains` | `String` | Comma-separated list | The workspace allowed domains
+`domains` | `Array` of `String` | `Array` of domain hosts | The workspace allowed domains
 `repositoryUrl` | `String` | URL | The workspace repository URL
 `pipelinesImage` | `String` | Container image name path | The path name of an image to run pipelines from
 `imageUrl` | `String` | Image [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs){:target="_blank"} | The workspace image data URL
