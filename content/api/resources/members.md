@@ -20,11 +20,11 @@ Members are users that belong to a particular [workspace](workspaces). Every mem
 
 ### Member
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The member ID (derived from corresponding profile ID)
-`name` | `String` | | The member name (derived from corresponding profile name)
-`handle` | `String` | | The unique `@`-prefixed handle for this member (derived from corresponding profile handle)
+`id` | `string` | Version 4 UUID | The member ID (derived from corresponding profile ID)
+`name` | `string` | | The member name (derived from corresponding profile name)
+`handle` | `string` | | The unique `@`-prefixed handle for this member (derived from corresponding profile handle)
 
 {% include snippets/api/workspaces/view-a-member-of-a-workspace/response-body.md %}
 

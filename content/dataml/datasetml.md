@@ -61,17 +61,17 @@ query: |-
 
 ### Key Information
 
-Dataset Key | Datatype |  Information
------------ | -------- | -----------
-`version` | `String` | The version determines how the CLI handles publishing the dataset. 
-`source` | `String`  | A channel name to be used to group up related datasets in your workspace.
-`title` | `String` | The title at the top of the insight.
-`questions` | `String` | Questions that your dataset answers, so people can find the dataset just by asking questions.
-`description` | `String` | Information about what the dataset is, how it's being filtered or displayed and other relevant information. You can also add `#tags`.
-`metadata` | `String` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
-`visulisation` | `String` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasetml/visualisation)
-`query` | `String` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/dataml/datasetml/query)
-`rawData` | `String` of a List | The rawData key allows you to hard-code data directly into your dataset.
+Path | JSON Type | Description
+---- | --------- | -----------
+`version` | `string` | The version determines how the CLI handles publishing the dataset. 
+`source` | `string`  | A channel name to be used to group up related datasets in your workspace.
+`title` | `string` | The title at the top of the insight.
+`questions` | `string` | Questions that your dataset answers, so people can find the dataset just by asking questions.
+`description` | `string` | Information about what the dataset is, how it's being filtered or displayed and other relevant information. You can also add `#tags`.
+`metadata` | `string` of JSON | Details about how the dataset's chart is laid out. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
+`visulisation` | `string` of JSON | Details about the precise visualisation of the datasets chart. [More Info]({{site.baseurl}}/dataml/datasetml/visualisation)
+`query` | `string` of SQL | The query that returns the data from your datastore for use in the dataset's chart and related table. [More Info]({{site.baseurl}}/dataml/datasetml/query)
+`rawData` | `string` of a List | The rawData key allows you to hard-code data directly into your dataset.
 
 ## String Formatting
 
@@ -88,7 +88,7 @@ title: |-
     Multi-line string, remember to indent
 ```
 
-The multiline string is generally the best way to display the `String` of JSON or SQL.
+The multiline string is generally the best way to display the `string` of JSON or SQL.
 
 ---
 

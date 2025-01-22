@@ -36,11 +36,11 @@ Status Code | Text | Description
 ## Validation errors - `4xx`
 ### Schema
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`timestamp` | `String` | ISO 8601 timestamp | The instant when the error was encountered
-`status` | `Integer` | HTTP status code | The error response code
-`error` | `String` | | The error response text
-`errors` | `Array` | | Error object collection
-`message` | `String` | | The error description
-`path` | `String` | | The request path that resulted in the thrown error(s)
+`timestamp` | `string` | ISO 8601 timestamp | The instant when the error was encountered
+`status` | `number` | HTTP status code | The error response code
+`error` | `string` | | The error response text
+`errors` | `object[]` | | Error object collection
+`message` | `string` | | The error description
+`path` | `string` | | The request path that resulted in the thrown error(s)

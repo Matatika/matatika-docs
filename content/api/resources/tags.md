@@ -20,11 +20,11 @@ Tags are hash-prefixed keywords or phrases that appear in the title, description
 
 ### Tag
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The tag ID 
-`name` | `String` | | The tag name
-`usage` | `Integer` | Unsigned | Number of times the tag is used within the workspace
+`id` | `string` | Version 4 UUID | The tag ID 
+`name` | `string` | | The tag name
+`usage` | `number` | Unsigned integer | Number of times the tag is used within the workspace
 
 {% include snippets/api/tags/view-a-tag-in-a-workspace/response-body.md %}
 

@@ -24,9 +24,9 @@ Administrators are types of [members](members) with delegated [workspace](worksp
 Extends from [Member](members#member)
 {: .float-right .mt-5 }
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`administrator` | `Boolean` | | Whether or not the [member](members) is an administrator
+`administrator` | `bool` | | Whether or not the [member](members) is an administrator
 
 {% include snippets/api/workspaces/add-an-administrator-to-a-workspace/response-body.md %}
 

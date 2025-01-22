@@ -20,21 +20,21 @@ A pipeline defines a set of runnable actions composed from [datacomponents](data
 
 ### Pipeline
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The pipeline ID 
-`status` | `String` | [Pipeline Status](#pipeline-status)
-`name` | `String` | | The pipeline name
-`schedule` | `String` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
-`timeout` | `Integer` | Unsigned | The number of seconds after which the job will terminate - if set to `0`, an implicit default value of 300 seconds is used
-`maxRetries` | `Integer` | Unsigned | The maximum number of retries to attempt for a job ending with `ERROR`
-`script` | `String` | Bash script | Custom script to execute during a [job](jobs)
-`created` | `String` | ISO 8601 timestamp | When the pipeline was created
-`lastModified` | `String` | ISO 8601 timestamp | When the pipeline was last modified
-`properties` | [`Properties`](#properties) | | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)
-`dataComponents` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s or create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
-`actions` | `Array` of `String` | `Array` of [`Datacomponent`](datacomponents) `name`s or commands | The pipeline actions to run during a [job](jobs)
-`triggeredBy` | `Array` of `String` | `Array` of [pipeline](pipelines) `name`s or workspace task identifiers | Pipelines or workspace tasks that will trigger the pipeline on successful completion<br>Supported values for workspace tasks (case-insensitive):{::nomarkdown}<ul><li>{:/nomarkdown}`deploy` - workspace [deployment](deployments){::nomarkdown}</li></ul>{:/nomarkdown}
+`id` | `string` | Version 4 UUID | The pipeline ID 
+`status` | `string` | [Pipeline Status](#pipeline-status)
+`name` | `string` | | The pipeline name
+`schedule` | `string` | Cron | The interval at which to launch a new job e.g. `0 0 9-17 * * MON-FRI` launches a job on the hour nine-to-five weekdays
+`timeout` | `number` | Unsigned integer | The number of seconds after which the job will terminate - if set to `0`, an implicit default value of 300 seconds is used
+`maxRetries` | `number` | Unsigned integer | The maximum number of retries to attempt for a job ending with `ERROR`
+`script` | `string` | Bash script | Custom script to execute during a [job](jobs)
+`created` | `string` | ISO 8601 timestamp | When the pipeline was created
+`lastModified` | `string` | ISO 8601 timestamp | When the pipeline was last modified
+`properties` | `object` | [`Properties`](#properties) | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)
+`dataComponents` | `string[]` | Array of [datacomponent](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s or create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
+`actions` | `string[]` | Array of [datacomponent](datacomponents) `name`s or commands | The pipeline actions to run during a [job](jobs)
+`triggeredBy` | `string[]` | Array of [pipeline](pipelines) `name`s or workspace task identifiers | Pipelines or workspace tasks that will trigger the pipeline on successful completion<br>Supported values for workspace tasks (case-insensitive):{::nomarkdown}<ul><li>{:/nomarkdown}`deploy` - workspace [deployment](deployments){::nomarkdown}</li></ul>{:/nomarkdown}
 
 {% include snippets/api/pipelines/view-a-pipeline/response-body.md %}
 

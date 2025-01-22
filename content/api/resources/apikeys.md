@@ -20,14 +20,14 @@ API keys offer an alternate method of authentication to the Matatika API using a
 
 ### API Key
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The API key ID
-`created` | `String` | ISO 8601 timestamp | The instant when the API key was created
-`lastModified` | `String` | ISO 8601 timestamp | The instant when the API key was last modified
-`name` | `String` | | The API key name
-`clientId` | `String` | | The API key client ID
-`profileId` | `String` | | The API key owner profile ID
+`id` | `string` | Version 4 UUID | The API key ID
+`created` | `string` | ISO 8601 timestamp | The instant when the API key was created
+`lastModified` | `string` | ISO 8601 timestamp | The instant when the API key was last modified
+`name` | `string` | | The API key name
+`clientId` | `string` | | The API key client ID
+`profileId` | `string` | | The API key owner profile ID
 
 {% include snippets/api/apikeys/view-an-api-key/response-body.md %}
 

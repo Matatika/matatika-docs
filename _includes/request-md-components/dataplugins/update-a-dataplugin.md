@@ -16,11 +16,11 @@ Updates the dataplugin `{dataplugin-id}`.
 [Dataplugin](#dataplugin) resource.
 {% include snippets/api/dataplugins/update-a-dataplugin/request-body.md %}
 
-Path | Type | Description | Constraints
----- | ---- | ----------- | -----------
-`description` | `String` | A description of the dataplugin |
-`repositoryUrl` | `String` | A URL to the dataplugin repository | 
-`settings` | `Array` of [`Setting`](#setting)s | The dataplugin settings |
+Path | JSON Type | Format | Description | Constraints
+---- | ---- | ------ | ----------- | -----------
+`description` | `string` | | A description of the dataplugin |
+`repositoryUrl` | `string` | | A URL to the dataplugin repository | 
+`settings` | `object[]` | Array of [`Setting`](#setting)s | The dataplugin settings |
 
 #### Example Snippets
 cURL

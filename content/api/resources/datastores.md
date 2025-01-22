@@ -20,16 +20,16 @@ Datastores define a destination for data loaded into a [workspace](workspaces) b
 
 ### Datastore
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The datastore ID
-`created` | `String` | ISO 8601 timestamp | The instant at which the datastore was created
-`lastModified` | `String` | ISO 8601 timestamp | The instant at which the datastore was last modified
-`name` | `String` | | The datastore name
-`dataPlugin` | `String` | | Create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
-`workspace` | `String` | Version 4 UUID | The datastore [workspace](workspaces#workspace) `id`
-`jdbcUrl` | `String` | [JDBC URL](https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html){:target="_blank"} | The datastore JDBC URL
-`properties` | [`Properties`](#properties) | | The datastore properties
+`id` | `string` | Version 4 UUID | The datastore ID
+`created` | `string` | ISO 8601 timestamp | The instant at which the datastore was created
+`lastModified` | `string` | ISO 8601 timestamp | The instant at which the datastore was last modified
+`name` | `string` | | The datastore name
+`dataPlugin` | `string` | | Create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
+`workspace` | `string` | Version 4 UUID | The datastore [workspace](workspaces#workspace) `id`
+`jdbcUrl` | `string` | [JDBC URL](https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html){:target="_blank"} | The datastore JDBC URL
+`properties` | `object` | [`Properties`](#properties) | The datastore properties
 
 ### Properties
 

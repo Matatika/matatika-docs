@@ -30,10 +30,10 @@ data_plugin: loaders/target-snowflake--matatika
 
 ### Key Information
 
-Key               | Datatype | Information
------------------ | -------- | -----------
-`version`         | `String` | The version identifies this artifact type.
-`data_plugin`     | `String` | The fully-qualified name of a dataplugin supported for JDBC configuration
+Path | JSON Type | Description
+---- | --------- | -----------
+`version`         | `string` | The version identifies this artifact type.
+`data_plugin`     | `string` | The fully-qualified name of a dataplugin supported for JDBC configuration
 
 ---
 
