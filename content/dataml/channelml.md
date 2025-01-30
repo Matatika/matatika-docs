@@ -32,12 +32,12 @@ picture: https://www.matatika.com/wp-content/uploads/2020/03/google_analytics-ic
 
 ### Key Information
 
-Channel Key | Datatype |  Information
------------ | -------- | -----------
-`version` | `String` | The version determines how the CLI handles publishing the channel. 
-`name` | `String`  | Alias of your channel. Unique to the workspace, used for updating and verify channel updates.
-`description` | `String` | Text displayed in the Matatika platform below the channel icon.
-`image` | `String` | An image url or local reference for your channel icon. If left empty, will use the icon of the user who created the channel.
+Path | JSON Type | Description
+---- | --------- | -----------
+`version` | `string` | The version determines how the CLI handles publishing the channel. 
+`name` | `string`  | Alias of your channel. Unique to the workspace, used for updating and verify channel updates.
+`description` | `string` | Text displayed in the Matatika platform below the channel icon.
+`image` | `string` | An image url or local reference for your channel icon. If left empty, will use the icon of the user who created the channel.
 
 ## String Formatting
 

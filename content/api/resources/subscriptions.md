@@ -20,12 +20,12 @@ Subscriptions are a declaration of interest in a particular resource, allowing a
 
 ### Subscription
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The subscription ID
-`created` | `String` | ISO 8601 timestamp | The instant the subscription was created at
-`lastModified` | `String` | ISO 8601 timestamp | The instant the subscription was last modified at
-`type` | `String` | [Subscription Type](#subscription-type) | The type of subscription
+`id` | `string` | Version 4 UUID | The subscription ID
+`created` | `string` | ISO 8601 timestamp | The instant the subscription was created at
+`lastModified` | `string` | ISO 8601 timestamp | The instant the subscription was last modified at
+`type` | `string` | [Subscription Type](#subscription-type) | The type of subscription
 
 {% include snippets/api/subscriptions/view-a-subscription/response-body.md %}
 
@@ -35,7 +35,7 @@ Path | Type | Format | Description
 ### Subscription Type
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description

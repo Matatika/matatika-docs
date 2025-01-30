@@ -20,15 +20,15 @@ Invitations allow access to private workspaces. When an invitation is created, a
 
 ### Invitation
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The invitation ID
-`created` | `String` | ISO 8601 timestamp | The instant the invitation was created
-`lastModified` | `String` | ISO 8601 timestamp | The instant the invitation was last modified
-`status` | `String` | [Invitation Status](#invitation-status) | The invitation status
-`email` | `String` | Email address | The invitation target email address
-`creator` | [`Member`](members#member) | | The invitation creator
-`workspace` | [`Workspace`](workspaces#workspace) | | The invitation target workspace
+`id` | `string` | Version 4 UUID | The invitation ID
+`created` | `string` | ISO 8601 timestamp | The instant the invitation was created
+`lastModified` | `string` | ISO 8601 timestamp | The instant the invitation was last modified
+`status` | `string` | [Invitation Status](#invitation-status) | The invitation status
+`email` | `string` | Email address | The invitation target email address
+`creator` | `object` | [`Member`](members#member) | The invitation creator
+`workspace` | `object` | [`Workspace`](workspaces#workspace) | The invitation target workspace
 
 {% include snippets/api/invitations/view-all-invitations-to-a-workspace/response-body.md %}
 
@@ -38,7 +38,7 @@ Path | Type | Format | Description
 ### Invitation Status
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description

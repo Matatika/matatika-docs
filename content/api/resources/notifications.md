@@ -20,14 +20,14 @@ Notifications are alerts triggered by certain events pertaining to a resource. T
 
 ### Notification
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The notification ID
-`created` | `String` | ISO 8601 timestamp | The instant the notification was created at
-`lastModified` | `String` | ISO 8601 timestamp | The instant the notification was last modified at
-`actor` | [`Member`](members#member) | | The member whose action raised this notification
-`type` | `String` | [Notification Type](#notification-type) | The type of notification
-`resolved` | `Boolean` | | Whether or not the notification has been read
+`id` | `string` | Version 4 UUID | The notification ID
+`created` | `string` | ISO 8601 timestamp | The instant the notification was created at
+`lastModified` | `string` | ISO 8601 timestamp | The instant the notification was last modified at
+`actor` | `object` | [`Member`](members#member) | The member whose action raised this notification
+`type` | `string` | [Notification Type](#notification-type) | The type of notification
+`resolved` | `bool` | | Whether or not the notification has been read
 
 {% include snippets/api/notifications/view-a-notification/response-body.md %}
 
@@ -37,7 +37,7 @@ Path | Type | Format | Description
 ### Notification Type
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description

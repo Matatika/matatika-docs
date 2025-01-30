@@ -14,9 +14,9 @@ Updates the subscription `{subscription-id}`.
 ### Request
 #### Body
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`type` | `String` | [Subscription Type](#subscription-type) | The type of subscription
+`type` | `string` | [Subscription Type](#subscription-type) | The type of subscription
 
 {% include snippets/api/subscriptions/update-a-subscription/request-body.md %}
 

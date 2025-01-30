@@ -20,14 +20,14 @@ Profiles are individual consumers of the Matatika service. A profile is automati
 
 ### Profile
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The profile ID 
-`name` | `String` | The full name of the person or entity represented by this profile
-`handle` | `String` | The unique `@`-prefixed handle for this profile (generated and read-only)
-`phone` | `String` | Phone number | The profile phone number
-`email` | `String` | Email address | The profile email address
-`defaultWorkspace` | [`Workspace`](workspaces#workspace) | The profile default workspace
+`id` | `string` | Version 4 UUID | The profile ID 
+`name` | `string` | The full name of the person or entity represented by this profile
+`handle` | `string` | The unique `@`-prefixed handle for this profile (generated and read-only)
+`phone` | `string` | Phone number | The profile phone number
+`email` | `string` | Email address | The profile email address
+`defaultWorkspace` | `object` | [`Workspace`](workspaces#workspace) | The profile default workspace
 
 {% include snippets/api/profiles/view-a-profile/response-body.md %}
 

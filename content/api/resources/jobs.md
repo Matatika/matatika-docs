@@ -20,15 +20,15 @@ A job is an arbitrary task with some stored state, pertaining to the governing [
 
 ### Job
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The job ID
-`created` | `String` | ISO 8601 timestamp | The instant at which the job was created
-`type` | `String` | [Job Type](#job-type) | The descriptor for the process undertaken by the job
-`exitCode` | `Integer` | Process exit status | The job exit code
-`status` | `String` | [Job Status](#job-status) | The job status
-`startTime` | `String` | ISO 8601 timestamp | The instant at which the job run started
-`endTime` | `String` | ISO 8601 timestamp | The instant at which the job run ended
+`id` | `string` | Version 4 UUID | The job ID
+`created` | `string` | ISO 8601 timestamp | The instant at which the job was created
+`type` | `string` | [Job Type](#job-type) | The descriptor for the process undertaken by the job
+`exitCode` | `number` | Process exit status | The job exit code
+`status` | `string` | [Job Status](#job-status) | The job status
+`startTime` | `string` | ISO 8601 timestamp | The instant at which the job run started
+`endTime` | `string` | ISO 8601 timestamp | The instant at which the job run ended
 
 {% include snippets/api/jobs/view-a-job/response-body.md %}
 
@@ -38,7 +38,7 @@ Path | Type | Format | Description
 ### Job Status
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description
@@ -52,7 +52,7 @@ Value | Description
 ### Job Type
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description

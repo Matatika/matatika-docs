@@ -20,16 +20,16 @@ Channels enable datasets to be categorised or grouped together. A single workspa
 
 ### Channel
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The channel ID
-`creator` | [`Member`](members#member) | | The channel creator
-`workspace` | [`Workspace`](workspaces#workspace) | | The channel workspace
-`created` | `String` |  ISO 8601 timestamp | The channel created at timestamp
-`lastModified` | `String` | ISO 8601 timestamp | The channel last modified timestamp
-`name` | `String` | | The channel name
-`description` | `String` | | The channel description
-`picture` | `String` | URL | The channel picture metadata
+`id` | `string` | Version 4 UUID | The channel ID
+`creator` | `object` | [`Member`](members#member) | The channel creator
+`workspace` | `object` | [`Workspace`](workspaces#workspace) | The channel workspace
+`created` | `string` |  ISO 8601 timestamp | The channel created at timestamp
+`lastModified` | `string` | ISO 8601 timestamp | The channel last modified timestamp
+`name` | `string` | | The channel name
+`description` | `string` | | The channel description
+`picture` | `string` | URL | The channel picture metadata
 
 {% include snippets/api/channels/view-a-channel/response-body.md %}
 

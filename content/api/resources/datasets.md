@@ -20,37 +20,37 @@ Datasets are modules of data that can be published to workspaces. Datasets are v
 
 ### Dataset
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The dataset ID
-`published` | `String` | ISO 8601 timestamp | The instant the dataset was published
-`alias` | `String` | | The dataset alias
-`workspaceId` | `String` | Version 4 UUID | The workspace ID of the published dataset
-`source` | `String` | | The channel ID where the dataset was initially published to
-`title` | `String` | | The dataset title
-`description` | `String` | | The dataset description (may contain markdown)
-`questions` | `String` | | The dataset questions
-`rawData` | `String` | JSON | The dataset raw data
-`visualisation` | `String` | JSON | The dataset visualisation metadata. [More Info]({{site.baseurl}}/dataml/datasetml/visualisation)
-`metadata` | `String` | JSON | The dataset metadata. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
-`query` | `String` | SQL statement | The dataset query. [More Info]({{site.baseurl}}/dataml/datasetml/query)
-`likeCount` | `Integer` | | The number of likes the dataset has received
-`likedByProfiles` | `Array` of [`Member`](members#member) | | The members that have liked the dataset
-`commentCount` | `Integer` | | The number of comments the dataset has received
-`viewCount` | `Integer` | | The number of views the dataset has received
-`created` | `String` | ISO 8601 timestamp | The instant the dataset was create
-`score` | `Float` | | The dataset score used to determine its position in the workspace [Feed](feed)
+`id` | `string` | Version 4 UUID | The dataset ID
+`published` | `string` | ISO 8601 timestamp | The instant the dataset was published
+`alias` | `string` | | The dataset alias
+`workspaceId` | `string` | Version 4 UUID | The workspace ID of the published dataset
+`source` | `string` | | The channel ID where the dataset was initially published to
+`title` | `string` | | The dataset title
+`description` | `string` | | The dataset description (may contain markdown)
+`questions` | `string` | | The dataset questions
+`rawData` | `string` | JSON | The dataset raw data
+`visualisation` | `string` | JSON | The dataset visualisation metadata. [More Info]({{site.baseurl}}/dataml/datasetml/visualisation)
+`metadata` | `string` | JSON | The dataset metadata. [More Info]({{site.baseurl}}/dataml/datasetml/metadata)
+`query` | `string` | SQL statement | The dataset query. [More Info]({{site.baseurl}}/dataml/datasetml/query)
+`likeCount` | `number` | Unsigned integer | The number of likes the dataset has received
+`likedByProfiles` | `object[]` | Array of [`Member`](members#member)s | The members that have liked the dataset
+`commentCount` | `number` | Unsigned integer | The number of comments the dataset has received
+`viewCount` | `number` | Unsigned integer | The number of views the dataset has received
+`created` | `string` | ISO 8601 timestamp | The instant the dataset was create
+`score` | `number` | Decimal | The dataset score used to determine its position in the workspace [Feed](feed)
 
 {% include snippets/api/datasets/view-a-dataset/response-body.md %}
 
 ### Dataset Message
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The dataset message ID (shared with the resulting [notification](notifications))
-`recipientId` | `String` | | The recipient profile ID
-`message` | `String` | | The dataset message content
-`datasetId` | `String` | Version 4 UUID | The message subject dataset ID
+`id` | `string` | Version 4 UUID | The dataset message ID (shared with the resulting [notification](notifications))
+`recipientId` | `string` | | The recipient profile ID
+`message` | `string` | | The dataset message content
+`datasetId` | `string` | Version 4 UUID | The message subject dataset ID
 
 {% include snippets/api/datasets/create-or-update-a-dataset-message/response-body.md %}
 

@@ -20,14 +20,14 @@ Datacomponents hold configuration for [dataplugins](dataplugins), and are the bu
 
 ### Datacomponent
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The datacomponent ID
-`created` | `String` | ISO 8601 timestamp | When the datacomponent was created
-`lastModified` | `String` | ISO 8601 timestamp | When the datacomponent was last modified
-`name` | `String` | | The datacomponent name
-`dataPlugin` | `String` | | Create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
-`properties` | [`Properties`](#properties) | | The datacomponent properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting)
+`id` | `string` | Version 4 UUID | The datacomponent ID
+`created` | `string` | ISO 8601 timestamp | When the datacomponent was created
+`lastModified` | `string` | ISO 8601 timestamp | When the datacomponent was last modified
+`name` | `string` | | The datacomponent name
+`dataPlugin` | `string` | | Create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
+`properties` | `object` | [`Properties`](#properties) | The datacomponent properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting)
 
 {% include snippets/api/datacomponents/view-a-datacomponent/response-body.md %}
 

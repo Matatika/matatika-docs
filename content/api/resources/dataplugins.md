@@ -20,37 +20,37 @@ Dataplugins simply define a source of data from a given repository. Matatika pro
 
 ### Dataplugin
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The dataplugin ID
-`name` | `String` | | The dataplugin name
-`description` | `String` | | A description of the dataplugin
-`repositoryUrl` | `String` | URL | The dataplugin repository URL
-`settings` | `Array` of [`Setting`](#setting) | | The dataplugin settings
+`id` | `string` | Version 4 UUID | The dataplugin ID
+`name` | `string` | | The dataplugin name
+`description` | `string` | | A description of the dataplugin
+`repositoryUrl` | `string` | URL | The dataplugin repository URL
+`settings` | `object[]` | Array of [`Setting`](#setting)s | The dataplugin settings
 
 {% include snippets/api/dataplugins/view-a-dataplugin/response-body.md %}
 
 ### Setting
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`name` | `String` | | The setting name
-`value` | `String` | | The setting default value
-`label` | `String` | | The setting label
-`protected` | `Boolean` | | The setting protection status
-`kind` | `String` | [Setting Kind](#setting-kind) | The setting kind
-`description` | `String` | | A description of the setting
-`placeholder` | `String` | | The setting placeholder text
-`envAliases` | `Array` of `String` | | Environment variable aliases for the setting
-`documentation` | `String` | URL | The setting documentation URL
+`name` | `string` | | The setting name
+`value` | `string` | | The setting default value
+`label` | `string` | | The setting label
+`protected` | `bool` | | The setting protection status
+`kind` | `string` | [Setting Kind](#setting-kind) | The setting kind
+`description` | `string` | | A description of the setting
+`placeholder` | `string` | | The setting placeholder text
+`envAliases` | `string[]` | | Environment variable aliases for the setting
+`documentation` | `string` | URL | The setting documentation URL
 `oauth` | [`OAuth`](#oauth) | | The setting OAuth configuration
-`env` | `String` | | 
+`env` | `string` | | 
 
 ### OAuth
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------- | -----------
-`provider` | `String` | | The OAuth provider
+`provider` | `string` | | The OAuth provider
 
 ## Formats
 {: .no_toc}
@@ -58,7 +58,7 @@ Path | Type | Format | Description
 ### Setting Kind
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description

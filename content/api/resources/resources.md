@@ -21,13 +21,13 @@ Resources are files that are managed by a workspace. A resource is accessible fr
 
 ### Resource
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`path` | `String` | | The resource path
-`created` | `String` | ISO 8601 timestamp | The instant the resource was created at
-`lastModified` | `String` | ISO 8601 timestamp | The instant the resource was last modified at
-`contentType` | `String` | [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types){:target="_blank"} | The content type of the resource
-`content` | `String` | | The content of the resource
+`path` | `string` | | The resource path
+`created` | `string` | ISO 8601 timestamp | The instant the resource was created at
+`lastModified` | `string` | ISO 8601 timestamp | The instant the resource was last modified at
+`contentType` | `string` | [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types){:target="_blank"} | The content type of the resource
+`content` | `string` | | The content of the resource
 
 {% include {{page.snippets}}/view-a-resource-in-a-workspace/response-body.md %}
 

@@ -22,8 +22,24 @@ You can create dashboards of your datasets in the Matataika app, by defining a f
 
 {% raw %}
 ```yaml
-version: workspaces/v0.1
-default_environment: dev
+version: workspaces/v0.2
+name: My workspace
+domains:
+  - matatika.com
+  - example.co.uk
+default_data_store: Warehouse
+state_data_store: Warehouse
+dataset_paths:
+  - analyze/datasets
+  - .meltano/analyze/datasets
+channel_paths:
+  - analyze/channels
+pipeline_paths:
+  - pipelines
+plugin_paths:
+  - plugins
+data_store_paths:
+  - datastores
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
   DASHBOARD_PAGE_TITLE: Data Observability Dashboard

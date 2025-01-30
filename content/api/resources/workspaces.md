@@ -20,19 +20,19 @@ Workspaces allow users to operate within isolated instances of the Matatika serv
 
 ### Workspace
 
-Path | Type | Format | Description
+Path | JSON Type | Format | Description
 ---- | ---- | ------ | -----------
-`id` | `String` | Version 4 UUID | The workspace ID
-`created` | `String` | ISO 8601 timestamp | The instant the workspace was created
-`lastModified` | `String` | ISO 8601 timestamp | The instant the workspace was last modified
-`alias` | `String` | | The workspace alias and database schema name
-`name` | `String` | | The workspace name
-`domains` | `String` | Comma-separated list | The workspace allowed domains
-`repositoryUrl` | `String` | URL | The workspace repository URL
-`pipelinesImage` | `String` | Container image name path | The path name of an image to run pipelines from
-`imageUrl` | `String` | Image [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs){:target="_blank"} | The workspace image data URL
-`status` | `String` | [Workspace Status](#workspace-status) | The workspace status
-`defaultWorkspace` | `Boolean` | | Whether or not the workspace is set as the default the authenticated user
+`id` | `string` | Version 4 UUID | The workspace ID
+`created` | `string` | ISO 8601 timestamp | The instant the workspace was created
+`lastModified` | `string` | ISO 8601 timestamp | The instant the workspace was last modified
+`alias` | `string` | | The workspace alias and database schema name
+`name` | `string` | | The workspace name
+`domains` | `string[]` | Array of domain hosts | The workspace allowed domains
+`repositoryUrl` | `string` | URL | The workspace repository URL
+`pipelinesImage` | `string` | Container image name path | The path name of an image to run pipelines from
+`imageUrl` | `string` | Image [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs){:target="_blank"} | The workspace image data URL
+`status` | `string` | [Workspace Status](#workspace-status) | The workspace status
+`defaultWorkspace` | `bool` | | Whether or not the workspace is set as the default the authenticated user
 
 {% include snippets/api/workspaces/view-a-workspace/response-body.md %}
 
@@ -42,7 +42,7 @@ Path | Type | Format | Description
 ### Workspace Status
 {: .d-inline-block }
 
-`String`
+`string`
 {: .float-right .mt-5 }
 
 Value | Description
