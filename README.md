@@ -1,17 +1,16 @@
 # matatika-docs
 The Matatika public developer documentation.
 
-## Run Locally
-### Prerequisites 
-- [Docker](https://docs.docker.com/get-docker/) installed
-- Ability to run API SITs, which in turn auto-generate the required snippets
-
-### Initial Setup
+## Initial Setup
 First, clone the repository and change into the directory.
 ```terminal
 git clone https://github.com/Matatika/matatika-docs.git
 cd matatika-docs
 ```
+
+### Setup Snippets (Optional)
+- You will need to run the Matatika API SITs, which in turn auto-generate the required snippets
+
 
 Run `import` from the Makefile, providing the argument `FROM_DIR` with the relative path to the directory containing the generated snippets on your local machine. This will copy the snippets from `FROM_DIR` to `./_includes/snippets/`.
 
@@ -21,11 +20,40 @@ Run `import` from the Makefile, providing the argument `FROM_DIR` with the relat
 make import FROM_DIR=../matatika-sit/target/generated-snippets/
 ```
 
-Run `docker-compose up` to serve the static site on [localhost:4000/docs/](http://localhost:4000/docs/). Note that this process may take a little while to complete on the first time due to dependency installation.
+
+Choose to run the docs 'Locally' with jekyll installed on your machine or with jekyll installed in 'Docker'
+
+## Run Locally
+
+### Prerequisites 
+- Ruby installed
+- Dependencies installed `bundle install`
 
 ```terminal
-docker-compose up
+bundle exec jekyll serve --incremental
 ```
+
+## Run Docker
+
+### Prerequisites 
+- [Docker](https://docs.docker.com/get-docker/) installed
+
+Run docker to serve the static site on [localhost:4000/docs/](http://localhost:4000/docs/).
+
+```terminal
+export JEKYLL_VERSION=4.2.2
+docker run --rm \
+  --volume="$PWD:/srv/jekyll:Z" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle:Z" \
+  --publish 4000:4000 \
+  --publish 35729:35729 \
+  -e JEKYLL_ROOTLESS=1 \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll serve --incremental
+```
+
+Note that this process may take a little while to complete on the first time due to dependency installation.
+
 
 ## Making Changes
 ### Creating and Editing Pages
