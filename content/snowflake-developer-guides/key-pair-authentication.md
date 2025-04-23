@@ -103,7 +103,7 @@ Compare both outputs. If both outputs match, the user is correctly configured th
 
 Restricting access to your Snowflake account and removing reliance on passwords, is an essential part of reducing your vulnerability to attacks such as phishing, brute force, and credential stuffing - but there are many other things you should also be doing.
 
-We take security seriously and would love to chat about key-pair authentication and other methods of improving the overall security posture of your data processing.  Why not [get in touch](/get-in-touch/)?
+We take security seriously and would love to chat about key-pair authentication and other methods of improving the overall security posture of your data processing.  Why not [get in touch](https://www.matatika.com/get-in-touch/)?
 
 
 

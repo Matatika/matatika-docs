@@ -26,6 +26,8 @@ Datastore definitions are stored as YAML file format - you can read more about t
 ```yaml
 version: datastores/v0.1
 data_plugin: loaders/target-snowflake--matatika
+properties:
+  max-threads: -1
 ```
 
 ### Key Information
@@ -34,6 +36,8 @@ Path | JSON Type | Description
 ---- | --------- | -----------
 `version`         | `string` | The version identifies this artifact type.
 `data_plugin`     | `string` | The fully-qualified name of a dataplugin supported for JDBC configuration
+`properties`      | `object` | A map of properties, with the setting name as the key and the value e.g. `setting=value`, that configures the environment when used in a pipeline.
+
 
 ---
 
