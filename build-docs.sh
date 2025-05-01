@@ -5,5 +5,5 @@ docker run --rm \
   --publish 4000:4000 \
   --publish 35729:35729 \
   -e JEKYLL_ROOTLESS=1 \
-  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll/jekyll:$JEKYLL_VERSION \
   jekyll build $@
