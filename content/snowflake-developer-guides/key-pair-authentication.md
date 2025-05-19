@@ -30,7 +30,7 @@ Full details are available with the [Snowflake Key-pair authentication documenta
 Open a new terminal and run the following to create an encrypted private key.
 
 ```
-openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -v1 PBE-SHA1-RC4-128 -out rsa_key.p8
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -v1 PBE-SHA1-3DES -out rsa_key.p8
 ```
 
 
