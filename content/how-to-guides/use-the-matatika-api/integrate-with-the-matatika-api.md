@@ -21,7 +21,7 @@ You must have already:
 
 ## Introduction
 
-To integrate with the Matatika API you will want to take advantage of our personal access tokens. With a personal access token you will be able to refresh access tokens when you need them.
+To integrate with the Matatika API you will want to take advantage of our API clients. With an API client you will be able to refresh access tokens when you need them.
 
 ---
 
@@ -30,7 +30,7 @@ To integrate with the Matatika API you will want to take advantage of our person
 1. Go to the Matatika app, and into a workspace.
 1. Click you profile picture in the top right, and click `API Keys` in the drop down.
 
-**If you are using Matatika Cloud**
+**On Matatika Cloud**
 - Click `+ NEW TOKEN`, provide a name and click `CREATE`. Make note of the `Client ID` and `Client secret`.
 
 Using these credentials you can now call our Auth0 IDP and get an access token when required.
@@ -40,11 +40,6 @@ Next you can follow this Auth0 guide - [Call Your API Using the Client Credentia
 In the requests you will need to use our:
 - URL : `https://{{site.matatika.links.auth0_domain}}/oauth/token`
 - Audience : `{{site.matatika.links.catalog}}`
-
-**If you are running Matatika locally**
-- Copy the first `Access Token` found under `Personal Access Tokens`
-
-This `Access Token` is only available to user when running Matatika locally, and will not expire unless you regenerate it. You can use this in your app or elsewhere to make repeat Matatika API calls.
 
 ---
 
