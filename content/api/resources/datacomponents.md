@@ -31,6 +31,15 @@ Path | JSON Type | Format | Description
 
 {% include snippets/api/datacomponents/view-a-datacomponent/response-body.md %}
 
+#### Extractor Datacomponent
+Datacomponents that are backed by [dataplugins](dataplugins) of `type` `EXTRACTOR` expose the following additional configuration:
+
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`streams` | `object[]` | Array of [Stream](#stream)s | The available streams (populated after [verifying a pipeline](pipelines#verify-a-pipeline) that references this datacomponent)
+
+{% include snippets/api/jobs/view-an-extractor-datacomponent/response-body.md %}
+
 ### Properties
 
 For each setting `s` in the [dataplugin](dataplugins) [`settings`](dataplugins#setting):
@@ -38,6 +47,33 @@ For each setting `s` in the [dataplugin](dataplugins) [`settings`](dataplugins#s
 Path | Type | Description
 ---- | ---- | -----------
 `s.name` | `s.kind` | Refer to `s.description`
+
+### Stream
+
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`name` | `string` | | The stream name
+`selected` `string` | [Entity Selection](#entity-selection) | The stream entity selection type
+`fields` | `object[]` | Array of [Field](#fields)s | The available stream fields
+
+### Field
+
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`name` | `string` | | The field name
+`selected` `string` | [Entity Selection](#entity-selection) | The field entity selection type
+
+## Formats
+{: .no_toc}
+
+### Entity Selection
+{: .d-inline-block }
+
+Value | Description
+----- | -----------
+`AUTOMATIC` | The entity is automatically selected by the underlying [extractor](https://docs.meltano.com/concepts/plugins#extractors){:target="_blank"} and will always be synced
+`SELECTED` | The entity is selected and will be synced
+`EXCLUDED` | The entity is excluded and will not be synced
 
 ---
 
