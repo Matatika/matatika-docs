@@ -27,7 +27,7 @@ Path | JSON Type | Format | Description
 `lastModified` | `string` | ISO 8601 timestamp | When the datacomponent was last modified
 `name` | `string` | | The datacomponent name
 `dataPlugin` | `string` | | Create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
-`properties` | `object` | [`Properties`](#properties) | The datacomponent properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting)
+`properties` | `object` | [`Properties`](#properties) | The datacomponent properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting)<br>Properties are key-value pairs, where keys reference setting `name`s
 
 {% include snippets/api/datacomponents/view-a-datacomponent/response-body.md %}
 
@@ -42,11 +42,11 @@ Path | JSON Type | Format | Description
 
 ### Properties
 
-For each setting `s` in the [dataplugin](dataplugins) [`settings`](dataplugins#setting):
+For each setting in the [dataplugin](dataplugins) [`settings`](dataplugins#setting):
 
-Path | Type | Description
----- | ---- | -----------
-`s.name` | `s.kind` | Refer to `s.description`
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+Refer to setting `name` <td colspan=2>Refer to setting `kind` | Refer to setting `description`
 
 #### Reserved Properties for Extractor Datacomponents
 
