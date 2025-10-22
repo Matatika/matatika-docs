@@ -48,6 +48,13 @@ Path | Type | Description
 ---- | ---- | -----------
 `s.name` | `s.kind` | Refer to `s.description`
 
+#### Reserved Properties for Extractor Datacomponents
+
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`_select` | `string` | JSON array | Meltano [stream and property selection rules](https://docs.meltano.com/concepts/plugins#select-extra)
+`_metadata` | `string` | JSON object | Meltano [stream and property metadata rules](https://docs.meltano.com/concepts/plugins#metadata-extra)
+
 ### Stream
 
 Path | JSON Type | Format | Description

@@ -49,6 +49,15 @@ Path | Type | Description
 - Any required settings not satisfied by a [datacomponent](datacomponents) property must be provided as a pipeline property
 - Any settings that are already satisfied by a [datacomponent](datacomponents) property can be overridden by a pipeline property
 
+#### Reserved Properties for Extractor Datacomponents
+
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`{datacomponent_name}._select` | `string` | JSON array | Meltano [stream and property selection rules](https://docs.meltano.com/concepts/plugins#select-extra)
+`{datacomponent_name}._metadata` | `string` | JSON object | Meltano [stream and property metadata rules](https://docs.meltano.com/concepts/plugins#metadata-extra)
+
+{% include snippets/api/jobs/configure-extractor-datacomponent-stream-selection-and-metadata-for-a-pipeline/request-body.md %}
+
 ## Formats
 {: .no_toc}
 
