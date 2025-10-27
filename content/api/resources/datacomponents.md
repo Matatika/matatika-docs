@@ -46,7 +46,7 @@ For each setting in the [dataplugin](dataplugins) [`settings`](dataplugins#setti
 
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
-Refer to setting `name` {::nomarkdown}<td colspan=2>{:/nomarkdown}Refer to setting `kind`{::nomarkdown}</td>{:/nomarkdown} Refer to setting `description`
+Refer to setting `name` | Refer to setting `kind` | Refer to setting `kind` | Refer to setting `description`
 
 #### Reserved Properties for Extractor Datacomponents
 
