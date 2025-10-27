@@ -60,7 +60,7 @@ Path | JSON Type | Format | Description
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
 `name` | `string` | | The stream name
-`selected` `string` | [Entity Selection](#entity-selection) | The stream entity selection type
+`selected` | `string` | [Entity Selection](#entity-selection) | The stream entity selection type
 `fields` | `object[]` | Array of [Field](#fields)s | The available stream fields
 
 ### Field
@@ -68,7 +68,7 @@ Path | JSON Type | Format | Description
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
 `name` | `string` | | The field name
-`selected` `string` | [Entity Selection](#entity-selection) | The field entity selection type
+`selected` | `string` | [Entity Selection](#entity-selection) | The field entity selection type
 
 ## Formats
 {: .no_toc}
