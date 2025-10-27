@@ -46,7 +46,7 @@ For each setting in the [dataplugin](dataplugins) [`settings`](dataplugins#setti
 
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
-Refer to setting `name` <td colspan=2>Refer to setting `kind` | Refer to setting `description`
+Refer to setting `name` <td colspan=2>Refer to setting `kind`</td> | Refer to setting `description`
 
 #### Reserved Properties for Extractor Datacomponents
 
