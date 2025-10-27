@@ -31,7 +31,7 @@ Path | JSON Type | Format | Description
 `script` | `string` | Bash script | Custom script to execute during a [job](jobs)
 `created` | `string` | ISO 8601 timestamp | When the pipeline was created
 `lastModified` | `string` | ISO 8601 timestamp | When the pipeline was last modified
-`properties` | `object` | [`Properties`](#properties) | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)
+`properties` | `object` | [`Properties`](#properties) | The pipeline properties, defined by the [dataplugin](dataplugins) [`settings`](dataplugins#setting) of each [datacomponent](datacomponents)<br>Properties are key-value pairs, where keys reference setting `name`s qualified by datacomponent `name`s
 `dataComponents` | `string[]` | Array of [datacomponent](datacomponents) `name`s | The pipeline [datacomponent](datacomponents) `name`s or create / update with [dataplugin](dataplugins#dataplugin) `fullyQualifiedName`
 `actions` | `string[]` | Array of [datacomponent](datacomponents) `name`s or commands | The pipeline actions to run during a [job](jobs)
 `triggeredBy` | `string[]` | Array of [pipeline](pipelines) `name`s or workspace task identifiers | Pipelines or workspace tasks that will trigger the pipeline on successful completion<br>Supported values for workspace tasks (case-insensitive):{::nomarkdown}<ul><li>{:/nomarkdown}`deploy` - workspace [deployment](deployments){::nomarkdown}</li></ul>{:/nomarkdown}
@@ -40,14 +40,25 @@ Path | JSON Type | Format | Description
 
 ### Properties
 
-For each setting `s` in the [datacomponents](datacomponents)' [dataplugin](dataplugins) [`settings`](dataplugins#setting) for each 
+For each setting in the [datacomponents](datacomponents)' [dataplugin](dataplugins) [`settings`](dataplugins#setting) for each 
 
-Path | Type | Description
----- | ---- | -----------
-`s.name` | `s.kind` | Refer to `s.description`
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`{datacomponent_name}.{setting_name}` <td colspan=2>Refer to setting `kind` | Refer to setting `description`
 
 - Any required settings not satisfied by a [datacomponent](datacomponents) property must be provided as a pipeline property
 - Any settings that are already satisfied by a [datacomponent](datacomponents) property can be overridden by a pipeline property
+
+See [create or update a pipeline in a workspace request](#request-3) for a working example.
+
+#### Reserved Properties for Extractor Datacomponents
+
+Path | JSON Type | Format | Description
+---- | --------- | ------ | -----------
+`{datacomponent_name}._select` | `string` | JSON array | Meltano [stream and property selection rules](https://docs.meltano.com/concepts/plugins#select-extra)
+`{datacomponent_name}._metadata` | `string` | JSON object | Meltano [stream and property metadata rules](https://docs.meltano.com/concepts/plugins#metadata-extra)
+
+{% include snippets/api/jobs/configure-extractor-datacomponent-stream-selection-and-metadata-for-a-pipeline/request-body.md %}
 
 ## Formats
 {: .no_toc}
