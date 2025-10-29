@@ -46,7 +46,7 @@ For each setting in the [dataplugin](dataplugins) [`settings`](dataplugins#setti
 
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
-Refer to setting `name` <td colspan=2>Refer to setting `kind` | Refer to setting `description`
+Refer to setting `name` | Refer to setting `kind` | Refer to setting `kind` | Refer to setting `description`
 
 #### Reserved Properties for Extractor Datacomponents
 
@@ -60,7 +60,7 @@ Path | JSON Type | Format | Description
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
 `name` | `string` | | The stream name
-`selected` `string` | [Entity Selection](#entity-selection) | The stream entity selection type
+`selected` | `string` | [Entity Selection](#entity-selection) | The stream entity selection type
 `fields` | `object[]` | Array of [Field](#fields)s | The available stream fields
 
 ### Field
@@ -68,7 +68,7 @@ Path | JSON Type | Format | Description
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
 `name` | `string` | | The field name
-`selected` `string` | [Entity Selection](#entity-selection) | The field entity selection type
+`selected` | `string` | [Entity Selection](#entity-selection) | The field entity selection type
 
 ## Formats
 {: .no_toc}

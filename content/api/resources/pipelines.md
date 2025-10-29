@@ -44,7 +44,7 @@ For each setting in the [datacomponents](datacomponents)' [dataplugin](dataplugi
 
 Path | JSON Type | Format | Description
 ---- | --------- | ------ | -----------
-`{datacomponent_name}.{setting_name}` <td colspan=2>Refer to setting `kind` | Refer to setting `description`
+`{datacomponent_name}.{setting_name}` | Refer to setting `kind` | Refer to setting `kind` | Refer to setting `description`
 
 - Any required settings not satisfied by a [datacomponent](datacomponents) property must be provided as a pipeline property
 - Any settings that are already satisfied by a [datacomponent](datacomponents) property can be overridden by a pipeline property
