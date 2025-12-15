@@ -34,7 +34,7 @@ Once completed, you will be able login to the Matatika Lab on your domain and st
 
 *Got a question?*
 
-[Ask us on Slack](https://join.slack.com/t/matatika/shared_invite/zt-19n1bfokx-F31DNitTpSxWCFO2aFlgxg){:target="_blank"}{:.btn}
+[Ask us on Slack](https://meltano.com/slack){:target="_blank"}{:.btn}
 
 
 ### Reverse proxy configuration

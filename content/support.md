@@ -11,7 +11,7 @@ nav_order: 13
 
 ## Get Help
 
-Join the [Matatika slack](https://join.slack.com/t/matatika/shared_invite/zt-19n1bfokx-F31DNitTpSxWCFO2aFlgxg){:target="_blank"}. Here you can get help, ask your questions and join in the conversation with our team and community.
+Join [our slack community](https://meltano.com/slack){:target="_blank"}. Here you can get help, ask your questions and join in the conversation with our team and community.
 
 ## Found an issue with our docs?
 

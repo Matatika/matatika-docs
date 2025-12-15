@@ -15,7 +15,7 @@ Dig into our extensive reference documentation, quick starts, code snippets and 
 
 *Got a question?*
 
-[Ask us on Slack](https://join.slack.com/t/matatika/shared_invite/zt-19n1bfokx-F31DNitTpSxWCFO2aFlgxg){:target="_blank"}{:.btn}
+[Ask us on Slack](https://meltano.com/slack){:target="_blank"}{:.btn}
 
 ---
 

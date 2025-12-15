@@ -69,7 +69,7 @@ app_properties:
   DATASET_ACTIONS: star,share,table,save
   MEMBER_COMMENTS_READ_ONLY: true
   MEMBER_COMMENTS_READ_ONLY_MESSAGE: Comments are set to read-only
-  INVITATION_EMAIL_RESULT_URL: https://join.slack.com/t/matatika/shared_invite/zt-1shuod7dx-nrmh6aP8ZuBcS9XY~7BuGw
+  INVITATION_EMAIL_RESULT_URL: https://meltano.com/slack
   INVITATION_EMAIL_SUBJECT: You have been invited to a workspace
   INVITATION_EMAIL_TEMPLATE: |-
     <!DOCTYPE html>
