@@ -111,8 +111,8 @@ Path | JSON Type | Description
 ---- | --------- | -----------
 `version`            | `string`   | The version identifies this artifact type.
 `name`               | `string`   | Name of your workspace.
-`default_data_store` | `string`   | Name of your workspace's default data store. (See [Data Store ML]({{site.baseurl}}/dataml/datastoreml)).
-`state_data_store`   | `string`   | Name of your workspace's state data store. (See [Data Store ML]({{site.baseurl}}/dataml/datastoreml)). This controls where pipeline state is stored and **must** reference a Postgres database (defaults to the managed warehouse data store, same as `default_data_store`).
+`default_data_store` | `string`   | Name of your workspace's default data store. (See [Data Store ML]({{site.baseurl}}/dataml/datastoreml)).  This controls the default for loading, query, transformation, and state (unless overridden with `state_data_store`).
+`state_data_store`   | `string`   | Name of your workspace's state data store. (See [Data Store ML]({{site.baseurl}}/dataml/datastoreml)). This controls where pipeline state is stored and **must** reference a Postgres, BigQuery or Snowflake database (defaults to the managed warehouse data store, same as `default_data_store`).
 `pipelines_image`    | `string`   | The path name of an image to run pipelines from
 `image_url`          | `string`   | The Meltano tasks that will be run.
 `dataset_paths`      | `string[]` | Paths for your workspace to deploy datasets from.
